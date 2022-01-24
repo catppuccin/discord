@@ -24,15 +24,11 @@
 }
 
 /* Home Button Change */
-div[aria-label = "Home"] > div {
-  background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url("https://cdn.discordapp.com/emojis/923626200977522698.gif");
-  background-blend-mode: darken;
-  background-size: contain;
-}
 
 div[aria-label = "Home"] > div:hover {
   background-image: url("https://cdn.discordapp.com/emojis/923626200977522698.gif");
   background-blend-mode: normal;
+  background-size: contain;
 }
 
 div[aria-label = "Home"] > div:hover > svg {
