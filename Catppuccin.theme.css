@@ -1,0 +1,47 @@
+/**
+ * @name Catppuccin
+ * @author Catppuccin
+ * @version 0.0.1
+ * @description 🎮 Soothing pastel theme for Discord
+ * @website https://github.com/catppuccin
+ * @source https://github.com/catppuccin
+*/
+
+.theme-dark {
+  --background-primary: #1E1E2E;
+  --background-primary-alt: #1E1E2E;
+  --background-secondary: #1A1826;
+  --background-secondary-alt: #1A1826;
+  --background-tertiary: #161320;
+  --channeltextarea-background: #302D41;
+  --scrollbar-thin-thumb: #161320;
+  --scrollbar-thin-track: #161320;
+  --scrollbar-auto-thumb: #161320;
+  --scrollbar-auto-track: #302D41;
+  --scrollbar-auto-scrollbar-color-thumb: #302D41;
+  --scrollbar-auto-scrollbar-color-track: #302D41;
+  --deprecated-store-bg: #161320;
+}
+
+/* Home Button Change */
+div[aria-label = "Home"] > div {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url("https://cdn.discordapp.com/emojis/923626200977522698.gif");
+  background-blend-mode: darken;
+  background-size: contain;
+}
+
+div[aria-label = "Home"] > div:hover {
+  background-image: url("https://cdn.discordapp.com/emojis/923626200977522698.gif");
+  background-blend-mode: normal;
+}
+
+div[aria-label = "Home"] > div:hover > svg {
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+
+div[aria-label = "Home"] > div > svg {
+  color: white;
+  stroke: black;
+  stroke-width: 0.3px;
+}
