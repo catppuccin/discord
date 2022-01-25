@@ -36,7 +36,7 @@ We are not responsible for anything that might happen to your account by using t
 ## 🙋 FAQ (optional)
 
 - Q: **_"Can this get my account banned?"_**
-  A: Using third party clients is against the ToS. We are not responsible for anything that might happen to your account by using third party clients. Use at your own discretion!
+- A: Using third party clients is against the ToS. We are not responsible for anything that might happen to your account by using third party clients. Use at your own discretion!
 
 ## 💝 Thanks to
 
