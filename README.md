@@ -31,12 +31,12 @@ We are not responsible for anything that might happen to your account by using t
 ## Usage
 1. Clone this repo locally.
 2. Install something to inject the css file into Discord. Examples: BetterDiscord, Powercord or, [Discocss](https://github.com/mlvzk/discocss)
-3. Use the 
+3. Use the documentation and find out how to inject the css file and use the theme
 
 ## 🙋 FAQ (optional)
 
-- Q: **_"Where can I find the doc?"_**
-  A: Run `:help theme`
+- Q: **_"Can this get my account banned?"_**
+  A: Using third party clients is against the ToS. We are not responsible for anything that might happen to your account by using third party clients. Use at your own discretion!
 
 ## 💝 Thanks to
 
