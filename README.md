@@ -33,7 +33,7 @@ We are not responsible for anything that might happen to your account by using t
 2. Install something to inject the css file into Discord. Examples: BetterDiscord, Powercord or, [Discocss](https://github.com/mlvzk/discocss)
 3. Use the documentation and find out how to inject the css file and use the theme
 
-## 🙋 FAQ (optional)
+## 🙋 FAQ
 
 - Q: **_"Can this get my account banned?"_**
 - A: Using third party clients is against the ToS. We are not responsible for anything that might happen to your account by using third party clients. Use at your own discretion!
