@@ -29,11 +29,8 @@ We are not responsible for anything that might happen to your account by using t
 </p>
 
 ## Usage
-
-1. Clone this repository locally
-2. Open the app's settings
-3. Select `import theme` and browse to where you cloned Catppuccin
-4. Select it
+1. Clone this repo locally.
+2. Install something to inject the css file into Discord. Examples: BetterDiscord, Powercord or, [Discocss] https://github.com/mlvzk/discocss
 
 ## 🙋 FAQ (optional)
 
