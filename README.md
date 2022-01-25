@@ -30,7 +30,7 @@ We are not responsible for anything that might happen to your account by using t
 
 ## Usage
 1. Clone this repo locally.
-2. Install something to inject the css file into Discord. Examples: BetterDiscord, Powercord or, [Discocss] https://github.com/mlvzk/discocss
+2. Install something to inject the css file into Discord. Examples: BetterDiscord, Powercord or, [Discocss](https://github.com/mlvzk/discocss)
 
 ## 🙋 FAQ (optional)
 
