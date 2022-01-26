@@ -4,7 +4,7 @@
  * @version 0.0.1
  * @description 🎮 Soothing pastel theme for Discord
  * @website https://github.com/catppuccin
- * @source https://github.com/catppuccin
+ * @source https://github.com/catppuccin/discord
 */
 
 .theme-dark {
@@ -26,7 +26,7 @@
 /* Home Button Change */
 
 div[aria-label = "Home"] > div:hover {
-  background-image: url("https://cdn.discordapp.com/emojis/923626200977522698.gif");
+  background-image: url("https://raw.githubusercontent.com/WitherCubes/discord/master/assets/popcat.gif");
   background-blend-mode: normal;
   background-size: contain;
 }
