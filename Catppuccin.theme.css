@@ -55,7 +55,7 @@
 /**
  * Uncomment to change the home button to a GIF of a cat popping
 div[aria-label = "Home"] > div:hover {
-    background-image: url("https://raw.githubusercontent.com/WitherCubes/discord/master/assets/popcat.gif");
+    background-image: url("https://raw.githubusercontent.com/catppuccin/discord/master/assets/popcat.gif");
     background-blend-mode: normal;
     background-size: contain;
 }

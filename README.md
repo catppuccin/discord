@@ -6,9 +6,9 @@
 </h3>
 
 <p align="center">
-    <a href="https://github.com/WitherCubes/discord/stargazers"><img src="https://img.shields.io/github/stars/WitherCubes/discord?colorA=1e1e28&colorB=c9cbff&style=for-the-badge&logo=starship style=for-the-badge"></a>
-    <a href="https://github.com/WitherCubes/discord/issues"><img src="https://img.shields.io/github/issues/WitherCubes/discord?colorA=1e1e28&colorB=f7be95&style=for-the-badge"></a>
-    <a href="https://github.com/WitherCubes/discord/contributors"><img src="https://img.shields.io/github/contributors/WitherCubes/discord?colorA=1e1e28&colorB=b1e1a6&style=for-the-badge"></a>
+    <a href="https://github.com/catppuccin/discord/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/discord?colorA=1e1e28&colorB=c9cbff&style=for-the-badge&logo=starship style=for-the-badge"></a>
+    <a href="https://github.com/catppuccin/discord/issues"><img src="https://img.shields.io/github/issues/catppuccin/discord?colorA=1e1e28&colorB=f7be95&style=for-the-badge"></a>
+    <a href="https://github.com/catppuccin/discord/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/discord?colorA=1e1e28&colorB=b1e1a6&style=for-the-badge"></a>
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@
 ## Usage
 
 ### [BetterDiscord](https://betterdiscord.app)
-1. Download [Catppuccin.theme.css](https://raw.githubusercontent.com/WitherCubes/discord/master/Catppuccin.theme.css).
+1. Download [Catppuccin.theme.css](https://raw.githubusercontent.com/catppuccin/discord/master/Catppuccin.theme.css).
 2. Copy the downloaded file to your BetterDiscord themes folder.
 3. Enable the theme in BetterDiscord settings.
 
