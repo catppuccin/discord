@@ -41,3 +41,8 @@ div[aria-label = "Home"] > div > svg {
   stroke: black;
   stroke-width: 0.3px;
 }
+
+/* Home */
+.container-2cd8Mz {
+  background-color: var(--background-primary) !important;
+}
