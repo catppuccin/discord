@@ -1,43 +1,71 @@
 /**
  * @name Catppuccin
  * @author Catppuccin
- * @version 0.0.1
+ * @version 0.0.2
  * @description 🎮 Soothing pastel theme for Discord
  * @website https://github.com/catppuccin
  * @source https://github.com/catppuccin/discord
-*/
+**/
 
 .theme-dark {
-  --background-primary: #1E1E2E;
-  --background-primary-alt: #1E1E2E;
-  --background-secondary: #1A1826;
-  --background-secondary-alt: #1A1826;
-  --background-tertiary: #161320;
-  --channeltextarea-background: #302D41;
-  --scrollbar-thin-thumb: #161320;
-  --scrollbar-thin-track: #161320;
-  --scrollbar-auto-thumb: #161320;
-  --scrollbar-auto-track: #302D41;
-  --scrollbar-auto-scrollbar-color-thumb: #302D41;
-  --scrollbar-auto-scrollbar-color-track: #302D41;
-  --deprecated-store-bg: #161320;
+    --header-primary: #D9E0EE !important;
+    --background-primary: #1E1E2E !important;
+    --background-primary-alt: #1E1E2E !important;
+    --background-mobile-primary: #1E1E2E !important;
+    --background-secondary: #1A1826 !important;
+    --background-secondary-alt: #1A1826 !important;
+    --background-mobile-secondary: #1A1826 !important;
+    --background-tertiary: #161320 !important;
+    --background-floating: #1E1E2E !important;
+    --channeltextarea-background: #302D41 !important;
+    --activity-card-background: #1E1E2E !important;
+    --scrollbar-thin-thumb: #161320 !important;
+    --scrollbar-thin-track: #161320 !important;
+    --scrollbar-auto-thumb: #161320 !important;
+    --scrollbar-auto-track: #302D41 !important;
+    --scrollbar-auto-scrollbar-color-thumb: #302D41 !important;
+    --scrollbar-auto-scrollbar-color-track: #302D41 !important;
+    --deprecated-store-bg: #161320 !important;
+    --interactive-normal: #D9E0EE !important;
+}
+
+/* Home */
+.container-2cd8Mz {
+    background-color: #1E1E2E !important;
+}
+
+/* Autocomplete popup */
+.autocomplete-3NRXG8 {
+    background-color: #1E1E2E !important;
+}
+
+.wrapper-1NNaWG.categoryHeader-OpJ1Ly {
+    background-color: #1E1E2E !important;
+}
+
+.autocomplete-3NRXG8 {
+    background-color: #1E1E2E !important;
+}
+
+/* Autocomplete popup selection */
+.selected-3H3-RC {
+    background-color: #302D41 !important;
 }
 
 /* Home Button Change */
-
 div[aria-label = "Home"] > div:hover {
-  background-image: url("https://raw.githubusercontent.com/WitherCubes/discord/master/assets/popcat.gif");
-  background-blend-mode: normal;
-  background-size: contain;
+    background-image: url("https://raw.githubusercontent.com/WitherCubes/discord/master/assets/popcat.gif");
+    background-blend-mode: normal;
+    background-size: contain;
 }
 
 div[aria-label = "Home"] > div:hover > svg {
-  transition: opacity 1s ease-in-out;
-  opacity: 0;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
 }
 
 div[aria-label = "Home"] > div > svg {
-  color: white;
-  stroke: black;
-  stroke-width: 0.3px;
+    color: white;
+    stroke: black;
+    stroke-width: 0.3px;
 }

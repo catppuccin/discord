@@ -16,16 +16,32 @@
 </p>
 
 ## Usage
-1. Clone this repo locally.
-2. Install something to inject the css file into Discord. Examples: [BetterDiscord](https://betterdiscord.app), [Powercord](https://powercord.dev) or, [Discocss](https://github.com/mlvzk/discocss).
-3. Use the documentation and find out how to inject the css file and use the theme.
+
+### [BetterDiscord](https://betterdiscord.app)
+1. Download [Catppuccin.theme.css](https://raw.githubusercontent.com/WitherCubes/discord/master/Catppuccin.theme.css).
+2. Copy the downloaded file to your BetterDiscord themes folder.
+3. Enable the theme in BetterDiscord settings.
+
+### [Powercord](https://powercord.dev)
+1. Go to your themes folder and clone the repo using:
+```
+git clone https://github.com/catppuccin/discord.git
+```
+2. Enable the theme in Powercord settings.
+
+### [Discocss](https://github.com/mlvzk/discocss)
+1. Clone the repo using:
+```
+git clone https://github.com/catppuccin/discord.git
+```
+2. Use the documentation and find out how to inject the css file and use the theme.
 
 ## 🙋 FAQ
 
 - Q: **_"Can this get my account banned?"_**
-- A: Using third party clients is against the ToS. We are not responsible for anything that might happen to your account by using third party clients. Use at your own discretion!
+- A: Using third party clients and injecting custom css is against the ToS. We are not responsible for anything that might happen to your account by using third party clients. Use at your own discretion!
 
 ## 💝 Thanks to
 
 - [DonutDev](https://github.com/DonutDev)
-- [WitherCubes](https://github.com/WitherCubes)
+- [Sanjay Pavan](https://github.com/WitherCubes)
