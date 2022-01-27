@@ -11,9 +11,9 @@
     <a href="https://github.com/catppuccin/discord/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/discord?colorA=1e1e28&colorB=b1e1a6&style=for-the-badge"></a>
 </p>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/dev/assets/misc/sample.png"/>
-</p>
+
+![Discord Theme Preview](assets/preview.jpg)
+
 
 ## Usage
 
