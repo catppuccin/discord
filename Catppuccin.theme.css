@@ -29,6 +29,32 @@
     --interactive-normal: #D9E0EE !important;
 }
 
+/* SEARCH ITEMS */
+
+.container-2McqkF{
+    background-color: #302D41 !important;
+}
+.searchOption-351dTI:hover{
+    background-color: #161320 !important;
+}
+/* no Shadow */
+.option-2KkUJO:after{
+    background: none !important;
+}
+/* in-section */
+.queryContainer-ZunrLZ{
+   background-color: #302D41 !important;
+}
+/* history */
+.option-2KkUJO:hover{
+background-color: #161320 !important;
+}
+
+/* IN ORDER: New-Unreads-Btn,jumpToPresentBar,CTRL+K,searchFilterOption */
+.bar-2eAyLE,.jumpToPresentBar-1cEnH0,.input-3r5zZY,.searchFilter-2UfsDk{
+    background-color: #302D41 !important;
+}
+
 /* Home */
 .container-2cd8Mz {
     background-color: #1E1E2E !important;
