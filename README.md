@@ -44,4 +44,6 @@ git clone https://github.com/catppuccin/discord.git
 ## 💝 Thanks to
 
 - [DonutDev](https://github.com/DonutDev)
+- [Hanno van Baarle](https://github.com/HannoVB1)
+- [Andreas Grafen](https://github.com/andreasgrafen)
 - [Sanjay Pavan](https://github.com/WitherCubes)
