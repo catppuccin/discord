@@ -1,7 +1,7 @@
 /**
  * @name Catppuccin
  * @author Catppuccin
- * @version 0.0.2
+ * @version 0.0.3
  * @description 🎮 Soothing pastel theme for Discord
  * @website https://github.com/catppuccin
  * @source https://github.com/catppuccin/discord
@@ -17,6 +17,8 @@
     --background-mobile-secondary: #1A1826 !important;
     --background-tertiary: #161320 !important;
     --background-floating: #1E1E2E !important;
+    --background-mentioned: rgba(221, 182, 242, 0.1) !important;
+    --background-mentioned-hover: rgba(245, 194, 231, 0.2) !important;
     --channeltextarea-background: #302D41 !important;
     --activity-card-background: #1E1E2E !important;
     --scrollbar-thin-thumb: #161320 !important;
@@ -27,6 +29,15 @@
     --scrollbar-auto-scrollbar-color-track: #302D41 !important;
     --deprecated-store-bg: #161320 !important;
     --interactive-normal: #D9E0EE !important;
+}
+
+/* Mentions */
+.mentioned-Tre-dv .mention.interactive {
+    color: #D9E0EE !important;
+}
+
+.mentioned-Tre-dv::before {
+    background-color: #D9E0EE !important;
 }
 
 /* Home */
@@ -53,32 +64,77 @@
 }
 
 /* Search: Items */
-.container-2McqkF{
+.container-2McqkF {
     background-color: #302D41 !important;
 }
 
-.searchOption-351dTI:hover{
+.searchOption-351dTI:hover {
     background-color: #161320 !important;
 }
 
 /* Search: No shadows */
-.option-2KkUJO:after{
+.option-2KkUJO:after {
     background: none !important;
 }
 
 /* Search: in-section */
-.queryContainer-ZunrLZ{
+.queryContainer-ZunrLZ {
    background-color: #302D41 !important;
 }
 
 /* Search: History */
-.option-2KkUJO:hover{
+.option-2KkUJO:hover {
 background-color: #161320 !important;
 }
 
 /* IN ORDER: New-Unreads-Btn,jumpToPresentBar,CTRL+K,searchFilterOption */
-.bar-2eAyLE,.jumpToPresentBar-1cEnH0,.input-3r5zZY,.searchFilter-2UfsDk{
+.bar-2eAyLE,.jumpToPresentBar-1cEnH0,.input-3r5zZY,.searchFilter-2UfsDk {
     background-color: #302D41 !important;
+}
+
+/* New Message Bar */
+.newMessagesBar-1hF-9G:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #6E6C7E !important;
+    border-radius:0 0 3px 3px;
+}
+
+/* New Messages Flag */
+.isUnread-3Lojb- {
+    border-color: #6E6C7E !important;
+}
+.unreadPill-3nEWYM {
+    background-color: #6E6C7E !important;
+}
+.unreadPillCapStroke-1nE1Q8 {
+    fill: #6E6C7E !important;
+    color: #6E6C7E !important;
+}
+
+.isUnread-3Lojb- .content-3spvdd {
+    color: #6E6C7E !important;
+}
+
+/* URLs */
+.button-1kija8,.buttonIcon-1TxM6f {
+    color: #89DCEB !important;
+}
+
+.fakeLink-2FvUR7,.embed-hKpSrO>.embedTitleLink-1QbYA-,.markup-eYLPri a,.content-s2SEQO a,.colorLink-2apWfY {
+    color: #89DCEB !important;
+}
+
+.card-16VQ8C a {
+    color: #89DCEB !important;
+}
+
+.lookLink-15mFoz.colorLink-1Md3RZ {
+    color: #89DCEB !important;
 }
 
 /**
