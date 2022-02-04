@@ -35,7 +35,7 @@
     --interactive-hover: #C3BAC6 !important;
     --interactive-active: #F5E0DC !important;
     --scrollbar-thin-thumb: #161320 !important;
-    --scrollbar-thin-track: #302D41 !important;
+    --scrollbar-thin-track: transparent !important;
     --scrollbar-auto-thumb: #161320 !important;
     --scrollbar-auto-track: #302D41 !important;
     --scrollbar-auto-scrollbar-color-thumb: #302D41 !important;
