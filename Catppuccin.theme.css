@@ -9,6 +9,7 @@
 
 .theme-dark {
     --header-primary: #D9E0EE !important;
+    --header-secondary: #F5E0DC !important;
     --background-primary: #1E1E2E !important;
     --background-primary-alt: #1E1E2E !important;
     --background-mobile-primary: #1E1E2E !important;
@@ -21,14 +22,18 @@
     --background-mentioned-hover: rgba(245, 194, 231, 0.2) !important;
     --background-accent: #6E6C7E !important;
     --background-modifier-selected: #1E1E2E !important;
+    --background-modifier-accent: #1E1E2E !important;
+    --background-modifier-hover: #302D41 !important;
     --text-normal: #D9E0EE !important;
     --text-muted: #6E6C7E !important;
+    --text-link: #89DCEB !important;
     --channels-default: #6E6C7E !important;
     --channeltextarea-background: #302D41 !important;
     --activity-card-background: #1E1E2E !important;
     --interactive-normal: #D9E0EE !important;
     --interactive-muted: #6E6C7E !important;
     --interactive-hover: #C3BAC6 !important;
+    --interactive-active: #F5E0DC !important;
     --scrollbar-thin-thumb: #161320 !important;
     --scrollbar-thin-track: #161320 !important;
     --scrollbar-auto-thumb: #161320 !important;
@@ -125,23 +130,6 @@ background-color: #302D41 !important;
 
 .isUnread-3Lojb- .content-3spvdd {
     color: #6E6C7E !important;
-}
-
-/* URLs */
-.button-1kija8,.buttonIcon-1TxM6f {
-    color: #89DCEB !important;
-}
-
-.fakeLink-2FvUR7,.embed-hKpSrO>.embedTitleLink-1QbYA-,.markup-eYLPri a,.content-s2SEQO a,.colorLink-2apWfY {
-    color: #89DCEB !important;
-}
-
-.card-16VQ8C a {
-    color: #89DCEB !important;
-}
-
-.lookLink-15mFoz.colorLink-1Md3RZ {
-    color: #89DCEB !important;
 }
 
 /* Selection */
