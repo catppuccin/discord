@@ -1,7 +1,7 @@
 /**
  * @name Catppuccin
  * @author Catppuccin
- * @version 0.0.3
+ * @version 0.0.4
  * @description 🎮 Soothing pastel theme for Discord
  * @website https://github.com/catppuccin
  * @source https://github.com/catppuccin/discord
@@ -19,8 +19,15 @@
     --background-floating: #1E1E2E !important;
     --background-mentioned: rgba(221, 182, 242, 0.1) !important;
     --background-mentioned-hover: rgba(245, 194, 231, 0.2) !important;
+    --background-accent: #6E6C7E !important;
+    --text-normal: #D9E0EE !important;
+    --text-muted: #6E6C7E !important;
+    --channels-default: #6E6C7E !important;
     --channeltextarea-background: #302D41 !important;
     --activity-card-background: #1E1E2E !important;
+    --interactive-normal: #D9E0EE !important;
+    --interactive-muted: #6E6C7E !important;
+    --interactive-hover: #C3BAC6 !important;
     --scrollbar-thin-thumb: #161320 !important;
     --scrollbar-thin-track: #161320 !important;
     --scrollbar-auto-thumb: #161320 !important;
@@ -28,7 +35,6 @@
     --scrollbar-auto-scrollbar-color-thumb: #302D41 !important;
     --scrollbar-auto-scrollbar-color-track: #302D41 !important;
     --deprecated-store-bg: #161320 !important;
-    --interactive-normal: #D9E0EE !important;
 }
 
 /* Mentions */
@@ -65,11 +71,11 @@
 
 /* Search: Items */
 .container-2McqkF {
-    background-color: #302D41 !important;
+    background-color: #161320 !important;
 }
 
 .searchOption-351dTI:hover {
-    background-color: #161320 !important;
+    background-color: #302D41 !important;
 }
 
 /* Search: No shadows */
@@ -79,17 +85,17 @@
 
 /* Search: in-section */
 .queryContainer-ZunrLZ {
-   background-color: #302D41 !important;
+   background-color: #161320 !important;
 }
 
 /* Search: History */
 .option-2KkUJO:hover {
-background-color: #161320 !important;
+background-color: #302D41 !important;
 }
 
 /* IN ORDER: New-Unreads-Btn,jumpToPresentBar,CTRL+K,searchFilterOption */
 .bar-2eAyLE,.jumpToPresentBar-1cEnH0,.input-3r5zZY,.searchFilter-2UfsDk {
-    background-color: #302D41 !important;
+    background-color: #6E6C7E !important;
 }
 
 /* New Message Bar */
@@ -135,6 +141,16 @@ background-color: #161320 !important;
 
 .lookLink-15mFoz.colorLink-1Md3RZ {
     color: #89DCEB !important;
+}
+
+/* Selection */
+::-moz-selection {
+    color: #D9E0EE !important;
+    background: #575268 !important;
+}
+::selection {
+    color: #D9E0EE !important;
+    background: #575268 !important;
 }
 
 /**
