@@ -139,9 +139,17 @@
     background-color: #1E1E2E !important;
 }
 
-/* Boost Page Background */
+/* Boost Page */
 .perksModal-CLcR1c {
+    background-color: #1A1826 !important;
+}
+.tierMarkerBackground-G8FoN4 {
     background-color: #1E1E2E !important;
+}
+
+/* Emoji Popout */
+.popoutContainer-2wbmiM {
+    background-color: #1A1826 !important;
 }
 
 /* Selection */
