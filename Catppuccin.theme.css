@@ -154,6 +154,28 @@
     background-color: #1A1826 !important;
 }
 
+/* Presence Buttons */
+.lookFilled-yCfaCM.colorGrey-2iAG-B,
+.lookFilled-yCfaCM.colorPrimary-2AuQVo {
+    background-color: #302D41 !important;
+}
+
+/* Primary Card */
+.cardPrimary-3qRT__ {
+    background-color: #1A1826 !important;
+}
+
+/* Payment Page Boxes */
+.paymentPane-ut5qKZ,
+.paginator-1eqD2g,
+.payment-2bOh4k,
+.codeRedemptionRedirect-3SBiCp {
+    background-color: #1A1826 !important;
+}
+.bottomDivider-ZmTm-j {
+    border-bottom-color: #1E1E2E !important;
+}
+
 /* Selection */
 ::-moz-selection {
     color: #D9E0EE !important;
