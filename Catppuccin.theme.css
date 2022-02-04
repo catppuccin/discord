@@ -20,6 +20,7 @@
     --background-mentioned: rgba(221, 182, 242, 0.1) !important;
     --background-mentioned-hover: rgba(245, 194, 231, 0.2) !important;
     --background-accent: #6E6C7E !important;
+    --background-modifier-selected: #1E1E2E !important;
     --text-normal: #D9E0EE !important;
     --text-muted: #6E6C7E !important;
     --channels-default: #6E6C7E !important;
