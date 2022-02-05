@@ -7,81 +7,155 @@
  * @source https://github.com/catppuccin/discord
 **/
 
-.theme-dark {
-    --header-primary: #D9E0EE !important;
-    --header-secondary: #F5E0DC !important;
-    --background-primary: #1E1E2E !important;
-    --background-primary-alt: #1E1E2E !important;
-    --background-mobile-primary: #1E1E2E !important;
-    --background-secondary: #1A1826 !important;
-    --background-secondary-alt: #1A1826 !important;
-    --background-mobile-secondary: #1A1826 !important;
-    --background-tertiary: #161320 !important;
-    --background-floating: #1E1E2E !important;
-    --background-mentioned: rgba(221, 182, 242, 0.1) !important;
-    --background-mentioned-hover: rgba(245, 194, 231, 0.2) !important;
-    --background-accent: #6E6C7E !important;
-    --background-modifier-selected: #1E1E2E !important;
-    --background-modifier-accent: #1E1E2E !important;
-    --background-modifier-hover: #302D41 !important;
-    --text-normal: #D9E0EE !important;
-    --text-muted: #6E6C7E !important;
-    --text-link: #89DCEB !important;
-    --channels-default: #6E6C7E !important;
-    --channeltextarea-background: #302D41 !important;
-    --activity-card-background: #1E1E2E !important;
-    --interactive-normal: #D9E0EE !important;
-    --interactive-muted: #6E6C7E !important;
-    --interactive-hover: #C3BAC6 !important;
-    --interactive-active: #F5E0DC !important;
-    --scrollbar-thin-thumb: #161320 !important;
-    --scrollbar-thin-track: transparent !important;
-    --scrollbar-auto-thumb: #161320 !important;
-    --scrollbar-auto-track: #302D41 !important;
-    --scrollbar-auto-scrollbar-color-thumb: #302D41 !important;
-    --scrollbar-auto-scrollbar-color-track: #302D41 !important;
-    --deprecated-store-bg: #161320 !important;
+
+
+
+:root {
+
+    /*                 H     S     L */
+    --rosewater_hsl:  10,  56%,  91%;
+    --flamingo_hsl:    0,  59%,  88%;
+    --mauve_hsl:     279,  70%,  83%;
+    --pink_hsl:      316,  72%,  86%;
+    --maroon_hsl:    349,  60%,  77%;
+    --red_hsl:       342,  79%,  75%;
+    --peach_hsl:      24,  88%,  78%;
+    --yellow_hsl:     41,  88%,  84%;
+    --green_hsl:     128,  58%,  79%;
+    --teal_hsl:      171,  53%,  81%;
+    --blue_hsl:      207,  93%,  79%;
+    --sky_hsl:       189,  71%,  73%;
+    --lavender_hsl:  238, 100%,  89%;
+    --black0_hsl:    254,  25%,  10%;
+    --black1_hsl:    249,  23%,  12%;
+    --black2_hsl:    240,  21%,  15%;
+    --black3_hsl:    249,  18%,  22%;
+    --black4_hsl:    254,  12%,  36%;
+    --gray0_hsl:     247,   8%,  46%;
+    --gray1_hsl:     274,  11%,  59%;
+    --gray2_hsl:     285,  10%,  75%;
+    --white_hsl:     220,  38%,  89%;
+
+
+    --rosewater:     hsl(var(--rosewater_hsl));
+    --flamingo:      hsl(var(--flamingo_hsl));
+    --mauve:         hsl(var(--mauve_hsl));
+    --pink:          hsl(var(--pink_hsl));
+    --maroon:        hsl(var(--maroon_hsl));
+    --red:           hsl(var(--red_hsl));
+    --peach:         hsl(var(--peach_hsl));
+    --yellow:        hsl(var(--yellow_hsl));
+    --green:         hsl(var(--green_hsl));
+    --teal:          hsl(var(--teal_hsl));
+    --blue:          hsl(var(--blue_hsl));
+    --sky:           hsl(var(--sky_hsl));
+    --lavender:      hsl(var(--lavender_hsl));
+    --black0:        hsl(var(--black0_hsl));
+    --black1:        hsl(var(--black1_hsl));
+    --black2:        hsl(var(--black2_hsl));
+    --black3:        hsl(var(--black3_hsl));
+    --black4:        hsl(var(--black4_hsl));
+    --gray0:         hsl(var(--gray0_hsl));
+    --gray1:         hsl(var(--gray1_hsl));
+    --gray2:         hsl(var(--gray2_hsl));
+    --white:         hsl(var(--white_hsl));
+
+    --mauve-o10:     hsl(var(--mauve_hsl), .1);
+    --pink-o20:      hsl(var(--pink_hsl), .2);
+
 }
+
+
+
+
+.theme-dark {
+
+    --header-primary: var(--white) !important;
+    --header-secondary: var(--rosewater) !important;
+
+    --background-primary: var(--black2) !important;
+    --background-primary-alt: var(--black2) !important;
+    --background-mobile-primary: var(--black2) !important;
+    --background-secondary: var(--black1) !important;
+    --background-secondary-alt: var(--black1) !important;
+    --background-mobile-secondary: var(--black1) !important;
+    --background-tertiary: var(--black0) !important;
+    --background-floating: var(--black2) !important;
+    --background-mentioned: var(--mauve-o10) !important;
+    --background-mentioned-hover: var(--pink-o20) !important;
+    --background-accent: var(--gray0) !important;
+    --background-modifier-selected: var(--black2) !important;
+    --background-modifier-accent: var(--black2) !important;
+    --background-modifier-hover: var(--black3) !important;
+
+    --text-normal: var(--white) !important;
+    --text-muted: var(--gray0) !important;
+    --text-link: var(--sky) !important;
+
+    --channels-default: var(--gray0) !important;
+    --channeltextarea-background: var(--black3) !important;
+
+    --activity-card-background: var(--black2) !important;
+
+    --interactive-normal: var(--white) !important;
+    --interactive-muted: var(--gray0) !important;
+    --interactive-hover: var(--gray2) !important;
+    --interactive-active: var(--rosewater) !important;
+
+    --scrollbar-thin-thumb: var(--black0) !important;
+    --scrollbar-thin-track: transparent !important;
+    --scrollbar-auto-thumb: var(--black0) !important;
+    --scrollbar-auto-track: var(--black3) !important;
+    --scrollbar-auto-scrollbar-color-thumb: var(--black3) !important;
+    --scrollbar-auto-scrollbar-color-track: var(--black3) !important;
+
+    --deprecated-store-bg: var(--black0) !important;
+
+}
+
+
+
+
 
 /* Mentions */
 .mentioned-Tre-dv .mention.interactive {
-    color: #D9E0EE !important;
+    color: var(--white) !important;
 }
 
 .mentioned-Tre-dv::before {
-    background-color: #D9E0EE !important;
+    background-color: var(--white) !important;
 }
 
 /* Home */
 .container-2cd8Mz {
-    background-color: #1E1E2E !important;
+    background-color: var(--black2) !important;
 }
 
 /* Autocomplete popup */
 .autocomplete-3NRXG8 {
-    background-color: #1E1E2E !important;
+    background-color: var(--black2) !important;
 }
 
 .wrapper-1NNaWG.categoryHeader-OpJ1Ly {
-    background-color: #1E1E2E !important;
+    background-color: var(--black2) !important;
 }
 
 .autocomplete-3NRXG8 {
-    background-color: #1E1E2E !important;
+    background-color: var(--black2) !important;
 }
 
 /* Autocomplete popup selection */
 .selected-3H3-RC {
-    background-color: #302D41 !important;
+    background-color: var(--black3) !important;
 }
 
 /* Search: Items */
 .container-2McqkF {
-    background-color: #161320 !important;
+    background-color: var(--black0) !important;
 }
 
 .searchOption-351dTI:hover {
-    background-color: #302D41 !important;
+    background-color: var(--black3) !important;
 }
 
 /* Search: No shadows */
@@ -91,17 +165,17 @@
 
 /* Search: in-section */
 .queryContainer-ZunrLZ {
-   background-color: #161320 !important;
+   background-color: var(--black0) !important;
 }
 
 /* Search: History */
 .option-2KkUJO:hover {
-    background-color: #302D41 !important;
+    background-color: var(--black3) !important;
 }
 
 /* IN ORDER: New-Unreads-Btn,jumpToPresentBar,CTRL+K,searchFilterOption */
 .bar-2eAyLE,.jumpToPresentBar-1cEnH0,.input-3r5zZY,.searchFilter-2UfsDk {
-    background-color: #6E6C7E !important;
+    background-color: var(--gray0) !important;
 }
 
 /* New Message Bar */
@@ -112,57 +186,57 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: #6E6C7E !important;
+    background: var(--gray0) !important;
     border-radius:0 0 3px 3px;
 }
 
 /* New Messages Flag */
 .isUnread-3Lojb- {
-    border-color: #6E6C7E !important;
+    border-color: var(--gray0) !important;
 }
 .unreadPill-3nEWYM {
-    background-color: #6E6C7E !important;
+    background-color: var(--gray0) !important;
 }
 .unreadPillCapStroke-1nE1Q8 {
-    fill: #6E6C7E !important;
-    color: #6E6C7E !important;
+    fill: var(--gray0) !important;
+    color: var(--gray0) !important;
 }
 
 .isUnread-3Lojb- .content-3spvdd {
-    color: #6E6C7E !important;
+    color: var(--gray0) !important;
 }
 
 /* Server Modals */
 .root-g14mjS,
 .separator-2lLxgC {
-    background-color: #1E1E2E !important;
+    background-color: var(--black2) !important;
 }
 .footer-31IekZ {
-    background-color: #1A1826 !important;
+    background-color: var(--black1) !important;
 }
 
 /* Boost Page */
 .perksModal-CLcR1c {
-    background-color: #1A1826 !important;
+    background-color: var(--black1) !important;
 }
 .tierMarkerBackground-G8FoN4 {
-    background-color: #1E1E2E !important;
+    background-color: var(--black2) !important;
 }
 
 /* Emoji Popout */
 .popoutContainer-2wbmiM {
-    background-color: #1A1826 !important;
+    background-color: var(--black1) !important;
 }
 
 /* Presence Buttons */
 .lookFilled-yCfaCM.colorGrey-2iAG-B,
 .lookFilled-yCfaCM.colorPrimary-2AuQVo {
-    background-color: #302D41 !important;
+    background-color: var(--black3) !important;
 }
 
 /* Primary Card */
 .cardPrimary-3qRT__ {
-    background-color: #1A1826 !important;
+    background-color: var(--black1) !important;
 }
 
 /* Payment Page Boxes */
@@ -170,20 +244,20 @@
 .paginator-1eqD2g,
 .payment-2bOh4k,
 .codeRedemptionRedirect-3SBiCp {
-    background-color: #1A1826 !important;
+    background-color: var(--black1) !important;
 }
 .bottomDivider-ZmTm-j {
-    border-bottom-color: #1E1E2E !important;
+    border-bottom-color: var(--black2) !important;
 }
 
 /* Selection */
 ::-moz-selection {
-    color: #D9E0EE !important;
-    background: #575268 !important;
+    color: var(--white) !important;
+    background: var(--black4) !important;
 }
 ::selection {
-    color: #D9E0EE !important;
-    background: #575268 !important;
+    color: var(--white) !important;
+    background: var(--black4) !important;
 }
 
 /**
