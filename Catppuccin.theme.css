@@ -7,11 +7,7 @@
  * @source https://github.com/catppuccin/discord
  **/
 
-
-
-
 :root {
-
 	/*                 H     S     L */
 	--rosewater_hsl:  10,  56%,  91%;
 	--flamingo_hsl:    0,  59%,  88%;
@@ -35,44 +31,38 @@
 	--gray1_hsl:     274,  11%,  59%;
 	--gray2_hsl:     285,  10%,  75%;
 	--white_hsl:     220,  38%,  89%;
-
-
-	--rosewater:     hsl(var(--rosewater_hsl));
-	--flamingo:      hsl(var(--flamingo_hsl));
-	--mauve:         hsl(var(--mauve_hsl));
-	--pink:          hsl(var(--pink_hsl));
-	--maroon:        hsl(var(--maroon_hsl));
-	--red:           hsl(var(--red_hsl));
-	--peach:         hsl(var(--peach_hsl));
-	--yellow:        hsl(var(--yellow_hsl));
-	--green:         hsl(var(--green_hsl));
-	--teal:          hsl(var(--teal_hsl));
-	--blue:          hsl(var(--blue_hsl));
-	--sky:           hsl(var(--sky_hsl));
-	--lavender:      hsl(var(--lavender_hsl));
-	--black0:        hsl(var(--black0_hsl));
-	--black1:        hsl(var(--black1_hsl));
-	--black2:        hsl(var(--black2_hsl));
-	--black3:        hsl(var(--black3_hsl));
-	--black4:        hsl(var(--black4_hsl));
-	--gray0:         hsl(var(--gray0_hsl));
-	--gray1:         hsl(var(--gray1_hsl));
-	--gray2:         hsl(var(--gray2_hsl));
-	--white:         hsl(var(--white_hsl));
-
-	--mauve-o10:     hsl(var(--mauve_hsl), .1);
-	--pink-o20:      hsl(var(--pink_hsl), .2);
-
 }
 
-
-
+:root {
+	--rosewater: hsl(var(--rosewater_hsl));
+	--flamingo: hsl(var(--flamingo_hsl));
+	--mauve: hsl(var(--mauve_hsl));
+	--pink: hsl(var(--pink_hsl));
+	--maroon: hsl(var(--maroon_hsl));
+	--red: hsl(var(--red_hsl));
+	--peach: hsl(var(--peach_hsl));
+	--yellow: hsl(var(--yellow_hsl));
+	--green: hsl(var(--green_hsl));
+	--teal: hsl(var(--teal_hsl));
+	--blue: hsl(var(--blue_hsl));
+	--sky: hsl(var(--sky_hsl));
+	--lavender: hsl(var(--lavender_hsl));
+	--black0: hsl(var(--black0_hsl));
+	--black1: hsl(var(--black1_hsl));
+	--black2: hsl(var(--black2_hsl));
+	--black3: hsl(var(--black3_hsl));
+	--black4: hsl(var(--black4_hsl));
+	--gray0: hsl(var(--gray0_hsl));
+	--gray1: hsl(var(--gray1_hsl));
+	--gray2: hsl(var(--gray2_hsl));
+	--white: hsl(var(--white_hsl));
+	--mauve-o10: hsl(var(--mauve_hsl), .1);
+	--pink-o20: hsl(var(--pink_hsl), .2);
+}
 
 .theme-dark {
-
 	--header-primary: var(--white) !important;
 	--header-secondary: var(--rosewater) !important;
-
 	--background-primary: var(--black2) !important;
 	--background-primary-alt: var(--black2) !important;
 	--background-mobile-primary: var(--black2) !important;
@@ -87,35 +77,24 @@
 	--background-modifier-selected: var(--black2) !important;
 	--background-modifier-accent: var(--black2) !important;
 	--background-modifier-hover: var(--black3) !important;
-
 	--text-normal: var(--white) !important;
 	--text-muted: var(--gray0) !important;
 	--text-link: var(--sky) !important;
-
 	--channels-default: var(--gray0) !important;
 	--channeltextarea-background: var(--black3) !important;
-
 	--activity-card-background: var(--black2) !important;
-
 	--interactive-normal: var(--white) !important;
 	--interactive-muted: var(--gray0) !important;
 	--interactive-hover: var(--gray2) !important;
 	--interactive-active: var(--rosewater) !important;
-
 	--scrollbar-thin-thumb: var(--black0) !important;
 	--scrollbar-thin-track: transparent !important;
 	--scrollbar-auto-thumb: var(--black0) !important;
 	--scrollbar-auto-track: var(--black3) !important;
 	--scrollbar-auto-scrollbar-color-thumb: var(--black3) !important;
 	--scrollbar-auto-scrollbar-color-track: var(--black3) !important;
-
 	--deprecated-store-bg: var(--black0) !important;
-
 }
-
-
-
-
 
 /* Mentions */
 .mentioned-Tre-dv .mention.interactive {
@@ -263,19 +242,19 @@
 /**
 * Uncomment to change the home button to a GIF of a cat popping
 div[aria-label = "Home"] > div:hover {
-background-image: url("https://raw.githubusercontent.com/catppuccin/discord/master/assets/popcat.gif");
-background-blend-mode: normal;
-background-size: contain;
+	background-image: url("https://raw.githubusercontent.com/catppuccin/discord/master/assets/popcat.gif");
+	background-blend-mode: normal;
+	background-size: contain;
 }
 
 div[aria-label = "Home"] > div:hover > svg {
-transition: opacity 1s ease-in-out;
-opacity: 0;
+	transition: opacity 1s ease-in-out;
+	opacity: 0;
 }
 
 div[aria-label = "Home"] > div > svg {
-color: white;
-stroke: black;
-stroke-width: 0.3px;
+	color: white;
+	stroke: black;
+	stroke-width: 0.3px;
 }
 **/
