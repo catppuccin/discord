@@ -47,6 +47,7 @@ git clone https://github.com/catppuccin/discord.git
 - [Hanno van Baarle](https://github.com/HannoVB1)
 - [Andreas Grafen](https://github.com/andreasgrafen)
 - [Sanjay Pavan](https://github.com/WitherCubes)
+- [Tuhana GAYRETLİ](https://github.com/tuhanayim)
 
 &nbsp;
 

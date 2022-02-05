@@ -35,7 +35,7 @@
     --interactive-hover: #C3BAC6 !important;
     --interactive-active: #F5E0DC !important;
     --scrollbar-thin-thumb: #161320 !important;
-    --scrollbar-thin-track: #161320 !important;
+    --scrollbar-thin-track: transparent !important;
     --scrollbar-auto-thumb: #161320 !important;
     --scrollbar-auto-track: #302D41 !important;
     --scrollbar-auto-scrollbar-color-thumb: #302D41 !important;
@@ -96,7 +96,7 @@
 
 /* Search: History */
 .option-2KkUJO:hover {
-background-color: #302D41 !important;
+    background-color: #302D41 !important;
 }
 
 /* IN ORDER: New-Unreads-Btn,jumpToPresentBar,CTRL+K,searchFilterOption */
@@ -130,6 +130,50 @@ background-color: #302D41 !important;
 
 .isUnread-3Lojb- .content-3spvdd {
     color: #6E6C7E !important;
+}
+
+/* Server Modals */
+.root-g14mjS,
+.separator-2lLxgC {
+    background-color: #1E1E2E !important;
+}
+.footer-31IekZ {
+    background-color: #1A1826 !important;
+}
+
+/* Boost Page */
+.perksModal-CLcR1c {
+    background-color: #1A1826 !important;
+}
+.tierMarkerBackground-G8FoN4 {
+    background-color: #1E1E2E !important;
+}
+
+/* Emoji Popout */
+.popoutContainer-2wbmiM {
+    background-color: #1A1826 !important;
+}
+
+/* Presence Buttons */
+.lookFilled-yCfaCM.colorGrey-2iAG-B,
+.lookFilled-yCfaCM.colorPrimary-2AuQVo {
+    background-color: #302D41 !important;
+}
+
+/* Primary Card */
+.cardPrimary-3qRT__ {
+    background-color: #1A1826 !important;
+}
+
+/* Payment Page Boxes */
+.paymentPane-ut5qKZ,
+.paginator-1eqD2g,
+.payment-2bOh4k,
+.codeRedemptionRedirect-3SBiCp {
+    background-color: #1A1826 !important;
+}
+.bottomDivider-ZmTm-j {
+    border-bottom-color: #1E1E2E !important;
 }
 
 /* Selection */
