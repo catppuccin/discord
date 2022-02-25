@@ -1,7 +1,7 @@
 {
   "name": "Catppuccin",
   "description": "🎮 Soothing pastel theme for Discord",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "author": "Catppuccin",
   "theme": "/Catppuccin.theme.css",
   "license": "MIT",

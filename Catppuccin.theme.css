@@ -1,7 +1,7 @@
 /**
  * @name Catppuccin
  * @author Catppuccin
- * @version 0.0.5
+ * @version 0.0.6
  * @description 🎮 Soothing pastel theme for Discord
  * @website https://github.com/catppuccin
  * @source https://github.com/catppuccin/discord
@@ -138,7 +138,7 @@
 }
 
 /* Search: No shadows */
-.option-2KkUJO:after {
+.option-ayUoaq:after {
 	background: none !important;
 }
 
@@ -148,7 +148,7 @@
 }
 
 /* Search: History */
-.option-2KkUJO:hover {
+.option-ayUoaq:hover {
 	background-color: var(--black3) !important;
 }
 
