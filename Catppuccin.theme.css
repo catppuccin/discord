@@ -1,7 +1,7 @@
 /**
  * @name Catppuccin
  * @author Catppuccin
- * @version 0.0.6
+ * @version 0.0.7
  * @description 🎮 Soothing pastel theme for Discord
  * @website https://github.com/catppuccin
  * @source https://github.com/catppuccin/discord
@@ -152,8 +152,14 @@
 	background-color: var(--black3) !important;
 }
 
-/* IN ORDER: New-Unreads-Btn,jumpToPresentBar,CTRL+K,searchFilterOption */
-.bar-2eAyLE,.jumpToPresentBar-1cEnH0,.input-3r5zZY,.searchFilter-2UfsDk {
+/* Search: Little Icon Thingy */
+.searchFilter-2UfsDk,
+.searchAnswer-23w-CH {
+	background-color: var(--black3) !important;
+}
+
+/* IN ORDER: New-Unreads-Btn,jumpToPresentBar,CTRL+K */
+.bar-2eAyLE,.jumpToPresentBar-1cEnH0,.input-3r5zZY {
 	background-color: var(--gray0) !important;
 }
 
@@ -232,6 +238,27 @@
 
 .bottomDivider-ZmTm-j {
 	border-bottom-color: var(--black2) !important;
+}
+
+/* Spotify Invite */
+.invite-3uuHYQ {
+	background-color: var(--black1) !important;
+}
+
+/* Edit Attachment */
+.footer-VCsJQY {
+	background-color: var(--black1) !important;
+}
+
+/* Spoilers */
+.spoilerText-27bIiA.hidden-3B-Rum,
+.inlineContent-2YnoDy {
+	background-color: var(--black3) !important;
+}
+
+/* Stream Preview */
+.streamPreview-I7itZ6 {
+	background-color: var(--black2) !important;
 }
 
 /* Selection */
