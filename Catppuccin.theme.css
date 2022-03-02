@@ -272,6 +272,18 @@
 	background: var(--black4) !important;
 }
 
+/* Delete Message Confirmation */
+.message-G6O-Wv {
+	background-color: var(--black2) !important;
+    box-shadow: 0 0 0 1px hsla(var(--black3_hsl), 0.6), 0 2px 10px 0 hsla(var(--black3_hsl), 0.1) !important;
+}
+
+/* Command Option */
+.pill-1HLSrc,
+.optionKey-1tfFt_ {
+	background-color: var(--black2) !important;
+}
+
 /**
 * Uncomment to change the home button to a GIF of a cat popping
 div[aria-label = "Home"] > div:hover {
