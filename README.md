@@ -17,16 +17,16 @@
 
 ## Usage
 
-###Method 1 (Downloading the file directly)
+### Method 1 (Downloading the file directly)
 1. Clone this repository locally
 2. Copy the `Catppuccin.json` to Aliucord/themes
 3. Open Aliucord settings
 4. Open Themer plugin settings
 4. Enable the theme!
 
-###Method 2(Via the App itself)
+### Method 2(Via the App itself)
 1. Join Aliucord Server and go to #themes
-2. Search for Catppuccin port by GNU/Mirage#3455([link]())
+2. Search for Catppuccin port by GNU/Mirage#3455(or click on this [link](https://discord.com/channels/811255666990907402/824357609778708580/950417159585165389))
 4. Long press the message and press on install the theme
 5. Go to theme settings and enable the theme.
 
@@ -38,6 +38,8 @@
 ## 💝 Thanks to
 
 - [Skinatro](https://github.com/skinatro)
+- [WitherCubes](https://github.com/WitherCubes) <br>
+and everyone else who made the discord pc port
 
 &nbsp;
 
