@@ -84,7 +84,7 @@
 	--channeltextarea-background: var(--black3) !important;
 	--activity-card-background: var(--black2) !important;
 	--interactive-normal: var(--white) !important;
-	--interactive-muted: var(--gray0) !important;
+	--interactive-muted: var(--black3) !important;
 	--interactive-hover: var(--gray2) !important;
 	--interactive-active: var(--rosewater) !important;
 	--scrollbar-thin-thumb: var(--black0) !important;
