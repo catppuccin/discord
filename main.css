@@ -319,6 +319,20 @@
 	background: var(--black0) !important;
 }
 
+/* Reactors List */
+.scroller-2GkvCq {
+	background: var(--black1) !important;
+}
+
+.reactionDefault-1Sjj1f:hover,
+.reactionSelected-1aMb2K {
+	background-color: var(--black2) !important;
+}
+
+.reactors-1VXca7 {
+	background-color: var(--black2) !important;
+}
+
 /**
 * Uncomment to change the home button to a GIF of a cat popping
 div[aria-label = "Home"] > div:hover {
