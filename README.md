@@ -38,6 +38,7 @@
 ## 💝 Thanks to
 
 - [Skinatro](https://github.com/skinatro)
+- [lemon](https://github.com/andreasgrafen)
 - [WitherCubes](https://github.com/WitherCubes) <br>
 and everyone else who made the discord pc port
 
