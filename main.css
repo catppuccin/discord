@@ -332,23 +332,3 @@
 .reactors-1VXca7 {
 	background-color: var(--black2) !important;
 }
-
-/**
-* Uncomment to change the home button to a GIF of a cat popping
-div[aria-label = "Home"] > div:hover {
-	background-image: url("https://raw.githubusercontent.com/catppuccin/discord/master/assets/popcat.gif");
-	background-blend-mode: normal;
-	background-size: contain;
-}
-
-div[aria-label = "Home"] > div:hover > svg {
-	transition: opacity 1s ease-in-out;
-	opacity: 0;
-}
-
-div[aria-label = "Home"] > div > svg {
-	color: white;
-	stroke: black;
-	stroke-width: 0.3px;
-}
-**/

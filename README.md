@@ -36,6 +36,11 @@ git clone https://github.com/catppuccin/discord.git
 ```
 2. Use the documentation and find out how to inject the css file and use the theme.
 
+### [Stylus](https://github.com/openstyles/stylus)
+1. Create a new style which applies to URLs on the domain `discord.com`.
+2. Copy the contents of `main.css` into the new style.
+3. Save the theme.
+
 ## 🙋 FAQ
 
 - Q: **_"Can this get my account banned?"_**
