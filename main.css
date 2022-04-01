@@ -91,7 +91,7 @@
 	--scrollbar-thin-track: transparent !important;
 	--scrollbar-auto-thumb: var(--black0) !important;
 	--scrollbar-auto-track: var(--black3) !important;
-	--scrollbar-auto-scrollbar-color-thumb: var(--black3) !important;
+	--scrollbar-auto-scrollbar-color-thumb: var(--black1) !important;
 	--scrollbar-auto-scrollbar-color-track: var(--black3) !important;
 	--deprecated-store-bg: var(--black0) !important;
 }
