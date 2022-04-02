@@ -94,6 +94,7 @@
 	--scrollbar-auto-scrollbar-color-thumb: var(--black1) !important;
 	--scrollbar-auto-scrollbar-color-track: var(--black3) !important;
 	--deprecated-store-bg: var(--black0) !important;
+	--input-background: var(--black3) !important;
 }
 
 /* Mentions */
@@ -275,7 +276,7 @@
 /* Delete Message Confirmation */
 .message-G6O-Wv {
 	background-color: var(--black2) !important;
-    box-shadow: 0 0 0 1px hsla(var(--black3_hsl), 0.6), 0 2px 10px 0 hsla(var(--black3_hsl), 0.1) !important;
+	box-shadow: 0 0 0 1px hsla(var(--black3_hsl), 0.6), 0 2px 10px 0 hsla(var(--black3_hsl), 0.1) !important;
 }
 
 /* Command Option */
