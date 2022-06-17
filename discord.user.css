@@ -148,10 +148,10 @@ disabledButtonBG(col)
     .theme-dark,
     .theme-light,{
         --brand-experiment: $rosewater;
-        --brand-experiment-560: hoverButtonBG($rosewater)
+        --brand-experiment-560: $rosewater;
         --brand-experiment-200: $text;
-        --brand-experiment-15a: lighten($rosewater, 50%);
-        --brand-experiment-600: selectedButtonBG($rosewater)
+        --brand-experiment-15a: $surface2;
+        --brand-experiment-600: selectedButtonBG($rosewater);
             
         if (usefont) {
             --font-primary: Inter,Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -303,6 +303,15 @@ disabledButtonBG(col)
         --deprecated-text-input-prefix: #dcddde;
     }
     
+    /* Reactions */
+    .reaction-3vwAF2 {
+        background-color: $surface0;
+    }
+    
+    .reaction-3vwAF2:hover {
+        background-color: $surface1;
+    }
+    
      /* Buttons */
     .lookFilled-yCfaCM.colorBrand-I6CyqQ,
     .lookFilled-yCfaCM.colorRed-rQXKgM,
@@ -311,6 +320,12 @@ disabledButtonBG(col)
     .barButtonBase-Sk2mdB {
         color: $base;
     }
+    
+    .colorDanger-3n-KnP:active:not(.hideInteraction-2jPGL_) {
+        background-color: $red;
+        color: $base
+    }
+    
     
     /* Checkbox */
     .checked-25WXMf {
@@ -354,22 +369,23 @@ disabledButtonBG(col)
     }
     
     // Badges
-    rect[width="10"] { // Normal
-        fill: $green !important;
+    rect[fill^="hsl(139"] { // Online
+        fill: $green;
     }
     
-    rect[mask="url(#svg-mask-status-idle)"] { // Away
-        fill: $yellow !important;
+    rect[fill^="hsl(38"] { // Away
+        fill: $yellow;
     }
     
-    rect[mask="url(#svg-mask-status-dnd)"] { // Do not disturb
-        fill: $red !important;
+    rect[fill^="hsl(359"] { // Do Not Disturb
+        fill: $red;
     }
     
-    rect[mask="url(#svg-mask-status-offline)"] { // Offline
-        fill: $text !important;
+    rect[fill^="hsl(214"] { // Offline
+        fill: $subtext0;
     }
     
+    // Flat colors
     if (pancake) {
         .container-1NXEtd,
         .panels-3wFtMD,
