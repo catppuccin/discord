@@ -149,6 +149,9 @@ disabledButtonBG(col)
     .theme-light,{
         --brand-experiment: $rosewater;
         --brand-experiment-560: hoverButtonBG($rosewater)
+        --brand-experiment-200: $text;
+        --brand-experiment-15a: lighten($rosewater, 50%);
+        --brand-experiment-600: selectedButtonBG($rosewater)
             
         if (usefont) {
             --font-primary: Inter,Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -167,13 +170,13 @@ disabledButtonBG(col)
         --text-warning: $yellow;
         --text-danger: $red;
         --text-brand: $blue;
-        --interactive-normal: $overlay1;
+        --interactive-normal: $overlay2;
         --interactive-hover: $overlay2;
         --interactive-active: $text;
-        --interactive-muted: $overlay0;
+        --interactive-muted: $surface1;
         --background-primary: $base;
         --background-secondary: $mantle;
-        --background-secondary-alt: $mantle;
+        --background-secondary-alt: $crust;
         --background-tertiary: $crust;
         --background-accent: $surface1;
         --background-floating: $mantle;
@@ -341,11 +344,38 @@ disabledButtonBG(col)
         }
     }
     
+    // Autocomplete
+    .autocomplete-3NRXG8 {
+        background: $base !important;
+    }
+    
+    .categoryHeader-OpJ1Ly {
+        background: $mantle;
+    }
+    
+    // Badges
+    rect[width="10"] { // Normal
+        fill: $green !important;
+    }
+    
+    rect[mask="url(#svg-mask-status-idle)"] { // Away
+        fill: $yellow !important;
+    }
+    
+    rect[mask="url(#svg-mask-status-dnd)"] { // Do not disturb
+        fill: $red !important;
+    }
+    
+    rect[mask="url(#svg-mask-status-offline)"] { // Offline
+        fill: $text !important;
+    }
+    
     if (pancake) {
         .container-1NXEtd,
         .panels-3wFtMD,
         .scroller-3X7KbA,
-        .container-2o3qEW {
+        .container-2o3qEW,
+        .scroller-WSmht3{
             background-color: $base;
         }
         
