@@ -1,9 +1,10 @@
 /* ==UserStyle==
-@name           Discord Catppuccin New
+@name           Discord Catppuccin
 @namespace      github.com/catppuccin/discord
 @version        1.0.0
-@description    Discord but a few cats
+@description    Soothing pastel theme for Discord
 @author         Catppuccin
+@updateURL      https://github.com/catppuccin/discord/raw/main/discord.user.css
 @preprocessor   stylus
 
 @var select theme "Theme" ["Latte", "Frappe", "Macchiato", "Mocha*"]
@@ -268,7 +269,7 @@ disabledButtonBG(col)
         --scrollbar-auto-scrollbar-color-thumb: $surface0;
         --scrollbar-auto-scrollbar-color-track: transparent;
         --input-background: $surface0;
-        //--input-placeholder-text: hsl(216,calc(var(--saturation-factor, 1)*2.1%),53.9%);
+        --input-placeholder-text: $overlay1;
         --elevation-stroke: 0 0 0 1px rgba(4,4,5,0.15);
         --elevation-low: 0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
         --elevation-medium: 0 4px 4px rgba(0,0,0,0.16);
@@ -314,10 +315,11 @@ disabledButtonBG(col)
     
      /* Buttons */
     .lookFilled-yCfaCM.colorBrand-I6CyqQ,
-    .lookFilled-yCfaCM.colorRed-rQXKgM,
+    .lookFilled-yCfaCM.colorRed-rQXKgM
+    .lookFilled-yCfaCM.colorGreen-3y-Z79,
     .selected-2Uns2B,
     .colorDefault-CDqZdO.focused-3qFvc8,
-    .barButtonBase-Sk2mdB {
+    .barButtonBase-Sk2mdB{
         color: $base;
     }
     
@@ -326,10 +328,10 @@ disabledButtonBG(col)
         color: $base
     }
     
-    .upsellButton-3ulc3W {
-        color: $base
+    .lookFilled-yCfaCM.colorPrimary-2AuQVo {
+        background-color: $surface0;
+        color: $text;
     }
-    
     
     /* Checkbox */
     .checked-25WXMf {
