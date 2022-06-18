@@ -215,10 +215,10 @@ disabledButtonBG(col)
         --button-danger-background-hover: hoverButtonBG($red);
         --button-danger-background-active: selectedButtonBG($red);
         --button-danger-background-disabled: disabledButtonBG($red);
-        /*--button-positive-background: hsl(139,calc(var(--saturation-factor, 1)*47.1%),33.3%);
-        --button-positive-background-hover: hsl(138,calc(var(--saturation-factor, 1)*46.8%),24.3%);
-        --button-positive-background-active: hsl(138,calc(var(--saturation-factor, 1)*46.9%),22.2%);
-        --button-positive-background-disabled: hsl(139,calc(var(--saturation-factor, 1)*47.1%),33.3%);*/
+        --button-positive-background: $green;
+        --button-positive-background-hover: hoverButtonBG($green);
+        --button-positive-background-active: selectedButtonBG($green);
+        --button-positive-background-disabled: disabledButtonBG($green);
         --button-secondary-background: $surface0;
         --button-secondary-background-hover: $surface1;
         --button-secondary-background-active: $surface2;
@@ -261,12 +261,12 @@ disabledButtonBG(col)
         --button-outline-primary-border-active: #686d73;
         --modal-background: $mantle;
         --modal-footer-background: $crust;
-        --scrollbar-thin-thumb: #202225;
+        --scrollbar-thin-thumb: $surface0;
         --scrollbar-thin-track: transparent;
-        --scrollbar-auto-thumb: #202225;
-        //--scrollbar-auto-track: hsl(210,calc(var(--saturation-factor, 1)*9.8%),20%);
-        --scrollbar-auto-scrollbar-color-thumb: #202225;
-        --scrollbar-auto-scrollbar-color-track: #2f3136;
+        --scrollbar-auto-thumb: $surface0;
+        --scrollbar-auto-track: transparent;
+        --scrollbar-auto-scrollbar-color-thumb: $surface0;
+        --scrollbar-auto-scrollbar-color-track: transparent;
         --input-background: $surface0;
         //--input-placeholder-text: hsl(216,calc(var(--saturation-factor, 1)*2.1%),53.9%);
         --elevation-stroke: 0 0 0 1px rgba(4,4,5,0.15);
@@ -326,6 +326,10 @@ disabledButtonBG(col)
         color: $base
     }
     
+    .upsellButton-3ulc3W {
+        color: $base
+    }
+    
     
     /* Checkbox */
     .checked-25WXMf {
@@ -368,7 +372,7 @@ disabledButtonBG(col)
         background: $mantle;
     }
     
-    // Badges
+    // Status badges
     rect[fill^="hsl(139"] { // Online
         fill: $green;
     }
@@ -383,6 +387,23 @@ disabledButtonBG(col)
     
     rect[fill^="hsl(214"] { // Offline
         fill: $subtext0;
+    }
+    
+    // Status badge selector
+    div[style^="background-color: hsl(139"] { // Online
+        background-color: $green !important;
+    }
+    
+    div[style^="background-color: hsl(38"] { // Away
+        background-color: $yellow !important;
+    }
+    
+    div[style^="background-color: hsl(359"] { // Do Not Disturb
+        background-color: $red !important;
+    }
+    
+    div[style^="background-color: hsl(214"] { // Offline
+        background-color: $subtext0 !important;
     }
     
     // Flat colors
