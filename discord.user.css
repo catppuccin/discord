@@ -1,9 +1,10 @@
 /* ==UserStyle==
-@name           Discord Catppuccin New
+@name           Discord Catppuccin
 @namespace      github.com/catppuccin/discord
 @version        1.0.0
-@description    Discord but a few cats
+@description    Soothing pastel theme for Discord
 @author         Catppuccin
+@updateURL      https://github.com/catppuccin/discord/raw/main/discord.user.css
 @preprocessor   stylus
 
 @var select theme "Theme" ["Latte", "Frappe", "Macchiato", "Mocha*"]
