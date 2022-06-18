@@ -1,10 +1,9 @@
 /* ==UserStyle==
-@name           Discord Catppuccin
+@name           Discord Catppuccin New
 @namespace      github.com/catppuccin/discord
 @version        1.0.0
-@description    Soothing pastel theme for Discord
+@description    Discord but a few cats
 @author         Catppuccin
-@updateURL      https://github.com/catppuccin/discord/raw/main/discord.user.css
 @preprocessor   stylus
 
 @var select theme "Theme" ["Latte", "Frappe", "Macchiato", "Mocha*"]
@@ -148,9 +147,10 @@ disabledButtonBG(col)
     
     .theme-dark,
     .theme-light,{
-        --brand-experiment: $rosewater;
+        --brand-experiment: $rosewater; // accent color
         --brand-experiment-560: $rosewater;
-        --brand-experiment-200: $text;
+        --brand-experiment-200: $base; // Mention text
+        --brand-experiment-30a: $rosewater; // Mention background
         --brand-experiment-15a: $surface2;
         --brand-experiment-600: selectedButtonBG($rosewater);
             
@@ -363,6 +363,13 @@ disabledButtonBG(col)
         .username-i5-wv- > span {
             color: $rosewater !important;
         }
+    }
+    
+    // Mention
+    .mention:hover {
+        background: hoverButtonBG($rosewater);
+        color: $base;
+        text-decoration: none !important;
     }
     
     // Autocomplete
