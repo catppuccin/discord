@@ -190,7 +190,7 @@ disabledButtonBG(col)
         --chat-input-container-background: #36393f;
         --background-modifier-hover: $surface1;
         --background-modifier-active: $surface2;
-        --background-modifier-selected: $surface2;
+        --background-modifier-selected: $surface0;
         --background-modifier-accent: rgba(79,84,92,0.48);
         //--info-positive-background: hsla(139,calc(var(--saturation-factor, 1)*47.3%),43.9%,0.1);
         //--info-positive-foreground: hsl(139,calc(var(--saturation-factor, 1)*47.3%),43.9%);
