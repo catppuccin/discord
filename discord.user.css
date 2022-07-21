@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Discord Catppuccin
 @namespace      github.com/catppuccin/discord
-@version        1.0.0
+@version        0.2.0
 @description    Soothing pastel theme for Discord
 @author         Catppuccin
 @updateURL      https://github.com/catppuccin/discord/raw/main/discord.user.css
@@ -9,9 +9,9 @@
 
 @var select theme "Theme" ["Latte", "Frappe", "Macchiato", "Mocha*"]
 @var checkbox classicLinks "Classic Link Color" 0
-@var checkbox pancake "Flat background" 0
-@var checkbox usefont "Use Inter font" 0
-@var checkbox forceColor "No username colors" 0
+@var checkbox flatAppearance "Flat background" 0
+@var checkbox useInter "Use Inter font" 0
+@var checkbox singleRoleColour "No username colors" 0
 ==/UserStyle== */
 
 // These are functions that are used by color buttons
@@ -27,7 +27,7 @@ disabledButtonBG(col)
 @-moz-document domain("discord.com") {
     if (theme=="Latte") {
         $type = light
-        
+
         $rosewater = #dc8a78
         $flamingo = #dd7878
         $pink = #ea76cb
@@ -57,7 +57,7 @@ disabledButtonBG(col)
     }
     else if (theme=="Frappe") {
         $type = dark
-        
+
         $rosewater = #f2d5cf
         $flamingo = #eebebe
         $pink = #f4b8e4
@@ -87,7 +87,7 @@ disabledButtonBG(col)
     }
     else if (theme=="Macchiato") {
         $type = dark
-        
+
         $rosewater = #f4dbd6
         $flamingo = #f0c6c6
         $pink = #f5bde6
@@ -117,7 +117,7 @@ disabledButtonBG(col)
     }
     else if (theme=="Mocha") {
         $type = dark
-    
+
         $rosewater = #f5e0dc
         $flamingo = #f2cdcd
         $pink = #f5c2e7
@@ -145,7 +145,7 @@ disabledButtonBG(col)
         $mantle = #181825
         $crust = #11111b
     }
-    
+
     .theme-dark,
     .theme-light,{
         --brand-experiment: $rosewater; // accent color
@@ -154,14 +154,14 @@ disabledButtonBG(col)
         --brand-experiment-30a: $rosewater; // Mention background
         --brand-experiment-15a: $surface2;
         --brand-experiment-600: selectedButtonBG($rosewater);
-            
-        if (usefont) {
+
+        if (useInter) {
             --font-primary: Inter,Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
             --font-display: Inter,"ABC Ginto Normal","Helvetica Neue",Helvetica,Arial,sans-serif;
             --font-headline: Inter,"ABC Ginto Nord","Helvetica Neue",Helvetica,Arial,sans-serif;
             --font-code: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
         }
-        
+
         --header-primary: $subtext0;
         --header-secondary: $subtext1;
         --text-normal: $text;
@@ -304,16 +304,16 @@ disabledButtonBG(col)
         --deprecated-text-input-border-disabled: #202225;
         --deprecated-text-input-prefix: #dcddde;
     }
-    
+
     /* Reactions */
     .reaction-3vwAF2 {
         background-color: $surface0;
     }
-    
+
     .reaction-3vwAF2:hover {
         background-color: $surface1;
     }
-    
+
      /* Buttons */
     .lookFilled-yCfaCM.colorBrand-I6CyqQ,
     .lookFilled-yCfaCM.colorRed-rQXKgM
@@ -323,101 +323,101 @@ disabledButtonBG(col)
     .barButtonBase-Sk2mdB{
         color: $base;
     }
-    
+
     .colorDanger-3n-KnP:active:not(.hideInteraction-2jPGL_) {
         background-color: $red;
         color: $base
     }
-    
+
     .lookFilled-yCfaCM.colorPrimary-2AuQVo {
         background-color: $surface0;
         color: $text;
     }
-    
+
     /* Checkbox */
     .checked-25WXMf {
         background-color: $green !important;
     }
-    
+
     /* Bot tag */
     .botTagRegular-kpctgU {
         color: $base;
     }
-    
+
     /* Message hover buttons */
     .wrapper-2vIMkT {
         background-color: $surface0;
     }
-    
+
     /* DMs page */
     .container-2cd8Mz {
         background-color: $base !important;
     }
-    
+
     /* Delete message pupup */
     .theme-dark .message-G6O-Wv {
         background-color: $crust
     }
-    
-    if (forceColor) {
+
+    if (singleRoleColour) {
         .username-h_Y3Us,
         .username-i5-wv- > span {
             color: $rosewater !important;
         }
     }
-    
+
     // Mention
     .mention:hover {
         background: hoverButtonBG($rosewater);
         color: $base;
         text-decoration: none !important;
     }
-    
+
     // Autocomplete
     .autocomplete-3NRXG8 {
         background: $base !important;
     }
-    
+
     .categoryHeader-OpJ1Ly {
         background: $mantle;
     }
-    
+
     // Status badges
     rect[fill^="hsl(139"] { // Online
         fill: $green;
     }
-    
+
     rect[fill^="hsl(38"] { // Away
         fill: $yellow;
     }
-    
+
     rect[fill^="hsl(359"] { // Do Not Disturb
         fill: $red;
     }
-    
+
     rect[fill^="hsl(214"] { // Offline
         fill: $subtext0;
     }
-    
+
     // Status badge selector
     div[style^="background-color: hsl(139"] { // Online
         background-color: $green !important;
     }
-    
+
     div[style^="background-color: hsl(38"] { // Away
         background-color: $yellow !important;
     }
-    
+
     div[style^="background-color: hsl(359"] { // Do Not Disturb
         background-color: $red !important;
     }
-    
+
     div[style^="background-color: hsl(214"] { // Offline
         background-color: $subtext0 !important;
     }
-    
+
     // Flat colors
-    if (pancake) {
+    if (flatAppearance) {
         .container-1NXEtd,
         .panels-3wFtMD,
         .scroller-3X7KbA,
@@ -425,11 +425,11 @@ disabledButtonBG(col)
         .scroller-WSmht3{
             background-color: $base;
         }
-        
+
         .members-3WRCEx > div {
             background-color: $base;
         }
-        
+
         .members-3WRCEx, .members-3WRCEx > div {
             background-color: $base
         }
