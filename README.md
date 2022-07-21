@@ -15,6 +15,8 @@
 
 ## Usage
 
+TODO update instructions using this webpage: https://nekowinston.github.io/ctp-discord-customizer/
+
 ### [BetterDiscord](https://betterdiscord.app)
 
 1. Download [Catppuccin.theme.css](https://raw.githubusercontent.com/catppuccin/discord/master/Catppuccin.theme.css).
