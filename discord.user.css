@@ -426,6 +426,15 @@ disabledButtonBG(col)
             background-color: $base;
         }
 
+        .container-3wLKDe,
+        .homeContainer-r4Hvv1  {
+            background: $mantle !important;
+        }
+
+        .title-31SJ6t {
+            background-color: $base !important;
+        }
+
         .members-3WRCEx > div {
             background-color: $base;
         }
