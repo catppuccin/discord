@@ -431,7 +431,9 @@ disabledButtonBG(col)
             background: $mantle !important;
         }
 
-        .title-31SJ6t {
+        .title-31SJ6t,
+        .authBox-1HR6Ha,
+        .scroller-3j5xK2 {
             background-color: $base !important;
         }
 
