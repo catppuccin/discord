@@ -95,6 +95,7 @@
 	--scrollbar-auto-scrollbar-color-track: var(--black3) !important;
 	--deprecated-store-bg: var(--black0) !important;
 	--input-background: var(--black3) !important;
+	--modal-background: var(--black2) !important;
 }
 
 /* Mentions */
