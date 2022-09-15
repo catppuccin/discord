@@ -1,0 +1,40 @@
+{
+    "manifest": {
+        "author": "GNU\/Isabelinc#9113",
+        "name": "Catppuccin Macchiato",
+        "version": "1.2.0",
+        "license": "GPL v3.0",
+        "updater": "https:\/\/raw.githubusercontent.com\/catppuccin\/Aliucord\/main\/src\/macchiato.json"
+    },
+    "background": {},
+    "fonts": {},
+    "simple_colors": {
+        "background": -14407878,
+        "background_secondary": -14802896,
+        "statusbar": -14407878,
+        "input_background": -14407878,
+        "accent": -3759882,
+        "mention_highlight": 1296649572,
+        "active_channel": -3759882,
+        "blocked_bg": -15197914
+    },
+    "colors": {
+        "link": -3759882,
+        "primary_dark_630": -14407878,
+        "primary_dark_800": -15197914,
+        "primary_700": -15197914,
+        "status_grey_200": -1210474,
+        "primary_dark_660": -14802896,
+        "primary_dark_700": -15197914,
+        "dim_foreground_material_light": -14802896,
+        "primary_630": -14407878,
+        "primary_660": -14802896,
+        "primary_700_alpha_60": -1726473946,
+        "uikit_btn_bg_color_selector_green": -5842283,
+        "uikit_settings_item_text_color_light": -9867898
+    },
+    "drawable_tints": {
+        "drawable_button_red": -10788744
+    },
+    "raws": {}
+}
