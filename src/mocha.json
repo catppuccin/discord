@@ -1,0 +1,40 @@
+{
+    "manifest": {
+        "author": "GNU\/Isabelinc#9113",
+        "name": "Catppuccin Mocha",
+        "version": "1.2.0",
+        "license": "GPL v3.0",
+        "updater": "https:\/\/raw.githubusercontent.com\/catppuccin\/Aliucord\/main\/src\/mocha.json"
+    },
+    "background": {},
+    "fonts": {},
+    "simple_colors": {
+        "background": -14803410,
+        "background_secondary": -15198171,
+        "statusbar": -14803410,
+        "input_background": -14803410,
+        "accent": -3430665,
+        "mention_highlight": 1296254554,
+        "active_channel": -3430665,
+        "blocked_bg": -15658725
+    },
+    "colors": {
+        "link": -3430665,
+        "primary_dark_630": -14803410,
+        "primary_dark_800": -15658725,
+        "primary_700": -15658725,
+        "status_grey_200": -816216,
+        "primary_dark_660": -15198171,
+        "primary_dark_700": -15658725,
+        "dim_foreground_material_light": -15198171,
+        "primary_630": -14803410,
+        "primary_660": -15198171,
+        "primary_700_alpha_60": -1726934757,
+        "uikit_btn_bg_color_selector_green": -3430665,
+        "uikit_settings_item_text_color_light": -9867898
+    },
+    "drawable_tints": {
+        "drawable_button_red": -11118224
+    },
+    "raws": {}
+}

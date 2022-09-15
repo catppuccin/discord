@@ -12,23 +12,25 @@
 </p>
 
 <p align="center">
-  <img src="https://github.com/catppuccin/Aliucord/blob/main/discord-mobile-prev.png"/>
+  <img src="https://raw.githubusercontent.com/catppuccin/Aliucord/main/assets/preview.png"/>
 </p>
 
 ## Usage
 
 ### Method 1 (Downloading the file directly)
 1. Clone this repository locally
-2. Copy the `Catppuccin.json` to Aliucord/themes
+2. Copy the `flavour.json` to Aliucord/themes
 3. Open Aliucord settings
 4. Open Themer plugin settings
-4. Enable the theme!
+5. Enable the theme!
 
 ### Method 2(Via the App itself)
-1. Join Aliucord Server and go to #themes
-2. Search for Catppuccin port by GNU/Mirage#3455(or click on this [link](https://discord.com/channels/811255666990907402/824357609778708580/950417159585165389))
+1. Join the [Aliucord Server](https://discord.com/invite/EsNDvBaHVU)
+2. Click one of these links for your desired flavour! ([Latte](https://discord.com/channels/811255666990907402/824357609778708580/950417159585165389)) ([Frappe](https://discord.com/channels/811255666990907402/824357609778708580/950417159585165389)) ([Macchiato](https://discord.com/channels/811255666990907402/824357609778708580/950417159585165389)) ([Mocha](https://discord.com/channels/811255666990907402/824357609778708580/950417159585165389))
 4. Long press the message and press on install the theme
-5. Go to theme settings and enable the theme.
+5. Open Aliucord settings
+6. Open Themer plugin settings
+7. Enable the theme!
 
 ## 🙋 FAQ 
 
@@ -39,6 +41,7 @@
 
 - [Skinatro](https://github.com/skinatro)
 - [lemon](https://github.com/andreasgrafen)
+- [Isabelinc](https://github.com/Isabelincorp)
 - [WitherCubes](https://github.com/WitherCubes) <br>
 and everyone else who made the discord pc port
 

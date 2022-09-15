@@ -1,0 +1,40 @@
+{
+    "manifest": {
+        "author": "GNU\/Isabelinc#9113",
+        "name": "Catppuccin Latte ",
+        "version": "1.2.0",
+        "license": "GPL v3.0",
+        "updater": "https:\/\/raw.githubusercontent.com\/catppuccin\/Aliucord\/main\/src\/latte.json"
+    },
+    "background": {},
+    "fonts": {},
+    "simple_colors": {
+        "background": -1052171,
+        "background_secondary": -1644049,
+        "statusbar": -1052171,
+        "input_background": -1052171,
+        "accent": -7849489,
+        "mention_highlight": 1304215756,
+        "active_channel": -7849489,
+        "blocked_bg": -2301720
+    },
+    "colors": {
+        "link": -7849489,
+        "primary_dark_630": -1052171,
+        "primary_dark_800": -2301720,
+        "primary_700": -2301720,
+        "status_grey_200": -1713577752,
+        "primary_dark_660": -1644049,
+        "primary_dark_700": -2301720,
+        "dim_foreground_material_light": -1644049,
+        "primary_630": -1052171,
+        "primary_660": -1644049,
+        "primary_700_alpha_60": -1713577752,
+        "uikit_btn_bg_color_selector_green": -7849489,
+        "uikit_settings_item_text_color_light": -6512464
+    },
+    "drawable_tints": {
+        "drawable_button_red": -5459778
+    },
+    "raws": {}
+}

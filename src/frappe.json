@@ -1,0 +1,40 @@
+{
+    "manifest": {
+        "author": "GNU\/Isabelinc#9113",
+        "name": "Catppuccin Frappe",
+        "version": "1.2.0",
+        "license": "GPL v3.0",
+        "updater": "https:\/\/raw.githubusercontent.com\/catppuccin\/Aliucord\/main\/src\/frappe.json"
+    },
+    "background": {},
+    "fonts": {},
+    "simple_colors": {
+        "background": -13618106,
+        "background_secondary": -14078916,
+        "statusbar": -13618106,
+        "input_background": -13618106,
+        "accent": -3498266,
+        "mention_highlight": 1297176429,
+        "active_channel": -3498266,
+        "blocked_bg": -14473676
+    },
+    "colors": {
+        "link": -3498266,
+        "primary_dark_630": -13618106,
+        "primary_dark_800": -14473676,
+        "primary_700": -14473676,
+        "status_grey_200": -1604988,
+        "primary_dark_660": -14078916,
+        "primary_dark_700": -14473676,
+        "dim_foreground_material_light": -14078916,
+        "primary_630": -13618106,
+        "primary_660": -14078916,
+        "primary_700_alpha_60": -1725749708,
+        "uikit_btn_bg_color_selector_green": -3498266,
+        "uikit_settings_item_text_color_light": -9209452
+    },
+    "drawable_tints": {
+        "drawable_button_red": -10327936
+    },
+    "raws": {}
+}
