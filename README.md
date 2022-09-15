@@ -26,8 +26,8 @@
 
 ### Method 2(Via the App itself)
 1. Join the [Aliucord Server](https://discord.com/invite/EsNDvBaHVU)
-2. Click one of these links for your desired flavour! ([Latte](https://discord.com/channels/811255666990907402/824357609778708580/950417159585165389)) ([Frappe](https://discord.com/channels/811255666990907402/824357609778708580/950417159585165389)) ([Macchiato](https://discord.com/channels/811255666990907402/824357609778708580/950417159585165389)) ([Mocha](https://discord.com/channels/811255666990907402/824357609778708580/950417159585165389))
-4. Long press the message and press on install the theme
+2. Click on this [link](https://discord.com/channels/811255666990907402/824357609778708580/950417159585165389)
+4. Long press the message and press on install then tap on your desired flavour!
 5. Open Aliucord settings
 6. Open Themer plugin settings
 7. Enable the theme!
