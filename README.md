@@ -26,7 +26,7 @@
 
 ### Method 2(Via the App itself)
 1. Join the [Aliucord Server](https://discord.com/invite/EsNDvBaHVU)
-2. Click on this [link](https://discord.com/channels/811255666990907402/824357609778708580/950417159585165389)
+2. Click on this [link](https://discord.com/channels/811255666990907402/824357609778708580/1020200793338548304)
 4. Long press the message and press on install then tap on your desired flavour!
 5. Open Aliucord settings
 6. Open Themer plugin settings
