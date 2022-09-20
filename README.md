@@ -41,6 +41,14 @@ git clone https://github.com/catppuccin/discord.git
 
 2. Use the documentation and find out how to inject the css file and use the theme.
 
+### [GooseMod](https://goosemod.com)
+
+1. Simply add the following line to your custom CSS:
+
+```css
+@import url(https://catppuccin.github.io/discord/main.css);
+```
+
 ### [Stylus](https://github.com/openstyles/stylus)
 
 1. Create a new style which applies to URLs on the domain `discord.com`.
