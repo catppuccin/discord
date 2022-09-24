@@ -55,6 +55,12 @@ git clone https://github.com/catppuccin/discord.git
 2. Copy the contents of `main.css` into the new style.
 3. Save the theme.
 
+### [Cumcord](https://cumcord.com/)
+
+1. Add Cumstain plugin by entering this URL: `https://cumcordplugins.github.io/Condom/yellowsink.github.io/cc-plugins/cumstain`
+2. In Cumstain settings, add `https://catppuccin.github.io/discord/Catppuccin.theme.css`
+3. You are all set!
+
 ## 🙋 FAQ
 
 -   Q: **_"Can this get my account banned?"_**
