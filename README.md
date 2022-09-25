@@ -85,13 +85,14 @@ curl -L https://github.com/catppuccin/discord/blob/main/dist/catppuccin-mocha.th
 
 ## 💝 Thanks to
 
--   [DonutDev](https://github.com/DonutDev)
--   [Hanno van Baarle](https://github.com/HannoVB1)
--   [Andreas Grafen](https://github.com/andreasgrafen)
--   [Sanjay Pavan](https://github.com/WitherCubes)
--   [Tuhana GAYRETLİ](https://github.com/tuhanayim)
--   [GlowingUmbreon](https://github.com/glowingumbreon)
--   [winston](https://github.com/nekowinston)
+- [DonutDev](https://github.com/DonutDev)
+- [Hanno van Baarle](https://github.com/HannoVB1)
+- [Andreas Grafen](https://github.com/andreasgrafen)
+- [Sanjay Pavan](https://github.com/WitherCubes)
+- [Tuhana GAYRETLİ](https://github.com/tuhanayim)
+- [GlowingUmbreon](https://github.com/glowingumbreon)
+- [winston](https://github.com/nekowinston)
+- [Isabelinc](https://github.com/Isabelincorp)
 
 &nbsp;
 
