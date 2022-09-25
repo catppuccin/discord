@@ -158,7 +158,7 @@ rect[mask="url(#svg-mask-status-offline)"] {
   fill: #585b70 !important;
 }
 
-div[class^=gameNameLastPlayed-] * {
+div[class*=activeGame-] * {
   color: #1e1e2e !important;
 }
 
