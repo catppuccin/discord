@@ -180,6 +180,9 @@ div[class*=autocomplete-] div[class^=usageWrapper-] > div[class*=title-] {
 div[class^=keybindShortcut] > span {
   color: #292c3c !important;
 }
+div[class^=keybindShortcut] svg * {
+  fill: #292c3c !important;
+}
 
 div[class^=control] > div[class*=checked] {
   background-color: #a6d189 !important;

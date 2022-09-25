@@ -194,8 +194,13 @@ div[class*="autocomplete-"] {
 }
 
 // keybinds in preferences
-div[class^="keybindShortcut"] > span {
-	color: #{$mantle} !important;
+div[class^="keybindShortcut"] {
+	> span {
+		color: #{$mantle} !important;
+	}
+	svg * {
+		fill: #{$mantle} !important;
+	}
 }
 
 // toggles in preferencs
