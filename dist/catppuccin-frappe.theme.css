@@ -33,6 +33,7 @@ div[class^=layerContainer] {
   --input-background: #232634;
   --button-positive-background: #a6d189;
   --button-positive-background-hover: #8ac364;
+  --button-secondary-background: #8caaee;
   --rs-online-color: #a6d189;
   --rs-idle-color: #ef9f76;
   --rs-dnd-color: #e78284;

@@ -33,6 +33,7 @@ div[class^="layerContainer"] {
 
 	--button-positive-background: #{$green};
 	--button-positive-background-hover: #{darken($green, 10%)};
+	--button-secondary-background: #{$brand};
 
 	--rs-online-color: #{$green};
 	--rs-idle-color: #{$peach};
