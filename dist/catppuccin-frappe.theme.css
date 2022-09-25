@@ -296,6 +296,62 @@ div[class^=upperBadge] > div[class^=iconBadge] path {
   color: #303446 !important;
 }
 
+main[class^=chatContent] #---new-messages-bar {
+  border-color: #e78284;
+}
+main[class^=chatContent] #---new-messages-bar span {
+  background-color: #e78284;
+  color: #232634;
+  border-color: #e78284;
+}
+main[class^=chatContent] #---new-messages-bar svg * {
+  fill: #e78284;
+  stroke: #e78284;
+}
+
+span[class^=spoilerText][aria-expanded=false] {
+  background-color: #626880 !important;
+}
+span[class^=spoilerText][aria-expanded=true] {
+  background-color: #414559 !important;
+}
+
+ul[aria-label$=" threads"] > li:nth-child(1n) {
+  --channels-default: #d0b9d3;
+  --interactive-hover: #efadae;
+  --interactive-active: #efadae;
+}
+
+ul[aria-label$=" threads"] > li:nth-child(2n) {
+  --channels-default: #d2c1cf;
+  --interactive-hover: #f4bfa4;
+  --interactive-active: #f4bfa4;
+}
+
+ul[aria-label$=" threads"] > li:nth-child(3n) {
+  --channels-default: #cfced7;
+  --interactive-hover: #efdcb9;
+  --interactive-active: #efdcb9;
+}
+
+ul[aria-label$=" threads"] > li:nth-child(4n) {
+  --channels-default: #bcd0d5;
+  --interactive-hover: #c2dfae;
+  --interactive-active: #c2dfae;
+}
+
+ul[aria-label$=" threads"] > li:nth-child(5n) {
+  --channels-default: #b5c5f3;
+  --interactive-hover: #add5e7;
+  --interactive-active: #add5e7;
+}
+
+ul[aria-label$=" threads"] > li:nth-child(6n) {
+  --channels-default: #c7c1f1;
+  --interactive-hover: #e0c7f0;
+  --interactive-active: #e0c7f0;
+}
+
 div[class*=unread-],
 div[class^=jumpToPresentBar-] > button,
 div[class^=newMessagesBar-] > button {
@@ -546,60 +602,4 @@ a[href="/channels/907385605422448742/923620165218869288"] div[class^=iconContain
   color: #e78284;
   background-color: currentColor;
   transform: scale(0.4) translate(-32px, -38px);
-}
-
-main[class^=chatContent] #---new-messages-bar {
-  border-color: #e78284;
-}
-main[class^=chatContent] #---new-messages-bar span {
-  background-color: #e78284;
-  color: #232634;
-  border-color: #e78284;
-}
-main[class^=chatContent] #---new-messages-bar svg * {
-  fill: #e78284;
-  stroke: #e78284;
-}
-
-span[class^=spoilerText][aria-expanded=false] {
-  background-color: #626880 !important;
-}
-span[class^=spoilerText][aria-expanded=true] {
-  background-color: #414559 !important;
-}
-
-ul[aria-label$=" threads"] > li:nth-child(1n) {
-  --channels-default: #d0b9d3;
-  --interactive-hover: #efadae;
-  --interactive-active: #efadae;
-}
-
-ul[aria-label$=" threads"] > li:nth-child(2n) {
-  --channels-default: #d2c1cf;
-  --interactive-hover: #f4bfa4;
-  --interactive-active: #f4bfa4;
-}
-
-ul[aria-label$=" threads"] > li:nth-child(3n) {
-  --channels-default: #cfced7;
-  --interactive-hover: #efdcb9;
-  --interactive-active: #efdcb9;
-}
-
-ul[aria-label$=" threads"] > li:nth-child(4n) {
-  --channels-default: #bcd0d5;
-  --interactive-hover: #c2dfae;
-  --interactive-active: #c2dfae;
-}
-
-ul[aria-label$=" threads"] > li:nth-child(5n) {
-  --channels-default: #b5c5f3;
-  --interactive-hover: #add5e7;
-  --interactive-active: #add5e7;
-}
-
-ul[aria-label$=" threads"] > li:nth-child(6n) {
-  --channels-default: #c7c1f1;
-  --interactive-hover: #e0c7f0;
-  --interactive-active: #e0c7f0;
 }
