@@ -199,6 +199,10 @@ button[class*=lookFilled]:not([disabled]) {
   color: #11111b !important;
 }
 
+button[class*=lookFilled]:disabled {
+  color: #cdd6f4 !important;
+}
+
 div[class^=chat] button[class*=lookFilled] {
   color: #cdd6f4 !important;
   background-color: #11111b !important;

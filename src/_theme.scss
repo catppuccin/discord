@@ -218,6 +218,10 @@ section[aria-label="User area"] {
 button[class*="lookFilled"]:not([disabled]) {
 	color: #{$crust} !important;
 }
+// buttons are crust
+button[class*="lookFilled"]:disabled {
+	color: #{$text} !important;
+}
 
 // -- and have $text foreground when inside the chat window (bots)
 div[class^="chat"] {
