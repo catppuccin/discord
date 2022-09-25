@@ -393,6 +393,13 @@ span[class^="spoilerText"] {
 	}
 }
 
+// user roles
+div[class*="rolesList"] {
+	div[class^="role"] {
+		background-color: $crust !important;
+	}
+}
+
 // rainbow threads
 ul[aria-label$=" threads"] > li:nth-child(1n) {
 	--channels-default: #{mix($red, $text, 30%)};

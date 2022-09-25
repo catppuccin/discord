@@ -35,6 +35,7 @@ div[class^=layerContainer] {
   --button-positive-background: #40a02b;
   --button-positive-background-hover: #307820;
   --button-secondary-background: #1e66f5;
+  --button-secondary-background-disabled: #dce0e8;
   --rs-online-color: #40a02b;
   --rs-idle-color: #fe640b;
   --rs-dnd-color: #d20f39;
@@ -149,8 +150,19 @@ rect[mask="url(#svg-mask-status-offline)"] {
   fill: #acb0be !important;
 }
 
-div[class^=pageWrapper] {
+div[class^=pageWrapper-] {
   background: #eff1f5 !important;
+}
+
+div[class^=homeContainer-] {
+  background: #eff1f5 !important;
+}
+div[class^=homeContainer-] > div[class^=homeContent-] div[class*=card-] {
+  background: #ccd0da !important;
+}
+
+section[class^=title-] {
+  background: #e6e9ef !important;
 }
 
 div[class^=chat] > div[class^=content-] > div[class^=container-] {
@@ -167,7 +179,7 @@ section[aria-label="User area"] div[class*=buttonContents] {
   background-color: #dc8a78 !important;
 }
 
-button[class*=lookFilled] {
+button[class*=lookFilled]:not([disabled]) {
   color: #dce0e8 !important;
 }
 
@@ -314,6 +326,10 @@ span[class^=spoilerText][aria-expanded=false] {
 }
 span[class^=spoilerText][aria-expanded=true] {
   background-color: #ccd0da !important;
+}
+
+div[class*=rolesList] div[class^=role] {
+  background-color: #dce0e8 !important;
 }
 
 ul[aria-label$=" threads"] > li:nth-child(1n) {

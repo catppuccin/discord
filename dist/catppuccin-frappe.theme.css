@@ -35,6 +35,7 @@ div[class^=layerContainer] {
   --button-positive-background: #a6d189;
   --button-positive-background-hover: #8ac364;
   --button-secondary-background: #8caaee;
+  --button-secondary-background-disabled: #232634;
   --rs-online-color: #a6d189;
   --rs-idle-color: #ef9f76;
   --rs-dnd-color: #e78284;
@@ -149,8 +150,19 @@ rect[mask="url(#svg-mask-status-offline)"] {
   fill: #626880 !important;
 }
 
-div[class^=pageWrapper] {
+div[class^=pageWrapper-] {
   background: #303446 !important;
+}
+
+div[class^=homeContainer-] {
+  background: #303446 !important;
+}
+div[class^=homeContainer-] > div[class^=homeContent-] div[class*=card-] {
+  background: #414559 !important;
+}
+
+section[class^=title-] {
+  background: #292c3c !important;
 }
 
 div[class^=chat] > div[class^=content-] > div[class^=container-] {
@@ -167,7 +179,7 @@ section[aria-label="User area"] div[class*=buttonContents] {
   background-color: #f2d5cf !important;
 }
 
-button[class*=lookFilled] {
+button[class*=lookFilled]:not([disabled]) {
   color: #232634 !important;
 }
 
@@ -314,6 +326,10 @@ span[class^=spoilerText][aria-expanded=false] {
 }
 span[class^=spoilerText][aria-expanded=true] {
   background-color: #414559 !important;
+}
+
+div[class*=rolesList] div[class^=role] {
+  background-color: #232634 !important;
 }
 
 ul[aria-label$=" threads"] > li:nth-child(1n) {
