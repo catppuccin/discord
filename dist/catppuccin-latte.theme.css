@@ -30,6 +30,7 @@ div[class^=layerContainer] {
   --interactive-active: #4c4f69;
   --channels-default: #6c6f85;
   --channeltextarea-background: #e6e9ef;
+  --input-background: #dce0e8;
   --button-positive-background: #40a02b;
   --button-positive-background-hover: #307820;
   --rs-online-color: #40a02b;
