@@ -162,6 +162,10 @@ div[class^=chat] button[class*=lookFilled] {
   background-color: #dce0e8 !important;
 }
 
+div[class^=root] > div[class^=perksModal] {
+  background-color: #eff1f5 !important;
+}
+
 div[class*=autocomplete-] {
   background-color: #e6e9ef !important;
 }

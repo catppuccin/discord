@@ -177,6 +177,12 @@ div[class^="chat"] {
 	}
 }
 
+// boost background
+div[class^="root"] > div[class^="perksModal"] {
+	background-color: $base !important;
+}
+
+// autocomplete chat textboxes
 div[class*="autocomplete-"] {
 	background-color: #{$mantle} !important;
 
