@@ -142,6 +142,17 @@ div[class^="layerContainer"] {
 	--scrollbar-auto-scrollbar-color-thumb: #{$mantle};
 
 	--status-warning-text: hotpink;
+
+    --deprecated-card-bg: #{$mantle};
+    --deprecated-card-editable-bg: #{$mantle};
+    --deprecated-store-bg: #{$mantle};
+    --deprecated-quickswitcher-input-background: #{$mantle};
+    --deprecated-quickswitcher-input-placeholder: #{$subtext0};
+    --deprecated-text-input-bg: #{$mantle};
+    --deprecated-text-input-border: #{$crust};
+    --deprecated-text-input-border-hover: #{$mantle};
+    --deprecated-text-input-border-disabled: #{$crust};
+    --deprecated-text-input-prefix: #{$subtext0};
 }
 
 // online state
