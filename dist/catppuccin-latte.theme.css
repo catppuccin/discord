@@ -311,6 +311,13 @@ div[class^=upperBadge] div[class*=participating-] {
   background: #40a02b !important;
 }
 
+div[class*=flowerStarContainer-] svg[class*=flowerStar-] * {
+  fill: #40a02b !important;
+}
+div[class*=flowerStarContainer-] div[class^=childContainer-] svg * {
+  fill: #eff1f5 !important;
+}
+
 main[class^=chatContent] #---new-messages-bar {
   border-color: #d20f39;
 }

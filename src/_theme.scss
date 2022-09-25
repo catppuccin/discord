@@ -363,12 +363,23 @@ div[class^="uploadModal"] {
 	}
 }
 
+// server list icons
 div[class^="upperBadge"] {
 	> div[class^="iconBadge"] path{
 		color: $base !important;
 	}
 	div[class*="participating-"] {
 		background: $green !important;
+	}
+}
+
+// verified badges
+div[class*="flowerStarContainer-"] {
+	svg[class*="flowerStar-"] * {
+		fill: $green !important;
+	}
+	div[class^="childContainer-"] svg * {
+		fill: $base !important;
 	}
 }
 
