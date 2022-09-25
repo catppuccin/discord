@@ -50,7 +50,13 @@ div[class^=layerContainer] {
   --status-danger: #ed8796;
   --status-warning: #f5a97f;
   --info-warning-background: #f5a97f;
-  --info-warning-foreground: #cad3f5;
+  --info-warning-foreground: #24273a;
+  --info-warning-text: #24273a;
+  --info-positive-text: #a6da95;
+  --info-danger-text: #ed8796;
+  --info-help-text: #7dc4e4;
+  --info-help-background: #1e2030;
+  --info-help-foreground: #181926;
   --status-warning-background: #f5a97f;
   --status-positive-background: #a6da95;
   --status-positive-text: #cad3f5;
@@ -65,21 +71,6 @@ div[class^=layerContainer] {
   --text-warning: #f5a97f;
   --text-danger: #ed8796;
   --text-brand: #8aadf4;
-  --info-positive-text: #fff;
-  --info-warning-text: #fff;
-  --info-danger-text: #fff;
-  --info-help-text: #fff;
-  --info-help-background: hsla(
-  	212,
-  	calc(var(--saturation-factor, 1) * 100%),
-  	43.9%,
-  	0.1
-  );
-  --info-help-foreground: hsl(
-  	212,
-  	calc(var(--saturation-factor, 1) * 100%),
-  	43.9%
-  );
   --brand-experiment: #8aadf4;
   --brand-experiment-100: white;
   --brand-experiment-130: white;

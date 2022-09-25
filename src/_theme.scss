@@ -53,9 +53,15 @@ div[class^="layerContainer"] {
 	--status-warning: #{$peach};
 
 	--info-warning-background: #{$peach};
-	--info-warning-foreground: #{$text};
-	--status-warning-background: #{$peach};
+	--info-warning-foreground: #{$base};
+	--info-warning-text: #{$base};
+	--info-positive-text: #{$green};
+	--info-danger-text: #{$red};
+	--info-help-text: #{$sapphire};
+	--info-help-background: #{$mantle};
+	--info-help-foreground: #{$crust};
 
+	--status-warning-background: #{$peach};
 	--status-positive-background: #{$green};
 	--status-positive-text: #{$text};
 	--status-positive: #{$green};
@@ -70,23 +76,6 @@ div[class^="layerContainer"] {
 	--text-warning: #{$peach};
 	--text-danger: #{$red};
 	--text-brand: #{$brand};
-
-	// not sure about these, might be TODO
-	--info-positive-text: #fff;
-	--info-warning-text: #fff;
-	--info-danger-text: #fff;
-	--info-help-text: #fff;
-	--info-help-background: hsla(
-		212,
-		calc(var(--saturation-factor, 1) * 100%),
-		43.9%,
-		0.1
-	);
-	--info-help-foreground: hsl(
-		212,
-		calc(var(--saturation-factor, 1) * 100%),
-		43.9%
-	);
 
 	// weighted brand colors
 	--brand-experiment: #{$brand};

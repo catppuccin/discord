@@ -50,7 +50,13 @@ div[class^=layerContainer] {
   --status-danger: #d20f39;
   --status-warning: #fe640b;
   --info-warning-background: #fe640b;
-  --info-warning-foreground: #4c4f69;
+  --info-warning-foreground: #eff1f5;
+  --info-warning-text: #eff1f5;
+  --info-positive-text: #40a02b;
+  --info-danger-text: #d20f39;
+  --info-help-text: #209fb5;
+  --info-help-background: #e6e9ef;
+  --info-help-foreground: #dce0e8;
   --status-warning-background: #fe640b;
   --status-positive-background: #40a02b;
   --status-positive-text: #4c4f69;
@@ -65,21 +71,6 @@ div[class^=layerContainer] {
   --text-warning: #fe640b;
   --text-danger: #d20f39;
   --text-brand: #1e66f5;
-  --info-positive-text: #fff;
-  --info-warning-text: #fff;
-  --info-danger-text: #fff;
-  --info-help-text: #fff;
-  --info-help-background: hsla(
-  	212,
-  	calc(var(--saturation-factor, 1) * 100%),
-  	43.9%,
-  	0.1
-  );
-  --info-help-foreground: hsl(
-  	212,
-  	calc(var(--saturation-factor, 1) * 100%),
-  	43.9%
-  );
   --brand-experiment: #1e66f5;
   --brand-experiment-100: #fafbff;
   --brand-experiment-130: #eef3fe;
