@@ -391,6 +391,10 @@ div[class^="upperBadge"] {
 	}
 }
 
+div[class^="uploadIcon"] > div > svg > circle {
+	fill: $brand !important;
+}
+
 // verified badges
 div[class*="flowerStarContainer-"] {
 	svg[class*="flowerStar-"] * {

@@ -126,7 +126,7 @@ div[class^=layerContainer] {
   --brand-experiment-90a: rgba(138, 173, 244, 0.9);
   --brand-experiment-95a: rgba(138, 173, 244, 0.95);
   --scrollbar-thin-thumb: #8aadf4;
-  --scrollbar-thin-track: #181926;
+  --scrollbar-thin-track: #1e2030;
   --scrollbar-auto-thumb: #8aadf4;
   --scrollbar-auto-track: #1e2030;
   --scrollbar-auto-scrollbar-color-track: #8aadf4;
@@ -163,6 +163,22 @@ div[class^=homeContainer-] > div[class^=homeContent-] div[class*=card-] {
 
 section[class^=title-] {
   background: #1e2030 !important;
+}
+
+div[class^=notice-][class*=colorWarning-] {
+  background: #f5a97f !important;
+}
+
+div[class^=notice-] {
+  background: #8aadf4 !important;
+}
+div[class^=notice-] * {
+  color: #181926 !important;
+  border-color: #181926 !important;
+}
+
+div[class*=videoGrid-], div[class^=callContainer-] > div[class^=root-] {
+  background: #181926 !important;
 }
 
 div[class^=chat] > div[class^=content-] > div[class^=container-] {
@@ -309,6 +325,10 @@ div[class^=upperBadge] > div[class^=iconBadge] path {
 }
 div[class^=upperBadge] div[class*=participating-] {
   background: #a6da95 !important;
+}
+
+div[class^=uploadIcon] > div > svg > circle {
+  fill: #8aadf4 !important;
 }
 
 div[class*=flowerStarContainer-] svg[class*=flowerStar-] * {
