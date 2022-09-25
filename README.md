@@ -11,43 +11,64 @@
     <a href="https://github.com/catppuccin/discord/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/discord?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
-![Discord Theme Preview](assets/preview.jpg)
+![Discord Theme Preview](assets/preview.webp)
+
+## Previews
+
+<details>
+<summary>🌻 Latte</summary>
+<img src="assets/latte.webp"/>
+</details>
+<details>
+<summary>🪴 Frappé</summary>
+<img src="assets/frappe.webp"/>
+</details>
+<details>
+<summary>🌺 Macchiato</summary>
+<img src="assets/macchiato.webp"/>
+</details>
+<details>
+<summary>🌿 Mocha</summary>
+<img src="assets/mocha.webp"/>
+</details>
 
 ## Usage
 
-TODO update instructions using this webpage: https://nekowinston.github.io/ctp-discord-customizer/
+### [BetterDiscord](https://betterdiscord.app) / [GooseMod](https://goosemod.com/)
 
-### [BetterDiscord](https://betterdiscord.app)
+1. Download your preferred flavour:
 
-1. Download [Catppuccin.theme.css](https://raw.githubusercontent.com/catppuccin/discord/master/Catppuccin.theme.css).
-2. Copy the downloaded file to your BetterDiscord themes folder.
-3. Enable the theme in BetterDiscord settings.
+- 🌻 [Latte](./themes/latte.theme.css)
+- 🪴 [Frappe](./themes/frappe.theme.css)
+- 🌺 [Macchiato](./themes/macchiato.theme.css)
+- 🌿 [Mocha](./themes/mocha.theme.css)
 
-### [Powercord](https://powercord.dev)
+2. BetterDiscord: 
+	1. Copy the downloaded file to your BetterDiscord themes folder.
+	2. Enable the theme in BetterDiscord settings.
+3. GooseMod / Clients with custom CSS support:
+	1. Copy the CSS into your clipboard
+	2. Open Discord > Settings > Custom CSS and paste it in there.
 
-1. Go to your themes folder and clone the repo using:
+### [DiscoCSS](https://github.com/mlvzk/discocss)
 
+1. Follow the instructions from [DiscoCSS](https://github.com/mlvzk/discocss#installation) to install DiscoCSS.
+2. Use your preferred flavour as your DiscoCSS `custom.css`
+```bash
+# latte
+curl -L https://github.com/catppuccin/discord/blob/main/dist/catppuccin-latte.theme.css > ~/.config/discocss/custom.css
+# frappe
+curl -L https://github.com/catppuccin/discord/blob/main/dist/catppuccin-frappe.theme.css > ~/.config/discocss/custom.css
+# macchiato
+curl -L https://github.com/catppuccin/discord/blob/main/dist/catppuccin-macchiato.theme.css > ~/.config/discocss/custom.css
+# mocha
+curl -L https://github.com/catppuccin/discord/blob/main/dist/catppuccin-mocha.theme.css > ~/.config/discocss/custom.css
 ```
-git clone https://github.com/catppuccin/discord.git
-```
-
-2. Enable the theme in Powercord settings.
-
-### [Discocss](https://github.com/mlvzk/discocss)
-
-1. Clone the repo using:
-
-```
-git clone https://github.com/catppuccin/discord.git
-```
-
-2. Use the documentation and find out how to inject the css file and use the theme.
 
 ### [Stylus](https://github.com/openstyles/stylus)
 
-1. Create a new style which applies to URLs on the domain `discord.com`.
-2. Copy the contents of `main.css` into the new style.
-3. Save the theme.
+1. Download the [`discord.user.css`](./discord.user.css)
+2. Choose your preferred flavour and options from the Stylus preference dropdown.
 
 ## 🙋 FAQ
 
@@ -61,6 +82,8 @@ git clone https://github.com/catppuccin/discord.git
 -   [Andreas Grafen](https://github.com/andreasgrafen)
 -   [Sanjay Pavan](https://github.com/WitherCubes)
 -   [Tuhana GAYRETLİ](https://github.com/tuhanayim)
+-   [GlowingUmbreon](https://github.com/glowingumbreon)
+-   [winston](https://github.com/nekowinston)
 
 &nbsp;
 
