@@ -183,15 +183,22 @@ section[aria-label="User area"] {
 	background-color: $rosewater !important;
 }
 
+//-- buttons
+// buttons are crust
 button[class*="lookFilled"] {
 	color: #{$crust} !important;
 }
 
+// -- and have $text foreground when inside the chat window (bots)
 div[class^="chat"] {
 	button[class*="lookFilled"] {
 		color: #{$text} !important;
 		background-color: #{$crust} !important;
 	}
+}
+
+div[class*="reactionMe-"] {
+	background-color: #{$surface0} !important;
 }
 
 // boost background

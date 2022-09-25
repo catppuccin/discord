@@ -176,6 +176,10 @@ div[class^=chat] button[class*=lookFilled] {
   background-color: #232634 !important;
 }
 
+div[class*=reactionMe-] {
+  background-color: #414559 !important;
+}
+
 div[class^=root] > div[class^=perksModal] {
   background-color: #303446 !important;
 }
