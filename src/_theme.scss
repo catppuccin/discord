@@ -382,6 +382,10 @@ div[class^="layerContainer"] {
 					color: $red !important;
 				}
 			}
+
+			div[class*="message-"] {
+				background-color: $base !important;
+			}
 		}
 	}
 

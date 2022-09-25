@@ -335,6 +335,9 @@ div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h1[class^=f
 div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h1[class^=fixed-]:after, div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h2[class^=fixed-]:after, div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h3[class^=fixed-]:after, div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h4[class^=fixed-]:after, div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h5[class^=fixed-]:after, div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h6[class^=fixed-]:after {
   background-color: #f38ba8 !important;
 }
+div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class*=message-] {
+  background-color: #1e1e2e !important;
+}
 div[class^=layerContainer] div[class^=addGamePopout-] {
   background-color: #181825 !important;
 }
