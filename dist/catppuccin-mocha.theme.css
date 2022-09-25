@@ -29,6 +29,7 @@ div[class^=layerContainer] {
   --interactive-hover: #cdd6f4;
   --interactive-active: #cdd6f4;
   --channels-default: #a6adc8;
+  --channel-icon: #a6adc8;
   --channeltextarea-background: #181825;
   --channel-text-area-placeholder: #a6adc8;
   --input-background: #11111b;
