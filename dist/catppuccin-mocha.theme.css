@@ -501,37 +501,37 @@ a[href="/channels/907385605422448742/995021303499206666"] div[class^=iconContain
 }
 
 ul[aria-label$=" threads"] > li:nth-child(1n) {
-  --channels-default: #f38ba8;
+  --channels-default: #d8c0dd;
   --interactive-hover: #f8b9cb;
   --interactive-active: #f8b9cb;
 }
 
 ul[aria-label$=" threads"] > li:nth-child(2n) {
-  --channels-default: #fab387;
+  --channels-default: #dbccd3;
   --interactive-hover: #fcd2b8;
   --interactive-active: #fcd2b8;
 }
 
 ul[aria-label$=" threads"] > li:nth-child(3n) {
-  --channels-default: #f9e2af;
+  --channels-default: #dadadf;
   --interactive-hover: #fdf3de;
   --interactive-active: #fdf3de;
 }
 
 ul[aria-label$=" threads"] > li:nth-child(4n) {
-  --channels-default: #a6e3a1;
+  --channels-default: #c1dadb;
   --interactive-hover: #cbefc8;
   --interactive-active: #cbefc8;
 }
 
 ul[aria-label$=" threads"] > li:nth-child(5n) {
-  --channels-default: #74c7ec;
+  --channels-default: #b9ccf6;
   --interactive-hover: #a1d9f2;
   --interactive-active: #a1d9f2;
 }
 
 ul[aria-label$=" threads"] > li:nth-child(6n) {
-  --channels-default: #cba6f7;
+  --channels-default: #ccc8f5;
   --interactive-hover: #e6d5fb;
   --interactive-active: #e6d5fb;
 }

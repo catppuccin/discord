@@ -501,37 +501,37 @@ a[href="/channels/907385605422448742/995021303499206666"] div[class^=iconContain
 }
 
 ul[aria-label$=" threads"] > li:nth-child(1n) {
-  --channels-default: #ed8796;
+  --channels-default: #d5bcd9;
   --interactive-hover: #f4b3bd;
   --interactive-active: #f4b3bd;
 }
 
 ul[aria-label$=" threads"] > li:nth-child(2n) {
-  --channels-default: #f5a97f;
+  --channels-default: #d7c6d2;
   --interactive-hover: #f9c9ae;
   --interactive-active: #f9c9ae;
 }
 
 ul[aria-label$=" threads"] > li:nth-child(3n) {
-  --channels-default: #eed49f;
+  --channels-default: #d5d3db;
   --interactive-hover: #f6e7ca;
   --interactive-active: #f6e7ca;
 }
 
 ul[aria-label$=" threads"] > li:nth-child(4n) {
-  --channels-default: #a6da95;
+  --channels-default: #bfd5d8;
   --interactive-hover: #c6e7bb;
   --interactive-active: #c6e7bb;
 }
 
 ul[aria-label$=" threads"] > li:nth-child(5n) {
-  --channels-default: #7dc4e4;
+  --channels-default: #b7c8f5;
   --interactive-hover: #a7d7ed;
   --interactive-active: #a7d7ed;
 }
 
 ul[aria-label$=" threads"] > li:nth-child(6n) {
-  --channels-default: #c6a0f6;
+  --channels-default: #c9c4f5;
   --interactive-hover: #e2cffa;
   --interactive-active: #e2cffa;
 }
