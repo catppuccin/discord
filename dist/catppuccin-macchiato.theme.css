@@ -41,12 +41,12 @@ div[class^=layerContainer] {
   --header-primary: #cad3f5;
   --header-secondary: #b0bef0;
   --text-normal: #cad3f5;
-  --text-muted: #f4dbd6;
+  --text-muted: #a5adcb;
   --text-link: #8aadf4;
   --text-positive: #a6da95;
   --text-warning: #f5a97f;
   --text-danger: #ed8796;
-  --text-brand: #f4dbd6;
+  --text-brand: #8aadf4;
   --info-positive-text: #fff;
   --info-warning-text: #fff;
   --info-danger-text: #fff;

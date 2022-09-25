@@ -42,12 +42,12 @@ div[class^="layerContainer"] {
 	--header-primary: #{$text};
 	--header-secondary: #{darken($text, 6%)};
 	--text-normal: #{$text};
-	--text-muted: #{$rosewater};
+	--text-muted: #{$subtext0};
 	--text-link: #{$blue};
 	--text-positive: #{$green};
 	--text-warning: #{$peach};
 	--text-danger: #{$red};
-	--text-brand: #{$rosewater};
+	--text-brand: #{$brand};
 
 	// not sure about these, might be TODO
 	--info-positive-text: #fff;
