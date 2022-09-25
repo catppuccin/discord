@@ -65,6 +65,14 @@ curl -L https://github.com/catppuccin/discord/blob/main/dist/catppuccin-macchiat
 curl -L https://github.com/catppuccin/discord/blob/main/dist/catppuccin-mocha.theme.css > ~/.config/discocss/custom.css
 ```
 
+### [GooseMod](https://goosemod.com)
+
+1. Simply add the following line to your custom CSS:
+
+```css
+@import url(https://catppuccin.github.io/discord/main.css);
+```
+
 ### [Stylus](https://github.com/openstyles/stylus)
 
 1. Download the [`discord.user.css`](./discord.user.css)
