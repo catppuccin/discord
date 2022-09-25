@@ -459,6 +459,11 @@ main[class^="chatContent"] {
 			stroke: $red;
 		}
 	}
+	div[class^="attachedBars-"] {
+		div[class*="label-"] {
+			color: $base !important;
+		}
+	}
 }
 
 // spoiler messages

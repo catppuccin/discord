@@ -129,6 +129,16 @@ div[class^=layerContainer] {
   --scrollbar-auto-scrollbar-color-track: #1e66f5;
   --scrollbar-auto-scrollbar-color-thumb: #e6e9ef;
   --status-warning-text: hotpink;
+  --deprecated-card-bg: #e6e9ef;
+  --deprecated-card-editable-bg: #e6e9ef;
+  --deprecated-store-bg: #e6e9ef;
+  --deprecated-quickswitcher-input-background: #e6e9ef;
+  --deprecated-quickswitcher-input-placeholder: #6c6f85;
+  --deprecated-text-input-bg: #e6e9ef;
+  --deprecated-text-input-border: #dce0e8;
+  --deprecated-text-input-border-hover: #e6e9ef;
+  --deprecated-text-input-border-disabled: #dce0e8;
+  --deprecated-text-input-prefix: #6c6f85;
 }
 
 rect[mask="url(#svg-mask-status-online)"] {
@@ -194,11 +204,6 @@ section[aria-label="User area"] div[class*=buttonContents] {
 
 .wrapper-1BJsBx.selected-bZ3Lue > div[class^=childWrapper] {
   background-color: #dc8a78 !important;
-}
-
-div[class^=chat] button[class*=lookFilled] {
-  color: #4c4f69 !important;
-  background-color: #dce0e8 !important;
 }
 
 button[class*=lookFilled]:not([disabled]) {
@@ -379,6 +384,9 @@ main[class^=chatContent] #---new-messages-bar span {
 main[class^=chatContent] #---new-messages-bar svg * {
   fill: #d20f39;
   stroke: #d20f39;
+}
+main[class^=chatContent] div[class^=attachedBars-] div[class*=label-] {
+  color: #dce0e8 !important;
 }
 
 span[class^=spoilerText][aria-expanded=false] {
