@@ -38,10 +38,10 @@
 
 1. Download your preferred flavour:
 
-- 🌻 [Latte](https://github.com/catppuccin/discord/raw/main/themes/latte.theme.css)
-- 🪴 [Frappe](https://github.com/catppuccin/discord/raw/main/themes/frappe.theme.css)
-- 🌺 [Macchiato](https://github.com/catppuccin/discord/raw/main/themes/macchiato.theme.css)
-- 🌿 [Mocha](https://github.com/catppuccin/discord/raw/main/themes/mocha.theme.css)
+- 🌻 [Latte](./themes/latte.theme.css)
+- 🪴 [Frappe](./themes/frappe.theme.css)
+- 🌺 [Macchiato](./themes/macchiato.theme.css)
+- 🌿 [Mocha](./themes/mocha.theme.css)
 
 2. BetterDiscord: 
 	1. Copy the downloaded file to your BetterDiscord themes folder.
@@ -56,13 +56,13 @@
 2. Use your preferred flavour as your DiscoCSS `custom.css`
 ```bash
 # latte
-curl -L https://github.com/catppuccin/discord/blob/main/dist/catppuccin-latte.theme.css >> ~/.config/discocss/custom.css
+curl -L https://github.com/catppuccin/discord/blob/main/dist/catppuccin-latte.theme.css > ~/.config/discocss/custom.css
 # frappe
-curl -L https://github.com/catppuccin/discord/blob/main/dist/catppuccin-frappe.theme.css >> ~/.config/discocss/custom.css
+curl -L https://github.com/catppuccin/discord/blob/main/dist/catppuccin-frappe.theme.css > ~/.config/discocss/custom.css
 # macchiato
-curl -L https://github.com/catppuccin/discord/blob/main/dist/catppuccin-macchiato.theme.css >> ~/.config/discocss/custom.css
+curl -L https://github.com/catppuccin/discord/blob/main/dist/catppuccin-macchiato.theme.css > ~/.config/discocss/custom.css
 # mocha
-curl -L https://github.com/catppuccin/discord/blob/main/dist/catppuccin-mocha.theme.css >> ~/.config/discocss/custom.css
+curl -L https://github.com/catppuccin/discord/blob/main/dist/catppuccin-mocha.theme.css > ~/.config/discocss/custom.css
 ```
 
 ### [Stylus](https://github.com/openstyles/stylus)
