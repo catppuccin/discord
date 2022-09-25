@@ -30,6 +30,7 @@ div[class^="layerContainer"] {
 	--channeltextarea-background: #{$mantle};
 
 	--input-background: #{$crust};
+	--modal-background: #{$base};
 
 	--button-positive-background: #{$green};
 	--button-positive-background-hover: #{darken($green, 10%)};

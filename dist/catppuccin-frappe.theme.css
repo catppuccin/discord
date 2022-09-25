@@ -31,6 +31,7 @@ div[class^=layerContainer] {
   --channels-default: #a5adce;
   --channeltextarea-background: #292c3c;
   --input-background: #232634;
+  --modal-background: #303446;
   --button-positive-background: #a6d189;
   --button-positive-background-hover: #8ac364;
   --button-secondary-background: #8caaee;
