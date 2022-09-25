@@ -177,6 +177,11 @@ section[class^="title-"] {
 	background: $mantle !important;
 }
 
+// video chat
+div[class*="videoGrid-"], div[class^="callContainer-"] > div[class^="root-"] {
+	background: $crust !important;
+}
+
 // discord forums
 // background
 div[class^="chat"] > div[class^="content-"] > div[class^="container-"] {
