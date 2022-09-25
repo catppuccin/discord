@@ -7,7 +7,7 @@
  * @website https://github.com/catppuccin/discord
  * @invite r6Mdz5dpFc
  * **/
-\:root,
+:root,
 .theme-dark,
 .theme-light,
 div[class^=layerContainer] {
@@ -52,15 +52,15 @@ div[class^=layerContainer] {
   --info-danger-text: #fff;
   --info-help-text: #fff;
   --info-help-background: hsla(
-    212,
-    calc(var(--saturation-factor, 1) * 100%),
-    43.9%,
-    0.1
+  	212,
+  	calc(var(--saturation-factor, 1) * 100%),
+  	43.9%,
+  	0.1
   );
   --info-help-foreground: hsl(
-    212,
-    calc(var(--saturation-factor, 1) * 100%),
-    43.9%
+  	212,
+  	calc(var(--saturation-factor, 1) * 100%),
+  	43.9%
   );
   --brand-experiment: #f5c2e7;
   --brand-experiment-100: white;
