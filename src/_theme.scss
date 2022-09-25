@@ -203,6 +203,12 @@ div[class^="keybindShortcut"] {
 	}
 }
 
+button[class*="colorRed"] {
+	background-color: $red !important;
+	border-color: darken($red, 2%) !important;
+	color: $crust !important;
+}
+
 // toggles in preferencs
 // checked
 div[class^="control"] > div[class*="checked"] {

@@ -184,6 +184,12 @@ div[class^=keybindShortcut] svg * {
   fill: #e6e9ef !important;
 }
 
+button[class*=colorRed] {
+  background-color: #d20f39 !important;
+  border-color: #c80e36 !important;
+  color: #dce0e8 !important;
+}
+
 div[class^=control] > div[class*=checked] {
   background-color: #40a02b !important;
 }
