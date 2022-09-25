@@ -177,6 +177,19 @@ section[class^="title-"] {
 	background: $mantle !important;
 }
 
+// this one is e.g. when connecting to voice on a different client
+div[class^="notice-"][class*="colorWarning-"] {
+	background: $peach !important;
+}
+// notice when you have to complete steps befoer talking in a server
+div[class^="notice-"] {
+	background: $blue !important;
+	* {
+		color: $crust !important;
+		border-color: $crust !important;
+	}
+}
+
 // video chat
 div[class*="videoGrid-"], div[class^="callContainer-"] > div[class^="root-"] {
 	background: $crust !important;
