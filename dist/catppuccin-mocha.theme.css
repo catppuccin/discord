@@ -193,7 +193,10 @@ div[class*=videoGrid-], div[class^=callContainer-] > div[class^=root-] {
 }
 
 div[class^=chat] > div[class^=content-] > div[class^=container-] {
-  background-color: #11111b;
+  background-color: #1e1e2e;
+}
+div[class^=chat] > div[class^=content-] > div[class^=container-] div[class*=mainCard-] {
+  background-color: #313244;
 }
 
 section[aria-label="User area"] svg[class*=buttonIcon-],
@@ -386,7 +389,7 @@ main[class^=chatContent] #---new-messages-bar svg * {
   stroke: #f38ba8;
 }
 main[class^=chatContent] div[class^=attachedBars-] div[class*=label-] {
-  color: #11111b !important;
+  color: #1e1e2e !important;
 }
 
 span[class^=spoilerText][aria-expanded=false] {
