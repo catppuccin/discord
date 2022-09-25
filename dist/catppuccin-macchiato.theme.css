@@ -336,7 +336,7 @@ div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h1[class^=f
   background-color: #ed8796 !important;
 }
 div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class*=message-] {
-  background-color: #24273a !important;
+  background-color: #363a4f !important;
 }
 div[class^=layerContainer] div[class^=addGamePopout-] {
   background-color: #1e2030 !important;
