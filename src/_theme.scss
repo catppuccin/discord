@@ -400,6 +400,11 @@ div[class*="rolesList"] {
 	}
 }
 
+// add account modal + cards
+form[class*="card-"] {
+	background-color: $base !important;
+}
+
 // streaming badge
 div[class*="liveShapeRound-"] {
 	background-color: $red !important;
