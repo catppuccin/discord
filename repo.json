@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "name": "Catppuccin Discord Theme Repository",
+    "description": "Catppuccin Themes",
+    "author": "Catppuccin"
+  },
+  "themes" : [
+    "https://raw.githubusercontent.com/catppuccin/discord/main/dist/catppuccin-latte.theme.css",
+    "https://raw.githubusercontent.com/catppuccin/discord/main/dist/catppuccin-frappe.theme.css",
+    "https://raw.githubusercontent.com/catppuccin/discord/main/dist/catppuccin-macchiato.theme.css",
+    "https://raw.githubusercontent.com/catppuccin/discord/main/dist/catppuccin-mocha.theme.css",
+
+  ]
+}
