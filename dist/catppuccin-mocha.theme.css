@@ -530,6 +530,19 @@ a[href="/channels/907385605422448742/923620165218869288"] div[class^=iconContain
   transform: scale(0.4) translate(-32px, -38px);
 }
 
+main[class^=chatContent] #---new-messages-bar {
+  border-color: #f38ba8;
+}
+main[class^=chatContent] #---new-messages-bar span {
+  background-color: #f38ba8;
+  color: #11111b;
+  border-color: #f38ba8;
+}
+main[class^=chatContent] #---new-messages-bar svg * {
+  fill: #f38ba8;
+  stroke: #f38ba8;
+}
+
 ul[aria-label$=" threads"] > li:nth-child(1n) {
   --channels-default: #d8c0dd;
   --interactive-hover: #f8b9cb;

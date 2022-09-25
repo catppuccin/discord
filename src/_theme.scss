@@ -480,6 +480,22 @@ a[href="/channels/907385605422448742/918688623002550313"] {
 	}
 }
 
+// new message ruler
+main[class^="chatContent"] {
+	#---new-messages-bar {
+		border-color: $red;
+		span {
+			background-color: $red;
+			color: $crust;
+			border-color: $red;
+		}
+		svg * {
+			fill: $red;
+			stroke: $red;
+		}
+	}
+}
+
 // rainbow threads
 ul[aria-label$=" threads"] > li:nth-child(1n) {
 	--channels-default: #{mix($red, $text, 30%)};
