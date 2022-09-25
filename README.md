@@ -66,13 +66,13 @@
 2. Use your preferred flavour as your DiscoCSS `custom.css`
 ```bash
 # latte
-curl -L https://github.com/catppuccin/discord/blob/main/dist/catppuccin-latte.theme.css > ~/.config/discocss/custom.css
+curl -L https://catppuccin.github.io/discord/dist/catppuccin-latte.theme.css > ~/.config/discocss/custom.css
 # frappe
-curl -L https://github.com/catppuccin/discord/blob/main/dist/catppuccin-frappe.theme.css > ~/.config/discocss/custom.css
+curl -L https://catppuccin.github.io/discord/dist/catppuccin-frappe.theme.css > ~/.config/discocss/custom.css
 # macchiato
-curl -L https://github.com/catppuccin/discord/blob/main/dist/catppuccin-macchiato.theme.css > ~/.config/discocss/custom.css
+curl -L https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css > ~/.config/discocss/custom.css
 # mocha
-curl -L https://github.com/catppuccin/discord/blob/main/dist/catppuccin-mocha.theme.css > ~/.config/discocss/custom.css
+curl -L https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css> ~/.config/discocss/custom.css
 ```
 
 ### [Stylus](https://github.com/openstyles/stylus)
