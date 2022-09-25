@@ -15,14 +15,14 @@ div[class^=layerContainer] {
   --background-secondary: #e6e9ef;
   --background-secondary-alt: #e6e9ef;
   --background-tertiary: #dce0e8;
-  --background-accent: #ea76cb;
+  --background-accent: #1e66f5;
   --background-floating: #e6e9ef;
-  --background-mentioned: rgba(234, 118, 203, 0.2);
-  --background-mentioned-hover: rgba(234, 118, 203, 0.15);
-  --background-modifier-accent: rgba(234, 118, 203, 0.25);
+  --background-mentioned: rgba(30, 102, 245, 0.2);
+  --background-mentioned-hover: rgba(30, 102, 245, 0.15);
+  --background-modifier-accent: rgba(30, 102, 245, 0.25);
   --background-modifier-active: rgba(76, 79, 105, 0.16);
-  --background-modifier-hover: rgba(234, 118, 203, 0.08);
-  --background-modifier-selected: rgba(234, 118, 203, 0.24);
+  --background-modifier-hover: rgba(30, 102, 245, 0.08);
+  --background-modifier-selected: rgba(30, 102, 245, 0.24);
   --activity-card-background: #eff1f5;
   --interactive-normal: #4c4f69;
   --interactive-muted: #6c6f85;
@@ -62,56 +62,56 @@ div[class^=layerContainer] {
   	calc(var(--saturation-factor, 1) * 100%),
   	43.9%
   );
-  --brand-experiment: #ea76cb;
-  --brand-experiment-100: white;
-  --brand-experiment-130: white;
-  --brand-experiment-160: white;
-  --brand-experiment-200: white;
-  --brand-experiment-230: white;
-  --brand-experiment-260: white;
-  --brand-experiment-300: #fefbfd;
-  --brand-experiment-330: #fbe5f5;
-  --brand-experiment-360: #f8ceed;
-  --brand-experiment-400: #f4b8e4;
-  --brand-experiment-430: #f1a2dc;
-  --brand-experiment-460: #ed8cd3;
-  --brand-experiment-500: #ea76cb;
-  --brand-experiment-530: #e760c3;
-  --brand-experiment-560: #e34aba;
-  --brand-experiment-600: #e034b2;
-  --brand-experiment-630: #d921a8;
-  --brand-experiment-660: #c31e97;
-  --brand-experiment-700: #ad1a86;
-  --brand-experiment-730: #a1197d;
-  --brand-experiment-760: #961774;
-  --brand-experiment-800: #8b156c;
-  --brand-experiment-830: #801463;
-  --brand-experiment-860: #75125b;
-  --brand-experiment-900: #6a1052;
-  --brand-experiment-05a: rgba(234, 118, 203, 0.05);
-  --brand-experiment-10a: rgba(234, 118, 203, 0.1);
-  --brand-experiment-15a: rgba(234, 118, 203, 0.15);
-  --brand-experiment-20a: rgba(234, 118, 203, 0.2);
-  --brand-experiment-25a: rgba(234, 118, 203, 0.25);
-  --brand-experiment-30a: rgba(234, 118, 203, 0.3);
-  --brand-experiment-35a: rgba(234, 118, 203, 0.35);
-  --brand-experiment-40a: rgba(234, 118, 203, 0.4);
-  --brand-experiment-45a: rgba(234, 118, 203, 0.45);
-  --brand-experiment-50a: rgba(234, 118, 203, 0.5);
-  --brand-experiment-55a: rgba(234, 118, 203, 0.55);
-  --brand-experiment-60a: rgba(234, 118, 203, 0.6);
-  --brand-experiment-65a: rgba(234, 118, 203, 0.65);
-  --brand-experiment-70a: rgba(234, 118, 203, 0.7);
-  --brand-experiment-75a: rgba(234, 118, 203, 0.75);
-  --brand-experiment-80a: rgba(234, 118, 203, 0.8);
-  --brand-experiment-85a: rgba(234, 118, 203, 0.85);
-  --brand-experiment-90a: rgba(234, 118, 203, 0.9);
-  --brand-experiment-95a: rgba(234, 118, 203, 0.95);
-  --scrollbar-thin-thumb: #ea76cb;
+  --brand-experiment: #1e66f5;
+  --brand-experiment-100: #fafbff;
+  --brand-experiment-130: #eef3fe;
+  --brand-experiment-160: #e1ebfe;
+  --brand-experiment-200: #d5e3fd;
+  --brand-experiment-230: #c9dafd;
+  --brand-experiment-260: #bdd2fc;
+  --brand-experiment-300: #b0cafc;
+  --brand-experiment-330: #98b9fa;
+  --brand-experiment-360: #80a8f9;
+  --brand-experiment-400: #6798f8;
+  --brand-experiment-430: #4f87f7;
+  --brand-experiment-460: #3677f6;
+  --brand-experiment-500: #1e66f5;
+  --brand-experiment-530: #0b57ef;
+  --brand-experiment-560: #0a4ed6;
+  --brand-experiment-600: #0845be;
+  --brand-experiment-630: #073ca6;
+  --brand-experiment-660: #06338d;
+  --brand-experiment-700: #052b75;
+  --brand-experiment-730: #052669;
+  --brand-experiment-760: #04225c;
+  --brand-experiment-800: #041d50;
+  --brand-experiment-830: #031944;
+  --brand-experiment-860: #021438;
+  --brand-experiment-900: #02102c;
+  --brand-experiment-05a: rgba(30, 102, 245, 0.05);
+  --brand-experiment-10a: rgba(30, 102, 245, 0.1);
+  --brand-experiment-15a: rgba(30, 102, 245, 0.15);
+  --brand-experiment-20a: rgba(30, 102, 245, 0.2);
+  --brand-experiment-25a: rgba(30, 102, 245, 0.25);
+  --brand-experiment-30a: rgba(30, 102, 245, 0.3);
+  --brand-experiment-35a: rgba(30, 102, 245, 0.35);
+  --brand-experiment-40a: rgba(30, 102, 245, 0.4);
+  --brand-experiment-45a: rgba(30, 102, 245, 0.45);
+  --brand-experiment-50a: rgba(30, 102, 245, 0.5);
+  --brand-experiment-55a: rgba(30, 102, 245, 0.55);
+  --brand-experiment-60a: rgba(30, 102, 245, 0.6);
+  --brand-experiment-65a: rgba(30, 102, 245, 0.65);
+  --brand-experiment-70a: rgba(30, 102, 245, 0.7);
+  --brand-experiment-75a: rgba(30, 102, 245, 0.75);
+  --brand-experiment-80a: rgba(30, 102, 245, 0.8);
+  --brand-experiment-85a: rgba(30, 102, 245, 0.85);
+  --brand-experiment-90a: rgba(30, 102, 245, 0.9);
+  --brand-experiment-95a: rgba(30, 102, 245, 0.95);
+  --scrollbar-thin-thumb: #1e66f5;
   --scrollbar-thin-track: #dce0e8;
-  --scrollbar-auto-thumb: #ea76cb;
+  --scrollbar-auto-thumb: #1e66f5;
   --scrollbar-auto-track: #e6e9ef;
-  --scrollbar-auto-scrollbar-color-track: #ea76cb;
+  --scrollbar-auto-scrollbar-color-track: #1e66f5;
   --scrollbar-auto-scrollbar-color-thumb: #e6e9ef;
   --status-warning-text: hotpink;
 }
@@ -152,7 +152,7 @@ div[class*=autocomplete] div[class*=autocompleteRowContentSecondary] {
   background-color: transparent;
 }
 div[class*=autocomplete] div[class^=usageWrapper-] > div[class*=title-] {
-  color: #ea76cb !important;
+  color: #1e66f5 !important;
 }
 
 div[class^=keybindShortcut] > span {
@@ -168,7 +168,7 @@ div[class^=control] > div {
 }
 
 *[class*=colorBrandNew] {
-  background-color: #ea76cb !important;
+  background-color: #1e66f5 !important;
 }
 
 div[class^=layerContainer] #guild-header-popout,
@@ -214,7 +214,7 @@ div[class^=base] > div[class^=content] > div[class^=container] {
 }
 
 div[class*=mentioned]::before {
-  background-color: rgba(234, 118, 203, 0.75) !important;
+  background-color: rgba(30, 102, 245, 0.75) !important;
 }
 
 div[class^=focusLock] > div[class^=root] {

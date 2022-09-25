@@ -15,14 +15,14 @@ div[class^=layerContainer] {
   --background-secondary: #1e2030;
   --background-secondary-alt: #1e2030;
   --background-tertiary: #181926;
-  --background-accent: #f5bde6;
+  --background-accent: #8aadf4;
   --background-floating: #1e2131;
-  --background-mentioned: rgba(245, 189, 230, 0.2);
-  --background-mentioned-hover: rgba(245, 189, 230, 0.15);
-  --background-modifier-accent: rgba(245, 189, 230, 0.25);
+  --background-mentioned: rgba(138, 173, 244, 0.2);
+  --background-mentioned-hover: rgba(138, 173, 244, 0.15);
+  --background-modifier-accent: rgba(138, 173, 244, 0.25);
   --background-modifier-active: rgba(202, 211, 245, 0.16);
-  --background-modifier-hover: rgba(245, 189, 230, 0.08);
-  --background-modifier-selected: rgba(245, 189, 230, 0.24);
+  --background-modifier-hover: rgba(138, 173, 244, 0.08);
+  --background-modifier-selected: rgba(138, 173, 244, 0.24);
   --activity-card-background: #24273a;
   --interactive-normal: #cad3f5;
   --interactive-muted: #a5adcb;
@@ -62,7 +62,7 @@ div[class^=layerContainer] {
   	calc(var(--saturation-factor, 1) * 100%),
   	43.9%
   );
-  --brand-experiment: #f5bde6;
+  --brand-experiment: #8aadf4;
   --brand-experiment-100: white;
   --brand-experiment-130: white;
   --brand-experiment-160: white;
@@ -71,47 +71,47 @@ div[class^=layerContainer] {
   --brand-experiment-260: white;
   --brand-experiment-300: white;
   --brand-experiment-330: white;
-  --brand-experiment-360: white;
-  --brand-experiment-400: white;
-  --brand-experiment-430: #fce9f7;
-  --brand-experiment-460: #f8d3ee;
-  --brand-experiment-500: #f5bde6;
-  --brand-experiment-530: #f2a7de;
-  --brand-experiment-560: #ee91d5;
-  --brand-experiment-600: #eb7bcd;
-  --brand-experiment-630: #e864c4;
-  --brand-experiment-660: #e44ebc;
-  --brand-experiment-700: #e138b4;
-  --brand-experiment-730: #df2daf;
-  --brand-experiment-760: #de22ab;
-  --brand-experiment-800: #d320a3;
-  --brand-experiment-830: #c81e9a;
-  --brand-experiment-860: #bd1d92;
-  --brand-experiment-900: #b21b89;
-  --brand-experiment-05a: rgba(245, 189, 230, 0.05);
-  --brand-experiment-10a: rgba(245, 189, 230, 0.1);
-  --brand-experiment-15a: rgba(245, 189, 230, 0.15);
-  --brand-experiment-20a: rgba(245, 189, 230, 0.2);
-  --brand-experiment-25a: rgba(245, 189, 230, 0.25);
-  --brand-experiment-30a: rgba(245, 189, 230, 0.3);
-  --brand-experiment-35a: rgba(245, 189, 230, 0.35);
-  --brand-experiment-40a: rgba(245, 189, 230, 0.4);
-  --brand-experiment-45a: rgba(245, 189, 230, 0.45);
-  --brand-experiment-50a: rgba(245, 189, 230, 0.5);
-  --brand-experiment-55a: rgba(245, 189, 230, 0.55);
-  --brand-experiment-60a: rgba(245, 189, 230, 0.6);
-  --brand-experiment-65a: rgba(245, 189, 230, 0.65);
-  --brand-experiment-70a: rgba(245, 189, 230, 0.7);
-  --brand-experiment-75a: rgba(245, 189, 230, 0.75);
-  --brand-experiment-80a: rgba(245, 189, 230, 0.8);
-  --brand-experiment-85a: rgba(245, 189, 230, 0.85);
-  --brand-experiment-90a: rgba(245, 189, 230, 0.9);
-  --brand-experiment-95a: rgba(245, 189, 230, 0.95);
-  --scrollbar-thin-thumb: #f5bde6;
+  --brand-experiment-360: #e7eefd;
+  --brand-experiment-400: #d0defb;
+  --brand-experiment-430: #b9cef8;
+  --brand-experiment-460: #a1bdf6;
+  --brand-experiment-500: #8aadf4;
+  --brand-experiment-530: #739df2;
+  --brand-experiment-560: #5b8cf0;
+  --brand-experiment-600: #447ced;
+  --brand-experiment-630: #2d6ceb;
+  --brand-experiment-660: #165be9;
+  --brand-experiment-700: #1452d1;
+  --brand-experiment-730: #134ec6;
+  --brand-experiment-760: #1149ba;
+  --brand-experiment-800: #1045ae;
+  --brand-experiment-830: #0f40a3;
+  --brand-experiment-860: #0e3b97;
+  --brand-experiment-900: #0d378b;
+  --brand-experiment-05a: rgba(138, 173, 244, 0.05);
+  --brand-experiment-10a: rgba(138, 173, 244, 0.1);
+  --brand-experiment-15a: rgba(138, 173, 244, 0.15);
+  --brand-experiment-20a: rgba(138, 173, 244, 0.2);
+  --brand-experiment-25a: rgba(138, 173, 244, 0.25);
+  --brand-experiment-30a: rgba(138, 173, 244, 0.3);
+  --brand-experiment-35a: rgba(138, 173, 244, 0.35);
+  --brand-experiment-40a: rgba(138, 173, 244, 0.4);
+  --brand-experiment-45a: rgba(138, 173, 244, 0.45);
+  --brand-experiment-50a: rgba(138, 173, 244, 0.5);
+  --brand-experiment-55a: rgba(138, 173, 244, 0.55);
+  --brand-experiment-60a: rgba(138, 173, 244, 0.6);
+  --brand-experiment-65a: rgba(138, 173, 244, 0.65);
+  --brand-experiment-70a: rgba(138, 173, 244, 0.7);
+  --brand-experiment-75a: rgba(138, 173, 244, 0.75);
+  --brand-experiment-80a: rgba(138, 173, 244, 0.8);
+  --brand-experiment-85a: rgba(138, 173, 244, 0.85);
+  --brand-experiment-90a: rgba(138, 173, 244, 0.9);
+  --brand-experiment-95a: rgba(138, 173, 244, 0.95);
+  --scrollbar-thin-thumb: #8aadf4;
   --scrollbar-thin-track: #181926;
-  --scrollbar-auto-thumb: #f5bde6;
+  --scrollbar-auto-thumb: #8aadf4;
   --scrollbar-auto-track: #1e2030;
-  --scrollbar-auto-scrollbar-color-track: #f5bde6;
+  --scrollbar-auto-scrollbar-color-track: #8aadf4;
   --scrollbar-auto-scrollbar-color-thumb: #1e2030;
   --status-warning-text: hotpink;
 }
@@ -152,7 +152,7 @@ div[class*=autocomplete] div[class*=autocompleteRowContentSecondary] {
   background-color: transparent;
 }
 div[class*=autocomplete] div[class^=usageWrapper-] > div[class*=title-] {
-  color: #f5bde6 !important;
+  color: #8aadf4 !important;
 }
 
 div[class^=keybindShortcut] > span {
@@ -168,7 +168,7 @@ div[class^=control] > div {
 }
 
 *[class*=colorBrandNew] {
-  background-color: #f5bde6 !important;
+  background-color: #8aadf4 !important;
 }
 
 div[class^=layerContainer] #guild-header-popout,
@@ -214,7 +214,7 @@ div[class^=base] > div[class^=content] > div[class^=container] {
 }
 
 div[class*=mentioned]::before {
-  background-color: rgba(245, 189, 230, 0.75) !important;
+  background-color: rgba(138, 173, 244, 0.75) !important;
 }
 
 div[class^=focusLock] > div[class^=root] {
