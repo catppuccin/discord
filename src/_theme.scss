@@ -23,7 +23,7 @@ div[class^="layerContainer"] {
 
 	--activity-card-background: #{$base};
 	--interactive-normal: #{$text};
-	--interactive-muted: #{$subtext0};
+	--interactive-muted: #{adjust-color($text, $alpha: -0.7)};
 	--interactive-hover: #{$text};
 	--interactive-active: #{$text};
 	--channels-default: #{$subtext0};
@@ -43,11 +43,28 @@ div[class^="layerContainer"] {
 	--rs-invisible-color: #{$rosewater};
 	--rs-streaming-color: #{$mauve};
 
+	--button-danger-background: #{$red};
+	--info-danger-background: #{$red};
+	--info-danger-foreground: #{$text};
+	--status-danger-background: #{$red};
+	--status-danger-text: #{$text};
+	--status-danger: #{$red};
+	--status-warning: #{$peach};
+
+	--info-warning-background: #{$peach};
+	--info-warning-foreground: #{$text};
+	--status-warning-background: #{$peach};
+
+	--status-positive-background: #{$green};
+	--status-positive-text: #{$text};
+	--status-positive: #{$green};
+
 	--header-primary: #{$text};
 	--header-secondary: #{darken($text, 6%)};
 	--text-normal: #{$text};
 	--text-muted: #{$subtext0};
 	--text-link: #{$blue};
+	--text-link-low-saturation: #{$sapphire};
 	--text-positive: #{$green};
 	--text-warning: #{$peach};
 	--text-danger: #{$red};
