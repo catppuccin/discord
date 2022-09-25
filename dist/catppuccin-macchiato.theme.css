@@ -142,20 +142,32 @@ div[class^=layerContainer] {
   --deprecated-text-input-prefix: #a5adcb;
 }
 
-rect[mask="url(#svg-mask-status-online)"] {
+rect[fill^="hsl(139"],
+svg[class*=mainStatusIcon-] > foreignObject[mask="url(#svg-mask-status-online)"] > div {
   fill: #a6da95 !important;
+  background-color: #a6da95 !important;
+}
+rect[fill^="hsl(139"] rect,
+svg[class*=mainStatusIcon-] > foreignObject[mask="url(#svg-mask-status-online)"] > div rect {
+  color: #24273a;
 }
 
-rect[mask="url(#svg-mask-status-idle)"] {
-  fill: #f5a97f !important;
+rect[fill^="hsl(38"],
+foreignObject[mask="url(#svg-mask-status-idle)"] > div {
+  fill: #eed49f !important;
+  background-color: #eed49f !important;
 }
 
-rect[mask="url(#svg-mask-status-dnd)"] {
+rect[fill^="hsl(359"],
+foreignObject[mask="url(#svg-mask-status-dnd)"] > div {
   fill: #ed8796 !important;
+  background-color: #ed8796 !important;
 }
 
-rect[mask="url(#svg-mask-status-offline)"] {
-  fill: #5b6078 !important;
+rect[fill^="hsl(214"],
+foreignObject[mask="url(#svg-mask-status-offline)"] > div {
+  fill: #a5adcb !important;
+  background-color: #a5adcb !important;
 }
 
 div[class*=activeGame-][class*=nowPlaying] * {

@@ -156,20 +156,36 @@ div[class^="layerContainer"] {
     --deprecated-text-input-prefix: #{$subtext0};
 }
 
-// online state
-rect[mask="url(#svg-mask-status-online)"] {
+// online
+rect[fill^="hsl(139"],
+svg[class*="mainStatusIcon-"] > foreignObject[mask="url(#svg-mask-status-online)"] > div {
 	fill: $green !important;
+	background-color: $green !important;
 }
-rect[mask="url(#svg-mask-status-idle)"] {
-	fill: $peach !important;
+// away
+rect[fill^="hsl(38"],
+foreignObject[mask="url(#svg-mask-status-idle)"] > div {
+	fill: $yellow !important;
+	background-color: $yellow !important;
 }
-rect[mask="url(#svg-mask-status-dnd)"] {
+// dnd
+rect[fill^="hsl(359"],
+foreignObject[mask="url(#svg-mask-status-dnd)"] > div {
 	fill: $red !important;
+	background-color: $red !important;
 }
-rect[mask="url(#svg-mask-status-offline)"] {
-	fill: $surface2 !important;
+// offline
+rect[fill^="hsl(214"],
+foreignObject[mask="url(#svg-mask-status-offline)"] > div {
+	fill: $subtext0 !important;
+	background-color: $subtext0 !important;
+}
+// dots in typing
+svg[class^="cursorDefault-"] svg[class^="dots-"] circle {
+	fill: $base !important;
 }
 
+// settings > registered games
 div[class*="activeGame-"][class*="nowPlaying"] * {
 	color: $base !important;
 }
