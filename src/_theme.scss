@@ -154,8 +154,8 @@ div[class^="chat"] {
 	}
 }
 
-div[class*="autocomplete"] {
-	background-color: #{$mantle};
+div[class*="autocompleteAttached-"] {
+	background-color: #{$mantle} !important;
 
 	div[class*="categoryHeader"] {
 		background-color: #{$mantle} !important;

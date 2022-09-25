@@ -139,19 +139,19 @@ div[class^=chat] button[class*=lookFilled] {
   background-color: #dce0e8 !important;
 }
 
-div[class*=autocomplete] {
-  background-color: #e6e9ef;
-}
-div[class*=autocomplete] div[class*=categoryHeader] {
+div[class*=autocompleteAttached-] {
   background-color: #e6e9ef !important;
 }
-div[class*=autocomplete] div[class*=autocompleteRowSubheading] {
+div[class*=autocompleteAttached-] div[class*=categoryHeader] {
+  background-color: #e6e9ef !important;
+}
+div[class*=autocompleteAttached-] div[class*=autocompleteRowSubheading] {
   background-color: transparent;
 }
-div[class*=autocomplete] div[class*=autocompleteRowContentSecondary] {
+div[class*=autocompleteAttached-] div[class*=autocompleteRowContentSecondary] {
   background-color: transparent;
 }
-div[class*=autocomplete] div[class^=usageWrapper-] > div[class*=title-] {
+div[class*=autocompleteAttached-] div[class^=usageWrapper-] > div[class*=title-] {
   color: #1e66f5 !important;
 }
 
