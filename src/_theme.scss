@@ -161,8 +161,19 @@ rect[mask="url(#svg-mask-status-offline)"] {
 }
 
 // discovery
-div[class^="pageWrapper"] {
-	background: #{$base} !important;
+div[class^="pageWrapper-"] {
+	background: $base !important;
+}
+// public server home
+div[class^="homeContainer-"] {
+	background: $base !important;
+	> div[class^="homeContent-"] div[class*="card-"] {
+		background: $surface0 !important;
+	}
+}
+// the header for the public server home
+section[class^="title-"] {
+	background: $mantle !important;
 }
 
 // discord forums
