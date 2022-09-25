@@ -143,13 +143,9 @@ div[class^=layerContainer] {
 }
 
 rect[fill^="hsl(139"],
-svg[class*=mainStatusIcon-] > foreignObject[mask="url(#svg-mask-status-online)"] > div {
+foreignObject[mask="url(#svg-mask-status-online)"] > div {
   fill: #a6da95 !important;
   background-color: #a6da95 !important;
-}
-rect[fill^="hsl(139"] rect,
-svg[class*=mainStatusIcon-] > foreignObject[mask="url(#svg-mask-status-online)"] > div rect {
-  color: #24273a;
 }
 
 rect[fill^="hsl(38"],
@@ -168,6 +164,10 @@ rect[fill^="hsl(214"],
 foreignObject[mask="url(#svg-mask-status-offline)"] > div {
   fill: #a5adcb !important;
   background-color: #a5adcb !important;
+}
+
+svg[class^=cursorDefault-] svg[class^=dots-] circle {
+  fill: #24273a !important;
 }
 
 div[class*=activeGame-][class*=nowPlaying] * {

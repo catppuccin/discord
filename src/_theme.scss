@@ -158,7 +158,7 @@ div[class^="layerContainer"] {
 
 // online
 rect[fill^="hsl(139"],
-svg[class*="mainStatusIcon-"] > foreignObject[mask="url(#svg-mask-status-online)"] > div {
+foreignObject[mask="url(#svg-mask-status-online)"] > div {
 	fill: $green !important;
 	background-color: $green !important;
 }
