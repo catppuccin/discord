@@ -1,0 +1,468 @@
+@use "sass:math";
+
+$brand: $pink;
+
+// overwrite css variables
+\:root,
+.theme-dark,
+.theme-light,
+// this changes the "create a server popout"
+div[class^="layerContainer"] {
+  --background-primary: #{$base};
+  --background-secondary: #{$mantle};
+  --background-secondary-alt: #{$mantle};
+  --background-tertiary: #{$crust};
+  --background-accent: #{$brand};
+
+  --background-floating: #{darken($base, 3%)};
+  --background-mentioned: #{adjust-color($brand, $alpha: -0.8)};
+  --background-mentioned-hover: #{adjust-color($brand, $alpha: -0.85)};
+  --background-modifier-accent: #{adjust-color($brand, $alpha: -0.75)};
+  --background-modifier-active: #{adjust-color($text, $alpha: -0.84)};
+  --background-modifier-hover: #{adjust-color($brand, $alpha: -0.92)};
+  --background-modifier-selected: #{adjust-color($brand, $alpha: -0.76)};
+
+  --activity-card-background: #{$base};
+  --interactive-normal: #{$text};
+  --interactive-muted: #{$subtext0};
+  --interactive-hover: #{$text};
+  --interactive-active: #{$text};
+  --channels-default: #{$subtext0};
+  --channeltextarea-background: #{$mantle};
+
+  --button-positive-background: #{$green};
+  --button-positive-background-hover: #{darken($green, 10%)};
+
+  --rs-online-color: #{$green};
+  --rs-idle-color: #{$peach};
+  --rs-dnd-color: #{$red};
+  --rs-offline-color: #{$overlay0};
+  --rs-invisible-color: #{$rosewater};
+  --rs-streaming-color: #{$mauve};
+
+  --header-primary: #{$text};
+  --header-secondary: #{darken($text, 6%)};
+  --text-normal: #{$text};
+  --text-muted: #{$rosewater};
+  --text-link: #{$blue};
+  --text-positive: #{$green};
+  --text-warning: #{$peach};
+  --text-danger: #{$red};
+  --text-brand: #{$rosewater};
+
+  // not sure about these, might be TODO
+  --info-positive-text: #fff;
+  --info-warning-text: #fff;
+  --info-danger-text: #fff;
+  --info-help-text: #fff;
+  --info-help-background: hsla(
+    212,
+    calc(var(--saturation-factor, 1) * 100%),
+    43.9%,
+    0.1
+  );
+  --info-help-foreground: hsl(
+    212,
+    calc(var(--saturation-factor, 1) * 100%),
+    43.9%
+  );
+
+  // weighted brand colors
+  --brand-experiment: #{$brand};
+  --brand-experiment-100: #{lighten($brand, math.div(90%, 2))};
+  --brand-experiment-130: #{lighten($brand, math.div(85%, 2))};
+  --brand-experiment-160: #{lighten($brand, math.div(80%, 2))};
+  --brand-experiment-200: #{lighten($brand, math.div(75%, 2))};
+  --brand-experiment-230: #{lighten($brand, math.div(70%, 2))};
+  --brand-experiment-260: #{lighten($brand, math.div(65%, 2))};
+  --brand-experiment-300: #{lighten($brand, math.div(60%, 2))};
+  --brand-experiment-330: #{lighten($brand, math.div(50%, 2))};
+  --brand-experiment-360: #{lighten($brand, math.div(40%, 2))};
+  --brand-experiment-400: #{lighten($brand, math.div(30%, 2))};
+  --brand-experiment-430: #{lighten($brand, math.div(20%, 2))};
+  --brand-experiment-460: #{lighten($brand, math.div(10%, 2))};
+  --brand-experiment-500: #{$brand};
+  --brand-experiment-530: #{darken($brand, math.div(10%, 2))};
+  --brand-experiment-560: #{darken($brand, math.div(20%, 2))};
+  --brand-experiment-600: #{darken($brand, math.div(30%, 2))};
+  --brand-experiment-630: #{darken($brand, math.div(40%, 2))};
+  --brand-experiment-660: #{darken($brand, math.div(50%, 2))};
+  --brand-experiment-700: #{darken($brand, math.div(60%, 2))};
+  --brand-experiment-730: #{darken($brand, math.div(65%, 2))};
+  --brand-experiment-760: #{darken($brand, math.div(70%, 2))};
+  --brand-experiment-800: #{darken($brand, math.div(75%, 2))};
+  --brand-experiment-830: #{darken($brand, math.div(80%, 2))};
+  --brand-experiment-860: #{darken($brand, math.div(85%, 2))};
+  --brand-experiment-900: #{darken($brand, math.div(90%, 2))};
+  // similar to other brand colors, except alpha only
+  --brand-experiment-05a: #{adjust-color($brand, $alpha: -0.95)};
+  --brand-experiment-10a: #{adjust-color($brand, $alpha: -0.9)};
+  --brand-experiment-15a: #{adjust-color($brand, $alpha: -0.85)};
+  --brand-experiment-20a: #{adjust-color($brand, $alpha: -0.8)};
+  --brand-experiment-25a: #{adjust-color($brand, $alpha: -0.75)};
+  --brand-experiment-30a: #{adjust-color($brand, $alpha: -0.7)};
+  --brand-experiment-35a: #{adjust-color($brand, $alpha: -0.65)};
+  --brand-experiment-40a: #{adjust-color($brand, $alpha: -0.6)};
+  --brand-experiment-45a: #{adjust-color($brand, $alpha: -0.55)};
+  --brand-experiment-50a: #{adjust-color($brand, $alpha: -0.5)};
+  --brand-experiment-55a: #{adjust-color($brand, $alpha: -0.45)};
+  --brand-experiment-60a: #{adjust-color($brand, $alpha: -0.4)};
+  --brand-experiment-65a: #{adjust-color($brand, $alpha: -0.35)};
+  --brand-experiment-70a: #{adjust-color($brand, $alpha: -0.3)};
+  --brand-experiment-75a: #{adjust-color($brand, $alpha: -0.25)};
+  --brand-experiment-80a: #{adjust-color($brand, $alpha: -0.2)};
+  --brand-experiment-85a: #{adjust-color($brand, $alpha: -0.15)};
+  --brand-experiment-90a: #{adjust-color($brand, $alpha: -0.1)};
+  --brand-experiment-95a: #{adjust-color($brand, $alpha: -0.05)};
+
+  // scrollbars
+  --scrollbar-thin-thumb: #{$brand};
+  --scrollbar-thin-track: #{$crust};
+  --scrollbar-auto-thumb: #{$brand};
+  --scrollbar-auto-track: #{$mantle};
+  --scrollbar-auto-scrollbar-color-track: #{$brand};
+  --scrollbar-auto-scrollbar-color-thumb: #{$mantle};
+
+  --status-warning-text: hotpink;
+}
+
+// discord forums
+// background
+div[class^="chat"] > div[class^="content-"] > div[class^="container-"] {
+  background-color: #{$crust};
+}
+section[aria-label="User area"] {
+  svg[class*="buttonIcon-"],
+  div[class*="buttonContents"] {
+    fill: $text !important;
+    color: $text !important;
+  }
+}
+
+// selected server / discord logo wrapper
+.wrapper-1BJsBx.selected-bZ3Lue > div[class^="childWrapper"] {
+  background-color: $rosewater !important;
+}
+
+button[class*="lookFilled"] {
+  color: #{$crust} !important;
+}
+
+div[class^="chat"] {
+  button[class*="lookFilled"] {
+    color: #{$text} !important;
+    background-color: #{$crust} !important;
+  }
+}
+
+div[class*="autocomplete"] {
+  background-color: #{$mantle};
+
+  div[class*="categoryHeader"] {
+    background-color: #{$mantle} !important;
+  }
+  div[class*="autocompleteRowSubheading"] {
+    background-color: transparent;
+  }
+  div[class*="autocompleteRowContentSecondary"] {
+    background-color: transparent;
+  }
+  div[class^="usageWrapper-"] > div[class*="title-"] {
+    color: $brand !important;
+  }
+}
+
+// keybinds in preferences
+div[class^="keybindShortcut"] > span {
+  color: #{$mantle} !important;
+}
+
+// toggles in preferencs
+// checked
+div[class^="control"] > div[class*="checked"] {
+  background-color: #{$green} !important;
+}
+// unchecked
+div[class^="control"] > div {
+  background-color: #{$surface1} !important;
+}
+// colorBrandNew bs
+*[class*="colorBrandNew"] {
+  background-color: #{$brand} !important;
+}
+
+// popouts
+div[class^="layerContainer"] {
+  // right-click popups for guild, channels, and user
+  #guild-header-popout,
+  #guild-context,
+  div[id^="channel-context"],
+  div[id^="user-context"] {
+    background: $crust !important;
+
+    // hide the scroller, as it's the wrong color
+    div[class^="scroller"] {
+      overflow: hidden !important;
+    }
+  }
+
+  > div[class^="layer"] {
+    // search popout
+    div[role="listbox"] {
+      background-color: $mantle !important;
+    }
+
+    div[class^="focusLock"] {
+      // create channel (modal) and stream popout (modalSize)
+      div[class^="modal-"],
+      div[class^="modalSize-"] {
+        background-color: $mantle !important;
+      }
+      // their respective footers
+      div[class*="footer"] {
+        background-color: $crust !important;
+      }
+    }
+  }
+
+  // add game
+  div[class^="addGamePopout-"] {
+    background-color: $mantle !important;
+  }
+
+  div[class*="searchOption-"]::after,
+  div[class*="option-"]::after,
+  li[class*="option-"]::after {
+    display: none;
+  }
+
+  div[class^="queryContainer"] {
+    background-color: #{$crust};
+    span[class^="key"] {
+      color: $text !important;
+      background-color: $base !important;
+    }
+  }
+}
+
+// 'peopleList' background, friendslist, is not set via the variable
+div[class^="base"] > div[class^="content"] > div[class^="container"] {
+  background-color: $base !important;
+}
+
+// the thin line in front of @ mentioned messages
+div[class*="mentioned"]::before {
+  background-color: adjust-color($brand, $alpha: -0.25) !important;
+}
+
+// server folder settings
+div[class^="focusLock"] {
+  > div[class^="root"] {
+    background-color: $base !important;
+
+    > div[class*="footer"] {
+      background-color: $mantle !important;
+    }
+  }
+}
+
+// upload modal
+div[class^="uploadModal"] {
+  background-color: $base !important;
+
+  > div[class^="footer"] {
+    background-color: $mantle !important;
+  }
+}
+
+// 'Add a server' popup - this uses the light theme by default.
+// only the footer doesn't use css variables as of now.
+.theme-light {
+  color: $text !important;
+
+  > div[class^="focusLock"]
+    > div[class^="root"]
+    > div[class^="container"]
+    div[class*="footer"] {
+    background-color: $mantle !important;
+  }
+}
+
+div[class^="upperBadge"] > div[class^="iconBadge"] path {
+  color: $base !important;
+}
+
+$channelicons: (
+  // role assignments
+  "1016344897969733652":
+    (
+      icon:
+        "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGhlaWdodD0iNDgiIHdpZHRoPSI0OCIgZm9jdXNhYmxlPSJmYWxzZSIgcm9sZT0iaW1nIiBmaWxsPSJjdXJyZW50Q29sb3IiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgY2xhc3M9IlN0eWxlZEljb25CYXNlLXNjLWVhOXVsai0wIGhSbkpQQyIgc3R5bGU9Ii0tZGFya3JlYWRlci1pbmxpbmUtZmlsbDogY3VycmVudENvbG9yOyIgZGF0YS1kYXJrcmVhZGVyLWlubGluZS1maWxsPSIiPjx0aXRsZT5Vc2VyQmFkZ2UgaWNvbjwvdGl0bGU+PHBhdGggZD0iTTE3Ljk4OCAyMmEyIDIgMCAwIDAgMi0yVjRhMiAyIDAgMCAwLTItMkg2YTIgMiAwIDAgMC0yIDJ2MTZhMiAyIDAgMCAwIDIgMmgxMS45ODh6TTkgNWg2djJIOVY1em01LjI1IDYuMjVBMi4yNiAyLjI2IDAgMCAxIDEyIDEzLjUwMWMtMS4yMzUgMC0yLjI1LTEuMDE1LTIuMjUtMi4yNTFTMTAuNzY1IDkgMTIgOWEyLjI1OSAyLjI1OSAwIDAgMSAyLjI1IDIuMjV6TTcuNSAxOC4xODhjMC0xLjY2NCAyLjAyOC0zLjM3NSA0LjUtMy4zNzVzNC41IDEuNzExIDQuNSAzLjM3NXYuNTYzaC05di0uNTYzeiI+PC9wYXRoPjwvc3ZnPg==",
+      color: $mauve,
+    ),
+  // general
+  "907385605422448745":
+    (
+      icon:
+        "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGhlaWdodD0iNDgiIHdpZHRoPSI0OCIgZm9jdXNhYmxlPSJmYWxzZSIgcm9sZT0iaW1nIiBmaWxsPSJjdXJyZW50Q29sb3IiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgY2xhc3M9IlN0eWxlZEljb25CYXNlLXNjLWVhOXVsai0wIGhSbkpQQyIgc3R5bGU9Ii0tZGFya3JlYWRlci1pbmxpbmUtZmlsbDogY3VycmVudENvbG9yOyIgZGF0YS1kYXJrcmVhZGVyLWlubGluZS1maWxsPSIiPjx0aXRsZT5Ib21lIGljb248L3RpdGxlPjxwYXRoIGQ9Ik0zIDEzaDF2N2MwIDEuMTAzLjg5NyAyIDIgMmgxMmMxLjEwMyAwIDItLjg5NyAyLTJ2LTdoMWExIDEgMCAwIDAgLjcwNy0xLjcwN2wtOS05YS45OTkuOTk5IDAgMCAwLTEuNDE0IDBsLTkgOUExIDEgMCAwIDAgMyAxM3ptNyA3di01aDR2NWgtNHptMi0xNS41ODYgNiA2VjE1bC4wMDEgNUgxNnYtNWMwLTEuMTAzLS44OTctMi0yLTJoLTRjLTEuMTAzIDAtMiAuODk3LTIgMnY1SDZ2LTkuNTg2bDYtNnoiPjwvcGF0aD48L3N2Zz4=",
+      color: $red,
+    ),
+  //support
+  "1019633641057431613":
+    (
+      icon:
+        "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGhlaWdodD0iNDgiIHdpZHRoPSI0OCIgZm9jdXNhYmxlPSJmYWxzZSIgcm9sZT0iaW1nIiBmaWxsPSJjdXJyZW50Q29sb3IiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgY2xhc3M9IlN0eWxlZEljb25CYXNlLXNjLWVhOXVsai0wIGhSbkpQQyIgc3R5bGU9Ii0tZGFya3JlYWRlci1pbmxpbmUtZmlsbDogY3VycmVudENvbG9yOyIgZGF0YS1kYXJrcmVhZGVyLWlubGluZS1maWxsPSIiPjx0aXRsZT5TdXBwb3J0IGljb248L3RpdGxlPjxyZWN0IHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSI+PC9yZWN0PjxwYXRoIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem03LjQ2IDcuMTItMi43OCAxLjE1YTQuOTgyIDQuOTgyIDAgMCAwLTIuOTUtMi45NGwxLjE1LTIuNzhjMi4xLjggMy43NyAyLjQ3IDQuNTggNC41N3pNMTIgMTVjLTEuNjYgMC0zLTEuMzQtMy0zczEuMzQtMyAzLTMgMyAxLjM0IDMgMy0xLjM0IDMtMyAzek05LjEzIDQuNTRsMS4xNyAyLjc4YTUgNSAwIDAgMC0yLjk4IDIuOTdMNC41NCA5LjEzYTcuOTg0IDcuOTg0IDAgMCAxIDQuNTktNC41OXpNNC41NCAxNC44N2wyLjc4LTEuMTVhNC45NjggNC45NjggMCAwIDAgMi45NyAyLjk2bC0xLjE3IDIuNzhhNy45OTYgNy45OTYgMCAwIDEtNC41OC00LjU5em0xMC4zNCA0LjU5LTEuMTUtMi43OGE0Ljk3OCA0Ljk3OCAwIDAgMCAyLjk1LTIuOTdsMi43OCAxLjE3YTguMDA3IDguMDA3IDAgMCAxLTQuNTggNC41OHoiPjwvcGF0aD48L3N2Zz4=",
+      color: $peach,
+    ),
+  // suggestions
+  "1019639907662184478":
+    (
+      icon:
+        "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDggNDgiIGhlaWdodD0iNDgiIHdpZHRoPSI0OCIgZm9jdXNhYmxlPSJmYWxzZSIgcm9sZT0iaW1nIiBmaWxsPSJjdXJyZW50Q29sb3IiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgY2xhc3M9IlN0eWxlZEljb25CYXNlLXNjLWVhOXVsai0wIGhSbkpQQyIgc3R5bGU9Ii0tZGFya3JlYWRlci1pbmxpbmUtZmlsbDogY3VycmVudENvbG9yOyIgZGF0YS1kYXJrcmVhZGVyLWlubGluZS1maWxsPSIiPjx0aXRsZT5MaWdodGJ1bGJGaWxhbWVudCBpY29uPC90aXRsZT48cGF0aCBkPSJNMjQgNGExNC41IDE0LjUgMCAwIDAtOS43OCAyNS4yYy40NS40Mi43NS44OC44NyAxLjM2bDEuMjcgNC45NGg2LjM5di0xNGExLjI1IDEuMjUgMCAwIDEgMi41IDB2MTRoNi40bDEuMjYtNC45NWMuMTItLjQ3LjQyLS45NC44Ny0xLjM1QTE0LjUgMTQuNSAwIDAgMCAyNCA0em03IDM0SDE3bC42MiAyLjQzYTQuNzUgNC43NSAwIDAgMCA0LjYgMy41N2gzLjU2YTQuNzUgNC43NSAwIDAgMCA0LjYtMy41N2wuNjMtMi40M3ptLTUuNzUtMjUuNzV2My41YTEuMjUgMS4yNSAwIDEgMS0yLjUgMHYtMy41YTEuMjUgMS4yNSAwIDEgMSAyLjUgMHptNy4zOCAzLjEyYy40OS40OC40OSAxLjI4IDAgMS43NmwtMi41IDIuNWExLjI1IDEuMjUgMCAwIDEtMS43Ni0xLjc3bDIuNS0yLjVhMS4yNSAxLjI1IDAgMCAxIDEuNzYgMHptLTEzIDIuNWExLjI1IDEuMjUgMCAxIDEtMS43NyAxLjc2bC0yLjUtMi41YTEuMjUgMS4yNSAwIDEgMSAxLjc3LTEuNzZsMi41IDIuNXoiPjwvcGF0aD48L3N2Zz4=",
+      color: $yellow,
+    ),
+  // polls
+  "992572141595795548":
+    (
+      icon:
+        "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGhlaWdodD0iNDgiIHdpZHRoPSI0OCIgZm9jdXNhYmxlPSJmYWxzZSIgcm9sZT0iaW1nIiBmaWxsPSJjdXJyZW50Q29sb3IiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgY2xhc3M9IlN0eWxlZEljb25CYXNlLXNjLWVhOXVsai0wIGhSbkpQQyIgc3R5bGU9Ii0tZGFya3JlYWRlci1pbmxpbmUtZmlsbDogY3VycmVudENvbG9yOyIgZGF0YS1kYXJrcmVhZGVyLWlubGluZS1maWxsPSIiPjx0aXRsZT5Qb2xsIGljb248L3RpdGxlPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMFYweiI+PC9wYXRoPjxwYXRoIGQ9Ik0xOSAzSDVjLTEuMSAwLTIgLjktMiAydjE0YzAgMS4xLjkgMiAyIDJoMTRjMS4xIDAgMi0uOSAyLTJWNWMwLTEuMS0uOS0yLTItMnptMCAxNkg1VjVoMTR2MTR6TTcgMTBoMnY3SDd6bTQtM2gydjEwaC0yem00IDZoMnY0aC0yeiI+PC9wYXRoPjwvc3ZnPg==",
+      color: $green,
+    ),
+  // dev
+  "907386197855322123":
+    (
+      icon:
+        "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGhlaWdodD0iNDgiIHdpZHRoPSI0OCIgZm9jdXNhYmxlPSJmYWxzZSIgcm9sZT0iaW1nIiBmaWxsPSJjdXJyZW50Q29sb3IiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgY2xhc3M9IlN0eWxlZEljb25CYXNlLXNjLWVhOXVsai0wIGhSbkpQQyIgc3R5bGU9Ii0tZGFya3JlYWRlci1pbmxpbmUtZmlsbDogY3VycmVudENvbG9yOyIgZGF0YS1kYXJrcmVhZGVyLWlubGluZS1maWxsPSIiPjx0aXRsZT5Db25zdHJ1Y3Rpb24gaWNvbjwvdGl0bGU+PHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIj48L3JlY3Q+PHBhdGggZD0ibTEzLjQxIDE1LjU0IDQuNCA0LjRjLjU5LjU5IDEuNTQuNTkgMi4xMiAwIC41OS0uNTkuNTktMS41NCAwLTIuMTJsLTQuNC00LjQtMi4xMiAyLjEyek0xNi4zNCA5Ljc5Yy44OC4zMSAxLjg5LjM2IDMuMDMtLjM5Ljc5LS41MiAxLjQtMS4zMiAxLjU3LTIuMjUuMTQtLjc1LjAzLTEuNDUtLjI1LTIuMDdMMTguMjcgNy41IDE2LjUgNS43M2wyLjQzLTIuNDNjLS42Mi0uMjgtMS4zMy0uMzktMi4wOC0uMjUtLjkzLjE4LTEuNzMuNzktMi4yNSAxLjU4LS43NCAxLjE0LS42OSAyLjE0LS4zOCAzLjAyTDEyIDkuODhsLTEuNjktMS42OWMuMzgtLjM4LjM4LTEgMC0xLjM4bC0uNTYtLjU2IDIuMzItMi4zMkEzLjE4IDMuMTggMCAwIDAgOS44MiAzYy0uODIgMC0xLjYzLjMxLTIuMjUuOTNMNC43MSA2Ljc5YS45OTYuOTk2IDAgMCAwIDAgMS40MWwuNTQuNTRIMy41Yy0uMTkgMC0uMzcuMDctLjUuMjFhLjcuNyAwIDAgMCAwIDFsMiAyYS43LjcgMCAwIDAgMSAwYy4xMy0uMTMuMjEtLjMxLjIxLS41VjkuNzFsLjA0LjA0LjU2LjU2Yy4zOC4zOCAxIC4zOCAxLjM4IDBMOS44OCAxMmwtNS44MiA1LjgyYTEuNDkgMS40OSAwIDAgMCAwIDIuMTJjLjU5LjU5IDEuNTQuNTkgMi4xMiAwbDUuMzgtNS4zOCA0Ljc4LTQuNzd6Ij48L3BhdGg+PC9zdmc+",
+      color: $red,
+    ),
+  // projects
+  "1020267709159718962":
+    (
+      icon:
+        "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTYgMTYiIGhlaWdodD0iNDgiIHdpZHRoPSI0OCIgZm9jdXNhYmxlPSJmYWxzZSIgcm9sZT0iaW1nIiBmaWxsPSJjdXJyZW50Q29sb3IiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgY2xhc3M9IlN0eWxlZEljb25CYXNlLXNjLWVhOXVsai0wIGhSbkpQQyIgc3R5bGU9Ii0tZGFya3JlYWRlci1pbmxpbmUtZmlsbDogY3VycmVudENvbG9yOyIgZGF0YS1kYXJrcmVhZGVyLWlubGluZS1maWxsPSIiPjx0aXRsZT5Qcm9qZWN0IGljb248L3RpdGxlPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTEuNzUgMEExLjc1IDEuNzUgMCAwIDAgMCAxLjc1djEyLjVDMCAxNS4yMTYuNzg0IDE2IDEuNzUgMTZoMTIuNUExLjc1IDEuNzUgMCAwIDAgMTYgMTQuMjVWMS43NUExLjc1IDEuNzUgMCAwIDAgMTQuMjUgMEgxLjc1ek0xLjUgMS43NWEuMjUuMjUgMCAwIDEgLjI1LS4yNWgxMi41YS4yNS4yNSAwIDAgMSAuMjUuMjV2MTIuNWEuMjUuMjUgMCAwIDEtLjI1LjI1SDEuNzVhLjI1LjI1IDAgMCAxLS4yNS0uMjVWMS43NXpNMTEuNzUgM2EuNzUuNzUgMCAwIDAtLjc1Ljc1djcuNWEuNzUuNzUgMCAwIDAgMS41IDB2LTcuNWEuNzUuNzUgMCAwIDAtLjc1LS43NXptLTguMjUuNzVhLjc1Ljc1IDAgMCAxIDEuNSAwdjUuNWEuNzUuNzUgMCAwIDEtMS41IDB2LTUuNXpNOCAzYS43NS43NSAwIDAgMC0uNzUuNzV2My41YS43NS43NSAwIDAgMCAxLjUgMHYtMy41QS43NS43NSAwIDAgMCA4IDN6Ij48L3BhdGg+PC9zdmc+",
+      color: $peach,
+    ),
+  // rices
+  "922896939295592498":
+    (
+      icon:
+        "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGhlaWdodD0iNDgiIHdpZHRoPSI0OCIgZm9jdXNhYmxlPSJmYWxzZSIgcm9sZT0iaW1nIiBmaWxsPSJjdXJyZW50Q29sb3IiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgY2xhc3M9IlN0eWxlZEljb25CYXNlLXNjLWVhOXVsai0wIGhSbkpQQyIgc3R5bGU9Ii0tZGFya3JlYWRlci1pbmxpbmUtZmlsbDogY3VycmVudENvbG9yOyIgZGF0YS1kYXJrcmVhZGVyLWlubGluZS1maWxsPSIiPjx0aXRsZT5Cb3dsUmljZSBpY29uPC90aXRsZT48cGF0aCBkPSJNMjEgMTBhMy41OCAzLjU4IDAgMCAwLTEuOC0zIDMuNjYgMy42NiAwIDAgMC0zLjYzLTMuMTMgMy44NiAzLjg2IDAgMCAwLTEgLjEzIDMuNyAzLjcgMCAwIDAtNS4xMSAwIDMuODYgMy44NiAwIDAgMC0xLS4xM0EzLjY2IDMuNjYgMCAwIDAgNC44MSA3IDMuNTggMy41OCAwIDAgMCAzIDEwYTEgMSAwIDAgMC0xIDEgMTAgMTAgMCAwIDAgNSA4LjY2VjIxYTEgMSAwIDAgMCAxIDFoOGExIDEgMCAwIDAgMS0xdi0xLjM0QTEwIDEwIDAgMCAwIDIyIDExYTEgMSAwIDAgMC0xLTFaTTUgMTBhMS41OSAxLjU5IDAgMCAxIDEuMTEtMS4zOWwuODMtLjI2LS4xNi0uODVhMS42NCAxLjY0IDAgMCAxIDEuNjYtMS42MiAxLjc4IDEuNzggMCAwIDEgLjgzLjJsLjgxLjQ1LjUtLjc3YTEuNzEgMS43MSAwIDAgMSAyLjg0IDBsLjUuNzcuODEtLjQ1YTEuNzggMS43OCAwIDAgMSAuODMtLjIgMS42NSAxLjY1IDAgMCAxIDEuNjcgMS42bC0uMTYuODUuODIuMjhBMS41OSAxLjU5IDAgMCAxIDE5IDEwWiI+PC9wYXRoPjwvc3ZnPg==",
+      color: $yellow,
+    ),
+  // wallpapers
+  "923640537356070972":
+    (
+      icon:
+        "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGhlaWdodD0iNDgiIHdpZHRoPSI0OCIgZm9jdXNhYmxlPSJmYWxzZSIgcm9sZT0iaW1nIiBmaWxsPSJjdXJyZW50Q29sb3IiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgY2xhc3M9IlN0eWxlZEljb25CYXNlLXNjLWVhOXVsai0wIGhSbkpQQyIgc3R5bGU9Ii0tZGFya3JlYWRlci1pbmxpbmUtZmlsbDogY3VycmVudENvbG9yOyIgZGF0YS1kYXJrcmVhZGVyLWlubGluZS1maWxsPSIiPjx0aXRsZT5MYW5kc2NhcGUgaWNvbjwvdGl0bGU+PHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIj48L3JlY3Q+PHBhdGggZD0iTTEzLjIgNy4wNyAxMC4yNSAxMWwyLjI1IDNjLjMzLjQ0LjI0IDEuMDctLjIgMS40YS45OTQuOTk0IDAgMCAxLTEuNC0uMmMtMS4wNS0xLjQtMi4zMS0zLjA3LTMuMS00LjE0LS40LS41My0xLjItLjUzLTEuNiAwbC00IDUuMzNjLS40OS42Ny0uMDIgMS42MS44IDEuNjFoMThjLjgyIDAgMS4yOS0uOTQuOC0xLjZsLTctOS4zM2EuOTkzLjk5MyAwIDAgMC0xLjYgMHoiPjwvcGF0aD48L3N2Zz4=",
+      color: $green,
+    ),
+  // github
+  "921217923790561360":
+    (
+      icon:
+        "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGhlaWdodD0iNDgiIHdpZHRoPSI0OCIgZm9jdXNhYmxlPSJmYWxzZSIgcm9sZT0iaW1nIiBmaWxsPSJjdXJyZW50Q29sb3IiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgY2xhc3M9IlN0eWxlZEljb25CYXNlLXNjLWVhOXVsai0wIGhSbkpQQyIgc3R5bGU9Ii0tZGFya3JlYWRlci1pbmxpbmUtZmlsbDogY3VycmVudENvbG9yOyIgZGF0YS1kYXJrcmVhZGVyLWlubGluZS1maWxsPSIiPjx0aXRsZT5HaXRodWIgaWNvbjwvdGl0bGU+PHBhdGggZD0iTTEyIC4yOTdjLTYuNjMgMC0xMiA1LjM3My0xMiAxMiAwIDUuMzAzIDMuNDM4IDkuOCA4LjIwNSAxMS4zODUuNi4xMTMuODItLjI1OC44Mi0uNTc3IDAtLjI4NS0uMDEtMS4wNC0uMDE1LTIuMDQtMy4zMzguNzI0LTQuMDQyLTEuNjEtNC4wNDItMS42MUM0LjQyMiAxOC4wNyAzLjYzMyAxNy43IDMuNjMzIDE3LjdjLTEuMDg3LS43NDQuMDg0LS43MjkuMDg0LS43MjkgMS4yMDUuMDg0IDEuODM4IDEuMjM2IDEuODM4IDEuMjM2IDEuMDcgMS44MzUgMi44MDkgMS4zMDUgMy40OTUuOTk4LjEwOC0uNzc2LjQxNy0xLjMwNS43Ni0xLjYwNS0yLjY2NS0uMy01LjQ2Ni0xLjMzMi01LjQ2Ni01LjkzIDAtMS4zMS40NjUtMi4zOCAxLjIzNS0zLjIyLS4xMzUtLjMwMy0uNTQtMS41MjMuMTA1LTMuMTc2IDAgMCAxLjAwNS0uMzIyIDMuMyAxLjIzLjk2LS4yNjcgMS45OC0uMzk5IDMtLjQwNSAxLjAyLjAwNiAyLjA0LjEzOCAzIC40MDUgMi4yOC0xLjU1MiAzLjI4NS0xLjIzIDMuMjg1LTEuMjMuNjQ1IDEuNjUzLjI0IDIuODczLjEyIDMuMTc2Ljc2NS44NCAxLjIzIDEuOTEgMS4yMyAzLjIyIDAgNC42MS0yLjgwNSA1LjYyNS01LjQ3NSA1LjkyLjQyLjM2LjgxIDEuMDk2LjgxIDIuMjIgMCAxLjYwNi0uMDE1IDIuODk2LS4wMTUgMy4yODYgMCAuMzE1LjIxLjY5LjgyNS41N0MyMC41NjUgMjIuMDkyIDI0IDE3LjU5MiAyNCAxMi4yOTdjMC02LjYyNy01LjM3My0xMi0xMi0xMiI+PC9wYXRoPjwvc3ZnPg==",
+      color: $sapphire,
+    ),
+  // offtopic
+  "919570286754529330":
+    (
+      icon:
+        "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTYgMTYiIGhlaWdodD0iNDgiIHdpZHRoPSI0OCIgZm9jdXNhYmxlPSJmYWxzZSIgcm9sZT0iaW1nIiBmaWxsPSJjdXJyZW50Q29sb3IiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgY2xhc3M9IlN0eWxlZEljb25CYXNlLXNjLWVhOXVsai0wIGhSbkpQQyIgc3R5bGU9Ii0tZGFya3JlYWRlci1pbmxpbmUtZmlsbDogY3VycmVudENvbG9yOyIgZGF0YS1kYXJrcmVhZGVyLWlubGluZS1maWxsPSIiPjx0aXRsZT5DaGF0VGV4dEZpbGwgaWNvbjwvdGl0bGU+PHBhdGggZD0iTTE2IDhjMCAzLjg2Ni0zLjU4MiA3LTggN2E5LjA2IDkuMDYgMCAwIDEtMi4zNDctLjMwNmMtLjU4NC4yOTYtMS45MjUuODY0LTQuMTgxIDEuMjM0LS4yLjAzMi0uMzUyLS4xNzYtLjI3My0uMzYyLjM1NC0uODM2LjY3NC0xLjk1Ljc3LTIuOTY2Qy43NDQgMTEuMzcgMCA5Ljc2IDAgOGMwLTMuODY2IDMuNTgyLTcgOC03czggMy4xMzQgOCA3ek00LjUgNWEuNS41IDAgMCAwIDAgMWg3YS41LjUgMCAwIDAgMC0xaC03em0wIDIuNWEuNS41IDAgMCAwIDAgMWg3YS41LjUgMCAwIDAgMC0xaC03em0wIDIuNWEuNS41IDAgMCAwIDAgMWg0YS41LjUgMCAwIDAgMC0xaC00eiI+PC9wYXRoPjwvc3ZnPg==",
+      color: $red,
+    ),
+  "1012720591180152893": (
+    icon:
+      "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTYgMTYiIGhlaWdodD0iNDgiIHdpZHRoPSI0OCIgZm9jdXNhYmxlPSJmYWxzZSIgcm9sZT0iaW1nIiBmaWxsPSJjdXJyZW50Q29sb3IiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgY2xhc3M9IlN0eWxlZEljb25CYXNlLXNjLWVhOXVsai0wIGhSbkpQQyIgc3R5bGU9Ii0tZGFya3JlYWRlci1pbmxpbmUtZmlsbDogY3VycmVudENvbG9yOyIgZGF0YS1kYXJrcmVhZGVyLWlubGluZS1maWxsPSIiPjx0aXRsZT5Sc3NGaWxsIGljb248L3RpdGxlPjxwYXRoIGQ9Ik0yIDBhMiAyIDAgMCAwLTIgMnYxMmEyIDIgMCAwIDAgMiAyaDEyYTIgMiAwIDAgMCAyLTJWMmEyIDIgMCAwIDAtMi0ySDJ6bTEuNSAyLjVjNS41MjMgMCAxMCA0LjQ3NyAxMCAxMGExIDEgMCAxIDEtMiAwIDggOCAwIDAgMC04LTggMSAxIDAgMCAxIDAtMnptMCA0YTYgNiAwIDAgMSA2IDYgMSAxIDAgMSAxLTIgMCA0IDQgMCAwIDAtNC00IDEgMSAwIDAgMSAwLTJ6bS41IDdhMS41IDEuNSAwIDEgMSAwLTMgMS41IDEuNSAwIDAgMSAwIDN6Ij48L3BhdGg+PC9zdmc+",
+    color: $peach,
+  ),
+  "956595905086255164": (
+    icon:
+      "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTc2IDUxMiIgaGVpZ2h0PSI0OCIgd2lkdGg9IjQ4IiBmb2N1c2FibGU9ImZhbHNlIiByb2xlPSJpbWciIGZpbGw9ImN1cnJlbnRDb2xvciIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBjbGFzcz0iU3R5bGVkSWNvbkJhc2Utc2MtZWE5dWxqLTAgaFJuSlBDIiBzdHlsZT0iLS1kYXJrcmVhZGVyLWlubGluZS1maWxsOiBjdXJyZW50Q29sb3I7IiBkYXRhLWRhcmtyZWFkZXItaW5saW5lLWZpbGw9IiI+PHRpdGxlPkZyb2cgaWNvbjwvdGl0bGU+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNNTI4IDQxNmgtMzIuMDdsLTkwLjMyLTk2LjM0IDE0MC42LTc5LjAzYzE4LjM4LTEwLjI1IDI5Ljc1LTI5LjYyIDI5Ljc1LTUwLjYyIDAtMjEuNS0xMS43NS00MS0zMC41LTUxLjI1LTQwLjUtMjIuMjUtOTkuMDctNDEuNDMtOTkuMDctNDEuNDNDNDM5LjYgNjAuMTkgNDA3LjMgMzIgMzY4IDMycy03MS43NyAyOC4yNS03OC41MiA2NS41QzEyNi43IDExMy0uNSAyNTAuMSAwIDQxN2MuMTI1IDM0LjkgMjkuMTMgNjMgNjQgNjNoMzA0YzguODc1IDAgMTYtNy4xMjUgMTYtMTYgMC0yNi41MS0yMS40OS00OC00Ny4xLTQ4aC01Mi42bDIzLjkzLTMyLjM4YzI0LjI1LTM2LjEzIDEwLjM4LTg4LjI1LTMzLjYzLTEwNi41LTIzLjgtMTAuMDItNTEuNi00LjcyLTcyLjIgMTAuODhsLTMyLjggMjQuNWMtNy4xMjUgNS4zNzUtMTcuMTIgNC0yMi4zOC0zLjEyNS01LjM3NS03LjEyNS00LTE3LjEyIDMuMTI1LTIyLjM4bDM0Ljc1LTI2LjEyYzM2Ljg3LTI3LjYyIDg4LjM3LTI3LjYyIDEyNS4xIDAgMTAuODggOC4xMjUgNDUuODggMzkgNDAuODggOTMuMTNMNDY5LjYgNDgwaDkwLjM4YzguODc1IDAgMTYtNy4xMjUgMTYtMTYgLjAyLTI2LjUtMjEuNDgtNDgtNDcuOTgtNDh6TTM0NCAxMTJjMC0xMy4yNSAxMC43NS0yNCAyNC0yNHMyNCAxMC43NSAyNCAyNC0xMC43NSAyNC0yNCAyNC0yNC0xMC43LTI0LTI0eiIgc3R5bGU9Ii0tZGFya3JlYWRlci1pbmxpbmUtZmlsbDogY3VycmVudENvbG9yOyIgZGF0YS1kYXJrcmVhZGVyLWlubGluZS1maWxsPSIiPjwvcGF0aD48L3N2Zz4=",
+    color: $yellow,
+  ),
+  "1012053454497263637": (
+    icon:
+      "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTYgMTYiIGhlaWdodD0iNDgiIHdpZHRoPSI0OCIgZm9jdXNhYmxlPSJmYWxzZSIgcm9sZT0iaW1nIiBmaWxsPSJjdXJyZW50Q29sb3IiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgY2xhc3M9IlN0eWxlZEljb25CYXNlLXNjLWVhOXVsai0wIGhSbkpQQyIgc3R5bGU9Ii0tZGFya3JlYWRlci1pbmxpbmUtZmlsbDogY3VycmVudENvbG9yOyIgZGF0YS1kYXJrcmVhZGVyLWlubGluZS1maWxsPSIiPjx0aXRsZT5IZWFkcGhvbmVzIGljb248L3RpdGxlPjxwYXRoIGQ9Ik04IDNhNSA1IDAgMCAwLTUgNXYxaDFhMSAxIDAgMCAxIDEgMXYzYTEgMSAwIDAgMS0xIDFIM2ExIDEgMCAwIDEtMS0xVjhhNiA2IDAgMSAxIDEyIDB2NWExIDEgMCAwIDEtMSAxaC0xYTEgMSAwIDAgMS0xLTF2LTNhMSAxIDAgMCAxIDEtMWgxVjhhNSA1IDAgMCAwLTUtNXoiPjwvcGF0aD48L3N2Zz4=",
+    color: $green,
+  ),
+  "993360467835764776": (
+    icon:
+      "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjggMjgiIGhlaWdodD0iNDgiIHdpZHRoPSI0OCIgZm9jdXNhYmxlPSJmYWxzZSIgcm9sZT0iaW1nIiBmaWxsPSJjdXJyZW50Q29sb3IiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgY2xhc3M9IlN0eWxlZEljb25CYXNlLXNjLWVhOXVsai0wIGhSbkpQQyIgc3R5bGU9Ii0tZGFya3JlYWRlci1pbmxpbmUtZmlsbDogY3VycmVudENvbG9yOyIgZGF0YS1kYXJrcmVhZGVyLWlubGluZS1maWxsPSIiPjx0aXRsZT5BbmltYWxDYXQgaWNvbjwvdGl0bGU+PHBhdGggZD0iTTE3LjggMjZINi40NmE0LjQ2IDQuNDYgMCAwIDEtMy4yNi03LjVsMS4zOC0xLjQ4YTMuODggMy44OCAwIDAgMC0uMS01LjRsLTEuMzUtMS4zNUEuNzUuNzUgMCAwIDEgNC4yIDkuMjFsMS4zNiAxLjM2YTUuMzggNS4zOCAwIDAgMSAuMTIgNy40N0w0LjMgMTkuNTJhMi45NiAyLjk2IDAgMCAwIDIuMTcgNC45OGguOThhMjguNTggMjguNTggMCAwIDEgLjYyLTYuMjZjLjQxLTEuNzcgMS4xLTMuNiAyLjI4LTUuMDFhNi40MiA2LjQyIDAgMCAxIDQuNDItMi4zOFY1LjY3QTMuNjcgMy42NyAwIDAgMSAxOC40MyAyYy44MiAwIDEuNDguNjYgMS40OCAxLjQ4di45NWgyLjE1YzEuMSAwIDIuMTIuNTcgMi43IDEuNWwuNzYgMS4yMmEzLjE4IDMuMTggMCAwIDEtMi41NyA0Ljg2djExLjQyQTIuNTcgMi41NyAwIDAgMSAyMC4zOCAyNkgxOS4zdi0yLjU3YTQuNCA0LjQgMCAwIDAtNC40LTQuNGgtMS41YS43NS43NSAwIDAgMCAwIDEuNWgxLjUxYzEuNiAwIDIuOSAxLjMgMi45IDIuOVYyNnoiPjwvcGF0aD48L3N2Zz4=",
+    color: $sapphire,
+  ),
+  "995021303499206666": (
+    icon:
+      "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTYgMTYiIGhlaWdodD0iNDgiIHdpZHRoPSI0OCIgZm9jdXNhYmxlPSJmYWxzZSIgcm9sZT0iaW1nIiBmaWxsPSJjdXJyZW50Q29sb3IiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgY2xhc3M9IlN0eWxlZEljb25CYXNlLXNjLWVhOXVsai0wIGhSbkpQQyIgc3R5bGU9Ii0tZGFya3JlYWRlci1pbmxpbmUtZmlsbDogY3VycmVudENvbG9yOyIgZGF0YS1kYXJrcmVhZGVyLWlubGluZS1maWxsPSIiPjx0aXRsZT5TdGFyRmlsbCBpY29uPC90aXRsZT48cGF0aCBkPSJNMy42MTIgMTUuNDQzYy0uMzg2LjE5OC0uODI0LS4xNDktLjc0Ni0uNTkybC44My00LjczTC4xNzMgNi43NjVjLS4zMjktLjMxNC0uMTU4LS44ODguMjgzLS45NWw0Ljg5OC0uNjk2TDcuNTM4Ljc5MmMuMTk3LS4zOS43My0uMzkuOTI3IDBsMi4xODQgNC4zMjcgNC44OTguNjk2Yy40NDEuMDYyLjYxMi42MzYuMjgyLjk1bC0zLjUyMiAzLjM1Ni44MyA0LjczYy4wNzguNDQzLS4zNi43OS0uNzQ2LjU5Mkw4IDEzLjE4N2wtNC4zODkgMi4yNTZ6Ij48L3BhdGg+PC9zdmc+",
+    color: $mauve,
+  )
+);
+
+div[class*="unread-"],
+div[class^="jumpToPresentBar-"] > button,
+div[class^="newMessagesBar-"] > button {
+  color: $base;
+}
+
+// rules
+a[href="/channels/907385605422448742/992579279835639808"] {
+  *[class^="icon"] {
+    color: $red !important;
+  }
+}
+
+// announcements
+a[href="/channels/907385605422448742/918688623002550313"] {
+  *[class^="icon"] {
+    color: $green !important;
+  }
+}
+
+@each $channelid, $icon in $channelicons {
+  a[href="/channels/907385605422448742/#{$channelid}"] {
+    *[class*="icon"] {
+      color: transparent !important;
+    }
+
+    div[class^="iconContainer"]:before {
+      content: " ";
+      -webkit-mask: url("#{map-get($icon, icon)}");
+      position: absolute;
+      height: 48px;
+      width: 48px;
+      color: #{map-get($icon, color)};
+      background-color: currentColor;
+      transform: scale(0.4) translate(-32px, -38px);
+    }
+  }
+}
+
+ul[aria-label="projects threads"] > li:nth-child(1n) {
+  --channels-default: #{$red};
+  --interactive-hover: #{lighten($red, 10%)};
+  --interactive-active: #{lighten($red, 10%)};
+}
+ul[aria-label="projects threads"] > li:nth-child(2n) {
+  --channels-default: #{$peach};
+  --interactive-hover: #{lighten($peach, 10%)};
+  --interactive-active: #{lighten($peach, 10%)};
+}
+ul[aria-label="projects threads"] > li:nth-child(3n) {
+  --channels-default: #{$yellow};
+  --interactive-hover: #{lighten($yellow, 10%)};
+  --interactive-active: #{lighten($yellow, 10%)};
+}
+ul[aria-label="projects threads"] > li:nth-child(4n) {
+  --channels-default: #{$green};
+  --interactive-hover: #{lighten($green, 10%)};
+  --interactive-active: #{lighten($green, 10%)};
+}
+ul[aria-label="projects threads"] > li:nth-child(5n) {
+  --channels-default: #{$sapphire};
+  --interactive-hover: #{lighten($sapphire, 10%)};
+  --interactive-active: #{lighten($sapphire, 10%)};
+}
+ul[aria-label="projects threads"] > li:nth-child(6n) {
+  --channels-default: #{$mauve};
+  --interactive-hover: #{lighten($mauve, 10%)};
+  --interactive-active: #{lighten($mauve, 10%)};
+}
