@@ -30,7 +30,9 @@ div[class^=layerContainer] {
   --interactive-active: #c6d0f5;
   --channels-default: #a5adce;
   --channeltextarea-background: #292c3c;
+  --channel-text-area-placeholder: #a5adce;
   --input-background: #232634;
+  --input-placeholder-text: #a5adce;
   --modal-background: #303446;
   --button-positive-background: #a6d189;
   --button-positive-background-hover: #8ac364;
@@ -50,16 +52,20 @@ div[class^=layerContainer] {
   --status-danger: #e78284;
   --status-warning: #ef9f76;
   --info-warning-background: #ef9f76;
-  --info-warning-foreground: #303446;
+  --info-warning-foreground: #232634;
   --info-warning-text: #303446;
-  --info-positive-text: #a6d189;
-  --info-danger-text: #e78284;
+  --info-positive-text: #303446;
+  --info-positive-background: #a6d189;
+  --info-positive-foreground: #232634;
+  --info-danger-text: #232634;
+  --info-danger-background: #e78284;
+  --info-danger-foreground: #232634;
   --info-help-text: #85c1dc;
   --info-help-background: #292c3c;
   --info-help-foreground: #232634;
   --status-warning-background: #ef9f76;
   --status-positive-background: #a6d189;
-  --status-positive-text: #c6d0f5;
+  --status-positive-text: #303446;
   --status-positive: #a6d189;
   --header-primary: #c6d0f5;
   --header-secondary: #acbbf0;
@@ -141,6 +147,10 @@ rect[mask="url(#svg-mask-status-offline)"] {
   fill: #626880 !important;
 }
 
+div[class^=gameNameLastPlayed-] * {
+  color: #303446 !important;
+}
+
 div[class^=pageWrapper-] {
   background: #303446 !important;
 }
@@ -186,6 +196,11 @@ section[aria-label="User area"] div[class*=buttonContents] {
   background-color: #f2d5cf !important;
 }
 
+div[class^=chat] button[class*=lookFilled] {
+  color: #c6d0f5 !important;
+  background-color: #232634 !important;
+}
+
 button[class*=lookFilled]:not([disabled]) {
   color: #232634 !important;
 }
@@ -197,6 +212,10 @@ button[class*=lookFilled]:disabled {
 div[class^=chat] button[class*=lookFilled] {
   color: #c6d0f5 !important;
   background-color: #232634 !important;
+}
+
+section[class^=inputSensitivityToggle-] div[class*=speaking-] {
+  background: #a6d189 !important;
 }
 
 div[class*=reactionMe-] {

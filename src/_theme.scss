@@ -28,8 +28,10 @@ div[class^="layerContainer"] {
 	--interactive-active: #{$text};
 	--channels-default: #{$subtext0};
 	--channeltextarea-background: #{$mantle};
+	--channel-text-area-placeholder: #{$subtext0};
 
 	--input-background: #{$crust};
+	--input-placeholder-text: #{$subtext0};
 	--modal-background: #{$base};
 
 	--button-positive-background: #{$green};
@@ -53,17 +55,23 @@ div[class^="layerContainer"] {
 	--status-warning: #{$peach};
 
 	--info-warning-background: #{$peach};
-	--info-warning-foreground: #{$base};
+	--info-warning-foreground: #{$crust};
 	--info-warning-text: #{$base};
-	--info-positive-text: #{$green};
-	--info-danger-text: #{$red};
+
+	--info-positive-text: #{$base};
+	--info-positive-background: #{$green};
+	--info-positive-foreground: #{$crust};
+
+	--info-danger-text: #{$crust};
+	--info-danger-background: #{$red};
+	--info-danger-foreground: #{$crust};
 	--info-help-text: #{$sapphire};
 	--info-help-background: #{$mantle};
 	--info-help-foreground: #{$crust};
 
 	--status-warning-background: #{$peach};
 	--status-positive-background: #{$green};
-	--status-positive-text: #{$text};
+	--status-positive-text: #{$base};
 	--status-positive: #{$green};
 
 	--header-primary: #{$text};
@@ -150,6 +158,10 @@ rect[mask="url(#svg-mask-status-offline)"] {
 	fill: $surface2 !important;
 }
 
+div[class^="gameNameLastPlayed-"] * {
+	color: $base !important;
+}
+
 // discovery
 div[class^="pageWrapper-"] {
 	background: $base !important;
@@ -217,6 +229,13 @@ div[class^="chat"] {
 	button[class*="lookFilled"] {
 		color: #{$text} !important;
 		background-color: #{$crust} !important;
+	}
+}
+
+// Voice & Audio checks
+section[class^="inputSensitivityToggle-"] {
+	div[class*="speaking-"] {
+		background: $green !important;
 	}
 }
 
