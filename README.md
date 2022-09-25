@@ -20,10 +20,10 @@
 
 1. Download your preferred flavour:
 
-- 🌻 [Latte](https://github.com/catppuccin/discord/raw/main/dist/catppuccin-latte.theme.css)
-- 🪴 [Frappe](https://github.com/catppuccin/discord/raw/main/dist/catppuccin-frappe.theme.css)
-- 🌺 [Macchiato](https://github.com/catppuccin/discord/raw/main/dist/catppuccin-macchiato.theme.css)
-- 🌿 [Mocha](https://github.com/catppuccin/discord/raw/main/dist/catppuccin-mocha.theme.css)
+- 🌻 [Latte](https://github.com/catppuccin/discord/raw/main/themes/latte.theme.css)
+- 🪴 [Frappe](https://github.com/catppuccin/discord/raw/main/themes/frappe.theme.css)
+- 🌺 [Macchiato](https://github.com/catppuccin/discord/raw/main/themes/macchiato.theme.css)
+- 🌿 [Mocha](https://github.com/catppuccin/discord/raw/main/themes/mocha.theme.css)
 
 2. BetterDiscord: 
 	1. Copy the downloaded file to your BetterDiscord themes folder.
@@ -46,8 +46,6 @@ curl -L https://github.com/catppuccin/discord/blob/main/dist/catppuccin-macchiat
 # mocha
 curl -L https://github.com/catppuccin/discord/blob/main/dist/catppuccin-mocha.theme.css >> ~/.config/discocss/custom.css
 ```
-
-2. Use the documentation and find out how to inject the css file and use the theme.
 
 ### [Stylus](https://github.com/openstyles/stylus)
 
