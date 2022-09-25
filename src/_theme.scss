@@ -125,6 +125,21 @@ div[class^="layerContainer"] {
 	--status-warning-text: hotpink;
 }
 
+// online state
+rect[mask="url(#svg-mask-status-online)"] {
+	fill: $green !important;
+}
+rect[mask="url(#svg-mask-status-idle)"] {
+	fill: $peach !important;
+}
+rect[mask="url(#svg-mask-status-dnd)"] {
+	fill: $red !important;
+}
+rect[mask="url(#svg-mask-status-offline)"] {
+	fill: $surface2 !important;
+}
+
+// discovery
 div[class^="pageWrapper"] {
 	background: #{$base} !important;
 }

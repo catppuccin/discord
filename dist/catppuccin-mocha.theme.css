@@ -116,6 +116,22 @@ div[class^=layerContainer] {
   --status-warning-text: hotpink;
 }
 
+rect[mask="url(#svg-mask-status-online)"] {
+  fill: #a6e3a1 !important;
+}
+
+rect[mask="url(#svg-mask-status-idle)"] {
+  fill: #fab387 !important;
+}
+
+rect[mask="url(#svg-mask-status-dnd)"] {
+  fill: #f38ba8 !important;
+}
+
+rect[mask="url(#svg-mask-status-offline)"] {
+  fill: #585b70 !important;
+}
+
 div[class^=pageWrapper] {
   background: #1e1e2e !important;
 }
