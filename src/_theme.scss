@@ -202,6 +202,32 @@ div[class^="notice-"] {
 	}
 }
 
+// inbox
+div[class*="recentMentionsPopout"] {
+	div[class^="tabBar"] div[class^="tab"][class*="active-"]{
+		color: $base !important;
+	}
+}
+
+button[class*="white"] {
+	background: $surface0 !important;
+	svg * {
+		fill: $subtext0 !important;
+	}
+}
+button[class*="primaryDark"] {
+	background: $base !important;
+	svg * {
+		fill: $text !important;
+	}
+}
+button[class*="red"] {
+	background: $red !important;
+	svg * {
+		fill: $base !important;
+	}
+}
+
 // video chat
 div[class*="videoGrid-"], div[class^="callContainer-"] > div[class^="root-"] {
 	background: $crust !important;

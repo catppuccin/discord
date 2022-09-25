@@ -188,6 +188,31 @@ div[class^=notice-] * {
   border-color: #181926 !important;
 }
 
+div[class*=recentMentionsPopout] div[class^=tabBar] div[class^=tab][class*=active-] {
+  color: #24273a !important;
+}
+
+button[class*=white] {
+  background: #363a4f !important;
+}
+button[class*=white] svg * {
+  fill: #a5adcb !important;
+}
+
+button[class*=primaryDark] {
+  background: #24273a !important;
+}
+button[class*=primaryDark] svg * {
+  fill: #cad3f5 !important;
+}
+
+button[class*=red] {
+  background: #ed8796 !important;
+}
+button[class*=red] svg * {
+  fill: #24273a !important;
+}
+
 div[class*=videoGrid-], div[class^=callContainer-] > div[class^=root-] {
   background: #181926 !important;
 }
