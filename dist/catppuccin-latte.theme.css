@@ -276,8 +276,20 @@ div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=
 div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=modalSize-] {
   background-color: #e6e9ef !important;
 }
+div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=modal-] li, div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=modal-] p, div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=modal-] span,
+div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=modalSize-] li,
+div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=modalSize-] p,
+div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=modalSize-] span {
+  color: #4c4f69 !important;
+}
 div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class*=footer] {
   background-color: #dce0e8 !important;
+}
+div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h1[class^=fixed-], div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h2[class^=fixed-], div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h3[class^=fixed-], div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h4[class^=fixed-], div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h5[class^=fixed-], div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h6[class^=fixed-] {
+  color: #d20f39 !important;
+}
+div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h1[class^=fixed-]:after, div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h2[class^=fixed-]:after, div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h3[class^=fixed-]:after, div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h4[class^=fixed-]:after, div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h5[class^=fixed-]:after, div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h6[class^=fixed-]:after {
+  background-color: #d20f39 !important;
 }
 div[class^=layerContainer] div[class^=addGamePopout-] {
   background-color: #e6e9ef !important;
@@ -293,6 +305,10 @@ div[class^=layerContainer] div[class^=queryContainer] {
 div[class^=layerContainer] div[class^=queryContainer] span[class^=key] {
   color: #4c4f69 !important;
   background-color: #eff1f5 !important;
+}
+
+div[class*=date-] {
+  color: #1e66f5 !important;
 }
 
 div[class^=base] > div[class^=content] > div[class^=container] {

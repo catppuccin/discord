@@ -314,10 +314,23 @@ div[class^="layerContainer"] {
 			div[class^="modal-"],
 			div[class^="modalSize-"] {
 				background-color: $mantle !important;
+				li, p, span {
+					color: $text !important;
+				}
 			}
 			// their respective footers
 			div[class*="footer"] {
 				background-color: $crust !important;
+			}
+
+			// feature headers
+			h1, h2, h3, h4, h5, h6 {
+				&[class^="fixed-"] {
+					&:after {
+						background-color: $red !important;
+					}
+					color: $red !important;
+				}
 			}
 		}
 	}
@@ -340,6 +353,10 @@ div[class^="layerContainer"] {
 			background-color: $base !important;
 		}
 	}
+}
+
+div[class*="date-"] {
+	color: $brand !important;
 }
 
 // 'peopleList' background, friendslist, is not set via the variable
