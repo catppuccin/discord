@@ -116,6 +116,10 @@ div[class^=layerContainer] {
   --status-warning-text: hotpink;
 }
 
+div[class^=pageWrapper] {
+  background: #303446 !important;
+}
+
 div[class^=chat] > div[class^=content-] > div[class^=container-] {
   background-color: #232634;
 }
