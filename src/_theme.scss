@@ -496,6 +496,16 @@ main[class^="chatContent"] {
 	}
 }
 
+// spoiler messages
+span[class^="spoilerText"] {
+	&[aria-expanded="false"] {
+		background-color: $surface2 !important;
+	}
+	&[aria-expanded="true"] {
+		background-color: $surface0 !important;
+	}
+}
+
 // rainbow threads
 ul[aria-label$=" threads"] > li:nth-child(1n) {
 	--channels-default: #{mix($red, $text, 30%)};

@@ -543,6 +543,13 @@ main[class^=chatContent] #---new-messages-bar svg * {
   stroke: #d20f39;
 }
 
+span[class^=spoilerText][aria-expanded=false] {
+  background-color: #acb0be !important;
+}
+span[class^=spoilerText][aria-expanded=true] {
+  background-color: #ccd0da !important;
+}
+
 ul[aria-label$=" threads"] > li:nth-child(1n) {
   --channels-default: #743c5b;
   --interactive-hover: #ef2550;
