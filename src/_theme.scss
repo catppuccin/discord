@@ -363,8 +363,13 @@ div[class^="uploadModal"] {
 	}
 }
 
-div[class^="upperBadge"] > div[class^="iconBadge"] path {
-	color: $base !important;
+div[class^="upperBadge"] {
+	> div[class^="iconBadge"] path{
+		color: $base !important;
+	}
+	div[class*="participating-"] {
+		background: $green !important;
+	}
 }
 
 // new message ruler

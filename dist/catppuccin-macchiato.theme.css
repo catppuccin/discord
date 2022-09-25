@@ -307,6 +307,9 @@ div[class^=uploadModal] > div[class^=footer] {
 div[class^=upperBadge] > div[class^=iconBadge] path {
   color: #24273a !important;
 }
+div[class^=upperBadge] div[class*=participating-] {
+  background: #a6da95 !important;
+}
 
 main[class^=chatContent] #---new-messages-bar {
   border-color: #ed8796;
@@ -330,6 +333,14 @@ span[class^=spoilerText][aria-expanded=true] {
 
 div[class*=rolesList] div[class^=role] {
   background-color: #181926 !important;
+}
+
+form[class*=card-] {
+  background-color: #24273a !important;
+}
+
+div[class*=liveShapeRound-] {
+  background-color: #ed8796 !important;
 }
 
 ul[aria-label$=" threads"] > li:nth-child(1n) {
