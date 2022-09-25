@@ -35,6 +35,7 @@ div[class^="layerContainer"] {
 	--button-positive-background: #{$green};
 	--button-positive-background-hover: #{darken($green, 10%)};
 	--button-secondary-background: #{$brand};
+	--button-secondary-background-disabled: #{$crust};
 
 	--rs-online-color: #{$green};
 	--rs-idle-color: #{$peach};
@@ -196,7 +197,7 @@ section[aria-label="User area"] {
 
 //-- buttons
 // buttons are crust
-button[class*="lookFilled"] {
+button[class*="lookFilled"]:not([disabled]) {
 	color: #{$crust} !important;
 }
 
