@@ -484,37 +484,37 @@ a[href="/channels/907385605422448742/995021303499206666"] div[class^=iconContain
   transform: scale(0.4) translate(-32px, -38px);
 }
 
-ul[aria-label="projects threads"] > li:nth-child(1n) {
+ul[aria-label$=" threads"] > li:nth-child(1n) {
   --channels-default: #f38ba8;
   --interactive-hover: #f8b9cb;
   --interactive-active: #f8b9cb;
 }
 
-ul[aria-label="projects threads"] > li:nth-child(2n) {
+ul[aria-label$=" threads"] > li:nth-child(2n) {
   --channels-default: #fab387;
   --interactive-hover: #fcd2b8;
   --interactive-active: #fcd2b8;
 }
 
-ul[aria-label="projects threads"] > li:nth-child(3n) {
+ul[aria-label$=" threads"] > li:nth-child(3n) {
   --channels-default: #f9e2af;
   --interactive-hover: #fdf3de;
   --interactive-active: #fdf3de;
 }
 
-ul[aria-label="projects threads"] > li:nth-child(4n) {
+ul[aria-label$=" threads"] > li:nth-child(4n) {
   --channels-default: #a6e3a1;
   --interactive-hover: #cbefc8;
   --interactive-active: #cbefc8;
 }
 
-ul[aria-label="projects threads"] > li:nth-child(5n) {
+ul[aria-label$=" threads"] > li:nth-child(5n) {
   --channels-default: #74c7ec;
   --interactive-hover: #a1d9f2;
   --interactive-active: #a1d9f2;
 }
 
-ul[aria-label="projects threads"] > li:nth-child(6n) {
+ul[aria-label$=" threads"] > li:nth-child(6n) {
   --channels-default: #cba6f7;
   --interactive-hover: #e6d5fb;
   --interactive-active: #e6d5fb;

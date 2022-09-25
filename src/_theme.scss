@@ -439,32 +439,33 @@ a[href="/channels/907385605422448742/918688623002550313"] {
 	}
 }
 
-ul[aria-label="projects threads"] > li:nth-child(1n) {
+// rainbow threads
+ul[aria-label$=" threads"] > li:nth-child(1n) {
 	--channels-default: #{$red};
 	--interactive-hover: #{lighten($red, 10%)};
 	--interactive-active: #{lighten($red, 10%)};
 }
-ul[aria-label="projects threads"] > li:nth-child(2n) {
+ul[aria-label$=" threads"] > li:nth-child(2n) {
 	--channels-default: #{$peach};
 	--interactive-hover: #{lighten($peach, 10%)};
 	--interactive-active: #{lighten($peach, 10%)};
 }
-ul[aria-label="projects threads"] > li:nth-child(3n) {
+ul[aria-label$=" threads"] > li:nth-child(3n) {
 	--channels-default: #{$yellow};
 	--interactive-hover: #{lighten($yellow, 10%)};
 	--interactive-active: #{lighten($yellow, 10%)};
 }
-ul[aria-label="projects threads"] > li:nth-child(4n) {
+ul[aria-label$=" threads"] > li:nth-child(4n) {
 	--channels-default: #{$green};
 	--interactive-hover: #{lighten($green, 10%)};
 	--interactive-active: #{lighten($green, 10%)};
 }
-ul[aria-label="projects threads"] > li:nth-child(5n) {
+ul[aria-label$=" threads"] > li:nth-child(5n) {
 	--channels-default: #{$sapphire};
 	--interactive-hover: #{lighten($sapphire, 10%)};
 	--interactive-active: #{lighten($sapphire, 10%)};
 }
-ul[aria-label="projects threads"] > li:nth-child(6n) {
+ul[aria-label$=" threads"] > li:nth-child(6n) {
 	--channels-default: #{$mauve};
 	--interactive-hover: #{lighten($mauve, 10%)};
 	--interactive-active: #{lighten($mauve, 10%)};
