@@ -158,7 +158,7 @@ rect[mask="url(#svg-mask-status-offline)"] {
   fill: #5b6078 !important;
 }
 
-div[class*=activeGame-] * {
+div[class*=activeGame-][class*=nowPlaying] * {
   color: #24273a !important;
 }
 

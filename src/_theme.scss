@@ -170,7 +170,7 @@ rect[mask="url(#svg-mask-status-offline)"] {
 	fill: $surface2 !important;
 }
 
-div[class*="activeGame-"] * {
+div[class*="activeGame-"][class*="nowPlaying"] * {
 	color: $base !important;
 }
 
