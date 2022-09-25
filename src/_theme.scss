@@ -400,6 +400,11 @@ div[class*="rolesList"] {
 	}
 }
 
+// streaming badge
+div[class*="liveShapeRound-"] {
+	background-color: $red !important;
+}
+
 // rainbow threads
 ul[aria-label$=" threads"] > li:nth-child(1n) {
 	--channels-default: #{mix($red, $text, 30%)};
