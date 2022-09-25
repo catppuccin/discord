@@ -34,7 +34,7 @@
 
 ## Usage
 
-### [BetterDiscord](https://betterdiscord.app) / [GooseMod](https://goosemod.com/)
+### [BetterDiscord](https://betterdiscord.app)
 
 1. Download your preferred flavour:
 
@@ -43,12 +43,22 @@
 - 🌺 [Macchiato](./themes/macchiato.theme.css)
 - 🌿 [Mocha](./themes/mocha.theme.css)
 
-2. BetterDiscord: 
-	1. Copy the downloaded file to your BetterDiscord themes folder.
-	2. Enable the theme in BetterDiscord settings.
-3. GooseMod / Clients with custom CSS support:
-	1. Copy the CSS into your clipboard
-	2. Open Discord > Settings > Custom CSS and paste it in there.
+2. Copy the downloaded file to your BetterDiscord themes folder.
+3. Enable the theme in BetterDiscord settings.
+
+### [GooseMod](https://goosemod.com) / Clients with custom CSS support
+1. Simply add your preferred flavour into `Discord > Settings > Custom CSS`
+
+```css
+/* latte */
+@import url("https://catppuccin.github.io/discord/dist/catppuccin-latte.theme.css");
+/* frappe */
+@import url("https://catppuccin.github.io/discord/dist/catppuccin-frappe.theme.css");
+/* macchiato */
+@import url("https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css");
+/* mocha */
+@import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css");
+```
 
 ### [DiscoCSS](https://github.com/mlvzk/discocss)
 
@@ -63,14 +73,6 @@ curl -L https://github.com/catppuccin/discord/blob/main/dist/catppuccin-frappe.t
 curl -L https://github.com/catppuccin/discord/blob/main/dist/catppuccin-macchiato.theme.css > ~/.config/discocss/custom.css
 # mocha
 curl -L https://github.com/catppuccin/discord/blob/main/dist/catppuccin-mocha.theme.css > ~/.config/discocss/custom.css
-```
-
-### [GooseMod](https://goosemod.com)
-
-1. Simply add the following line to your custom CSS:
-
-```css
-@import url(https://catppuccin.github.io/discord/main.css);
 ```
 
 ### [Stylus](https://github.com/openstyles/stylus)
