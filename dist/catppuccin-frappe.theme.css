@@ -450,6 +450,7 @@ form[class*=card-] {
 
 div[class*=liveShapeRound-] {
   background-color: #e78284 !important;
+  color: #303446 !important;
 }
 
 ul[aria-label$=" threads"] > li:nth-child(1n) {
@@ -486,6 +487,18 @@ ul[aria-label$=" threads"] > li:nth-child(6n) {
   --channels-default: #c7c1f1;
   --interactive-hover: #e0c7f0;
   --interactive-active: #e0c7f0;
+}
+
+button[class*=emojiButtonNormal] > div > div {
+  filter: grayscale(0.88) hue-rotate(170deg) contrast(0.9) !important;
+}
+
+button[class*=emojiButtonHovered] {
+  background: transparent !important;
+}
+
+button[class*=emojiButtonHovered] > div > div {
+  filter: unset !important;
 }
 
 div[class*=unread-],
