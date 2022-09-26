@@ -368,6 +368,13 @@ div[class^="layerContainer"] {
 			overflow: hidden !important;
 		}
 	}
+	
+	// User popout activity buttons
+	div[class*="activity"] {
+		div[class*="contents"] {
+			color: $text;
+		}
+	}
 
 	> div[class^="layer"] {
 		// search popout

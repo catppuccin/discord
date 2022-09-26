@@ -325,6 +325,9 @@ div[class^=layerContainer] div[id^=channel-context] div[class^=scroller],
 div[class^=layerContainer] div[id^=user-context] div[class^=scroller] {
   overflow: hidden !important;
 }
+div[class^=layerContainer] div[class*=activity] div[class*=contents] {
+  color: #cad3f5;
+}
 div[class^=layerContainer] > div[class^=layer] div[role=listbox] {
   background-color: #1e2030 !important;
 }
