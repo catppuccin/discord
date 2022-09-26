@@ -542,6 +542,7 @@ form[class*="card-"] {
 // streaming badge
 div[class*="liveShapeRound-"] {
 	background-color: $red !important;
+	color: $base !important;
 }
 
 // rainbow threads
@@ -574,6 +575,17 @@ ul[aria-label$=" threads"] > li:nth-child(6n) {
 	--channels-default: #{mix($mauve, $text, 30%)};
 	--interactive-hover: #{lighten($mauve, 10%)};
 	--interactive-active: #{lighten($mauve, 10%)};
+}
+
+// emoji button
+button[class*="emojiButtonNormal"] > div > div {
+    filter: grayscale(0.88) hue-rotate(170deg) contrast(0.9) !important;
+}
+button[class*="emojiButtonHovered"] {
+    background: transparent !important;
+}
+button[class*="emojiButtonHovered"] > div > div {
+    filter: unset !important;
 }
 
 @import "_catppuccin-server";
