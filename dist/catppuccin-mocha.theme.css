@@ -31,7 +31,7 @@ div[class^=layerContainer] {
   --channels-default: #a6adc8;
   --channel-icon: #a6adc8;
   --channeltextarea-background: #181825;
-  --channel-text-area-placeholder: #a6adc8;
+  --channel-text-area-placeholder: rgba(205, 214, 244, 0.5);
   --input-background: #11111b;
   --input-placeholder-text: #a6adc8;
   --modal-background: #1e1e2e;
@@ -499,6 +499,15 @@ button[class*=emojiButtonHovered] {
 
 button[class*=emojiButtonHovered] > div > div {
   filter: unset !important;
+}
+
+svg[class^=spine-] {
+  color: #585b70 !important;
+}
+
+nav[class*=guilds-] foreignObject > div[data-list-item-id^=guildsnav_]:hover > div[class^=childWrapper-], nav[class*=guilds-] foreignObject > div[data-list-item-id^=guildsnav_][class*=selected] > div[class^=childWrapper-] {
+  color: var(--background-primary) !important;
+  font-weight: 600 !important;
 }
 
 div[class*=unread-],

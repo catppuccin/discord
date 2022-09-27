@@ -29,7 +29,7 @@ div[class^="layerContainer"] {
 	--channels-default: #{$subtext0};
 	--channel-icon: #{$subtext0};
 	--channeltextarea-background: #{$mantle};
-	--channel-text-area-placeholder: #{$subtext0};
+	--channel-text-area-placeholder: #{adjust-color($text, $alpha: -0.5)};
 
 	--input-background: #{$crust};
 	--input-placeholder-text: #{$subtext0};
