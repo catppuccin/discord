@@ -218,22 +218,22 @@ div[class^=premiumLabel-] svg * {
   color: #eff1f5 !important;
 }
 
-div[class*=white], button[class*=white] {
+button[class*=white] {
   background: #ccd0da !important;
 }
-div[class*=white] svg *, button[class*=white] svg * {
+button[class*=white] svg * {
   fill: #4c4f69 !important;
 }
-div[class*=primaryDark], button[class*=primaryDark] {
+button[class*=primaryDark] {
   background: #eff1f5 !important;
 }
-div[class*=primaryDark] svg *, button[class*=primaryDark] svg * {
+button[class*=primaryDark] svg * {
   fill: #4c4f69 !important;
 }
-div[class*=red], button[class*=red] {
+button[class*=red] {
   background: #d20f39 !important;
 }
-div[class*=red] svg *, button[class*=red] svg * {
+button[class*=red] svg * {
   fill: #eff1f5 !important;
 }
 
