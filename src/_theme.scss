@@ -226,23 +226,42 @@ div[class*="recentMentionsPopout"] {
 	}
 }
 
-button[class*="white"] {
-	background: $surface0 !important;
-	svg * {
-		fill: $subtext0 !important;
-	}
+// beta badge, other similarly blue/burple badges
+div[class^="textBadge-"][style*="background-color: hsl(235, "] {
+  background-color: $brand !important;
+  color: $base !important;
 }
-button[class*="primaryDark"] {
-	background: $base !important;
-	svg * {
-		fill: $text !important;
-	}
+
+// nitro icon
+div[class^="premiumLabel-"] svg * {
+  fill: $brand !important;
 }
-button[class*="red"] {
-	background: $red !important;
-	svg * {
-		fill: $base !important;
-	}
+
+// gift inventory, others
+*[style*="background-color: var(--status-danger)"] {
+  color: $base !important;
+}
+
+// buttons in calls
+div, button {
+  &[class*="white"] {
+    background: $surface0 !important;
+    svg * {
+      fill: $text !important;
+    }
+  }
+  &[class*="primaryDark"] {
+    background: $base !important;
+    svg * {
+      fill: $text !important;
+    }
+  }
+  &[class*="red"] {
+    background: $red !important;
+    svg * {
+      fill: $base !important;
+    }
+  }
 }
 
 // in DM -> select friends for group DM

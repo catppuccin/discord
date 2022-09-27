@@ -205,24 +205,35 @@ div[class*=recentMentionsPopout] div[class^=tabBar] div[class^=tab][class*=activ
   color: #1e1e2e !important;
 }
 
-button[class*=white] {
+div[class^=textBadge-][style*="background-color: hsl(235, "] {
+  background-color: #89b4fa !important;
+  color: #1e1e2e !important;
+}
+
+div[class^=premiumLabel-] svg * {
+  fill: #89b4fa !important;
+}
+
+*[style*="background-color: var(--status-danger)"] {
+  color: #1e1e2e !important;
+}
+
+div[class*=white], button[class*=white] {
   background: #313244 !important;
 }
-button[class*=white] svg * {
-  fill: #a6adc8 !important;
-}
-
-button[class*=primaryDark] {
-  background: #1e1e2e !important;
-}
-button[class*=primaryDark] svg * {
+div[class*=white] svg *, button[class*=white] svg * {
   fill: #cdd6f4 !important;
 }
-
-button[class*=red] {
+div[class*=primaryDark], button[class*=primaryDark] {
+  background: #1e1e2e !important;
+}
+div[class*=primaryDark] svg *, button[class*=primaryDark] svg * {
+  fill: #cdd6f4 !important;
+}
+div[class*=red], button[class*=red] {
   background: #f38ba8 !important;
 }
-button[class*=red] svg * {
+div[class*=red] svg *, button[class*=red] svg * {
   fill: #1e1e2e !important;
 }
 
