@@ -588,6 +588,15 @@ button[class*="emojiButtonHovered"] > div > div {
     filter: unset !important;
 }
 
+// public / verified server info pill
+div[class^="communityInfoPill"] {
+  color: $base !important;
+  div[class^="text"] {
+    font-weight: 500 !important;
+  }
+}
+
+// "spine" svgs before threads
 svg[class^="spine-"] {
   color: $surface2 !important;
 }
