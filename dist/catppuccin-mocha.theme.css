@@ -226,6 +226,10 @@ button[class*=red] svg * {
   fill: #1e1e2e !important;
 }
 
+div[class*=friendSelected] {
+  background: #313244 !important;
+}
+
 div[class*=videoGrid-], div[class^=callContainer-] > div[class^=root-] {
   background: #11111b !important;
 }

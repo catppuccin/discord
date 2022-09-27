@@ -245,6 +245,11 @@ button[class*="red"] {
 	}
 }
 
+// in DM -> select friends for group DM
+div[class*="friendSelected"] {
+  background: $surface0 !important;
+}
+
 // video chat
 div[class*="videoGrid-"], div[class^="callContainer-"] > div[class^="root-"] {
 	background: $crust !important;
