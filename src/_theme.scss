@@ -136,7 +136,7 @@ div[class^="layerContainer"] {
 
 	// scrollbars
 	--scrollbar-thin-thumb: #{$brand};
-	--scrollbar-thin-track: #{$mantle};
+	--scrollbar-thin-track: transparent;
 	--scrollbar-auto-thumb: #{$brand};
 	--scrollbar-auto-track: #{$mantle};
 	--scrollbar-auto-scrollbar-color-track: #{$brand};

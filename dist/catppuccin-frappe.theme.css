@@ -124,7 +124,7 @@ div[class^=layerContainer] {
   --brand-experiment-90a: rgba(140, 170, 238, 0.9);
   --brand-experiment-95a: rgba(140, 170, 238, 0.95);
   --scrollbar-thin-thumb: #8caaee;
-  --scrollbar-thin-track: #292c3c;
+  --scrollbar-thin-track: transparent;
   --scrollbar-auto-thumb: #8caaee;
   --scrollbar-auto-track: #292c3c;
   --scrollbar-auto-scrollbar-color-track: #8caaee;
@@ -499,6 +499,13 @@ button[class*=emojiButtonHovered] {
 
 button[class*=emojiButtonHovered] > div > div {
   filter: unset !important;
+}
+
+div[class^=communityInfoPill] {
+  color: #303446 !important;
+}
+div[class^=communityInfoPill] div[class^=text] {
+  font-weight: 500 !important;
 }
 
 svg[class^=spine-] {
