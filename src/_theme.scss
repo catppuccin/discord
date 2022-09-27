@@ -572,33 +572,33 @@ div[class*="liveShapeRound-"] {
 // rainbow threads
 ul[aria-label$=" threads"] > li:nth-child(1n) {
 	--channels-default: #{mix($red, $text, 30%)};
-	--interactive-hover: #{lighten($red, 10%)};
-	--interactive-active: #{lighten($red, 10%)};
+	--interactive-hover: #{$red};
+	--interactive-active: #{$red};
 }
 ul[aria-label$=" threads"] > li:nth-child(2n) {
 	--channels-default: #{mix($peach, $text, 30%)};
-	--interactive-hover: #{lighten($peach, 10%)};
-	--interactive-active: #{lighten($peach, 10%)};
+	--interactive-hover: #{$peach};
+	--interactive-active: #{$peach};
 }
 ul[aria-label$=" threads"] > li:nth-child(3n) {
 	--channels-default: #{mix($yellow, $text, 30%)};
-	--interactive-hover: #{lighten($yellow, 10%)};
-	--interactive-active: #{lighten($yellow, 10%)};
+	--interactive-hover: #{$yellow};
+	--interactive-active: #{$yellow};
 }
 ul[aria-label$=" threads"] > li:nth-child(4n) {
 	--channels-default: #{mix($green, $text, 30%)};
-	--interactive-hover: #{lighten($green, 10%)};
-	--interactive-active: #{lighten($green, 10%)};
+	--interactive-hover: #{$green};
+	--interactive-active: #{$green};
 }
 ul[aria-label$=" threads"] > li:nth-child(5n) {
 	--channels-default: #{mix($blue, $text, 30%)};
-	--interactive-hover: #{lighten($sapphire, 10%)};
-	--interactive-active: #{lighten($sapphire, 10%)};
+	--interactive-hover: #{$sapphire};
+	--interactive-active: #{$sapphire};
 }
 ul[aria-label$=" threads"] > li:nth-child(6n) {
 	--channels-default: #{mix($mauve, $text, 30%)};
-	--interactive-hover: #{lighten($mauve, 10%)};
-	--interactive-active: #{lighten($mauve, 10%)};
+	--interactive-hover: #{$mauve};
+	--interactive-active: #{$mauve};
 }
 
 // emoji button

@@ -470,38 +470,38 @@ div[class*=liveShapeRound-] {
 
 ul[aria-label$=" threads"] > li:nth-child(1n) {
   --channels-default: #743c5b;
-  --interactive-hover: #ef2550;
-  --interactive-active: #ef2550;
+  --interactive-hover: #d20f39;
+  --interactive-active: #d20f39;
 }
 
 ul[aria-label$=" threads"] > li:nth-child(2n) {
   --channels-default: #81554d;
-  --interactive-hover: #fe843e;
-  --interactive-active: #fe843e;
+  --interactive-hover: #fe640b;
+  --interactive-active: #fe640b;
 }
 
 ul[aria-label$=" threads"] > li:nth-child(3n) {
   --channels-default: #786252;
-  --interactive-hover: #e7a548;
-  --interactive-active: #e7a548;
+  --interactive-hover: #df8e1d;
+  --interactive-active: #df8e1d;
 }
 
 ul[aria-label$=" threads"] > li:nth-child(4n) {
   --channels-default: #486756;
-  --interactive-hover: #50c836;
-  --interactive-active: #50c836;
+  --interactive-hover: #40a02b;
+  --interactive-active: #40a02b;
 }
 
 ul[aria-label$=" threads"] > li:nth-child(5n) {
   --channels-default: #3e5693;
-  --interactive-hover: #2ec1da;
-  --interactive-active: #2ec1da;
+  --interactive-hover: #209fb5;
+  --interactive-active: #209fb5;
 }
 
 ul[aria-label$=" threads"] > li:nth-child(6n) {
   --channels-default: #5e4891;
-  --interactive-hover: #a468f3;
-  --interactive-active: #a468f3;
+  --interactive-hover: #8839ef;
+  --interactive-active: #8839ef;
 }
 
 button[class*=emojiButtonNormal] > div > div {
