@@ -398,8 +398,10 @@ div[class^="layerContainer"] {
     background: $crust !important;
 
     // hide the scroller, as it's the wrong color
+    // -- making the tracker transparent is enough
+    // -- hiding the scroller removes padding
     div[class^="scroller"] {
-      overflow: hidden !important;
+      overflow: hidden scroll !important;
     }
   }
 
@@ -477,6 +479,23 @@ div[class^="layerContainer"] {
     span[class^="key"] {
       color: $text !important;
       background-color: $base !important;
+    }
+  }
+
+  // make menu items readable when hovered
+  [role="menu"] {
+    --brand-experiment-560: var(--brand-experiment-25a);
+
+    [class*="colorDefault"][class*="focused"] {
+      &:not([class*="colorDanger"]),
+      [class*="checkbox-"] {
+        color: var(--interactive-normal) !important;
+      }
+    }
+
+    [class*="colorDanger"][class*="focused"],
+    [class*="colorDefault"][class*="focused"] [class*="check-"] {
+      color: var(--background-floating) !important;
     }
   }
 }
@@ -675,10 +694,9 @@ nav[class*="guilds-"] {
 [class^="botText"] {
   color: $crust !important;
   font-weight: 600;
-
-  > svg > path {
-    fill: $crust !important;
-  }
+}
+svg[class^="botTagVerified"] {
+  color: $crust !important;
 }
 
 // server booster page
@@ -750,9 +768,19 @@ svg[class^="badgeIconWithSubscribers"] {
   color: $pink !important;
 }
 
+// boost progress bar
+div[class^="progressBar-"] {
+  background: linear-gradient(90deg, $blue, $mauve) !important;
+}
+
 // fix selected nitro tab on sidebar
 div[class^="sidebarRegion-"] div[class^="premiumTab-"] > [class*="selected"] {
   color: $mantle !important;
+}
+
+// cooldown text
+div[class^="cooldownWrapper-"] {
+  color: var(--text-muted) !important;
 }
 
 // highlight.js

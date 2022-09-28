@@ -347,7 +347,7 @@ div[class^=layerContainer] #guild-header-popout div[class^=scroller],
 div[class^=layerContainer] #guild-context div[class^=scroller],
 div[class^=layerContainer] div[id^=channel-context] div[class^=scroller],
 div[class^=layerContainer] div[id^=user-context] div[class^=scroller] {
-  overflow: hidden !important;
+  overflow: hidden scroll !important;
 }
 div[class^=layerContainer] > div[class^=layer] div[role=listbox] {
   background-color: #292c3c !important;
@@ -413,6 +413,17 @@ div[class^=layerContainer] div[class^=queryContainer] {
 div[class^=layerContainer] div[class^=queryContainer] span[class^=key] {
   color: #c6d0f5 !important;
   background-color: #303446 !important;
+}
+div[class^=layerContainer] [role=menu] {
+  --brand-experiment-560: var(--brand-experiment-25a);
+}
+div[class^=layerContainer] [role=menu] [class*=colorDefault][class*=focused]:not([class*=colorDanger]),
+div[class^=layerContainer] [role=menu] [class*=colorDefault][class*=focused] [class*=checkbox-] {
+  color: var(--interactive-normal) !important;
+}
+div[class^=layerContainer] [role=menu] [class*=colorDanger][class*=focused],
+div[class^=layerContainer] [role=menu] [class*=colorDefault][class*=focused] [class*=check-] {
+  color: var(--background-floating) !important;
 }
 
 div[class*=date-] {
@@ -570,8 +581,9 @@ nav[class*=guilds-] foreignObject > div[data-list-item-id^=guildsnav_]:hover > d
   color: #232634 !important;
   font-weight: 600;
 }
-[class^=botText] > svg > path {
-  fill: #232634 !important;
+
+svg[class^=botTagVerified] {
+  color: #232634 !important;
 }
 
 div[class^=perksModal] li[class^=perk] {
@@ -627,8 +639,16 @@ svg[class^=badgeIconWithSubscribers] {
   color: #f4b8e4 !important;
 }
 
+div[class^=progressBar-] {
+  background: linear-gradient(90deg, #8caaee, #ca9ee6) !important;
+}
+
 div[class^=sidebarRegion-] div[class^=premiumTab-] > [class*=selected] {
   color: #292c3c !important;
+}
+
+div[class^=cooldownWrapper-] {
+  color: var(--text-muted) !important;
 }
 
 .hljs-bullet,
