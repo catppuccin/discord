@@ -17,9 +17,16 @@
   "private": true,
   "scripts": {
     "build": "sass --no-charset --no-source-map src:dist",
-    "watch": "sass --no-charset --no-source-map src:dist -w"
+    "watch": "sass --no-charset --no-source-map src:dist -w",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "husky": ">=6",
+    "lint-staged": ">=10",
+    "prettier": "^2.7.1",
     "sass": "^1.55.0"
+  },
+  "lint-staged": {
+    "*.{js,sass,scss}": "prettier --write"
   }
 }
