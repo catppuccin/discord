@@ -1,0 +1,32 @@
+{
+  "name": "catppuccin-discord",
+  "version": "0.2.0",
+  "description": "Catppuccin theme for Discord",
+  "repository": "https://github.com/catppuccin/discord",
+  "license": "MIT",
+  "author": {
+    "name": "Catppuccin Org",
+    "email": "core@catppuccin.com"
+  },
+  "contributors": [
+    {
+      "name": "winston",
+      "email": "hey@winston.sh"
+    }
+  ],
+  "private": true,
+  "scripts": {
+    "build": "sass --no-charset --no-source-map src:dist",
+    "watch": "sass --no-charset --no-source-map src:dist -w",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "husky": ">=6",
+    "lint-staged": ">=10",
+    "prettier": "^2.7.1",
+    "sass": "^1.55.0"
+  },
+  "lint-staged": {
+    "*.{js,sass,scss}": "prettier --write"
+  }
+}
