@@ -241,16 +241,12 @@ button[class*=red] svg * {
   fill: #eff1f5 !important;
 }
 
-<<<<<<< HEAD
 div[class*=friendSelected] {
   background: #ccd0da !important;
 }
 
-div[class*=videoGrid-], div[class^=callContainer-] > div[class^=root-] {
-=======
 div[class*=videoGrid-],
 div[class^=callContainer-] > div[class^=root-] {
->>>>>>> watatomo/main
   background: #dce0e8 !important;
 }
 
