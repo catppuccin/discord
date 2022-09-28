@@ -639,7 +639,7 @@ svg[class^=badgeIconWithSubscribers] {
   color: #f5bde6 !important;
 }
 
-div[class^=progressBar-] {
+div[class^=sidebar-] div[class^=progressBar-] {
   background: linear-gradient(90deg, #8aadf4, #c6a0f6) !important;
 }
 

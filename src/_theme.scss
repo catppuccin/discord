@@ -769,7 +769,7 @@ svg[class^="badgeIconWithSubscribers"] {
 }
 
 // boost progress bar
-div[class^="progressBar-"] {
+div[class^="sidebar-"] div[class^="progressBar-"] {
   background: linear-gradient(90deg, $blue, $mauve) !important;
 }
 
