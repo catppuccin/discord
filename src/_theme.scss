@@ -9,7 +9,7 @@ $brand: $blue;
 div[class^="layerContainer"] {
   --background-primary: #{$base};
   --background-secondary: #{$mantle};
-  --background-secondary-alt: #{$mantle};
+  --background-secondary-alt: #{darken($mantle, 2%)};
   --background-tertiary: #{$crust};
   --background-accent: #{$brand};
 
@@ -289,7 +289,7 @@ div[class^="chat"] > div[class^="content-"] > div[class^="container-"] {
     background-color: $surface0;
   }
 }
-section[aria-label="User area"] {
+div[class^="sidebar-"] > section[class^="panels-"] {
   svg[class*="buttonIcon-"],
   div[class*="buttonContents"] {
     fill: $text !important;

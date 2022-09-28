@@ -13,7 +13,7 @@
 div[class^=layerContainer] {
   --background-primary: #1e1e2e;
   --background-secondary: #181825;
-  --background-secondary-alt: #181825;
+  --background-secondary-alt: #14141f;
   --background-tertiary: #11111b;
   --background-accent: #89b4fa;
   --background-floating: #181825;
@@ -257,8 +257,8 @@ div[class^=chat] > div[class^=content-] > div[class^=container-] div[class*=main
   background-color: #313244;
 }
 
-section[aria-label="User area"] svg[class*=buttonIcon-],
-section[aria-label="User area"] div[class*=buttonContents] {
+div[class^=sidebar-] > section[class^=panels-] svg[class*=buttonIcon-],
+div[class^=sidebar-] > section[class^=panels-] div[class*=buttonContents] {
   fill: #cdd6f4 !important;
   color: #cdd6f4 !important;
 }
