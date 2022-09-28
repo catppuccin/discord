@@ -36,9 +36,14 @@ div[class^="layerContainer"] {
 	--modal-background: #{$base};
 
 	--button-positive-background: #{$green};
+	--button-positive-background-disabled: #{adjust-color($green, $alpha: -0.6)};
+	--button-positive-background-active: #{darken($green, 8%)};
 	--button-positive-background-hover: #{darken($green, 10%)};
+
 	--button-secondary-background: #{$brand};
 	--button-secondary-background-disabled: #{$crust};
+	--button-secondary-background-active: #{darken($brand, 8%)};
+	--button-secondary-background-hover: #{darken($brand, 10%)};
 
 	--rs-online-color: #{$green};
 	--rs-idle-color: #{$peach};
@@ -144,16 +149,16 @@ div[class^="layerContainer"] {
 
 	--status-warning-text: hotpink;
 
-    --deprecated-card-bg: #{$mantle};
-    --deprecated-card-editable-bg: #{$mantle};
-    --deprecated-store-bg: #{$mantle};
-    --deprecated-quickswitcher-input-background: #{$mantle};
-    --deprecated-quickswitcher-input-placeholder: #{$subtext0};
-    --deprecated-text-input-bg: #{$mantle};
-    --deprecated-text-input-border: #{$crust};
-    --deprecated-text-input-border-hover: #{$mantle};
-    --deprecated-text-input-border-disabled: #{$crust};
-    --deprecated-text-input-prefix: #{$subtext0};
+	--deprecated-card-bg: #{$mantle};
+	--deprecated-card-editable-bg: #{$mantle};
+	--deprecated-store-bg: #{$mantle};
+	--deprecated-quickswitcher-input-background: #{$mantle};
+	--deprecated-quickswitcher-input-placeholder: #{$subtext0};
+	--deprecated-text-input-bg: #{$mantle};
+	--deprecated-text-input-border: #{$crust};
+	--deprecated-text-input-border-hover: #{$mantle};
+	--deprecated-text-input-border-disabled: #{$crust};
+	--deprecated-text-input-prefix: #{$subtext0};
 }
 
 // online
@@ -221,7 +226,7 @@ div[class^="notice-"] {
 
 // inbox
 div[class*="recentMentionsPopout"] {
-	div[class^="tabBar"] div[class^="tab"][class*="active-"]{
+	div[class^="tabBar"] div[class^="tab"][class*="active-"] {
 		color: $base !important;
 	}
 }
@@ -246,7 +251,8 @@ button[class*="red"] {
 }
 
 // video chat
-div[class*="videoGrid-"], div[class^="callContainer-"] > div[class^="root-"] {
+div[class*="videoGrid-"],
+div[class^="callContainer-"] > div[class^="root-"] {
 	background: $crust !important;
 }
 
@@ -349,6 +355,10 @@ div[class^="control"] > div[class*="checked"] {
 div[class^="control"] > div {
 	background-color: #{$surface1} !important;
 }
+// don't make it target the fourm channel area
+[data-list-id^="forum-channel-list"] div[class^="control"] > div {
+	background-color: unset !important;
+}
 // colorBrandNew bs
 *[class*="colorBrandNew"] {
 	background-color: #{$brand} !important;
@@ -380,7 +390,9 @@ div[class^="layerContainer"] {
 			div[class^="modal-"],
 			div[class^="modalSize-"] {
 				background-color: $mantle !important;
-				li, p, span {
+				li,
+				p,
+				span {
 					color: $text !important;
 				}
 			}
@@ -390,7 +402,12 @@ div[class^="layerContainer"] {
 			}
 
 			// feature headers
-			h1, h2, h3, h4, h5, h6 {
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
 				&[class^="fixed-"] {
 					&:after {
 						background-color: $red !important;
@@ -401,6 +418,23 @@ div[class^="layerContainer"] {
 
 			div[class*="message-"] {
 				background-color: $surface0 !important;
+			}
+
+			// reaction popout
+			div[class^="reactors"] {
+				background-color: var(--background-primary);
+			}
+			div[class^="scroller"] {
+				background-color: var(--background-secondary);
+			}
+			div[class*="reactorDefault"] {
+				-webkit-box-shadow: inset 0 -1px 0 var(--background-modifier-accent) !important;
+				box-shadow: inset 0 -1px 0 var(--background-modifier-accent) !important;
+			}
+			div[class*="reactionSelected"] {
+				background-color: var(
+					--background-modifier-selected
+				) !important;
 			}
 		}
 	}
@@ -417,7 +451,7 @@ div[class^="layerContainer"] {
 	}
 
 	div[class^="queryContainer"] {
-		background-color: #{$crust};
+		background-color: $crust;
 		span[class^="key"] {
 			color: $text !important;
 			background-color: $base !important;
@@ -474,7 +508,7 @@ div[class^="uploadModal"] {
 
 // server list icons
 div[class^="upperBadge"] {
-	> div[class^="iconBadge"] path{
+	> div[class^="iconBadge"] path {
 		color: $base !important;
 	}
 	div[class*="participating-"] {
@@ -574,6 +608,137 @@ ul[aria-label$=" threads"] > li:nth-child(6n) {
 	--channels-default: #{mix($mauve, $text, 30%)};
 	--interactive-hover: #{lighten($mauve, 10%)};
 	--interactive-active: #{lighten($mauve, 10%)};
+}
+
+// bot tag in sidebar
+[class^="botText"] {
+	color: $crust !important;
+	font-weight: 600;
+
+	> svg > path {
+		fill: $crust !important;
+	}
+}
+
+// server booster page
+div[class^="perksModal"] {
+	li[class^="perk"] {
+		background-color: $mantle !important;
+
+		svg {
+			color: $pink !important;
+		}
+	}
+
+	svg[class^="giftIcon"] {
+		color: $crust !important;
+	}
+
+	div[class^="tierHeaderUnlocked"] {
+		background-image: linear-gradient(90deg, $blue, $mauve) !important;
+		color: $base !important;
+	}
+
+	div[class^="tierUnlocked"],
+	div[class^="tierMarkerBackground"] {
+		background-color: $base !important;
+	}
+
+	div[class^="barBackground"],
+	div[class^="tierMarkerInProgress"],
+	div[class^="tierBody"] {
+		background-color: $crust !important;
+	}
+
+	div[class^="tierMarkerInProgress"] [class^="currentTierIcon"] {
+		color: $pink !important;
+	}
+
+	div[class^="barForeground"],
+	div[class^="tierMarkerAccomplished"] {
+		background-color: $pink !important;
+	}
+
+	svg[class^="currentTierIcon"] {
+		color: $base !important;
+	}
+
+	div[class*="tierMarkerLabelText"],
+	svg[class^="tierLock"] {
+		color: var(--text-muted) !important;
+	}
+
+	div[class*="selectedTier"] div[class*="tierMarkerLabelText"] {
+		color: var(--text-normal) !important;
+	}
+
+	div[class^="tierHeaderLocked"] {
+		background-color: darken($crust, 5%) !important;
+		color: var(--text-muted) !important;
+	}
+
+	svg[class*="unlocked"] {
+		color: $green !important;
+	}
+}
+
+// boost icon
+svg[class^="premiumIcon"],
+#guild-header-popout-premium-subscribe svg,
+svg[class^="badgeIconWithSubscribers"] {
+	color: $pink !important;
+}
+
+// fix selected nitro tab on sidebar
+div[class^="sidebarRegion-"] div[class^="premiumTab-"] > [class*="selected"] {
+	color: $mantle !important;
+}
+
+// highlight.js
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-meta.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-subst,
+.hljs-symbol {
+	color: #{$peach};
+}
+.hljs-attr,
+.hljs-attribute,
+.hljs-class.hljs-title,
+.hljs-class .hljs-title,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable {
+	color: #{$yellow};
+}
+.hljs-built_in,
+.hljs-deletion {
+	color: #{$maroon};
+}
+.hljs-doctag,
+.hljs-literal,
+.hljs-meta.hljs-meta-string,
+.hljs-meta .hljs-meta-string,
+.hljs-number,
+.hljs-regexp,
+.hljs-string {
+	color: #{$teal};
+}
+.hljs-addition,
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #{$green};
+}
+.hljs-name,
+.hljs-section,
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-title {
+	color: #{$blue};
 }
 
 @import "_catppuccin-server";
