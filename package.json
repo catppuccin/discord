@@ -16,8 +16,8 @@
   ],
   "private": true,
   "scripts": {
-    "build": "sass --no-charset --no-source-map src:dist",
-    "watch": "sass --no-charset --no-source-map src:dist -w",
+    "build": "mkdir -p dist; sass --no-charset --no-source-map src:dist",
+    "watch": "mkdir -p dist; sass --no-charset --no-source-map src:dist -w",
     "prepare": "husky install"
   },
   "devDependencies": {
