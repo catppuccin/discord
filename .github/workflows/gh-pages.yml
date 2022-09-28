@@ -22,6 +22,9 @@ jobs:
       - run: yarn install
       - run: yarn build
 
+      - name: "Add ./dist/ to GH pages branch"
+        run: git add -f ./dist/
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
