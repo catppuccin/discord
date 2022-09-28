@@ -47,6 +47,7 @@
 3. Enable the theme in BetterDiscord settings.
 
 ### Clients/Mods with custom CSS support
+
 1. Simply add your preferred flavour into `Discord > Settings > Custom CSS`
 
 ```css
@@ -64,6 +65,7 @@
 
 1. Follow the instructions from [DiscoCSS](https://github.com/mlvzk/discocss#installation) to install DiscoCSS.
 2. Use your preferred flavour as your DiscoCSS `custom.css`
+
 ```bash
 # latte
 curl -L https://catppuccin.github.io/discord/dist/catppuccin-latte.theme.css > ~/.config/discocss/custom.css
@@ -82,19 +84,15 @@ curl -L https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css> ~/
 
 ## 🙋 FAQ
 
--   Q: **_"Can this get my account banned?"_**
--   A: Using third party clients and injecting custom css is against the ToS. We are not responsible for anything that might happen to your account by using third party clients. Use at your own discretion!
+- Q: **_"Can this get my account banned?"_**
+- A: Using third party clients and injecting custom css is against the ToS. We are not responsible for anything that might happen to your account by using third party clients. Use at your own discretion!
 
 ## 💝 Thanks to
 
-- [DonutDev](https://github.com/DonutDev)
-- [Hanno van Baarle](https://github.com/HannoVB1)
-- [Andreas Grafen](https://github.com/andreasgrafen)
-- [Sanjay Pavan](https://github.com/WitherCubes)
-- [Tuhana GAYRETLİ](https://github.com/tuhanayim)
 - [GlowingUmbreon](https://github.com/glowingumbreon)
-- [winston](https://github.com/nekowinston)
 - [Isabelinc](https://github.com/Isabelincorp)
+- [Ren](https://github.com/watatomo)
+- [winston](https://github.com/nekowinston)
 
 &nbsp;
 
