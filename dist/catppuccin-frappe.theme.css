@@ -36,9 +36,13 @@ div[class^=layerContainer] {
   --input-placeholder-text: #a5adce;
   --modal-background: #303446;
   --button-positive-background: #a6d189;
+  --button-positive-background-disabled: rgba(166, 209, 137, 0.4);
+  --button-positive-background-active: #90c66c;
   --button-positive-background-hover: #8ac364;
   --button-secondary-background: #8caaee;
   --button-secondary-background-disabled: #232634;
+  --button-secondary-background-active: #6890e9;
+  --button-secondary-background-hover: #6089e7;
   --rs-online-color: #a6d189;
   --rs-idle-color: #ef9f76;
   --rs-dnd-color: #e78284;
@@ -241,7 +245,8 @@ div[class*=friendSelected] {
   background: #414559 !important;
 }
 
-div[class*=videoGrid-], div[class^=callContainer-] > div[class^=root-] {
+div[class*=videoGrid-],
+div[class^=callContainer-] > div[class^=root-] {
   background: #232634 !important;
 }
 
@@ -324,6 +329,10 @@ div[class^=control] > div {
   background-color: #51576d !important;
 }
 
+[data-list-id^=forum-channel-list] div[class^=control] > div {
+  background-color: unset !important;
+}
+
 *[class*=colorBrandNew] {
   background-color: #8caaee !important;
 }
@@ -347,7 +356,9 @@ div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=
 div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=modalSize-] {
   background-color: #292c3c !important;
 }
-div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=modal-] li, div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=modal-] p, div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=modal-] span,
+div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=modal-] li,
+div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=modal-] p,
+div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=modal-] span,
 div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=modalSize-] li,
 div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=modalSize-] p,
 div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=modalSize-] span {
@@ -356,14 +367,37 @@ div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=
 div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class*=footer] {
   background-color: #232634 !important;
 }
-div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h1[class^=fixed-], div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h2[class^=fixed-], div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h3[class^=fixed-], div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h4[class^=fixed-], div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h5[class^=fixed-], div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h6[class^=fixed-] {
+div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h1[class^=fixed-],
+div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h2[class^=fixed-],
+div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h3[class^=fixed-],
+div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h4[class^=fixed-],
+div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h5[class^=fixed-],
+div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h6[class^=fixed-] {
   color: #e78284 !important;
 }
-div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h1[class^=fixed-]:after, div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h2[class^=fixed-]:after, div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h3[class^=fixed-]:after, div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h4[class^=fixed-]:after, div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h5[class^=fixed-]:after, div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h6[class^=fixed-]:after {
+div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h1[class^=fixed-]:after,
+div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h2[class^=fixed-]:after,
+div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h3[class^=fixed-]:after,
+div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h4[class^=fixed-]:after,
+div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h5[class^=fixed-]:after,
+div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h6[class^=fixed-]:after {
   background-color: #e78284 !important;
 }
 div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class*=message-] {
   background-color: #414559 !important;
+}
+div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=reactors] {
+  background-color: var(--background-primary);
+}
+div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=scroller] {
+  background-color: var(--background-secondary);
+}
+div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class*=reactorDefault] {
+  -webkit-box-shadow: inset 0 -1px 0 var(--background-modifier-accent) !important;
+  box-shadow: inset 0 -1px 0 var(--background-modifier-accent) !important;
+}
+div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class*=reactionSelected] {
+  background-color: var(--background-modifier-selected) !important;
 }
 div[class^=layerContainer] div[class^=addGamePopout-] {
   background-color: #292c3c !important;
@@ -530,6 +564,122 @@ svg[class^=spine-] {
 nav[class*=guilds-] foreignObject > div[data-list-item-id^=guildsnav_]:hover > div[class^=childWrapper-], nav[class*=guilds-] foreignObject > div[data-list-item-id^=guildsnav_][class*=selected] > div[class^=childWrapper-] {
   color: var(--background-primary) !important;
   font-weight: 600 !important;
+}
+
+[class^=botText] {
+  color: #232634 !important;
+  font-weight: 600;
+}
+[class^=botText] > svg > path {
+  fill: #232634 !important;
+}
+
+div[class^=perksModal] li[class^=perk] {
+  background-color: #292c3c !important;
+}
+div[class^=perksModal] li[class^=perk] svg {
+  color: #f4b8e4 !important;
+}
+div[class^=perksModal] svg[class^=giftIcon] {
+  color: #232634 !important;
+}
+div[class^=perksModal] div[class^=tierHeaderUnlocked] {
+  background-image: linear-gradient(90deg, #8caaee, #ca9ee6) !important;
+  color: #303446 !important;
+}
+div[class^=perksModal] div[class^=tierUnlocked],
+div[class^=perksModal] div[class^=tierMarkerBackground] {
+  background-color: #303446 !important;
+}
+div[class^=perksModal] div[class^=barBackground],
+div[class^=perksModal] div[class^=tierMarkerInProgress],
+div[class^=perksModal] div[class^=tierBody] {
+  background-color: #232634 !important;
+}
+div[class^=perksModal] div[class^=tierMarkerInProgress] [class^=currentTierIcon] {
+  color: #f4b8e4 !important;
+}
+div[class^=perksModal] div[class^=barForeground],
+div[class^=perksModal] div[class^=tierMarkerAccomplished] {
+  background-color: #f4b8e4 !important;
+}
+div[class^=perksModal] svg[class^=currentTierIcon] {
+  color: #303446 !important;
+}
+div[class^=perksModal] div[class*=tierMarkerLabelText],
+div[class^=perksModal] svg[class^=tierLock] {
+  color: var(--text-muted) !important;
+}
+div[class^=perksModal] div[class*=selectedTier] div[class*=tierMarkerLabelText] {
+  color: var(--text-normal) !important;
+}
+div[class^=perksModal] div[class^=tierHeaderLocked] {
+  background-color: #191b25 !important;
+  color: var(--text-muted) !important;
+}
+div[class^=perksModal] svg[class*=unlocked] {
+  color: #a6d189 !important;
+}
+
+svg[class^=premiumIcon],
+#guild-header-popout-premium-subscribe svg,
+svg[class^=badgeIconWithSubscribers] {
+  color: #f4b8e4 !important;
+}
+
+div[class^=sidebarRegion-] div[class^=premiumTab-] > [class*=selected] {
+  color: #292c3c !important;
+}
+
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-meta.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-subst,
+.hljs-symbol {
+  color: #ef9f76;
+}
+
+.hljs-attr,
+.hljs-attribute,
+.hljs-class.hljs-title,
+.hljs-class .hljs-title,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable {
+  color: #e5c890;
+}
+
+.hljs-built_in,
+.hljs-deletion {
+  color: #ea999c;
+}
+
+.hljs-doctag,
+.hljs-literal,
+.hljs-meta.hljs-meta-string,
+.hljs-meta .hljs-meta-string,
+.hljs-number,
+.hljs-regexp,
+.hljs-string {
+  color: #81c8be;
+}
+
+.hljs-addition,
+.hljs-keyword,
+.hljs-selector-tag {
+  color: #a6d189;
+}
+
+.hljs-name,
+.hljs-section,
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-title {
+  color: #8caaee;
 }
 
 div[class*=unread-],
