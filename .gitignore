@@ -3,6 +3,7 @@
 .idea/
 
 ## Sass
+dist/
 .sass-cache/
 *.css.map
 *.sass.map
