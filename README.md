@@ -46,7 +46,7 @@
 2. Copy the downloaded file to your BetterDiscord themes folder.
 3. Enable the theme in BetterDiscord settings.
 
-### [GooseMod](https://goosemod.com) / Clients with custom CSS support
+### Clients/Mods with custom CSS support
 1. Simply add your preferred flavour into `Discord > Settings > Custom CSS`
 
 ```css
