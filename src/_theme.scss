@@ -45,6 +45,9 @@ div[class^="layerContainer"] {
   --button-secondary-background-active: #{darken($brand, 8%)};
   --button-secondary-background-hover: #{darken($brand, 10%)};
 
+  --button-outline-brand-text: #{$text};
+  --button-outline-brand-border: #{$brand};
+
   --rs-online-color: #{$green};
   --rs-idle-color: #{$peach};
   --rs-dnd-color: #{$red};
@@ -159,11 +162,20 @@ div[class^="layerContainer"] {
   --deprecated-text-input-border-hover: #{$mantle};
   --deprecated-text-input-border-disabled: #{$crust};
   --deprecated-text-input-prefix: #{$subtext0};
+
+  --elevation-stroke: 0 0 0 1px #{darken($mantle, 3%)};
+}
+
+// make tooltips that you can't hover surface0
+:root [class*="disabledPointerEvents"] {
+  --background-floating: #{$surface0};
+  --background-tertiary: #{lighten($base, 3%)};
 }
 
 // online
 rect[fill^="hsl(139"],
-foreignObject[mask="url(#svg-mask-status-online)"] > div {
+foreignObject[mask="url(#svg-mask-status-online)"] > div,
+div[class^="dotOnline"] {
   fill: $green !important;
   background-color: $green !important;
 }
@@ -181,7 +193,8 @@ foreignObject[mask="url(#svg-mask-status-dnd)"] > div {
 }
 // offline
 rect[fill^="hsl(214"],
-foreignObject[mask="url(#svg-mask-status-offline)"] > div {
+foreignObject[mask="url(#svg-mask-status-offline)"] > div,
+div[class^="dotOffline"] {
   fill: $subtext0 !important;
   background-color: $subtext0 !important;
 }
@@ -331,11 +344,6 @@ div[class*="reactionMe-"] {
   background-color: #{$surface0} !important;
 }
 
-// boost background
-div[class^="root"] > div[class^="perksModal"] {
-  background-color: $base !important;
-}
-
 // autocomplete chat textboxes
 div[class*="autocomplete-"] {
   background-color: #{$mantle} !important;
@@ -357,10 +365,10 @@ div[class*="autocomplete-"] {
 // keybinds in preferences
 div[class^="keybindShortcut"] {
   > span {
-    color: #{$mantle} !important;
+    color: $mantle !important;
   }
   svg * {
-    fill: #{$mantle} !important;
+    fill: $mantle !important;
   }
 }
 
@@ -373,11 +381,11 @@ button[class*="colorRed"] {
 // toggles in preferencs
 // checked
 div[class^="control"] > div[class*="checked"] {
-  background-color: #{$green} !important;
+  background-color: $green !important;
 }
 // unchecked
 div[class^="control"] > div {
-  background-color: #{$surface1} !important;
+  background-color: $surface1 !important;
 }
 // don't make it target the fourm channel area
 [data-list-id^="forum-channel-list"] div[class^="control"] > div {
@@ -497,6 +505,11 @@ div[class^="layerContainer"] {
     [class*="colorDefault"][class*="focused"] [class*="check-"] {
       color: var(--background-floating) !important;
     }
+
+    // make "invite people" brand color
+    #guild-header-popout-invite-people {
+      color: $brand;
+    }
   }
 }
 
@@ -544,6 +557,18 @@ div[class^="uploadModal"] {
     > div[class^="container"]
     div[class*="footer"] {
     background-color: $mantle !important;
+
+    &[class*="footerSeparator-"] {
+      box-shadow: inset 0 1px 0 $surface0 !important;
+      -webkit-box-shadow: inset 0 1px 0 $surface0 !important;
+    }
+  }
+
+  > div[class^="focusLock"] > div[class^="root"] {
+    box-shadow: 0 0 0 1px $surface0,
+      0 2px 10px 0 hsla(0, calc(var(--saturation-factor, 1) * 0%), 0%, 0.1);
+    -webkit-box-shadow: 0 0 0 1px $surface0,
+      0 2px 10px 0 hsla(0, calc(var(--saturation-factor, 1) * 0%), 0%, 0.1);
   }
 }
 
@@ -561,13 +586,52 @@ div[class^="uploadIcon"] > div > svg > circle {
   fill: $brand !important;
 }
 
-// verified badges
+// sevrver badges
 div[class*="flowerStarContainer-"] {
-  svg[class*="flowerStar-"] * {
-    fill: $green !important;
+  &[class*="boostedGuildTierIconBackgroundWithVisibleBanner"] {
+    svg[class*="flowerStar-"] * {
+      fill: #fff !important;
+    }
+    div[class^="childContainer-"] svg * {
+      fill: $crust !important;
+    }
   }
-  div[class^="childContainer-"] svg * {
-    fill: $base !important;
+
+  &[class*="iconBackgroundTierOne-"],
+  &[class*="iconBackgroundTierTwo-"]:not([class*="boostedGuildTierIconBackgroundWithVisibleBanner"]) {
+    svg[class*="flowerStar-"] * {
+      fill: $surface2 !important;
+    }
+    div[class^="childContainer-"] svg * {
+      fill: $text !important;
+    }
+  }
+
+  &[class*="iconBackgroundTierThree-"] {
+    svg[class*="flowerStar-"] * {
+      fill: $pink !important;
+    }
+    div[class^="childContainer-"] svg * {
+      fill: $crust !important;
+    }
+  }
+
+  &[class*="verified-"] {
+    svg[class*="flowerStar-"] * {
+      fill: $green !important;
+    }
+    div[class^="childContainer-"] svg * {
+      fill: $crust !important;
+    }
+  }
+
+  &[class*="partnered-"] {
+    svg[class*="flowerStar-"] * {
+      fill: $brand !important;
+    }
+    div[class^="childContainer-"] svg * {
+      fill: $crust !important;
+    }
   }
 }
 
@@ -604,7 +668,7 @@ span[class^="spoilerText"] {
 
 // user roles
 div[class*="rolesList"] {
-  div[class^="role"] {
+  div[class^="role-"] {
     background-color: $crust !important;
   }
 }
@@ -665,7 +729,9 @@ button[class*="emojiButtonHovered"] > div > div {
 
 // public / verified server info pill
 div[class^="communityInfoPill"] {
-  color: $base !important;
+  --background-accent: #{adjust-color($base, $alpha: -0.3)};
+  color: $text !important;
+
   div[class^="text"] {
     font-weight: 500 !important;
   }
@@ -680,13 +746,34 @@ svg[class^="spine-"] {
 nav[class*="guilds-"] {
   // server icons
   foreignObject > div[data-list-item-id^="guildsnav_"] {
+    background-color: lighten($base, 2%);
+
     &:hover,
     &[class*="selected"] {
       > div[class^="childWrapper-"] {
-        color: var(--background-primary) !important;
+        color: $crust !important;
         font-weight: 600 !important;
       }
     }
+  }
+
+  // lightens home nav bg
+  div[data-list-item-id="guildsnav___home"] {
+    --background-primary: #{lighten($base, 3%)};
+  }
+
+  // lightens folder wrapper bg
+  span[class^="expandedFolderBackground-"] {
+    background-color: lighten($base, 3%);
+  }
+  div[class^="folder-"][class*="hover-"] {
+    background-color: lighten($base, 8%) !important;
+  }
+
+  // create server/discovery
+  div[data-list-item-id="guildsnav___create-join-button"] svg > path,
+  div[data-list-item-id="guildsnav___guild-discover-button"] svg > path {
+    fill: $green;
   }
 }
 
@@ -699,8 +786,121 @@ svg[class^="botTagVerified"] {
   color: $crust !important;
 }
 
+// settings
+div[class^="contentRegion-"] {
+  #appearance-tab,
+  #accessibility-tab,
+  [id="voice-&-video-tab"] {
+    [class^="bar-"],
+    [class^="markDash-"] {
+      background: $surface1 !important;
+    }
+  }
+
+  #nitro-server-boost-tab {
+    svg[class^="guildBoostingIcon"],
+    svg[class^="guildSubscriptionSlotIcon-"],
+    svg[class^="guildSubscriberCountIcon-"] {
+      color: $pink;
+    }
+
+    circle[class^="circleProgress-"] {
+      color: $pink;
+    }
+
+    div[class*="gemIndicatorContainer-"] {
+      background-color: $base;
+
+      svg[class^="gemWithLabel-"] {
+        color: $pink;
+      }
+
+      svg[class^="gemWithoutLabel-"] {
+        color: $surface2;
+      }
+
+      div[class^="tierLabel-"] {
+        color: $subtext1;
+      }
+    }
+  }
+
+  #subscriptions-tab {
+    [class^="sectionAccountCredit-"],
+    [class^="subscriptionDetails-"] {
+      border-color: var(--background-modifier-accent);
+    }
+  }
+
+  #billing-tab {
+    [class*="Divider"] {
+      border-color: var(--background-modifier-accent) !important;
+    }
+
+    div[class^="defaultIndicator-"] {
+      color: $text;
+      background-color: $surface1;
+    }
+
+    div[class*="summaryInfo"],
+    [class^="paymentHeader-"] {
+      color: $text;
+      border-color: var(--background-modifier-accent) !important;
+    }
+
+    div[class^="premiumIndicator-"] {
+      color: $crust;
+    }
+
+    div[class^="paymentPane-"],
+    div[class*="paginator-"],
+    div[class*="payment-"] {
+      background-color: $surface0;
+      color: $text;
+    }
+
+    div[class^="expandedInfo-"] {
+      background-color: $surface1;
+    }
+
+    [class*="paymentText-"] {
+      color: $subtext1;
+    }
+
+    div[class^="codeRedemptionRedirect-"] {
+      background-color: $mantle;
+      color: $text;
+      border-color: $surface0;
+    }
+  }
+
+  #game-activity-tab {
+    div[class*="nowPlayingAdd-"],
+    div[class*="lastPlayed-"],
+    div[class*="overlayStatusText-"] {
+      color: var(--text-muted) !important;
+    }
+
+    input[class^="gameName-"] {
+      color: $text;
+    }
+
+    div[class*="game-"] {
+      -webkit-box-shadow: 0 1px 0 0 var(--background-modifier-accent);
+      box-shadow: 0 1px 0 0 var(--background-modifier-accent);
+    }
+  }
+}
+
+// social links on "what's new"
+a[class*="socialLink-"][href*="discord"] {
+  color: $subtext0;
+}
+
 // server booster page
 div[class^="perksModal"] {
+  background-color: $base !important;
+
   li[class^="perk"] {
     background-color: $mantle !important;
 
@@ -781,6 +981,38 @@ div[class^="sidebarRegion-"] div[class^="premiumTab-"] > [class*="selected"] {
 // cooldown text
 div[class^="cooldownWrapper-"] {
   color: var(--text-muted) !important;
+}
+
+// unread indicator
+div[class^="unreadBottom"] div[class^="bar-"] > span,
+div[class^="unreadMentions"] div[class^="bar-"] > span {
+  color: $crust !important;
+}
+
+// gif/sticker/emoji section
+section[class^="positionContainer-"] {
+  // colors tab when active
+  button[class*="navButtonActive"] {
+    color: $crust !important;
+  }
+
+  // more transparent to make things more bearable
+  [class*="stickerInspected-"] [class^="inspectedIndicator"],
+  [class^="emojiItem-"][class*="emojiItemSelected-"] {
+    background-color: var(--brand-experiment-25a) !important;
+  }
+}
+
+// discovery page?
+div[class^="categoryItem-"][class*="selectedCategoryItem"],
+button[class*="lookFilled"] div[class*="addButton"] {
+  // color when selected or if button
+  color: $crust !important;
+}
+
+// new label
+div[class^="itemInner-"] div[class^="new-"] > div[class*="newText-"] {
+  color: $crust !important;
 }
 
 // highlight.js
