@@ -61,14 +61,25 @@ div[class^="perksModal"] {
   }
 }
 
-// boost icon
-svg[class^="premiumIcon"],
-#guild-header-popout-premium-subscribe svg,
-svg[class^="badgeIconWithSubscribers"] {
-  color: $pink;
-}
-
 // boost progress bar
-div[class^="sidebar-"] div[class^="progressBar-"] {
-  background: linear-gradient(90deg, $blue, $mauve);
+div[class^="sidebar-"] div[class^="container"] {
+  div[class^="progressBar-"] {
+    background: linear-gradient(90deg, $blue, $mauve);
+  }
+
+  &:hover {
+    div[class^="progressBar-"] {
+      background: linear-gradient(
+        90deg,
+        hsl(221, 70%, 55.5%),
+        $mauve 34%,
+        $blue 67%,
+        $mauve
+      );
+    }
+  }
+
+  div[class^="divider-"] {
+    border-color: var(--background-modifier-accent);
+  }
 }

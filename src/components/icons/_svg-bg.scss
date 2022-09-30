@@ -1,0 +1,14 @@
+$svgBg: (
+  "noItemsIcon": (
+    color: $surface1,
+  ),
+);
+
+@each $class, $color in $svgBg {
+  .theme-dark,
+  .theme-light {
+    svg[class*="#{$class}-"] {
+      background-color: #{map-get($color, color)};
+    }
+  }
+}

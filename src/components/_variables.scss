@@ -59,7 +59,7 @@ html {
   --text-link: #{$blue};
   --text-link-low-saturation: #{$sapphire};
   --text-positive: #{$green};
-  --text-warning: #{$peach};
+  --text-warning: #{$yellow};
   --text-danger: #{$red};
   --text-brand: #{$brand};
 
@@ -67,7 +67,7 @@ html {
   --background-secondary: #{$mantle};
   --background-secondary-alt: #{darken($mantle, 2%)};
   --background-tertiary: #{$crust};
-  --background-accent: #{$surface1};
+  --background-accent: #{$brand};
   --background-floating: #{darken($crust, 2%)};
   --background-nested-floating: #{$mantle};
   --background-mobile-primary: #{$base};
@@ -77,10 +77,10 @@ html {
   --chat-border: #{$crust};
   --chat-input-container-background: #{$base};
 
-  --background-modifier-hover: #{adjust-color($subtext1, $alpha: -0.9)};
-  --background-modifier-selected: #{adjust-color($subtext1, $alpha: -0.8)};
-  --background-modifier-accent: #{adjust-color($subtext1, $alpha: -0.79)};
-  --background-modifier-active: #{adjust-color($subtext1, $alpha: -0.84)};
+  --background-modifier-hover: #{adjust-color($text, $alpha: -0.85)};
+  --background-modifier-selected: #{adjust-color($text, $alpha: -0.8)};
+  --background-modifier-accent: #{adjust-color($text, $alpha: -0.74)};
+  --background-modifier-active: #{adjust-color($text, $alpha: -0.83)};
 
   --info-positive-background: #{adjust-color($green, $alpha: -0.85)};
   --info-positive-foreground: #{$green};

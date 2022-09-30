@@ -35,20 +35,16 @@ nav[class*="guilds-"] {
 // server list icons
 div[class^="upperBadge"] {
   > div[class^="iconBadge"] {
-    background: $brand;
-
     path {
       color: $base;
     }
   }
+
   div[class*="participating-"] {
     background: $green;
   }
 }
 
-div[class^="lowerBadge"] {
-  > div[class^="numberBadge"] {
-    color: $base;
-    font-weight: 700;
-  }
-}
+// div[class^="lowerBadge"] {
+//
+// }

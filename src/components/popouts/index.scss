@@ -1,4 +1,5 @@
 @import "menu";
+@import "comm-updates";
 @import "inbox";
 @import "profile";
 @import "reactions";
@@ -79,6 +80,17 @@ div[class^="layerContainer"] {
   // branded tooltips should have dark text
   [class*="tooltipBrand-"] {
     color: $crust;
+  }
+
+  // when hovering active threads
+  div[class^="popout-"] div[class^="row"][role="button"] {
+    &:hover {
+      color: $crust;
+
+      [class*="timestamp"] {
+        color: $crust;
+      }
+    }
   }
 }
 

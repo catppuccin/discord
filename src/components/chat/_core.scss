@@ -12,15 +12,46 @@ main[class^="chatContent"] {
       color: $crust;
     }
   }
+
+  // text input area
+  div[class^="channelTextArea-"] {
+    div[class^="buttons-"] * {
+      color: var(--interactive-normal) !important;
+    }
+  }
 }
 
 // spoiler messages
-span[class^="spoilerText"] {
-  &[aria-expanded="false"] {
-    background-color: $surface2 !important;
+.theme-dark,
+.theme-light {
+  span[class^="spoilerText"] {
+    background-color: $surface0;
+
+    &[class*="hidden"] {
+      background-color: $surface2;
+
+      &:hover {
+        background-color: lighten($surface2, 5%);
+      }
+    }
   }
-  &[aria-expanded="true"] {
-    background-color: $surface0 !important;
+
+  div[class^="spoilerContainer-"] {
+    div[class^="spoilerWarning-"] {
+      color: $text;
+      background-color: adjust-color($crust, $alpha: -0.3);
+    }
+
+    &:hover {
+      div[class^="spoilerWarning-"] {
+        color: $text;
+        background-color: $crust;
+      }
+    }
+
+    article[class*="embedFull-"] {
+      border-color: $surface2;
+    }
   }
 }
 

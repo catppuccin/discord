@@ -7,6 +7,11 @@
   &[class*="colorRed-"],
   &[class*="colorGreen-"] {
     color: $crust;
+
+    // darken the nitro button too
+    svg[class^="premiumIcon"] {
+      color: darken($pink, 20%);
+    }
   }
 
   // ...unless it's primary
@@ -36,5 +41,23 @@ button {
     svg * {
       fill: $base;
     }
+  }
+}
+
+// lookInverted buttons should have darker brand text
+[class*="lookInverted-"][class*="colorBrand-"] {
+  color: var(--brand-experiment-600);
+
+  // darken the nitro button too
+  svg[class^="premiumIcon"] {
+    color: darken($pink, 15%);
+  }
+}
+
+// lookLink + colorPrimary should be themed
+.theme-dark,
+.theme-light {
+  [class*="lookLink-"][class*="colorPrimary-"] {
+    color: $text;
   }
 }

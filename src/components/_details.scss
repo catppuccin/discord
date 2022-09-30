@@ -125,3 +125,15 @@ svg[class^="uploadIcon"] {
     color: $subtext0;
   }
 }
+
+// anything that uses a color background should have crust text
+div[class*="unreadMentionsBar-"],
+div[class*="unreadBar-"] {
+  color: $crust;
+}
+
+// make number badges have crust text and bolder
+div[class^="numberBadge-"] {
+  font-weight: 700;
+  color: $crust;
+}
