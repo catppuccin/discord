@@ -1,16 +1,13 @@
 @import "components";
 
-// this one is e.g. when connecting to voice on a different client
-div[class^="notice-"][class*="colorWarning-"] {
-  background: $yellow !important;
-}
-
-// notice when you have to complete steps befoer talking in a server
 div[class^="notice-"] {
-  background: $blue !important;
-  * {
-    color: $crust !important;
-    border-color: $crust !important;
+  div[class^="closeButton-"] > svg > path {
+    fill: $crust;
+  }
+
+  button[class^="button-"] {
+    border-color: $crust;
+    color: $crust;
   }
 }
 
@@ -23,11 +20,6 @@ div[class*="friendSelected"] {
 div[class*="videoGrid-"],
 div[class^="callContainer-"] > div[class^="root-"] {
   background: $crust !important;
-}
-
-// selected server / discord logo wrapper
-.wrapper-1BJsBx.selected-bZ3Lue > div[class^="childWrapper"] {
-  background-color: $rosewater !important;
 }
 
 // add account modal + cards

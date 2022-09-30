@@ -6,7 +6,7 @@ div[class^="dotOnline"] {
   background-color: $green !important;
 }
 
-// away
+// idle
 rect[fill^="hsl(38"],
 foreignObject[mask="url(#svg-mask-status-idle)"] > div {
   fill: $yellow !important;
@@ -31,6 +31,18 @@ div[class^="dotOffline"] {
 // dots in typing
 svg[class^="cursorDefault-"] svg[class^="dots-"] circle {
   fill: $base !important;
+}
+
+// inline brand color styles...
+[style*="background-color: hsl(235, calc(var(--saturation-factor, 1) * 85.6%), 64.7%)"] {
+  background-color: $brand !important;
+  color: $crust;
+}
+
+// for those roles that blend in the background
+span[class^="username-"][style*="color: rgb(54, 57, 62)"],
+span[class^="username-"][style*="color: rgb(53, 57, 64)"] {
+  color: var(--background-primary) !important;
 }
 
 // server badges
