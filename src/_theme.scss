@@ -309,6 +309,25 @@ div[class^="sidebar-"] > section[class^="panels-"] {
     color: $text !important;
   }
 }
+[data-list-id^="forum-channel-list-"] {
+  div[class^="body-"] > div[class^="tags"] div[class*="pill"] {
+    background-color: $mantle;
+  }
+
+  // new post button
+  button[class^="submitButton-"][class*="colorBrand"] {
+    background-color: $brand !important;
+    color: $crust !important;
+  }
+}
+
+// fix the sidebar on smaller servers
+div[class^="chat"]
+  > div[class^="content-"]
+  main[class^="chatContent-"]
+  + div[class^="container-"] {
+  background-color: var(--background-secondary);
+}
 
 // selected server / discord logo wrapper
 .wrapper-1BJsBx.selected-bZ3Lue > div[class^="childWrapper"] {
@@ -318,18 +337,18 @@ div[class^="sidebar-"] > section[class^="panels-"] {
 //-- buttons
 // buttons are crust
 button[class*="lookFilled"]:not([disabled]) {
-  color: #{$crust} !important;
+  color: $crust !important;
 }
 // buttons are crust
 button[class*="lookFilled"]:disabled {
-  color: #{$text} !important;
+  color: $text !important;
 }
 
 // -- and have $text foreground when inside the chat window (bots)
 div[class^="chat"] {
   button[class*="lookFilled"] {
-    color: #{$text} !important;
-    background-color: #{$crust} !important;
+    color: $text !important;
+    background-color: $crust !important;
   }
 }
 
@@ -341,15 +360,15 @@ section[class^="inputSensitivityToggle-"] {
 }
 
 div[class*="reactionMe-"] {
-  background-color: #{$surface0} !important;
+  background-color: $surface0 !important;
 }
 
 // autocomplete chat textboxes
 div[class*="autocomplete-"] {
-  background-color: #{$mantle} !important;
+  background-color: $mantle !important;
 
   div[class*="categoryHeader"] {
-    background-color: #{$mantle} !important;
+    background-color: $mantle !important;
   }
   div[class*="autocompleteRowSubheading"] {
     background-color: transparent;
@@ -493,16 +512,32 @@ div[class^="layerContainer"] {
   // make menu items readable when hovered
   [role="menu"] {
     --brand-experiment-560: var(--brand-experiment-25a);
+    --brand-experiment-600: var(--brand-experiment);
 
-    [class*="colorDefault"][class*="focused"] {
-      &:not([class*="colorDanger"]),
-      [class*="checkbox-"] {
-        color: var(--interactive-normal) !important;
+    [class*="colorDefault"] {
+      &[class*="focused"] {
+        &:not([class*="colorDanger"]),
+        [class*="checkbox-"] {
+          color: var(--interactive-normal) !important;
+        }
+      }
+
+      // make active items have dark text
+      &:active:not([class*="hideInteraction-"]) {
+        color: var(--background-floating) !important;
+
+        [class*="check-"] {
+          color: var(--interactive-normal) !important;
+        }
+
+        [class*="checkbox-"] {
+          color: var(--background-floating) !important;
+        }
       }
     }
 
     [class*="colorDanger"][class*="focused"],
-    [class*="colorDefault"][class*="focused"] [class*="check-"] {
+    [class*="colorDefault"] [class*="check-"] {
       color: var(--background-floating) !important;
     }
 
@@ -510,6 +545,11 @@ div[class^="layerContainer"] {
     #guild-header-popout-invite-people {
       color: $brand;
     }
+  }
+
+  // branded tooltips should have dark text
+  [class*="tooltipBrand-"] {
+    color: $crust !important;
   }
 }
 
