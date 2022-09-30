@@ -62,3 +62,17 @@ div[class*="autocomplete-"] {
   );
   background: linear-gradient(90deg, rgba(54, 57, 63, 0) 0, $mantle);
 }
+
+// emoji button
+div[class^="channelTextArea-"] button[class*="emojiButton-"] {
+  background: transparent !important;
+}
+
+// upload???
+[class*="uploadDropModal-"] div[class^="inner"] {
+  border-color: $crust;
+
+  * {
+    color: $crust !important;
+  }
+}
