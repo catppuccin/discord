@@ -273,6 +273,18 @@ div[class^=sidebar-] > section[class^=panels-] div[class*=buttonContents] {
   color: #cad3f5 !important;
 }
 
+[data-list-id^=forum-channel-list-] div[class^=body-] > div[class^=tags] div[class*=pill] {
+  background-color: #1e2030;
+}
+[data-list-id^=forum-channel-list-] button[class^=submitButton-][class*=colorBrand] {
+  background-color: #8aadf4 !important;
+  color: #181926 !important;
+}
+
+div[class^=chat] > div[class^=content-] main[class^=chatContent-] + div[class^=container-] {
+  background-color: var(--background-secondary);
+}
+
 .wrapper-1BJsBx.selected-bZ3Lue > div[class^=childWrapper] {
   background-color: #f4dbd6 !important;
 }
@@ -422,17 +434,30 @@ div[class^=layerContainer] div[class^=queryContainer] span[class^=key] {
 }
 div[class^=layerContainer] [role=menu] {
   --brand-experiment-560: var(--brand-experiment-25a);
+  --brand-experiment-600: var(--brand-experiment);
 }
 div[class^=layerContainer] [role=menu] [class*=colorDefault][class*=focused]:not([class*=colorDanger]),
 div[class^=layerContainer] [role=menu] [class*=colorDefault][class*=focused] [class*=checkbox-] {
   color: var(--interactive-normal) !important;
 }
+div[class^=layerContainer] [role=menu] [class*=colorDefault]:active:not([class*=hideInteraction-]) {
+  color: var(--background-floating) !important;
+}
+div[class^=layerContainer] [role=menu] [class*=colorDefault]:active:not([class*=hideInteraction-]) [class*=check-] {
+  color: var(--interactive-normal) !important;
+}
+div[class^=layerContainer] [role=menu] [class*=colorDefault]:active:not([class*=hideInteraction-]) [class*=checkbox-] {
+  color: var(--background-floating) !important;
+}
 div[class^=layerContainer] [role=menu] [class*=colorDanger][class*=focused],
-div[class^=layerContainer] [role=menu] [class*=colorDefault][class*=focused] [class*=check-] {
+div[class^=layerContainer] [role=menu] [class*=colorDefault] [class*=check-] {
   color: var(--background-floating) !important;
 }
 div[class^=layerContainer] [role=menu] #guild-header-popout-invite-people {
   color: #8aadf4;
+}
+div[class^=layerContainer] [class*=tooltipBrand-] {
+  color: #181926 !important;
 }
 
 div[class*=date-] {
