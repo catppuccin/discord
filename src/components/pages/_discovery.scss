@@ -1,0 +1,28 @@
+div[class^="pageWrapper-"] {
+  background: $base !important;
+}
+
+// public server home
+div[class^="homeContainer-"] {
+  background: $base !important;
+
+  > div[class^="homeContent-"] div[class*="card-"] {
+    background: $surface0 !important;
+  }
+}
+
+// the header for the public server home
+section[class^="title-"] {
+  background: $mantle !important;
+}
+
+div[class^="categoryItem-"][class*="selectedCategoryItem"],
+button[class*="lookFilled"] div[class*="addButton"] {
+  // color when selected or if button
+  color: $crust !important;
+}
+
+// new label
+div[class^="itemInner-"] div[class^="new-"] > div[class*="newText-"] {
+  color: $crust !important;
+}

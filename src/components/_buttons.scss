@@ -1,0 +1,40 @@
+// filled buttons and badges should have crust text
+[class*="lookFilled-"] {
+  &[class*="colorBrand-"],
+  &[class*="colorBrandNew-"],
+  &[class*="colorLink-"],
+  &[class*="colorYellow-"],
+  &[class*="colorRed-"],
+  &[class*="colorGreen-"] {
+    color: $crust;
+  }
+
+  // ...unless it's primary
+  &[class*="colorPrimary-"] {
+    color: $text;
+  }
+}
+
+// buttons in calls
+button {
+  &[class*="white"] {
+    background: $surface0;
+    svg * {
+      fill: $text;
+    }
+  }
+
+  &[class*="primaryDark"] {
+    background: $base;
+    svg * {
+      fill: $text;
+    }
+  }
+
+  &[class*="red"] {
+    background: $red;
+    svg * {
+      fill: $base;
+    }
+  }
+}

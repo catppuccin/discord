@@ -1,0 +1,74 @@
+div[class^="perksModal"] {
+  background-color: $base;
+
+  li[class^="perk"] {
+    background-color: $mantle;
+
+    svg {
+      color: $pink;
+    }
+  }
+
+  svg[class^="giftIcon"] {
+    color: $crust;
+  }
+
+  div[class^="tierHeaderUnlocked"] {
+    background-image: linear-gradient(90deg, $blue, $mauve);
+    color: $base;
+  }
+
+  div[class^="tierUnlocked"],
+  div[class^="tierMarkerBackground"] {
+    background-color: $base;
+  }
+
+  div[class^="barBackground"],
+  div[class^="tierMarkerInProgress"],
+  div[class^="tierBody"] {
+    background-color: $crust;
+  }
+
+  div[class^="tierMarkerInProgress"] [class^="currentTierIcon"] {
+    color: $pink;
+  }
+
+  div[class^="barForeground"],
+  div[class^="tierMarkerAccomplished"] {
+    background-color: $pink;
+  }
+
+  svg[class^="currentTierIcon"] {
+    color: $base;
+  }
+
+  div[class*="tierMarkerLabelText"],
+  svg[class^="tierLock"] {
+    color: var(--text-muted);
+  }
+
+  div[class*="selectedTier"] div[class*="tierMarkerLabelText"] {
+    color: var(--text-normal);
+  }
+
+  div[class^="tierHeaderLocked"] {
+    background-color: darken($crust, 5%);
+    color: var(--text-muted);
+  }
+
+  svg[class*="unlocked"] {
+    color: $green;
+  }
+}
+
+// boost icon
+svg[class^="premiumIcon"],
+#guild-header-popout-premium-subscribe svg,
+svg[class^="badgeIconWithSubscribers"] {
+  color: $pink;
+}
+
+// boost progress bar
+div[class^="sidebar-"] div[class^="progressBar-"] {
+  background: linear-gradient(90deg, $blue, $mauve);
+}

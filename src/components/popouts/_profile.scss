@@ -1,0 +1,6 @@
+div[class*="rolesList"] {
+  div[class^="role-"],
+  button[class^="addButton-"] {
+    background-color: var(--brand-experiment-15a);
+  }
+}

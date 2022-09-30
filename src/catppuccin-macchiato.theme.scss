@@ -8,6 +8,9 @@
  * @invite r6Mdz5dpFc
 **/
 
-@import "colors/_macchiato";
+@use "sass:math";
+@import "components/_colors/macchiato";
 
-@import "_theme";
+$brand: $blue;
+
+@import "theme";

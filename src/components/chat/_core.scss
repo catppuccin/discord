@@ -1,0 +1,64 @@
+main[class^="chatContent"] {
+  // new message ruler
+  #---new-messages-bar {
+    span[class^="unreadPill-"] {
+      color: $crust;
+    }
+  }
+
+  // new message bar
+  div[class^="newMessagesBar-"] {
+    button {
+      color: $crust;
+    }
+  }
+}
+
+// spoiler messages
+span[class^="spoilerText"] {
+  &[aria-expanded="false"] {
+    background-color: $surface2 !important;
+  }
+  &[aria-expanded="true"] {
+    background-color: $surface0 !important;
+  }
+}
+
+// cooldown text
+div[class^="cooldownWrapper-"] {
+  color: var(--text-muted) !important;
+}
+
+// autocomplete chat textboxes
+div[class*="autocomplete-"] {
+  background-color: $mantle !important;
+
+  div[class*="categoryHeader"] {
+    background-color: $mantle !important;
+  }
+  div[class*="autocompleteRowSubheading"] {
+    background-color: transparent;
+  }
+  div[class*="autocompleteRowContentSecondary"] {
+    background-color: transparent;
+  }
+  div[class^="usageWrapper-"] > div[class*="title-"] {
+    color: $brand !important;
+  }
+
+  strong {
+    color: $brand !important;
+  }
+}
+
+// fading desc
+[aria-label="Channel header"] > div[class^="children"]::after {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(54, 57, 63, 0)),
+    to($mantle)
+  );
+  background: linear-gradient(90deg, rgba(54, 57, 63, 0) 0, $mantle);
+}

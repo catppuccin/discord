@@ -1,0 +1,36 @@
+div[class^="layerContainer"] [role="menu"] {
+  // make menu items readable when hovered
+  --brand-experiment-560: var(--brand-experiment-25a);
+  --brand-experiment-600: var(--brand-experiment);
+
+  [class*="colorDefault"] {
+    &[class*="colorBrand"] {
+      color: $brand;
+    }
+
+    &[class*="focused"] {
+      &:not([class*="colorDanger"]),
+      [class*="checkbox-"] {
+        color: var(--interactive-normal);
+      }
+    }
+
+    // make active items have dark text
+    &:active:not([class*="hideInteraction-"]) {
+      color: var(--background-floating);
+
+      [class*="check-"] {
+        color: var(--interactive-normal);
+      }
+
+      [class*="checkbox-"] {
+        color: var(--background-floating);
+      }
+    }
+  }
+
+  [class*="colorDanger"][class*="focused"],
+  [class*="colorDefault"] [class*="check-"] {
+    color: var(--background-floating);
+  }
+}

@@ -8,6 +8,9 @@
  * @invite r6Mdz5dpFc
 **/
 
-@import "colors/_frappe";
+@use "sass:math";
+@import "components/_colors/frappe";
 
-@import "_theme";
+$brand: $blue;
+
+@import "theme";

@@ -1,0 +1,181 @@
+div[class^="sidebarRegion-"] {
+  div[class^="premiumTab-"] {
+    > div > svg > path {
+      fill: $pink;
+    }
+
+    > div[class*="selected"] {
+      color: $crust;
+
+      svg > path {
+        fill: $crust;
+      }
+    }
+  }
+}
+
+div[class^="contentRegion-"] {
+  #appearance-tab,
+  #accessibility-tab,
+  [id="voice-&-video-tab"] {
+    [class^="bar-"],
+    [class^="markDash-"] {
+      background: $surface1;
+    }
+  }
+
+  #nitro-server-boost-tab {
+    svg[class^="guildBoostingIcon"],
+    svg[class^="guildSubscriptionSlotIcon-"],
+    svg[class^="guildSubscriberCountIcon-"] {
+      color: $pink;
+    }
+
+    circle[class^="circleProgress-"] {
+      color: $pink;
+    }
+
+    div[class*="gemIndicatorContainer-"] {
+      background-color: $base;
+
+      svg[class^="gemWithLabel-"] {
+        color: $pink;
+      }
+
+      svg[class^="gemWithoutLabel-"] {
+        color: $surface2;
+      }
+
+      div[class^="tierLabel-"] {
+        color: $subtext1;
+      }
+    }
+  }
+
+  #subscriptions-tab {
+    [class^="sectionAccountCredit-"],
+    [class^="subscriptionDetails-"] {
+      border-color: var(--background-modifier-accent);
+    }
+  }
+
+  #billing-tab {
+    [class*="Divider"] {
+      border-color: var(--background-modifier-accent);
+    }
+
+    div[class^="defaultIndicator-"] {
+      color: $text;
+      background-color: $surface1;
+    }
+
+    div[class*="summaryInfo"],
+    [class^="paymentHeader-"] {
+      color: $text;
+      border-color: var(--background-modifier-accent);
+    }
+
+    div[class^="premiumIndicator-"] {
+      color: $crust;
+    }
+
+    div[class^="paymentPane-"],
+    div[class*="paginator-"],
+    div[class*="payment-"] {
+      background-color: $surface0;
+      color: $text;
+    }
+
+    div[class^="expandedInfo-"] {
+      background-color: $surface1;
+    }
+
+    [class*="paymentText-"] {
+      color: $subtext1;
+    }
+
+    div[class^="codeRedemptionRedirect-"] {
+      background-color: $mantle;
+      color: $text;
+      border-color: $surface0;
+    }
+  }
+
+  [id="voice-&-video-tab"] {
+    div[class^="backgroundOptionRing-"] {
+      border-color: $brand;
+    }
+  }
+
+  #keybinds-tab {
+    div[class^="keybindShortcut-"] > span[class^="key-"] {
+      color: $text;
+    }
+  }
+
+  #game-activity-tab {
+    div[class*="nowPlayingAdd-"],
+    div[class*="lastPlayed-"],
+    div[class*="overlayStatusText-"] {
+      color: var(--text-muted);
+    }
+
+    div[class*="activeGame-"][class*="nowPlaying"] * {
+      color: $crust;
+
+      svg > g > path {
+        fill: $crust;
+      }
+    }
+
+    input[class^="gameName-"] {
+      color: $text;
+    }
+
+    input[class*="gameNameInput-"] {
+      &:hover,
+      &:focus {
+        background-color: $mantle;
+        border-color: #{adjust-color($mantle, $alpha: -0.7)};
+      }
+    }
+
+    div[class*="game-"] {
+      -webkit-box-shadow: 0 1px 0 0 var(--background-modifier-accent);
+      box-shadow: 0 1px 0 0 var(--background-modifier-accent);
+    }
+  }
+
+  // Voice & Audio checks
+  section[class^="inputSensitivityToggle-"] {
+    div[class*="speaking-"] {
+      background: $green !important;
+    }
+  }
+
+  div[class*="reactionMe-"] {
+    background-color: $surface0 !important;
+  }
+
+  // toggles in preferencs
+  // checked
+  div[class^="control-"] > div[class*="checked-"],
+  div[class^="sensitivity-"] div[class*="checked-"] {
+    background-color: $green !important;
+
+    // svg[class^="slider-"] {
+    //     > rect {
+    //         fill: $base;
+    //     }
+
+    //     > svg > path {
+    //         fill: $green;
+    //     }
+    // }
+  }
+
+  // unchecked
+  div[class^="control"] > div {
+    background-color: $surface1 !important;
+  }
+}

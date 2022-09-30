@@ -1,0 +1,115 @@
+// online
+rect[fill^="hsl(139"],
+foreignObject[mask="url(#svg-mask-status-online)"] > div,
+div[class^="dotOnline"] {
+  fill: $green !important;
+  background-color: $green !important;
+}
+
+// away
+rect[fill^="hsl(38"],
+foreignObject[mask="url(#svg-mask-status-idle)"] > div {
+  fill: $yellow !important;
+  background-color: $yellow !important;
+}
+
+// dnd
+rect[fill^="hsl(359"],
+foreignObject[mask="url(#svg-mask-status-dnd)"] > div {
+  fill: $red !important;
+  background-color: $red !important;
+}
+
+// offline
+rect[fill^="hsl(214"],
+foreignObject[mask="url(#svg-mask-status-offline)"] > div,
+div[class^="dotOffline"] {
+  fill: $subtext0 !important;
+  background-color: $subtext0 !important;
+}
+
+// dots in typing
+svg[class^="cursorDefault-"] svg[class^="dots-"] circle {
+  fill: $base !important;
+}
+
+// server badges
+div[class*="flowerStarContainer-"] {
+  &[class*="boostedGuildTierIconBackgroundWithVisibleBanner"] {
+    svg[class*="flowerStar-"] * {
+      fill: #fff;
+    }
+    div[class^="childContainer-"] svg * {
+      fill: $crust;
+    }
+  }
+
+  &[class*="iconBackgroundTierOne-"],
+  &[class*="iconBackgroundTierTwo-"]:not([class*="boostedGuildTierIconBackgroundWithVisibleBanner"]) {
+    svg[class*="flowerStar-"] * {
+      fill: $surface2;
+    }
+    div[class^="childContainer-"] svg * {
+      fill: $text;
+    }
+  }
+
+  &[class*="iconBackgroundTierThree-"] {
+    svg[class*="flowerStar-"] * {
+      fill: $pink;
+    }
+    div[class^="childContainer-"] svg * {
+      fill: $crust;
+    }
+  }
+
+  &[class*="verified-"] {
+    svg[class*="flowerStar-"] * {
+      fill: $green;
+    }
+    div[class^="childContainer-"] svg * {
+      fill: $crust;
+    }
+  }
+
+  &[class*="partnered-"] {
+    svg[class*="flowerStar-"] * {
+      fill: $brand;
+    }
+    div[class^="childContainer-"] svg * {
+      fill: $crust;
+    }
+  }
+}
+
+// public / verified server info pill
+div[class^="communityInfoPill"] {
+  --background-accent: #{adjust-color($base, $alpha: -0.3)};
+  color: $text;
+
+  div[class^="text"] {
+    font-weight: 500;
+  }
+}
+
+// social links on "what's new"
+a[class*="socialLink-"][href*="discord"] {
+  color: $subtext0;
+}
+
+// upload icon
+svg[class^="uploadIcon"] {
+  color: $crust;
+}
+
+// empty states. why is it colored like this
+.theme-dark,
+.theme-light {
+  h2[class^="emptyStateHeader-"] {
+    color: $text;
+  }
+
+  p[class^="emptyStateSubtext-"] {
+    color: $subtext0;
+  }
+}

@@ -8,6 +8,13 @@
  * @invite r6Mdz5dpFc
 **/
 
-@import "colors/_mocha";
+@use "sass:math";
+@import "components/_colors/mocha";
 
-@import "_theme";
+$brand: $blue;
+
+button[class*="emojiButtonNormal"] > div > div {
+  filter: grayscale(0.77) hue-rotate(185deg) brightness(1.02) opacity(100%) !important;
+}
+
+@import "theme";

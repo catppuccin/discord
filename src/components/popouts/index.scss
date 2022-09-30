@@ -1,0 +1,88 @@
+@import "menu";
+@import "inbox";
+@import "profile";
+@import "reactions";
+@import "create-server";
+
+div[class^="layerContainer"] {
+  // right-click popups for guild, channels, and user
+  #guild-header-popout,
+  #guild-context,
+  div[id^="channel-context"],
+  div[id^="user-context"] {
+    background: $crust;
+  }
+
+  > div[class^="layer"] {
+    // search popout
+    div[role="listbox"] {
+      background-color: $mantle;
+    }
+
+    div[class^="focusLock"] {
+      // create channel (modal) and stream popout (modalSize)
+      div[class^="modal-"],
+      div[class^="modalSize-"] {
+        background-color: $mantle;
+        li,
+        p,
+        span {
+          color: $text;
+        }
+      }
+
+      // their respective footers
+      div[class*="footer"] {
+        background-color: $crust;
+      }
+
+      // feature headers
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        &[class^="fixed-"] {
+          &:after {
+            background-color: $red;
+          }
+          color: $red;
+        }
+      }
+
+      div[class*="message-"] {
+        background-color: $surface0;
+      }
+    }
+  }
+
+  // add game
+  div[class^="addGamePopout-"] {
+    background-color: $mantle;
+  }
+
+  div[class*="searchOption-"]::after,
+  div[class*="option-"]::after,
+  li[class*="option-"]::after {
+    display: none;
+  }
+
+  div[class^="queryContainer"] {
+    background-color: $crust;
+    span[class^="key"] {
+      color: $text;
+      background-color: $base;
+    }
+  }
+
+  // branded tooltips should have dark text
+  [class*="tooltipBrand-"] {
+    color: $crust;
+  }
+}
+
+// add account modal + cards
+form[class*="card-"] {
+  background-color: $base;
+}

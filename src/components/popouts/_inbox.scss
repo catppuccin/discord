@@ -1,0 +1,20 @@
+div[class*="recentMentionsPopout"] {
+  div[class^="header-"] {
+    div[class^="tabBar"] div[class^="tab"][class*="active-"] {
+      color: $base;
+      background-color: $brand !important;
+    }
+
+    div[class^="controls-"] {
+      --background-secondary: #{$surface0};
+      --background-primary: #{adjust-color($surface0, $alpha: -0.1)};
+    }
+  }
+
+  div[class^="scroller-"] {
+    [role="button"] {
+      --background-tertiary: #{adjust-color($subtext0, $alpha: -0.85)};
+      --background-floating: #{adjust-color($subtext0, $alpha: -0.88)};
+    }
+  }
+}
