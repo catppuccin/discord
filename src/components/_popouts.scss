@@ -247,3 +247,10 @@ div[class^="layerContainer"] {
 form[class*="card-"] {
   background-color: $base;
 }
+
+// user info
+div[class*="userInfoSection-"] {
+  div[class^="connectedAccountContainer-"] {
+    background-color: adjust-color($surface0, $alpha: -0.55) !important;
+  }
+}

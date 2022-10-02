@@ -21,7 +21,7 @@
 @import "components/catppuccin-server";
 
 div[class^="notice-"] {
-  background-color: $brand;
+  // background-color: $brand;
 
   div[class*="header-"] {
     color: $crust;

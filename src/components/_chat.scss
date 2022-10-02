@@ -43,12 +43,17 @@ main[class^="chatContent"] {
     }
   }
 
+  // code stuff
   [class*="after_inlineCode-"],
   [class*="before_inlineCode-"] {
     color: $overlay0;
   }
 
   [class*="inlineCode-"] {
+    background: $surface0;
+  }
+
+  code.inline {
     background: $surface0;
   }
 }
