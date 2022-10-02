@@ -1,3 +1,4 @@
+// settings
 div[class^="sidebarRegion-"] {
   div[class^="premiumTab-"] {
     > div > svg > path {
@@ -208,6 +209,173 @@ div[class^="contentRegion-"] {
 
     svg[class^="slider-"] > svg > path {
       fill: darken($green, 40%) !important;
+    }
+  }
+}
+
+.bd-settings-title {
+  color: $text;
+}
+
+.bd-switch {
+  &-body {
+    --switch-color: #{$surface2};
+  }
+
+  input:checked + .bd-switch-body {
+    --switch-color: #{$green};
+
+    svg.bd-switch-symbol path {
+      fill: darken($green, 40%);
+    }
+  }
+}
+
+.bd-button {
+  background-color: $brand;
+  color: $crust;
+
+  &.bd-button-danger {
+    background-color: $red;
+  }
+}
+
+.bd-controls > .bd-addon-button svg {
+  fill: $crust;
+}
+
+.bd-addon-views .bd-view-button.selected {
+  background-color: $brand;
+
+  svg {
+    fill: $crust;
+  }
+}
+
+div[class^="perksModal"] {
+  background-color: $base;
+
+  li[class^="perk"] {
+    background-color: $mantle;
+
+    svg {
+      color: $pink;
+    }
+  }
+
+  svg[class^="giftIcon"] {
+    color: $crust;
+  }
+
+  div[class^="tierHeaderUnlocked"] {
+    background-image: linear-gradient(90deg, $blue, $mauve);
+    color: $base;
+  }
+
+  div[class^="tierUnlocked"],
+  div[class^="tierMarkerBackground"] {
+    background-color: $base;
+  }
+
+  div[class^="barBackground"],
+  div[class^="tierMarkerInProgress"],
+  div[class^="tierBody"] {
+    background-color: $crust;
+  }
+
+  div[class^="tierMarkerInProgress"] [class^="currentTierIcon"] {
+    color: $pink;
+  }
+
+  div[class^="barForeground"],
+  div[class^="tierMarkerAccomplished"] {
+    background-color: $pink;
+  }
+
+  svg[class^="currentTierIcon"] {
+    color: $base;
+  }
+
+  div[class*="tierMarkerLabelText"],
+  svg[class^="tierLock"] {
+    color: var(--text-muted);
+  }
+
+  div[class*="selectedTier"] div[class*="tierMarkerLabelText"] {
+    color: var(--text-normal);
+  }
+
+  div[class^="tierHeaderLocked"] {
+    background-color: darken($crust, 5%);
+    color: var(--text-muted);
+  }
+
+  svg[class*="unlocked"] {
+    color: $green;
+  }
+}
+
+// boost progress bar
+div[class^="sidebar-"] div[class^="container"] {
+  div[class^="progressBar-"] {
+    background: linear-gradient(90deg, $blue, $mauve);
+  }
+
+  &:hover {
+    div[class^="progressBar-"] {
+      background: linear-gradient(
+        90deg,
+        hsl(221, 70%, 55.5%),
+        $mauve 34%,
+        $blue 67%,
+        $mauve
+      );
+    }
+  }
+
+  div[class^="divider-"] {
+    border-color: var(--background-modifier-accent);
+  }
+}
+
+div[class^="pageWrapper-"] {
+  background: $base !important;
+}
+
+// public server home
+div[class^="homeContainer-"] {
+  background: $base !important;
+
+  > div[class^="homeContent-"] div[class*="card-"] {
+    background: $surface0 !important;
+  }
+}
+
+// the header for the public server home
+section[class^="title-"] {
+  background: $mantle !important;
+}
+
+div[class^="categoryItem-"][class*="selectedCategoryItem"],
+button[class*="lookFilled"] div[class*="addButton"] {
+  // color when selected or if button
+  color: $crust !important;
+}
+
+// new label
+div[class^="itemInner-"] div[class^="new-"] > div[class*="newText-"] {
+  color: $crust !important;
+}
+
+// student hubs
+section[class^="guildListSection-"] {
+  div[class^="guildList"]:first-child {
+    div[class^="iconContainer-"] {
+      background-color: $green;
+
+      > div[class^="icon-"] {
+        background-image: url("data:image/svg+xml,%3Csvg fill='none' height='24' viewBox='0 0 25 24' width='25' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23#{str-slice(inspect($crust), 2)}'%3E%3Cpath clip-rule='evenodd' d='m13.25 18v-12h-1.5v12z' fill-rule='evenodd'/%3E%3Cpath clip-rule='evenodd' d='m7 12.75c-.69036 0-1.25.5596-1.25 1.25v4h-1.5v-4c0-1.5188 1.23122-2.75 2.75-2.75h11c1.5188 0 2.75 1.2312 2.75 2.75v4h-1.5v-4c0-.6904-.5596-1.25-1.25-1.25z' fill-rule='evenodd'/%3E%3Cpath d='m12.5 7c-1.3807 0-2.5-1.11929-2.5-2.5s1.1193-2.5 2.5-2.5 2.5 1.11929 2.5 2.5-1.1193 2.5-2.5 2.5z'/%3E%3Cpath d='m20 22c-1.3807 0-2.5-1.1193-2.5-2.5s1.1193-2.5 2.5-2.5 2.5 1.1193 2.5 2.5-1.1193 2.5-2.5 2.5z'/%3E%3Cpath d='m12.5 22c-1.3807 0-2.5-1.1193-2.5-2.5s1.1193-2.5 2.5-2.5 2.5 1.1193 2.5 2.5-1.1193 2.5-2.5 2.5z'/%3E%3Cpath d='m5 22c-1.38071 0-2.5-1.1193-2.5-2.5s1.11929-2.5 2.5-2.5 2.5 1.1193 2.5 2.5-1.11929 2.5-2.5 2.5z'/%3E%3C/g%3E%3C/svg%3E");
+      }
     }
   }
 }

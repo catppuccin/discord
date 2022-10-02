@@ -1,7 +1,8 @@
 // online
 rect[fill^="hsl(139"],
 foreignObject[mask="url(#svg-mask-status-online)"] > div,
-div[class^="dotOnline"] {
+div[class^="dotOnline"],
+i[class^="statusOnline-"] {
   fill: $green !important;
   background-color: $green !important;
 }
@@ -23,7 +24,8 @@ foreignObject[mask="url(#svg-mask-status-dnd)"] > div {
 // offline
 rect[fill^="hsl(214"],
 foreignObject[mask="url(#svg-mask-status-offline)"] > div,
-div[class^="dotOffline"] {
+div[class^="dotOffline"],
+i[class^="statusOffline-"] {
   fill: $subtext0 !important;
   background-color: $subtext0 !important;
 }
@@ -136,4 +138,26 @@ div[class*="unreadBar-"] {
 div[class^="numberBadge-"] {
   font-weight: 700;
   color: $crust;
+}
+
+// spotify button on text area
+button[class^="attachButton-"] {
+  svg path[class^="attachButtonPlay-"] {
+    color: $green;
+  }
+}
+
+// speaking indicator
+div[class*="avatarSpeaking-"] {
+  -webkit-box-shadow: inset 0 0 0 2px $green,
+    inset 0 0 0 3px var(--background-secondary);
+  box-shadow: inset 0 0 0 2px $green,
+    inset 0 0 0 3px var(--background-secondary);
+}
+
+div[class*="videoLayer-"]
+  > div[class^="tileChild"]
+  > div[class^="border"][class*="speaking-"] {
+  -webkit-box-shadow: inset 0 0 0 2px $green, inset 0 0 0 3px $green;
+  bow-shadow: inset 0 0 0 2px $green, inset 0 0 0 3px $green;
 }

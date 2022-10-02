@@ -107,3 +107,57 @@ div[class^="channelTextArea-"] button[class*="emojiButton-"] {
     color: $crust !important;
   }
 }
+
+div[class^="chat"] > div[class^="content-"] > div[class^="container-"] {
+  background-color: $base;
+
+  // forum icons
+  div[class^="pinIcon-"] > svg > path,
+  div[class^="stepStatus-"] > svg > path {
+    fill: $crust !important;
+  }
+
+  // discord icon
+  svg[class^="discordIcon-"] {
+    background-color: $brand;
+    color: $crust;
+  }
+
+  // new badge
+  div[class^="newBadge-"] {
+    background-color: $lavender !important;
+    color: $crust;
+  }
+
+  div[class*="mainCard-"] {
+    background-color: $surface0;
+  }
+}
+
+div[class^="sidebar-"] > section[class^="panels-"] {
+  svg[class*="buttonIcon-"],
+  div[class*="buttonContents"] {
+    fill: $text;
+    color: $text;
+  }
+}
+
+[data-list-id^="forum-channel-list-"] {
+  div[class^="body-"] > div[class^="tags"] div[class*="pill"] {
+    background-color: $mantle;
+  }
+
+  // new post button
+  button[class^="submitButton-"][class*="colorBrand"] {
+    background-color: $brand;
+    color: $crust;
+  }
+}
+
+// fix the sidebar on smaller servers
+div[class^="chat"]
+  > div[class^="content-"]
+  main[class^="chatContent-"]
+  + div[class^="container-"] {
+  background-color: var(--background-secondary);
+}

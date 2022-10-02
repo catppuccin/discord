@@ -1,4 +1,24 @@
-@import "components";
+@import "components/variables";
+
+@import "components/icons-bgImg";
+@import "components/icons-svgBg";
+@import "components/icons-svgColor";
+
+@import "components/buttons";
+
+@import "components/pages";
+
+@import "components/navbar";
+@import "components/sidebar";
+
+@import "components/chat";
+
+@import "components/popouts";
+
+@import "components/hljs";
+@import "components/details";
+
+@import "components/catppuccin-server";
 
 div[class^="notice-"] {
   div[class^="closeButton-"] > svg > path {
