@@ -353,7 +353,7 @@ div[class^="homeContainer-"] {
 
 // the header for the public server home
 section[class^="title-"] {
-  background: $mantle !important;
+  background: var(--background-primary) !important;
 }
 
 div[class^="categoryItem-"][class*="selectedCategoryItem"],

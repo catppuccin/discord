@@ -21,6 +21,12 @@
 @import "components/catppuccin-server";
 
 div[class^="notice-"] {
+  background-color: $brand;
+
+  div[class*="header-"] {
+    color: $crust;
+  }
+
   div[class^="closeButton-"] > svg > path {
     fill: $crust;
   }
@@ -28,6 +34,20 @@ div[class^="notice-"] {
   button[class^="button-"] {
     border-color: $crust;
     color: $crust;
+
+    &:hover {
+      background: darken($brand, 10%);
+    }
+  }
+}
+
+// check boxes
+div[class^="checkbox-"][style*="border-color: var(--brand-experiment-400)"][style*="background-color: var(--brand-experiment-500)"] {
+  background-color: $brand !important;
+  border-color: transparent !important;
+
+  svg > path {
+    fill: $crust !important;
   }
 }
 

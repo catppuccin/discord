@@ -19,6 +19,38 @@ main[class^="chatContent"] {
       color: var(--interactive-normal) !important;
     }
   }
+
+  // reactions
+  [id^="message-reactions-"] {
+    div[class^="reaction-"] {
+      background-color: $surface0;
+      &:hover {
+        background-color: var(--brand-experiment-20a);
+        border-color: var(--brand-experiment-30a);
+      }
+    }
+  }
+
+  // buttons in chat header
+  div[class^="container-"][class*="header-"] {
+    div[class*="addReactButton-"],
+    div[class^="buttons-"]:not([class*="lookBlank-"]) div[class^="contents"] {
+      background: $surface0;
+      &:hover {
+        background-color: var(--brand-experiment-20a);
+        border-color: var(--brand-experiment-30a);
+      }
+    }
+  }
+
+  [class*="after_inlineCode-"],
+  [class*="before_inlineCode-"] {
+    color: $overlay0;
+  }
+
+  [class*="inlineCode-"] {
+    background: $surface0;
+  }
 }
 
 // spoiler messages
@@ -80,18 +112,6 @@ div[class*="autocomplete-"] {
   strong {
     color: $brand !important;
   }
-}
-
-// fading desc
-[aria-label="Channel header"] > div[class^="children"]::after {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(rgba(54, 57, 63, 0)),
-    to($mantle)
-  );
-  background: linear-gradient(90deg, rgba(54, 57, 63, 0) 0, $mantle);
 }
 
 // emoji button
