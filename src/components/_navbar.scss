@@ -1,0 +1,50 @@
+nav[class*="guilds-"] {
+  // server icons
+  foreignObject > div[data-list-item-id^="guildsnav_"] {
+    background-color: lighten($base, 2%);
+
+    &:hover,
+    &[class*="selected"] {
+      > div[class^="childWrapper-"] {
+        color: $crust;
+        font-weight: 600;
+      }
+    }
+  }
+
+  // lightens home nav bg
+  div[data-list-item-id="guildsnav___home"] {
+    --background-primary: #{lighten($base, 3%)};
+  }
+
+  // lightens folder wrapper bg
+  span[class^="expandedFolderBackground-"] {
+    background-color: lighten($base, 3%);
+  }
+  div[class^="folder-"][class*="hover-"] {
+    background-color: lighten($base, 8%);
+  }
+
+  // create server/discovery
+  div[data-list-item-id="guildsnav___create-join-button"] svg > path,
+  div[data-list-item-id="guildsnav___guild-discover-button"] svg > path {
+    fill: $green;
+  }
+}
+
+// server list icons
+div[class^="upperBadge"] {
+  > div[class^="iconBadge"] {
+    path {
+      color: $base;
+    }
+  }
+
+  div[class*="participating-"] {
+    background: $green;
+  }
+}
+
+// div[class^="lowerBadge"] {
+//
+// }

@@ -1,0 +1,396 @@
+// settings
+div[class^="sidebarRegion-"] {
+  div[class^="premiumTab-"] {
+    > div > svg > path {
+      fill: $pink;
+    }
+
+    > div[class*="selected"] {
+      color: $crust;
+
+      svg > path {
+        fill: $crust;
+      }
+    }
+  }
+}
+
+div[class^="contentRegion-"] {
+  // #my-account-tab {
+  //     div[class^="userSettingsSecurity-"] {
+  //         h5::after {
+  //             content: " ";
+  //             z-index: 10;
+  //             margin-right: 4px;
+  //             width: 10px;
+  //             height: 14px;
+  //             top: 2px;
+  //             background-image: url("data:image/svg+xml,%3Csvg height='14' viewBox='0 0 10 14' width='10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m553 515h-6v-1c0-1.654 1.346-3 3-3s3 1.346 3 3zm-4 6h2v-4h-2zm1-12c-2.762 0-5 2.238-5 5v1 4 2c0 1.104.896 2 2 2h6c1.104 0 2-.896 2-2v-2-4-1c0-2.762-2.238-5-5-5z' fill='%23#{str-slice(inspect($green), 2)}' fill-rule='evenodd' transform='translate(-545 -509)'/%3E%3C/svg%3E");
+  //         }
+  //     }
+  // }
+
+  #appearance-tab,
+  #accessibility-tab,
+  [id="voice-&-video-tab"] {
+    [class^="bar-"],
+    [class^="markDash-"] {
+      background: $surface1;
+    }
+  }
+
+  [id="privacy-&-safety-tab"] {
+    div[class^="radioBar-"] {
+      &[style*="hsl(139,"] {
+        border-color: $green;
+      }
+
+      &[style*="hsl(37,"] {
+        border-color: $yellow;
+      }
+
+      &[style*="hsl(359,"] {
+        border-color: $red;
+      }
+    }
+  }
+
+  #nitro-server-boost-tab {
+    circle[class^="circleProgress-"] {
+      color: $pink;
+    }
+
+    div[class*="gemIndicatorContainer-"] {
+      background-color: $base;
+
+      div[class^="tierLabel-"] {
+        color: $subtext1;
+      }
+    }
+  }
+
+  #subscriptions-tab {
+    [class^="sectionAccountCredit-"],
+    [class^="subscriptionDetails-"] {
+      border-color: var(--background-modifier-accent);
+    }
+  }
+
+  #library-inventory-tab {
+    div[class^="promotionIcon-"] {
+      background-color: $base;
+    }
+  }
+
+  #billing-tab {
+    [class*="Divider"] {
+      border-color: var(--background-modifier-accent);
+    }
+
+    div[class^="defaultIndicator-"] {
+      color: $text;
+      background-color: $surface1;
+    }
+
+    div[class*="summaryInfo"],
+    [class^="paymentHeader-"] {
+      color: $text;
+      border-color: var(--background-modifier-accent);
+    }
+
+    div[class^="premiumIndicator-"] {
+      color: $crust;
+    }
+
+    div[class^="paymentPane-"],
+    div[class*="paginator-"],
+    div[class*="payment-"] {
+      background-color: $surface0;
+      color: $text;
+    }
+
+    div[class^="expandedInfo-"] {
+      background-color: $surface1;
+    }
+
+    [class*="paymentText-"] {
+      color: $subtext1;
+    }
+
+    div[class^="codeRedemptionRedirect-"] {
+      background-color: $mantle;
+      color: $text;
+      border-color: $surface0;
+    }
+  }
+
+  [id="voice-&-video-tab"] {
+    div[class^="backgroundOptionRing-"] {
+      border-color: $brand;
+    }
+  }
+
+  #keybinds-tab {
+    div[class^="keybindShortcut-"] > span[class^="key-"] {
+      color: $crust;
+
+      svg > g {
+        fill: $crust;
+      }
+    }
+  }
+
+  #game-activity-tab {
+    div[class*="nowPlayingAdd-"],
+    div[class*="lastPlayed-"],
+    div[class*="overlayStatusText-"] {
+      color: var(--text-muted);
+    }
+
+    div[class*="activeGame-"][class*="nowPlaying"] * {
+      color: $crust;
+
+      svg > g > path {
+        fill: $crust;
+      }
+    }
+
+    input[class^="gameName-"] {
+      color: $text;
+    }
+
+    input[class*="gameNameInput-"] {
+      &:hover,
+      &:focus {
+        background-color: $mantle;
+        border-color: #{adjust-color($mantle, $alpha: -0.7)};
+      }
+    }
+
+    div[class*="game-"] {
+      -webkit-box-shadow: 0 1px 0 0 var(--background-modifier-accent);
+      box-shadow: 0 1px 0 0 var(--background-modifier-accent);
+    }
+  }
+
+  // Voice & Audio checks
+  section[class^="inputSensitivityToggle-"] {
+    div[class*="speaking-"] {
+      background: $green !important;
+    }
+  }
+
+  div[class*="reactionMe-"] {
+    background-color: $surface0 !important;
+  }
+
+  // toggles in preferencs
+  // checked
+  div[class^="control-"] > div[class*="checked-"],
+  div[class^="sensitivity-"] div[class*="checked-"] {
+    background-color: $green !important;
+
+    // svg[class^="slider-"] {
+    //     > rect {
+    //         fill: $base;
+    //     }
+
+    //     > svg > path {
+    //         fill: $green;
+    //     }
+    // }
+  }
+
+  // unchecked
+  div[class^="control"] {
+    > div[style*="background-color: hsl(218, calc(var(--saturation-factor, 1) * 4.6%), 46.9%)"] {
+      background-color: $surface2 !important;
+    }
+
+    svg[class^="slider-"] > svg > path {
+      fill: darken($green, 40%) !important;
+    }
+  }
+}
+
+.bd-settings-title {
+  color: $text;
+}
+
+.bd-switch {
+  &-body {
+    --switch-color: #{$surface2};
+  }
+
+  input:checked + .bd-switch-body {
+    --switch-color: #{$green};
+
+    svg.bd-switch-symbol path {
+      fill: darken($green, 40%);
+    }
+  }
+}
+
+.bd-button {
+  background-color: $brand;
+  color: $crust;
+
+  &.bd-button-danger {
+    background-color: $red;
+  }
+}
+
+.bd-controls > .bd-addon-button svg {
+  fill: $crust;
+}
+
+.bd-addon-views .bd-view-button.selected {
+  background-color: $brand;
+
+  svg {
+    fill: $crust;
+  }
+}
+
+div[class^="perksModal"] {
+  background-color: $base;
+
+  li[class^="perk"] {
+    background-color: $mantle;
+
+    svg {
+      color: $pink;
+    }
+  }
+
+  svg[class^="giftIcon"] {
+    color: $crust;
+  }
+
+  div[class^="tierHeaderUnlocked"] {
+    background-image: linear-gradient(90deg, $blue, $mauve);
+    color: $base;
+  }
+
+  div[class^="tierUnlocked"],
+  div[class^="tierMarkerBackground"] {
+    background-color: $base;
+  }
+
+  div[class^="barBackground"],
+  div[class^="tierMarkerInProgress"],
+  div[class^="tierBody"] {
+    background-color: $crust;
+  }
+
+  div[class^="tierMarkerInProgress"] [class^="currentTierIcon"] {
+    color: $pink;
+  }
+
+  div[class^="barForeground"],
+  div[class^="tierMarkerAccomplished"] {
+    background-color: $pink;
+  }
+
+  svg[class^="currentTierIcon"] {
+    color: $base;
+  }
+
+  div[class*="tierMarkerLabelText"],
+  svg[class^="tierLock"] {
+    color: var(--text-muted);
+  }
+
+  div[class*="selectedTier"] div[class*="tierMarkerLabelText"] {
+    color: var(--text-normal);
+  }
+
+  div[class^="tierHeaderLocked"] {
+    background-color: darken($crust, 5%);
+    color: var(--text-muted);
+  }
+
+  svg[class*="unlocked"] {
+    color: $green;
+  }
+}
+
+// boost progress bar
+div[class^="sidebar-"] div[class^="container"] {
+  div[class^="progressBar-"] {
+    background: linear-gradient(90deg, $blue, $mauve);
+  }
+
+  &:hover {
+    div[class^="progressBar-"] {
+      background: linear-gradient(
+        90deg,
+        hsl(221, 70%, 55.5%),
+        $mauve 34%,
+        $blue 67%,
+        $mauve
+      );
+    }
+  }
+
+  div[class^="divider-"] {
+    border-color: var(--background-modifier-accent);
+  }
+}
+
+div[class^="pageWrapper-"] {
+  background: $base !important;
+}
+
+// public server home
+div[class^="homeContainer-"] {
+  background: $base !important;
+
+  > div[class^="homeContent-"] div[class*="card-"] {
+    background: $surface0 !important;
+  }
+}
+
+// the header for the public server home
+section[class^="title-"] {
+  background: var(--background-primary) !important;
+}
+
+div[class^="categoryItem-"][class*="selectedCategoryItem"],
+button[class*="lookFilled"] div[class*="addButton"] {
+  // color when selected or if button
+  color: $crust !important;
+}
+
+// new label
+div[class^="itemInner-"] div[class^="new-"] > div[class*="newText-"] {
+  color: $crust !important;
+}
+
+// student hubs
+section[class^="guildListSection-"] {
+  div[class^="guildList"]:first-child {
+    div[class^="iconContainer-"] {
+      background-color: $green;
+
+      > div[class^="icon-"] {
+        background-image: url("data:image/svg+xml,%3Csvg fill='none' height='24' viewBox='0 0 25 24' width='25' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23#{str-slice(inspect($crust), 2)}'%3E%3Cpath clip-rule='evenodd' d='m13.25 18v-12h-1.5v12z' fill-rule='evenodd'/%3E%3Cpath clip-rule='evenodd' d='m7 12.75c-.69036 0-1.25.5596-1.25 1.25v4h-1.5v-4c0-1.5188 1.23122-2.75 2.75-2.75h11c1.5188 0 2.75 1.2312 2.75 2.75v4h-1.5v-4c0-.6904-.5596-1.25-1.25-1.25z' fill-rule='evenodd'/%3E%3Cpath d='m12.5 7c-1.3807 0-2.5-1.11929-2.5-2.5s1.1193-2.5 2.5-2.5 2.5 1.11929 2.5 2.5-1.1193 2.5-2.5 2.5z'/%3E%3Cpath d='m20 22c-1.3807 0-2.5-1.1193-2.5-2.5s1.1193-2.5 2.5-2.5 2.5 1.1193 2.5 2.5-1.1193 2.5-2.5 2.5z'/%3E%3Cpath d='m12.5 22c-1.3807 0-2.5-1.1193-2.5-2.5s1.1193-2.5 2.5-2.5 2.5 1.1193 2.5 2.5-1.1193 2.5-2.5 2.5z'/%3E%3Cpath d='m5 22c-1.38071 0-2.5-1.1193-2.5-2.5s1.11929-2.5 2.5-2.5 2.5 1.1193 2.5 2.5-1.11929 2.5-2.5 2.5z'/%3E%3C/g%3E%3C/svg%3E");
+      }
+    }
+  }
+}
+
+// onlycords 💀
+path[d="M22 12.4065C21.8956 14.9141 20.8533 17.2908 19.0798 19.0654C17.3062 20.8401 14.931 21.883 12.425 21.9875L13.7625 15.646L17.2375 17.9224C17.3214 17.9702 17.416 17.996 17.5125 17.9975C17.6481 17.9962 17.7781 17.9424 17.875 17.8474C17.9439 17.7577 17.9813 17.6478 17.9813 17.5347C17.9813 17.4216 17.9439 17.3117 17.875 17.222L15.6 13.7323L22 12.4065ZM13.7625 8.34148L17.2375 6.06504C17.3352 6.00866 17.4487 5.98608 17.5605 6.00084C17.6723 6.0156 17.7762 6.06686 17.8559 6.14665C17.9357 6.22645 17.9869 6.33037 18.0017 6.44225C18.0164 6.55413 17.9938 6.66772 17.9375 6.76548L15.6625 10.2551L22 11.581C21.8956 9.07342 20.8533 6.69669 19.0798 4.92206C17.3062 3.14742 14.931 2.10449 12.425 2L13.7625 8.34148ZM10.275 8.34148L11.6 2C9.09402 2.10449 6.71878 3.14742 4.94525 4.92206C3.17172 6.69669 2.12945 9.07342 2.02502 11.581L8.37497 10.2551L6.08752 6.76548C6.02873 6.66774 6.00413 6.55315 6.01772 6.43988C6.0313 6.32661 6.08228 6.22113 6.16252 6.14009C6.24233 6.05781 6.34797 6.00542 6.46175 5.99176C6.57552 5.97809 6.69052 6.00399 6.78752 6.06504L10.275 8.34148ZM6.16252 17.8474C6.08228 17.7663 6.0313 17.6609 6.01772 17.5476C6.00413 17.4343 6.02873 17.3197 6.08752 17.222L8.37497 13.7323L2 12.4065C2.10442 14.9141 3.1467 17.2908 4.92023 19.0654C6.69376 20.8401 9.06899 21.883 11.575 21.9875L10.25 15.646L6.7625 17.9224C6.67925 17.9718 6.58428 17.9977 6.48753 17.9975C6.35971 17.9937 6.23848 17.9398 6.15001 17.8474H6.16252Z"] {
+  fill: $teal;
+}
+
+path[d="M17.225 6.06504C17.3227 6.00866 17.4362 5.98608 17.548 6.00084C17.6598 6.0156 17.7637 6.06686 17.8434 6.14665C17.9232 6.22645 17.9744 6.33037 17.9892 6.44225C18.0039 6.55413 17.9813 6.66772 17.925 6.76548L15.65 10.2551L21.9875 11.581C21.9875 11.7185 21.9875 11.8562 21.9875 11.9937C21.9875 12.1313 21.9875 12.2689 21.9875 12.4065L15.65 13.7323L17.925 17.222C17.9939 17.3117 18.0313 17.4216 18.0313 17.5347C18.0313 17.6478 17.9939 17.7577 17.925 17.8474C17.8281 17.9424 17.6982 17.9962 17.5625 17.9975C17.466 17.996 17.3714 17.9702 17.2875 17.9224L13.8125 15.646L12.4125 22H11.5875L10.2625 15.6585L6.77501 17.935C6.69176 17.9843 6.59672 18.0102 6.49997 18.01C6.43455 18.0098 6.3699 17.9963 6.30977 17.9705C6.24964 17.9447 6.1953 17.9072 6.15001 17.8599C6.06977 17.7789 6.01879 17.6734 6.0052 17.5601C5.99162 17.4468 6.01621 17.3323 6.07501 17.2345L8.36253 13.7449L2 12.4065C2 12.2689 2 12.1313 2 11.9937C2 11.8562 2 11.7185 2 11.581L8.35002 10.2551L6.0625 6.76548C6.0037 6.66774 5.97918 6.55315 5.99277 6.43988C6.00635 6.32661 6.05726 6.22113 6.1375 6.14009C6.21731 6.05781 6.32295 6.00542 6.43672 5.99176C6.5505 5.97809 6.6655 6.00399 6.7625 6.06504L10.25 8.34148L11.575 2H12.4L13.7375 8.34148L17.225 6.06504Z"] {
+  fill: $crust;
+}
+
+div[class^="tierPreviews-"] {
+  button[class^="button-"] {
+    background: linear-gradient(90deg, $teal, $blue);
+  }
+}

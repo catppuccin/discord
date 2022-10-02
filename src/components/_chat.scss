@@ -1,0 +1,188 @@
+main[class^="chatContent"] {
+  // new message ruler
+  #---new-messages-bar {
+    span[class^="unreadPill-"] {
+      color: $crust;
+    }
+  }
+
+  // new message bar
+  div[class^="newMessagesBar-"] {
+    button {
+      color: $crust;
+    }
+  }
+
+  // text input area
+  div[class^="channelTextArea-"] {
+    div[class^="buttons-"] * {
+      color: var(--interactive-normal) !important;
+    }
+  }
+
+  // reactions
+  [id^="message-reactions-"] {
+    div[class^="reaction-"] {
+      background-color: $surface0;
+      &:hover {
+        background-color: var(--brand-experiment-20a);
+        border-color: var(--brand-experiment-30a);
+      }
+    }
+  }
+
+  // buttons in chat header
+  div[class^="container-"][class*="header-"] {
+    div[class*="addReactButton-"],
+    div[class^="buttons-"]:not([class*="lookBlank-"]) div[class^="contents"] {
+      background: $surface0;
+      &:hover {
+        background-color: var(--brand-experiment-20a);
+        border-color: var(--brand-experiment-30a);
+      }
+    }
+  }
+
+  // code stuff
+  [class*="after_inlineCode-"],
+  [class*="before_inlineCode-"] {
+    color: $overlay0;
+  }
+
+  [class*="inlineCode-"] {
+    background: $surface0;
+  }
+
+  code.inline {
+    background: $surface0;
+  }
+}
+
+// spoiler messages
+.theme-dark,
+.theme-light {
+  span[class^="spoilerText"] {
+    background-color: $surface0;
+
+    &[class*="hidden"] {
+      background-color: $surface2;
+
+      &:hover {
+        background-color: lighten($surface2, 5%);
+      }
+    }
+  }
+
+  div[class^="spoilerContainer-"] {
+    div[class^="spoilerWarning-"] {
+      color: $text;
+      background-color: adjust-color($crust, $alpha: -0.3);
+    }
+
+    &:hover {
+      div[class^="spoilerWarning-"] {
+        color: $text;
+        background-color: $crust;
+      }
+    }
+
+    article[class*="embedFull-"] {
+      border-color: $surface2;
+    }
+  }
+}
+
+// cooldown text
+div[class^="cooldownWrapper-"] {
+  color: var(--text-muted) !important;
+}
+
+// autocomplete chat textboxes
+div[class*="autocomplete-"] {
+  background-color: $mantle !important;
+
+  div[class*="categoryHeader"] {
+    background-color: $mantle !important;
+  }
+  div[class*="autocompleteRowSubheading"] {
+    background-color: transparent;
+  }
+  div[class*="autocompleteRowContentSecondary"] {
+    background-color: transparent;
+  }
+  div[class^="usageWrapper-"] > div[class*="title-"] {
+    color: $brand !important;
+  }
+
+  strong {
+    color: $brand !important;
+  }
+}
+
+// emoji button
+div[class^="channelTextArea-"] button[class*="emojiButton-"] {
+  background: transparent !important;
+}
+
+// upload???
+[class*="uploadDropModal-"] div[class^="inner"] {
+  border-color: $crust;
+
+  * {
+    color: $crust !important;
+  }
+}
+
+div[class^="chat"] > div[class^="content-"] > div[class^="container-"] {
+  background-color: $base;
+
+  // forum icons
+  div[class^="pinIcon-"] > svg > path,
+  div[class^="stepStatus-"] > svg > path {
+    fill: $crust !important;
+  }
+
+  // discord icon
+  svg[class^="discordIcon-"] {
+    background-color: $brand;
+    color: $crust;
+  }
+
+  // new badge
+  div[class^="newBadge-"] {
+    background-color: $lavender !important;
+    color: $crust;
+  }
+
+  div[class*="mainCard-"] {
+    background-color: $surface0;
+  }
+}
+
+div[class^="sidebar-"] > section[class^="panels-"] {
+  svg[class*="buttonIcon-"],
+  div[class*="buttonContents"] {
+    fill: $text;
+    color: $text;
+  }
+}
+
+[data-list-id^="forum-channel-list-"] {
+  div[class^="body-"] > div[class^="tags"] div[class*="pill"] {
+    background-color: $mantle;
+  }
+
+  // new post button
+  button[class^="submitButton-"][class*="colorBrand"] {
+    background-color: $brand;
+    color: $crust;
+  }
+}
+
+// fix the sidebar on smaller servers
+div[class^="chat"]
+  > div[class^="content-"]
+  main[class^="chatContent-"]
+  + div[class^="container-"] {
+  background-color: var(--background-secondary);
+}

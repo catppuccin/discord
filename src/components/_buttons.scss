@@ -1,0 +1,63 @@
+// filled buttons and badges should have crust text
+[class*="lookFilled-"] {
+  &[class*="colorBrand-"],
+  &[class*="colorBrandNew-"],
+  &[class*="colorLink-"],
+  &[class*="colorYellow-"],
+  &[class*="colorRed-"],
+  &[class*="colorGreen-"] {
+    color: $crust;
+
+    // darken the nitro button too
+    svg[class^="premiumIcon"] {
+      color: darken($pink, 20%);
+    }
+  }
+
+  // ...unless it's primary
+  &[class*="colorPrimary-"] {
+    color: $text;
+  }
+}
+
+// buttons in calls
+button {
+  &[class*="white"] {
+    background: $surface0;
+    svg * {
+      fill: $text;
+    }
+  }
+
+  &[class*="primaryDark"] {
+    background: $base;
+    svg * {
+      fill: $text;
+    }
+  }
+
+  &[class*="red"] {
+    background: $red;
+    svg * {
+      fill: $base;
+    }
+  }
+}
+
+// lookInverted buttons should have darker brand text
+[class*="lookInverted-"][class*="colorBrand-"] {
+  color: var(--brand-experiment-600);
+
+  // darken the nitro button too
+  svg[class^="premiumIcon"] {
+    color: darken($pink, 15%);
+  }
+}
+
+// lookLink + colorPrimary should be themed
+.theme-dark,
+.theme-light {
+  [class*="lookLink-"][class*="colorPrimary-"] {
+    color: $text;
+  }
+}
