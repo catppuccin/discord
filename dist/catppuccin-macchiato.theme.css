@@ -172,7 +172,7 @@ html {
   --control-brand-foreground-new: #8aadf4;
   --background-mentioned: rgba(238, 212, 159, 0.1);
   --background-mentioned-hover: rgba(238, 212, 159, 0.08);
-  --background-message-hover: rgba(24, 25, 38, 0.07);
+  --background-message-hover: rgba(24, 25, 38, 0.25);
   --background-message-automod: rgba(244, 219, 214, 0.05);
   --background-message-automod-hover: rgba(244, 219, 214, 0.1);
   --background-message-highlight: rgba(138, 173, 244, 0.1);
@@ -228,87 +228,102 @@ html {
 
 .theme-dark svg[class*=tier1ProfilePerk-],
 .theme-light svg[class*=tier1ProfilePerk-] {
-  color: #8aadf4;
+  color: #8aadf4 !important;
 }
 
 .theme-dark svg[class*=tier1BoostPerk-],
 .theme-light svg[class*=tier1BoostPerk-] {
-  color: #f5bde6;
+  color: #f5bde6 !important;
 }
 
 .theme-dark svg[class*=tier1CustomEmojiPerk-],
 .theme-light svg[class*=tier1CustomEmojiPerk-] {
-  color: #eed49f;
+  color: #eed49f !important;
 }
 
 .theme-dark svg[class*=tier1UploadPerk-],
 .theme-light svg[class*=tier1UploadPerk-] {
-  color: #b7bdf8;
+  color: #b7bdf8 !important;
 }
 
 .theme-dark svg[class*=tier1StreamPerk-],
 .theme-light svg[class*=tier1StreamPerk-] {
-  color: #a6da95;
+  color: #a6da95 !important;
 }
 
 .theme-dark svg[class*=guildBoostingIcon-],
 .theme-light svg[class*=guildBoostingIcon-] {
-  color: #f5bde6;
+  color: #f5bde6 !important;
 }
 
 .theme-dark svg[class*=guildSubscriptionSlotIcon-],
 .theme-light svg[class*=guildSubscriptionSlotIcon-] {
-  color: #f5bde6;
+  color: #f5bde6 !important;
 }
 
 .theme-dark svg[class*=guildSubscriberCountIcon-],
 .theme-light svg[class*=guildSubscriberCountIcon-] {
-  color: #f5bde6;
+  color: #f5bde6 !important;
 }
 
 .theme-dark svg[class*=gemWithLabel-],
 .theme-light svg[class*=gemWithLabel-] {
-  color: #f5bde6;
+  color: #f5bde6 !important;
 }
 
 .theme-dark svg[class*=gemWithoutLabel-],
 .theme-light svg[class*=gemWithoutLabel-] {
-  color: #8087a2;
+  color: #8087a2 !important;
 }
 
 .theme-dark svg[class*=memberBadgeIcon-],
 .theme-light svg[class*=memberBadgeIcon-] {
-  color: #f5bde6;
+  color: #f5bde6 !important;
 }
 
 .theme-dark svg[class*=stickerIcon-],
 .theme-light svg[class*=stickerIcon-] {
-  color: #c6a0f6;
+  color: #c6a0f6 !important;
 }
 
 .theme-dark svg[class*=audioQualityIcon-],
 .theme-light svg[class*=audioQualityIcon-] {
-  color: #7dc4e4;
+  color: #7dc4e4 !important;
 }
 
 .theme-dark svg[class*=uploadSizeIcon-],
 .theme-light svg[class*=uploadSizeIcon-] {
-  color: #f5bde6;
+  color: #f5bde6 !important;
 }
 
 .theme-dark svg[class*=threadIcon-],
 .theme-light svg[class*=threadIcon-] {
-  color: #8bd5ca;
+  color: #8bd5ca !important;
 }
 
 .theme-dark svg[class*=premiumIcon-],
 .theme-light svg[class*=premiumIcon-] {
-  color: #f5bde6;
+  color: #f5bde6 !important;
 }
 
 .theme-dark svg[class*=gameIcon-],
 .theme-light svg[class*=gameIcon-] {
-  color: #cad3f5;
+  color: #cad3f5 !important;
+}
+
+.theme-dark svg[class*=tierMarkerLabelPlusIcon-],
+.theme-light svg[class*=tierMarkerLabelPlusIcon-] {
+  color: #f5bde6 !important;
+}
+
+.theme-dark svg[class*=currentTierIcon-],
+.theme-light svg[class*=currentTierIcon-] {
+  color: #f5bde6 !important;
+}
+
+.theme-dark svg[class*=tier3Icon-],
+.theme-light svg[class*=tier3Icon-] {
+  color: #f5bde6 !important;
 }
 
 [class*=lookFilled-][class*=colorBrand-], [class*=lookFilled-][class*=colorBrandNew-], [class*=lookFilled-][class*=colorLink-], [class*=lookFilled-][class*=colorYellow-], [class*=lookFilled-][class*=colorRed-], [class*=lookFilled-][class*=colorGreen-] {
@@ -531,7 +546,10 @@ div[class^=perksModal] div[class^=tierMarkerBackground] {
 div[class^=perksModal] div[class^=barBackground],
 div[class^=perksModal] div[class^=tierMarkerInProgress],
 div[class^=perksModal] div[class^=tierBody] {
-  background-color: #181926;
+  background-color: #181926 !important;
+}
+div[class^=perksModal] div[class^=tierMarkerAccomplished] {
+  background: #f5bde6 !important;
 }
 div[class^=perksModal] div[class^=tierMarkerInProgress] [class^=currentTierIcon] {
   color: #f5bde6;
@@ -728,6 +746,15 @@ main[class^=chatContent] [class*=inlineCode-] {
 main[class^=chatContent] code.inline {
   background: #363a4f;
 }
+main[class^=chatContent] div[class^=container-] div[class^=cardWrapper-] div[class*=completed-] svg[class^=checkmark-] {
+  background-color: #a6da95;
+  color: #181926;
+}
+
+div[style*="d1382af8d9e755bc44811b1fd92990a8.svg"] {
+  background-image: url("data:image/svg+xml,%3Csvg height='18' width='18' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='m18 0h-18v18h18z'/%3E%3Cpath d='m0 8h14.2l-3.6-3.6 1.4-1.4 6 6-6 6-1.4-1.4 3.6-3.6h-14.2' fill='%23a6da95'/%3E%3C/g%3E%3C/svg%3E") !important;
+  filter: none !important;
+}
 
 .theme-dark span[class^=spoilerText],
 .theme-light span[class^=spoilerText] {
@@ -850,6 +877,9 @@ div[class^=layerContainer] [role=menu] [class*=colorDefault]:active:not([class*=
 div[class^=layerContainer] [role=menu] [class*=colorDanger][class*=focused],
 div[class^=layerContainer] [role=menu] [class*=colorDefault] [class*=check-] {
   color: var(--background-floating);
+}
+div[class^=layerContainer] [role=menu] #guild-header-popout-premium-subscribe div[class^=iconContainer-] > svg {
+  color: #f5bde6;
 }
 
 .theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] > div,
@@ -1080,8 +1110,8 @@ svg[class^=cursorDefault-] svg[class^=dots-] circle {
   color: #181926;
 }
 
-span[class^=username-][style*="color: rgb(54, 57, 62)"],
-span[class^=username-][style*="color: rgb(53, 57, 64)"] {
+span[class*=username-][style*="color: rgb(54, 57, 62)"],
+span[class*=username-][style*="color: rgb(53, 57, 64)"] {
   color: var(--background-primary) !important;
 }
 
