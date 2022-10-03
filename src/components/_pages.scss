@@ -280,7 +280,11 @@ div[class^="perksModal"] {
   div[class^="barBackground"],
   div[class^="tierMarkerInProgress"],
   div[class^="tierBody"] {
-    background-color: $crust;
+    background-color: $crust !important;
+  }
+
+  div[class^="tierMarkerAccomplished"] {
+    background: $pink !important;
   }
 
   div[class^="tierMarkerInProgress"] [class^="currentTierIcon"] {

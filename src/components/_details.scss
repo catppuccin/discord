@@ -42,8 +42,8 @@ svg[class^="cursorDefault-"] svg[class^="dots-"] circle {
 }
 
 // for those roles that blend in the background
-span[class^="username-"][style*="color: rgb(54, 57, 62)"],
-span[class^="username-"][style*="color: rgb(53, 57, 64)"] {
+span[class*="username-"][style*="color: rgb(54, 57, 62)"],
+span[class*="username-"][style*="color: rgb(53, 57, 64)"] {
   color: var(--background-primary) !important;
 }
 

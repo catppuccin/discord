@@ -56,6 +56,21 @@ main[class^="chatContent"] {
   code.inline {
     background: $surface0;
   }
+
+  div[class^="container-"] div[class^="cardWrapper-"] {
+    div[class*="completed-"] {
+      svg[class^="checkmark-"] {
+        background-color: $green;
+        color: $crust;
+      }
+    }
+  }
+}
+
+// arrow when someone joins
+div[style*="d1382af8d9e755bc44811b1fd92990a8.svg"] {
+  background-image: url("data:image/svg+xml,%3Csvg height='18' width='18' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='m18 0h-18v18h18z'/%3E%3Cpath d='m0 8h14.2l-3.6-3.6 1.4-1.4 6 6-6 6-1.4-1.4 3.6-3.6h-14.2' fill='%23#{str-slice(inspect($green), 2)}'/%3E%3C/g%3E%3C/svg%3E") !important;
+  filter: none !important;
 }
 
 // spoiler messages

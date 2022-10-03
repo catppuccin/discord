@@ -33,6 +33,12 @@ div[class^="layerContainer"] [role="menu"] {
   [class*="colorDefault"] [class*="check-"] {
     color: var(--background-floating);
   }
+
+  #guild-header-popout-premium-subscribe {
+    div[class^="iconContainer-"] > svg {
+      color: $pink;
+    }
+  }
 }
 
 .theme-dark,

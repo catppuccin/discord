@@ -196,7 +196,7 @@ html {
 
   --background-mentioned: #{adjust-color($yellow, $alpha: -0.9)};
   --background-mentioned-hover: #{adjust-color($yellow, $alpha: -0.92)};
-  --background-message-hover: #{adjust-color($crust, $alpha: -0.93)};
+  --background-message-hover: #{adjust-color($crust, $alpha: -0.75)};
   --background-message-automod: #{adjust-color($rosewater, $alpha: -0.95)};
   --background-message-automod-hover: #{adjust-color($rosewater, $alpha: -0.9)};
   --background-message-highlight: #{adjust-color($brand, $alpha: -0.9)};

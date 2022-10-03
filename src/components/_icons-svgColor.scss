@@ -50,13 +50,22 @@ $svgColor: (
   "gameIcon": (
     color: $text,
   ),
+  "tierMarkerLabelPlusIcon": (
+    color: $pink,
+  ),
+  "currentTierIcon": (
+    color: $pink,
+  ),
+  "tier3Icon": (
+    color: $pink,
+  ),
 );
 
 @each $class, $color in $svgColor {
   .theme-dark,
   .theme-light {
     svg[class*="#{$class}-"] {
-      color: #{map-get($color, color)};
+      color: #{map-get($color, color)} !important;
     }
   }
 }
