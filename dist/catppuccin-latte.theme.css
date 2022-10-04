@@ -177,7 +177,7 @@ button[class*=emojiButtonNormal] > div > div {
   --channel-text-area-placeholder: rgba(205, 214, 244, 0.5);
   --channeltextarea-background: #181825;
   --activity-card-background: #11111b;
-  --textbox-markdown-syntax: #313244;
+  --textbox-markdown-syntax: #6c7086;
   --spoiler-revealed-background: #313244;
   --spoiler-hidden-background: #585b70;
   --android-navigation-bar-background: #11111b;
@@ -727,7 +727,7 @@ html {
   --channel-text-area-placeholder: rgba(76, 79, 105, 0.5);
   --channeltextarea-background: #e6e9ef;
   --activity-card-background: #dce0e8;
-  --textbox-markdown-syntax: #ccd0da;
+  --textbox-markdown-syntax: #9ca0b0;
   --spoiler-revealed-background: #ccd0da;
   --spoiler-hidden-background: #acb0be;
   --android-navigation-bar-background: #dce0e8;
@@ -877,6 +877,9 @@ html {
 [class*=lookFilled-][class*=colorBrand-] svg[class^=premiumIcon], [class*=lookFilled-][class*=colorBrandNew-] svg[class^=premiumIcon], [class*=lookFilled-][class*=colorLink-] svg[class^=premiumIcon], [class*=lookFilled-][class*=colorYellow-] svg[class^=premiumIcon], [class*=lookFilled-][class*=colorRed-] svg[class^=premiumIcon], [class*=lookFilled-][class*=colorGreen-] svg[class^=premiumIcon] {
   color: #d921a8;
 }
+[class*=lookFilled-][class*=colorBrand-] [class*=spinnerItem-], [class*=lookFilled-][class*=colorBrandNew-] [class*=spinnerItem-], [class*=lookFilled-][class*=colorLink-] [class*=spinnerItem-], [class*=lookFilled-][class*=colorYellow-] [class*=spinnerItem-], [class*=lookFilled-][class*=colorRed-] [class*=spinnerItem-], [class*=lookFilled-][class*=colorGreen-] [class*=spinnerItem-] {
+  background-color: #dce0e8;
+}
 [class*=lookFilled-][class*=colorPrimary-] {
   color: #4c4f69;
 }
@@ -922,12 +925,8 @@ div[class^=sidebarRegion-] div[class^=premiumTab-] > div[class*=selected] svg > 
   fill: #dce0e8;
 }
 
-div[class^=contentRegion-] #appearance-tab [class^=bar-],
-div[class^=contentRegion-] #appearance-tab [class^=markDash-],
-div[class^=contentRegion-] #accessibility-tab [class^=bar-],
-div[class^=contentRegion-] #accessibility-tab [class^=markDash-],
-div[class^=contentRegion-] [id="voice-&-video-tab"] [class^=bar-],
-div[class^=contentRegion-] [id="voice-&-video-tab"] [class^=markDash-] {
+div[class^=contentRegion-] [class^=bar-],
+div[class^=contentRegion-] [class^=markDash-] {
   background: #bcc0cc;
 }
 div[class^=contentRegion-] [id="privacy-&-safety-tab"] div[class^=radioBar-][style*="hsl(139,"] {
@@ -1025,7 +1024,8 @@ div[class^=contentRegion-] div[class*=reactionMe-] {
   background-color: #ccd0da !important;
 }
 div[class^=contentRegion-] div[class^=control-] > div[class*=checked-],
-div[class^=contentRegion-] div[class^=sensitivity-] div[class*=checked-] {
+div[class^=contentRegion-] div[class^=sensitivity-] div[class*=checked-],
+div[class^=contentRegion-] div[style*="background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%)"] {
   background-color: #40a02b !important;
 }
 div[class^=contentRegion-] div[class^=control] > div[style*="background-color: hsl(218, calc(var(--saturation-factor, 1) * 4.6%), 46.9%)"] {
@@ -1281,10 +1281,6 @@ main[class^=chatContent] div[class^=container-][class*=header-] div[class^=butto
   background-color: var(--brand-experiment-20a);
   border-color: var(--brand-experiment-30a);
 }
-main[class^=chatContent] [class*=after_inlineCode-],
-main[class^=chatContent] [class*=before_inlineCode-] {
-  color: #9ca0b0;
-}
 main[class^=chatContent] [class*=inlineCode-] {
   background: #ccd0da;
 }
@@ -1299,6 +1295,11 @@ main[class^=chatContent] div[class^=container-] div[class^=cardWrapper-] div[cla
 div[style*="d1382af8d9e755bc44811b1fd92990a8.svg"] {
   background-image: url("data:image/svg+xml,%3Csvg height='18' width='18' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='m18 0h-18v18h18z'/%3E%3Cpath d='m0 8h14.2l-3.6-3.6 1.4-1.4 6 6-6 6-1.4-1.4 3.6-3.6h-14.2' fill='%2340a02b'/%3E%3C/g%3E%3C/svg%3E") !important;
   filter: none !important;
+}
+
+main[class^=chatContent] div[id^=message-content-] svg[class^=icon-] > path[d="M4 0L0 4V8L4 12L8 8V4L4 0ZM7 7.59L4 10.59L1 7.59V4.41L4 1.41L7 4.41V7.59Z"],
+main[class^=chatContent] div[id^=message-content-] svg[class^=icon-] > path[d="M2 4.83V7.17L4 9.17L6 7.17V4.83L4 2.83L2 4.83Z"] {
+  color: #ea76cb;
 }
 
 .theme-dark span[class^=spoilerText],
