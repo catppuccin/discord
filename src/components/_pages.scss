@@ -30,13 +30,10 @@ div[class^="contentRegion-"] {
   //     }
   // }
 
-  #appearance-tab,
-  #accessibility-tab,
-  [id="voice-&-video-tab"] {
-    [class^="bar-"],
-    [class^="markDash-"] {
-      background: $surface1;
-    }
+  // color bars with ticks
+  [class^="bar-"],
+  [class^="markDash-"] {
+    background: $surface1;
   }
 
   [id="privacy-&-safety-tab"] {
@@ -187,7 +184,8 @@ div[class^="contentRegion-"] {
   // toggles in preferencs
   // checked
   div[class^="control-"] > div[class*="checked-"],
-  div[class^="sensitivity-"] div[class*="checked-"] {
+  div[class^="sensitivity-"] div[class*="checked-"],
+  div[style*="background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%)"] {
     background-color: $green !important;
 
     // svg[class^="slider-"] {

@@ -12,6 +12,11 @@
     svg[class^="premiumIcon"] {
       color: darken($pink, 20%);
     }
+
+    // spinner color
+    [class*="spinnerItem-"] {
+      background-color: $crust;
+    }
   }
 
   // ...unless it's primary
