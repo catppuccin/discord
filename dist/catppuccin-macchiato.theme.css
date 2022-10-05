@@ -212,6 +212,10 @@ html {
 .theme-light [class*=disabledPointerEvents] svg[class^=activityIcon-] {
   color: #a5adcb;
 }
+.theme-dark [class*=disabledPointerEvents] [class*=tooltipBrand-] [class*=tooltipText-],
+.theme-light [class*=disabledPointerEvents] [class*=tooltipBrand-] [class*=tooltipText-] {
+  color: #181926;
+}
 
 [class*=staffBadge-] {
   background-image: url("data:image/svg+xml,%3Csvg fill='none' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23181926'%3E%3Cpath d='m5.92127 6.03526s.22115-.33086.31286-.47743c.09172-.14657-.23743-.49286-.36514-.60257-.12772-.10971-.32914-.05486-.32914-.05486-1.60715.71229-2.41115 2.17372-2.52086 2.466-.10972.29229.27943.61115.56657.76715.132.072.342-.08743.47143-.20572l.04371-.04457.06772-.06857.00085-.00086 4.37229 4.35517.59743-.5975 1.09801-1.098-4.32173-4.43224z'/%3E%3Cpath d='m16.2505 10.6294.2306-.2194 2.0717 2.052c.0146.0129.03.018.0437.018.0395 0 .072-.036.072-.036s2.2937-2.2757 2.3015-2.2834c.0677-.0669 0-.1037 0-.1037l-1.7692-1.78119-.0026.00258-.2425-.23743.1354-.13029.2897.03343-.0548-.384.0728-.07371-.1088-.55372c-.378-.53571-1.4135-1.39371-1.4135-1.39371l-.5417-.09772-.0548.07286-.408-.06086.0394.348.0257.02572-.1209.12171-.6685-.654s-3.8795-2.10686-4.086-2.20457c-.1166-.054-.2023-.09-.2846-.09-.0634 0-.1251.02143-.1963.072-.1646.11571-.0677.34886-.0677.34886l2.412 4.45714.4826.47829-.1509.15085-.0557.05572-.3857-.05315.0591.38229-.1114.11143-.0197-.01972c-.018-.018-.0429-.02742-.0669-.02742s-.048.00942-.0668.02742c-.0369.03686-.0369.09686 0 .13372l.0197.01971-.0532.054-.0137-.01457c-.0188-.018-.0428-.02743-.0668-.02743-.0249 0-.0489.00943-.0669.02743-.0368.03686-.0368.09686 0 .13372l.0146.01457-1.0149 1.02004-.0231-.0232c-.0189-.018-.0429-.0274-.0669-.0274s-.048.0094-.0668.0274c-.0369.0369-.0369.0969 0 .1337l.024.0232-.054.054-.018-.0172c-.018-.0188-.0429-.0283-.066-.0283-.0249 0-.0489.0095-.0677.0283-.036.0369-.036.096 0 .1329l.018.018-.132.1337-.018.1697.0694.0712-.0017.0008-.084.0857-5.47632 5.4755-.07114-.0592-.22714.0326-.12858.1303-.00857-.0086c-.01885-.0189-.04285-.0283-.06685-.0283s-.04886.0094-.06686.0283c-.03686.0369-.03686.096 0 .1329l.01028.0102-.05314.0549-.00514-.0051c-.018-.0189-.04286-.0283-.06686-.0283s-.048.0094-.06686.0283c-.036.0368-.036.096 0 .1328l.006.0069-1.002 1.0191-.02057-.0206c-.01885-.0188-.042-.0274-.06685-.0274-.024 0-.048.0086-.06686.0274-.03686.0369-.03686.0969 0 .1338l.02228.0214-.05314.054-.01628-.0163c-.01886-.018-.04286-.0274-.06772-.0274-.02314 0-.048.0094-.066.0274-.03686.0369-.03686.0969 0 .1337l.01714.018-.07457.0763-.38828-.0694.02914.4337-.12257.1251.10628.5846s.16286.5091.498.8469c.32486.3274.82029.4842.84172.5005l.55971.0977.138-.1354.38572.0626-.06343-.3814.11743-.1149.054.054c.018.018.042.0274.066.0274s.04885-.0094.06685-.0274c.03686-.0377.03686-.0969 0-.1337l-.05314-.0532.05486-.0531.04628.0463c.018.0188.04286.0283.06686.0283s.048-.0095.06686-.0283c.03686-.0369.03686-.096 0-.1329l-.04543-.0463 1.01743-1.0037.04457.0446c.018.0189.04286.0274.06686.0274s.048-.0085.06685-.0274c.036-.0369.036-.0969 0-.1337l-.04371-.0429.054-.054.03771.0377c.018.018.042.0275.066.0275.02486 0 .04886-.0095.06686-.0275.03686-.0368.03686-.0968 0-.1337l-.03686-.0368.114-.1115.04115-.2442-.06086-.0609.00086-.0009.11057-.1097 5.43946-5.4411-.0026-.0052.1063.1098.1706-.0189.1534-.1543.0248.0249c.0189.018.0429.0274.0669.0274s.0489-.0094.0669-.0274c.0368-.0369.0368-.0969 0-.1337l-.0249-.0249.054-.0531.0189.0188c.018.018.042.0274.0668.0274.024 0 .048-.0094.066-.0274.0369-.0368.0369-.0968 0-.1337l-.0188-.0197 1.0165-1.0183.0266.0266c.018.018.042.0274.066.0274.0249 0 .0489-.0094.0669-.0274.0368-.0369.0368-.0969 0-.1337l-.0266-.0266.054-.054.0206.0214c.0188.018.0428.0274.0668.0274s.048-.0094.0669-.0274c.0368-.0377.0368-.0968 0-.1337l-.0206-.0214.1131-.1132.378.0592z'/%3E%3Cpath d='m17.0057 16.7793-2.4111-1.8274-.4294-.4423-1.6637 1.6637.4183.3995 1.5711 2.3562 2.1188 2.3203 2.4421-2.2783z'/%3E%3C/g%3E%3C/svg%3E") !important;
@@ -339,23 +343,22 @@ html {
   color: #cad3f5;
 }
 
-button[class*=white] {
-  background: #363a4f;
+div[class^=actionButtons-] [class^=button-][class*=buttonColor-],
+div[class^=actionButtons-] [class^=button-] [class*=buttonColor-] {
+  background-color: #494d64;
 }
-button[class*=white] svg * {
-  fill: #cad3f5;
+div[class^=actionButtons-] [class^=button-][class*=buttonColor-][class*=buttonActive-],
+div[class^=actionButtons-] [class^=button-] [class*=buttonColor-][class*=buttonActive-] {
+  background-color: #a6da95;
+  color: #181926;
 }
-button[class*=primaryDark] {
-  background: #24273a;
+div[class^=actionButtons-] [class^=button-][class*=buttonColor-][class*=buttonActive-] [class*=buttonContents-],
+div[class^=actionButtons-] [class^=button-] [class*=buttonColor-][class*=buttonActive-] [class*=buttonContents-] {
+  color: #181926;
 }
-button[class*=primaryDark] svg * {
-  fill: #cad3f5;
-}
-button[class*=red] {
-  background: #ed8796;
-}
-button[class*=red] svg * {
-  fill: #24273a;
+div[class^=actionButtons-] [class^=button-][class*=buttonColor-][class*=buttonActive-] [class*=buttonContents-] svg,
+div[class^=actionButtons-] [class^=button-] [class*=buttonColor-][class*=buttonActive-] [class*=buttonContents-] svg {
+  color: #181926;
 }
 
 [class*=lookInverted-][class*=colorBrand-] {
@@ -370,6 +373,20 @@ button[class*=red] svg * {
   color: #cad3f5;
 }
 
+div[class*=button-][class*=dangerous-]:hover {
+  color: #e65b6f;
+}
+
+div[class^=sidebarRegion-] div[class^=serverBoostTabItem-] svg[class^=icon-] {
+  fill: #f5bde6 !important;
+}
+div[class^=sidebarRegion-] div[class^=serverBoostTabItem-][class*=selected-] {
+  background-color: #8aadf4 !important;
+  color: #181926 !important;
+}
+div[class^=sidebarRegion-] div[class^=serverBoostTabItem-][class*=selected-] svg[class^=icon-] {
+  fill: #181926 !important;
+}
 div[class^=sidebarRegion-] div[class^=premiumTab-] > div > svg > path {
   fill: #f5bde6;
 }
@@ -489,6 +506,51 @@ div[class^=contentRegion-] div[class^=control] > div[style*="background-color: h
 div[class^=contentRegion-] div[class^=control] svg[class^=slider-] > svg > path {
   fill: #3e792a !important;
 }
+div[class^=contentRegion-] #guild_premium-tab [class*=tierAccomplished-],
+div[class^=contentRegion-] #guild_premium-tab [class*=tierCurrent-],
+div[class^=contentRegion-] #guild_premium-tab [class*=tierFirst-] {
+  background: #f5bde6;
+}
+div[class^=contentRegion-] #guild_premium-tab [class*=tierInProgress-] {
+  background-color: #181926;
+}
+div[class^=contentRegion-] #guild_premium-tab div[class^=progressWithSubscriptions-] > svg > g > rect:first-child {
+  color: #181926;
+}
+div[class^=contentRegion-] #guild_premium-tab div[class^=progressWithSubscriptions-] > svg > g > rect:nth-child(2) {
+  color: #f5bde6;
+}
+div[class^=contentRegion-] #guild_premium-tab div[class^=tierHeaderUnlocked-],
+div[class^=contentRegion-] #guild_premium-tab div[class^=tierHeaderLocked-] {
+  background-color: #181926;
+  color: #a5adcb;
+}
+div[class^=contentRegion-] #guild_premium-tab div[class^=tierHeaderUnlocked-] div[class^=tierUnlocked-],
+div[class^=contentRegion-] #guild_premium-tab div[class^=tierHeaderLocked-] div[class^=tierUnlocked-] {
+  background-image: linear-gradient(90deg, #8aadf4, #c6a0f6);
+  color: #181926;
+  font-weight: 600;
+}
+div[class^=contentRegion-] #guild_premium-tab div[class^=tierHeaderUnlocked-] svg[class^=tierIcon-],
+div[class^=contentRegion-] #guild_premium-tab div[class^=tierHeaderLocked-] svg[class^=tierIcon-] {
+  color: #f5bde6;
+}
+div[class^=contentRegion-] #guild_premium-tab div[class^=tierHeaderUnlocked-] svg[class*=tierIconLocked-],
+div[class^=contentRegion-] #guild_premium-tab div[class^=tierHeaderLocked-] svg[class*=tierIconLocked-] {
+  color: #8087a2;
+}
+div[class^=contentRegion-] #guild_premium-tab div[class^=tierHeaderUnlocked-] svg[class^=tierLock-],
+div[class^=contentRegion-] #guild_premium-tab div[class^=tierHeaderLocked-] svg[class^=tierLock-] {
+  color: #5b6078;
+}
+div[class^=contentRegion-] #guild_premium-tab div[class^=tierBody-] {
+  color: #b8c0e0;
+  background-color: #1e2030;
+}
+div[class^=contentRegion-] svg[class^=activeCircle-] {
+  color: #181926;
+  background-color: #a6da95;
+}
 
 .bd-settings-title {
   color: #cad3f5;
@@ -539,8 +601,8 @@ div[class^=perksModal] div[class^=tierHeaderUnlocked] {
   background-image: linear-gradient(90deg, #8aadf4, #c6a0f6);
   color: #24273a;
 }
-div[class^=perksModal] div[class^=tierUnlocked],
-div[class^=perksModal] div[class^=tierMarkerBackground] {
+div[class^=perksModal] div[class^=tierUnlocked-],
+div[class^=perksModal] div[class^=tierMarkerBackground-] {
   background-color: #24273a;
 }
 div[class^=perksModal] div[class^=barBackground],
@@ -706,43 +768,38 @@ svg[class^=botTagVerified] {
   color: #181926;
 }
 
-div[class*=liveShapeRound-] {
-  background-color: #ed8796;
-  color: #24273a;
-}
-
-main[class^=chatContent] #---new-messages-bar span[class^=unreadPill-] {
+[class^=chatContent] #---new-messages-bar span[class^=unreadPill-] {
   color: #181926;
 }
-main[class^=chatContent] div[class^=newMessagesBar-] button {
+[class^=chatContent] div[class^=newMessagesBar-] button {
   color: #181926;
 }
-main[class^=chatContent] div[class^=channelTextArea-] div[class^=buttons-] * {
+[class^=chatContent] div[class^=channelTextArea-] div[class^=buttons-] * {
   color: var(--interactive-normal) !important;
 }
-main[class^=chatContent] [id^=message-reactions-] div[class^=reaction-] {
+[class^=chatContent] [id^=message-reactions-] div[class^=reaction-] {
   background-color: #363a4f;
 }
-main[class^=chatContent] [id^=message-reactions-] div[class^=reaction-]:hover {
+[class^=chatContent] [id^=message-reactions-] div[class^=reaction-]:hover {
   background-color: var(--brand-experiment-20a);
   border-color: var(--brand-experiment-30a);
 }
-main[class^=chatContent] div[class^=container-][class*=header-] div[class*=addReactButton-],
-main[class^=chatContent] div[class^=container-][class*=header-] div[class^=buttons-]:not([class*=lookBlank-]) div[class^=contents] {
+[class^=chatContent] div[class^=container-][class*=header-] div[class*=addReactButton-],
+[class^=chatContent] div[class^=container-][class*=header-] div[class^=buttons-]:not([class*=lookBlank-]) div[class^=contents] {
   background: #363a4f;
 }
-main[class^=chatContent] div[class^=container-][class*=header-] div[class*=addReactButton-]:hover,
-main[class^=chatContent] div[class^=container-][class*=header-] div[class^=buttons-]:not([class*=lookBlank-]) div[class^=contents]:hover {
+[class^=chatContent] div[class^=container-][class*=header-] div[class*=addReactButton-]:hover,
+[class^=chatContent] div[class^=container-][class*=header-] div[class^=buttons-]:not([class*=lookBlank-]) div[class^=contents]:hover {
   background-color: var(--brand-experiment-20a);
   border-color: var(--brand-experiment-30a);
 }
-main[class^=chatContent] [class*=inlineCode-] {
+[class^=chatContent] [class*=inlineCode-] {
   background: #363a4f;
 }
-main[class^=chatContent] code.inline {
+[class^=chatContent] code.inline {
   background: #363a4f;
 }
-main[class^=chatContent] div[class^=container-] div[class^=cardWrapper-] div[class*=completed-] svg[class^=checkmark-] {
+[class^=chatContent] div[class^=container-] div[class^=cardWrapper-] div[class*=completed-] svg[class^=checkmark-] {
   background-color: #a6da95;
   color: #181926;
 }
@@ -855,6 +912,55 @@ div[class^=chat] > div[class^=content-] main[class^=chatContent-] + div[class^=c
   background-color: var(--background-secondary);
 }
 
+div[class^=callContainer-] [class*=controlIcon-] {
+  color: #b8c0e0;
+}
+div[class^=callContainer-] [class*=controlIcon-]:hover {
+  color: #cad3f5;
+}
+div[class^=callContainer-] div[class^=videoControls-] div[class^=children-] div[class*=playingText-] {
+  color: #b8c0e0;
+}
+div[class^=callContainer-] div[class^=videoControls-] div[class^=toolbar-] svg[class^=controlIcon-] {
+  color: var(--interactive-normal);
+}
+div[class^=callContainer-] div[class^=videoControls-] div[class^=toolbar-] div[class^=streamQualityIndicator-] div[class^=liveQualityIndicator-] {
+  background-color: #494d64 !important;
+}
+div[class^=callContainer-] div[class^=videoControls-] div[class^=toolbar-] div[class^=streamQualityIndicator-] div[class^=liveQualityIndicator-] div[class^=qualityIndicator-] {
+  color: #cad3f5;
+}
+div[class^=callContainer-] div[class^=videoControls-] div[class^=toolbar-] div[class^=streamQualityIndicator-] div[class^=liveQualityIndicator-] svg[class^=premiumStreamIcon] {
+  color: #cad3f5;
+}
+div[class^=callContainer-] div[class^=videoControls-] div[class^=toolbar-] div[class^=liveIndicator-] div[class^=live-] {
+  background-color: #ed8796 !important;
+  color: #181926 !important;
+}
+div[class^=callContainer-] div[class^=videoControls-] [class*=colorable-][class*=red-] {
+  background: #ed8796;
+}
+div[class^=callContainer-] div[class^=videoControls-] [class*=colorable-][class*=red-] [class*=centerIcon-] {
+  color: #181926;
+}
+div[class^=callContainer-] div[class^=videoControls-] [class*=colorable-][class*=primaryDark-] {
+  background: #494d64;
+  color: #cad3f5;
+}
+div[class^=callContainer-] div[class^=videoControls-] [class*=colorable-][class*=primaryDark-] [class*=centerIcon-] {
+  color: #cad3f5;
+}
+div[class^=callContainer-] div[class^=videoControls-] [class*=colorable-][class*=white-] {
+  color: #181926;
+  background-color: #b8c0e0;
+}
+div[class^=callContainer-] div[class^=videoControls-] [class*=colorable-][class*=white-] [class*=centerIcon-] {
+  color: #181926;
+}
+div[class^=callContainer-] div[class^=videoControls-] [class*=colorable-][class*=white-]:hover, div[class^=callContainer-] div[class^=videoControls-] [class*=colorable-][class*=white-][class*=active-] {
+  background: #cad3f5;
+}
+
 div[class^=layerContainer] [role=menu] {
   --brand-experiment-560: var(--brand-experiment-25a);
   --brand-experiment-600: var(--brand-experiment);
@@ -883,12 +989,12 @@ div[class^=layerContainer] [role=menu] #guild-header-popout-premium-subscribe di
   color: #f5bde6;
 }
 
-.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] > div,
-.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] > div {
+.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-]:not([class^=animatorBottom-]) > div,
+.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-]:not([class^=animatorBottom-]) > div {
   background-color: var(--background-floating);
 }
-.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] > div div[class*=flowerStarContainer-] svg[class*=flowerStar-] *,
-.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] > div div[class*=flowerStarContainer-] svg[class*=flowerStar-] * {
+.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-]:not([class^=animatorBottom-]) > div div[class*=flowerStarContainer-] svg[class*=flowerStar-] *,
+.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-]:not([class^=animatorBottom-]) > div div[class*=flowerStarContainer-] svg[class*=flowerStar-] * {
   fill: #8aadf4;
 }
 
@@ -902,6 +1008,9 @@ div[class*=recentMentionsPopout] div[class^=header-] div[class^=controls-] {
 div[class*=recentMentionsPopout] div[class^=scroller-] [role=button] {
   --background-tertiary: rgba(165, 173, 203, 0.15);
   --background-floating: rgba(165, 173, 203, 0.12);
+}
+div[class*=recentMentionsPopout] div[class^=scroller-] [role=button] div[class*=jumpButton-] {
+  background-color: #363a4f;
 }
 
 div[class*=rolesList] div[class^=role-],
@@ -933,8 +1042,9 @@ section[class^=positionContainer-] button[class*=navButtonActive] {
   background-color: #8aadf4;
   color: #181926;
 }
-section[class^=positionContainer-] [class*=stickerInspected-] [class^=inspectedIndicator],
-section[class^=positionContainer-] [class^=emojiItem-][class*=emojiItemSelected-] {
+
+#emoji-picker-tab-panel [class*=stickerInspected-] [class^=inspectedIndicator],
+#emoji-picker-tab-panel [class^=emojiItem-][class*=emojiItemSelected-] {
   background-color: var(--brand-experiment-25a);
 }
 
@@ -1021,6 +1131,19 @@ form[class*=card-] {
 
 div[class*=userInfoSection-] div[class^=connectedAccountContainer-] {
   background-color: rgba(54, 58, 79, 0.45) !important;
+}
+
+#emoji-picker-tab-panel {
+  --background-floating: #363a4f;
+  --background-tertiary: #24273a;
+  --background-secondary-alt: #24273a;
+}
+#emoji-picker-tab-panel + div[class^=slotsContainer-] {
+  background-color: #363a4f;
+}
+#emoji-picker-tab-panel div[class^=tooltipContainer-] label[class^=label-][class*=labelChecked-] {
+  background: -webkit-gradient(linear, right top, left top, from(#f5bde6), color-stop(33.33%, #c6a0f6), to(#8aadf4));
+  background: linear-gradient(270deg, #f5bde6, #c6a0f6 33.33%, #8aadf4);
 }
 
 .hljs-bullet,
@@ -1194,6 +1317,10 @@ div[class*=avatarSpeaking-] {
 div[class*=videoLayer-] > div[class^=tileChild] > div[class^=border][class*=speaking-] {
   -webkit-box-shadow: inset 0 0 0 2px #a6da95, inset 0 0 0 3px #a6da95;
   bow-shadow: inset 0 0 0 2px #a6da95, inset 0 0 0 3px #a6da95;
+}
+div[class*=videoLayer-] > div[class^=tileChild] > div[class^=border][class*=voiceChannelEffect-] {
+  -webkit-box-shadow: inset 0 0 0 2px #8aadf4, inset 0 0 0 3px #8aadf4;
+  bow-shadow: inset 0 0 0 2px #8aadf4, inset 0 0 0 3px #8aadf4;
 }
 
 div[class*=unread-],
@@ -1553,9 +1680,10 @@ form[class*=card-] {
   background-color: #24273a !important;
 }
 
-div[class*=liveShapeRound-] {
+div[class*=liveShapeRound-],
+div[class*=live-][class*=badge-] {
   background-color: #ed8796 !important;
-  color: #24273a !important;
+  color: #181926 !important;
 }
 
 div[class^=base] > div[class^=content] > div[class^=container] {
