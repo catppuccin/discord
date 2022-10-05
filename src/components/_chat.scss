@@ -1,4 +1,4 @@
-main[class^="chatContent"] {
+[class^="chatContent"] {
   // new message ruler
   #---new-messages-bar {
     span[class^="unreadPill-"] {
@@ -158,6 +158,7 @@ div[class^="channelTextArea-"] button[class*="emojiButton-"] {
   }
 }
 
+// forums
 div[class^="chat"] > div[class^="content-"] > div[class^="container-"] {
   background-color: $base;
 
@@ -210,4 +211,80 @@ div[class^="chat"]
   main[class^="chatContent-"]
   + div[class^="container-"] {
   background-color: var(--background-secondary);
+}
+
+// calls
+div[class^="callContainer-"] {
+  [class*="controlIcon-"] {
+    color: $subtext1;
+
+    &:hover {
+      color: $text;
+    }
+  }
+
+  div[class^="videoControls-"] {
+    div[class^="children-"] {
+      div[class*="playingText-"] {
+        color: $subtext1;
+      }
+    }
+
+    div[class^="toolbar-"] {
+      svg[class^="controlIcon-"] {
+        color: var(--interactive-normal);
+      }
+
+      div[class^="streamQualityIndicator-"]
+        div[class^="liveQualityIndicator-"] {
+        background-color: $surface1 !important;
+
+        div[class^="qualityIndicator-"] {
+          color: $text;
+        }
+
+        svg[class^="premiumStreamIcon"] {
+          color: $text;
+        }
+      }
+
+      div[class^="liveIndicator-"] div[class^="live-"] {
+        background-color: $red !important;
+        color: $crust !important;
+      }
+    }
+
+    [class*="colorable-"] {
+      &[class*="red-"] {
+        background: $red;
+
+        [class*="centerIcon-"] {
+          color: $crust;
+        }
+      }
+
+      &[class*="primaryDark-"] {
+        background: $surface1;
+        color: $text;
+
+        [class*="centerIcon-"] {
+          color: $text;
+        }
+      }
+
+      &[class*="white-"] {
+        color: $crust;
+        background-color: $subtext1;
+
+        [class*="centerIcon-"] {
+          color: $crust;
+        }
+
+        &:hover,
+        &[class*="active-"] {
+          background: $text;
+        }
+      }
+    }
+  }
 }

@@ -49,9 +49,3 @@ ul[aria-label$=" threads"] > li:nth-child(6n) {
 svg[class^="botTagVerified"] {
   color: $crust;
 }
-
-// streaming badge
-div[class*="liveShapeRound-"] {
-  background-color: $red;
-  color: $base;
-}

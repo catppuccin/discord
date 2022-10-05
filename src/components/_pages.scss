@@ -1,5 +1,20 @@
 // settings
 div[class^="sidebarRegion-"] {
+  div[class^="serverBoostTabItem-"] {
+    svg[class^="icon-"] {
+      fill: $pink !important;
+    }
+
+    &[class*="selected-"] {
+      background-color: $brand !important;
+      color: $crust !important;
+
+      svg[class^="icon-"] {
+        fill: $crust !important;
+      }
+    }
+  }
+
   div[class^="premiumTab-"] {
     > div > svg > path {
       fill: $pink;
@@ -209,6 +224,64 @@ div[class^="contentRegion-"] {
       fill: darken($green, 40%) !important;
     }
   }
+
+  // server boost page
+  #guild_premium-tab {
+    [class*="tierAccomplished-"],
+    [class*="tierCurrent-"],
+    [class*="tierFirst-"] {
+      background: $pink;
+    }
+
+    [class*="tierInProgress-"] {
+      background-color: $crust;
+    }
+
+    div[class^="progressWithSubscriptions-"] > svg > g > rect {
+      &:first-child {
+        color: $crust;
+      }
+
+      &:nth-child(2) {
+        color: $pink;
+      }
+    }
+
+    div[class^="tierHeaderUnlocked-"],
+    div[class^="tierHeaderLocked-"] {
+      background-color: $crust;
+      color: $subtext0;
+
+      div[class^="tierUnlocked-"] {
+        background-image: linear-gradient(90deg, $blue, $mauve);
+        color: $crust;
+        font-weight: 600;
+      }
+
+      svg[class^="tierIcon-"] {
+        color: $pink;
+      }
+
+      svg[class*="tierIconLocked-"] {
+        color: $overlay1;
+      }
+
+      svg[class^="tierLock-"] {
+        color: $surface2;
+      }
+    }
+
+    div[class^="tierBody-"] {
+      color: $subtext1;
+      background-color: $mantle;
+    }
+  }
+
+  // active circles like the ones on server welcome screen settings
+  svg[class^="activeCircle-"] {
+    color: $crust;
+    background-color: $green;
+  }
 }
 
 .bd-settings-title {
@@ -270,8 +343,8 @@ div[class^="perksModal"] {
     color: $base;
   }
 
-  div[class^="tierUnlocked"],
-  div[class^="tierMarkerBackground"] {
+  div[class^="tierUnlocked-"],
+  div[class^="tierMarkerBackground-"] {
     background-color: $base;
   }
 

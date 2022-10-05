@@ -155,9 +155,15 @@ div[class*="avatarSpeaking-"] {
     inset 0 0 0 3px var(--background-secondary);
 }
 
-div[class*="videoLayer-"]
-  > div[class^="tileChild"]
-  > div[class^="border"][class*="speaking-"] {
-  -webkit-box-shadow: inset 0 0 0 2px $green, inset 0 0 0 3px $green;
-  bow-shadow: inset 0 0 0 2px $green, inset 0 0 0 3px $green;
+div[class*="videoLayer-"] > div[class^="tileChild"] > div[class^="border"] {
+  &[class*="speaking-"] {
+    -webkit-box-shadow: inset 0 0 0 2px $green, inset 0 0 0 3px $green;
+    bow-shadow: inset 0 0 0 2px $green, inset 0 0 0 3px $green;
+  }
+
+  // this is when emojis fly across the tile
+  &[class*="voiceChannelEffect-"] {
+    -webkit-box-shadow: inset 0 0 0 2px $brand, inset 0 0 0 3px $brand;
+    bow-shadow: inset 0 0 0 2px $brand, inset 0 0 0 3px $brand;
+  }
 }

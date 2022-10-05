@@ -250,5 +250,11 @@ html {
     svg[class^="activityIcon-"] {
       color: $subtext0;
     }
+
+    [class*="tooltipBrand-"] {
+      [class*="tooltipText-"] {
+        color: $crust;
+      }
+    }
   }
 }

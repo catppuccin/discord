@@ -25,26 +25,23 @@
   }
 }
 
-// buttons in calls
-button {
-  &[class*="white"] {
-    background: $surface0;
-    svg * {
-      fill: $text;
-    }
-  }
+// buttons in sidebar when in calls
+div[class^="actionButtons-"] {
+  [class^="button-"][class*="buttonColor-"],
+  [class^="button-"] [class*="buttonColor-"] {
+    background-color: $surface1;
 
-  &[class*="primaryDark"] {
-    background: $base;
-    svg * {
-      fill: $text;
-    }
-  }
+    &[class*="buttonActive-"] {
+      background-color: $green;
+      color: $crust;
 
-  &[class*="red"] {
-    background: $red;
-    svg * {
-      fill: $base;
+      [class*="buttonContents-"] {
+        color: $crust;
+
+        svg {
+          color: $crust;
+        }
+      }
     }
   }
 }
@@ -65,4 +62,9 @@ button {
   [class*="lookLink-"][class*="colorPrimary-"] {
     color: $text;
   }
+}
+
+// dangerous button when hovered is colored properly
+div[class*="button-"][class*="dangerous-"]:hover {
+  color: darken($red, 10%);
 }
