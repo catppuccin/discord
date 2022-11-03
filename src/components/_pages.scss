@@ -442,6 +442,11 @@ div[class^="itemInner-"] div[class^="new-"] > div[class*="newText-"] {
   color: $crust !important;
 }
 
+// app discovery
+[class*="directoryModal-"] {
+  color: $crust !important;
+}
+
 // student hubs
 section[class^="guildListSection-"] {
   div[class^="guildList"]:first-child {
