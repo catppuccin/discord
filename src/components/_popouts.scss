@@ -164,6 +164,18 @@ section[class^="positionContainer-"] {
     -webkit-box-shadow: 0 0 0 1px $surface0,
       0 2px 10px 0 hsla(0, calc(var(--saturation-factor, 1) * 0%), 0%, 0.1);
   }
+
+  &[class*="profileColors-"] {
+    [class*="userTagUsernameBase-"],
+    [class*="discrimBase-"],
+    [class*="title-"],
+    [class*="roles-"],
+    [class*="defaultColor-"],
+    [class*="markup-"],
+    [class*="activityUserPopoutV2-"] * {
+      color: unset !important;
+    }
+  }
 }
 
 div[class^="layerContainer"] {
