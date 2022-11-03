@@ -172,7 +172,8 @@ section[class^="positionContainer-"] {
     [class*="roles-"],
     [class*="defaultColor-"],
     [class*="markup-"],
-    [class*="activityUserPopoutV2-"] * {
+    [class*="activityUserPopoutV2-"] *,
+    [class*="customStatus-"] {
       color: unset !important;
     }
   }
