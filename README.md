@@ -93,6 +93,7 @@ curl -L https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css> ~/
 - [Isabelinc](https://github.com/Isabelincorp)
 - [Ren](https://github.com/watatomo)
 - [winston](https://github.com/nekowinston)
+- [rubyowo](https://github.com/rubyowo)
 
 &nbsp;
 
