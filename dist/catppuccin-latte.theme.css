@@ -1611,7 +1611,8 @@ section[class^=positionContainer-] button[class*=navButtonActive] {
 .theme-light[class*=profileColors-] [class*=roles-],
 .theme-light[class*=profileColors-] [class*=defaultColor-],
 .theme-light[class*=profileColors-] [class*=markup-],
-.theme-light[class*=profileColors-] [class*=activityUserPopoutV2-] * {
+.theme-light[class*=profileColors-] [class*=activityUserPopoutV2-] *,
+.theme-light[class*=profileColors-] [class*=customStatus-] {
   color: unset !important;
 }
 
