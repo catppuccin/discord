@@ -1364,15 +1364,21 @@ main[class^=chatContent] div[id^=message-content-] svg[class^=icon-] > path[d="M
 }
 
 .theme-dark span[class^=spoilerText],
-.theme-light span[class^=spoilerText] {
+.theme-dark div[class^=spoilerText],
+.theme-light span[class^=spoilerText],
+.theme-light div[class^=spoilerText] {
   background-color: #ccd0da;
 }
 .theme-dark span[class^=spoilerText][class*=hidden],
-.theme-light span[class^=spoilerText][class*=hidden] {
+.theme-dark div[class^=spoilerText][class*=hidden],
+.theme-light span[class^=spoilerText][class*=hidden],
+.theme-light div[class^=spoilerText][class*=hidden] {
   background-color: #acb0be;
 }
 .theme-dark span[class^=spoilerText][class*=hidden]:hover,
-.theme-light span[class^=spoilerText][class*=hidden]:hover {
+.theme-dark div[class^=spoilerText][class*=hidden]:hover,
+.theme-light span[class^=spoilerText][class*=hidden]:hover,
+.theme-light div[class^=spoilerText][class*=hidden]:hover {
   background-color: #babec9;
 }
 .theme-dark div[class^=spoilerContainer-] div[class^=spoilerWarning-],
