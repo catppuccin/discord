@@ -86,7 +86,8 @@ main[class^="chatContent"] div[id^="message-content-"] svg[class^="icon-"] {
 // spoiler messages
 .theme-dark,
 .theme-light {
-  span[class^="spoilerText"] {
+  span[class^="spoilerText"],
+  div[class^="spoilerText"] {
     background-color: $surface0;
 
     &[class*="hidden"] {
