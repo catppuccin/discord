@@ -1527,6 +1527,10 @@ div[class^=layerContainer] [role=menu] [class*=colorDefault][class*=focused]:not
 div[class^=layerContainer] [role=menu] [class*=colorDefault][class*=focused] [class*=checkbox-] {
   color: var(--interactive-normal);
 }
+div[class^=layerContainer] [role=menu] [class*=colorDefault][role=menuitem]:not([class*=colorDanger]):hover {
+  background: var(--background-accent);
+  color: var(--button-outline-positive-text-hover);
+}
 div[class^=layerContainer] [role=menu] [class*=colorDefault]:active:not([class*=hideInteraction-]) {
   color: var(--background-floating);
 }
