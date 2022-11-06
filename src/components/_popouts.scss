@@ -15,6 +15,11 @@ div[class^="layerContainer"] [role="menu"] {
       }
     }
 
+    &[role="menuitem"]:not([class*="colorDanger"]):hover {
+      background: var(--background-accent);
+      color: var(--button-outline-positive-text-hover);
+    }
+
     // make active items have dark text
     &:active:not([class*="hideInteraction-"]) {
       color: var(--background-floating);
