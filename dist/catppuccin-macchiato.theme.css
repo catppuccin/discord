@@ -686,8 +686,8 @@ div[class^=itemInner-] div[class^=new-] > div[class*=newText-] {
   color: #181926 !important;
 }
 
-[class*=directoryModal-] {
-  color: #181926 !important;
+div[class*=directoryModal-] {
+  background-color: #181926 !important;
 }
 
 section[class^=guildListSection-] div[class^=guildList]:first-child div[class^=iconContainer-] {
