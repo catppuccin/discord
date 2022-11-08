@@ -443,8 +443,8 @@ div[class^="itemInner-"] div[class^="new-"] > div[class*="newText-"] {
 }
 
 // app discovery
-[class*="directoryModal-"] {
-  color: $crust !important;
+div[class*="directoryModal-"] {
+  background-color: $crust !important;
 }
 
 // student hubs
