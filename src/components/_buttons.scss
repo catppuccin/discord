@@ -70,11 +70,14 @@ div[class*="button-"][class*="dangerous-"]:hover {
 }
 
 // vencord spotify plugin button theming support (uses vencord-specific classes)
-.vc-spotify-button-row .vc-spotify-button& {
-  .vc-spotify-shuffle-on, .vc-spotify-repeat-context, .vc-spotify-repeat-track {
+.vc-spotify-button-row .vc-spotify-button {
+  &.vc-spotify-shuffle-on,
+  &.vc-spotify-repeat-context,
+  &.vc-spotify-repeat-track {
     color: var(--interactive-normal);
   }
-  .vc-spotify-repeat-off, .vc-spotify-shuffle-off {
+  &.vc-spotify-repeat-off,
+  &.vc-spotify-shuffle-off {
     color: var(--text-muted);
   }
 }
