@@ -922,6 +922,13 @@ div[class*=button-][class*=dangerous-]:hover {
   color: #a20c2c;
 }
 
+.vc-spotify-button-row .vc-spotify-button.vc-spotify-shuffle-on, .vc-spotify-button-row .vc-spotify-button.vc-spotify-repeat-context, .vc-spotify-button-row .vc-spotify-button.vc-spotify-repeat-track {
+  color: var(--interactive-normal);
+}
+.vc-spotify-button-row .vc-spotify-button.vc-spotify-repeat-off, .vc-spotify-button-row .vc-spotify-button.vc-spotify-shuffle-off {
+  color: var(--text-muted);
+}
+
 div[class^=sidebarRegion-] div[class^=serverBoostTabItem-] svg[class^=icon-] {
   fill: #ea76cb !important;
 }
