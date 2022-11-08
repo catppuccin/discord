@@ -444,7 +444,19 @@ div[class^="itemInner-"] div[class^="new-"] > div[class*="newText-"] {
 
 // app discovery
 div[class*="directoryModal-"] {
-  background-color: $crust !important;
+  background-color: $base !important;
+
+  & [class*="searchBox"] {
+    background-color: $mantle !important;
+
+    & [name="search"]::placeholder {
+      color: $subtext0;
+    }
+  }
+
+  & [role="button"][class*="activeButton"] {
+    color: $crust;
+  }
 }
 
 // student hubs
