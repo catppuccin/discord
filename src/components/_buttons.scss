@@ -69,6 +69,16 @@ div[class*="button-"][class*="dangerous-"]:hover {
   color: darken($red, 10%);
 }
 
+// make all selected radio buttons's text crust
+div[class*="item"][class*="selected"][role="radio"] {
+  color: $crust;
+
+  // make the allow radio button's bg to the correct green
+  &[class*="allow"] {
+    background-color: $green;
+  }
+}
+
 // vencord spotify plugin button theming support (uses vencord-specific classes)
 .vc-spotify-button-row .vc-spotify-button {
   &.vc-spotify-shuffle-on,
