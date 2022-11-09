@@ -59,6 +59,9 @@ $svgColor: (
   "tier3Icon": (
     color: $pink,
   ),
+  "searchIcon": (
+    color: $subtext0,
+  ),
 );
 
 @each $class, $color in $svgColor {
