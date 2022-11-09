@@ -415,6 +415,9 @@ div[class^=sidebarRegion-] div[class^=premiumTab-] > div[class*=selected] {
 div[class^=sidebarRegion-] div[class^=premiumTab-] > div[class*=selected] svg > path {
   fill: #232634;
 }
+div[class^=sidebarRegion-] div[class*=tabBarItemContainer-] [class*=textBadge-] {
+  color: #232634;
+}
 
 div[class^=contentRegion-] [class^=bar-],
 div[class^=contentRegion-] [class^=markDash-] {
@@ -480,12 +483,6 @@ div[class^=contentRegion-] #billing-tab div[class^=codeRedemptionRedirect-] {
 div[class^=contentRegion-] [id="voice-&-video-tab"] div[class^=backgroundOptionRing-] {
   border-color: #8caaee;
 }
-div[class^=contentRegion-] #keybinds-tab div[class^=keybindShortcut-] > span[class^=key-] {
-  color: #232634;
-}
-div[class^=contentRegion-] #keybinds-tab div[class^=keybindShortcut-] > span[class^=key-] svg > g {
-  fill: #232634;
-}
 div[class^=contentRegion-] #game-activity-tab div[class*=nowPlayingAdd-],
 div[class^=contentRegion-] #game-activity-tab div[class*=lastPlayed-],
 div[class^=contentRegion-] #game-activity-tab div[class*=overlayStatusText-] {
@@ -503,10 +500,19 @@ div[class^=contentRegion-] #game-activity-tab input[class^=gameName-] {
 div[class^=contentRegion-] #game-activity-tab input[class*=gameNameInput-]:hover, div[class^=contentRegion-] #game-activity-tab input[class*=gameNameInput-]:focus {
   background-color: #292c3c;
   border-color: rgba(41, 44, 60, 0.3);
+  color: #c6d0f5;
 }
 div[class^=contentRegion-] #game-activity-tab div[class*=game-] {
   -webkit-box-shadow: 0 1px 0 0 var(--background-modifier-accent);
   box-shadow: 0 1px 0 0 var(--background-modifier-accent);
+}
+div[class^=contentRegion-] #game-activity-tab div[class*=removeGame-] {
+  background-color: #414559;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjE4IiB2aWV3Qm94PSIwIDAgMTggMTgiIHdpZHRoPSIxOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Im0xNC4yNSA0LjgwOC0xLjA1Ny0xLjA1OC00LjE5MyA0LjE5Mi00LjE5Mi00LjE5Mi0xLjA1OCAxLjA1OCA0LjE5MiA0LjE5Mi00LjE5MiA0LjE5MyAxLjA1OCAxLjA1NyA0LjE5Mi00LjE5MyA0LjE5MyA0LjE5MyAxLjA1Ny0xLjA1Ny00LjE5My00LjE5M3oiIGZpbGwtcnVsZT0ibm9uemVybyIgZmlsbD0iI2YzOGJhOCIvPjxwYXRoIGQ9Im0wIDBoMTh2MThoLTE4eiIvPjwvZz48L3N2Zz4=");
+}
+div[class^=contentRegion-] #emoji-tab div[class*=emojiRemove-] {
+  background-color: #414559;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjE4IiB2aWV3Qm94PSIwIDAgMTggMTgiIHdpZHRoPSIxOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Im0xNC4yNSA0LjgwOC0xLjA1Ny0xLjA1OC00LjE5MyA0LjE5Mi00LjE5Mi00LjE5Mi0xLjA1OCAxLjA1OCA0LjE5MiA0LjE5Mi00LjE5MiA0LjE5MyAxLjA1OCAxLjA1NyA0LjE5Mi00LjE5MyA0LjE5MyA0LjE5MyAxLjA1Ny0xLjA1Ny00LjE5My00LjE5M3oiIGZpbGwtcnVsZT0ibm9uemVybyIgZmlsbD0iI2YzOGJhOCIvPjxwYXRoIGQ9Im0wIDBoMTh2MThoLTE4eiIvPjwvZz48L3N2Zz4=");
 }
 div[class^=contentRegion-] section[class^=inputSensitivityToggle-] div[class*=speaking-] {
   background: #a6d189 !important;
@@ -569,6 +575,27 @@ div[class^=contentRegion-] #guild_premium-tab div[class^=tierBody-] {
 div[class^=contentRegion-] svg[class^=activeCircle-] {
   color: #232634;
   background-color: #a6d189;
+}
+div[class^=contentRegion-] #discovery-tab div[class*=checklistIcon] svg[viewBox="0 0 14 14"] path {
+  fill: #e78284;
+}
+div[class^=contentRegion-] #discovery-tab div[class*=checklistIcon] svg[viewBox="0 0 20 20"] path {
+  fill: #e5c890;
+}
+div[class^=contentRegion-] #guild_templates-tab svg[class*=descriptionIcon][viewBox="0 0 24 24"] path {
+  fill: #a6d189;
+}
+div[class^=contentRegion-] #guild_templates-tab svg[class*=descriptionIcon][viewBox="0 0 14 14"] path {
+  fill: #e78284;
+}
+div[class^=contentRegion-] #guild_templates-tab svg[class*=descriptionIcon] circle {
+  fill: #232634;
+}
+div[class^=contentRegion-] #stickers-tab div[class*=tierHeaderContent] {
+  background-color: #232634;
+}
+div[class^=contentRegion-] #stickers-tab div[class*=tierBody] {
+  background-color: #292c3c;
 }
 
 .bd-settings-title {
@@ -670,6 +697,15 @@ div[class^=sidebar-] div[class^=container] div[class^=divider-] {
 div[class^=pageWrapper-] {
   background: #303446 !important;
 }
+div[class^=pageWrapper-] div[class*=searchBox-] {
+  background-color: #292c3c;
+}
+div[class^=pageWrapper-] div[class*=searchBox-] svg[class*=clearIcon] path {
+  fill: #737994;
+}
+div[class^=pageWrapper-] div[class*=categoryPill-][class*=selected-] div {
+  color: #232634 !important;
+}
 
 div[class^=homeContainer-] {
   background: #303446 !important;
@@ -745,10 +781,14 @@ nav[class*=guilds-] div[data-list-item-id=guildsnav___guild-discover-button] svg
 }
 
 div[class^=upperBadge] > div[class^=iconBadge] path {
-  color: #303446;
+  color: #232634;
 }
 div[class^=upperBadge] div[class*=participating-] {
   background: #a6d189;
+}
+
+div[class^=lowerBadge] div[class^=iconBadge] path {
+  color: #232634;
 }
 
 svg[class^=spine-] {
@@ -999,6 +1039,13 @@ div[class^=callContainer-] div[class^=videoControls-] [class*=colorable-][class*
   background: #c6d0f5;
 }
 
+div[class*=giftCodeContainer] [class*=tile] {
+  background-color: #292c3c;
+}
+div[class*=giftCodeContainer] [class*=tile] > [class*=description] {
+  color: #c6d0f5;
+}
+
 div[class^=layerContainer] [role=menu] {
   --brand-experiment-560: var(--brand-experiment-25a);
   --brand-experiment-600: var(--brand-experiment);
@@ -1118,41 +1165,47 @@ div[class^=layerContainer] div[id^=channel-context],
 div[class^=layerContainer] div[id^=user-context] {
   background: #232634;
 }
-div[class^=layerContainer] > div[class^=layer] div[role=listbox] {
+div[class^=layerContainer] > div[class*=layer] div[role=listbox] {
   background-color: #292c3c;
 }
-div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=modal-],
-div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=modalSize-] {
+div[class^=layerContainer] > div[class*=layer] div[role=listbox] div[role=option][aria-selected=true] {
+  background: #414559;
+}
+div[class^=layerContainer] > div[class*=layer] div[role=listbox] div[role=option] svg[class*=selectedIcon] circle {
+  fill: #232634;
+}
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modal-],
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modalSize-] {
   background-color: #292c3c;
 }
-div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=modal-] li,
-div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=modal-] p,
-div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=modal-] span,
-div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=modalSize-] li,
-div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=modalSize-] p,
-div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class^=modalSize-] span {
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modal-] li,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modal-] p,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modal-] span,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modalSize-] li,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modalSize-] p,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modalSize-] span {
   color: #c6d0f5;
 }
-div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class*=footer] {
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class*=footer] {
   background-color: #232634;
 }
-div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h1[class^=fixed-],
-div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h2[class^=fixed-],
-div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h3[class^=fixed-],
-div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h4[class^=fixed-],
-div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h5[class^=fixed-],
-div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h6[class^=fixed-] {
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h1[class^=fixed-],
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h2[class^=fixed-],
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h3[class^=fixed-],
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h4[class^=fixed-],
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h5[class^=fixed-],
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h6[class^=fixed-] {
   color: #e78284;
 }
-div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h1[class^=fixed-]:after,
-div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h2[class^=fixed-]:after,
-div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h3[class^=fixed-]:after,
-div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h4[class^=fixed-]:after,
-div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h5[class^=fixed-]:after,
-div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] h6[class^=fixed-]:after {
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h1[class^=fixed-]:after,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h2[class^=fixed-]:after,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h3[class^=fixed-]:after,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h4[class^=fixed-]:after,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h5[class^=fixed-]:after,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h6[class^=fixed-]:after {
   background-color: #e78284;
 }
-div[class^=layerContainer] > div[class^=layer] div[class^=focusLock] div[class*=message-] {
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class*=message-] {
   background-color: #414559;
 }
 div[class^=layerContainer] div[class^=addGamePopout-] {
@@ -1199,6 +1252,16 @@ div[class*=userInfoSection-] div[class^=connectedAccountContainer-] {
 #emoji-picker-tab-panel div[class^=tooltipContainer-] label[class^=label-][class*=labelChecked-] {
   background: -webkit-gradient(linear, right top, left top, from(#f4b8e4), color-stop(33.33%, #ca9ee6), to(#8caaee));
   background: linear-gradient(270deg, #f4b8e4, #ca9ee6 33.33%, #8caaee);
+}
+
+div[class*=keyboardShortcutsModal-] {
+  background-color: #292c3c !important;
+}
+div[class*=keyboardShortcutsModal-] div[class^=keybindShortcut-] span[class^=key-] {
+  color: #232634;
+}
+div[class*=keyboardShortcutsModal-] div[class^=keybindShortcut-] span[class^=key-] svg g {
+  fill: #232634 !important;
 }
 
 .hljs-bullet,
