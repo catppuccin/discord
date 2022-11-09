@@ -1557,7 +1557,10 @@ div[class^=layerContainer] [role=menu] [class*=colorDefault][class*=focused] [cl
 }
 div[class^=layerContainer] [role=menu] [class*=colorDefault][role=menuitem]:not([class*=colorDanger]):hover {
   background: var(--background-accent);
-  color: var(--button-outline-positive-text-hover);
+  color: #dce0e8;
+}
+div[class^=layerContainer] [role=menu] [class*=colorDefault][role=menuitem]:not([class*=colorDanger]):hover [class*=subtext] {
+  color: #dce0e8;
 }
 div[class^=layerContainer] [role=menu] [class*=colorDefault]:active:not([class*=hideInteraction-]) {
   color: var(--background-floating);
