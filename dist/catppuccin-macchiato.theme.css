@@ -330,6 +330,11 @@ html {
   color: #f5bde6 !important;
 }
 
+.theme-dark svg[class*=searchIcon-],
+.theme-light svg[class*=searchIcon-] {
+  color: #a5adcb !important;
+}
+
 [class*=lookFilled-][class*=colorBrand-], [class*=lookFilled-][class*=colorBrandNew-], [class*=lookFilled-][class*=colorLink-], [class*=lookFilled-][class*=colorYellow-], [class*=lookFilled-][class*=colorRed-], [class*=lookFilled-][class*=colorGreen-] {
   color: #181926;
 }
@@ -687,7 +692,16 @@ div[class^=itemInner-] div[class^=new-] > div[class*=newText-] {
 }
 
 div[class*=directoryModal-] {
-  background-color: #181926 !important;
+  background-color: #24273a !important;
+}
+div[class*=directoryModal-] [class*=searchBox] {
+  background-color: #1e2030 !important;
+}
+div[class*=directoryModal-] [class*=searchBox] [name=search]::placeholder {
+  color: #a5adcb;
+}
+div[class*=directoryModal-] [role=button][class*=activeButton] {
+  color: #181926;
 }
 
 section[class^=guildListSection-] div[class^=guildList]:first-child div[class^=iconContainer-] {
