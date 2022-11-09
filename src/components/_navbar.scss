@@ -34,10 +34,8 @@ nav[class*="guilds-"] {
 
 // server list icons
 div[class^="upperBadge"] {
-  > div[class^="iconBadge"] {
-    path {
-      color: $base;
-    }
+  > div[class^="iconBadge"] path {
+    color: $crust;
   }
 
   div[class*="participating-"] {
@@ -45,6 +43,6 @@ div[class^="upperBadge"] {
   }
 }
 
-// div[class^="lowerBadge"] {
-//
-// }
+div[class^="lowerBadge"] div[class^="iconBadge"] path {
+  color: $crust;
+}

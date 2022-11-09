@@ -289,3 +289,12 @@ div[class^="callContainer-"] {
     }
   }
 }
+
+// gifts
+div[class*="giftCodeContainer"] [class*="tile"] {
+  background-color: $mantle;
+
+  > [class*="description"] {
+    color: $text;
+  }
+}
