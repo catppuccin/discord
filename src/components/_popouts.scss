@@ -17,7 +17,11 @@ div[class^="layerContainer"] [role="menu"] {
 
     &[role="menuitem"]:not([class*="colorDanger"]):hover {
       background: var(--background-accent);
-      color: var(--button-outline-positive-text-hover);
+      color: $crust;
+
+      & [class*="subtext"] {
+        color: $crust;
+      }
     }
 
     // make active items have dark text
