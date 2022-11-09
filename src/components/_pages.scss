@@ -28,6 +28,10 @@ div[class^="sidebarRegion-"] {
       }
     }
   }
+
+  div[class*="tabBarItemContainer-"] [class*="textBadge-"] {
+    color: $crust;
+  }
 }
 
 div[class^="contentRegion-"] {
@@ -142,16 +146,6 @@ div[class^="contentRegion-"] {
     }
   }
 
-  #keybinds-tab {
-    div[class^="keybindShortcut-"] > span[class^="key-"] {
-      color: $crust;
-
-      svg > g {
-        fill: $crust;
-      }
-    }
-  }
-
   #game-activity-tab {
     div[class*="nowPlayingAdd-"],
     div[class*="lastPlayed-"],
@@ -176,12 +170,25 @@ div[class^="contentRegion-"] {
       &:focus {
         background-color: $mantle;
         border-color: #{adjust-color($mantle, $alpha: -0.7)};
+        color: $text;
       }
     }
 
     div[class*="game-"] {
       -webkit-box-shadow: 0 1px 0 0 var(--background-modifier-accent);
       box-shadow: 0 1px 0 0 var(--background-modifier-accent);
+    }
+
+    div[class*="removeGame-"] {
+      background-color: $surface0;
+      background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjE4IiB2aWV3Qm94PSIwIDAgMTggMTgiIHdpZHRoPSIxOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Im0xNC4yNSA0LjgwOC0xLjA1Ny0xLjA1OC00LjE5MyA0LjE5Mi00LjE5Mi00LjE5Mi0xLjA1OCAxLjA1OCA0LjE5MiA0LjE5Mi00LjE5MiA0LjE5MyAxLjA1OCAxLjA1NyA0LjE5Mi00LjE5MyA0LjE5MyA0LjE5MyAxLjA1Ny0xLjA1Ny00LjE5My00LjE5M3oiIGZpbGwtcnVsZT0ibm9uemVybyIgZmlsbD0iI2YzOGJhOCIvPjxwYXRoIGQ9Im0wIDBoMTh2MThoLTE4eiIvPjwvZz48L3N2Zz4=");
+    }
+  }
+
+  #emoji-tab {
+    div[class*="emojiRemove-"] {
+      background-color: $surface0;
+      background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjE4IiB2aWV3Qm94PSIwIDAgMTggMTgiIHdpZHRoPSIxOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Im0xNC4yNSA0LjgwOC0xLjA1Ny0xLjA1OC00LjE5MyA0LjE5Mi00LjE5Mi00LjE5Mi0xLjA1OCAxLjA1OCA0LjE5MiA0LjE5Mi00LjE5MiA0LjE5MyAxLjA1OCAxLjA1NyA0LjE5Mi00LjE5MyA0LjE5MyA0LjE5MyAxLjA1Ny0xLjA1Ny00LjE5My00LjE5M3oiIGZpbGwtcnVsZT0ibm9uemVybyIgZmlsbD0iI2YzOGJhOCIvPjxwYXRoIGQ9Im0wIDBoMTh2MThoLTE4eiIvPjwvZz48L3N2Zz4=");
     }
   }
 
@@ -281,6 +288,42 @@ div[class^="contentRegion-"] {
   svg[class^="activeCircle-"] {
     color: $crust;
     background-color: $green;
+  }
+
+  #discovery-tab {
+    div[class*="checklistIcon"] svg {
+      &[viewBox="0 0 14 14"] path {
+        fill: $red;
+      }
+      &[viewBox="0 0 20 20"] path {
+        fill: $yellow;
+      }
+    }
+  }
+
+  #guild_templates-tab {
+    svg[class*="descriptionIcon"] {
+      &[viewBox="0 0 24 24"] path {
+        fill: $green;
+      }
+
+      &[viewBox="0 0 14 14"] path {
+        fill: $red;
+      }
+
+      circle {
+        fill: $crust;
+      }
+    }
+  }
+
+  #stickers-tab {
+    div[class*="tierHeaderContent"] {
+      background-color: $crust;
+    }
+    div[class*="tierBody"] {
+      background-color: $mantle;
+    }
   }
 }
 
@@ -415,6 +458,18 @@ div[class^="sidebar-"] div[class^="container"] {
 
 div[class^="pageWrapper-"] {
   background: $base !important;
+
+  div[class*="searchBox-"] {
+    background-color: $mantle;
+
+    svg[class*="clearIcon"] path {
+      fill: $overlay0;
+    }
+  }
+
+  div[class*="categoryPill-"][class*="selected-"] div {
+    color: $crust !important;
+  }
 }
 
 // public server home
@@ -442,7 +497,7 @@ div[class^="itemInner-"] div[class^="new-"] > div[class*="newText-"] {
   color: $crust !important;
 }
 
-// app discovery
+// app directory
 div[class*="directoryModal-"] {
   background-color: $base !important;
 
