@@ -214,9 +214,10 @@ div[class^="layerContainer"] {
     }
 
     div[class^="focusLock"] {
-      // create channel (modal) and stream popout (modalSize)
+      // create channel (modal), stream popout (modalSize) and edit attachment (uploadModal)
       div[class^="modal-"],
-      div[class^="modalSize-"] {
+      div[class^="modalSize-"],
+      div[class^="uploadModal-"] {
         background-color: $mantle;
         li,
         p,
@@ -228,6 +229,10 @@ div[class^="layerContainer"] {
       // their respective footers
       div[class*="footer"] {
         background-color: $crust;
+
+        button[type="submit"] span {
+          color: $crust;
+        }
       }
 
       // feature headers
