@@ -1175,7 +1175,8 @@ div[class^=layerContainer] > div[class*=layer] div[role=listbox] div[role=option
   fill: #11111b;
 }
 div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modal-],
-div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modalSize-] {
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modalSize-],
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=uploadModal-] {
   background-color: #181825;
 }
 div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modal-] li,
@@ -1183,11 +1184,17 @@ div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=
 div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modal-] span,
 div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modalSize-] li,
 div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modalSize-] p,
-div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modalSize-] span {
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modalSize-] span,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=uploadModal-] li,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=uploadModal-] p,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=uploadModal-] span {
   color: #cdd6f4;
 }
 div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class*=footer] {
   background-color: #11111b;
+}
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class*=footer] button[type=submit] span {
+  color: #11111b;
 }
 div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h1[class^=fixed-],
 div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h2[class^=fixed-],
