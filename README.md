@@ -79,8 +79,9 @@ curl -L https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css> ~/
 
 ### [Stylus](https://github.com/openstyles/stylus)
 
-1. Download the [`discord.user.css`](./discord.user.css)
-2. Choose your preferred flavour and options from the Stylus preference dropdown.
+1. Enable CSP Patching from Stylus Settings > Advanced.
+2. [Click here to install](./discord.user.css)
+3. Choose your preferred flavour and options from the Stylus preference dropdown.
 
 ## 🙋 FAQ
 
