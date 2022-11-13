@@ -958,7 +958,14 @@ div[class^=chat] > div[class^=content-] > div[class^=container-] {
 }
 div[class^=chat] > div[class^=content-] > div[class^=container-] div[class^=pinIcon-] > svg > path,
 div[class^=chat] > div[class^=content-] > div[class^=container-] div[class^=stepStatus-] > svg > path {
-  fill: #232634 !important;
+  fill: #a5adce;
+}
+div[class^=chat] > div[class^=content-] > div[class^=container-] div[class^=pinIcon-][style*="background-color: var(--status-positive-background);"] > svg > path,
+div[class^=chat] > div[class^=content-] > div[class^=container-] div[class^=stepStatus-][style*="background-color: var(--status-positive-background);"] > svg > path {
+  fill: #232634;
+}
+div[class^=chat] > div[class^=content-] > div[class^=container-] div[class*=countText] {
+  color: #232634;
 }
 div[class^=chat] > div[class^=content-] > div[class^=container-] svg[class^=discordIcon-] {
   background-color: #8caaee;
@@ -1073,6 +1080,9 @@ div[class^=layerContainer] [role=menu] [class*=colorDefault]:active:not([class*=
 div[class^=layerContainer] [role=menu] [class*=colorDefault]:active:not([class*=hideInteraction-]) [class*=checkbox-] {
   color: var(--background-floating);
 }
+div[class^=layerContainer] [role=menu] [class*=focused] [class*=userMenuUsername] * {
+  color: #232634;
+}
 div[class^=layerContainer] [role=menu] [class*=colorDanger][class*=focused],
 div[class^=layerContainer] [role=menu] [class*=colorDefault] [class*=check-] {
   color: var(--background-floating);
@@ -1088,6 +1098,14 @@ div[class^=layerContainer] [role=menu] #guild-header-popout-premium-subscribe di
 .theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-]:not([class^=animatorBottom-]) > div div[class*=flowerStarContainer-] svg[class*=flowerStar-] *,
 .theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-]:not([class^=animatorBottom-]) > div div[class*=flowerStarContainer-] svg[class*=flowerStar-] * {
   fill: #8caaee;
+}
+.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] div[class*=countText],
+.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] div[class*=countText] {
+  color: #232634;
+}
+.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] svg[class*=selectedIcon] circle,
+.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] svg[class*=selectedIcon] circle {
+  fill: #232634;
 }
 
 div[class*=recentMentionsPopout] div[class^=header-] div[class^=tabBar] div[class^=tab][class*=active-] {
