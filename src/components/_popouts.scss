@@ -38,6 +38,11 @@ div[class^="layerContainer"] [role="menu"] {
     }
   }
 
+  // make the switch account username crust when focused
+  [class*="focused"] [class*="userMenuUsername"] * {
+    color: $crust;
+  }
+
   [class*="colorDanger"][class*="focused"],
   [class*="colorDefault"] [class*="check-"] {
     color: var(--background-floating);
@@ -52,16 +57,21 @@ div[class^="layerContainer"] [role="menu"] {
 
 .theme-dark,
 .theme-light {
-  div[class^="layerContainer"]
-    div[id^="popout_"]
-    > div[class*="didRender-"]:not([class^="animatorBottom-"])
-    > div {
-    background-color: var(--background-floating);
-
-    div[class*="flowerStarContainer-"] {
-      svg[class*="flowerStar-"] * {
-        fill: $brand;
+  div[class^="layerContainer"] div[id^="popout_"] > div[class*="didRender-"] {
+    &:not([class^="animatorBottom-"]) > div {
+      background-color: var(--background-floating);
+      div[class*="flowerStarContainer-"] {
+        svg[class*="flowerStar-"] * {
+          fill: $brand;
+        }
       }
+    }
+    div[class*="countText"] {
+      color: $crust;
+    }
+
+    svg[class*="selectedIcon"] circle {
+      fill: $crust;
     }
   }
 }

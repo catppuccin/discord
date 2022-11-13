@@ -164,9 +164,22 @@ div[class^="chat"] > div[class^="content-"] > div[class^="container-"] {
   background-color: $base;
 
   // forum icons
-  div[class^="pinIcon-"] > svg > path,
-  div[class^="stepStatus-"] > svg > path {
-    fill: $crust !important;
+  div[class^="pinIcon-"],
+  div[class^="stepStatus-"] {
+    > svg > path {
+      fill: $subtext0;
+    }
+
+    // .. but turn the checkmarks crust for the steps
+    &[style*="background-color: var(--status-positive-background);"]
+      > svg
+      > path {
+      fill: $crust;
+    }
+  }
+
+  div[class*="countText"] {
+    color: $crust;
   }
 
   // discord icon
