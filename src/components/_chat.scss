@@ -237,6 +237,10 @@ div[class^="callContainer-"] {
     }
   }
 
+  div[class*="tile"] {
+    background-color: $base;
+  }
+
   div[class^="videoControls-"] {
     div[class^="children-"] {
       div[class*="playingText-"] {
