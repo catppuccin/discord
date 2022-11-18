@@ -1548,6 +1548,9 @@ div[class^=callContainer-] [class*=controlIcon-] {
 div[class^=callContainer-] [class*=controlIcon-]:hover {
   color: #4c4f69;
 }
+div[class^=callContainer-] div[class*=tile] {
+  background-color: #eff1f5;
+}
 div[class^=callContainer-] div[class^=videoControls-] div[class^=children-] div[class*=playingText-] {
   color: #5c5f77;
 }
@@ -1651,6 +1654,21 @@ div[class^=layerContainer] [role=menu] #guild-header-popout-premium-subscribe di
 .theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] svg[class*=selectedIcon] circle,
 .theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] svg[class*=selectedIcon] circle {
   fill: #dce0e8;
+}
+.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] div[class*=container] div[class*=autocompleteArrow-],
+.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] div[class*=container] header,
+.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] div[class*=container] div[class*=autocompleteArrow-],
+.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] div[class*=container] header {
+  background-color: #e6e9ef;
+}
+.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] div[class*=container] header > input::placeholder,
+.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] div[class*=container] header > input::placeholder {
+  color: #8c8fa1;
+}
+.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] div[class*=container] section,
+.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] div[class*=container] section {
+  background-color: #eff1f5;
+  color: #4c4f69;
 }
 
 div[class*=recentMentionsPopout] div[class^=header-] div[class^=tabBar] div[class^=tab][class*=active-] {
@@ -1811,15 +1829,16 @@ div[class*=userInfoSection-] div[class^=connectedAccountContainer-] {
   background-color: rgba(204, 208, 218, 0.45) !important;
 }
 
-#emoji-picker-tab-panel {
+#emoji-picker-tab-panel,
+#sticker-picker-tab-panel {
   --background-floating: #ccd0da;
-  --background-tertiary: #eff1f5;
-  --background-secondary-alt: #eff1f5;
 }
-#emoji-picker-tab-panel + div[class^=slotsContainer-] {
+#emoji-picker-tab-panel + div[class^=slotsContainer-],
+#sticker-picker-tab-panel + div[class^=slotsContainer-] {
   background-color: #ccd0da;
 }
-#emoji-picker-tab-panel div[class^=tooltipContainer-] label[class^=label-][class*=labelChecked-] {
+#emoji-picker-tab-panel div[class^=tooltipContainer-] label[class^=label-][class*=labelChecked-],
+#sticker-picker-tab-panel div[class^=tooltipContainer-] label[class^=label-][class*=labelChecked-] {
   background: -webkit-gradient(linear, right top, left top, from(#ea76cb), color-stop(33.33%, #8839ef), to(#1e66f5));
   background: linear-gradient(270deg, #ea76cb, #8839ef 33.33%, #1e66f5);
 }

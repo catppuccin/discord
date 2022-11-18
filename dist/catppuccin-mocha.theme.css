@@ -1003,6 +1003,9 @@ div[class^=callContainer-] [class*=controlIcon-] {
 div[class^=callContainer-] [class*=controlIcon-]:hover {
   color: #cdd6f4;
 }
+div[class^=callContainer-] div[class*=tile] {
+  background-color: #1e1e2e;
+}
 div[class^=callContainer-] div[class^=videoControls-] div[class^=children-] div[class*=playingText-] {
   color: #bac2de;
 }
@@ -1106,6 +1109,21 @@ div[class^=layerContainer] [role=menu] #guild-header-popout-premium-subscribe di
 .theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] svg[class*=selectedIcon] circle,
 .theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] svg[class*=selectedIcon] circle {
   fill: #11111b;
+}
+.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] div[class*=container] div[class*=autocompleteArrow-],
+.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] div[class*=container] header,
+.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] div[class*=container] div[class*=autocompleteArrow-],
+.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] div[class*=container] header {
+  background-color: #181825;
+}
+.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] div[class*=container] header > input::placeholder,
+.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] div[class*=container] header > input::placeholder {
+  color: #7f849c;
+}
+.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] div[class*=container] section,
+.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] div[class*=container] section {
+  background-color: #1e1e2e;
+  color: #cdd6f4;
 }
 
 div[class*=recentMentionsPopout] div[class^=header-] div[class^=tabBar] div[class^=tab][class*=active-] {
@@ -1266,15 +1284,16 @@ div[class*=userInfoSection-] div[class^=connectedAccountContainer-] {
   background-color: rgba(49, 50, 68, 0.45) !important;
 }
 
-#emoji-picker-tab-panel {
+#emoji-picker-tab-panel,
+#sticker-picker-tab-panel {
   --background-floating: #313244;
-  --background-tertiary: #1e1e2e;
-  --background-secondary-alt: #1e1e2e;
 }
-#emoji-picker-tab-panel + div[class^=slotsContainer-] {
+#emoji-picker-tab-panel + div[class^=slotsContainer-],
+#sticker-picker-tab-panel + div[class^=slotsContainer-] {
   background-color: #313244;
 }
-#emoji-picker-tab-panel div[class^=tooltipContainer-] label[class^=label-][class*=labelChecked-] {
+#emoji-picker-tab-panel div[class^=tooltipContainer-] label[class^=label-][class*=labelChecked-],
+#sticker-picker-tab-panel div[class^=tooltipContainer-] label[class^=label-][class*=labelChecked-] {
   background: -webkit-gradient(linear, right top, left top, from(#f5c2e7), color-stop(33.33%, #cba6f7), to(#89b4fa));
   background: linear-gradient(270deg, #f5c2e7, #cba6f7 33.33%, #89b4fa);
 }
