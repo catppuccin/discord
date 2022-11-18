@@ -73,6 +73,22 @@ div[class^="layerContainer"] [role="menu"] {
     svg[class*="selectedIcon"] circle {
       fill: $crust;
     }
+
+    div[class*="container"] {
+      div[class*="autocompleteArrow-"],
+      header {
+        background-color: $mantle;
+      }
+
+      header > input::placeholder {
+        color: $overlay1;
+      }
+
+      section {
+        background-color: $base;
+        color: $text;
+      }
+    }
   }
 }
 
@@ -315,10 +331,9 @@ div[class*="userInfoSection-"] {
 }
 
 // emoji reactions in call
-#emoji-picker-tab-panel {
+#emoji-picker-tab-panel,
+#sticker-picker-tab-panel {
   --background-floating: #{$surface0};
-  --background-tertiary: #{$base};
-  --background-secondary-alt: #{$base};
 
   + div[class^="slotsContainer-"] {
     background-color: $surface0;
