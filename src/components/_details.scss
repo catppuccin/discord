@@ -135,7 +135,7 @@ div[class*="unreadBar-"] {
 }
 
 // make number badges have crust text and bolder
-div[class^="numberBadge-"] {
+div[class*="numberBadge-"] {
   font-weight: 700;
   color: $crust;
 }
