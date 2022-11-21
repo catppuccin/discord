@@ -2007,7 +2007,7 @@ div[class*=unreadBar-] {
   color: #dce0e8;
 }
 
-div[class^=numberBadge-] {
+div[class*=numberBadge-] {
   font-weight: 700;
   color: #dce0e8;
 }

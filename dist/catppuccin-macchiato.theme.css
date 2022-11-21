@@ -1462,7 +1462,7 @@ div[class*=unreadBar-] {
   color: #181926;
 }
 
-div[class^=numberBadge-] {
+div[class*=numberBadge-] {
   font-weight: 700;
   color: #181926;
 }
