@@ -1853,6 +1853,23 @@ div[class*=keyboardShortcutsModal-] div[class^=keybindShortcut-] span[class^=key
   fill: #dce0e8 !important;
 }
 
+.react-datepicker,
+.react-datepicker__header {
+  background-color: #e6e9ef !important;
+}
+
+.react-datepicker__day {
+  background-color: #dce0e8 !important;
+}
+
+.react-datepicker__day:active {
+  background: #1e66f5 !important;
+}
+
+.react-datepicker__day--selected:after {
+  background-color: #1e66f5 !important;
+}
+
 .hljs-bullet,
 .hljs-link,
 .hljs-meta,
