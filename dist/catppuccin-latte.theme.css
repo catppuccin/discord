@@ -2023,11 +2023,11 @@ div[class*=avatarSpeaking-] {
 
 div[class*=videoLayer-] > div[class^=tileChild] > div[class^=border][class*=speaking-] {
   -webkit-box-shadow: inset 0 0 0 2px #40a02b, inset 0 0 0 3px #40a02b;
-  bow-shadow: inset 0 0 0 2px #40a02b, inset 0 0 0 3px #40a02b;
+  box-shadow: inset 0 0 0 2px #40a02b, inset 0 0 0 3px #40a02b;
 }
 div[class*=videoLayer-] > div[class^=tileChild] > div[class^=border][class*=voiceChannelEffect-] {
   -webkit-box-shadow: inset 0 0 0 2px #1e66f5, inset 0 0 0 3px #1e66f5;
-  bow-shadow: inset 0 0 0 2px #1e66f5, inset 0 0 0 3px #1e66f5;
+  box-shadow: inset 0 0 0 2px #1e66f5, inset 0 0 0 3px #1e66f5;
 }
 
 div[class*=unread-],
