@@ -380,3 +380,18 @@ div[class*="keyboardShortcutsModal-"] {
     }
   }
 }
+
+// Search bar calendar
+.react-datepicker,
+.react-datepicker__header {
+  background-color: $mantle !important;
+}
+.react-datepicker__day {
+  background-color: $crust !important;
+}
+.react-datepicker__day:active {
+  background: $brand !important;
+}
+.react-datepicker__day--selected:after {
+  background-color: $blue !important;
+}
