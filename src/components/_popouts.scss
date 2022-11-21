@@ -395,3 +395,6 @@ div[class*="keyboardShortcutsModal-"] {
 .react-datepicker__day--selected:after {
   background-color: $blue !important;
 }
+[class^="datePickerHint-"] [class^="hintValue-"] {
+    color: $crust !important;
+}
