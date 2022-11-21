@@ -1325,6 +1325,10 @@ div[class*=keyboardShortcutsModal-] div[class^=keybindShortcut-] span[class^=key
   background-color: #89b4fa !important;
 }
 
+[class^=datePickerHint-] [class^=hintValue-] {
+  color: #11111b !important;
+}
+
 .hljs-bullet,
 .hljs-link,
 .hljs-meta,
