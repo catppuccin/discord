@@ -1056,6 +1056,38 @@ div[class*=giftCodeContainer] [class*=tile] > [class*=description] {
   color: #c6d0f5;
 }
 
+div[class*=chat-] section[class*=header-] {
+  background-color: #292c3c;
+}
+div[class*=chat-] div[class*=content-][class*=container-] {
+  background-color: #292c3c;
+}
+div[class*=chat-] div[class*=content-][class*=container-] div[class*=container-] {
+  background-color: #292c3c;
+}
+div[class*=chat-] div[class*=content-][class*=container-] div[class*=container-] div[class*=search-] {
+  background-color: #303446 !important;
+}
+div[class*=chat-] div[class*=content-][class*=container-] div[class*=container-] div[class*=search-] input::placeholder {
+  color: #737994;
+}
+div[class*=chat-] div[class*=content-][class*=container-] div[class*=container-] div[class*=browser] div[class*=content] div[class^=container-] {
+  background-color: #303446;
+}
+div[class*=chat-] div[class*=content-][class*=container-] div[class*=container-] div[class*=scrollerContainer-] {
+  background-color: #292c3c;
+}
+div[class*=chat-] div[class*=content-][class*=container-] div[class*=container-] div[class*=scrollerContainer-] div[class*=checkIcon-][style*="opacity: 1;"] > svg > path {
+  fill: #232634;
+}
+div[class*=chat-] div[class*=content-][class*=container-] div[role=tablist] {
+  background-color: #292c3c;
+  border-bottom: 2px solid #414559;
+}
+div[class*=chat-] div[class*=content-][class*=container-] div[role=tablist] [class*=textBadge-] {
+  color: #232634;
+}
+
 div[class^=layerContainer] [role=menu] {
   --brand-experiment-560: var(--brand-experiment-25a);
   --brand-experiment-600: var(--brand-experiment);
