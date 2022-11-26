@@ -31,7 +31,7 @@
     }
   }
 
-  // buttons in chat header
+  // chat header
   div[class^="container-"][class*="header-"] {
     div[class*="addReactButton-"],
     div[class^="buttons-"]:not([class*="lookBlank-"]) div[class^="contents"] {
@@ -313,5 +313,52 @@ div[class*="giftCodeContainer"] [class*="tile"] {
 
   > [class*="description"] {
     color: $text;
+  }
+}
+
+// channels & roles
+div[class*="chat-"] {
+  // header
+  section[class*="header-"] {
+    background-color: $mantle;
+  }
+
+  div[class*="content-"][class*="container-"] {
+    background-color: $mantle;
+
+    div[class*="container-"] {
+      background-color: $mantle;
+
+      div[class*="search-"] {
+        background-color: $base !important;
+
+        input::placeholder {
+          color: $overlay0;
+        }
+      }
+
+      div[class*="browser"] {
+        div[class*="content"] div[class^="container-"] {
+          background-color: $base;
+        }
+      }
+
+      div[class*="scrollerContainer-"] {
+        background-color: $mantle;
+
+        div[class*="checkIcon-"][style*="opacity: 1;"] > svg > path {
+          fill: $crust;
+        }
+      }
+    }
+
+    div[role="tablist"] {
+      background-color: $mantle;
+      border-bottom: 2px solid $surface0;
+
+      [class*="textBadge-"] {
+        color: $crust;
+      }
+    }
   }
 }
