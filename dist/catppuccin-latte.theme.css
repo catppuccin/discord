@@ -1925,7 +1925,7 @@ div[class*=keyboardShortcutsModal-] div[class^=keybindShortcut-] span[class^=key
   color: #1e66f5;
 }
 
-rect[fill^="hsl(139"],
+rect[fill="#3ba55c"],
 foreignObject[mask="url(#svg-mask-status-online)"] > div,
 div[class^=dotOnline],
 i[class^=statusOnline-] {
@@ -1933,13 +1933,13 @@ i[class^=statusOnline-] {
   background-color: #40a02b !important;
 }
 
-rect[fill^="hsl(38"],
+rect[fill="#faa61a"],
 foreignObject[mask="url(#svg-mask-status-idle)"] > div {
   fill: #df8e1d !important;
   background-color: #df8e1d !important;
 }
 
-rect[fill^="hsl(359"],
+rect[fill="#ed4245"],
 foreignObject[mask="url(#svg-mask-status-dnd)"] > div {
   fill: #d20f39 !important;
   background-color: #d20f39 !important;
