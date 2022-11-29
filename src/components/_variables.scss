@@ -111,6 +111,11 @@ html {
   --status-positive: #{$green};
   --status-warning: #{$yellow};
 
+  // the next 3 are present in the voice check in settings
+  --status-yellow-400: #{$yellow};
+  --status-green-600: #{$green};
+  --primary-dark-600: #{$base};
+
   --button-danger-background: #{$red};
   --button-danger-background-hover: #{darken($red, math.div(10%, 2))};
   --button-danger-background-active: #{darken($brand, math.div(15%, 2))};
