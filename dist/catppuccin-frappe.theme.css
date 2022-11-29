@@ -109,6 +109,9 @@ html {
   --status-danger: #e78284;
   --status-positive: #a6d189;
   --status-warning: #e5c890;
+  --status-yellow-400: #e5c890;
+  --status-green-600: #a6d189;
+  --primary-dark-600: #303446;
   --button-danger-background: #e78284;
   --button-danger-background-hover: #e36d6f;
   --button-danger-background-active: #6b91e9;
