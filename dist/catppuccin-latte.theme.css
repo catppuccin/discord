@@ -1005,6 +1005,9 @@ div[class^=sidebarRegion-] div[class^=premiumTab-] > div[class*=selected] svg > 
 div[class^=sidebarRegion-] div[class*=tabBarItemContainer-] [class*=textBadge-] {
   color: #dce0e8;
 }
+div[class^=sidebarRegion-] div[class*=tabBarItemContainer-] [class*=textBadge-][style*="background-color: var(--brand-500);"] {
+  background-color: #1e66f5 !important;
+}
 
 div[class^=contentRegion-] [class^=bar-],
 div[class^=contentRegion-] [class^=markDash-] {
@@ -1018,6 +1021,19 @@ div[class^=contentRegion-] [id="privacy-&-safety-tab"] div[class^=radioBar-][sty
 }
 div[class^=contentRegion-] [id="privacy-&-safety-tab"] div[class^=radioBar-][style*="hsl(359,"] {
   border-color: #d20f39;
+}
+div[class^=contentRegion-] [id="privacy-&-safety-tab"] div[class*=betaTagIcon] {
+  background-color: #1e66f5;
+  color: #dce0e8;
+}
+div[class^=contentRegion-] #accessibility-tab button[class*=colorBrandNew] {
+  background-color: #1e66f5;
+}
+div[class^=contentRegion-] #keybinds-tab span[class*=key] {
+  color: #dce0e8;
+}
+div[class^=contentRegion-] #keybinds-tab span[class*=key] g {
+  fill: #dce0e8;
 }
 div[class^=contentRegion-] #nitro-server-boost-tab circle[class^=circleProgress-] {
   color: #ea76cb;
@@ -1672,6 +1688,13 @@ div[class*=chat-] div[class*=content-][class*=container-] div[role=tablist] {
   border-bottom: 2px solid #ccd0da;
 }
 div[class*=chat-] div[class*=content-][class*=container-] div[role=tablist] [class*=textBadge-] {
+  color: #dce0e8;
+}
+
+div[class*=chat] section[class*=title] div[class*=searchBar] span[class*=search] {
+  background-color: #ccd0da;
+}
+div[class*=chat] nav[class*=pageControl] div[class*=roundButton][class*=activeButton] span {
   color: #dce0e8;
 }
 

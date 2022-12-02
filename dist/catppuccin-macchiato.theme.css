@@ -421,6 +421,9 @@ div[class^=sidebarRegion-] div[class^=premiumTab-] > div[class*=selected] svg > 
 div[class^=sidebarRegion-] div[class*=tabBarItemContainer-] [class*=textBadge-] {
   color: #181926;
 }
+div[class^=sidebarRegion-] div[class*=tabBarItemContainer-] [class*=textBadge-][style*="background-color: var(--brand-500);"] {
+  background-color: #8aadf4 !important;
+}
 
 div[class^=contentRegion-] [class^=bar-],
 div[class^=contentRegion-] [class^=markDash-] {
@@ -434,6 +437,19 @@ div[class^=contentRegion-] [id="privacy-&-safety-tab"] div[class^=radioBar-][sty
 }
 div[class^=contentRegion-] [id="privacy-&-safety-tab"] div[class^=radioBar-][style*="hsl(359,"] {
   border-color: #ed8796;
+}
+div[class^=contentRegion-] [id="privacy-&-safety-tab"] div[class*=betaTagIcon] {
+  background-color: #8aadf4;
+  color: #181926;
+}
+div[class^=contentRegion-] #accessibility-tab button[class*=colorBrandNew] {
+  background-color: #8aadf4;
+}
+div[class^=contentRegion-] #keybinds-tab span[class*=key] {
+  color: #181926;
+}
+div[class^=contentRegion-] #keybinds-tab span[class*=key] g {
+  fill: #181926;
 }
 div[class^=contentRegion-] #nitro-server-boost-tab circle[class^=circleProgress-] {
   color: #f5bde6;
@@ -1088,6 +1104,13 @@ div[class*=chat-] div[class*=content-][class*=container-] div[role=tablist] {
   border-bottom: 2px solid #363a4f;
 }
 div[class*=chat-] div[class*=content-][class*=container-] div[role=tablist] [class*=textBadge-] {
+  color: #181926;
+}
+
+div[class*=chat] section[class*=title] div[class*=searchBar] span[class*=search] {
+  background-color: #363a4f;
+}
+div[class*=chat] nav[class*=pageControl] div[class*=roundButton][class*=activeButton] span {
   color: #181926;
 }
 
