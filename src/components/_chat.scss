@@ -362,3 +362,17 @@ div[class*="chat-"] {
     }
   }
 }
+
+div[class*="chat"] {
+  // Search Box
+  section[class*="title"] div[class*="searchBar"] span[class*="search"] {
+    background-color: $surface0;
+  }
+
+  // Search Results Active Button
+  nav[class*="pageControl"]
+    div[class*="roundButton"][class*="activeButton"]
+    span {
+    color: $crust;
+  }
+}

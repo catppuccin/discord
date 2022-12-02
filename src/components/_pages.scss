@@ -31,6 +31,10 @@ div[class^="sidebarRegion-"] {
 
   div[class*="tabBarItemContainer-"] [class*="textBadge-"] {
     color: $crust;
+
+    &[style*="background-color: var(--brand-500);"] {
+      background-color: $brand !important;
+    }
   }
 }
 
@@ -67,6 +71,26 @@ div[class^="contentRegion-"] {
 
       &[style*="hsl(359,"] {
         border-color: $red;
+      }
+    }
+
+    div[class*="betaTagIcon"] {
+      background-color: $brand;
+      color: $crust;
+    }
+  }
+
+  #accessibility-tab {
+    button[class*="colorBrandNew"] {
+      background-color: $brand;
+    }
+  }
+
+  #keybinds-tab {
+    span[class*="key"] {
+      color: $crust;
+      g {
+        fill: $crust;
       }
     }
   }
