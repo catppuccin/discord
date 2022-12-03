@@ -75,7 +75,7 @@ div[class^="contentRegion-"] {
     }
 
     div[class*="betaTagIcon"] {
-      background-color: $brand;
+      background-color: $brand !important;
       color: $crust;
     }
   }
