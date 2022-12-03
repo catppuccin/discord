@@ -116,6 +116,10 @@ html {
   --status-green-600: #{$green};
   --primary-dark-600: #{$base};
 
+  // radioBar borders
+  --status-yellow-560: #{$yellow};
+  --status-red-500: #{$red};
+
   --button-danger-background: #{$red};
   --button-danger-background-hover: #{darken($red, math.div(10%, 2))};
   --button-danger-background-active: #{darken($brand, math.div(15%, 2))};

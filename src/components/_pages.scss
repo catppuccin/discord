@@ -107,6 +107,20 @@ div[class^="contentRegion-"] {
         color: $subtext1;
       }
     }
+
+    button[class*="lookInverted-"] {
+      color: $crust;
+      background-color: $text;
+
+      &:hover {
+        background-color: lighten($text, 0.5);
+      }
+    }
+
+    div[class*="card-"],
+    h3[class*="price-"] {
+      color: $text !important;
+    }
   }
 
   #subscriptions-tab {
@@ -122,7 +136,43 @@ div[class^="contentRegion-"] {
     }
   }
 
+  #discord-nitro-tab {
+    button[class*="buttonWhite"] {
+      color: $text !important;
+      border-color: $text !important;
+    }
+
+    h2 {
+      color: $text !important;
+    }
+
+    svg[class*="sparkleStar-"] {
+      color: $text;
+    }
+
+    div[class*="description-"] {
+      color: $subtext1 !important;
+    }
+
+    div[class*="card-"] {
+      color: $text;
+    }
+
+    button[class*="lookInverted-"] {
+      color: $crust;
+      background-color: $text;
+
+      &:hover {
+        background-color: lighten($text, 0.5);
+      }
+    }
+  }
+
   #billing-tab {
+    div[class*="subtext"] {
+      color: $subtext1;
+    }
+
     [class*="Divider"] {
       border-color: var(--background-modifier-accent);
     }
@@ -167,6 +217,12 @@ div[class^="contentRegion-"] {
   [id="voice-&-video-tab"] {
     div[class^="backgroundOptionRing-"] {
       border-color: $brand;
+    }
+  }
+
+  #notifications-tab {
+    button[class*="marketingUnsubscribeButton-"] {
+      color: $text;
     }
   }
 
