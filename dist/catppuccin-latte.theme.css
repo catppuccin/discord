@@ -696,6 +696,8 @@ html {
   --status-yellow-400: #df8e1d;
   --status-green-600: #40a02b;
   --primary-dark-600: #eff1f5;
+  --status-yellow-560: #df8e1d;
+  --status-red-500: #d20f39;
   --button-danger-background: #d20f39;
   --button-danger-background-hover: #ba0d33;
   --button-danger-background-active: #0a53e3;
@@ -810,6 +812,10 @@ html {
 
 [class*=permissionCheckmark-] {
   background-image: url("data:image/svg+xml,%3Csvg height='18' width='18' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='m0 0h18v18h-18z'/%3E%3Cpath d='m14.25 14.25h-10.5v-10.5h7.5v-1.5h-7.5c-.8325 0-1.5.6675-1.5 1.5v10.5c0 .8284271.67157288 1.5 1.5 1.5h10.5c.8284271 0 1.5-.6715729 1.5-1.5v-6h-1.5zm-7.5675-6.94-1.0575 1.065 3.375 3.375 7.5-7.5-1.0575-1.065-6.4425 6.4425z' fill='%2340a02b'/%3E%3C/g%3E%3C/svg%3E") !important;
+}
+
+[class*=lockIcon-] {
+  content: url("data:image/svg+xml,%3Csvg height='14' viewBox='0 0 10 14' width='10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m553 515h-6v-1c0-1.654 1.346-3 3-3s3 1.346 3 3zm-4 6h2v-4h-2zm1-12c-2.762 0-5 2.238-5 5v1 4 2c0 1.104.896 2 2 2h6c1.104 0 2-.896 2-2v-2-4-1c0-2.762-2.238-5-5-5z' fill='%2340a02b' fill-rule='evenodd' transform='translate(-545 -509)'/%3E%3C/svg%3E") !important;
 }
 
 .theme-dark svg[class*=noItemsIcon-],
@@ -1044,12 +1050,49 @@ div[class^=contentRegion-] #nitro-server-boost-tab div[class*=gemIndicatorContai
 div[class^=contentRegion-] #nitro-server-boost-tab div[class*=gemIndicatorContainer-] div[class^=tierLabel-] {
   color: #5c5f77;
 }
+div[class^=contentRegion-] #nitro-server-boost-tab button[class*=lookInverted-] {
+  color: #dce0e8;
+  background-color: #4c4f69;
+}
+div[class^=contentRegion-] #nitro-server-boost-tab button[class*=lookInverted-]:hover {
+  background-color: #4d506a;
+}
+div[class^=contentRegion-] #nitro-server-boost-tab div[class*=card-],
+div[class^=contentRegion-] #nitro-server-boost-tab h3[class*=price-] {
+  color: #4c4f69 !important;
+}
 div[class^=contentRegion-] #subscriptions-tab [class^=sectionAccountCredit-],
 div[class^=contentRegion-] #subscriptions-tab [class^=subscriptionDetails-] {
   border-color: var(--background-modifier-accent);
 }
 div[class^=contentRegion-] #library-inventory-tab div[class^=promotionIcon-] {
   background-color: #eff1f5;
+}
+div[class^=contentRegion-] #discord-nitro-tab button[class*=buttonWhite] {
+  color: #4c4f69 !important;
+  border-color: #4c4f69 !important;
+}
+div[class^=contentRegion-] #discord-nitro-tab h2 {
+  color: #4c4f69 !important;
+}
+div[class^=contentRegion-] #discord-nitro-tab svg[class*=sparkleStar-] {
+  color: #4c4f69;
+}
+div[class^=contentRegion-] #discord-nitro-tab div[class*=description-] {
+  color: #5c5f77 !important;
+}
+div[class^=contentRegion-] #discord-nitro-tab div[class*=card-] {
+  color: #4c4f69;
+}
+div[class^=contentRegion-] #discord-nitro-tab button[class*=lookInverted-] {
+  color: #dce0e8;
+  background-color: #4c4f69;
+}
+div[class^=contentRegion-] #discord-nitro-tab button[class*=lookInverted-]:hover {
+  background-color: #4d506a;
+}
+div[class^=contentRegion-] #billing-tab div[class*=subtext] {
+  color: #5c5f77;
 }
 div[class^=contentRegion-] #billing-tab [class*=Divider] {
   border-color: var(--background-modifier-accent);
@@ -1085,6 +1128,9 @@ div[class^=contentRegion-] #billing-tab div[class^=codeRedemptionRedirect-] {
 }
 div[class^=contentRegion-] [id="voice-&-video-tab"] div[class^=backgroundOptionRing-] {
   border-color: #1e66f5;
+}
+div[class^=contentRegion-] #notifications-tab button[class*=marketingUnsubscribeButton-] {
+  color: #4c4f69;
 }
 div[class^=contentRegion-] #game-activity-tab div[class*=nowPlayingAdd-],
 div[class^=contentRegion-] #game-activity-tab div[class*=lastPlayed-],
