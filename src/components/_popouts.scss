@@ -70,8 +70,13 @@ div[class^="layerContainer"] [role="menu"] {
       color: $crust;
     }
 
-    svg[class*="selectedIcon"] circle {
-      fill: $crust;
+    svg[class*="activeIcon"] {
+      circle {
+        fill: $crust;
+      }
+      g path {
+        fill: $brand;
+      }
     }
 
     div[class*="container"] {
@@ -396,5 +401,5 @@ div[class*="keyboardShortcutsModal-"] {
   background-color: $blue !important;
 }
 [class^="datePickerHint-"] [class^="hintValue-"] {
-    color: $crust !important;
+  color: $crust !important;
 }
