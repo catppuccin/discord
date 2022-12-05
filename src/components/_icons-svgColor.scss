@@ -62,6 +62,9 @@ $svgColor: (
   "searchIcon": (
     color: $subtext0,
   ),
+  "upsellIcon": (
+    color: $pink,
+  ),
 );
 
 @each $class, $color in $svgColor {
