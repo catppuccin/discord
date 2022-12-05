@@ -237,8 +237,24 @@ div[class^="callContainer-"] {
     }
   }
 
-  div[class*="tile"] {
-    background-color: $base;
+  div[class*="tile-"],
+  div[class*="background-"] {
+    background-color: $base !important;
+  }
+
+  div[class*="overlayTitle"],
+  svg[class*="status-"] {
+    background-color: $crust;
+    color: $text;
+  }
+
+  div[class*="header"] {
+    color: $text;
+  }
+
+  div[class*="button"] {
+    background-color: $crust;
+    color: $text;
   }
 
   div[class^="videoControls-"] {
