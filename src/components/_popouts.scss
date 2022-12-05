@@ -19,7 +19,7 @@ div[class^="layerContainer"] [role="menu"] {
       background: var(--background-accent);
       color: $crust;
 
-      & [class*="subtext"] {
+      [class*="subtext"] {
         color: $crust;
       }
     }
@@ -283,6 +283,19 @@ div[class^="layerContainer"] {
 
       div[class*="message-"] {
         background-color: $surface0;
+      }
+
+      &[aria-label="Activities"] {
+        div[class*="activityItem-"] {
+          background-color: $crust;
+
+          div[class*="previewBadge-"] {
+            color: $crust;
+          }
+        }
+        div[class*="activityTag-"] {
+          background-color: $surface0;
+        }
       }
     }
   }
