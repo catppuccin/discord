@@ -930,6 +930,11 @@ html {
   color: #6c6f85 !important;
 }
 
+.theme-dark svg[class*=upsellIcon-],
+.theme-light svg[class*=upsellIcon-] {
+  color: #ea76cb !important;
+}
+
 [class*=lookFilled-][class*=colorBrand-], [class*=lookFilled-][class*=colorBrandNew-], [class*=lookFilled-][class*=colorLink-], [class*=lookFilled-][class*=colorYellow-], [class*=lookFilled-][class*=colorRed-], [class*=lookFilled-][class*=colorGreen-] {
   color: #dce0e8;
 }
@@ -1660,14 +1665,17 @@ div[class^=callContainer-] div[class*=background-] {
 }
 div[class^=callContainer-] div[class*=overlayTitle],
 div[class^=callContainer-] svg[class*=status-] {
-  background-color: #dce0e8;
+  background-color: #ccd0da;
   color: #4c4f69;
 }
-div[class^=callContainer-] div[class*=header] {
+div[class^=callContainer-] div[class*=header],
+div[class^=callContainer-] svg[class*=selectedIcon-] {
   color: #4c4f69;
 }
-div[class^=callContainer-] div[class*=button] {
-  background-color: #dce0e8;
+div[class^=callContainer-] div[class*=button-][class*=contents-],
+div[class^=callContainer-] button[class*=cta-],
+div[class^=callContainer-] button[class*=participantsButton-] {
+  background-color: #ccd0da;
   color: #4c4f69;
 }
 div[class^=callContainer-] div[class^=videoControls-] div[class^=children-] div[class*=playingText-] {
@@ -1688,6 +1696,10 @@ div[class^=callContainer-] div[class^=videoControls-] div[class^=toolbar-] div[c
 div[class^=callContainer-] div[class^=videoControls-] div[class^=toolbar-] div[class^=liveIndicator-] div[class^=live-] {
   background-color: #d20f39 !important;
   color: #dce0e8 !important;
+}
+div[class^=callContainer-] div[class^=videoControls-] button[class*=leftTrayIcon-][class*=buttonColor-] {
+  background-color: #ccd0da;
+  color: #4c4f69;
 }
 div[class^=callContainer-] div[class^=videoControls-] [class*=colorable-][class*=red-] {
   background: #d20f39;
@@ -1956,6 +1968,15 @@ div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h6[class^=f
   background-color: #d20f39;
 }
 div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class*=message-] {
+  background-color: #ccd0da;
+}
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock][aria-label=Activities] div[class*=activityItem-] {
+  background-color: #dce0e8;
+}
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock][aria-label=Activities] div[class*=activityItem-] div[class*=previewBadge-] {
+  color: #dce0e8;
+}
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock][aria-label=Activities] div[class*=activityTag-] {
   background-color: #ccd0da;
 }
 div[class^=layerContainer] div[class^=addGamePopout-] {
