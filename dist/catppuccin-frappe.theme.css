@@ -114,6 +114,8 @@ html {
   --primary-dark-600: #303446;
   --status-yellow-560: #e5c890;
   --status-red-500: #e78284;
+  --status-yellow-500: #e5c890;
+  --black-500: #232634;
   --button-danger-background: #e78284;
   --button-danger-background-hover: #e36d6f;
   --button-danger-background-active: #6b91e9;
@@ -1068,8 +1070,21 @@ div[class^=callContainer-] [class*=controlIcon-] {
 div[class^=callContainer-] [class*=controlIcon-]:hover {
   color: #c6d0f5;
 }
-div[class^=callContainer-] div[class*=tile] {
-  background-color: #303446;
+div[class^=callContainer-] div[class*=tile-],
+div[class^=callContainer-] div[class*=background-] {
+  background-color: #303446 !important;
+}
+div[class^=callContainer-] div[class*=overlayTitle],
+div[class^=callContainer-] svg[class*=status-] {
+  background-color: #232634;
+  color: #c6d0f5;
+}
+div[class^=callContainer-] div[class*=header] {
+  color: #c6d0f5;
+}
+div[class^=callContainer-] div[class*=button] {
+  background-color: #232634;
+  color: #c6d0f5;
 }
 div[class^=callContainer-] div[class^=videoControls-] div[class^=children-] div[class*=playingText-] {
   color: #b5bfe2;
@@ -1210,9 +1225,13 @@ div[class^=layerContainer] [role=menu] #guild-header-popout-premium-subscribe di
 .theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] div[class*=countText] {
   color: #232634;
 }
-.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] svg[class*=selectedIcon] circle,
-.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] svg[class*=selectedIcon] circle {
+.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] svg[class*=activeIcon] circle,
+.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] svg[class*=activeIcon] circle {
   fill: #232634;
+}
+.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] svg[class*=activeIcon] g path,
+.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] svg[class*=activeIcon] g path {
+  fill: #8caaee;
 }
 .theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] div[class*=container] div[class*=autocompleteArrow-],
 .theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-] div[class*=container] header,
