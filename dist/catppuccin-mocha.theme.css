@@ -1395,6 +1395,9 @@ div[class^=layerContainer] > div[class*=layer] div[class^=focusLock][aria-label=
 div[class^=layerContainer] > div[class*=layer] div[class^=focusLock][aria-label=Activities] div[class*=activityTag-] {
   background-color: #313244;
 }
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock][aria-label="Manage Accounts"] div[class*=navRow-] {
+  background-color: #181825;
+}
 div[class^=layerContainer] div[class^=addGamePopout-] {
   background-color: #181825;
 }
