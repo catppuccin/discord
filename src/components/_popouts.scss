@@ -297,6 +297,12 @@ div[class^="layerContainer"] {
           background-color: $surface0;
         }
       }
+
+      &[aria-label="Manage Accounts"] {
+        div[class*="navRow-"] {
+          background-color: $mantle;
+        }
+      }
     }
   }
 
