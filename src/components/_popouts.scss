@@ -46,6 +46,7 @@ div[class^="layerContainer"] [role="menu"] {
   [class*="colorDanger"][class*="focused"],
   [class*="colorDefault"] [class*="check-"] {
     color: var(--background-floating);
+    background-color: $red;
   }
 
   #guild-header-popout-premium-subscribe {
