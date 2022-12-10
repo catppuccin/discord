@@ -1202,11 +1202,11 @@ div[class^=layerContainer] [role=menu] [class*=colorDefault][class*=focused]:not
 div[class^=layerContainer] [role=menu] [class*=colorDefault][class*=focused] [class*=checkbox-] {
   color: var(--interactive-normal);
 }
-div[class^=layerContainer] [role=menu] [class*=colorDefault][role=menuitem]:not([class*=colorDanger]):hover {
+div[class^=layerContainer] [role=menu] [class*=colorDefault][role=menuitem]:not([class*=colorDanger]):not([id*=user-context-user-volume]):hover {
   background: var(--background-accent);
   color: #181926;
 }
-div[class^=layerContainer] [role=menu] [class*=colorDefault][role=menuitem]:not([class*=colorDanger]):hover [class*=subtext] {
+div[class^=layerContainer] [role=menu] [class*=colorDefault][role=menuitem]:not([class*=colorDanger]):not([id*=user-context-user-volume]):hover [class*=subtext] {
   color: #181926;
 }
 div[class^=layerContainer] [role=menu] [class*=colorDefault]:active:not([class*=hideInteraction-]) {
@@ -1228,6 +1228,9 @@ div[class^=layerContainer] [role=menu] [class*=colorDefault] [class*=check-] {
 }
 div[class^=layerContainer] [role=menu] #guild-header-popout-premium-subscribe div[class^=iconContainer-] > svg {
   color: #f5bde6;
+}
+div[class^=layerContainer] [role=menu] #user-context-user-volume div[class*=slider-] div[class*=bar-] {
+  background-color: #363a4f;
 }
 
 .theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-]:not([class^=animatorBottom-]) > div,
