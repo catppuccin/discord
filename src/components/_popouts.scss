@@ -15,7 +15,7 @@ div[class^="layerContainer"] [role="menu"] {
       }
     }
 
-    &[role="menuitem"]:not([class*="colorDanger"]):hover {
+    &[role="menuitem"]:not([class*="colorDanger"]):not([id*="user-context-user-volume"]):hover {
       background: var(--background-accent);
       color: $crust;
 
@@ -52,6 +52,13 @@ div[class^="layerContainer"] [role="menu"] {
   #guild-header-popout-premium-subscribe {
     div[class^="iconContainer-"] > svg {
       color: $pink;
+    }
+  }
+
+  // user volume slider
+  #user-context-user-volume div[class*="slider-"] {
+    div[class*="bar-"] {
+      background-color: $surface0;
     }
   }
 }
