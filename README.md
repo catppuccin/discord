@@ -59,6 +59,12 @@
 @import url("https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css");
 /* mocha */
 @import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css");
+
+/* You can also append Catppuccin colors to customize the accent, e.g. */
+/* mocha (pink accent)*/
+@import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha-pink.theme.css");
+/* frappe (maroon accent) */
+@import url("https://catppuccin.github.io/discord/dist/catppuccin-frappe-maroon.theme.css");
 ```
 
 ### [DiscoCSS](https://github.com/mlvzk/discocss)
@@ -74,7 +80,13 @@ curl -L https://catppuccin.github.io/discord/dist/catppuccin-frappe.theme.css > 
 # macchiato
 curl -L https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css > ~/.config/discocss/custom.css
 # mocha
-curl -L https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css> ~/.config/discocss/custom.css
+you can also append Catppuccin colors to customize the accent
+
+# You can also append Catppuccin colors to customize the accent, e.g.
+# mocha (pink accent)
+curl -L https://catppuccin.github.io/discord/dist/catppuccin-mocha-pink.theme.css > ~/.config/discocss/custom.css
+# frappe (maroon accent)
+curl -L https://catppuccin.github.io/discord/dist/catppuccin-frappe-maroon.theme.css > ~/.config/discocss/custom.css
 ```
 
 ### [Stylus](https://github.com/openstyles/stylus)
