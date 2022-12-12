@@ -5,20 +5,14 @@
 @description    Soothing pastel theme for Discord
 @author         Catppuccin
 @preprocessor   stylus
-@var select theme "Theme" ["Latte", "Frappe", "Macchiato", "Mocha*"]
+@var select theme "Theme" ["latte", "frappe", "macchiato", "mocha*"]
+@var select accent "Accent" ["rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach", "yellow", "green", "teal", "blue*", "sapphire", "sky", "lavender"]
 ==/UserStyle== */
 
-@-moz-document domain("discord.com") {
-    if (theme=="Latte") {
-        @import url("https://catppuccin.github.io/discord/dist/catppuccin-latte.theme.css");
+@-moz-document regexp("https?://(canary\\.|ptb\\.|)discord.com/.*") {
+    $url = "https://catppuccin.github.io/discord/dist/catppuccin-" + theme + ".theme.css"
+    if accent != blue {
+        $url = "https://catppuccin.github.io/discord/dist/catppuccin-" + theme + "-" + accent + ".theme.css"
     }
-    if (theme=="Frappe") {
-        @import url("https://catppuccin.github.io/discord/dist/catppuccin-frappe.theme.css");
-    }
-    if (theme=="Macchiato") {
-        @import url("https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css");
-    }
-    if (theme=="Mocha") {
-        @import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css");
-    }
+    @import url($url)
 }
