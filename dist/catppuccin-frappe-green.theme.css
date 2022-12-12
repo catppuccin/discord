@@ -1158,22 +1158,22 @@ div[class*=chat-] section[class*=header-] {
 div[class*=chat-] div[class*=content-][class*=container-] {
   background-color: #292c3c;
 }
-div[class*=chat-] div[class*=content-][class*=container-] div[class*=container-] {
+div[class*=chat-] div[class*=content-][class*=container-] div[class*=container] {
   background-color: #292c3c;
 }
-div[class*=chat-] div[class*=content-][class*=container-] div[class*=container-] div[class*=search-] {
+div[class*=chat-] div[class*=content-][class*=container-] div[class*=search-] {
   background-color: #303446 !important;
 }
-div[class*=chat-] div[class*=content-][class*=container-] div[class*=container-] div[class*=search-] input::placeholder {
+div[class*=chat-] div[class*=content-][class*=container-] div[class*=search-] input::placeholder {
   color: #737994;
 }
-div[class*=chat-] div[class*=content-][class*=container-] div[class*=container-] div[class*=browser] div[class*=content] div[class^=container-] {
+div[class*=chat-] div[class*=content-][class*=container-] div[class*=browser] div[class*=content] div[class^=container-] {
   background-color: #303446;
 }
-div[class*=chat-] div[class*=content-][class*=container-] div[class*=container-] div[class*=scrollerContainer-] {
+div[class*=chat-] div[class*=content-][class*=container-] div[class*=scrollerContainer-] {
   background-color: #292c3c;
 }
-div[class*=chat-] div[class*=content-][class*=container-] div[class*=container-] div[class*=scrollerContainer-] div[class*=checkIcon-][style*="opacity: 1;"] > svg > path {
+div[class*=chat-] div[class*=content-][class*=container-] div[class*=scrollerContainer-] div[class*=checkIcon-][style*="opacity: 1;"] > svg > path {
   fill: #232634;
 }
 div[class*=chat-] div[class*=content-][class*=container-] div[role=tablist] {
@@ -1233,10 +1233,6 @@ div[class^=layerContainer] [role=menu] #user-context-user-volume div[class*=slid
   background-color: #414559;
 }
 
-.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-]:not([class^=animatorBottom-]) > div,
-.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-]:not([class^=animatorBottom-]) > div {
-  background-color: var(--background-floating);
-}
 .theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-]:not([class^=animatorBottom-]) > div div[class*=flowerStarContainer-] svg[class*=flowerStar-] *,
 .theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender-]:not([class^=animatorBottom-]) > div div[class*=flowerStarContainer-] svg[class*=flowerStar-] * {
   fill: #a6d189;
@@ -1441,11 +1437,12 @@ div[class*=userInfoSection-] div[class^=connectedAccountContainer-] {
 
 #emoji-picker-tab-panel,
 #sticker-picker-tab-panel {
-  --background-floating: #414559;
-}
-#emoji-picker-tab-panel + div[class^=slotsContainer-],
-#sticker-picker-tab-panel + div[class^=slotsContainer-] {
-  background-color: #414559;
+  /* --background-floating: #414559;
+
+    + div[class^="slotsContainer-"] {
+      background-color: $surface0;
+    }
+  */
 }
 #emoji-picker-tab-panel div[class^=tooltipContainer-] label[class^=label-][class*=labelChecked-],
 #sticker-picker-tab-panel div[class^=tooltipContainer-] label[class^=label-][class*=labelChecked-] {
