@@ -416,6 +416,20 @@ div[role=radio][class*=selected][class*=allow] {
   color: var(--text-muted);
 }
 
+[class*=topGuildEmojiBadge-] {
+  background: linear-gradient(268.26deg, #f5a97f, #ed8796 102.45%);
+}
+[class*=topGuildEmojiBadge-] * {
+  color: #181926 !important;
+}
+
+[class*=newlyAddedBadge-] {
+  background: linear-gradient(268.26deg, #8bd5ca, #a6da95 102.45%);
+}
+[class*=newlyAddedBadge-] * {
+  color: #181926 !important;
+}
+
 div[class^=sidebarRegion-] div[class^=serverBoostTabItem-] svg[class^=icon-] {
   fill: #f5bde6 !important;
 }
@@ -1310,8 +1324,19 @@ section[class^=positionContainer-] button[class*=navButtonActive] {
   color: #181926;
 }
 
-#emoji-picker-tab-panel [class*=stickerInspected-] [class^=inspectedIndicator],
+#emoji-picker-tab-panel [class*=stickerInspected-] [class*=inspectedIndicator],
 #emoji-picker-tab-panel [class^=emojiItem-][class*=emojiItemSelected-] {
+  background-color: var(--brand-experiment-25a);
+}
+#emoji-picker-tab-panel [class*=newlyAddedHighlight-] {
+  border: 1px solid #a6da95;
+}
+#emoji-picker-tab-panel [class*=newlyAddedHighlight-] ~ [class*=newlyAddedBadge-] {
+  background: #a6da95 !important;
+  color: #181926;
+}
+
+[class*=stickerInspected-] [class^=inspectedIndicator] {
   background-color: var(--brand-experiment-25a);
 }
 
