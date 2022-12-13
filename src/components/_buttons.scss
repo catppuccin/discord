@@ -91,3 +91,20 @@ div[role="radio"][class*="selected"] {
     color: var(--text-muted);
   }
 }
+
+// these badges appear in the emoji/sticker picker
+[class*="topGuildEmojiBadge-"] {
+  background: linear-gradient(268.26deg, $peach, $red 102.45%);
+
+  * {
+    color: $crust !important;
+  }
+}
+
+[class*="newlyAddedBadge-"] {
+  background: linear-gradient(268.26deg, $teal, $green 102.45%);
+
+  * {
+    color: $crust !important;
+  }
+}

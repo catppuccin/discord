@@ -184,10 +184,25 @@ section[class^="positionContainer-"] {
 
 #emoji-picker-tab-panel {
   // more transparent to make things more bearable
-  [class*="stickerInspected-"] [class^="inspectedIndicator"],
+  [class*="stickerInspected-"] [class*="inspectedIndicator"],
   [class^="emojiItem-"][class*="emojiItemSelected-"] {
     background-color: var(--brand-experiment-25a);
   }
+
+  // newly added thing
+  [class*="newlyAddedHighlight-"] {
+    border: 1px solid $green;
+
+    ~ [class*="newlyAddedBadge-"] {
+      background: $green !important;
+      color: $crust;
+    }
+  }
+}
+
+// same as transparent above, but for stickers
+[class*="stickerInspected-"] [class^="inspectedIndicator"] {
+  background-color: var(--brand-experiment-25a);
 }
 
 .theme-light {
