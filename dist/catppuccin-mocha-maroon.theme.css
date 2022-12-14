@@ -1200,6 +1200,7 @@ div[class*=chat-] div[class*=content-][class*=container-] div[role=tablist] [cla
 
 div[class*=chat] section[class*=title] div[class*=searchBar] span[class*=search] {
   background-color: #313244;
+  color: #cdd6f4;
 }
 div[class*=chat] nav[class*=pageControl] div[class*=roundButton][class*=activeButton] span {
   color: #11111b;
@@ -1373,6 +1374,12 @@ div[class^=layerContainer] > div[class*=layer] div[role=listbox] div[role=option
 }
 div[class^=layerContainer] > div[class*=layer] div[role=listbox] div[role=option] svg[class*=selectedIcon] circle {
   fill: #11111b;
+}
+div[class^=layerContainer] > div[class*=layer] div[role=listbox] div[class*=queryText-] {
+  color: #7f849c;
+}
+div[class^=layerContainer] > div[class*=layer] div[role=listbox] div[class*=queryText-] strong {
+  color: #cdd6f4;
 }
 div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modal-],
 div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modalSize-],
