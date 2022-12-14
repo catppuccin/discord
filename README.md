@@ -80,7 +80,7 @@ curl -L https://catppuccin.github.io/discord/dist/catppuccin-frappe.theme.css > 
 # macchiato
 curl -L https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css > ~/.config/discocss/custom.css
 # mocha
-you can also append Catppuccin colors to customize the accent
+curl -L https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css > ~/.config/discocss/custom.css
 
 # You can also append Catppuccin colors to customize the accent, e.g.
 # mocha (pink accent)
