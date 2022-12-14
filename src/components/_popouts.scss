@@ -264,6 +264,13 @@ div[class^="layerContainer"] {
           fill: $crust;
         }
       }
+
+      div[class*="queryText-"] {
+        color: $overlay1;
+        strong {
+          color: $text;
+        }
+      }
     }
 
     div[class^="focusLock"] {
