@@ -1514,6 +1514,16 @@ svg[class^=botTagVerified] {
   color: #dce0e8;
 }
 
+div[class*=activePostCount-] {
+  background-color: #ccd0da;
+  color: #4c4f69 !important;
+}
+
+div[class*=newPostCount-] {
+  background-color: #4c4f69;
+  color: #dce0e8;
+}
+
 [class^=chatContent] #---new-messages-bar span[class^=unreadPill-] {
   color: #dce0e8;
 }
