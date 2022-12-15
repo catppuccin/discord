@@ -49,3 +49,13 @@ ul[aria-label$=" threads"] > li:nth-child(6n) {
 svg[class^="botTagVerified"] {
   color: $crust;
 }
+
+div[class*="activePostCount-"] {
+  background-color: $surface0;
+  color: $text !important;
+}
+
+div[class*="newPostCount-"] {
+  background-color: $text;
+  color: $crust;
+}
