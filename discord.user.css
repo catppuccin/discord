@@ -5,13 +5,13 @@
 @description    Soothing pastel theme for Discord
 @author         Catppuccin
 @preprocessor   stylus
-@var select theme "Theme" ["latte", "frappe", "macchiato", "mocha*"]
-@var select accent "Accent" ["rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach", "yellow", "green", "teal", "blue*", "sapphire", "sky", "lavender"]
+@var select theme "Theme" ["latte:Latte", "frappe:Frappe", "macchiato:Macchiato", "mocha:Mocha*"]
+@var select accent "Accent" ["'rosewater'", "'flamingo'", "'pink'", "'mauve'", "'red'", "'maroon'", "'peach'", "'yellow'", "'green'", "'teal'", "'blue'*", "'sapphire'", "'sky'", "'lavender'"]
 ==/UserStyle== */
 
 @-moz-document regexp("https?://(canary\\.|ptb\\.|)discord.com/.*") {
     $url = "https://catppuccin.github.io/discord/dist/catppuccin-" + theme + ".theme.css"
-    if accent != blue {
+    if accent != 'blue' {
         $url = "https://catppuccin.github.io/discord/dist/catppuccin-" + theme + "-" + accent + ".theme.css"
     }
     @import url($url)
