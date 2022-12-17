@@ -1523,6 +1523,13 @@ div[class*=keyboardShortcutsModal-] div[class^=keybindShortcut-] span[class^=key
   color: #11111b !important;
 }
 
+div[class*=layerContainer-] div[class^=control-] div[class*=checked-] {
+  background-color: #a6e3a1 !important;
+}
+div[class*=layerContainer-] div[class^=control-] div[style*="background-color: rgb(114, 118, 125);"] {
+  background-color: #585b70 !important;
+}
+
 .hljs-bullet,
 .hljs-link,
 .hljs-meta,
