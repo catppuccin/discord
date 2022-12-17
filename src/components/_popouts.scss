@@ -452,3 +452,14 @@ div[class*="keyboardShortcutsModal-"] {
 [class^="datePickerHint-"] [class^="hintValue-"] {
   color: $crust !important;
 }
+
+div[class*="layerContainer-"] {
+  div[class^="control-"] {
+    div[class*="checked-"] {
+      background-color: $green !important;
+    }
+    div[style*="background-color: rgb(114, 118, 125);"] {
+      background-color: $surface2 !important;
+    }
+  }
+}
