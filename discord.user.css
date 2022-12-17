@@ -10,9 +10,5 @@
 ==/UserStyle== */
 
 @-moz-document regexp("https?://(canary\\.|ptb\\.|)discord.com/.*") {
-    $url = "https://catppuccin.github.io/discord/dist/catppuccin-" + theme + ".theme.css"
-    if accent != 'blue' {
-        $url = "https://catppuccin.github.io/discord/dist/catppuccin-" + theme + "-" + accent + ".theme.css"
-    }
-    @import url($url)
+    @import url("https://catppuccin.github.io/discord/dist/catppuccin-" + theme + "-" + accent + ".theme.css")
 }
