@@ -92,7 +92,7 @@ curl -L https://catppuccin.github.io/discord/dist/catppuccin-frappe-maroon.theme
 ### [Stylus](https://github.com/openstyles/stylus)
 
 1. Enable CSP Patching from Stylus Settings > Advanced.
-2. [Click here to install](./discord.user.css)
+2. [Click here to install](https://github.com/catppuccin/discord/raw/main/discord.user.css)
 3. Choose your preferred flavour and accent color from the Stylus preference dropdown.
 
 ## 🙋 FAQ
