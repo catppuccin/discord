@@ -39,6 +39,10 @@ div[class^="sidebarRegion-"] {
 }
 
 div[class^="contentRegion-"] {
+  div[class*="noticeRegion-"] div[style="background-color: rgb(24, 25, 28);"] {
+    background-color: $crust !important;
+  }
+
   // #my-account-tab {
   //     div[class^="userSettingsSecurity-"] {
   //         h5::after {
