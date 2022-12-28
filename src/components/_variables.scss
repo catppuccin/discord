@@ -124,6 +124,22 @@ html {
   --status-yellow-500: #{$yellow};
   --black-500: #{$crust};
 
+  --primary-dark-700: #{$crust};
+
+  --white-500: #{$text};
+
+  --guild-boosting-pink: #{$pink};
+  --premium-perk-yellow: #{$yellow};
+  --premium-perk-purple: #{$mauve};
+  --premium-perk-dark-blue: #{darken($blue, math.div(20%, 2))};
+  --premium-perk-light-blue: #{lighten($blue, math.div(10%, 2))};
+  --premium-perk-blue: #{$blue};
+  --premium-perk-green: #{$green};
+  --premium-perk-pink: #{$pink};
+  --premium-perk-orange: #{$peach};
+
+  --status-green-400: #{$green};
+
   --button-danger-background: #{$red};
   --button-danger-background-hover: #{darken($red, math.div(10%, 2))};
   --button-danger-background-active: #{darken($brand, math.div(15%, 2))};

@@ -62,6 +62,10 @@ div[class^="actionButtons-"] {
   [class*="lookLink-"][class*="colorPrimary-"] {
     color: $text;
   }
+  [class*="lookFilled-"][class*="colorTransparent-"] {
+    color: $text;
+    background-color: $surface0;
+  }
 }
 
 // dangerous button when hovered is colored properly
