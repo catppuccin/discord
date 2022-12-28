@@ -387,7 +387,7 @@ div[class*="chat-"] {
   }
 }
 
-div[class*="chat"] {
+div[class*="chat-"] {
   // Search Box
   section[class*="title"] div[class*="searchBar"] span[class*="search"] {
     background-color: $surface0;
@@ -399,5 +399,16 @@ div[class*="chat"] {
     div[class*="roundButton"][class*="activeButton"]
     span {
     color: $crust;
+  }
+}
+
+div[class*="chat-"] {
+  // Forum Gallery View
+  li[class*="mainCard-"][class*="container"] {
+    background-color: $surface0;
+
+    &:hover {
+      background-color: $surface1;
+    }
   }
 }
