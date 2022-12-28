@@ -902,6 +902,10 @@ svg[class^=spine-] {
   color: #585b70;
 }
 
+div[class^=spineBorder-] {
+  background: #585b70;
+}
+
 ul[aria-label$=" threads"] > li:nth-child(1n) {
   --channels-default: #d8c0dd;
   --interactive-hover: #f38ba8;
