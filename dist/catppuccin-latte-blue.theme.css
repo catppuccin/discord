@@ -2121,6 +2121,13 @@ div[class*=layerContainer-] div[class^=control-] div[style*="background-color: r
   background-color: #acb0be !important;
 }
 
+div[class*=layerContainer-] div[class*=guildPopout-][role=dialog] {
+  background-color: #eff1f5;
+}
+div[class*=layerContainer-] div[class*=guildPopout-][role=dialog] div[class*=guildName-] {
+  color: #4c4f69;
+}
+
 .hljs-bullet,
 .hljs-link,
 .hljs-meta,
