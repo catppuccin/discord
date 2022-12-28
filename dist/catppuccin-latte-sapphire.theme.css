@@ -1792,12 +1792,19 @@ div[class*=chat-] div[class*=content-][class*=container-] div[role=tablist] [cla
   color: #dce0e8;
 }
 
-div[class*=chat] section[class*=title] div[class*=searchBar] span[class*=search] {
+div[class*=chat-] section[class*=title] div[class*=searchBar] span[class*=search] {
   background-color: #ccd0da;
   color: #4c4f69;
 }
-div[class*=chat] nav[class*=pageControl] div[class*=roundButton][class*=activeButton] span {
+div[class*=chat-] nav[class*=pageControl] div[class*=roundButton][class*=activeButton] span {
   color: #dce0e8;
+}
+
+div[class*=chat-] li[class*=mainCard-][class*=container] {
+  background-color: #ccd0da;
+}
+div[class*=chat-] li[class*=mainCard-][class*=container]:hover {
+  background-color: #bcc0cc;
 }
 
 div[class^=layerContainer] [role=menu] {

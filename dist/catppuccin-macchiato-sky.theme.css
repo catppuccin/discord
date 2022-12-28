@@ -1208,12 +1208,19 @@ div[class*=chat-] div[class*=content-][class*=container-] div[role=tablist] [cla
   color: #181926;
 }
 
-div[class*=chat] section[class*=title] div[class*=searchBar] span[class*=search] {
+div[class*=chat-] section[class*=title] div[class*=searchBar] span[class*=search] {
   background-color: #363a4f;
   color: #cad3f5;
 }
-div[class*=chat] nav[class*=pageControl] div[class*=roundButton][class*=activeButton] span {
+div[class*=chat-] nav[class*=pageControl] div[class*=roundButton][class*=activeButton] span {
   color: #181926;
+}
+
+div[class*=chat-] li[class*=mainCard-][class*=container] {
+  background-color: #363a4f;
+}
+div[class*=chat-] li[class*=mainCard-][class*=container]:hover {
+  background-color: #494d64;
 }
 
 div[class^=layerContainer] [role=menu] {
