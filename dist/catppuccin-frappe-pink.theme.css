@@ -473,6 +473,9 @@ div[class^=sidebarRegion-] div[class*=tabBarItemContainer-] [class*=textBadge-][
   background-color: #f4b8e4 !important;
 }
 
+div[class^=contentRegion-] div[class*=noticeRegion-] div[style="background-color: rgb(24, 25, 28);"] {
+  background-color: #232634 !important;
+}
 div[class^=contentRegion-] [class^=bar-],
 div[class^=contentRegion-] [class^=markDash-] {
   background: #51576d;
