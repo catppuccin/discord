@@ -3,6 +3,10 @@ svg[class^="spine-"] {
   color: $surface2;
 }
 
+div[class^="spineBorder-"] {
+  background: $surface2;
+}
+
 // rainbow threads
 ul[aria-label$=" threads"] > li:nth-child(1n) {
   --channels-default: #{mix($red, $text, 30%)};
