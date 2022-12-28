@@ -411,4 +411,14 @@ div[class*="chat-"] {
       background-color: $surface1;
     }
   }
+
+  // Empty Pages
+  div[class*="emptyPage"] {
+    background-color: $base;
+  }
+
+  // Stupid gradient
+  div[class*="innerHeader"]:after {
+    background: none;
+  }
 }
