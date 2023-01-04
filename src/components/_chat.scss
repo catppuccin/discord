@@ -67,6 +67,10 @@
       }
     }
   }
+
+  span[class*="channelMention"]:hover {
+    color: $crust;
+  }
 }
 
 // arrow when someone joins
