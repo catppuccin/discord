@@ -1,4 +1,17 @@
 [class^="chatContent"] {
+  div[class*="wrapperAudio-"],
+  div[class*="imageWrapper-"] {
+    div[class*="audioControls"],
+    div[class*="videoControls-"] {
+      background-color: #{adjust-color($mantle, $alpha: -0.2)};
+
+      svg[class*="controlIcon-"] {
+        opacity: 1;
+        color: $subtext1;
+      }
+    }
+  }
+
   // new message ruler
   #---new-messages-bar {
     span[class^="unreadPill-"] {
