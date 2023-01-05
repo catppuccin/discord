@@ -977,6 +977,19 @@ div[class*=newPostCount-] {
   color: #11111b;
 }
 
+[class^=chatContent] div[class*=wrapperAudio-] div[class*=audioControls],
+[class^=chatContent] div[class*=wrapperAudio-] div[class*=videoControls-],
+[class^=chatContent] div[class*=imageWrapper-] div[class*=audioControls],
+[class^=chatContent] div[class*=imageWrapper-] div[class*=videoControls-] {
+  background-color: rgba(24, 24, 37, 0.8);
+}
+[class^=chatContent] div[class*=wrapperAudio-] div[class*=audioControls] svg[class*=controlIcon-],
+[class^=chatContent] div[class*=wrapperAudio-] div[class*=videoControls-] svg[class*=controlIcon-],
+[class^=chatContent] div[class*=imageWrapper-] div[class*=audioControls] svg[class*=controlIcon-],
+[class^=chatContent] div[class*=imageWrapper-] div[class*=videoControls-] svg[class*=controlIcon-] {
+  opacity: 1;
+  color: #bac2de;
+}
 [class^=chatContent] #---new-messages-bar span[class^=unreadPill-] {
   color: #11111b;
 }
