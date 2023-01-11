@@ -1821,7 +1821,7 @@ div[class*=newBadge-] {
 }
 
 span[class*=channelMention]:hover,
-[class*=interactive]:hover {
+[class*=mention]:hover {
   color: #11111b;
 }
 
