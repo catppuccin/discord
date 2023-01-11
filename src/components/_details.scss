@@ -186,8 +186,7 @@ div[class*="newBadge-"] {
   color: $crust;
 }
 
-// apparently `interactive`'s hover sets the color to white so this would be ok to change and hopefully not break anything?
 span[class*="channelMention"]:hover,
-[class*="interactive"]:hover {
+[class*="mention"]:hover {
   color: $crust;
 }
