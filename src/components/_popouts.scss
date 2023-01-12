@@ -19,9 +19,14 @@ div[class^="layerContainer"] [role="menu"] {
       background: var(--background-accent);
       color: $crust;
 
-      [class*="subtext"] {
+      [class*="subtext"],
+      [class*="caret-"] {
         color: $crust;
       }
+    }
+
+    [class*="caret"] {
+      color: $text;
     }
 
     // make active items have dark text
@@ -506,5 +511,13 @@ div[class*="userPopoutOuter"] {
     > div[class^="buttonsContainer"]
     > button:nth-child(2) {
     background: $brand;
+  }
+}
+
+[class*="layerContainer-"] [class*="toolbar-"] {
+  background-color: var(--background-floating);
+
+  [class*="buttons-"] [class*="icon-"] {
+    color: $text;
   }
 }
