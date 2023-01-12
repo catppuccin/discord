@@ -1878,8 +1878,12 @@ div[class^=layerContainer] [role=menu] [class*=colorDefault][role=menuitem]:not(
   background: var(--background-accent);
   color: #dce0e8;
 }
-div[class^=layerContainer] [role=menu] [class*=colorDefault][role=menuitem]:not([class*=colorDanger]):not([id*=user-context-user-volume]):hover [class*=subtext] {
+div[class^=layerContainer] [role=menu] [class*=colorDefault][role=menuitem]:not([class*=colorDanger]):not([id*=user-context-user-volume]):hover [class*=subtext],
+div[class^=layerContainer] [role=menu] [class*=colorDefault][role=menuitem]:not([class*=colorDanger]):not([id*=user-context-user-volume]):hover [class*=caret-] {
   color: #dce0e8;
+}
+div[class^=layerContainer] [role=menu] [class*=colorDefault] [class*=caret] {
+  color: #4c4f69;
 }
 div[class^=layerContainer] [role=menu] [class*=colorDefault]:active:not([class*=hideInteraction-]) {
   color: var(--background-floating);
@@ -2209,6 +2213,13 @@ div[class*=userPopoutOuter] div[aria-label="Early Verified Bot Developer"] {
 }
 div[class*=userPopoutOuter] div[class^=userPopoutOverlayBackground] > div[class^=scroller] > div[class^=section]:first-child > div[class^=buttonsContainer] > button:nth-child(2) {
   background: #d20f39;
+}
+
+[class*=layerContainer-] [class*=toolbar-] {
+  background-color: var(--background-floating);
+}
+[class*=layerContainer-] [class*=toolbar-] [class*=buttons-] [class*=icon-] {
+  color: #4c4f69;
 }
 
 .hljs-bullet,
