@@ -1738,6 +1738,18 @@ i[class^=statusOffline-] {
   background-color: #a5adce !important;
 }
 
+.vc-platform-indicator svg[fill*="--status-green"] {
+  fill: #a6d189;
+}
+
+.vc-platform-indicator svg[fill*="--status-yellow"] {
+  fill: #e5c890;
+}
+
+.vc-platform-indicator svg[fill*="--status-red"] {
+  fill: #e78284;
+}
+
 svg[class^=cursorDefault-] svg[class^=dots-] circle {
   fill: #303446 !important;
 }
