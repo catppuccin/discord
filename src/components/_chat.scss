@@ -423,6 +423,21 @@ div[class*="chat-"] {
     &:hover {
       background-color: $surface1;
     }
+
+    div[class*="contentPreview-"] {
+      background-color: $base;
+      border: none;
+
+      div[class*="textContentFooter-"] {
+        background: none;
+      }
+    }
+
+    div[class*="tags-"] {
+      div[class*="tagPill-"] {
+        background-color: #{adjust-color($surface1, $alpha: -0.2)};
+      }
+    }
   }
 
   // Empty Pages

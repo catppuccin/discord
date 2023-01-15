@@ -187,6 +187,6 @@ div[class*="newBadge-"] {
 }
 
 span[class*="channelMention"]:hover,
-[class*="mention"]:hover {
+[class*="mention"]:not([class*="mentionButton-"], [class*="mentionIcon-"]):hover {
   color: $crust;
 }
