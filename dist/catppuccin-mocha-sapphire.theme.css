@@ -1272,6 +1272,16 @@ div[class*=chat-] li[class*=mainCard-][class*=container] {
 div[class*=chat-] li[class*=mainCard-][class*=container]:hover {
   background-color: #45475a;
 }
+div[class*=chat-] li[class*=mainCard-][class*=container] div[class*=contentPreview-] {
+  background-color: #1e1e2e;
+  border: none;
+}
+div[class*=chat-] li[class*=mainCard-][class*=container] div[class*=contentPreview-] div[class*=textContentFooter-] {
+  background: none;
+}
+div[class*=chat-] li[class*=mainCard-][class*=container] div[class*=tags-] div[class*=tagPill-] {
+  background-color: rgba(69, 71, 90, 0.8);
+}
 div[class*=chat-] div[class*=emptyPage] {
   background-color: #1e1e2e;
 }
@@ -1644,6 +1654,10 @@ div[class*=userProfileOuter-] div[class^=userPopoutOverlayBackground] > div[clas
   color: #cdd6f4;
 }
 
+[class*=layerContainer-] div[id=sort-and-view] div[id=sort-and-view-reset-all] [style="color: var(--text-normal);"]:hover {
+  color: #11111b !important;
+}
+
 .hljs-bullet,
 .hljs-link,
 .hljs-meta,
@@ -1838,7 +1852,7 @@ div[class*=newBadge-] {
 }
 
 span[class*=channelMention]:hover,
-[class*=mention]:hover {
+[class*=mention]:not([class*=mentionButton-], [class*=mentionIcon-]):hover {
   color: #11111b;
 }
 
