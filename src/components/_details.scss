@@ -30,6 +30,21 @@ i[class^="statusOffline-"] {
   background-color: $subtext0 !important;
 }
 
+// vencord platform indicators
+// -- online
+.vc-platform-indicator svg[fill*="--status-green"] {
+  fill: $green;
+}
+
+// -- idle
+.vc-platform-indicator svg[fill*="--status-yellow"] {
+  fill: $yellow;
+}
+// -- dnd
+.vc-platform-indicator svg[fill*="--status-red"] {
+  fill: $red;
+}
+
 // dots in typing
 svg[class^="cursorDefault-"] svg[class^="dots-"] circle {
   fill: $base !important;
