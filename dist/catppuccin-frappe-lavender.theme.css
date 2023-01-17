@@ -1732,6 +1732,7 @@ foreignObject[mask="url(#svg-mask-status-dnd)"] > div {
 
 rect[fill^="hsl(214"],
 foreignObject[mask="url(#svg-mask-status-offline)"] > div,
+foreignObject[mask="url(#svg-mask-status-offline)"] > rect,
 div[class^=dotOffline],
 i[class^=statusOffline-] {
   fill: #a5adce !important;
