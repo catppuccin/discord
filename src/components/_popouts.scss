@@ -359,8 +359,11 @@ div[class^="layerContainer"] {
     }
   }
 
-  // branded tooltips should have dark text
-  [class*="tooltipBrand-"] {
+  // branded and colored tooltips should have dark text
+  [class*="tooltipBrand-"],
+  [class*="tooltipRed-"],
+  [class*="tooltipGreen-"],
+  [class*="tooltipYellow"] {
     color: $crust;
   }
 
