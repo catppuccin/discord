@@ -1537,7 +1537,10 @@ div[class^=layerContainer] div[class^=queryContainer] span[class^=key] {
   color: #c6d0f5;
   background-color: #303446;
 }
-div[class^=layerContainer] [class*=tooltipBrand-] {
+div[class^=layerContainer] [class*=tooltipBrand-],
+div[class^=layerContainer] [class*=tooltipRed-],
+div[class^=layerContainer] [class*=tooltipGreen-],
+div[class^=layerContainer] [class*=tooltipYellow] {
   color: #232634;
 }
 div[class^=layerContainer] div[class^=popout-] div[class^=row][role=button]:hover {
