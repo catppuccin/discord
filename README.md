@@ -99,6 +99,8 @@ curl -L https://catppuccin.github.io/discord/dist/catppuccin-frappe-maroon.theme
 
 - Q: **_"Can this get my account banned?"_**
 - A: Using third party clients and injecting custom css is against the ToS. We are not responsible for anything that might happen to your account by using third party clients. Use at your own discretion!
+- Q: **_"Latte/Light theme doesn't look right!?"_**
+- A: Using the Light/Latte theme requires Discord's Light Mode to be on.
 
 ## 💝 Thanks to
 
