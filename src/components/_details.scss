@@ -160,6 +160,7 @@ div[class*="numberBadge-"] {
 button[class^="attachButton-"] {
   svg path[class^="attachButtonPlay-"] {
     color: $green;
+    fill: $green;
   }
 }
 
