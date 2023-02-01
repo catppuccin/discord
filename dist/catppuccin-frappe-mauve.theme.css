@@ -1836,6 +1836,7 @@ div[class*=numberBadge-] {
 
 button[class^=attachButton-] svg path[class^=attachButtonPlay-] {
   color: #a6d189;
+  fill: #a6d189;
 }
 
 div[class*=avatarSpeaking-] {
