@@ -1290,6 +1290,16 @@ div[class*=chat-] div[class*=innerHeader]:after {
   background: none;
 }
 
+[id*=message-accessories-] > [class*=invite-] {
+  background-color: #24273a;
+}
+[id*=message-accessories-] > [class*=invite-] [class*=inFront-][class*=header-] {
+  color: #a5adcb;
+}
+[id*=message-accessories-] > [class*=invite-] [class*=partyStatus-] {
+  color: #cad3f5;
+}
+
 div[class^=layerContainer] [role=menu] {
   --brand-experiment-560: var(--brand-experiment-25a);
   --brand-experiment-600: var(--brand-experiment);
