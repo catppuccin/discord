@@ -202,3 +202,76 @@ a[href="/channels/907385605422448742/918688623002550313"] {
     }
   }
 }
+
+//server role colors
+
+$roleColors: (
+  "rgb(244, 219, 214)" (
+    color: $rosewater,
+  ),
+  "rgb(242, 205, 205)" (
+    color: $flamingo,
+  ),
+  "rgb(245, 194, 231)" (
+    color: $pink,
+  ),
+  "rgb(221, 182, 242)" (
+    color: $mauve,
+  ),
+  "rgb(242, 143, 173)" (
+    color: $red,
+  ),
+  "rgb(228, 156, 179)" (
+    color: $maroon,
+  ),
+  "rgb(248, 189, 150)" (
+    color: $peach,
+  ),
+  "rgb(250, 227, 176)" (
+    color: $yellow,
+  ),
+  "rgb(171, 233, 179)" (
+    color: $green,
+  ),
+  "rgb(181, 232, 224)" (
+    color: $teal,
+  ),
+  "rgb(137, 220, 235)" (
+    color: $sky,
+  ),
+  "rgb(125, 196, 228)" (
+    color: $sapphire,
+  ),
+  "rgb(150, 205, 251)" (
+    color: $blue,
+  ),
+  "rgb(201, 203, 255)" (
+    color: $lavender,
+  ),
+  "rgb(135, 162, 233)" ( //ash ketchum
+    color: $blue,
+  ),
+  "rgb(249, 226, 175)" ( //bot
+    color: $yellow,
+  ),
+  "rgb(220, 138, 120)" ( //clown of the day
+    color: $maroon,
+  ),
+  "rgb(148, 226, 213)" ( //core
+    color: $teal,
+  ),
+  "rgb(198, 160, 246)" ( //staff
+    color: $mauve,
+  ),
+);
+
+@each $colorVal, $colorDec in $roleColors {
+  //role colors in chat and sidebar
+  [class*="username-"][style*="#{$colorVal}"] {
+    color: #{map-get($colorDec, color)} !important;
+  }
+  //role color circles
+  [class*='roleCircle-'][style*="#{$colorVal}"] {
+    background-color: #{map-get($colorDec, color)} !important;
+  }
+}
