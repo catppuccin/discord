@@ -450,3 +450,14 @@ div[class*="chat-"] {
     background: none;
   }
 }
+
+// spotify listen along invite
+[id*='message-accessories-'] > [class*='invite-'] {
+  background-color: $base;
+  [class*='inFront-'][class*='header-'] {
+    color: $subtext0;
+  }
+  [class*='partyStatus-'] {
+    color: $text;
+  }
+}
