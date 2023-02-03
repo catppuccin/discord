@@ -227,6 +227,8 @@ html {
 
   --control-brand-foreground: #{$brand};
   --control-brand-foreground-new: #{$brand};
+  --mention-foreground: #{$brand};
+  --mention-background: #{adjust-color($brand, $alpha: -0.7)};
 
   --background-mentioned: #{adjust-color($yellow, $alpha: -0.9)};
   --background-mentioned-hover: #{adjust-color($yellow, $alpha: -0.92)};
