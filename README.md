@@ -100,7 +100,12 @@ curl -L https://catppuccin.github.io/discord/dist/catppuccin-frappe-maroon.theme
 - Q: **_"Can this get my account banned?"_**
 - A: Using third party clients and injecting custom css is against the ToS. We are not responsible for anything that might happen to your account by using third party clients. Use at your own discretion!
 - Q: **_"Latte/Light theme doesn't look right!?"_**
-- A: Using the Light/Latte theme requires Discord's Light Mode to be on.
+- A: Using the Latte theme requires Discord's light mode to be on. You can set it up to sync between e.g. Mocha in dark mode, and Latte in light mode with this snippet:
+
+  ```css
+  @import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css") (prefers-color-scheme: dark);
+  @import url("https://catppuccin.github.io/discord/dist/catppuccin-latte.theme.css") (prefers-color-scheme: light);
+  ```
 
 ## 💝 Thanks to
 
