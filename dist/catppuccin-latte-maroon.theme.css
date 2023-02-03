@@ -889,6 +889,8 @@ html {
   --logo-primary: #4c4f69;
   --control-brand-foreground: #e64553;
   --control-brand-foreground-new: #e64553;
+  --mention-foreground: #e64553;
+  --mention-background: rgba(230, 69, 83, 0.3);
   --background-mentioned: rgba(223, 142, 29, 0.1);
   --background-mentioned-hover: rgba(223, 142, 29, 0.08);
   --background-message-hover: rgba(220, 224, 232, 0.25);

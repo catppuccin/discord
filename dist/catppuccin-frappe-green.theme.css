@@ -191,6 +191,8 @@ html {
   --logo-primary: #c6d0f5;
   --control-brand-foreground: #a6d189;
   --control-brand-foreground-new: #a6d189;
+  --mention-foreground: #a6d189;
+  --mention-background: rgba(166, 209, 137, 0.3);
   --background-mentioned: rgba(229, 200, 144, 0.1);
   --background-mentioned-hover: rgba(229, 200, 144, 0.08);
   --background-message-hover: rgba(35, 38, 52, 0.25);
