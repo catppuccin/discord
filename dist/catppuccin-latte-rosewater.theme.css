@@ -540,11 +540,17 @@ button[class*=emojiButtonNormal] > div > div {
 :root .theme-dark [class*=roleCircle-][style*="rgb(244, 219, 214)"] {
   background-color: #f5e0dc !important;
 }
+:root .theme-dark [class*=typing-] strong[style*="rgb(244, 219, 214)"] {
+  color: #f5e0dc !important;
+}
 :root .theme-dark [class*=username-][style*="rgb(242, 205, 205)"] {
   color: #f2cdcd !important;
 }
 :root .theme-dark [class*=roleCircle-][style*="rgb(242, 205, 205)"] {
   background-color: #f2cdcd !important;
+}
+:root .theme-dark [class*=typing-] strong[style*="rgb(242, 205, 205)"] {
+  color: #f2cdcd !important;
 }
 :root .theme-dark [class*=username-][style*="rgb(245, 194, 231)"] {
   color: #f5c2e7 !important;
@@ -552,11 +558,17 @@ button[class*=emojiButtonNormal] > div > div {
 :root .theme-dark [class*=roleCircle-][style*="rgb(245, 194, 231)"] {
   background-color: #f5c2e7 !important;
 }
+:root .theme-dark [class*=typing-] strong[style*="rgb(245, 194, 231)"] {
+  color: #f5c2e7 !important;
+}
 :root .theme-dark [class*=username-][style*="rgb(221, 182, 242)"] {
   color: #cba6f7 !important;
 }
 :root .theme-dark [class*=roleCircle-][style*="rgb(221, 182, 242)"] {
   background-color: #cba6f7 !important;
+}
+:root .theme-dark [class*=typing-] strong[style*="rgb(221, 182, 242)"] {
+  color: #cba6f7 !important;
 }
 :root .theme-dark [class*=username-][style*="rgb(242, 143, 173)"] {
   color: #f38ba8 !important;
@@ -564,11 +576,17 @@ button[class*=emojiButtonNormal] > div > div {
 :root .theme-dark [class*=roleCircle-][style*="rgb(242, 143, 173)"] {
   background-color: #f38ba8 !important;
 }
+:root .theme-dark [class*=typing-] strong[style*="rgb(242, 143, 173)"] {
+  color: #f38ba8 !important;
+}
 :root .theme-dark [class*=username-][style*="rgb(228, 156, 179)"] {
   color: #eba0ac !important;
 }
 :root .theme-dark [class*=roleCircle-][style*="rgb(228, 156, 179)"] {
   background-color: #eba0ac !important;
+}
+:root .theme-dark [class*=typing-] strong[style*="rgb(228, 156, 179)"] {
+  color: #eba0ac !important;
 }
 :root .theme-dark [class*=username-][style*="rgb(248, 189, 150)"] {
   color: #fab387 !important;
@@ -576,11 +594,17 @@ button[class*=emojiButtonNormal] > div > div {
 :root .theme-dark [class*=roleCircle-][style*="rgb(248, 189, 150)"] {
   background-color: #fab387 !important;
 }
+:root .theme-dark [class*=typing-] strong[style*="rgb(248, 189, 150)"] {
+  color: #fab387 !important;
+}
 :root .theme-dark [class*=username-][style*="rgb(250, 227, 176)"] {
   color: #f9e2af !important;
 }
 :root .theme-dark [class*=roleCircle-][style*="rgb(250, 227, 176)"] {
   background-color: #f9e2af !important;
+}
+:root .theme-dark [class*=typing-] strong[style*="rgb(250, 227, 176)"] {
+  color: #f9e2af !important;
 }
 :root .theme-dark [class*=username-][style*="rgb(171, 233, 179)"] {
   color: #a6e3a1 !important;
@@ -588,11 +612,17 @@ button[class*=emojiButtonNormal] > div > div {
 :root .theme-dark [class*=roleCircle-][style*="rgb(171, 233, 179)"] {
   background-color: #a6e3a1 !important;
 }
+:root .theme-dark [class*=typing-] strong[style*="rgb(171, 233, 179)"] {
+  color: #a6e3a1 !important;
+}
 :root .theme-dark [class*=username-][style*="rgb(181, 232, 224)"] {
   color: #94e2d5 !important;
 }
 :root .theme-dark [class*=roleCircle-][style*="rgb(181, 232, 224)"] {
   background-color: #94e2d5 !important;
+}
+:root .theme-dark [class*=typing-] strong[style*="rgb(181, 232, 224)"] {
+  color: #94e2d5 !important;
 }
 :root .theme-dark [class*=username-][style*="rgb(137, 220, 235)"] {
   color: #89dceb !important;
@@ -600,11 +630,17 @@ button[class*=emojiButtonNormal] > div > div {
 :root .theme-dark [class*=roleCircle-][style*="rgb(137, 220, 235)"] {
   background-color: #89dceb !important;
 }
+:root .theme-dark [class*=typing-] strong[style*="rgb(137, 220, 235)"] {
+  color: #89dceb !important;
+}
 :root .theme-dark [class*=username-][style*="rgb(125, 196, 228)"] {
   color: #74c7ec !important;
 }
 :root .theme-dark [class*=roleCircle-][style*="rgb(125, 196, 228)"] {
   background-color: #74c7ec !important;
+}
+:root .theme-dark [class*=typing-] strong[style*="rgb(125, 196, 228)"] {
+  color: #74c7ec !important;
 }
 :root .theme-dark [class*=username-][style*="rgb(150, 205, 251)"] {
   color: #89b4fa !important;
@@ -612,11 +648,17 @@ button[class*=emojiButtonNormal] > div > div {
 :root .theme-dark [class*=roleCircle-][style*="rgb(150, 205, 251)"] {
   background-color: #89b4fa !important;
 }
+:root .theme-dark [class*=typing-] strong[style*="rgb(150, 205, 251)"] {
+  color: #89b4fa !important;
+}
 :root .theme-dark [class*=username-][style*="rgb(201, 203, 255)"] {
   color: #b4befe !important;
 }
 :root .theme-dark [class*=roleCircle-][style*="rgb(201, 203, 255)"] {
   background-color: #b4befe !important;
+}
+:root .theme-dark [class*=typing-] strong[style*="rgb(201, 203, 255)"] {
+  color: #b4befe !important;
 }
 :root .theme-dark [class*=username-][style*="rgb(135, 162, 233)"] {
   color: #89b4fa !important;
@@ -624,11 +666,17 @@ button[class*=emojiButtonNormal] > div > div {
 :root .theme-dark [class*=roleCircle-][style*="rgb(135, 162, 233)"] {
   background-color: #89b4fa !important;
 }
+:root .theme-dark [class*=typing-] strong[style*="rgb(135, 162, 233)"] {
+  color: #89b4fa !important;
+}
 :root .theme-dark [class*=username-][style*="rgb(249, 226, 175)"] {
   color: #f9e2af !important;
 }
 :root .theme-dark [class*=roleCircle-][style*="rgb(249, 226, 175)"] {
   background-color: #f9e2af !important;
+}
+:root .theme-dark [class*=typing-] strong[style*="rgb(249, 226, 175)"] {
+  color: #f9e2af !important;
 }
 :root .theme-dark [class*=username-][style*="rgb(220, 138, 120)"] {
   color: #eba0ac !important;
@@ -636,17 +684,26 @@ button[class*=emojiButtonNormal] > div > div {
 :root .theme-dark [class*=roleCircle-][style*="rgb(220, 138, 120)"] {
   background-color: #eba0ac !important;
 }
+:root .theme-dark [class*=typing-] strong[style*="rgb(220, 138, 120)"] {
+  color: #eba0ac !important;
+}
 :root .theme-dark [class*=username-][style*="rgb(148, 226, 213)"] {
   color: #94e2d5 !important;
 }
 :root .theme-dark [class*=roleCircle-][style*="rgb(148, 226, 213)"] {
   background-color: #94e2d5 !important;
 }
+:root .theme-dark [class*=typing-] strong[style*="rgb(148, 226, 213)"] {
+  color: #94e2d5 !important;
+}
 :root .theme-dark [class*=username-][style*="rgb(198, 160, 246)"] {
   color: #cba6f7 !important;
 }
 :root .theme-dark [class*=roleCircle-][style*="rgb(198, 160, 246)"] {
   background-color: #cba6f7 !important;
+}
+:root .theme-dark [class*=typing-] strong[style*="rgb(198, 160, 246)"] {
+  color: #cba6f7 !important;
 }
 :root .theme-dark svg[class^=spine-] {
   color: #585b70;
@@ -2956,12 +3013,20 @@ a[href="/channels/907385605422448742/1041728426375127140"] div[class^=iconContai
   background-color: #dc8a78 !important;
 }
 
+[class*=typing-] strong[style*="rgb(244, 219, 214)"] {
+  color: #dc8a78 !important;
+}
+
 [class*=username-][style*="rgb(242, 205, 205)"] {
   color: #dd7878 !important;
 }
 
 [class*=roleCircle-][style*="rgb(242, 205, 205)"] {
   background-color: #dd7878 !important;
+}
+
+[class*=typing-] strong[style*="rgb(242, 205, 205)"] {
+  color: #dd7878 !important;
 }
 
 [class*=username-][style*="rgb(245, 194, 231)"] {
@@ -2972,12 +3037,20 @@ a[href="/channels/907385605422448742/1041728426375127140"] div[class^=iconContai
   background-color: #ea76cb !important;
 }
 
+[class*=typing-] strong[style*="rgb(245, 194, 231)"] {
+  color: #ea76cb !important;
+}
+
 [class*=username-][style*="rgb(221, 182, 242)"] {
   color: #8839ef !important;
 }
 
 [class*=roleCircle-][style*="rgb(221, 182, 242)"] {
   background-color: #8839ef !important;
+}
+
+[class*=typing-] strong[style*="rgb(221, 182, 242)"] {
+  color: #8839ef !important;
 }
 
 [class*=username-][style*="rgb(242, 143, 173)"] {
@@ -2988,12 +3061,20 @@ a[href="/channels/907385605422448742/1041728426375127140"] div[class^=iconContai
   background-color: #d20f39 !important;
 }
 
+[class*=typing-] strong[style*="rgb(242, 143, 173)"] {
+  color: #d20f39 !important;
+}
+
 [class*=username-][style*="rgb(228, 156, 179)"] {
   color: #e64553 !important;
 }
 
 [class*=roleCircle-][style*="rgb(228, 156, 179)"] {
   background-color: #e64553 !important;
+}
+
+[class*=typing-] strong[style*="rgb(228, 156, 179)"] {
+  color: #e64553 !important;
 }
 
 [class*=username-][style*="rgb(248, 189, 150)"] {
@@ -3004,12 +3085,20 @@ a[href="/channels/907385605422448742/1041728426375127140"] div[class^=iconContai
   background-color: #fe640b !important;
 }
 
+[class*=typing-] strong[style*="rgb(248, 189, 150)"] {
+  color: #fe640b !important;
+}
+
 [class*=username-][style*="rgb(250, 227, 176)"] {
   color: #df8e1d !important;
 }
 
 [class*=roleCircle-][style*="rgb(250, 227, 176)"] {
   background-color: #df8e1d !important;
+}
+
+[class*=typing-] strong[style*="rgb(250, 227, 176)"] {
+  color: #df8e1d !important;
 }
 
 [class*=username-][style*="rgb(171, 233, 179)"] {
@@ -3020,12 +3109,20 @@ a[href="/channels/907385605422448742/1041728426375127140"] div[class^=iconContai
   background-color: #40a02b !important;
 }
 
+[class*=typing-] strong[style*="rgb(171, 233, 179)"] {
+  color: #40a02b !important;
+}
+
 [class*=username-][style*="rgb(181, 232, 224)"] {
   color: #179299 !important;
 }
 
 [class*=roleCircle-][style*="rgb(181, 232, 224)"] {
   background-color: #179299 !important;
+}
+
+[class*=typing-] strong[style*="rgb(181, 232, 224)"] {
+  color: #179299 !important;
 }
 
 [class*=username-][style*="rgb(137, 220, 235)"] {
@@ -3036,12 +3133,20 @@ a[href="/channels/907385605422448742/1041728426375127140"] div[class^=iconContai
   background-color: #04a5e5 !important;
 }
 
+[class*=typing-] strong[style*="rgb(137, 220, 235)"] {
+  color: #04a5e5 !important;
+}
+
 [class*=username-][style*="rgb(125, 196, 228)"] {
   color: #209fb5 !important;
 }
 
 [class*=roleCircle-][style*="rgb(125, 196, 228)"] {
   background-color: #209fb5 !important;
+}
+
+[class*=typing-] strong[style*="rgb(125, 196, 228)"] {
+  color: #209fb5 !important;
 }
 
 [class*=username-][style*="rgb(150, 205, 251)"] {
@@ -3052,12 +3157,20 @@ a[href="/channels/907385605422448742/1041728426375127140"] div[class^=iconContai
   background-color: #1e66f5 !important;
 }
 
+[class*=typing-] strong[style*="rgb(150, 205, 251)"] {
+  color: #1e66f5 !important;
+}
+
 [class*=username-][style*="rgb(201, 203, 255)"] {
   color: #7287fd !important;
 }
 
 [class*=roleCircle-][style*="rgb(201, 203, 255)"] {
   background-color: #7287fd !important;
+}
+
+[class*=typing-] strong[style*="rgb(201, 203, 255)"] {
+  color: #7287fd !important;
 }
 
 [class*=username-][style*="rgb(135, 162, 233)"] {
@@ -3068,12 +3181,20 @@ a[href="/channels/907385605422448742/1041728426375127140"] div[class^=iconContai
   background-color: #1e66f5 !important;
 }
 
+[class*=typing-] strong[style*="rgb(135, 162, 233)"] {
+  color: #1e66f5 !important;
+}
+
 [class*=username-][style*="rgb(249, 226, 175)"] {
   color: #df8e1d !important;
 }
 
 [class*=roleCircle-][style*="rgb(249, 226, 175)"] {
   background-color: #df8e1d !important;
+}
+
+[class*=typing-] strong[style*="rgb(249, 226, 175)"] {
+  color: #df8e1d !important;
 }
 
 [class*=username-][style*="rgb(220, 138, 120)"] {
@@ -3084,6 +3205,10 @@ a[href="/channels/907385605422448742/1041728426375127140"] div[class^=iconContai
   background-color: #e64553 !important;
 }
 
+[class*=typing-] strong[style*="rgb(220, 138, 120)"] {
+  color: #e64553 !important;
+}
+
 [class*=username-][style*="rgb(148, 226, 213)"] {
   color: #179299 !important;
 }
@@ -3092,12 +3217,20 @@ a[href="/channels/907385605422448742/1041728426375127140"] div[class^=iconContai
   background-color: #179299 !important;
 }
 
+[class*=typing-] strong[style*="rgb(148, 226, 213)"] {
+  color: #179299 !important;
+}
+
 [class*=username-][style*="rgb(198, 160, 246)"] {
   color: #8839ef !important;
 }
 
 [class*=roleCircle-][style*="rgb(198, 160, 246)"] {
   background-color: #8839ef !important;
+}
+
+[class*=typing-] strong[style*="rgb(198, 160, 246)"] {
+  color: #8839ef !important;
 }
 
 div[class^=notice-] div[class*=header-] {

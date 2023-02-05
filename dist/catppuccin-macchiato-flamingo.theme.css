@@ -2258,12 +2258,20 @@ a[href="/channels/907385605422448742/1041728426375127140"] div[class^=iconContai
   background-color: #f4dbd6 !important;
 }
 
+[class*=typing-] strong[style*="rgb(244, 219, 214)"] {
+  color: #f4dbd6 !important;
+}
+
 [class*=username-][style*="rgb(242, 205, 205)"] {
   color: #f0c6c6 !important;
 }
 
 [class*=roleCircle-][style*="rgb(242, 205, 205)"] {
   background-color: #f0c6c6 !important;
+}
+
+[class*=typing-] strong[style*="rgb(242, 205, 205)"] {
+  color: #f0c6c6 !important;
 }
 
 [class*=username-][style*="rgb(245, 194, 231)"] {
@@ -2274,12 +2282,20 @@ a[href="/channels/907385605422448742/1041728426375127140"] div[class^=iconContai
   background-color: #f5bde6 !important;
 }
 
+[class*=typing-] strong[style*="rgb(245, 194, 231)"] {
+  color: #f5bde6 !important;
+}
+
 [class*=username-][style*="rgb(221, 182, 242)"] {
   color: #c6a0f6 !important;
 }
 
 [class*=roleCircle-][style*="rgb(221, 182, 242)"] {
   background-color: #c6a0f6 !important;
+}
+
+[class*=typing-] strong[style*="rgb(221, 182, 242)"] {
+  color: #c6a0f6 !important;
 }
 
 [class*=username-][style*="rgb(242, 143, 173)"] {
@@ -2290,12 +2306,20 @@ a[href="/channels/907385605422448742/1041728426375127140"] div[class^=iconContai
   background-color: #ed8796 !important;
 }
 
+[class*=typing-] strong[style*="rgb(242, 143, 173)"] {
+  color: #ed8796 !important;
+}
+
 [class*=username-][style*="rgb(228, 156, 179)"] {
   color: #ee99a0 !important;
 }
 
 [class*=roleCircle-][style*="rgb(228, 156, 179)"] {
   background-color: #ee99a0 !important;
+}
+
+[class*=typing-] strong[style*="rgb(228, 156, 179)"] {
+  color: #ee99a0 !important;
 }
 
 [class*=username-][style*="rgb(248, 189, 150)"] {
@@ -2306,12 +2330,20 @@ a[href="/channels/907385605422448742/1041728426375127140"] div[class^=iconContai
   background-color: #f5a97f !important;
 }
 
+[class*=typing-] strong[style*="rgb(248, 189, 150)"] {
+  color: #f5a97f !important;
+}
+
 [class*=username-][style*="rgb(250, 227, 176)"] {
   color: #eed49f !important;
 }
 
 [class*=roleCircle-][style*="rgb(250, 227, 176)"] {
   background-color: #eed49f !important;
+}
+
+[class*=typing-] strong[style*="rgb(250, 227, 176)"] {
+  color: #eed49f !important;
 }
 
 [class*=username-][style*="rgb(171, 233, 179)"] {
@@ -2322,12 +2354,20 @@ a[href="/channels/907385605422448742/1041728426375127140"] div[class^=iconContai
   background-color: #a6da95 !important;
 }
 
+[class*=typing-] strong[style*="rgb(171, 233, 179)"] {
+  color: #a6da95 !important;
+}
+
 [class*=username-][style*="rgb(181, 232, 224)"] {
   color: #8bd5ca !important;
 }
 
 [class*=roleCircle-][style*="rgb(181, 232, 224)"] {
   background-color: #8bd5ca !important;
+}
+
+[class*=typing-] strong[style*="rgb(181, 232, 224)"] {
+  color: #8bd5ca !important;
 }
 
 [class*=username-][style*="rgb(137, 220, 235)"] {
@@ -2338,12 +2378,20 @@ a[href="/channels/907385605422448742/1041728426375127140"] div[class^=iconContai
   background-color: #91d7e3 !important;
 }
 
+[class*=typing-] strong[style*="rgb(137, 220, 235)"] {
+  color: #91d7e3 !important;
+}
+
 [class*=username-][style*="rgb(125, 196, 228)"] {
   color: #7dc4e4 !important;
 }
 
 [class*=roleCircle-][style*="rgb(125, 196, 228)"] {
   background-color: #7dc4e4 !important;
+}
+
+[class*=typing-] strong[style*="rgb(125, 196, 228)"] {
+  color: #7dc4e4 !important;
 }
 
 [class*=username-][style*="rgb(150, 205, 251)"] {
@@ -2354,12 +2402,20 @@ a[href="/channels/907385605422448742/1041728426375127140"] div[class^=iconContai
   background-color: #8aadf4 !important;
 }
 
+[class*=typing-] strong[style*="rgb(150, 205, 251)"] {
+  color: #8aadf4 !important;
+}
+
 [class*=username-][style*="rgb(201, 203, 255)"] {
   color: #b7bdf8 !important;
 }
 
 [class*=roleCircle-][style*="rgb(201, 203, 255)"] {
   background-color: #b7bdf8 !important;
+}
+
+[class*=typing-] strong[style*="rgb(201, 203, 255)"] {
+  color: #b7bdf8 !important;
 }
 
 [class*=username-][style*="rgb(135, 162, 233)"] {
@@ -2370,12 +2426,20 @@ a[href="/channels/907385605422448742/1041728426375127140"] div[class^=iconContai
   background-color: #8aadf4 !important;
 }
 
+[class*=typing-] strong[style*="rgb(135, 162, 233)"] {
+  color: #8aadf4 !important;
+}
+
 [class*=username-][style*="rgb(249, 226, 175)"] {
   color: #eed49f !important;
 }
 
 [class*=roleCircle-][style*="rgb(249, 226, 175)"] {
   background-color: #eed49f !important;
+}
+
+[class*=typing-] strong[style*="rgb(249, 226, 175)"] {
+  color: #eed49f !important;
 }
 
 [class*=username-][style*="rgb(220, 138, 120)"] {
@@ -2386,6 +2450,10 @@ a[href="/channels/907385605422448742/1041728426375127140"] div[class^=iconContai
   background-color: #ee99a0 !important;
 }
 
+[class*=typing-] strong[style*="rgb(220, 138, 120)"] {
+  color: #ee99a0 !important;
+}
+
 [class*=username-][style*="rgb(148, 226, 213)"] {
   color: #8bd5ca !important;
 }
@@ -2394,12 +2462,20 @@ a[href="/channels/907385605422448742/1041728426375127140"] div[class^=iconContai
   background-color: #8bd5ca !important;
 }
 
+[class*=typing-] strong[style*="rgb(148, 226, 213)"] {
+  color: #8bd5ca !important;
+}
+
 [class*=username-][style*="rgb(198, 160, 246)"] {
   color: #c6a0f6 !important;
 }
 
 [class*=roleCircle-][style*="rgb(198, 160, 246)"] {
   background-color: #c6a0f6 !important;
+}
+
+[class*=typing-] strong[style*="rgb(198, 160, 246)"] {
+  color: #c6a0f6 !important;
 }
 
 div[class^=notice-] div[class*=header-] {
