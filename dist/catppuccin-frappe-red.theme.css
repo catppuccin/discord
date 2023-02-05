@@ -1456,7 +1456,14 @@ section[class^=positionContainer-] button[class*=navButtonActive] {
 .theme-light[class*=profileColors-] [class*=defaultColor-],
 .theme-light[class*=profileColors-] [class*=markup-],
 .theme-light[class*=profileColors-] [class*=activityUserPopoutV2-] *,
-.theme-light[class*=profileColors-] [class*=customStatus-] {
+.theme-light[class*=profileColors-] [class*=customStatus-],
+.theme-light[class*=profileColors-] [class*=section-],
+.theme-light[class*=profileColors-] [class*=additionalActionsIcon-],
+.theme-light[class*=profileColors-] [class*=overlayBackground-] * {
+  --interactive-normal: #232634;
+  --text-normal: #232634;
+  --interactive-active: #232634;
+  --interactive-hover: #232634;
   color: unset !important;
 }
 
