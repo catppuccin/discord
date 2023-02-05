@@ -9,7 +9,7 @@
 **/
 
 @use "sass:math";
-@import "_colors/frappe";
+@import "@catppuccin/palette/scss/frappe";
 
 $brand: $blue;
 

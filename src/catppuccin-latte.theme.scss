@@ -9,7 +9,7 @@
 **/
 
 @use "sass:math";
-@import "_colors/latte";
+@import "@catppuccin/palette/scss/latte";
 
 $brand: $blue;
 
@@ -20,7 +20,7 @@ button[class*="emojiButtonNormal"] > div > div {
 
 // for dark sidebars :clueless:
 :root .theme-dark {
-  @import "_colors/mocha";
+  @import "@catppuccin/palette/scss/mocha";
   @import "components/_catppuccin-server";
 
   // weighted brand colors
@@ -306,7 +306,7 @@ button[class*="emojiButtonNormal"] > div > div {
 }
 
 nav[class*="guilds-"].theme-dark {
-  @import "_colors/mocha";
+  @import "@catppuccin/palette/scss/mocha";
 
   // server icons
   foreignObject > div[data-list-item-id^="guildsnav_"] {
