@@ -18,3 +18,6 @@ button[class*="emojiButtonNormal"] > div > div {
 }
 
 @import "theme";
+.theme-dark {
+  @import "@catppuccin/highlightjs/sass/catppuccin-mocha";
+}

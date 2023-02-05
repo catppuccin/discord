@@ -355,3 +355,6 @@ nav[class*="guilds-"].theme-dark {
 }
 
 @import "theme";
+.theme-light {
+  @import "@catppuccin/highlightjs/sass/catppuccin-latte";
+}

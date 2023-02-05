@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@catppuccin/highlightjs@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@catppuccin/highlightjs/-/highlightjs-0.1.1.tgz#4748e6958a781698aaf24fb67d8f96b603d52ca8"
+  integrity sha512-dcokSm8QYKv+EeZikY5CXuqEhUokLGrvCH0Jwt63pPfet2LOx7XDWq038gP1ME3G7+0cZoqcuLpgcNZGgRN/Lw==
+
 "@catppuccin/palette@^0.1.6":
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/@catppuccin/palette/-/palette-0.1.6.tgz#50f10b0cdfad604a07224841f3b1b88287ea212e"
