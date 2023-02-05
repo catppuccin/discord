@@ -274,4 +274,8 @@ $roleColors: (
   [class*='roleCircle-'][style*="#{$colorVal}"] {
     background-color: #{map-get($colorDec, color)} !important;
   }
+  //vencord platform colors
+  [class*='typing-'] strong[style*="#{$colorVal}"] {
+    color: #{map-get($colorDec, color)} !important;
+  }
 }
