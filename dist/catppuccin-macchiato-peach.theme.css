@@ -1685,57 +1685,6 @@ div[class*=userProfileOuter-] div[class^=userPopoutOverlayBackground] > div[clas
   color: #181926 !important;
 }
 
-.hljs-bullet,
-.hljs-link,
-.hljs-meta,
-.hljs-meta.hljs-keyword,
-.hljs-meta .hljs-keyword,
-.hljs-selector-attr,
-.hljs-selector-pseudo,
-.hljs-subst,
-.hljs-symbol {
-  color: #f5a97f;
-}
-
-.hljs-attr,
-.hljs-attribute,
-.hljs-class.hljs-title,
-.hljs-class .hljs-title,
-.hljs-template-variable,
-.hljs-type,
-.hljs-variable {
-  color: #eed49f;
-}
-
-.hljs-built_in,
-.hljs-deletion {
-  color: #ee99a0;
-}
-
-.hljs-doctag,
-.hljs-literal,
-.hljs-meta.hljs-meta-string,
-.hljs-meta .hljs-meta-string,
-.hljs-number,
-.hljs-regexp,
-.hljs-string {
-  color: #8bd5ca;
-}
-
-.hljs-addition,
-.hljs-keyword,
-.hljs-selector-tag {
-  color: #a6da95;
-}
-
-.hljs-name,
-.hljs-section,
-.hljs-selector-class,
-.hljs-selector-id,
-.hljs-title {
-  color: #8aadf4;
-}
-
 rect[fill="#3ba55c"],
 foreignObject[mask="url(#svg-mask-status-online)"] > div,
 div[class^=dotOnline],
@@ -2532,4 +2481,147 @@ div[class*=live-][class*=badge-] {
 
 div[class^=base] > div[class^=content] > div[class^=container] {
   background-color: #24273a !important;
+}
+
+.theme-dark code.hljs {
+  color: #cad3f5;
+  background: #24273a;
+}
+.theme-dark code .hljs-keyword {
+  color: #c6a0f6;
+}
+.theme-dark code .hljs-built_in {
+  color: #ed8796;
+}
+.theme-dark code .hljs-type {
+  color: #eed49f;
+}
+.theme-dark code .hljs-literal {
+  color: #f5a97f;
+}
+.theme-dark code .hljs-number {
+  color: #f5a97f;
+}
+.theme-dark code .hljs-operator {
+  color: #8bd5ca;
+}
+.theme-dark code .hljs-punctuation {
+  color: #b8c0e0;
+}
+.theme-dark code .hljs-property {
+  color: #8bd5ca;
+}
+.theme-dark code .hljs-regexp {
+  color: #f5bde6;
+}
+.theme-dark code .hljs-string {
+  color: #a6da95;
+}
+.theme-dark code .hljs-char.escape_ {
+  color: #a6da95;
+}
+.theme-dark code .hljs-subst {
+  color: #a5adcb;
+}
+.theme-dark code .hljs-symbol {
+  color: #f0c6c6;
+}
+.theme-dark code .hljs-variable {
+  color: #c6a0f6;
+}
+.theme-dark code .hljs-variable.language_ {
+  color: #c6a0f6;
+}
+.theme-dark code .hljs-variable.constant_ {
+  color: #f5a97f;
+}
+.theme-dark code .hljs-title {
+  color: #8aadf4;
+}
+.theme-dark code .hljs-title.class_ {
+  color: #eed49f;
+}
+.theme-dark code .hljs-title.function_ {
+  color: #8aadf4;
+}
+.theme-dark code .hljs-params {
+  color: #cad3f5;
+}
+.theme-dark code .hljs-comment {
+  color: #5b6078;
+}
+.theme-dark code .hljs-doctag {
+  color: #ed8796;
+}
+.theme-dark code .hljs-meta {
+  color: #f5a97f;
+}
+.theme-dark code .hljs-section {
+  color: #8aadf4;
+}
+.theme-dark code .hljs-tag {
+  color: #a5adcb;
+}
+.theme-dark code .hljs-name {
+  color: #c6a0f6;
+}
+.theme-dark code .hljs-attr {
+  color: #8aadf4;
+}
+.theme-dark code .hljs-attribute {
+  color: #a6da95;
+}
+.theme-dark code .hljs-bullet {
+  color: #8bd5ca;
+}
+.theme-dark code .hljs-code {
+  color: #a6da95;
+}
+.theme-dark code .hljs-emphasis {
+  color: #ed8796;
+  font-style: italic;
+}
+.theme-dark code .hljs-strong {
+  color: #ed8796;
+  font-weight: bold;
+}
+.theme-dark code .hljs-formula {
+  color: #8bd5ca;
+}
+.theme-dark code .hljs-link {
+  color: #7dc4e4;
+  font-style: italic;
+}
+.theme-dark code .hljs-quote {
+  color: #a6da95;
+  font-style: italic;
+}
+.theme-dark code .hljs-selector-tag {
+  color: #eed49f;
+}
+.theme-dark code .hljs-selector-id {
+  color: #8aadf4;
+}
+.theme-dark code .hljs-selector-class {
+  color: #8bd5ca;
+}
+.theme-dark code .hljs-selector-attr {
+  color: #c6a0f6;
+}
+.theme-dark code .hljs-selector-pseudo {
+  color: #8bd5ca;
+}
+.theme-dark code .hljs-template-tag {
+  color: #f0c6c6;
+}
+.theme-dark code .hljs-template-variable {
+  color: #f0c6c6;
+}
+.theme-dark code .hljs-diff-addition {
+  color: #a6da95;
+  background: rgba(var(--ctp-green), 15%);
+}
+.theme-dark code .hljs-diff-deletion {
+  color: #ed8796;
+  background: rgba(var(--ctp-red), 15%);
 }

@@ -2440,57 +2440,6 @@ div[class*=userProfileOuter-] div[class^=userPopoutOverlayBackground] > div[clas
   color: #dce0e8 !important;
 }
 
-.hljs-bullet,
-.hljs-link,
-.hljs-meta,
-.hljs-meta.hljs-keyword,
-.hljs-meta .hljs-keyword,
-.hljs-selector-attr,
-.hljs-selector-pseudo,
-.hljs-subst,
-.hljs-symbol {
-  color: #fe640b;
-}
-
-.hljs-attr,
-.hljs-attribute,
-.hljs-class.hljs-title,
-.hljs-class .hljs-title,
-.hljs-template-variable,
-.hljs-type,
-.hljs-variable {
-  color: #df8e1d;
-}
-
-.hljs-built_in,
-.hljs-deletion {
-  color: #e64553;
-}
-
-.hljs-doctag,
-.hljs-literal,
-.hljs-meta.hljs-meta-string,
-.hljs-meta .hljs-meta-string,
-.hljs-number,
-.hljs-regexp,
-.hljs-string {
-  color: #179299;
-}
-
-.hljs-addition,
-.hljs-keyword,
-.hljs-selector-tag {
-  color: #40a02b;
-}
-
-.hljs-name,
-.hljs-section,
-.hljs-selector-class,
-.hljs-selector-id,
-.hljs-title {
-  color: #1e66f5;
-}
-
 rect[fill="#3ba55c"],
 foreignObject[mask="url(#svg-mask-status-online)"] > div,
 div[class^=dotOnline],
@@ -3287,4 +3236,147 @@ div[class*=live-][class*=badge-] {
 
 div[class^=base] > div[class^=content] > div[class^=container] {
   background-color: #eff1f5 !important;
+}
+
+.theme-light code.hljs {
+  color: #4c4f69;
+  background: #eff1f5;
+}
+.theme-light code .hljs-keyword {
+  color: #8839ef;
+}
+.theme-light code .hljs-built_in {
+  color: #d20f39;
+}
+.theme-light code .hljs-type {
+  color: #df8e1d;
+}
+.theme-light code .hljs-literal {
+  color: #fe640b;
+}
+.theme-light code .hljs-number {
+  color: #fe640b;
+}
+.theme-light code .hljs-operator {
+  color: #179299;
+}
+.theme-light code .hljs-punctuation {
+  color: #5c5f77;
+}
+.theme-light code .hljs-property {
+  color: #179299;
+}
+.theme-light code .hljs-regexp {
+  color: #ea76cb;
+}
+.theme-light code .hljs-string {
+  color: #40a02b;
+}
+.theme-light code .hljs-char.escape_ {
+  color: #40a02b;
+}
+.theme-light code .hljs-subst {
+  color: #6c6f85;
+}
+.theme-light code .hljs-symbol {
+  color: #dd7878;
+}
+.theme-light code .hljs-variable {
+  color: #8839ef;
+}
+.theme-light code .hljs-variable.language_ {
+  color: #8839ef;
+}
+.theme-light code .hljs-variable.constant_ {
+  color: #fe640b;
+}
+.theme-light code .hljs-title {
+  color: #1e66f5;
+}
+.theme-light code .hljs-title.class_ {
+  color: #df8e1d;
+}
+.theme-light code .hljs-title.function_ {
+  color: #1e66f5;
+}
+.theme-light code .hljs-params {
+  color: #4c4f69;
+}
+.theme-light code .hljs-comment {
+  color: #acb0be;
+}
+.theme-light code .hljs-doctag {
+  color: #d20f39;
+}
+.theme-light code .hljs-meta {
+  color: #fe640b;
+}
+.theme-light code .hljs-section {
+  color: #1e66f5;
+}
+.theme-light code .hljs-tag {
+  color: #6c6f85;
+}
+.theme-light code .hljs-name {
+  color: #8839ef;
+}
+.theme-light code .hljs-attr {
+  color: #1e66f5;
+}
+.theme-light code .hljs-attribute {
+  color: #40a02b;
+}
+.theme-light code .hljs-bullet {
+  color: #179299;
+}
+.theme-light code .hljs-code {
+  color: #40a02b;
+}
+.theme-light code .hljs-emphasis {
+  color: #d20f39;
+  font-style: italic;
+}
+.theme-light code .hljs-strong {
+  color: #d20f39;
+  font-weight: bold;
+}
+.theme-light code .hljs-formula {
+  color: #179299;
+}
+.theme-light code .hljs-link {
+  color: #209fb5;
+  font-style: italic;
+}
+.theme-light code .hljs-quote {
+  color: #40a02b;
+  font-style: italic;
+}
+.theme-light code .hljs-selector-tag {
+  color: #df8e1d;
+}
+.theme-light code .hljs-selector-id {
+  color: #1e66f5;
+}
+.theme-light code .hljs-selector-class {
+  color: #179299;
+}
+.theme-light code .hljs-selector-attr {
+  color: #8839ef;
+}
+.theme-light code .hljs-selector-pseudo {
+  color: #179299;
+}
+.theme-light code .hljs-template-tag {
+  color: #dd7878;
+}
+.theme-light code .hljs-template-variable {
+  color: #dd7878;
+}
+.theme-light code .hljs-diff-addition {
+  color: #40a02b;
+  background: rgba(var(--ctp-green), 15%);
+}
+.theme-light code .hljs-diff-deletion {
+  color: #d20f39;
+  background: rgba(var(--ctp-red), 15%);
 }
