@@ -1214,6 +1214,10 @@ div[role=radio][class*=selected][class*=allow] {
   color: #dce0e8 !important;
 }
 
+[class*=lookFilled-] [class*=premiumSubscribeButton-] > [class*=premiumIcon-] {
+  color: #dce0e8 !important;
+}
+
 div[class^=sidebarRegion-] div[class^=serverBoostTabItem-] svg[class^=icon-] {
   fill: #ea76cb !important;
 }
