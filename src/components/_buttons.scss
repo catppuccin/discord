@@ -112,3 +112,8 @@ div[role="radio"][class*="selected"] {
     color: $crust !important;
   }
 }
+
+//revert nitro icon on nitro subscribe button on external emoji
+[class*=lookFilled-] [class*="premiumSubscribeButton-"] > [class*="premiumIcon-"] {
+  color: $crust !important;
+}
