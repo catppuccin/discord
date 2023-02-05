@@ -240,7 +240,14 @@ section[class^="positionContainer-"] {
     [class*="defaultColor-"],
     [class*="markup-"],
     [class*="activityUserPopoutV2-"] *,
-    [class*="customStatus-"] {
+    [class*="customStatus-"],
+    [class*="section-"],
+    [class*="additionalActionsIcon-"],
+    [class*="overlayBackground-"] * {
+      --interactive-normal: #{$crust};
+      --text-normal: #{$crust};
+      --interactive-active: #{$crust};
+      --interactive-hover: #{$crust};
       color: unset !important;
     }
   }
