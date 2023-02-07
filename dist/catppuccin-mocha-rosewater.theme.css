@@ -1581,6 +1581,10 @@ div[class*=userInfoSection-] div[class^=connectedAccountContainer-] {
   background-color: rgba(49, 50, 68, 0.45) !important;
 }
 
+div[class*=cardWarning-] div[class*=warning-] {
+  color: #11111b;
+}
+
 #emoji-picker-tab-panel,
 #sticker-picker-tab-panel {
   /* --background-floating: #313244;
