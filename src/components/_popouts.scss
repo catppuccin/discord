@@ -15,7 +15,9 @@ div[class^="layerContainer"] [role="menu"] {
       }
     }
 
-    &[role="menuitem"]:not([class*="colorDanger"]):not([id*="user-context-user-volume"]):hover {
+    &[role="menuitem"]:not([class*="colorDanger"]):not(
+        [id*="user-context-user-volume"]
+      ):hover {
       background: var(--background-accent);
       color: $crust;
 
@@ -396,6 +398,11 @@ div[class*="userInfoSection-"] {
   div[class^="connectedAccountContainer-"] {
     background-color: adjust-color($surface0, $alpha: -0.55) !important;
   }
+}
+
+// Warning card popouts ex. admin change username/account deletion
+div[class*="cardWarning-"] div[class*="warning-"] {
+  color: $crust;
 }
 
 // emoji reactions in call
