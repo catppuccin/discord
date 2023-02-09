@@ -75,7 +75,9 @@ div[class*="flowerStarContainer-"] {
   }
 
   &[class*="iconBackgroundTierOne-"],
-  &[class*="iconBackgroundTierTwo-"]:not([class*="boostedGuildTierIconBackgroundWithVisibleBanner"]) {
+  &[class*="iconBackgroundTierTwo-"]:not(
+      [class*="boostedGuildTierIconBackgroundWithVisibleBanner"]
+    ) {
     svg[class*="flowerStar-"] * {
       fill: $surface2;
     }
@@ -199,11 +201,15 @@ div[class*="profileBadges-"] {
   }
 }
 
-div[class*="newBadge-"] {
+div[class*="newBadge-"],
+div[class*="tryItOutBadge-"] {
   color: $crust;
 }
 
 span[class*="channelMention"]:hover,
-[class*="mention"]:not([class*="mentionButton-"], [class*="mentionIcon-"]):hover {
+[class*="mention"]:not(
+    [class*="mentionButton-"],
+    [class*="mentionIcon-"]
+  ):hover {
   color: $crust;
 }
