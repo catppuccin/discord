@@ -17,6 +17,10 @@
     [class*="spinnerItem-"] {
       background-color: $crust;
     }
+
+    [class*="defaultColor-"] {
+      color: $crust;
+    }
   }
 
   // ...unless it's primary
@@ -114,6 +118,8 @@ div[role="radio"][class*="selected"] {
 }
 
 //revert nitro icon on nitro subscribe button on external emoji
-[class*=lookFilled-] [class*="premiumSubscribeButton-"] > [class*="premiumIcon-"] {
+[class*="lookFilled-"]
+  [class*="premiumSubscribeButton-"]
+  > [class*="premiumIcon-"] {
   color: $crust !important;
 }

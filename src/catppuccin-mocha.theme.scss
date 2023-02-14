@@ -9,7 +9,7 @@
 **/
 
 @use "sass:math";
-@import "@catppuccin/palette/scss/mocha";
+@use "@catppuccin/palette/scss/mocha" as *;
 
 $brand: $blue;
 

@@ -638,3 +638,22 @@ div[class^="tierPreviews-"] {
     background: linear-gradient(90deg, $teal, $blue);
   }
 }
+
+div[class^="notice-"] {
+  div[class*="header-"] {
+    color: $crust;
+  }
+
+  div[class^="closeButton-"] > svg > path {
+    fill: $crust;
+  }
+
+  button[class^="button-"] {
+    border-color: $crust;
+    color: $crust;
+
+    &:hover {
+      background: darken($brand, 10%);
+    }
+  }
+}
