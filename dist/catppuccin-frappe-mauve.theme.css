@@ -388,6 +388,9 @@ html {
 [class*=lookFilled-][class*=colorBrand-] [class*=spinnerItem-], [class*=lookFilled-][class*=colorBrandNew-] [class*=spinnerItem-], [class*=lookFilled-][class*=colorLink-] [class*=spinnerItem-], [class*=lookFilled-][class*=colorYellow-] [class*=spinnerItem-], [class*=lookFilled-][class*=colorRed-] [class*=spinnerItem-], [class*=lookFilled-][class*=colorGreen-] [class*=spinnerItem-] {
   background-color: #232634;
 }
+[class*=lookFilled-][class*=colorBrand-] [class*=defaultColor-], [class*=lookFilled-][class*=colorBrandNew-] [class*=defaultColor-], [class*=lookFilled-][class*=colorLink-] [class*=defaultColor-], [class*=lookFilled-][class*=colorYellow-] [class*=defaultColor-], [class*=lookFilled-][class*=colorRed-] [class*=defaultColor-], [class*=lookFilled-][class*=colorGreen-] [class*=defaultColor-] {
+  color: #232634;
+}
 [class*=lookFilled-][class*=colorPrimary-] {
   color: #c6d0f5;
 }
@@ -887,6 +890,20 @@ path[d="M17.225 6.06504C17.3227 6.00866 17.4362 5.98608 17.548 6.00084C17.6598 6
 
 div[class^=tierPreviews-] button[class^=button-] {
   background: linear-gradient(90deg, #81c8be, #8caaee);
+}
+
+div[class^=notice-] div[class*=header-] {
+  color: #232634;
+}
+div[class^=notice-] div[class^=closeButton-] > svg > path {
+  fill: #232634;
+}
+div[class^=notice-] button[class^=button-] {
+  border-color: #232634;
+  color: #232634;
+}
+div[class^=notice-] button[class^=button-]:hover {
+  background: #b475dc;
 }
 
 nav[class*=guilds-] foreignObject > div[data-list-item-id^=guildsnav_] {
@@ -1410,18 +1427,24 @@ div[class*=rolesList] div[class^=role-] span[class^=roleCircle-][style*="backgro
   background-color: #303446 !important;
 }
 
-div[class^=layerContainer] > div[class^=layer] div[class^=reactors] {
+div[class*=layerContainer] > div[class*=layer] div[class^=reactors] {
   background-color: var(--background-primary);
 }
-div[class^=layerContainer] > div[class^=layer] div[class^=scroller] {
+div[class*=layerContainer] > div[class*=layer] div[class^=scroller] {
   background-color: var(--background-secondary);
 }
-div[class^=layerContainer] > div[class^=layer] div[class*=reactorDefault] {
+div[class*=layerContainer] > div[class*=layer] div[class*=reactorDefault] {
   -webkit-box-shadow: inset 0 -1px 0 var(--background-modifier-accent);
   box-shadow: inset 0 -1px 0 var(--background-modifier-accent);
 }
-div[class^=layerContainer] > div[class^=layer] div[class*=reactionSelected] {
+div[class*=layerContainer] > div[class*=layer] div[class*=reactionSelected] {
   background-color: var(--background-modifier-selected);
+}
+div[class*=layerContainer] > div[class*=layer] div[class*=friendSelected] {
+  background: #414559 !important;
+}
+div[class*=layerContainer] > div[class*=layer] div[class*=header] {
+  background: #292c3c;
 }
 
 section[class^=positionContainer-] button[class*=navButtonActive] {
@@ -1513,6 +1536,9 @@ div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class*=
 }
 div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class*=footer] button[type=submit] span {
   color: #232634;
+}
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class*=footer] [class*=footerText-] {
+  color: #b5bfe2;
 }
 div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h1[class^=fixed-],
 div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h2[class^=fixed-],
@@ -1716,6 +1742,10 @@ div[class^=dotOffline],
 i[class^=statusOffline-] {
   fill: #a5adce !important;
   background-color: #a5adce !important;
+}
+
+rect[fill="#593695"] {
+  fill: #ca9ee6 !important;
 }
 
 .vc-platform-indicator svg[fill*="--status-green"] {
@@ -2384,6 +2414,78 @@ a[href="/channels/907385605422448742/1041728426375127140"] div[class^=iconContai
   color: #babbf1 !important;
 }
 
+[class*=username-][style*="rgb(252, 176, 129)"] {
+  color: #ef9f76 !important;
+}
+
+[class*=roleCircle-][style*="rgb(252, 176, 129)"] {
+  background-color: #ef9f76 !important;
+}
+
+[class*=typing-] strong[style*="rgb(252, 176, 129)"] {
+  color: #ef9f76 !important;
+}
+
+[class*=username-][style*="rgb(191, 183, 218)"] {
+  color: #d1aae9 !important;
+}
+
+[class*=roleCircle-][style*="rgb(191, 183, 218)"] {
+  background-color: #d1aae9 !important;
+}
+
+[class*=typing-] strong[style*="rgb(191, 183, 218)"] {
+  color: #d1aae9 !important;
+}
+
+[class*=username-][style*="rgb(253, 245, 146)"] {
+  color: #e5c890 !important;
+}
+
+[class*=roleCircle-][style*="rgb(253, 245, 146)"] {
+  background-color: #e5c890 !important;
+}
+
+[class*=typing-] strong[style*="rgb(253, 245, 146)"] {
+  color: #e5c890 !important;
+}
+
+[class*=username-][style*="rgb(237, 135, 150)"] {
+  color: #e78284 !important;
+}
+
+[class*=roleCircle-][style*="rgb(237, 135, 150)"] {
+  background-color: #e78284 !important;
+}
+
+[class*=typing-] strong[style*="rgb(237, 135, 150)"] {
+  color: #e78284 !important;
+}
+
+[class*=username-][style*="rgb(138, 173, 244)"] {
+  color: #8caaee !important;
+}
+
+[class*=roleCircle-][style*="rgb(138, 173, 244)"] {
+  background-color: #8caaee !important;
+}
+
+[class*=typing-] strong[style*="rgb(138, 173, 244)"] {
+  color: #8caaee !important;
+}
+
+[class*=username-][style*="rgb(183, 189, 248)"] {
+  color: #babbf1 !important;
+}
+
+[class*=roleCircle-][style*="rgb(183, 189, 248)"] {
+  background-color: #babbf1 !important;
+}
+
+[class*=typing-] strong[style*="rgb(183, 189, 248)"] {
+  color: #babbf1 !important;
+}
+
 [class*=username-][style*="rgb(135, 162, 233)"] {
   color: #8caaee !important;
 }
@@ -2444,49 +2546,100 @@ a[href="/channels/907385605422448742/1041728426375127140"] div[class^=iconContai
   color: #ca9ee6 !important;
 }
 
-div[class^=notice-] div[class*=header-] {
-  color: #232634;
-}
-div[class^=notice-] div[class^=closeButton-] > svg > path {
-  fill: #232634;
-}
-div[class^=notice-] button[class^=button-] {
-  border-color: #232634;
-  color: #232634;
-}
-div[class^=notice-] button[class^=button-]:hover {
-  background: #b475dc;
+[class*=username-][style*="rgb(245, 223, 218)"] {
+  color: #f2d5cf !important;
 }
 
-div[class^=checkbox-][style*="border-color: var(--brand-experiment-400)"][style*="background-color: var(--brand-experiment-500)"] {
+[class*=roleCircle-][style*="rgb(245, 223, 218)"] {
+  background-color: #f2d5cf !important;
+}
+
+[class*=typing-] strong[style*="rgb(245, 223, 218)"] {
+  color: #f2d5cf !important;
+}
+
+[class*=username-][style*="rgb(169, 228, 163)"] {
+  color: #a6d189 !important;
+}
+
+[class*=roleCircle-][style*="rgb(169, 228, 163)"] {
+  background-color: #a6d189 !important;
+}
+
+[class*=typing-] strong[style*="rgb(169, 228, 163)"] {
+  color: #a6d189 !important;
+}
+
+[class*=username-][style*="rgb(140, 179, 250)"] {
+  color: #8caaee !important;
+}
+
+[class*=roleCircle-][style*="rgb(140, 179, 250)"] {
+  background-color: #8caaee !important;
+}
+
+[class*=typing-] strong[style*="rgb(140, 179, 250)"] {
+  color: #8caaee !important;
+}
+
+[class*=username-][style*="rgb(180, 190, 254)"] {
+  color: #babbf1 !important;
+}
+
+[class*=roleCircle-][style*="rgb(180, 190, 254)"] {
+  background-color: #babbf1 !important;
+}
+
+[class*=typing-] strong[style*="rgb(180, 190, 254)"] {
+  color: #babbf1 !important;
+}
+
+[class*=username-][style*="rgb(114, 135, 253)"] {
+  color: #babbf1 !important;
+}
+
+[class*=roleCircle-][style*="rgb(114, 135, 253)"] {
+  background-color: #babbf1 !important;
+}
+
+[class*=typing-] strong[style*="rgb(114, 135, 253)"] {
+  color: #babbf1 !important;
+}
+
+[class*=username-][style*="rgb(202, 158, 230)"] {
+  color: #ca9ee6 !important;
+}
+
+[class*=roleCircle-][style*="rgb(202, 158, 230)"] {
   background-color: #ca9ee6 !important;
-  border-color: transparent !important;
-}
-div[class^=checkbox-][style*="border-color: var(--brand-experiment-400)"][style*="background-color: var(--brand-experiment-500)"] svg > path {
-  fill: #232634 !important;
 }
 
-div[class*=friendSelected] {
-  background: #414559 !important;
+[class*=typing-] strong[style*="rgb(202, 158, 230)"] {
+  color: #ca9ee6 !important;
 }
 
-div[class*=videoGrid-],
-div[class^=callContainer-] > div[class^=root-] {
-  background: #232634 !important;
+[class*=username-][style*="rgb(250, 179, 135)"] {
+  color: #ef9f76 !important;
 }
 
-form[class*=card-] {
-  background-color: #303446 !important;
+[class*=roleCircle-][style*="rgb(250, 179, 135)"] {
+  background-color: #ef9f76 !important;
 }
 
-div[class*=liveShapeRound-],
-div[class*=live-][class*=badge-] {
-  background-color: #e78284 !important;
-  color: #232634 !important;
+[class*=typing-] strong[style*="rgb(250, 179, 135)"] {
+  color: #ef9f76 !important;
 }
 
-div[class^=base] > div[class^=content] > div[class^=container] {
-  background-color: #303446 !important;
+[class*=username-][style*="rgb(136, 223, 210)"] {
+  color: #81c8be !important;
+}
+
+[class*=roleCircle-][style*="rgb(136, 223, 210)"] {
+  background-color: #81c8be !important;
+}
+
+[class*=typing-] strong[style*="rgb(136, 223, 210)"] {
+  color: #81c8be !important;
 }
 
 .theme-dark code.hljs {
