@@ -158,8 +158,8 @@ div[class*="rolesList"] {
   }
 }
 
-div[class^="layerContainer"] {
-  > div[class^="layer"] {
+div[class*="layerContainer"] {
+  > div[class*="layer"] {
     // reaction popout
     div[class^="reactors"] {
       background-color: var(--background-primary);
@@ -176,6 +176,15 @@ div[class^="layerContainer"] {
 
     div[class*="reactionSelected"] {
       background-color: var(--background-modifier-selected);
+    }
+
+    // in DM -> select friends for group DM
+    div[class*="friendSelected"] {
+      background: $surface0 !important;
+    }
+
+    div[class*="header"] {
+      background: $mantle;
     }
   }
 }
@@ -306,6 +315,10 @@ div[class^="layerContainer"] {
 
         button[type="submit"] span {
           color: $crust;
+        }
+
+        [class*="footerText-"] {
+          color: $subtext1;
         }
       }
 
