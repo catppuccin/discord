@@ -56,6 +56,11 @@
     }
   }
 
+  // "Messages failed to load" bar
+  div[class^="messagesErrorBar-"] div[class*="barButtonBase-"] {
+    color: $crust;
+  }
+
   // code stuff
   // [class*="after_inlineCode-"],
   // [class*="before_inlineCode-"],
@@ -452,12 +457,12 @@ div[class*="chat-"] {
 }
 
 // spotify listen along invite
-[id*='message-accessories-'] > [class*='invite-'] {
+[id*="message-accessories-"] > [class*="invite-"] {
   background-color: $base;
-  [class*='inFront-'][class*='header-'] {
+  [class*="inFront-"][class*="header-"] {
     color: $subtext0;
   }
-  [class*='partyStatus-'] {
+  [class*="partyStatus-"] {
     color: $text;
   }
 }

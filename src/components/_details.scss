@@ -7,6 +7,10 @@ i[class^="statusOnline-"] {
   background-color: $green !important;
 }
 
+rect[fill="rgba(59, 165, 92, 1)"] {
+  fill: $green !important;
+}
+
 // idle
 rect[fill="#faa61a"],
 foreignObject[mask="url(#svg-mask-status-idle)"] > div {
@@ -14,11 +18,19 @@ foreignObject[mask="url(#svg-mask-status-idle)"] > div {
   background-color: $yellow !important;
 }
 
+rect[fill="rgba(250, 166, 26, 1)"] {
+  fill: $yellow !important;
+}
+
 // dnd
 rect[fill="#ed4245"],
 foreignObject[mask="url(#svg-mask-status-dnd)"] > div {
   fill: $red !important;
   background-color: $red !important;
+}
+
+rect[fill="rgba(237, 66, 69, 1)"] {
+  fill: $red !important;
 }
 
 // offline
@@ -29,6 +41,10 @@ div[class^="dotOffline"],
 i[class^="statusOffline-"] {
   fill: $subtext0 !important;
   background-color: $subtext0 !important;
+}
+
+rect[fill="rgba(116, 127, 141, 1)"] {
+  fill: $subtext0 !important;
 }
 
 // streaming
@@ -80,9 +96,7 @@ div[class*="flowerStarContainer-"] {
   }
 
   &[class*="iconBackgroundTierOne-"],
-  &[class*="iconBackgroundTierTwo-"]:not(
-      [class*="boostedGuildTierIconBackgroundWithVisibleBanner"]
-    ) {
+  &[class*="iconBackgroundTierTwo-"]:not([class*="boostedGuildTierIconBackgroundWithVisibleBanner"]) {
     svg[class*="flowerStar-"] * {
       fill: $surface2;
     }
@@ -212,9 +226,6 @@ div[class*="tryItOutBadge-"] {
 }
 
 span[class*="channelMention"]:hover,
-[class*="mention"]:not(
-    [class*="mentionButton-"],
-    [class*="mentionIcon-"]
-  ):hover {
+[class*="mention"]:not([class*="mentionButton-"], [class*="mentionIcon-"]):hover {
   color: $crust;
 }

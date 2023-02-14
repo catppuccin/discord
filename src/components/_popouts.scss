@@ -15,9 +15,7 @@ div[class^="layerContainer"] [role="menu"] {
       }
     }
 
-    &[role="menuitem"]:not([class*="colorDanger"]):not(
-        [id*="user-context-user-volume"]
-      ):hover {
+    &[role="menuitem"]:not([class*="colorDanger"]):not([id*="user-context-user-volume"]):hover {
       background: var(--background-accent);
       color: $crust;
 
@@ -165,7 +163,8 @@ div[class*="layerContainer"] {
       background-color: var(--background-primary);
     }
 
-    div[class^="scroller"] {
+    // the not selector should make it not style the user popouts
+    div[class^="scroller"]:not([style*="padding-right: 4px;"]) {
       background-color: var(--background-secondary);
     }
 
