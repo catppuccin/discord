@@ -1039,6 +1039,9 @@ div[class*=newPostCount-] {
   background-color: var(--brand-experiment-20a);
   border-color: var(--brand-experiment-30a);
 }
+[class^=chatContent] div[class^=messagesErrorBar-] div[class*=barButtonBase-] {
+  color: #181926;
+}
 [class^=chatContent] [class*=inlineCode-] {
   background: #363a4f;
 }
@@ -1430,7 +1433,7 @@ div[class*=rolesList] div[class^=role-] span[class^=roleCircle-][style*="backgro
 div[class*=layerContainer] > div[class*=layer] div[class^=reactors] {
   background-color: var(--background-primary);
 }
-div[class*=layerContainer] > div[class*=layer] div[class^=scroller] {
+div[class*=layerContainer] > div[class*=layer] div[class^=scroller]:not([style*="padding-right: 4px;"]) {
   background-color: var(--background-secondary);
 }
 div[class*=layerContainer] > div[class*=layer] div[class*=reactorDefault] {
@@ -1723,16 +1726,28 @@ i[class^=statusOnline-] {
   background-color: #a6da95 !important;
 }
 
+rect[fill="rgba(59, 165, 92, 1)"] {
+  fill: #a6da95 !important;
+}
+
 rect[fill="#faa61a"],
 foreignObject[mask="url(#svg-mask-status-idle)"] > div {
   fill: #eed49f !important;
   background-color: #eed49f !important;
 }
 
+rect[fill="rgba(250, 166, 26, 1)"] {
+  fill: #eed49f !important;
+}
+
 rect[fill="#ed4245"],
 foreignObject[mask="url(#svg-mask-status-dnd)"] > div {
   fill: #ed8796 !important;
   background-color: #ed8796 !important;
+}
+
+rect[fill="rgba(237, 66, 69, 1)"] {
+  fill: #ed8796 !important;
 }
 
 rect[fill^="hsl(214"],
@@ -1742,6 +1757,10 @@ div[class^=dotOffline],
 i[class^=statusOffline-] {
   fill: #a5adcb !important;
   background-color: #a5adcb !important;
+}
+
+rect[fill="rgba(116, 127, 141, 1)"] {
+  fill: #a5adcb !important;
 }
 
 rect[fill="#593695"] {
@@ -1877,8 +1896,7 @@ div[class*=tryItOutBadge-] {
 }
 
 span[class*=channelMention]:hover,
-[class*=mention]:not([class*=mentionButton-],
-[class*=mentionIcon-]):hover {
+[class*=mention]:not([class*=mentionButton-], [class*=mentionIcon-]):hover {
   color: #181926;
 }
 
