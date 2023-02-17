@@ -1,5 +1,5 @@
 // online
-rect[fill="#3ba55c"],
+rect[fill="#23a55a"],
 foreignObject[mask="url(#svg-mask-status-online)"] > div,
 div[class^="dotOnline"],
 i[class^="statusOnline-"] {
@@ -7,34 +7,34 @@ i[class^="statusOnline-"] {
   background-color: $green !important;
 }
 
-rect[fill="rgba(59, 165, 92, 1)"] {
+rect[fill="rgba(35, 165, 90, 1)"] {
   fill: $green !important;
 }
 
 // idle
-rect[fill="#faa61a"],
+rect[fill="#f0b232"],
 foreignObject[mask="url(#svg-mask-status-idle)"] > div {
   fill: $yellow !important;
   background-color: $yellow !important;
 }
 
-rect[fill="rgba(250, 166, 26, 1)"] {
+rect[fill="rgba(240, 178, 50, 1)"] {
   fill: $yellow !important;
 }
 
 // dnd
-rect[fill="#ed4245"],
+rect[fill="#f23f43"],
 foreignObject[mask="url(#svg-mask-status-dnd)"] > div {
   fill: $red !important;
   background-color: $red !important;
 }
 
-rect[fill="rgba(237, 66, 69, 1)"] {
+rect[fill="rgba(242, 63, 67, 1)"] {
   fill: $red !important;
 }
 
 // offline
-rect[fill^="hsl(214"],
+rect[fill="#82858f"],
 foreignObject[mask="url(#svg-mask-status-offline)"] > div,
 foreignObject[mask="url(#svg-mask-status-offline)"] > rect,
 div[class^="dotOffline"],
@@ -43,7 +43,7 @@ i[class^="statusOffline-"] {
   background-color: $subtext0 !important;
 }
 
-rect[fill="rgba(116, 127, 141, 1)"] {
+rect[fill="rgba(130, 133, 143, 1)"] {
   fill: $subtext0 !important;
 }
 
