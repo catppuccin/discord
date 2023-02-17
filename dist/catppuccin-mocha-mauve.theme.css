@@ -2666,6 +2666,14 @@ a[href="/channels/907385605422448742/1041728426375127140"] div[class^=iconContai
   color: #94e2d5 !important;
 }
 
+li[id*=chat-messages-921217923790561360-] article[style="border-color: hsla(120, calc(var(--saturation-factor, 1) * 100%), 29.8%, 1);"] {
+  border-color: #a6e3a1 !important;
+}
+li[id*=chat-messages-921217923790561360-] article[style="border-color: hsla(20, calc(var(--saturation-factor, 1) * 83.5%), 52.4%, 1);"],
+li[id*=chat-messages-921217923790561360-] article[style="border-color: hsla(20, calc(var(--saturation-factor, 1) * 72.8%), 63.9%, 1);"] {
+  border-color: #f9e2af !important;
+}
+
 .theme-dark code.hljs {
   color: #cdd6f4;
   background: #1e1e2e;
