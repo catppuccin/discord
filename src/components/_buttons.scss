@@ -90,7 +90,7 @@ div[role="radio"][class*="selected"] {
 [class*="container-"][style*="background-color: var(--green-360)"] {
   --green-360: $green; //vencord plugin settings
 }
-[class*="container-"][style*="background-color: var(--primary-400)"] {
+[class*="container-"][style*="background-color: var(--primary-400)"], [class*="container-"][style*="background-color: rgb(130, 133, 143)"] {
   background-color: $crust !important; //used in a lot of places
 }
 // vencord spotify plugin button theming support (uses vencord-specific classes)
