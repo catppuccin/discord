@@ -54,16 +54,16 @@ rect[fill="#593695"] {
 
 // vencord platform indicators
 // -- online
-.vc-platform-indicator svg[fill*="--status-green"] {
+.vc-platform-indicator svg[fill*="--green-"] {
   fill: $green;
 }
 
 // -- idle
-.vc-platform-indicator svg[fill*="--status-yellow"] {
+.vc-platform-indicator svg[fill*="--yellow-"] {
   fill: $yellow;
 }
 // -- dnd
-.vc-platform-indicator svg[fill*="--status-red"] {
+.vc-platform-indicator svg[fill*="--red-"] {
   fill: $red;
 }
 
