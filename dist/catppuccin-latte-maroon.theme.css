@@ -1322,6 +1322,14 @@ div[role=radio][class*=selected][class*=allow] {
   background-color: #40a02b;
 }
 
+[class*=container-][style*="background-color: var(--green-360)"] {
+  --green-360: $green;
+}
+
+[class*=container-][style*="background-color: var(--primary-400)"], [class*=container-][style*="background-color: rgb(130, 133, 143)"] {
+  background-color: #dce0e8 !important;
+}
+
 .vc-spotify-button-row .vc-spotify-button.vc-spotify-shuffle-on, .vc-spotify-button-row .vc-spotify-button.vc-spotify-repeat-context, .vc-spotify-button-row .vc-spotify-button.vc-spotify-repeat-track {
   color: var(--interactive-normal);
 }
