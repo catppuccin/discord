@@ -2327,9 +2327,6 @@ div[class*=layerContainer] > div[class*=layer] div[class*=reactionSelected] {
 div[class*=layerContainer] > div[class*=layer] div[class*=friendSelected] {
   background: #ccd0da !important;
 }
-div[class*=layerContainer] > div[class*=layer] div[class*=header] {
-  background: #e6e9ef;
-}
 
 section[class^=positionContainer-] button[class*=navButtonActive] {
   background-color: #dc8a78;
@@ -2599,7 +2596,7 @@ div[class*=userProfileOuter-] div[class^=userPopoutOverlayBackground] > div[clas
   color: #dce0e8 !important;
 }
 
-rect[fill="#3ba55c"],
+rect[fill="#23a55a"],
 foreignObject[mask="url(#svg-mask-status-online)"] > div,
 div[class^=dotOnline],
 i[class^=statusOnline-] {
@@ -2607,31 +2604,31 @@ i[class^=statusOnline-] {
   background-color: #40a02b !important;
 }
 
-rect[fill="rgba(59, 165, 92, 1)"] {
+rect[fill="rgba(35, 165, 90, 1)"] {
   fill: #40a02b !important;
 }
 
-rect[fill="#faa61a"],
+rect[fill="#f0b232"],
 foreignObject[mask="url(#svg-mask-status-idle)"] > div {
   fill: #df8e1d !important;
   background-color: #df8e1d !important;
 }
 
-rect[fill="rgba(250, 166, 26, 1)"] {
+rect[fill="rgba(240, 178, 50, 1)"] {
   fill: #df8e1d !important;
 }
 
-rect[fill="#ed4245"],
+rect[fill="#f23f43"],
 foreignObject[mask="url(#svg-mask-status-dnd)"] > div {
   fill: #d20f39 !important;
   background-color: #d20f39 !important;
 }
 
-rect[fill="rgba(237, 66, 69, 1)"] {
+rect[fill="rgba(242, 63, 67, 1)"] {
   fill: #d20f39 !important;
 }
 
-rect[fill^="hsl(214"],
+rect[fill="#82858f"],
 foreignObject[mask="url(#svg-mask-status-offline)"] > div,
 foreignObject[mask="url(#svg-mask-status-offline)"] > rect,
 div[class^=dotOffline],
@@ -2640,7 +2637,7 @@ i[class^=statusOffline-] {
   background-color: #6c6f85 !important;
 }
 
-rect[fill="rgba(116, 127, 141, 1)"] {
+rect[fill="rgba(130, 133, 143, 1)"] {
   fill: #6c6f85 !important;
 }
 
