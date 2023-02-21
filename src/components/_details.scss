@@ -186,11 +186,17 @@ button[class^="attachButton-"] {
 }
 
 // speaking indicator
+
 div[class*="avatarSpeaking-"] {
   -webkit-box-shadow: inset 0 0 0 2px $green,
     inset 0 0 0 3px var(--background-secondary);
   box-shadow: inset 0 0 0 2px $green,
     inset 0 0 0 3px var(--background-secondary);
+}
+
+//new discord speaking indicator fix
+[class*="border-"][class*="speaking-"] {
+  --green-360: $green;
 }
 
 div[class*="videoLayer-"] > div[class^="tileChild"] > div[class^="border"] {
