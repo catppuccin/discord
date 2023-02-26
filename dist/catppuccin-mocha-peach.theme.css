@@ -1785,6 +1785,14 @@ rect[fill="#593695"] {
   fill: #f38ba8;
 }
 
+[src="/assets/eaeac24163b35f7526704a3d9b3c7722.svg"] {
+  width: 0;
+  padding: 12px;
+  height: 0;
+  -webkit-mask-image: url("/assets/eaeac24163b35f7526704a3d9b3c7722.svg");
+  background: #a6e3a1;
+}
+
 svg[class^=cursorDefault-] svg[class^=dots-] circle {
   fill: #1e1e2e !important;
 }
