@@ -1,45 +1,45 @@
 // filled buttons and badges should have crust text
-[class*="lookFilled-"] {
-  &[class*="colorBrand-"],
-  &[class*="colorBrandNew-"],
-  &[class*="colorLink-"],
-  &[class*="colorYellow-"],
-  &[class*="colorRed-"],
-  &[class*="colorGreen-"] {
+.mapped-lookFilled {
+  &.mapped-colorBrand,
+  &.mapped-colorBrandNew,
+  &.mapped-colorLink,
+  &.mapped-colorYellow,
+  &.mapped-colorRed,
+  &.mapped-colorGreen {
     color: $crust;
 
     // darken the nitro button too
-    svg[class^="premiumIcon"] {
+    svg.mapped-premiumIcon {
       color: darken($pink, 20%);
     }
 
     // spinner color
-    [class*="spinnerItem-"] {
+    .mapped-spinnerItem {
       background-color: $crust;
     }
 
-    [class*="defaultColor-"] {
+    .mapped-defaultColor {
       color: $crust;
     }
   }
 
   // ...unless it's primary
-  &[class*="colorPrimary-"] {
+  &.mapped-colorPrimary {
     color: $text;
   }
 }
 
 // buttons in sidebar when in calls
-div[class^="actionButtons-"] {
-  [class^="button-"][class*="buttonColor-"],
-  [class^="button-"] [class*="buttonColor-"] {
+div.mapped-actionButtons {
+  .mapped-button.mapped-buttonColor,
+  .mapped-button .mapped-buttonColor {
     background-color: $surface1;
 
-    &[class*="buttonActive-"] {
+    &.mapped-buttonActive {
       background-color: $green;
       color: $crust;
 
-      [class*="buttonContents-"] {
+      .mapped-buttonContents {
         color: $crust;
 
         svg {
@@ -51,11 +51,11 @@ div[class^="actionButtons-"] {
 }
 
 // lookInverted buttons should have darker brand text
-[class*="lookInverted-"][class*="colorBrand-"] {
+.mapped-lookInverted.mapped-colorBrand {
   color: var(--brand-experiment-600);
 
   // darken the nitro button too
-  svg[class^="premiumIcon"] {
+  svg.mapped-premiumIcon {
     color: darken($pink, 15%);
   }
 }
@@ -63,35 +63,36 @@ div[class^="actionButtons-"] {
 // lookLink + colorPrimary should be themed
 .theme-dark,
 .theme-light {
-  [class*="lookLink-"][class*="colorPrimary-"] {
+  .mapped-lookLink.mapped-colorPrimary {
     color: $text;
   }
-  [class*="lookFilled-"][class*="colorTransparent-"] {
+  .mapped-lookFilled.mapped-colorTransparent {
     color: $text;
     background-color: $surface0;
   }
 }
 
 // dangerous button when hovered is colored properly
-div[class*="button-"][class*="dangerous-"]:hover {
+div.mapped-button.mapped-dangerous:hover {
   color: darken($red, 10%);
 }
 
 // make all selected radio buttons's text crust
-div[role="radio"][class*="selected"] {
+div[role="radio"].mapped-selected {
   color: $crust;
 
   // make the allow radio button's bg to the correct green
-  &[class*="allow"] {
+  &.mapped-allow {
     background-color: $green;
   }
 }
 //nonspecific radio buttons
-[class*="container-"][style*="background-color: var(--green-360)"] {
+.mapped-container[style*="background-color: var(--green-360)"] {
   --green-360: #{$green}; //vencord plugin settings
   background-color: $green !important;
 }
-[class*="container-"][style*="background-color: var(--primary-400)"], [class*="container-"][style*="background-color: rgb(130, 133, 143)"] {
+.mapped-container[style*="background-color: var(--primary-400)"],
+.mapped-container[style*="background-color: rgb(130, 133, 143)"] {
   background-color: $crust !important; //used in a lot of places
 }
 // vencord spotify plugin button theming support (uses vencord-specific classes)
@@ -108,7 +109,7 @@ div[role="radio"][class*="selected"] {
 }
 
 // these badges appear in the emoji/sticker picker
-[class*="topGuildEmojiBadge-"] {
+.mapped-topGuildEmojiBadge {
   background: linear-gradient(268.26deg, $peach, $red 102.45%);
 
   * {
@@ -116,7 +117,7 @@ div[role="radio"][class*="selected"] {
   }
 }
 
-[class*="newlyAddedBadge-"] {
+.mapped-newlyAddedBadge {
   background: linear-gradient(268.26deg, $teal, $green 102.45%);
 
   * {
@@ -125,8 +126,6 @@ div[role="radio"][class*="selected"] {
 }
 
 //revert nitro icon on nitro subscribe button on external emoji
-[class*="lookFilled-"]
-  [class*="premiumSubscribeButton-"]
-  > [class*="premiumIcon-"] {
+.mapped-lookFilled .mapped-premiumSubscribeButton > .mapped-premiumIcon {
   color: $crust !important;
 }

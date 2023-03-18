@@ -13,7 +13,7 @@
 
 $brand: $blue;
 
-button[class*="emojiButtonNormal"] > div > div {
+button.mapped-emojiButtonNormal > div > div {
   filter: grayscale(0.77) hue-rotate(185deg) brightness(0.7) opacity(100%)
     contrast(2) !important;
 }
@@ -263,7 +263,7 @@ button[class*="emojiButtonNormal"] > div > div {
   --interactive-active: #{$text};
 
   // "spine" svgs before threads
-  svg[class^="spine-"] {
+  svg.mapped-spine {
     color: $surface2;
   }
 
@@ -305,7 +305,7 @@ button[class*="emojiButtonNormal"] > div > div {
   }
 }
 
-nav[class*="guilds-"].theme-dark {
+nav.mapped-guilds.theme-dark {
   @import "@catppuccin/palette/scss/mocha";
 
   // server icons
@@ -313,8 +313,8 @@ nav[class*="guilds-"].theme-dark {
     background-color: lighten($base, 2%);
 
     &:hover,
-    &[class*="selected"] {
-      > div[class^="childWrapper-"] {
+    &.mapped-selected {
+      > div.mapped-childWrapper {
         color: $crust;
         font-weight: 600;
       }
@@ -327,10 +327,10 @@ nav[class*="guilds-"].theme-dark {
   }
 
   // lightens folder wrapper bg
-  span[class^="expandedFolderBackground-"] {
+  span.mapped-expandedFolderBackground {
     background-color: lighten($base, 3%);
   }
-  div[class^="folder-"][class*="hover-"] {
+  div.mapped-folder.mapped-hover {
     background-color: lighten($base, 8%);
   }
 
@@ -341,14 +341,14 @@ nav[class*="guilds-"].theme-dark {
   }
 
   // server list icons
-  div[class^="upperBadge"] {
-    > div[class^="iconBadge"] {
+  div.mapped-upperBadge {
+    > div.mapped-iconBadge {
       path {
         color: $base;
       }
     }
 
-    div[class*="participating-"] {
+    div.mapped-participating {
       background: $green;
     }
   }

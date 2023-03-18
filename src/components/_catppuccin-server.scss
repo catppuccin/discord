@@ -164,33 +164,33 @@ $channelicons: (
   )
 );
 
-div[class*="unread-"],
-div[class^="jumpToPresentBar-"] > button,
-div[class^="newMessagesBar-"] > button {
+div.mapped-unread,
+div.mapped-jumpToPresentBar > button,
+div.mapped-newMessagesBar > button {
   color: $base;
 }
 
 // rules
 a[href="/channels/907385605422448742/992579279835639808"] {
-  *[class^="icon"] {
+  *.mapped-icon {
     color: $red !important;
   }
 }
 
 // announcements
 a[href="/channels/907385605422448742/918688623002550313"] {
-  *[class^="icon"] {
+  *.mapped-icon {
     color: $green !important;
   }
 }
 
 @each $channelid, $icon in $channelicons {
   a[href="/channels/907385605422448742/#{$channelid}"] {
-    *[class*="icon"] {
+    *.mapped-icon {
       color: transparent !important;
     }
 
-    div[class^="iconContainer"]:before {
+    div.mapped-iconContainer:before {
       content: " ";
       -webkit-mask: url("#{map-get($icon, icon)}");
       position: absolute;
@@ -376,15 +376,15 @@ $roleColors: (
 
 @each $colorVal, $colorDec in $roleColors {
   //role colors in chat and sidebar
-  [class*="username-"][style*="#{$colorVal}"] {
+  .mapped-username[style*="#{$colorVal}"] {
     color: #{map-get($colorDec, color)} !important;
   }
   //role color circles
-  [class*="roleCircle-"][style*="#{$colorVal}"] {
+  .mapped-roleCircle[style*="#{$colorVal}"] {
     background-color: #{map-get($colorDec, color)} !important;
   }
   //vencord platform colors
-  [class*="typing-"] strong[style*="#{$colorVal}"] {
+  .mapped-typing strong[style*="#{$colorVal}"] {
     color: #{map-get($colorDec, color)} !important;
   }
 }

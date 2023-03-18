@@ -31,15 +31,10 @@ await Promise.all(
       let newThemeCSS = themeCSS;
 
       for (const key of classNameMap.keys()) {
-        newThemeCSS = newThemeCSS
-          .replaceAll(`[class*=${key}]`, `.${classNameMap.get(key)}`)
-          .replaceAll(`[class^=${key}]`, `.${classNameMap.get(key)}`)
-          .replaceAll(`[class*="${key}"]`, `.${classNameMap.get(key)}`)
-          .replaceAll(`[class^="${key}"]`, `.${classNameMap.get(key)}`)
-          .replaceAll(`[class*=${key}-]`, `.${classNameMap.get(key)}`)
-          .replaceAll(`[class^=${key}-]`, `.${classNameMap.get(key)}`)
-          .replaceAll(`[class*="${key}-"]`, `.${classNameMap.get(key)}`)
-          .replaceAll(`[class^="${key}-"]`, `.${classNameMap.get(key)}`);
+        newThemeCSS = newThemeCSS.replaceAll(
+          `.mapped-${key}`,
+          `.${classNameMap.get(key)}`
+        );
       }
 
       await writeFile(`dist/dist/${file}`, newThemeCSS);

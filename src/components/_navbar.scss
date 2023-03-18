@@ -1,11 +1,11 @@
-nav[class*="guilds-"] {
+nav.mapped-guilds {
   // server icons
   foreignObject > div[data-list-item-id^="guildsnav_"] {
     background-color: lighten($base, 2%);
 
     &:hover,
-    &[class*="selected"] {
-      > div[class^="childWrapper-"] {
+    &.mapped-selected {
+      > div.mapped-childWrapper {
         color: $crust;
         font-weight: 600;
       }
@@ -18,10 +18,10 @@ nav[class*="guilds-"] {
   }
 
   // lightens folder wrapper bg
-  span[class^="expandedFolderBackground-"] {
+  span.mapped-expandedFolderBackground {
     background-color: lighten($base, 3%);
   }
-  div[class^="folder-"][class*="hover-"] {
+  div.mapped-folder.mapped-hover {
     background-color: lighten($base, 8%);
   }
 
@@ -33,16 +33,16 @@ nav[class*="guilds-"] {
 }
 
 // server list icons
-div[class^="upperBadge"] {
-  > div[class^="iconBadge"] path {
+div.mapped-upperBadge {
+  > div.mapped-iconBadge path {
     color: $crust;
   }
 
-  div[class*="participating-"] {
+  div.mapped-participating {
     background: $green;
   }
 }
 
-div[class^="lowerBadge"] div[class^="iconBadge"] path {
+div.mapped-lowerBadge div.mapped-iconBadge path {
   color: $crust;
 }

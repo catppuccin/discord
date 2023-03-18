@@ -1,9 +1,9 @@
 // "spine" svgs before threads
-svg[class^="spine-"] {
+svg.mapped-spine {
   color: $surface2;
 }
 
-div[class^="spineBorder-"] {
+div.mapped-spineBorder {
   background: $surface2;
 }
 
@@ -45,21 +45,21 @@ ul[aria-label$=" threads"] > li:nth-child(6n) {
 }
 
 // bot tag in sidebar
-[class^="botText"] {
+.mapped-botText {
   color: $crust;
   font-weight: 600;
 }
 
-svg[class^="botTagVerified"] {
+svg.mapped-botTagVerified {
   color: $crust;
 }
 
-div[class*="activePostCount-"] {
+div.mapped-activePostCount {
   background-color: $surface0;
   color: $text !important;
 }
 
-div[class*="newPostCount-"] {
+div.mapped-newPostCount {
   background-color: $text;
   color: $crust;
 }
