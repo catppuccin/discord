@@ -5,7 +5,8 @@ on:
     branches:
       - main
     paths:
-      - 'src/**'
+      - "src/**"
+  workflow_dispatch:
 
 jobs:
   deploy:
