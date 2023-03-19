@@ -53,7 +53,7 @@ await Promise.all(
         newThemeCSS = newThemeCSS.replaceAll(
           new RegExp(`\\.mapped\\-${key}(?=(\\.|,|\\{|\\[| |:|\\)))`, "g"),
           hashedClasses.size > 5
-            ? `[class*=${key}-]`
+            ? `:is([class^=${key}-], [class*=" ${key}-"])`
             : hashedClasses.size > 1
             ? `:is(${[...hashedClasses].map((k) => `.${k}`).join(", ")})`
             : `.${[...hashedClasses][0]}`
