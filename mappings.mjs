@@ -1,12 +1,25 @@
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import pLimit from "p-limit";
 
-const html = await fetch("https://discord.com/app").then((res) => res.text());
+/**
+ * winston
+ * @param {string} url
+ */
+const fetchThatCrashes = async (url) => {
+  const res = await fetch(url);
+  if (!res.ok) {
+    throw new Error(`Error fetching ${url}: ${res.status} ${res.statusText}`);
+  }
+
+  return res.text();
+};
+
+const html = await fetchThatCrashes("https://discord.com/app");
 const originalCSSURL = new URL(
   html.match(/<link rel="stylesheet" href="([/a-zA-Z0-9\.]+)"/)[1],
   "https://discord.com/"
 ).toString();
-const originalCSS = await fetch(originalCSSURL).then((res) => res.text());
+const originalCSS = await fetchThatCrashes(originalCSSURL);
 
 const classNameRegex = /\.([a-zA-Z-]+)\-[a-zA-Z0-9\_\-]{6}(?=(\.|,|\{|\[))/g;
 const classNameMap = new Map();
