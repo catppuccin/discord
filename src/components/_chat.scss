@@ -69,7 +69,9 @@
   //   color: $overlay0;
   // }
 
-  .mapped-inlineCode {
+  .mapped-inlineCode,
+  .mapped-after_inlineCode,
+  .mapped-before_inlineCode {
     background: $surface0;
   }
 
