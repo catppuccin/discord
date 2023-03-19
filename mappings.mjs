@@ -26,7 +26,10 @@ const classNameRegex =
 const classNameMap = new Map();
 
 [...originalCSS.matchAll(classNameRegex)].forEach((v) => {
-  classNameMap.set(v[1], v[0].substring(1, v[0].length - 1));
+  const mappedClass = v[0].substring(1, v[0].length - 1);
+
+  if (!classNameMap.has(v[1])) classNameMap.set(v[1], new Set([mappedClass]));
+  else classNameMap.get(v[1]).add(mappedClass);
 });
 
 console.log(`${classNameMap.size} class names found`);
@@ -45,9 +48,13 @@ await Promise.all(
       let newThemeCSS = themeCSS;
 
       for (const key of classNameMap.keys()) {
+        const hashedClasses = classNameMap.get(key);
+
         newThemeCSS = newThemeCSS.replaceAll(
           new RegExp(`\\.mapped\\-${key}(?=(\\.|,|\\{|\\[| |:|\\)))`, "g"),
-          `.${classNameMap.get(key)}`
+          hashedClasses.size > 5
+            ? `[class*=${key}-]`
+            : [...hashedClasses].map((k) => `.${k}`).join(", ")
         );
       }
 
