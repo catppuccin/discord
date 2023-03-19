@@ -54,7 +54,7 @@ await Promise.all(
           new RegExp(`\\.mapped\\-${key}(?=(\\.|,|\\{|\\[| |:|\\)))`, "g"),
           hashedClasses.size > 5
             ? `[class*=${key}-]`
-            : [...hashedClasses].map((k) => `.${k}`).join(", ")
+            : `:is(${[...hashedClasses].map((k) => `.${k}`).join(", ")})`
         );
       }
 
