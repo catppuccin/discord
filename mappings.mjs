@@ -26,7 +26,7 @@ const classNameRegex =
 const classNameMap = new Map();
 
 [...originalCSS.matchAll(classNameRegex)].forEach((v) => {
-  const mappedClass = v[0].substring(1, v[0].length - 1);
+  const mappedClass = v[0].substring(1);
 
   if (!classNameMap.has(v[1])) classNameMap.set(v[1], new Set([mappedClass]));
   else classNameMap.get(v[1]).add(mappedClass);
@@ -54,7 +54,9 @@ await Promise.all(
           new RegExp(`\\.mapped\\-${key}(?=(\\.|,|\\{|\\[| |:|\\)))`, "g"),
           hashedClasses.size > 5
             ? `[class*=${key}-]`
-            : `:is(${[...hashedClasses].map((k) => `.${k}`).join(", ")})`
+            : hashedClasses.size > 1
+            ? `:is(${[...hashedClasses].map((k) => `.${k}`).join(", ")})`
+            : `.${[...hashedClasses][0]}`
         );
       }
 
