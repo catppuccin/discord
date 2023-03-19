@@ -21,7 +21,8 @@ const originalCSSURL = new URL(
 ).toString();
 const originalCSS = await fetchThatCrashes(originalCSSURL);
 
-const classNameRegex = /\.([a-zA-Z-]+)\-[a-zA-Z0-9\_\-]{6}(?=(\.|,|\{|\[))/g;
+const classNameRegex =
+  /\.([a-zA-Z0-9\-]+)\-[a-zA-Z0-9\_\-]{6}(?=(\.|,|\{|\[| |:|\)))/g;
 const classNameMap = new Map();
 
 [...originalCSS.matchAll(classNameRegex)].forEach((v) => {
@@ -35,7 +36,7 @@ const lim = pLimit(10);
 await Promise.all(
   (
     await readdir("dist/dist/")
-  ).map((file, idx) => {
+  ).map((file) => {
     lim(async () => {
       const themeCSS = await readFile(`dist/dist/${file}`, {
         encoding: "utf-8",
@@ -45,7 +46,7 @@ await Promise.all(
 
       for (const key of classNameMap.keys()) {
         newThemeCSS = newThemeCSS.replaceAll(
-          `.mapped-${key}`,
+          new RegExp(`\\.mapped\\-${key}(?=(\\.|,|\\{|\\[| |:|\\)))`, "g"),
           `.${classNameMap.get(key)}`
         );
       }
@@ -56,7 +57,7 @@ await Promise.all(
 
       if (remainingMatches.length > 0) {
         console.warn(
-          "Unresolved class named found!",
+          "Unresolved class names found!",
           remainingMatches.map((k) => k[1])
         );
       }
