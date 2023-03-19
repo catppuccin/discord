@@ -7,7 +7,7 @@ $svgBg: (
 @each $class, $color in $svgBg {
   .theme-dark,
   .theme-light {
-    svg[class*="#{$class}-"] {
+    svg.mapped-#{$class} {
       background-color: #{map-get($color, color)};
     }
   }
