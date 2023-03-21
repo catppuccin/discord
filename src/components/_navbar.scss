@@ -27,7 +27,8 @@ nav[class*="guilds-"] {
 
   // create server/discovery
   div[data-list-item-id="guildsnav___create-join-button"] svg > path,
-  div[data-list-item-id="guildsnav___guild-discover-button"] svg > path {
+  div[data-list-item-id="guildsnav___guild-discover-button"] svg > path,
+  div[data-list-item-id="guildsnav___app-download-button"] svg > path {
     fill: $green;
   }
 }
