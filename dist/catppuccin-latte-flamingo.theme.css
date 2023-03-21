@@ -1846,7 +1846,8 @@ nav[class*=guilds-] div[class^=folder-][class*=hover-] {
   background-color: white;
 }
 nav[class*=guilds-] div[data-list-item-id=guildsnav___create-join-button] svg > path,
-nav[class*=guilds-] div[data-list-item-id=guildsnav___guild-discover-button] svg > path {
+nav[class*=guilds-] div[data-list-item-id=guildsnav___guild-discover-button] svg > path,
+nav[class*=guilds-] div[data-list-item-id=guildsnav___app-download-button] svg > path {
   fill: #40a02b;
 }
 
