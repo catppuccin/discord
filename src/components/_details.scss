@@ -69,11 +69,11 @@ rect[fill="#593695"] {
 
 //recolor spotify platform indicator
 [src="/assets/eaeac24163b35f7526704a3d9b3c7722.svg"] {
-    width: 0;
-    padding: 12px;
-    height: 0;
-    -webkit-mask-image: url("https://discord.com/assets/eaeac24163b35f7526704a3d9b3c7722.svg");
-    background: $green;
+  width: 0;
+  padding: 12px;
+  height: 0;
+  -webkit-mask-image: url("https://discord.com/assets/eaeac24163b35f7526704a3d9b3c7722.svg");
+  background: $green;
 }
 
 // dots in typing
@@ -105,7 +105,9 @@ div[class*="flowerStarContainer-"] {
   }
 
   &[class*="iconBackgroundTierOne-"],
-  &[class*="iconBackgroundTierTwo-"]:not([class*="boostedGuildTierIconBackgroundWithVisibleBanner"]) {
+  &[class*="iconBackgroundTierTwo-"]:not(
+      [class*="boostedGuildTierIconBackgroundWithVisibleBanner"]
+    ) {
     svg[class*="flowerStar-"] * {
       fill: $surface2;
     }
@@ -203,11 +205,6 @@ div[class*="avatarSpeaking-"] {
     inset 0 0 0 3px var(--background-secondary);
 }
 
-//new discord speaking indicator fix
-[class*="border-"][class*="speaking-"] {
-  --green-360: $green;
-}
-
 div[class*="videoLayer-"] > div[class^="tileChild"] > div[class^="border"] {
   &[class*="speaking-"] {
     -webkit-box-shadow: inset 0 0 0 2px $green, inset 0 0 0 3px $green;
@@ -241,6 +238,9 @@ div[class*="tryItOutBadge-"] {
 }
 
 span[class*="channelMention"]:hover,
-[class*="mention"]:not([class*="mentionButton-"], [class*="mentionIcon-"]):hover {
+[class*="mention"]:not(
+    [class*="mentionButton-"],
+    [class*="mentionIcon-"]
+  ):hover {
   color: $crust;
 }
