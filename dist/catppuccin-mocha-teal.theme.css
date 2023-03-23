@@ -117,6 +117,8 @@ html {
   --status-red-530: #f38ba8;
   --status-yellow-500: #f9e2af;
   --black-500: #11111b;
+  --green-360: #a6e3a1;
+  --primary-400: #bac2de;
   --primary-dark-700: #11111b;
   --status-green-560: #a6e3a1;
   --white-500: #cdd6f4;
@@ -1884,10 +1886,6 @@ div[class*=avatarSpeaking-] {
   box-shadow: inset 0 0 0 2px #a6e3a1, inset 0 0 0 3px var(--background-secondary);
 }
 
-[class*=border-][class*=speaking-] {
-  --green-360: $green;
-}
-
 div[class*=videoLayer-] > div[class^=tileChild] > div[class^=border][class*=speaking-] {
   -webkit-box-shadow: inset 0 0 0 2px #a6e3a1, inset 0 0 0 3px #a6e3a1;
   box-shadow: inset 0 0 0 2px #a6e3a1, inset 0 0 0 3px #a6e3a1;
@@ -1915,7 +1913,8 @@ div[class*=tryItOutBadge-] {
 }
 
 span[class*=channelMention]:hover,
-[class*=mention]:not([class*=mentionButton-], [class*=mentionIcon-]):hover {
+[class*=mention]:not([class*=mentionButton-],
+[class*=mentionIcon-]):hover {
   color: #11111b;
 }
 
