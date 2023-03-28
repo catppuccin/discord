@@ -1,12 +1,12 @@
 /* ==UserStyle==
 @name           Discord Catppuccin
 @namespace      github.com/catppuccin/discord
-@version        0.2.0
+@version        0.2.1
 @description    Soothing pastel theme for Discord
 @author         Catppuccin
 @preprocessor   stylus
 @var select theme "Theme" ["latte:Latte", "frappe:Frappe", "macchiato:Macchiato", "mocha:Mocha*"]
-@var select accent "Accent" ["'rosewater'", "'flamingo'", "'pink'", "'mauve'", "'red'", "'maroon'", "'peach'", "'yellow'", "'green'", "'teal'", "'blue'*", "'sapphire'", "'sky'", "'lavender'"]
+@var select accent "Accent" {"Rosewater": "'rosewater'", "Flamingo": "'flamingo'", "Pink": "'pink'", "Mauve": "'mauve'", "Red": "'red'", "Maroon": "'maroon'", "Peach": "'peach'", "Yellow": "'yellow'", "Green": "'green'", "Teal": "'teal'", "Blue*": "'blue'", "Sapphire": "'sapphire'", "Sky": "'sky'", "Lavender'": "'lavender'"}
 ==/UserStyle== */
 
 @-moz-document regexp("https?://(canary\\.|ptb\\.|)discord.com/.*") {
