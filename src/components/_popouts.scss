@@ -15,7 +15,9 @@ div[class^="layerContainer"] [role="menu"] {
       }
     }
 
-    &[role="menuitem"]:not([class*="colorDanger"]):not([id*="user-context-user-volume"]):hover {
+    &[role="menuitem"]:not([class*="colorDanger"]):not(
+        [id*="user-context-user-volume"]
+      ):hover {
       background: var(--background-accent);
       color: $crust;
 
@@ -191,6 +193,11 @@ section[class^="positionContainer-"] {
     background-color: $brand;
     color: $crust;
   }
+}
+
+// Latte text color on gif categories
+.theme-light section[class^="positionContainer-"] div[class^="categoryText-"] {
+  color: $base;
 }
 
 #emoji-picker-tab-panel {
