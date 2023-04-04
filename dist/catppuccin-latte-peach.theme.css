@@ -2382,6 +2382,10 @@ section[class^=positionContainer-] button[class*=navButtonActive] {
   color: #dce0e8;
 }
 
+.theme-light section[class^=positionContainer-] div[class^=categoryText-] {
+  color: #eff1f5;
+}
+
 #emoji-picker-tab-panel [class*=stickerInspected-] [class*=inspectedIndicator],
 #emoji-picker-tab-panel [class^=emojiItem-][class*=emojiItemSelected-] {
   background-color: var(--brand-experiment-25a);
