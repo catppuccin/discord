@@ -1186,6 +1186,10 @@ div[class^=chat] > div[class^=content-] main[class^=chatContent-] + div[class^=c
   background-color: var(--background-secondary);
 }
 
+[class*=channelTextAreaInnerError-] {
+  border: 1px solid #f38ba8 !important;
+}
+
 div[class^=callContainer-] [class*=controlIcon-] {
   color: #b5bfe2;
 }
