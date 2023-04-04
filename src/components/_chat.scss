@@ -245,6 +245,11 @@ div[class^="chat"]
   background-color: var(--background-secondary);
 }
 
+// fix error border when attempting to start a thread with no message
+[class*="channelTextAreaInnerError-"] {
+  border: 1px solid #f38ba8 !important;
+}
+
 // calls
 div[class^="callContainer-"] {
   [class*="controlIcon-"] {
