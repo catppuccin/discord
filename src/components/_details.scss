@@ -66,6 +66,10 @@ rect[fill="#593695"] {
 .vc-platform-indicator svg[fill*="--red-"] {
   fill: $red;
 }
+// -- offline
+.vc-platform-indicator svg[fill*="--primary-400"] {
+  fill: $subtext0;
+}
 
 //recolor spotify platform indicator
 [src="/assets/eaeac24163b35f7526704a3d9b3c7722.svg"] {
