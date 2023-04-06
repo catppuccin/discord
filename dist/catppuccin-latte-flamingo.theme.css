@@ -2710,6 +2710,10 @@ rect[fill="#593695"] {
   fill: #d20f39;
 }
 
+.vc-platform-indicator svg[fill*="--primary-400"] {
+  fill: #6c6f85;
+}
+
 [src="/assets/eaeac24163b35f7526704a3d9b3c7722.svg"] {
   width: 0;
   padding: 12px;

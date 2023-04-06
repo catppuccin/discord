@@ -1796,6 +1796,10 @@ rect[fill="#593695"] {
   fill: #ed8796;
 }
 
+.vc-platform-indicator svg[fill*="--primary-400"] {
+  fill: #a5adcb;
+}
+
 [src="/assets/eaeac24163b35f7526704a3d9b3c7722.svg"] {
   width: 0;
   padding: 12px;
