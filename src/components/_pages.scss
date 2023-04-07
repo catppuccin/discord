@@ -640,6 +640,10 @@ div[class^="tierPreviews-"] {
 }
 
 div[class^="notice-"] {
+  div[class*="noticeText-"] {
+    color: $crust;
+  }
+
   div[class*="header-"] {
     color: $crust;
   }
