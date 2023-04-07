@@ -903,6 +903,9 @@ div[class^=tierPreviews-] button[class^=button-] {
   background: linear-gradient(90deg, #81c8be, #8caaee);
 }
 
+div[class^=notice-] div[class*=noticeText-] {
+  color: #232634;
+}
 div[class^=notice-] div[class*=header-] {
   color: #232634;
 }
