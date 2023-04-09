@@ -5,7 +5,7 @@ div[class^="sidebarRegion-"] {
       fill: $pink !important;
     }
 
-    &[class*="selected-"] {
+    &[class|="selected-"] {
       background-color: $brand !important;
       color: $crust !important;
 
@@ -20,7 +20,7 @@ div[class^="sidebarRegion-"] {
       fill: $pink;
     }
 
-    > div[class*="selected"] {
+    > div[class|="selected"] {
       color: $crust;
 
       svg > path {
@@ -29,17 +29,17 @@ div[class^="sidebarRegion-"] {
     }
   }
 
-  div[class*="tabBarItemContainer-"] [class*="textBadge-"] {
+  div[class|="tabBarItemContainer-"] [class|="textBadge-"] {
     color: $crust;
 
-    &[style*="background-color: var(--brand-500);"] {
+    &[style|="background-color: var(--brand-500);"] {
       background-color: $brand !important;
     }
   }
 }
 
 div[class^="contentRegion-"] {
-  div[class*="noticeRegion-"] div[style="background-color: rgb(24, 25, 28);"] {
+  div[class|="noticeRegion-"] div[style="background-color: rgb(24, 25, 28);"] {
     background-color: $crust !important;
   }
 
@@ -65,33 +65,33 @@ div[class^="contentRegion-"] {
 
   [id="privacy-&-safety-tab"] {
     div[class^="radioBar-"] {
-      &[style*="hsl(139,"] {
+      &[style|="hsl(139,"] {
         border-color: $green;
       }
 
-      &[style*="hsl(37,"] {
+      &[style|="hsl(37,"] {
         border-color: $yellow;
       }
 
-      &[style*="hsl(359,"] {
+      &[style|="hsl(359,"] {
         border-color: $red;
       }
     }
 
-    div[class*="betaTagIcon"] {
+    div[class|="betaTagIcon"] {
       background-color: $brand !important;
       color: $crust;
     }
   }
 
   #accessibility-tab {
-    button[class*="colorBrandNew"] {
+    button[class|="colorBrandNew"] {
       background-color: $brand;
     }
   }
 
   #keybinds-tab {
-    span[class*="key"] {
+    span[class|="key"] {
       color: $crust;
       g {
         fill: $crust;
@@ -104,7 +104,7 @@ div[class^="contentRegion-"] {
       color: $pink;
     }
 
-    div[class*="gemIndicatorContainer-"] {
+    div[class|="gemIndicatorContainer-"] {
       background-color: $base;
 
       div[class^="tierLabel-"] {
@@ -112,7 +112,7 @@ div[class^="contentRegion-"] {
       }
     }
 
-    button[class*="lookInverted-"] {
+    button[class|="lookInverted-"] {
       color: $crust;
       background-color: $text;
 
@@ -121,8 +121,8 @@ div[class^="contentRegion-"] {
       }
     }
 
-    div[class*="card-"],
-    h3[class*="price-"] {
+    div[class|="card-"],
+    h3[class|="price-"] {
       color: $text !important;
     }
   }
@@ -141,7 +141,7 @@ div[class^="contentRegion-"] {
   }
 
   #discord-nitro-tab {
-    button[class*="buttonWhite"] {
+    button[class|="buttonWhite"] {
       color: $text !important;
       border-color: $text !important;
     }
@@ -150,19 +150,19 @@ div[class^="contentRegion-"] {
       color: $text !important;
     }
 
-    svg[class*="sparkleStar-"] {
+    svg[class|="sparkleStar-"] {
       color: $text;
     }
 
-    div[class*="description-"] {
+    div[class|="description-"] {
       color: $subtext1 !important;
     }
 
-    div[class*="card-"] {
+    div[class|="card-"] {
       color: $text;
     }
 
-    button[class*="lookInverted-"] {
+    button[class|="lookInverted-"] {
       color: $crust;
       background-color: $text;
 
@@ -173,11 +173,11 @@ div[class^="contentRegion-"] {
   }
 
   #billing-tab {
-    div[class*="subtext"] {
+    div[class|="subtext"] {
       color: $subtext1;
     }
 
-    [class*="Divider"] {
+    [class|="Divider"] {
       border-color: var(--background-modifier-accent);
     }
 
@@ -186,7 +186,7 @@ div[class^="contentRegion-"] {
       background-color: $surface1;
     }
 
-    div[class*="summaryInfo"],
+    div[class|="summaryInfo"],
     [class^="paymentHeader-"] {
       color: $text;
       border-color: var(--background-modifier-accent);
@@ -197,8 +197,8 @@ div[class^="contentRegion-"] {
     }
 
     div[class^="paymentPane-"],
-    div[class*="paginator-"],
-    div[class*="payment-"] {
+    div[class|="paginator-"],
+    div[class|="payment-"] {
       background-color: $surface0;
       color: $text;
     }
@@ -207,7 +207,7 @@ div[class^="contentRegion-"] {
       background-color: $surface1;
     }
 
-    [class*="paymentText-"] {
+    [class|="paymentText-"] {
       color: $subtext1;
     }
 
@@ -225,19 +225,19 @@ div[class^="contentRegion-"] {
   }
 
   #notifications-tab {
-    button[class*="marketingUnsubscribeButton-"] {
+    button[class|="marketingUnsubscribeButton-"] {
       color: $text;
     }
   }
 
   #game-activity-tab {
-    div[class*="nowPlayingAdd-"],
-    div[class*="lastPlayed-"],
-    div[class*="overlayStatusText-"] {
+    div[class|="nowPlayingAdd-"],
+    div[class|="lastPlayed-"],
+    div[class|="overlayStatusText-"] {
       color: var(--text-muted);
     }
 
-    div[class*="activeGame-"][class*="nowPlaying"] * {
+    div[class|="activeGame-"][class|="nowPlaying"] * {
       color: $crust;
 
       svg > g > path {
@@ -249,7 +249,7 @@ div[class^="contentRegion-"] {
       color: $text;
     }
 
-    input[class*="gameNameInput-"] {
+    input[class|="gameNameInput-"] {
       &:hover,
       &:focus {
         background-color: $mantle;
@@ -258,38 +258,38 @@ div[class^="contentRegion-"] {
       }
     }
 
-    div[class*="game-"] {
+    div[class|="game-"] {
       -webkit-box-shadow: 0 1px 0 0 var(--background-modifier-accent);
       box-shadow: 0 1px 0 0 var(--background-modifier-accent);
     }
 
-    div[class*="removeGame-"] {
+    div[class|="removeGame-"] {
       background-color: $surface0;
     }
   }
 
   #emoji-tab {
-    div[class*="emojiRemove-"] {
+    div[class|="emojiRemove-"] {
       background-color: $surface0;
     }
   }
 
   // Voice & Audio checks
   section[class^="inputSensitivityToggle-"] {
-    div[class*="speaking-"] {
+    div[class|="speaking-"] {
       background: $green !important;
     }
   }
 
-  div[class*="reactionMe-"] {
+  div[class|="reactionMe-"] {
     background-color: $surface0 !important;
   }
 
   // toggles in preferencs
   // checked
-  div[class^="control-"] > div[class*="checked-"],
-  div[class^="sensitivity-"] div[class*="checked-"],
-  div[style*="background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%)"] {
+  div[class^="control-"] > div[class|="checked-"],
+  div[class^="sensitivity-"] div[class|="checked-"],
+  div[style|="background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%)"] {
     background-color: $green !important;
 
     // svg[class^="slider-"] {
@@ -305,7 +305,7 @@ div[class^="contentRegion-"] {
 
   // unchecked
   div[class^="control"] {
-    > div[style*="background-color: hsl(218, calc(var(--saturation-factor, 1) * 4.6%), 46.9%)"] {
+    > div[style|="background-color: hsl(218, calc(var(--saturation-factor, 1) * 4.6%), 46.9%)"] {
       background-color: $surface2 !important;
     }
 
@@ -316,13 +316,13 @@ div[class^="contentRegion-"] {
 
   // server boost page
   #guild_premium-tab {
-    [class*="tierAccomplished-"],
-    [class*="tierCurrent-"],
-    [class*="tierFirst-"] {
+    [class|="tierAccomplished-"],
+    [class|="tierCurrent-"],
+    [class|="tierFirst-"] {
       background: $pink;
     }
 
-    [class*="tierInProgress-"] {
+    [class|="tierInProgress-"] {
       background-color: $crust;
     }
 
@@ -351,7 +351,7 @@ div[class^="contentRegion-"] {
         color: $pink;
       }
 
-      svg[class*="tierIconLocked-"] {
+      svg[class|="tierIconLocked-"] {
         color: $overlay1;
       }
 
@@ -373,7 +373,7 @@ div[class^="contentRegion-"] {
   }
 
   #discovery-tab {
-    div[class*="checklistIcon"] svg {
+    div[class|="checklistIcon"] svg {
       &[viewBox="0 0 14 14"] path {
         fill: $red;
       }
@@ -384,7 +384,7 @@ div[class^="contentRegion-"] {
   }
 
   #guild_templates-tab {
-    svg[class*="descriptionIcon"] {
+    svg[class|="descriptionIcon"] {
       &[viewBox="0 0 24 24"] path {
         fill: $green;
       }
@@ -400,23 +400,23 @@ div[class^="contentRegion-"] {
   }
 
   #stickers-tab {
-    div[class*="tierHeaderContent"] {
+    div[class|="tierHeaderContent"] {
       background-color: $crust;
     }
-    div[class*="tierBody"] {
+    div[class|="tierBody"] {
       background-color: $mantle;
     }
   }
 
   #roles-tab {
-    div[class*="previewContainer-"] {
+    div[class|="previewContainer-"] {
       .theme-light {
-        img[class*="roleIcon-"] {
+        img[class|="roleIcon-"] {
           content: "data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.0749 1.66667H4.99996C3.15901 1.66667 1.66663 3.15906 1.66663 5.00001V15C1.66663 16.841 3.15901 18.3333 4.99996 18.3333H15C16.8409 18.3333 18.3333 16.841 18.3333 15V8.92511C17.8052 9.08227 17.2458 9.16667 16.6666 9.16667C13.445 9.16667 10.8333 6.555 10.8333 3.33334C10.8333 2.75419 10.9177 2.19476 11.0749 1.66667ZM6.66663 5.00001C7.58596 5.00001 8.33329 5.74601 8.33329 6.66667C8.33329 7.58801 7.58596 8.33334 6.66663 8.33334C5.74529 8.33334 4.99996 7.58801 4.99996 6.66667C4.99996 5.74601 5.74529 5.00001 6.66663 5.00001ZM4.99996 15L7.49996 11.6667L9.16663 13.3333L12.5 9.16667L15 15H4.99996Z' fill='%23#{str-slice(inspect($surface1), 2)}'/%3E%3Cpath d='M17.5 0V2.5H20V4.16667H17.5V6.66667H15.8334V4.16667H13.3334V2.5H15.8334V0H17.5Z' fill='%23#{str-slice(inspect($surface1), 2)}'/%3E%3C/svg%3E";
         }
       }
       .theme-dark {
-        img[class*="roleIcon-"] {
+        img[class|="roleIcon-"] {
           content: "data:image/svg+xml,%3Csvg fill='none' height='20' viewBox='0 0 20 20' width='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23#{str-slice(inspect($text), 2)}'%3E%3Cpath clip-rule='evenodd' d='m11.0749 1.66667h-6.07488c-1.84095 0-3.33333 1.49239-3.33333 3.33334v9.99999c0 1.841 1.49238 3.3333 3.33333 3.3333h9.99998c1.841 0 3.3334-1.4923 3.3334-3.3333v-6.07489c-.5281.15716-1.0876.24156-1.6667.24156-3.2217 0-5.8333-2.61167-5.8333-5.83333 0-.57915.0844-1.13858.2415-1.66667zm-4.40821 3.33334c.91933 0 1.66666.746 1.66666 1.66666 0 .92134-.74733 1.66667-1.66666 1.66667-.92134 0-1.66667-.74533-1.66667-1.66667 0-.92066.74533-1.66666 1.66667-1.66666zm-1.66667 9.99999 2.5-3.3333 1.66667 1.6666 3.33331-4.16663 2.5 5.83333z' fill-rule='evenodd'/%3E%3Cpath d='m17.5 0v2.5h2.5v1.66667h-2.5v2.5h-1.6667v-2.5h-2.5v-1.66667h2.5v-2.5z'/%3E%3C/g%3E%3C/svg%3E";
         }
       }
@@ -511,12 +511,12 @@ div[class^="perksModal"] {
     color: $base;
   }
 
-  div[class*="tierMarkerLabelText"],
+  div[class|="tierMarkerLabelText"],
   svg[class^="tierLock"] {
     color: var(--text-muted);
   }
 
-  div[class*="selectedTier"] div[class*="tierMarkerLabelText"] {
+  div[class|="selectedTier"] div[class|="tierMarkerLabelText"] {
     color: var(--text-normal);
   }
 
@@ -525,7 +525,7 @@ div[class^="perksModal"] {
     color: var(--text-muted);
   }
 
-  svg[class*="unlocked"] {
+  svg[class|="unlocked"] {
     color: $green;
   }
 }
@@ -556,15 +556,15 @@ div[class^="sidebar-"] div[class^="container"] {
 div[class^="pageWrapper-"] {
   background: $base !important;
 
-  div[class*="searchBox-"] {
+  div[class|="searchBox-"] {
     background-color: $mantle;
 
-    svg[class*="clearIcon"] path {
+    svg[class|="clearIcon"] path {
       fill: $overlay0;
     }
   }
 
-  div[class*="categoryPill-"][class*="selected-"] div {
+  div[class|="categoryPill-"][class|="selected-"] div {
     color: $crust !important;
   }
 }
@@ -573,7 +573,7 @@ div[class^="pageWrapper-"] {
 div[class^="homeContainer-"] {
   background: $base !important;
 
-  > div[class^="homeContent-"] div[class*="card-"] {
+  > div[class^="homeContent-"] div[class|="card-"] {
     background: $surface0 !important;
   }
 }
@@ -583,22 +583,22 @@ section[class^="title-"] {
   background: var(--background-primary) !important;
 }
 
-div[class^="categoryItem-"][class*="selectedCategoryItem"],
-button[class*="lookFilled"] div[class*="addButton"] {
+div[class^="categoryItem-"][class|="selectedCategoryItem"],
+button[class|="lookFilled"] div[class|="addButton"] {
   // color when selected or if button
   color: $crust !important;
 }
 
 // new label
-div[class^="itemInner-"] div[class^="new-"] > div[class*="newText-"] {
+div[class^="itemInner-"] div[class^="new-"] > div[class|="newText-"] {
   color: $crust !important;
 }
 
 // app directory
-div[class*="directoryModal-"] {
+div[class|="directoryModal-"] {
   background-color: $base !important;
 
-  & [class*="searchBox"] {
+  & [class|="searchBox"] {
     background-color: $mantle !important;
 
     & [name="search"]::placeholder {
@@ -606,7 +606,7 @@ div[class*="directoryModal-"] {
     }
   }
 
-  & [role="button"][class*="activeButton"] {
+  & [role="button"][class|="activeButton"] {
     color: $crust;
   }
 }
@@ -640,11 +640,11 @@ div[class^="tierPreviews-"] {
 }
 
 div[class^="notice-"] {
-  div[class*="noticeText-"] {
+  div[class|="noticeText-"] {
     color: $crust;
   }
 
-  div[class*="header-"] {
+  div[class|="header-"] {
     color: $crust;
   }
 

@@ -6,7 +6,7 @@ $imgContent: (
 );
 
 @each $class, $icon in $imgContent {
-  [class*="#{$class}-"] {
+  [class|="#{$class}-"] {
     content: url("#{map-get($icon, icon)}") !important;
   }
 }

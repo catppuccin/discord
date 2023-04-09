@@ -54,12 +54,12 @@ svg[class^="botTagVerified"] {
   color: $crust;
 }
 
-div[class*="activePostCount-"] {
+div[class|="activePostCount-"] {
   background-color: $surface0;
   color: $text !important;
 }
 
-div[class*="newPostCount-"] {
+div[class|="newPostCount-"] {
   background-color: $text;
   color: $crust;
 }

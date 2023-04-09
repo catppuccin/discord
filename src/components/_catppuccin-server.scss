@@ -192,7 +192,7 @@ $channelicons: (
   )
 );
 
-div[class*="unread-"],
+div[class|="unread-"],
 div[class^="jumpToPresentBar-"] > button,
 div[class^="newMessagesBar-"] > button {
   color: $base;
@@ -214,7 +214,7 @@ a[href="/channels/907385605422448742/918688623002550313"] {
 
 @each $channelid, $icon in $channelicons {
   a[href="/channels/907385605422448742/#{$channelid}"] {
-    *[class*="icon"] {
+    *[class|="icon"] {
       color: transparent !important;
     }
 
@@ -404,20 +404,20 @@ $roleColors: (
 
 @each $colorVal, $colorDec in $roleColors {
   //role colors in chat and sidebar
-  [class*="username-"][style*="#{$colorVal}"] {
+  [class|="username-"][style|="#{$colorVal}"] {
     color: #{map-get($colorDec, color)} !important;
   }
   //role color circles
-  [class*="roleCircle-"][style*="#{$colorVal}"] {
+  [class|="roleCircle-"][style|="#{$colorVal}"] {
     background-color: #{map-get($colorDec, color)} !important;
   }
   //vencord platform colors
-  [class*="typing-"] strong[style*="#{$colorVal}"] {
+  [class|="typing-"] strong[style|="#{$colorVal}"] {
     color: #{map-get($colorDec, color)} !important;
   }
 }
 
-li[id*="chat-messages-921217923790561360-"] {
+li[id|="chat-messages-921217923790561360-"] {
   article[style="border-color: hsla(120, calc(var(--saturation-factor, 1) * 100%), 29.8%, 1);"] {
     border-color: $green !important;
   }

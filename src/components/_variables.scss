@@ -282,7 +282,7 @@ html {
   --interactive-active: #{$text};
 
   // make tooltips that you can't hover surface0
-  [class*="disabledPointerEvents"] {
+  [class|="disabledPointerEvents"] {
     --background-floating: #{$surface0};
     --background-tertiary: #{lighten($base, 3%)};
 
@@ -290,8 +290,8 @@ html {
       color: $subtext0;
     }
 
-    [class*="tooltipBrand-"] {
-      [class*="tooltipText-"] {
+    [class|="tooltipBrand-"] {
+      [class|="tooltipText-"] {
         color: $crust;
       }
     }

@@ -13,7 +13,7 @@
 
 $brand: $blue;
 
-button[class*="emojiButtonNormal"] > div > div {
+button[class|="emojiButtonNormal"] > div > div {
   filter: grayscale(0.77) hue-rotate(185deg) brightness(0.7) opacity(100%)
     contrast(2) !important;
 }
@@ -305,7 +305,7 @@ button[class*="emojiButtonNormal"] > div > div {
   }
 }
 
-nav[class*="guilds-"].theme-dark {
+nav[class|="guilds-"].theme-dark {
   @import "@catppuccin/palette/scss/mocha";
 
   // server icons
@@ -313,7 +313,7 @@ nav[class*="guilds-"].theme-dark {
     background-color: lighten($base, 2%);
 
     &:hover,
-    &[class*="selected"] {
+    &[class|="selected"] {
       > div[class^="childWrapper-"] {
         color: $crust;
         font-weight: 600;
@@ -330,7 +330,7 @@ nav[class*="guilds-"].theme-dark {
   span[class^="expandedFolderBackground-"] {
     background-color: lighten($base, 3%);
   }
-  div[class^="folder-"][class*="hover-"] {
+  div[class^="folder-"][class|="hover-"] {
     background-color: lighten($base, 8%);
   }
 
@@ -348,7 +348,7 @@ nav[class*="guilds-"].theme-dark {
       }
     }
 
-    div[class*="participating-"] {
+    div[class|="participating-"] {
       background: $green;
     }
   }

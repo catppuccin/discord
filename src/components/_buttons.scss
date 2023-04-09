@@ -1,11 +1,11 @@
 // filled buttons and badges should have crust text
-[class*="lookFilled-"] {
-  &[class*="colorBrand-"],
-  &[class*="colorBrandNew-"],
-  &[class*="colorLink-"],
-  &[class*="colorYellow-"],
-  &[class*="colorRed-"],
-  &[class*="colorGreen-"] {
+[class|="lookFilled-"] {
+  &[class|="colorBrand-"],
+  &[class|="colorBrandNew-"],
+  &[class|="colorLink-"],
+  &[class|="colorYellow-"],
+  &[class|="colorRed-"],
+  &[class|="colorGreen-"] {
     color: $crust;
 
     // darken the nitro button too
@@ -14,32 +14,32 @@
     }
 
     // spinner color
-    [class*="spinnerItem-"] {
+    [class|="spinnerItem-"] {
       background-color: $crust;
     }
 
-    [class*="defaultColor-"] {
+    [class|="defaultColor-"] {
       color: $crust;
     }
   }
 
   // ...unless it's primary
-  &[class*="colorPrimary-"] {
+  &[class|="colorPrimary-"] {
     color: $text;
   }
 }
 
 // buttons in sidebar when in calls
 div[class^="actionButtons-"] {
-  [class^="button-"][class*="buttonColor-"],
-  [class^="button-"] [class*="buttonColor-"] {
+  [class^="button-"][class|="buttonColor-"],
+  [class^="button-"] [class|="buttonColor-"] {
     background-color: $surface1;
 
-    &[class*="buttonActive-"] {
+    &[class|="buttonActive-"] {
       background-color: $green;
       color: $crust;
 
-      [class*="buttonContents-"] {
+      [class|="buttonContents-"] {
         color: $crust;
 
         svg {
@@ -51,7 +51,7 @@ div[class^="actionButtons-"] {
 }
 
 // lookInverted buttons should have darker brand text
-[class*="lookInverted-"][class*="colorBrand-"] {
+[class|="lookInverted-"][class|="colorBrand-"] {
   color: var(--brand-experiment-600);
 
   // darken the nitro button too
@@ -63,35 +63,35 @@ div[class^="actionButtons-"] {
 // lookLink + colorPrimary should be themed
 .theme-dark,
 .theme-light {
-  [class*="lookLink-"][class*="colorPrimary-"] {
+  [class|="lookLink-"][class|="colorPrimary-"] {
     color: $text;
   }
-  [class*="lookFilled-"][class*="colorTransparent-"] {
+  [class|="lookFilled-"][class|="colorTransparent-"] {
     color: $text;
     background-color: $surface0;
   }
 }
 
 // dangerous button when hovered is colored properly
-div[class*="button-"][class*="dangerous-"]:hover {
+div[class|="button-"][class|="dangerous-"]:hover {
   color: darken($red, 10%);
 }
 
 // make all selected radio buttons's text crust
-div[role="radio"][class*="selected"] {
+div[role="radio"][class|="selected"] {
   color: $crust;
 
   // make the allow radio button's bg to the correct green
-  &[class*="allow"] {
+  &[class|="allow"] {
     background-color: $green;
   }
 }
 //nonspecific radio buttons
-[class*="container-"][style*="background-color: var(--green-360)"] {
+[class|="container-"][style|="background-color: var(--green-360)"] {
   --green-360: #{$green}; //vencord plugin settings
   background-color: $green !important;
 }
-[class*="container-"][style*="background-color: var(--primary-400)"], [class*="container-"][style*="background-color: rgb(130, 133, 143)"] {
+[class|="container-"][style|="background-color: var(--primary-400)"], [class|="container-"][style|="background-color: rgb(130, 133, 143)"] {
   background-color: $crust !important; //used in a lot of places
 }
 // vencord spotify plugin button theming support (uses vencord-specific classes)
@@ -108,7 +108,7 @@ div[role="radio"][class*="selected"] {
 }
 
 // these badges appear in the emoji/sticker picker
-[class*="topGuildEmojiBadge-"] {
+[class|="topGuildEmojiBadge-"] {
   background: linear-gradient(268.26deg, $peach, $red 102.45%);
 
   * {
@@ -116,7 +116,7 @@ div[role="radio"][class*="selected"] {
   }
 }
 
-[class*="newlyAddedBadge-"] {
+[class|="newlyAddedBadge-"] {
   background: linear-gradient(268.26deg, $teal, $green 102.45%);
 
   * {
@@ -125,8 +125,8 @@ div[role="radio"][class*="selected"] {
 }
 
 //revert nitro icon on nitro subscribe button on external emoji
-[class*="lookFilled-"]
-  [class*="premiumSubscribeButton-"]
-  > [class*="premiumIcon-"] {
+[class|="lookFilled-"]
+  [class|="premiumSubscribeButton-"]
+  > [class|="premiumIcon-"] {
   color: $crust !important;
 }
