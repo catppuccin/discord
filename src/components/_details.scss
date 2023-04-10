@@ -1,8 +1,8 @@
 // online
 rect[fill="#23a55a"],
 foreignObject[mask="url(#svg-mask-status-online)"] > div,
-div[class^="dotOnline"],
-i[class^="statusOnline-"] {
+div[class|="dotOnline"],
+i[class|="statusOnline"] {
   fill: $green !important;
   background-color: $green !important;
 }
@@ -37,8 +37,8 @@ rect[fill="rgba(242, 63, 67, 1)"] {
 rect[fill="#82858f"],
 foreignObject[mask="url(#svg-mask-status-offline)"] > div,
 foreignObject[mask="url(#svg-mask-status-offline)"] > rect,
-div[class^="dotOffline"],
-i[class^="statusOffline-"] {
+div[class|="dotOffline"],
+i[class|="statusOffline"] {
   fill: $subtext0 !important;
   background-color: $subtext0 !important;
 }
@@ -54,20 +54,20 @@ rect[fill="#593695"] {
 
 // vencord platform indicators
 // -- online
-.vc-platform-indicator svg[fill|="--green-"] {
+.vc-platform-indicator svg[fill*="--green-"] {
   fill: $green;
 }
 
 // -- idle
-.vc-platform-indicator svg[fill|="--yellow-"] {
+.vc-platform-indicator svg[fill*="--yellow-"] {
   fill: $yellow;
 }
 // -- dnd
-.vc-platform-indicator svg[fill|="--red-"] {
+.vc-platform-indicator svg[fill*="--red-"] {
   fill: $red;
 }
 // -- offline
-.vc-platform-indicator svg[fill|="--primary-400"] {
+.vc-platform-indicator svg[fill*="--primary-400"] {
   fill: $subtext0;
 }
 
@@ -81,170 +81,166 @@ rect[fill="#593695"] {
 }
 
 // dots in typing
-svg[class^="cursorDefault-"] svg[class^="dots-"] circle {
+svg[class|="cursorDefault"] svg[class|="dots"] circle {
   fill: $base !important;
 }
 
 // inline brand color styles...
-[style|="background-color: hsl(235, calc(var(--saturation-factor, 1) * 85.6%), 64.7%)"] {
+[style*="background-color: hsl(235, calc(var(--saturation-factor, 1) * 85.6%), 64.7%)"] {
   background-color: $brand !important;
   color: $crust;
 }
 
 // for those roles that blend in the background
-span[class|="username-"][style|="color: rgb(54, 57, 62)"],
-span[class|="username-"][style|="color: rgb(53, 57, 64)"] {
+span[class|="username"][style*="color: rgb(54, 57, 62)"],
+span[class|="username"][style*="color: rgb(53, 57, 64)"] {
   color: var(--background-primary) !important;
 }
 
 // server badges
-div[class|="flowerStarContainer-"] {
+div[class|="flowerStarContainer"] {
   &[class|="boostedGuildTierIconBackgroundWithVisibleBanner"] {
-    svg[class|="flowerStar-"] * {
+    svg[class|="flowerStar"] * {
       fill: #fff;
     }
-    div[class^="childContainer-"] svg * {
+    div[class^="childContainer"] svg * {
       fill: $crust;
     }
   }
 
-  &[class|="iconBackgroundTierOne-"],
-  &[class|="iconBackgroundTierTwo-"]:not(
+  &[class|="iconBackgroundTierOne"],
+  &[class|="iconBackgroundTierTwo"]:not(
       [class|="boostedGuildTierIconBackgroundWithVisibleBanner"]
     ) {
-    svg[class|="flowerStar-"] * {
+    svg[class|="flowerStar"] * {
       fill: $surface2;
     }
-    div[class^="childContainer-"] svg * {
+    div[class|="childContainer"] svg * {
       fill: $text;
     }
   }
 
-  &[class|="iconBackgroundTierThree-"] {
-    svg[class|="flowerStar-"] * {
+  &[class|="iconBackgroundTierThree"] {
+    svg[class|="flowerStar"] * {
       fill: $pink;
     }
-    div[class^="childContainer-"] svg * {
+    div[class|="childContainer"] svg * {
       fill: $crust;
     }
   }
 
-  &[class|="verified-"] {
-    svg[class|="flowerStar-"] * {
+  &[class|="verified"] {
+    svg[class|="flowerStar"] * {
       fill: $green;
     }
-    div[class^="childContainer-"] svg * {
+    div[class|="childContainer"] svg * {
       fill: $crust;
     }
   }
 
-  &[class|="partnered-"] {
-    svg[class|="flowerStar-"] * {
+  &[class|="partnered"] {
+    svg[class|="flowerStar"] * {
       fill: $brand;
     }
-    div[class^="childContainer-"] svg * {
+    div[class|="childContainer"] svg * {
       fill: $crust;
     }
   }
 }
 
 // public / verified server info pill
-div[class^="communityInfoPill"] {
+div[class|="communityInfoPill"] {
   --background-accent: #{adjust-color($base, $alpha: -0.3)};
   color: $text;
 
-  div[class^="text"] {
+  div[class|="text"] {
     font-weight: 500;
   }
 }
 
 // social links on "what's new"
-a[class|="socialLink-"][href|="discord"] {
+a[class|="socialLink"][href*="discord"] {
   color: $subtext0;
 }
 
 // upload icon
-svg[class^="uploadIcon"] {
+svg[class|="uploadIcon"] {
   color: $crust;
 }
 
 // empty states. why is it colored like this
 .theme-dark,
 .theme-light {
-  h2[class^="emptyStateHeader-"] {
+  h2[class|="emptyStateHeader"] {
     color: $text;
   }
 
-  p[class^="emptyStateSubtext-"] {
+  p[class|="emptyStateSubtext"] {
     color: $subtext0;
   }
 }
 
 // anything that uses a color background should have crust text
-div[class|="unreadMentionsBar-"],
-div[class|="unreadBar-"] {
+div[class|="unreadMentionsBar"],
+div[class|="unreadBar"] {
   color: $crust;
 }
 
 // make number badges have crust text and bolder
-div[class|="numberBadge-"] {
+div[class|="numberBadge"] {
   font-weight: 700;
   color: $crust;
 }
 
 // spotify button on text area
-button[class^="attachButton-"] {
-  svg path[class^="attachButtonPlay-"] {
+button[class|="attachButton"] {
+  svg path[class|="attachButtonPlay"] {
     color: $green;
     fill: $green;
   }
 }
 
 // speaking indicator
-
-div[class|="avatarSpeaking-"] {
+div[class|="avatarSpeaking"] {
   -webkit-box-shadow: inset 0 0 0 2px $green,
     inset 0 0 0 3px var(--background-secondary);
   box-shadow: inset 0 0 0 2px $green,
     inset 0 0 0 3px var(--background-secondary);
 }
 
-div[class|="videoLayer-"] > div[class^="tileChild"] > div[class^="border"] {
-  &[class|="speaking-"] {
+div[class|="videoLayer"] > div[class^="tileChild"] > div[class^="border"] {
+  &[class|="speaking"] {
     -webkit-box-shadow: inset 0 0 0 2px $green, inset 0 0 0 3px $green;
     box-shadow: inset 0 0 0 2px $green, inset 0 0 0 3px $green;
   }
 
   // this is when emojis fly across the tile
-  &[class|="voiceChannelEffect-"] {
+  &[class|="voiceChannelEffect"] {
     -webkit-box-shadow: inset 0 0 0 2px $brand, inset 0 0 0 3px $brand;
     box-shadow: inset 0 0 0 2px $brand, inset 0 0 0 3px $brand;
   }
 }
 
-div[class|="featureIcon-"] path {
+div[class|="featureIcon"] path {
   fill: $brand;
 }
 
-div[class|="backgroundAccent-"] {
+div[class|="backgroundAccent"] {
   color: $crust;
 }
 
-div[class|="profileBadges-"] {
+div[class|="profileBadges"] {
   div[aria-label="Supports Commands"] img {
     content: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23#{str-slice(inspect($green), 2)}'%3E%3Cpath d='m8.1176653 16.0847263 4.8330812-8.1694527h2.9315882l-4.8330812 8.1694527z'/%3E%3Cpath d='m20.4189453 9.4038086v-2.4311524c0-1.9775391-1.0825195-3.1118164-2.9697266-3.1118164h-1.5581055v1.7802734l.9594727-.0014648c.8540039 0 1.34375.5683594 1.34375 1.5585938v2.3969727c0 .8300781.1806641 1.8422852 1.5893555 2.3100586l.2856445.0947265-.2856445.0947266c-1.4086914.4677734-1.5893555 1.4799804-1.5893555 2.3100586v2.3964844c0 .9907227-.4897461 1.559082-1.34375 1.559082l-.9594727-.0014648v1.7802734h1.5581055c1.887207 0 2.9697266-1.1342773 2.9697266-3.1118164v-2.4316406c0-1.2583008.3432617-1.6264648 1.5810547-1.6445312v-1.9023438c-1.237793-.0180665-1.5810547-.3862305-1.5810547-1.6450196z'/%3E%3Cpath d='m5.8061523 7.1982422c0-.9760742.5024414-1.5585938 1.3432617-1.5585938l.9594727.0014648v-1.7802734h-1.5576172c-1.887207 0-2.9697266 1.1342773-2.9697266 3.1118164v2.4311523c0 1.2587891-.3432617 1.6269531-1.581543 1.6450195v1.9023438c1.2382812.0180664 1.581543.3862305 1.581543 1.6445312v2.4316406c0 1.9775391 1.0825195 3.1118164 2.9697266 3.1118164h1.5576172v-1.7802734l-.9594727.0014648c-.8408203 0-1.3432617-.5830078-1.3432617-1.559082v-2.3964844c0-.8300781-.1806641-1.8422852-1.5898438-2.3100586l-.2856444-.0947264.2856445-.0947266c1.4091797-.4677734 1.5898437-1.4799804 1.5898437-2.3100586z'/%3E%3C/g%3E%3C/svg%3E");
   }
 }
 
-div[class|="newBadge-"],
-div[class|="tryItOutBadge-"] {
+div[class|="newBadge"],
+div[class|="tryItOutBadge"] {
   color: $crust;
 }
 
 span[class|="channelMention"]:hover,
-[class|="mention"]:not(
-    [class|="mentionButton-"],
-    [class|="mentionIcon-"]
-  ):hover {
+[class|="mention"]:not([class|="mentionButton"], [class|="mentionIcon"]):hover {
   color: $crust;
 }

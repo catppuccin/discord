@@ -1,11 +1,11 @@
-[class^="chatContent"] {
-  div[class|="wrapperAudio-"],
-  div[class|="imageWrapper-"] {
+[class|="chatContent"] {
+  div[class|="wrapperAudio"],
+  div[class|="imageWrapper"] {
     div[class|="audioControls"],
-    div[class|="videoControls-"] {
+    div[class|="videoControls"] {
       background-color: #{adjust-color($mantle, $alpha: -0.2)};
 
-      svg[class|="controlIcon-"] {
+      svg[class|="controlIcon"] {
         opacity: 1;
         color: $subtext1;
       }
@@ -14,28 +14,28 @@
 
   // new message ruler
   #---new-messages-bar {
-    span[class^="unreadPill-"] {
+    span[class|="unreadPill"] {
       color: $crust;
     }
   }
 
   // new message bar
-  div[class^="newMessagesBar-"] {
+  div[class|="newMessagesBar"] {
     button {
       color: $crust;
     }
   }
 
   // text input area
-  div[class^="channelTextArea-"] {
-    div[class^="buttons-"] * {
+  div[class|="channelTextArea"] {
+    div[class|="buttons"] * {
       color: var(--interactive-normal) !important;
     }
   }
 
   // reactions
-  [id^="message-reactions-"] {
-    div[class^="reaction-"] {
+  [id|="message-reactions"] {
+    div[class|="reaction"] {
       background-color: $surface0;
       &:hover {
         background-color: var(--brand-experiment-20a);
@@ -45,9 +45,9 @@
   }
 
   // chat header
-  div[class^="container-"][class|="header-"] {
-    div[class|="addReactButton-"],
-    div[class^="buttons-"]:not([class|="lookBlank-"]) div[class^="contents"] {
+  div[class|="container"][class|="header"] {
+    div[class|="addReactButton"],
+    div[class|="buttons"]:not([class|="lookBlank"]) div[class|="contents"] {
       background: $surface0;
       &:hover {
         background-color: var(--brand-experiment-20a);
@@ -57,19 +57,19 @@
   }
 
   // "Messages failed to load" bar
-  div[class^="messagesErrorBar-"] div[class|="barButtonBase-"] {
+  div[class|="messagesErrorBar"] div[class|="barButtonBase"] {
     color: $crust;
   }
 
   // code stuff
-  // [class|="after_inlineCode-"],
-  // [class|="before_inlineCode-"],
-  // [class^="syntaxBefore-"],
-  // [class^="syntaxAfter-"] {
+  // [class|="after_inlineCode"],
+  // [class|="before_inlineCode"],
+  // [class|="syntaxBefore"],
+  // [class|="syntaxAfter"] {
   //   color: $overlay0;
   // }
 
-  [class|="inlineCode-"] {
+  [class|="inlineCode"] {
     background: $surface0;
   }
 
@@ -77,9 +77,9 @@
     background: $surface0;
   }
 
-  div[class^="container-"] div[class^="cardWrapper-"] {
-    div[class|="completed-"] {
-      svg[class^="checkmark-"] {
+  div[class|="container"] div[class|="cardWrapper"] {
+    div[class|="completed"] {
+      svg[class|="checkmark"] {
         background-color: $green;
         color: $crust;
       }
@@ -88,13 +88,13 @@
 }
 
 // arrow when someone joins
-div[style|="d1382af8d9e755bc44811b1fd92990a8.svg"] {
+div[style*="d1382af8d9e755bc44811b1fd92990a8.svg"] {
   background-image: url("data:image/svg+xml,%3Csvg height='18' width='18' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='m18 0h-18v18h18z'/%3E%3Cpath d='m0 8h14.2l-3.6-3.6 1.4-1.4 6 6-6 6-1.4-1.4 3.6-3.6h-14.2' fill='%23#{str-slice(inspect($green), 2)}'/%3E%3C/g%3E%3C/svg%3E") !important;
   filter: none !important;
 }
 
 // server boost icon... again
-main[class^="chatContent"] div[id^="message-content-"] svg[class^="icon-"] {
+main[class|="chatContent"] div[id|="message-content"] svg[class|="icon"] {
   > path[d="M4 0L0 4V8L4 12L8 8V4L4 0ZM7 7.59L4 10.59L1 7.59V4.41L4 1.41L7 4.41V7.59Z"],
   > path[d="M2 4.83V7.17L4 9.17L6 7.17V4.83L4 2.83L2 4.83Z"] {
     color: $pink;
@@ -104,8 +104,8 @@ main[class^="chatContent"] div[id^="message-content-"] svg[class^="icon-"] {
 // spoiler messages
 .theme-dark,
 .theme-light {
-  span[class^="spoilerText"],
-  div[class^="spoilerText"] {
+  span[class|="spoilerText"],
+  div[class|="spoilerText"] {
     background-color: $surface0;
 
     &[class|="hidden"] {
@@ -117,32 +117,32 @@ main[class^="chatContent"] div[id^="message-content-"] svg[class^="icon-"] {
     }
   }
 
-  div[class^="spoilerContainer-"] {
-    div[class^="spoilerWarning-"] {
+  div[class|="spoilerContainer"] {
+    div[class|="spoilerWarning"] {
       color: $text;
       background-color: adjust-color($crust, $alpha: -0.3);
     }
 
     &:hover {
-      div[class^="spoilerWarning-"] {
+      div[class|="spoilerWarning"] {
         color: $text;
         background-color: $crust;
       }
     }
 
-    article[class|="embedFull-"] {
+    article[class|="embedFull"] {
       border-color: $surface2;
     }
   }
 }
 
 // cooldown text
-div[class^="cooldownWrapper-"] {
+div[class|="cooldownWrapper"] {
   color: var(--text-muted) !important;
 }
 
 // autocomplete chat textboxes
-div[class|="autocomplete-"] {
+div[class|="autocomplete"] {
   background-color: $mantle !important;
 
   div[class|="categoryHeader"] {
@@ -154,7 +154,7 @@ div[class|="autocomplete-"] {
   div[class|="autocompleteRowContentSecondary"] {
     background-color: transparent;
   }
-  div[class^="usageWrapper-"] > div[class|="title-"] {
+  div[class|="usageWrapper"] > div[class|="title"] {
     color: $brand !important;
   }
 
@@ -164,7 +164,7 @@ div[class|="autocomplete-"] {
 }
 
 // emoji button
-div[class^="channelTextArea-"] button[class|="emojiButton-"] {
+div[class|="channelTextArea"] button[class|="emojiButton"] {
   background: transparent !important;
 }
 
@@ -178,18 +178,18 @@ div[class^="channelTextArea-"] button[class|="emojiButton-"] {
 }
 
 // forums
-div[class^="chat"] > div[class^="content-"] > div[class^="container-"] {
+div[class^="chat"] > div[class|="content"] > div[class|="container"] {
   background-color: $base;
 
   // forum icons
-  div[class^="pinIcon-"],
-  div[class^="stepStatus-"] {
+  div[class|="pinIcon"],
+  div[class|="stepStatus"] {
     > svg > path {
       fill: $subtext0;
     }
 
     // .. but turn the checkmarks crust for the steps
-    &[style|="background-color: var(--status-positive-background);"]
+    &[style*="background-color: var(--status-positive-background)"]
       > svg
       > path {
       fill: $crust;
@@ -201,58 +201,58 @@ div[class^="chat"] > div[class^="content-"] > div[class^="container-"] {
   }
 
   // discord icon
-  svg[class^="discordIcon-"] {
+  svg[class|="discordIcon"] {
     background-color: $brand;
     color: $crust;
   }
 
   // new badge
-  div[class^="newBadge-"] {
+  div[class|="newBadge"] {
     background-color: $lavender !important;
     color: $crust;
   }
 
-  div[class|="mainCard-"] {
+  div[class|="mainCard"] {
     background-color: $surface0;
   }
 }
 
-div[class^="sidebar-"] > section[class^="panels-"] {
-  svg[class|="buttonIcon-"],
+div[class|="sidebar"] > section[class|="panels"] {
+  svg[class|="buttonIcon"],
   div[class|="buttonContents"] {
     fill: $text;
     color: $text;
   }
 }
 
-[data-list-id^="forum-channel-list-"] {
-  div[class^="body-"] > div[class^="tags"] div[class|="pill"] {
+[data-list-id|="forum-channel-list"] {
+  div[class|="body"] > div[class|="tags"] div[class|="pill"] {
     background-color: $mantle;
   }
 
   // new post button
-  button[class^="submitButton-"][class|="colorBrand"] {
+  button[class^="submitButton"][class|="colorBrand"] {
     background-color: $brand;
     color: $crust;
   }
 }
 
 // fix the sidebar on smaller servers
-div[class^="chat"]
-  > div[class^="content-"]
-  main[class^="chatContent-"]
-  + div[class^="container-"] {
+div[class|="chat"]
+  > div[class|="content"]
+  main[class|="chatContent"]
+  + div[class|="container"] {
   background-color: var(--background-secondary);
 }
 
 // fix error border when attempting to start a thread with no message
-[class|="channelTextAreaInnerError-"] {
+[class|="channelTextAreaInnerError"] {
   border: 1px solid #f38ba8 !important;
 }
 
 // calls
-div[class^="callContainer-"] {
-  [class|="controlIcon-"] {
+div[class|="callContainer"] {
+  [class|="controlIcon"] {
     color: $subtext1;
 
     &:hover {
@@ -260,93 +260,92 @@ div[class^="callContainer-"] {
     }
   }
 
-  div[class|="tile-"],
-  div[class|="background-"] {
+  div[class|="tile"],
+  div[class|="background"] {
     background-color: $base !important;
   }
 
   div[class|="overlayTitle"],
-  svg[class|="status-"] {
+  svg[class|="status"] {
     background-color: $surface0;
     color: $text;
   }
 
   div[class|="header"],
-  svg[class|="selectedIcon-"] {
+  svg[class|="selectedIcon"] {
     color: $text;
   }
 
-  div[class|="button-"][class|="contents-"],
-  button[class|="cta-"],
-  button[class|="participantsButton-"] {
+  div[class|="button"][class|="contents"],
+  button[class|="cta"],
+  button[class|="participantsButton"] {
     background-color: $surface0;
     color: $text;
   }
 
-  div[class^="videoControls-"] {
-    div[class^="children-"] {
-      div[class|="playingText-"] {
+  div[class|="videoControls"] {
+    div[class|="children"] {
+      div[class|="playingText"] {
         color: $subtext1;
       }
     }
 
-    div[class^="toolbar-"] {
-      svg[class^="controlIcon-"] {
+    div[class|="toolbar"] {
+      svg[class|="controlIcon"] {
         color: var(--interactive-normal);
       }
 
-      div[class^="streamQualityIndicator-"]
-        div[class^="liveQualityIndicator-"] {
+      div[class|="streamQualityIndicator"] div[class|="liveQualityIndicator"] {
         background-color: $surface1 !important;
 
-        div[class^="qualityIndicator-"] {
+        div[class|="qualityIndicator"] {
           color: $text;
         }
 
-        svg[class^="premiumStreamIcon"] {
+        svg[class|="premiumStreamIcon"] {
           color: $text;
         }
       }
 
-      div[class^="liveIndicator-"] div[class^="live-"] {
+      div[class|="liveIndicator"] div[class|="live"] {
         background-color: $red !important;
         color: $crust !important;
       }
     }
 
-    button[class|="leftTrayIcon-"][class|="buttonColor-"] {
+    button[class|="leftTrayIcon"][class|="buttonColor"] {
       background-color: $surface0;
       color: $text;
     }
 
-    [class|="colorable-"] {
-      &[class|="red-"] {
+    [class|="colorable"] {
+      &[class|="red"] {
         background: $red;
 
-        [class|="centerIcon-"] {
+        [class|="centerIcon"] {
           color: $crust;
         }
       }
 
-      &[class|="primaryDark-"] {
+      &[class|="primaryDark"] {
         background: $surface1;
         color: $text;
 
-        [class|="centerIcon-"] {
+        [class|="centerIcon"] {
           color: $text;
         }
       }
 
-      &[class|="white-"] {
+      &[class|="white"] {
         color: $crust;
         background-color: $subtext1;
 
-        [class|="centerIcon-"] {
+        [class|="centerIcon"] {
           color: $crust;
         }
 
         &:hover,
-        &[class|="active-"] {
+        &[class|="active"] {
           background: $text;
         }
       }
@@ -364,20 +363,20 @@ div[class|="giftCodeContainer"] [class|="tile"] {
 }
 
 // channels & roles
-div[class|="chat-"] {
+div[class|="chat"] {
   // header
-  section[class|="header-"] {
+  section[class|="header"] {
     background-color: $mantle;
   }
 
-  div[class|="content-"][class|="container-"] {
+  div[class|="content"][class|="container"] {
     background-color: $mantle;
 
     div[class|="container"] {
       background-color: $mantle;
     }
 
-    div[class|="search-"] {
+    div[class|="search"] {
       background-color: $base !important;
 
       input::placeholder {
@@ -386,15 +385,15 @@ div[class|="chat-"] {
     }
 
     div[class|="browser"] {
-      div[class|="content"] div[class^="container-"] {
+      div[class|="content"] div[class|="container"] {
         background-color: $base;
       }
     }
 
-    div[class|="scrollerContainer-"] {
+    div[class|="scrollerContainer"] {
       background-color: $mantle;
 
-      div[class|="checkIcon-"][style|="opacity: 1;"] > svg > path {
+      div[class|="checkIcon"][style*="opacity: 1;"] > svg > path {
         fill: $crust;
       }
     }
@@ -403,14 +402,14 @@ div[class|="chat-"] {
       background-color: $mantle;
       border-bottom: 2px solid $surface0;
 
-      [class|="textBadge-"] {
+      [class|="textBadge"] {
         color: $crust;
       }
     }
   }
 }
 
-div[class|="chat-"] {
+div[class|="chat"] {
   // Search Box
   section[class|="title"] div[class|="searchBar"] span[class|="search"] {
     background-color: $surface0;
@@ -425,26 +424,26 @@ div[class|="chat-"] {
   }
 }
 
-div[class|="chat-"] {
+div[class|="chat"] {
   // Forum Gallery View
-  li[class|="mainCard-"][class|="container"] {
+  li[class|="mainCard"][class|="container"] {
     background-color: $surface0;
 
     &:hover {
       background-color: $surface1;
     }
 
-    div[class|="contentPreview-"] {
+    div[class|="contentPreview"] {
       background-color: $base;
       border: none;
 
-      div[class|="textContentFooter-"] {
+      div[class|="textContentFooter"] {
         background: none;
       }
     }
 
-    div[class|="tags-"] {
-      div[class|="tagPill-"] {
+    div[class|="tags"] {
+      div[class|="tagPill"] {
         background-color: #{adjust-color($surface1, $alpha: -0.2)};
       }
     }
@@ -462,12 +461,12 @@ div[class|="chat-"] {
 }
 
 // spotify listen along invite
-[id|="message-accessories-"] > [class|="invite-"] {
+[id|="message-accessories"] > [class|="invite"] {
   background-color: $base;
-  [class|="inFront-"][class|="header-"] {
+  [class|="inFront"][class|="header"] {
     color: $subtext0;
   }
-  [class|="partyStatus-"] {
+  [class|="partyStatus"] {
     color: $text;
   }
 }

@@ -70,7 +70,7 @@ $svgColor: (
 @each $class, $color in $svgColor {
   .theme-dark,
   .theme-light {
-    svg[class|="#{$class}-"] {
+    svg[class*="#{$class}-"] {
       color: #{map-get($color, color)} !important;
     }
   }
