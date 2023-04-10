@@ -247,7 +247,7 @@ div[class|="chat"]
 
 // fix error border when attempting to start a thread with no message
 [class|="channelTextAreaInnerError"] {
-  border: 1px solid #f38ba8 !important;
+  border: 1px solid $red !important;
 }
 
 // calls
