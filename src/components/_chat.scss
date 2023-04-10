@@ -169,7 +169,7 @@ div[class|="channelTextArea"] button[class|="emojiButton"] {
 }
 
 // upload???
-[class|="uploadDropModal-"] div[class|="inner"] {
+[class|="uploadDropModal"] div[class|="inner"] {
   border-color: $crust;
 
   * {
@@ -455,7 +455,7 @@ div[class|="chat"] {
   }
 
   // Stupid gradient
-  div[class|="innerHeader"]:after {
+  section[class|="title"] div[class|="children"]::after {
     background: none;
   }
 }
