@@ -424,7 +424,7 @@ $roleColors: (
   }
 }
 
-li[id|="chat-messages-921217923790561360"] {
+li[id^="chat-messages-921217923790561360"] {
   article[style="border-color: hsla(120, calc(var(--saturation-factor, 1) * 100%), 29.8%, 1);"] {
     border-color: $green !important;
   }

@@ -263,7 +263,7 @@ button[class|="emojiButtonNormal"] > div > div {
   --interactive-active: #{$text};
 
   // "spine" svgs before threads
-  svg[class^="spine-"] {
+  svg[class|="spine"] {
     color: $surface2;
   }
 
@@ -314,7 +314,7 @@ nav[class|="guilds-"].theme-dark {
 
     &:hover,
     &[class|="selected"] {
-      > div[class^="childWrapper-"] {
+      > div[class|="childWrapper"] {
         color: $crust;
         font-weight: 600;
       }
@@ -327,10 +327,10 @@ nav[class|="guilds-"].theme-dark {
   }
 
   // lightens folder wrapper bg
-  span[class^="expandedFolderBackground-"] {
+  span[class|="expandedFolderBackground"] {
     background-color: lighten($base, 3%);
   }
-  div[class^="folder-"][class|="hover-"] {
+  div[class|="folder"][class|="hover"] {
     background-color: lighten($base, 8%);
   }
 
@@ -341,8 +341,8 @@ nav[class|="guilds-"].theme-dark {
   }
 
   // server list icons
-  div[class^="upperBadge"] {
-    > div[class^="iconBadge"] {
+  div[class|="upperBadge"] {
+    > div[class|="iconBadge"] {
       path {
         color: $base;
       }

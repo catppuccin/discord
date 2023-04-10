@@ -245,7 +245,7 @@ div[class|="contentRegion"] {
       }
     }
 
-    input[class^="gameName"] {
+    input[class|="gameName"] {
       color: $text;
     }
 
@@ -316,9 +316,9 @@ div[class|="contentRegion"] {
 
   // server boost page
   #guild_premium-tab {
-    [class|="tierAccomplished-"],
-    [class|="tierCurrent-"],
-    [class|="tierFirst-"] {
+    [class|="tierAccomplished"],
+    [class|="tierCurrent"],
+    [class|="tierFirst"] {
       background: $pink;
     }
 

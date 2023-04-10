@@ -169,7 +169,7 @@ div[class|="channelTextArea"] button[class|="emojiButton"] {
 }
 
 // upload???
-[class|="uploadDropModal-"] div[class^="inner"] {
+[class|="uploadDropModal-"] div[class|="inner"] {
   border-color: $crust;
 
   * {
@@ -178,7 +178,7 @@ div[class|="channelTextArea"] button[class|="emojiButton"] {
 }
 
 // forums
-div[class^="chat"] > div[class|="content"] > div[class|="container"] {
+div[class|="chat"] > div[class|="content"] > div[class|="container"] {
   background-color: $base;
 
   // forum icons
@@ -231,7 +231,7 @@ div[class|="sidebar"] > section[class|="panels"] {
   }
 
   // new post button
-  button[class^="submitButton"][class|="colorBrand"] {
+  button[class|="submitButton"][class|="colorBrand"] {
     background-color: $brand;
     color: $crust;
   }

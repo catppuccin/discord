@@ -303,9 +303,9 @@ div[class|="layerContainer"] {
 
     div[class|="focusLock"] {
       // create channel (modal), stream popout (modalSize) and edit attachment (uploadModal)
-      div[class^="modal"],
-      div[class^="modalSize"],
-      div[class^="uploadModal"] {
+      div[class|="modal"],
+      div[class|="modalSize"],
+      div[class|="uploadModal"] {
         background-color: $mantle;
         li,
         p,
