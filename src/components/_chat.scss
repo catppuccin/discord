@@ -43,6 +43,28 @@
       }
     }
   }
+    // Super reactions and beta badge
+  div[class*="isBurstReactionPicker-"] {
+    box-shadow: 0 0 0 2px $mauve,0 0 16px $lavender;
+  }
+  div[class^="navButtonSuperReactActive-"],div[class^="navButtonSuperReactActive-"]:hover {
+    background: linear-gradient(270deg,$pink,$lavender 33.63%,$mauve);
+    color: $crust;
+  }
+  div[class*="betaTag-"]{
+    background: var(--brand-experiment) !important;
+    color: $crust;
+  }
+  button[class*="navButtonActive-"],button[class*="navButtonActive-"]:hover{
+    color: $crust;
+  }
+  // Voice messages play button
+  div[class*="playButtonContainer-"]{
+    background: var(--brand-experiment) !important;
+  }
+  svg[class*="playIcon-1cttj4"] path{
+    fill: $crust;
+  }
 
   // chat header
   div[class^="container-"][class*="header-"] {
