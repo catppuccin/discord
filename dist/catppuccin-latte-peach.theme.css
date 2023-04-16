@@ -1972,6 +1972,26 @@ div[class*=newPostCount-] {
   background-color: var(--brand-experiment-20a);
   border-color: var(--brand-experiment-30a);
 }
+[class^=chatContent] div[class*=isBurstReactionPicker-] {
+  box-shadow: 0 0 0 2px #8839ef, 0 0 16px #7287fd;
+}
+[class^=chatContent] div[class^=navButtonSuperReactActive-], [class^=chatContent] div[class^=navButtonSuperReactActive-]:hover {
+  background: linear-gradient(270deg, #ea76cb, #7287fd 33.63%, #8839ef);
+  color: #dce0e8;
+}
+[class^=chatContent] div[class*=betaTag-] {
+  background: var(--brand-experiment) !important;
+  color: #dce0e8;
+}
+[class^=chatContent] button[class*=navButtonActive-], [class^=chatContent] button[class*=navButtonActive-]:hover {
+  color: #dce0e8;
+}
+[class^=chatContent] div[class*=playButtonContainer-] {
+  background: var(--brand-experiment) !important;
+}
+[class^=chatContent] svg[class*=playIcon-] path {
+  fill: #dce0e8;
+}
 [class^=chatContent] div[class^=container-][class*=header-] div[class*=addReactButton-],
 [class^=chatContent] div[class^=container-][class*=header-] div[class^=buttons-]:not([class*=lookBlank-]) div[class^=contents] {
   background: #ccd0da;
