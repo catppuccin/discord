@@ -63,3 +63,9 @@ div[class*="newPostCount-"] {
   background-color: $text;
   color: $crust;
 }
+// Live icon
+div[class*="liveSmall-"]{
+  background-color: $red !important;
+  color: $crust;
+}
+
