@@ -1016,6 +1016,11 @@ div[class*=newPostCount-] {
   color: #11111b;
 }
 
+div[class*=liveSmall-] {
+  background-color: #f38ba8 !important;
+  color: #11111b;
+}
+
 [class^=chatContent] div[class*=wrapperAudio-] div[class*=audioControls],
 [class^=chatContent] div[class*=wrapperAudio-] div[class*=videoControls-],
 [class^=chatContent] div[class*=imageWrapper-] div[class*=audioControls],
