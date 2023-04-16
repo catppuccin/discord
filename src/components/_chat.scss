@@ -471,3 +471,8 @@ div[class*="chat-"] {
     color: $text;
   }
 }
+
+// Vencord's deleted message plugin
+.messagelogger-deleted div {
+  color: $red !important;
+}
