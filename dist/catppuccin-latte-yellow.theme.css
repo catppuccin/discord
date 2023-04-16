@@ -1986,6 +1986,14 @@ div[class*=newPostCount-] {
 [class^=chatContent] button[class*=navButtonActive-], [class^=chatContent] button[class*=navButtonActive-]:hover {
   color: #dce0e8;
 }
+[class^=chatContent] div[class*=colorPremiumGradient-][class*=focused-] {
+  background: linear-gradient(270deg, #ea76cb, #7287fd 33.63%, #8839ef);
+  color: #dce0e8 !important;
+}
+[class^=chatContent] div[class*=isBurstReactionPicker] {
+  border: none;
+  box-shadow: 0 0 0 2px #8839ef, 0 0 16px #7287fd;
+}
 [class^=chatContent] div[class*=playButtonContainer-] {
   background: var(--brand-experiment) !important;
 }
