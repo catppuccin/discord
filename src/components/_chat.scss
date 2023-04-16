@@ -57,6 +57,14 @@
   }
   button[class*="navButtonActive-"],button[class*="navButtonActive-"]:hover{
     color: $crust;
+  }  
+  div[class*="colorPremiumGradient-"][class*="focused-"]{
+    background: linear-gradient(270deg,$pink,$lavender 33.63%,$mauve);
+    color: $crust !important;
+  }
+  div[class*="isBurstReactionPicker"]{
+    border: none;
+    box-shadow: 0 0 0 2px $mauve,0 0 16px $lavendar;
   }
   // Voice messages play button
   div[class*="playButtonContainer-"]{
