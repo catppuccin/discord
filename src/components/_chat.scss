@@ -498,3 +498,7 @@ div[class*="chat-"] {
 .messagelogger-deleted div {
   color: $red !important;
 }
+.messagelogger-deleted.messagelogger-deleted.messagelogger-deleted a {
+    color: #{darken($red, 5%)};
+    text-decoration: underline;
+}
