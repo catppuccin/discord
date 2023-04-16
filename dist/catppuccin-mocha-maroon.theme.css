@@ -1369,6 +1369,11 @@ div[class*=chat-] div[class*=innerHeader]:after {
   color: #f38ba8 !important;
 }
 
+.messagelogger-deleted.messagelogger-deleted.messagelogger-deleted a {
+  color: #f17497;
+  text-decoration: underline;
+}
+
 div[class^=layerContainer] [role=menu] {
   --brand-experiment-560: var(--brand-experiment-25a);
   --brand-experiment-600: var(--brand-experiment);
