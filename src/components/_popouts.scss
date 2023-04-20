@@ -166,7 +166,10 @@ div[class*="layerContainer"] {
     }
 
     // the not selector should make it not style the user popouts
-    div[class^="scroller"]:not([style*="padding-right: 4px;"], [style*="padding-right: 8px;"]) {
+    div[class^="scroller"]:not(
+        [style*="padding-right: 4px;"],
+        [style*="padding-right: 8px;"]
+      ) {
       background-color: var(--background-secondary);
     }
 
@@ -261,7 +264,9 @@ section[class^="positionContainer-"] {
       --text-normal: #{$crust};
       --interactive-active: #{$crust};
       --interactive-hover: #{$crust};
-      color: unset !important;
+      &:not(a) {
+        color: unset !important;
+      }
     }
   }
 }
