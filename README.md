@@ -38,10 +38,10 @@
 
 1. Download your preferred flavour:
 
-- 🌻 [Latte](./themes/latte.theme.css)
-- 🪴 [Frappe](./themes/frappe.theme.css)
-- 🌺 [Macchiato](./themes/macchiato.theme.css)
-- 🌿 [Mocha](./themes/mocha.theme.css)
+- 🌻 [Latte](./themes/latte.theme.css?raw=1)
+- 🪴 [Frappe](./themes/frappe.theme.css?raw=1)
+- 🌺 [Macchiato](./themes/macchiato.theme.css?raw=1)
+- 🌿 [Mocha](./themes/mocha.theme.css?raw=1)
 
 2. Copy the downloaded file to your BetterDiscord themes folder.
 3. Enable the theme in BetterDiscord settings.
