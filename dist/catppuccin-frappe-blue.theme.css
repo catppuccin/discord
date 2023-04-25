@@ -1494,10 +1494,6 @@ div[class*=rolesList] div[class^=role-] span[class^=roleCircle-][style*="backgro
 div[class*=layerContainer] > div[class*=layer] div[class^=reactors] {
   background-color: var(--background-primary);
 }
-div[class*=layerContainer] > div[class*=layer] div[class^=scroller]:not([style*="padding-right: 4px;"],
-[style*="padding-right: 8px;"]) {
-  background-color: var(--background-secondary);
-}
 div[class*=layerContainer] > div[class*=layer] div[class*=reactorDefault] {
   -webkit-box-shadow: inset 0 -1px 0 var(--background-modifier-accent);
   box-shadow: inset 0 -1px 0 var(--background-modifier-accent);
