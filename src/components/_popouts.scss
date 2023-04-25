@@ -166,12 +166,12 @@ div[class*="layerContainer"] {
     }
 
     // the not selector should make it not style the user popouts
-    div[class^="scroller"]:not(
-        [style*="padding-right: 4px;"],
-        [style*="padding-right: 8px;"]
-      ) {
-      background-color: var(--background-secondary);
-    }
+    //div[class^="scroller"]:not(
+    //    [style*="padding-right: 4px;"],
+    //    [style*="padding-right: 8px;"]
+    //  ) {
+    //  background-color: var(--background-secondary);
+    //}
 
     div[class*="reactorDefault"] {
       -webkit-box-shadow: inset 0 -1px 0 var(--background-modifier-accent);
