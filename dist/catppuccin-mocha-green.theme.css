@@ -1378,6 +1378,10 @@ div[class*=chat-] div[class*=innerHeader]:after {
   color: #cdd6f4;
 }
 
+[class^=avatar-] [class^=dots-] {
+  color: #1e1e2e;
+}
+
 .messagelogger-deleted div {
   color: #f38ba8 !important;
 }
