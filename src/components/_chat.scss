@@ -502,6 +502,11 @@ div[class*="chat-"] {
   }
 }
 
+// typing indicator
+[class^="avatar-"] [class^="dots-"] {
+  color: $base;
+}
+
 // Vencord's deleted message plugin
 .messagelogger-deleted div {
   color: $red !important;
