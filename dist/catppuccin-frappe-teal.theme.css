@@ -1386,9 +1386,8 @@ div[class*=chat-] div[class*=innerHeader]:after {
   color: #e78284 !important;
 }
 
-.messagelogger-deleted.messagelogger-deleted.messagelogger-deleted a {
-  color: #e36d6f;
-  text-decoration: underline;
+.messagelogger-deleted div a {
+  color: #e36d6f !important;
 }
 
 div[class^=layerContainer] [role=menu] {
