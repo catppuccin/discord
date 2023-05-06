@@ -1858,11 +1858,15 @@ rect[fill="#593695"] {
 }
 
 [src="/assets/eaeac24163b35f7526704a3d9b3c7722.svg"] {
-  width: 0;
+  width: 0 !important;
   padding: 12px;
-  height: 0;
+  height: 0 !important;
   -webkit-mask-image: url("https://discord.com/assets/eaeac24163b35f7526704a3d9b3c7722.svg");
   background: #a6da95;
+}
+
+.vc-user-connection [src="/assets/eaeac24163b35f7526704a3d9b3c7722.svg"] {
+  padding: 16px;
 }
 
 svg[class^=cursorDefault-] svg[class^=dots-] circle {
