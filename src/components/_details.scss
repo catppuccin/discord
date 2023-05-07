@@ -77,6 +77,8 @@ rect[fill="#593695"] {
   padding: 12px;
   height: 0 !important;
   -webkit-mask-image: url("https://discord.com/assets/eaeac24163b35f7526704a3d9b3c7722.svg");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
   background: $green;
 }
 
