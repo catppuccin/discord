@@ -1541,6 +1541,25 @@ section[class^=positionContainer-] button[class*=navButtonActive] {
   box-shadow: 0 0 0 1px #414559, 0 2px 10px 0 hsla(0, calc(var(--saturation-factor, 1) * 0%), 0%, 0.1);
   -webkit-box-shadow: 0 0 0 1px #414559, 0 2px 10px 0 hsla(0, calc(var(--saturation-factor, 1) * 0%), 0%, 0.1);
 }
+.theme-light div[class|=focusLock] div[class|=downloadApps] {
+  background-color: #303446 !important;
+}
+.theme-light div[class|=focusLock] div[class|=downloadApps] button[class|=modalCloseButton],
+.theme-light div[class|=focusLock] div[class|=downloadApps] h2,
+.theme-light div[class|=focusLock] div[class|=downloadApps] h3 {
+  color: #c6d0f5;
+}
+.theme-light div[class|=focusLock] div[class|=downloadApps] div[class*=footer-] {
+  color: #c6d0f5 !important;
+  background-color: unset !important;
+}
+.theme-light div[class|=focusLock] div[class|=downloadApps] div[class*=footer-] a {
+  color: #8caaee;
+}
+.theme-light div[class|=focusLock] div[class|=downloadApps] li[class*=active-] a[class*=downloadButton-] {
+  transition: all 0.3s ease-in-out;
+  color: #303446;
+}
 .theme-light[class*=profileColors-] [class*=userTagUsernameBase-],
 .theme-light[class*=profileColors-] [class*=discrimBase-],
 .theme-light[class*=profileColors-] [class*=title-],
