@@ -297,3 +297,8 @@ html {
     }
   }
 }
+
+::selection {
+  background-color: #{rgba($brand, 0.6)};
+  color: #{$base};
+}
