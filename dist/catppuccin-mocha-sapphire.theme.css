@@ -1965,9 +1965,14 @@ div[class*=unreadBar-] {
   color: #11111b;
 }
 
-div[class*=numberBadge-] {
+div[class|=numberBadge] {
   font-weight: 700;
   color: #11111b;
+}
+
+div[class|=newChannel] {
+  color: #11111b;
+  background-color: #74c7ec;
 }
 
 button[class^=attachButton-] svg path[class^=attachButtonPlay-] {
