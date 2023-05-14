@@ -194,9 +194,15 @@ div[class*="unreadBar-"] {
 }
 
 // make number badges have crust text and bolder
-div[class*="numberBadge-"] {
+div[class|="numberBadge"] {
   font-weight: 700;
   color: $crust;
+}
+
+// Channel and role badge
+div[class|="newChannel"] {
+  color: $crust;
+  background-color: $brand;
 }
 
 // spotify button on text area
