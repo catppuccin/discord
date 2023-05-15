@@ -2902,6 +2902,10 @@ div[class|=newChannel] {
   background-color: #179299;
 }
 
+div[class|=botTag] {
+  background-color: #179299;
+}
+
 button[class^=attachButton-] svg path[class^=attachButtonPlay-] {
   color: #40a02b;
   fill: #40a02b;

@@ -1975,6 +1975,10 @@ div[class|=newChannel] {
   background-color: #f4b8e4;
 }
 
+div[class|=botTag] {
+  background-color: #f4b8e4;
+}
+
 button[class^=attachButton-] svg path[class^=attachButtonPlay-] {
   color: #a6d189;
   fill: #a6d189;
