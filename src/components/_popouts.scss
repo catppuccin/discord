@@ -112,12 +112,15 @@ div[class^="layerContainer"] [role="menu"] {
 }
 
 div[class*="recentMentionsPopout"] {
-  div[class^="header-"] {
-    div[class^="tabBar"] div[class^="tab"][class*="active-"] {
-      color: $base;
+  div[class|="header"] {
+    div[class|="tabBar"] {
+      div[class|="badge"],
+      div[class|="tab"][class*="active-"] {
+        color: $base;
+      }
     }
 
-    div[class^="controls-"] {
+    div[class|="controls-"] {
       --background-secondary: #{$surface0};
       --background-primary: #{adjust-color($surface0, $alpha: -0.1)};
     }
