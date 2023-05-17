@@ -1472,10 +1472,11 @@ div[class^=layerContainer] [role=menu] #user-context-user-volume div[class*=slid
   color: #cad3f5;
 }
 
-div[class*=recentMentionsPopout] div[class^=header-] div[class^=tabBar] div[class^=tab][class*=active-] {
+div[class*=recentMentionsPopout] div[class|=header] div[class|=tabBar] div[class|=badge],
+div[class*=recentMentionsPopout] div[class|=header] div[class|=tabBar] div[class|=tab][class*=active-] {
   color: #24273a;
 }
-div[class*=recentMentionsPopout] div[class^=header-] div[class^=controls-] {
+div[class*=recentMentionsPopout] div[class|=header] div[class|=controls-] {
   --background-secondary: #363a4f;
   --background-primary: rgba(54, 58, 79, 0.9);
 }

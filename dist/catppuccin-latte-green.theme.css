@@ -2399,10 +2399,11 @@ div[class^=layerContainer] [role=menu] #user-context-user-volume div[class*=slid
   color: #4c4f69;
 }
 
-div[class*=recentMentionsPopout] div[class^=header-] div[class^=tabBar] div[class^=tab][class*=active-] {
+div[class*=recentMentionsPopout] div[class|=header] div[class|=tabBar] div[class|=badge],
+div[class*=recentMentionsPopout] div[class|=header] div[class|=tabBar] div[class|=tab][class*=active-] {
   color: #eff1f5;
 }
-div[class*=recentMentionsPopout] div[class^=header-] div[class^=controls-] {
+div[class*=recentMentionsPopout] div[class|=header] div[class|=controls-] {
   --background-secondary: #ccd0da;
   --background-primary: rgba(204, 208, 218, 0.9);
 }
