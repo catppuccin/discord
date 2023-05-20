@@ -21,7 +21,6 @@ button[class*="emojiButtonNormal"] > div > div {
 // for dark sidebars :clueless:
 :root .theme-dark {
   @import "@catppuccin/palette/scss/mocha";
-  @import "components/_catppuccin-server";
 
   // weighted brand colors
   --brand-experiment: #{$brand};
