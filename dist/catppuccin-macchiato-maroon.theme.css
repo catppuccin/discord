@@ -1115,36 +1115,36 @@ main[class^=chatContent] div[id^=message-content-] svg[class^=icon-] > path[d="M
   color: #f5bde6;
 }
 
-.theme-dark span[class^=spoilerText],
-.theme-dark div[class^=spoilerText],
-.theme-light span[class^=spoilerText],
-.theme-light div[class^=spoilerText] {
+.theme-dark span[class|=spoilerContent],
+.theme-dark div[class|=spoilerContent],
+.theme-light span[class|=spoilerContent],
+.theme-light div[class|=spoilerContent] {
   background-color: #363a4f;
 }
-.theme-dark span[class^=spoilerText][class*=hidden],
-.theme-dark div[class^=spoilerText][class*=hidden],
-.theme-light span[class^=spoilerText][class*=hidden],
-.theme-light div[class^=spoilerText][class*=hidden] {
+.theme-dark span[class|=spoilerContent][class*=hidden],
+.theme-dark div[class|=spoilerContent][class*=hidden],
+.theme-light span[class|=spoilerContent][class*=hidden],
+.theme-light div[class|=spoilerContent][class*=hidden] {
   background-color: #5b6078;
 }
-.theme-dark span[class^=spoilerText][class*=hidden]:hover,
-.theme-dark div[class^=spoilerText][class*=hidden]:hover,
-.theme-light span[class^=spoilerText][class*=hidden]:hover,
-.theme-light div[class^=spoilerText][class*=hidden]:hover {
+.theme-dark span[class|=spoilerContent][class*=hidden]:hover,
+.theme-dark div[class|=spoilerContent][class*=hidden]:hover,
+.theme-light span[class|=spoilerContent][class*=hidden]:hover,
+.theme-light div[class|=spoilerContent][class*=hidden]:hover {
   background-color: #666c87;
 }
-.theme-dark div[class^=spoilerContainer-] div[class^=spoilerWarning-],
-.theme-light div[class^=spoilerContainer-] div[class^=spoilerWarning-] {
+.theme-dark div[class|=spoilerContainer] div[class|=spoilerWarning],
+.theme-light div[class|=spoilerContainer] div[class|=spoilerWarning] {
   color: #cad3f5;
   background-color: rgba(24, 25, 38, 0.7);
 }
-.theme-dark div[class^=spoilerContainer-]:hover div[class^=spoilerWarning-],
-.theme-light div[class^=spoilerContainer-]:hover div[class^=spoilerWarning-] {
+.theme-dark div[class|=spoilerContainer]:hover div[class|=spoilerWarning],
+.theme-light div[class|=spoilerContainer]:hover div[class|=spoilerWarning] {
   color: #cad3f5;
   background-color: #181926;
 }
-.theme-dark div[class^=spoilerContainer-] article[class*=embedFull-],
-.theme-light div[class^=spoilerContainer-] article[class*=embedFull-] {
+.theme-dark div[class|=spoilerContainer] article[class*=embedFull-],
+.theme-light div[class|=spoilerContainer] article[class*=embedFull-] {
   border-color: #5b6078;
 }
 
