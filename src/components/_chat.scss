@@ -57,7 +57,7 @@
   }
   button[class*="navButtonActive-"],button[class*="navButtonActive-"]:hover{
     color: $crust;
-  }  
+  }
   div[class*="colorPremiumGradient-"][class*="focused-"]{
     background: linear-gradient(270deg,$pink,$lavender 33.63%,$mauve);
     color: $crust !important;
@@ -134,8 +134,8 @@ main[class^="chatContent"] div[id^="message-content-"] svg[class^="icon-"] {
 // spoiler messages
 .theme-dark,
 .theme-light {
-  span[class^="spoilerText"],
-  div[class^="spoilerText"] {
+  span[class|="spoilerContent"],
+  div[class|="spoilerContent"] {
     background-color: $surface0;
 
     &[class*="hidden"] {
@@ -147,14 +147,14 @@ main[class^="chatContent"] div[id^="message-content-"] svg[class^="icon-"] {
     }
   }
 
-  div[class^="spoilerContainer-"] {
-    div[class^="spoilerWarning-"] {
+  div[class|="spoilerContainer"] {
+    div[class|="spoilerWarning"] {
       color: $text;
       background-color: adjust-color($crust, $alpha: -0.3);
     }
 
     &:hover {
-      div[class^="spoilerWarning-"] {
+      div[class|="spoilerWarning"] {
         color: $text;
         background-color: $crust;
       }
