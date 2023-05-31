@@ -1175,10 +1175,13 @@ div[class^=channelTextArea-] button[class*=emojiButton-] {
   background: transparent !important;
 }
 
-[class*=uploadDropModal-] div[class^=inner] {
+[class|=uploadDropModal][class*=error] {
+  background-color: #f38ba8;
+}
+[class|=uploadDropModal] div[class^=inner] {
   border-color: #11111b;
 }
-[class*=uploadDropModal-] div[class^=inner] * {
+[class|=uploadDropModal] div[class^=inner] * {
   color: #11111b !important;
 }
 
