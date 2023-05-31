@@ -43,34 +43,36 @@
       }
     }
   }
-    // Super reactions and beta badge
+  // Super reactions and beta badge
   div[class*="isBurstReactionPicker-"] {
-    box-shadow: 0 0 0 2px $mauve,0 0 16px $lavender;
+    box-shadow: 0 0 0 2px $mauve, 0 0 16px $lavender;
   }
-  div[class^="navButtonSuperReactActive-"],div[class^="navButtonSuperReactActive-"]:hover {
-    background: linear-gradient(270deg,$pink,$lavender 33.63%,$mauve);
+  div[class^="navButtonSuperReactActive-"],
+  div[class^="navButtonSuperReactActive-"]:hover {
+    background: linear-gradient(270deg, $pink, $lavender 33.63%, $mauve);
     color: $crust;
   }
-  div[class*="betaTag-"]{
+  div[class*="betaTag-"] {
     background: var(--brand-experiment) !important;
     color: $crust;
   }
-  button[class*="navButtonActive-"],button[class*="navButtonActive-"]:hover{
+  button[class*="navButtonActive-"],
+  button[class*="navButtonActive-"]:hover {
     color: $crust;
   }
-  div[class*="colorPremiumGradient-"][class*="focused-"]{
-    background: linear-gradient(270deg,$pink,$lavender 33.63%,$mauve);
+  div[class*="colorPremiumGradient-"][class*="focused-"] {
+    background: linear-gradient(270deg, $pink, $lavender 33.63%, $mauve);
     color: $crust !important;
   }
-  div[class*="isBurstReactionPicker"]{
+  div[class*="isBurstReactionPicker"] {
     border: none;
-    box-shadow: 0 0 0 2px $mauve,0 0 16px $lavender;
+    box-shadow: 0 0 0 2px $mauve, 0 0 16px $lavender;
   }
   // Voice messages play button
-  div[class*="playButtonContainer-"]{
+  div[class*="playButtonContainer-"] {
     background: var(--brand-experiment) !important;
   }
-  svg[class*="playIcon-"] path{
+  svg[class*="playIcon-"] path {
     fill: $crust;
   }
 
@@ -273,6 +275,11 @@ div[class^="sidebar-"] > section[class^="panels-"] {
   }
 }
 
+// Bot slash command field
+div[class|="applicationCommand"] span[class*="selectedPill-"] {
+  border-color: $brand !important;
+}
+
 // fix the sidebar on smaller servers
 div[class^="chat"]
   > div[class^="content-"]
@@ -283,7 +290,7 @@ div[class^="chat"]
 
 // fix error border when attempting to start a thread with no message
 [class*="channelTextAreaInnerError-"] {
-  border: 1px solid #f38ba8 !important;
+  border: 1px solid $red !important;
 }
 
 // calls
