@@ -276,8 +276,14 @@ div[class^="sidebar-"] > section[class^="panels-"] {
 }
 
 // Bot slash command field
-div[class|="applicationCommand"] span[class*="selectedPill-"] {
-  border-color: $brand !important;
+div[class|="applicationCommand"] {
+  span[class*="selectedPill-"] {
+    border-color: $brand !important;
+  }
+
+  span[class*="erroredPill-"] {
+    border-color: $red !important;
+  }
 }
 
 // fix the sidebar on smaller servers
