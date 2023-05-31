@@ -199,11 +199,17 @@ div[class^="channelTextArea-"] button[class*="emojiButton-"] {
 }
 
 // upload???
-[class*="uploadDropModal-"] div[class^="inner"] {
-  border-color: $crust;
+[class|="uploadDropModal"] {
+  &[class*="error"] {
+    background-color: $red;
+  }
 
-  * {
-    color: $crust !important;
+  div[class^="inner"] {
+    border-color: $crust;
+
+    * {
+      color: $crust !important;
+    }
   }
 }
 
