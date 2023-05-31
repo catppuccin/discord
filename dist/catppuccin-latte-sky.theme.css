@@ -1305,7 +1305,8 @@ div[class*=liveSmall-] {
 [class^=chatContent] div[class*=isBurstReactionPicker-] {
   box-shadow: 0 0 0 2px #8839ef, 0 0 16px #7287fd;
 }
-[class^=chatContent] div[class^=navButtonSuperReactActive-], [class^=chatContent] div[class^=navButtonSuperReactActive-]:hover {
+[class^=chatContent] div[class^=navButtonSuperReactActive-],
+[class^=chatContent] div[class^=navButtonSuperReactActive-]:hover {
   background: linear-gradient(270deg, #ea76cb, #7287fd 33.63%, #8839ef);
   color: #dce0e8;
 }
@@ -1313,7 +1314,8 @@ div[class*=liveSmall-] {
   background: var(--brand-experiment) !important;
   color: #dce0e8;
 }
-[class^=chatContent] button[class*=navButtonActive-], [class^=chatContent] button[class*=navButtonActive-]:hover {
+[class^=chatContent] button[class*=navButtonActive-],
+[class^=chatContent] button[class*=navButtonActive-]:hover {
   color: #dce0e8;
 }
 [class^=chatContent] div[class*=colorPremiumGradient-][class*=focused-] {
@@ -1473,12 +1475,19 @@ div[class^=sidebar-] > section[class^=panels-] div[class*=buttonContents] {
   color: #dce0e8;
 }
 
+div[class|=applicationCommand] span[class*=selectedPill-] {
+  border-color: #04a5e5 !important;
+}
+div[class|=applicationCommand] span[class*=erroredPill-] {
+  border-color: #d20f39 !important;
+}
+
 div[class^=chat] > div[class^=content-] main[class^=chatContent-] + div[class^=container-] {
   background-color: var(--background-secondary);
 }
 
 [class*=channelTextAreaInnerError-] {
-  border: 1px solid #f38ba8 !important;
+  border: 1px solid #d20f39 !important;
 }
 
 div[class^=callContainer-] [class*=controlIcon-] {

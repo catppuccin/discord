@@ -1057,7 +1057,8 @@ div[class*=liveSmall-] {
 [class^=chatContent] div[class*=isBurstReactionPicker-] {
   box-shadow: 0 0 0 2px #ca9ee6, 0 0 16px #babbf1;
 }
-[class^=chatContent] div[class^=navButtonSuperReactActive-], [class^=chatContent] div[class^=navButtonSuperReactActive-]:hover {
+[class^=chatContent] div[class^=navButtonSuperReactActive-],
+[class^=chatContent] div[class^=navButtonSuperReactActive-]:hover {
   background: linear-gradient(270deg, #f4b8e4, #babbf1 33.63%, #ca9ee6);
   color: #232634;
 }
@@ -1065,7 +1066,8 @@ div[class*=liveSmall-] {
   background: var(--brand-experiment) !important;
   color: #232634;
 }
-[class^=chatContent] button[class*=navButtonActive-], [class^=chatContent] button[class*=navButtonActive-]:hover {
+[class^=chatContent] button[class*=navButtonActive-],
+[class^=chatContent] button[class*=navButtonActive-]:hover {
   color: #232634;
 }
 [class^=chatContent] div[class*=colorPremiumGradient-][class*=focused-] {
@@ -1225,12 +1227,19 @@ div[class^=sidebar-] > section[class^=panels-] div[class*=buttonContents] {
   color: #232634;
 }
 
+div[class|=applicationCommand] span[class*=selectedPill-] {
+  border-color: #ea999c !important;
+}
+div[class|=applicationCommand] span[class*=erroredPill-] {
+  border-color: #e78284 !important;
+}
+
 div[class^=chat] > div[class^=content-] main[class^=chatContent-] + div[class^=container-] {
   background-color: var(--background-secondary);
 }
 
 [class*=channelTextAreaInnerError-] {
-  border: 1px solid #f38ba8 !important;
+  border: 1px solid #e78284 !important;
 }
 
 div[class^=callContainer-] [class*=controlIcon-] {

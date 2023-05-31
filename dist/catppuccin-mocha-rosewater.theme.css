@@ -1057,7 +1057,8 @@ div[class*=liveSmall-] {
 [class^=chatContent] div[class*=isBurstReactionPicker-] {
   box-shadow: 0 0 0 2px #cba6f7, 0 0 16px #b4befe;
 }
-[class^=chatContent] div[class^=navButtonSuperReactActive-], [class^=chatContent] div[class^=navButtonSuperReactActive-]:hover {
+[class^=chatContent] div[class^=navButtonSuperReactActive-],
+[class^=chatContent] div[class^=navButtonSuperReactActive-]:hover {
   background: linear-gradient(270deg, #f5c2e7, #b4befe 33.63%, #cba6f7);
   color: #11111b;
 }
@@ -1065,7 +1066,8 @@ div[class*=liveSmall-] {
   background: var(--brand-experiment) !important;
   color: #11111b;
 }
-[class^=chatContent] button[class*=navButtonActive-], [class^=chatContent] button[class*=navButtonActive-]:hover {
+[class^=chatContent] button[class*=navButtonActive-],
+[class^=chatContent] button[class*=navButtonActive-]:hover {
   color: #11111b;
 }
 [class^=chatContent] div[class*=colorPremiumGradient-][class*=focused-] {
@@ -1223,6 +1225,13 @@ div[class^=sidebar-] > section[class^=panels-] div[class*=buttonContents] {
 [data-list-id^=forum-channel-list-] button[class^=submitButton-][class*=colorBrand] {
   background-color: #f5e0dc;
   color: #11111b;
+}
+
+div[class|=applicationCommand] span[class*=selectedPill-] {
+  border-color: #f5e0dc !important;
+}
+div[class|=applicationCommand] span[class*=erroredPill-] {
+  border-color: #f38ba8 !important;
 }
 
 div[class^=chat] > div[class^=content-] main[class^=chatContent-] + div[class^=container-] {
