@@ -2244,6 +2244,10 @@ div[class|=botTag] {
   background-color: #df8e1d;
 }
 
+div[class|=addFriendInputWrapper]:focus-within {
+  border-color: #df8e1d;
+}
+
 button[class^=attachButton-] svg path[class^=attachButtonPlay-] {
   color: #40a02b;
   fill: #40a02b;
@@ -2281,8 +2285,7 @@ div[class*=tryItOutBadge-] {
 }
 
 span[class*=channelMention]:hover,
-[class*=mention]:not([class*=mentionButton-],
-[class*=mentionIcon-]):hover {
+[class*=mention]:not([class*=mentionButton-], [class*=mentionIcon-]):hover {
   color: #dce0e8;
 }
 
