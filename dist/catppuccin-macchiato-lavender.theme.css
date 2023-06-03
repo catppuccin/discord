@@ -1907,6 +1907,10 @@ rect[fill="#593695"] {
   padding: 16px;
 }
 
+#vencordthemes-tab [class*=input-]:focus {
+  border-color: #b7bdf8 !important;
+}
+
 svg[class^=cursorDefault-] svg[class^=dots-] circle {
   fill: #24273a !important;
 }
