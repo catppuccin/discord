@@ -87,6 +87,11 @@ rect[fill="#593695"] {
   padding: 16px;
 }
 
+// Vencord theme input border should use accent
+#vencordthemes-tab [class*="input-"]:focus {
+  border-color: $brand !important;
+}
+
 // dots in typing
 svg[class^="cursorDefault-"] svg[class^="dots-"] circle {
   fill: $base !important;
