@@ -1882,7 +1882,8 @@ div[class^=layerContainer] > div[class*=layer] div[role=listbox] div[class*=quer
 }
 div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modal-],
 div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modalSize-],
-div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=uploadModal-] {
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=uploadModal-],
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class|=contentWrapper] {
   background-color: #e6e9ef;
 }
 div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modal-] li,
@@ -1893,7 +1894,10 @@ div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=
 div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modalSize-] span,
 div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=uploadModal-] li,
 div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=uploadModal-] p,
-div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=uploadModal-] span {
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=uploadModal-] span,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class|=contentWrapper] li,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class|=contentWrapper] p,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class|=contentWrapper] span {
   color: #4c4f69;
 }
 div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class*=footer] {
