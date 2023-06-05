@@ -15,9 +15,7 @@ div[class^="layerContainer"] [role="menu"] {
       }
     }
 
-    &[role="menuitem"]:not([class*="colorDanger"]):not(
-        [id*="user-context-user-volume"]
-      ):hover {
+    &[role="menuitem"]:not([class*="colorDanger"]):not([id*="user-context-user-volume"]):hover {
       background: var(--background-accent);
       color: $crust;
 
@@ -334,10 +332,14 @@ div[class^="layerContainer"] {
     }
 
     div[class^="focusLock"] {
-      // create channel (modal), stream popout (modalSize) and edit attachment (uploadModal)
+      // create channel (modal)
+      // stream popout (modalSize)
+      // edit attachment (uploadModal)
+      // Join server from link (contentWrapper)
       div[class^="modal-"],
       div[class^="modalSize-"],
-      div[class^="uploadModal-"] {
+      div[class^="uploadModal-"],
+      div[class|="contentWrapper"] {
         background-color: $mantle;
         li,
         p,
