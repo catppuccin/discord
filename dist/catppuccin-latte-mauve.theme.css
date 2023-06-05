@@ -1490,6 +1490,10 @@ div[class^=chat] > div[class^=content-] main[class^=chatContent-] + div[class^=c
   border: 1px solid #d20f39 !important;
 }
 
+[class*=barButtonBase-] {
+  color: #dce0e8 !important;
+}
+
 div[class^=callContainer-] [class*=controlIcon-] {
   color: #5c5f77;
 }
