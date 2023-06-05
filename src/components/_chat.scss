@@ -299,6 +299,11 @@ div[class^="chat"]
   border: 1px solid $red !important;
 }
 
+// Jump to Present bar text
+[class|="barButtonBase"] {
+  color: $crust;
+}
+
 // calls
 div[class^="callContainer-"] {
   [class*="controlIcon-"] {
