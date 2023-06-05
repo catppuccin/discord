@@ -300,8 +300,8 @@ div[class^="chat"]
 }
 
 // Jump to Present bar text
-[class|="barButtonBase"] {
-  color: $crust;
+[class*="barButtonBase-"] {
+  color: $crust !important;
 }
 
 // calls
