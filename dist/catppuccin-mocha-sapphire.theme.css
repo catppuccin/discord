@@ -1836,6 +1836,10 @@ div[class*=userProfileOuter-] div[class^=userPopoutOverlayBackground] > div[clas
   color: #11111b !important;
 }
 
+[class|=layerContainer] [class|=quickswitcher] [class*=badge-] {
+  color: #11111b;
+}
+
 rect[fill="#23a55a"],
 foreignObject[mask="url(#svg-mask-status-online)"] > div,
 div[class^=dotOnline],
