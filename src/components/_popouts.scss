@@ -597,3 +597,7 @@ div[class*="userProfileOuter-"] {
     color: $crust !important;
   }
 }
+
+[class|="layerContainer"] [class|="quickswitcher"] [class*="badge-"] {
+  color: $crust;
+}
