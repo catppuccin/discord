@@ -38,21 +38,25 @@
 
 1. Download your preferred flavour:
 
-- 🌻 [Latte](https://catppuccin.github.io/discord/dist/catppuccin-latte.theme.css)
-- 🪴 [Frappe](https://catppuccin.github.io/discord/dist/catppuccin-frappe.theme.css)
-- 🌺 [Macchiato](https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css)
-- 🌿 [Mocha](https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css)
+- 🌻 [Latte](./themes/catppuccin-latte.theme.css?raw=1)
+- 🪴 [Frappe](./themes/catppuccin-frappe.theme.css?raw=1)
+- 🌺 [Macchiato](./themes/catppuccin-macchiato.theme.css?raw=1)
+- 🌿 [Mocha](./themes/catppuccin-mocha.theme.css?raw=1)
 
-2. Move the downloaded file into a location of your choosing, for example `~/.config/discord`.
+2. Move the downloaded file into a location of your choosing, for example `~/.config/discord` on Linux or `%APPDATA%\discord` on Windows.
 
 3. Ensure Discord is **running**.
-4. Install and run [BeautifulDiscord](https://github.com/leovoel/BeautifulDiscord):
+4. Install and run [BeautifulDiscord](https://github.com/leovoel/BeautifulDiscord#installing):
 ```bash
 # Install using pip
 python3 -m pip install -U https://github.com/leovoel/BeautifulDiscord/archive/master.zip
 
 # Run BeautifulDiscord providing the path to your downloaded theme file
+# Linux:
 beautifuldiscord --css ~/.config/discord/catppuccin-mocha.theme.css
+
+# Windows:
+beautifuldiscord --css %APPDATA%\discord\catppuccin-mocha.theme.css
 ```
 
 ### [BetterDiscord](https://betterdiscord.app)
