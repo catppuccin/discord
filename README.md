@@ -38,10 +38,10 @@
 
 1. Download your preferred flavour:
 
-- 🌻 [Latte](./themes/catppuccin-latte.theme.css?raw=1)
-- 🪴 [Frappe](./themes/catppuccin-frappe.theme.css?raw=1)
-- 🌺 [Macchiato](./themes/catppuccin-macchiato.theme.css?raw=1)
-- 🌿 [Mocha](./themes/catppuccin-mocha.theme.css?raw=1)
+- 🌻 [Latte](./themes/latte.theme.css?raw=1)
+- 🪴 [Frappe](./themes/frappe.theme.css?raw=1)
+- 🌺 [Macchiato](./themes/macchiato.theme.css?raw=1)
+- 🌿 [Mocha](./themes/mocha.theme.css?raw=1)
 
 2. Move the downloaded file into a location of your choosing, for example `~/.config/discord` on Linux or `%APPDATA%\discord` on Windows.
 
