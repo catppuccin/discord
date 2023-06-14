@@ -34,6 +34,31 @@
 
 ## Usage
 
+### [BeautifulDiscord](https://github.com/leovoel/BeautifulDiscord)
+
+1. Download your preferred flavour:
+
+- 🌻 [Latte](./themes/latte.theme.css?raw=1)
+- 🪴 [Frappe](./themes/frappe.theme.css?raw=1)
+- 🌺 [Macchiato](./themes/macchiato.theme.css?raw=1)
+- 🌿 [Mocha](./themes/mocha.theme.css?raw=1)
+
+2. Move the downloaded file into a location of your choosing, for example `~/.config/discord` on Linux or `%APPDATA%\discord` on Windows.
+
+3. Ensure Discord is **running**.
+4. Install and run [BeautifulDiscord](https://github.com/leovoel/BeautifulDiscord#installing):
+```bash
+# Install using pip
+python3 -m pip install -U https://github.com/leovoel/BeautifulDiscord/archive/master.zip
+
+# Run BeautifulDiscord providing the path to your downloaded theme file
+# Linux:
+beautifuldiscord --css ~/.config/discord/catppuccin-mocha.theme.css
+
+# Windows:
+beautifuldiscord --css %APPDATA%\discord\catppuccin-mocha.theme.css
+```
+
 ### [BetterDiscord](https://betterdiscord.app)
 
 1. Download your preferred flavour:
