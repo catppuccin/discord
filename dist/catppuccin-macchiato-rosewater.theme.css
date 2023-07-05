@@ -2052,6 +2052,10 @@ div[class*=tryItOutBadge-] {
   color: #181926;
 }
 
+[class|=tabBar] [class|=badge] {
+  color: #11111b;
+}
+
 span[class*=channelMention]:hover,
 [class*=mention]:not([class*=mentionButton-], [class*=mentionIcon-]):hover {
   color: #181926;
