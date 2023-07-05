@@ -205,7 +205,7 @@ div[class|="numberBadge"] {
 // Channel and role badge
 div[class|="newChannel"] {
   color: $crust;
-  background-color: $brand;
+  background-color: $brand !important;
 }
 
 // Clyde AI Bot tag
