@@ -2005,7 +2005,7 @@ div[class|=numberBadge] {
 
 div[class|=newChannel] {
   color: #181926;
-  background-color: #b7bdf8;
+  background-color: #b7bdf8 !important;
 }
 
 div[class|=botTag] {
