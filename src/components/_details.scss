@@ -267,6 +267,11 @@ div[class*="tryItOutBadge-"] {
   color: $crust;
 }
 
+// Pending Friend Request alert badge
+[class|="tabBar"] [class|="badge"] {
+  color: #11111b;
+}
+
 span[class*="channelMention"]:hover,
 [class*="mention"]:not([class*="mentionButton-"], [class*="mentionIcon-"]):hover {
   color: $crust;
