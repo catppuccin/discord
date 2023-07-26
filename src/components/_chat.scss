@@ -337,6 +337,17 @@ div[class^="callContainer-"] {
     color: $text;
   }
 
+  // call quality and nitro indicator
+  div[class|="indicators"] {
+    div[class|="liveQualityIndicator"] {
+      background-color: $red !important;
+
+      svg[class|="premiumStreamIcon"] {
+        color: $crust;
+      }
+    }
+  }
+
   div[class^="videoControls-"] {
     div[class^="children-"] {
       div[class*="playingText-"] {
