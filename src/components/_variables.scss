@@ -286,7 +286,7 @@ html {
     --background-floating: #{$surface0};
     --background-tertiary: #{lighten($base, 3%)};
 
-    svg[class^="activityIcon-"] {
+    svg[class|="activityIcon"] {
       color: $subtext0;
     }
 

@@ -9,7 +9,7 @@
     color: $crust;
 
     // darken the nitro button too
-    svg[class^="premiumIcon"] {
+    svg[class|="premiumIcon"] {
       color: darken($pink, 20%);
     }
 
@@ -30,9 +30,9 @@
 }
 
 // buttons in sidebar when in calls
-div[class^="actionButtons-"] {
-  [class^="button-"][class*="buttonColor-"],
-  [class^="button-"] [class*="buttonColor-"] {
+div[class|="actionButtons"] {
+  [class|="button"][class*="buttonColor-"],
+  [class|="button"] [class*="buttonColor-"] {
     background-color: $surface1;
 
     &[class*="buttonActive-"] {
@@ -55,7 +55,7 @@ div[class^="actionButtons-"] {
   color: var(--brand-experiment-600);
 
   // darken the nitro button too
-  svg[class^="premiumIcon"] {
+  svg[class|="premiumIcon"] {
     color: darken($pink, 15%);
   }
 }
@@ -91,7 +91,8 @@ div[role="radio"][class*="selected"] {
   --green-360: #{$green}; //vencord plugin settings
   background-color: $green !important;
 }
-[class*="container-"][style*="background-color: var(--primary-400)"], [class*="container-"][style*="background-color: rgb(130, 133, 143)"] {
+[class*="container-"][style*="background-color: var(--primary-400)"],
+[class*="container-"][style*="background-color: rgb(130, 133, 143)"] {
   background-color: $crust !important; //used in a lot of places
 }
 // vencord spotify plugin button theming support (uses vencord-specific classes)

@@ -1,4 +1,4 @@
-div[class^="layerContainer"] [role="menu"] {
+div[class|="layerContainer"] [role="menu"] {
   // make menu items readable when hovered
   --brand-experiment-560: var(--brand-experiment-25a);
   --brand-experiment-600: var(--brand-experiment);
@@ -55,7 +55,7 @@ div[class^="layerContainer"] [role="menu"] {
   }
 
   #guild-header-popout-premium-subscribe {
-    div[class^="iconContainer-"] > svg {
+    div[class|="iconContainer"] > svg {
       color: $pink;
     }
   }
@@ -70,8 +70,8 @@ div[class^="layerContainer"] [role="menu"] {
 
 .theme-dark,
 .theme-light {
-  div[class^="layerContainer"] div[id^="popout_"] > div[class*="didRender-"] {
-    &:not([class^="animatorBottom-"]) > div {
+  div[class|="layerContainer"] div[id|="popout_"] > div[class*="didRender-"] {
+    &:not([class|="animatorBottom"]) > div {
       div[class*="flowerStarContainer-"] {
         svg[class*="flowerStar-"] * {
           fill: $brand;
@@ -124,7 +124,7 @@ div[class*="recentMentionsPopout"] {
     }
   }
 
-  div[class^="scroller-"] {
+  div[class|="scroller"] {
     [role="button"] {
       --background-tertiary: #{adjust-color($subtext0, $alpha: -0.85)};
       --background-floating: #{adjust-color($subtext0, $alpha: -0.88)};
@@ -138,13 +138,13 @@ div[class*="recentMentionsPopout"] {
 
 div[class*="rolesList"] {
   // make box lighter
-  div[class^="role-"],
-  button[class^="addButton-"] {
+  div[class|="role"],
+  button[class|="addButton"] {
     background-color: lighten($mantle, 4%);
   }
 
-  div[class^="role-"] {
-    span[class^="roleCircle-"] {
+  div[class|="role"] {
+    span[class|="roleCircle"] {
       // default roles
       &[style*="background-color: rgb(185, 187, 190)"] {
         background-color: $subtext0 !important;
@@ -162,12 +162,12 @@ div[class*="rolesList"] {
 div[class*="layerContainer"] {
   > div[class*="layer"] {
     // reaction popout
-    div[class^="reactors"] {
+    div[class|="reactors"] {
       background-color: var(--background-primary);
     }
 
     // the not selector should make it not style the user popouts
-    //div[class^="scroller"]:not(
+    //div[class|="scroller"]:not(
     //    [style*="padding-right: 4px;"],
     //    [style*="padding-right: 8px;"]
     //  ) {
@@ -191,7 +191,7 @@ div[class*="layerContainer"] {
 }
 
 // gif/sticker/emoji section
-section[class^="positionContainer-"] {
+section[class|="positionContainer"] {
   // colors tab when active
   button[class*="navButtonActive"] {
     background-color: $brand;
@@ -200,14 +200,14 @@ section[class^="positionContainer-"] {
 }
 
 // Latte text color on gif categories
-.theme-light section[class^="positionContainer-"] div[class^="categoryText-"] {
+.theme-light section[class|="positionContainer"] div[class|="categoryText"] {
   color: $base;
 }
 
 #emoji-picker-tab-panel {
   // more transparent to make things more bearable
   [class*="stickerInspected-"] [class*="inspectedIndicator"],
-  [class^="emojiItem-"][class*="emojiItemSelected-"] {
+  [class|="emojiItem"][class*="emojiItemSelected-"] {
     background-color: var(--brand-experiment-25a);
   }
 
@@ -223,16 +223,16 @@ section[class^="positionContainer-"] {
 }
 
 // same as transparent above, but for stickers
-[class*="stickerInspected-"] [class^="inspectedIndicator"] {
+[class*="stickerInspected-"] [class|="inspectedIndicator"] {
   background-color: var(--brand-experiment-25a);
 }
 
 .theme-light {
   //   color: $text;
 
-  > div[class^="focusLock"]
-    > div[class^="root"]
-    > div[class^="container"]
+  > div[class|="focusLock"]
+    > div[class|="root"]
+    > div[class|="container"]
     div[class*="footer"] {
     //     background-color: $mantle;
 
@@ -242,7 +242,7 @@ section[class^="positionContainer-"] {
     }
   }
 
-  > div[class^="focusLock"] > div[class^="root"] {
+  > div[class|="focusLock"] > div[class|="root"] {
     box-shadow: 0 0 0 1px $surface0,
       0 2px 10px 0 hsla(0, calc(var(--saturation-factor, 1) * 0%), 0%, 0.1);
     -webkit-box-shadow: 0 0 0 1px $surface0,
@@ -299,12 +299,12 @@ section[class^="positionContainer-"] {
   }
 }
 
-div[class^="layerContainer"] {
+div[class|="layerContainer"] {
   // right-click popups for guild, channels, and user
   #guild-header-popout,
   #guild-context,
-  div[id^="channel-context"],
-  div[id^="user-context"] {
+  div[id|="channel-context"],
+  div[id|="user-context"] {
     background: $crust;
   }
 
@@ -331,14 +331,14 @@ div[class^="layerContainer"] {
       }
     }
 
-    div[class^="focusLock"] {
+    div[class|="focusLock"] {
       // create channel (modal)
       // stream popout (modalSize)
       // edit attachment (uploadModal)
       // Join server from link (contentWrapper)
-      div[class^="modal-"],
-      div[class^="modalSize-"],
-      div[class^="uploadModal-"],
+      div[class|="modal"],
+      div[class|="modalSize"],
+      div[class|="uploadModal"],
       div[class|="contentWrapper"] {
         background-color: $mantle;
         li,
@@ -368,7 +368,7 @@ div[class^="layerContainer"] {
       h4,
       h5,
       h6 {
-        &[class^="fixed-"] {
+        &[class|="fixed"] {
           &:after {
             background-color: $red;
           }
@@ -402,7 +402,7 @@ div[class^="layerContainer"] {
   }
 
   // add game
-  div[class^="addGamePopout-"] {
+  div[class|="addGamePopout"] {
     background-color: $mantle;
   }
 
@@ -412,9 +412,9 @@ div[class^="layerContainer"] {
     display: none;
   }
 
-  div[class^="queryContainer"] {
+  div[class|="queryContainer"] {
     background-color: $crust;
-    span[class^="key"] {
+    span[class|="key"] {
       color: $text;
       background-color: $base;
     }
@@ -429,7 +429,7 @@ div[class^="layerContainer"] {
   }
 
   // when hovering active threads
-  div[class^="popout-"] div[class^="row"][role="button"] {
+  div[class|="popout"] div[class|="row"][role="button"] {
     &:hover {
       color: $crust;
 
@@ -447,7 +447,7 @@ form[class*="card-"] {
 
 // user info
 div[class*="userInfoSection-"] {
-  div[class^="connectedAccountContainer-"] {
+  div[class|="connectedAccountContainer"] {
     background-color: adjust-color($surface0, $alpha: -0.55) !important;
   }
 }
@@ -462,13 +462,13 @@ div[class*="cardWarning-"] div[class*="warning-"] {
 #sticker-picker-tab-panel {
   /* --background-floating: #{$surface0};
 
-  + div[class^="slotsContainer-"] {
+  + div[class|="slotsContainer"] {
     background-color: $surface0;
   }
 */
 
-  div[class^="tooltipContainer-"] {
-    label[class^="label-"] {
+  div[class|="tooltipContainer"] {
+    label[class|="label"] {
       &[class*="labelChecked-"] {
         background: -webkit-gradient(
           linear,
@@ -500,7 +500,7 @@ div[class*="cardWarning-"] div[class*="warning-"] {
 div[class*="keyboardShortcutsModal-"] {
   background-color: $mantle !important;
 
-  div[class^="keybindShortcut-"] span[class^="key-"] {
+  div[class|="keybindShortcut"] span[class|="key"] {
     color: $crust;
 
     svg g {
@@ -523,12 +523,12 @@ div[class*="keyboardShortcutsModal-"] {
 .react-datepicker__day--selected:after {
   background-color: $blue !important;
 }
-[class^="datePickerHint-"] [class^="hintValue-"] {
+[class|="datePickerHint"] [class|="hintValue"] {
   color: $crust !important;
 }
 
 div[class*="layerContainer-"] {
-  div[class^="control-"] {
+  div[class|="control"] {
     div[class*="checked-"] {
       background-color: $green !important;
     }
@@ -575,10 +575,10 @@ div[class*="userProfileOuter-"] {
   div[aria-label="Early Verified Bot Developer"] {
     content: url("data:image/svg+xml,%3Csvg height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m21.58 11.4-4.28-7.39-.35-.6h-9.91l-.35.6-4.27 7.39-.35.6.35.6 4.27 7.39.35.6h9.92l.35-.6 4.28-7.39.35-.6zm-13.07-1.03-1.63 1.63 1.63 1.63v2.73l-4.36-4.36 4.37-4.37v2.74zm3.12 6.93-2.04-.63 3.1-9.98 2.04.64zm3.86-.93v-2.73l1.63-1.64-1.63-1.63v-2.74l4.36 4.37z' fill='%23#{str-slice(inspect($blue), 2)}'/%3E%3C/svg%3E");
   }
-  div[class^="userPopoutOverlayBackground"]
-    > div[class^="scroller"]
-    > div[class^="section"]:first-child
-    > div[class^="buttonsContainer"]
+  div[class|="userPopoutOverlayBackground"]
+    > div[class|="scroller"]
+    > div[class|="section"]:first-child
+    > div[class|="buttonsContainer"]
     > button:nth-child(2) {
     background: $brand;
   }
