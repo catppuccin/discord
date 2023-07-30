@@ -1,11 +1,11 @@
 nav[class*="guilds-"] {
   // server icons
-  foreignObject > div[data-list-item-id^="guildsnav_"] {
+  foreignObject > div[data-list-item-id|="guildsnav_"] {
     background-color: lighten($base, 2%);
 
     &:hover,
     &[class*="selected"] {
-      > div[class^="childWrapper-"] {
+      > div[class|="childWrapper"] {
         color: $crust;
         font-weight: 600;
       }
@@ -18,10 +18,10 @@ nav[class*="guilds-"] {
   }
 
   // lightens folder wrapper bg
-  span[class^="expandedFolderBackground-"] {
+  span[class|="expandedFolderBackground"] {
     background-color: lighten($base, 3%);
   }
-  div[class^="folder-"][class*="hover-"] {
+  div[class|="folder"][class*="hover-"] {
     background-color: lighten($base, 8%);
   }
 
@@ -34,8 +34,8 @@ nav[class*="guilds-"] {
 }
 
 // server list icons
-div[class^="upperBadge"] {
-  > div[class^="iconBadge"] path {
+div[class|="upperBadge"] {
+  > div[class|="iconBadge"] path {
     color: $crust;
   }
 
@@ -44,6 +44,6 @@ div[class^="upperBadge"] {
   }
 }
 
-div[class^="lowerBadge"] div[class^="iconBadge"] path {
+div[class|="lowerBadge"] div[class|="iconBadge"] path {
   color: $crust;
 }
