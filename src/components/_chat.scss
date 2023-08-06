@@ -401,6 +401,14 @@ div[class|="callContainer"] {
         }
       }
 
+      &[class*="green-"] {
+        background: $green;
+
+        [class*="centerIcon-"] {
+          color: $crust;
+        }
+      }
+
       &[class*="white-"] {
         color: $crust;
         background-color: $subtext1;
