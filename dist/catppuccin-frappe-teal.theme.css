@@ -1314,6 +1314,12 @@ div[class|=callContainer] div[class|=videoControls] [class*=colorable-][class*=p
 div[class|=callContainer] div[class|=videoControls] [class*=colorable-][class*=primaryDark-] [class*=centerIcon-] {
   color: #c6d0f5;
 }
+div[class|=callContainer] div[class|=videoControls] [class*=colorable-][class*=green-] {
+  background: #a6d189;
+}
+div[class|=callContainer] div[class|=videoControls] [class*=colorable-][class*=green-] [class*=centerIcon-] {
+  color: #232634;
+}
 div[class|=callContainer] div[class|=videoControls] [class*=colorable-][class*=white-] {
   color: #232634;
   background-color: #b5bfe2;
