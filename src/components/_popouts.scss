@@ -15,7 +15,9 @@ div[class|="layerContainer"] [role="menu"] {
       }
     }
 
-    &[role="menuitem"]:not([class*="colorDanger"]):not([id*="user-context-user-volume"]):hover {
+    &[role="menuitem"]:not([class*="colorDanger"]):not(
+        [id*="user-context-user-volume"]
+      ):hover {
       background: var(--background-accent);
       color: $crust;
 
@@ -413,7 +415,7 @@ div[class|="layerContainer"] {
   }
 
   div[class|="queryContainer"] {
-    background-color: $crust;
+    background-color: $crust !important;
     span[class|="key"] {
       color: $text;
       background-color: $base;
