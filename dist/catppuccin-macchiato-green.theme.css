@@ -1714,7 +1714,7 @@ div[class|=layerContainer] li[class*=option-]::after {
   display: none;
 }
 div[class|=layerContainer] div[class|=queryContainer] {
-  background-color: #181926;
+  background-color: #181926 !important;
 }
 div[class|=layerContainer] div[class|=queryContainer] span[class|=key] {
   color: #cad3f5;

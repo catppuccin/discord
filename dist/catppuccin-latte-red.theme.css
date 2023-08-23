@@ -1962,7 +1962,7 @@ div[class|=layerContainer] li[class*=option-]::after {
   display: none;
 }
 div[class|=layerContainer] div[class|=queryContainer] {
-  background-color: #dce0e8;
+  background-color: #dce0e8 !important;
 }
 div[class|=layerContainer] div[class|=queryContainer] span[class|=key] {
   color: #4c4f69;
