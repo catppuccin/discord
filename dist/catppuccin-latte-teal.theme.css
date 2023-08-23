@@ -2282,6 +2282,10 @@ button[class|=attachButton] svg path[class|=attachButtonPlay] {
   fill: #40a02b;
 }
 
+div[class|=tags] div[class|=pinIcon] path {
+  fill: #eff1f5 !important;
+}
+
 div[class*=avatarSpeaking-] {
   -webkit-box-shadow: inset 0 0 0 2px #40a02b, inset 0 0 0 3px var(--background-secondary);
   box-shadow: inset 0 0 0 2px #40a02b, inset 0 0 0 3px var(--background-secondary);
@@ -2318,7 +2322,8 @@ div[class*=tryItOutBadge-] {
 }
 
 span[class*=channelMention]:hover,
-[class*=mention]:not([class*=mentionButton-], [class*=mentionIcon-]):hover {
+[class*=mention]:not([class*=mentionButton-],
+[class*=mentionIcon-]):hover {
   color: #dce0e8;
 }
 
