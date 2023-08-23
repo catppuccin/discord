@@ -121,7 +121,9 @@ div[class*="flowerStarContainer-"] {
   }
 
   &[class*="iconBackgroundTierOne-"],
-  &[class*="iconBackgroundTierTwo-"]:not([class*="boostedGuildTierIconBackgroundWithVisibleBanner"]) {
+  &[class*="iconBackgroundTierTwo-"]:not(
+      [class*="boostedGuildTierIconBackgroundWithVisibleBanner"]
+    ) {
     svg[class*="flowerStar-"] * {
       fill: $surface2;
     }
@@ -226,8 +228,12 @@ button[class|="attachButton"] {
   }
 }
 
-// speaking indicator
+// Forum channel pins
+div[class|="tags"] div[class|="pinIcon"] path {
+  fill: $base !important;
+}
 
+// speaking indicator
 div[class*="avatarSpeaking-"] {
   -webkit-box-shadow: inset 0 0 0 2px $green,
     inset 0 0 0 3px var(--background-secondary);
@@ -273,6 +279,9 @@ div[class*="tryItOutBadge-"] {
 }
 
 span[class*="channelMention"]:hover,
-[class*="mention"]:not([class*="mentionButton-"], [class*="mentionIcon-"]):hover {
+[class*="mention"]:not(
+    [class*="mentionButton-"],
+    [class*="mentionIcon-"]
+  ):hover {
   color: $crust;
 }
