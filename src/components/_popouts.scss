@@ -586,7 +586,7 @@ div[class*="userProfileOuter-"] {
   }
 }
 
-[class*="layerContainer-"] [class*="toolbar-"] {
+[class*="layerContainer-"] [id|="slate-toolbar"] {
   background-color: var(--background-floating);
 
   [class*="buttons-"] [class*="icon-"] {
