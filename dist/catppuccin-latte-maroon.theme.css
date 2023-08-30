@@ -2086,10 +2086,10 @@ div[class*=userProfileOuter-] div[class|=userPopoutOverlayBackground] > div[clas
   background: #e64553;
 }
 
-[class*=layerContainer-] [class*=toolbar-] {
+[class*=layerContainer-] [id|=slate-toolbar] {
   background-color: var(--background-floating);
 }
-[class*=layerContainer-] [class*=toolbar-] [class*=buttons-] [class*=icon-] {
+[class*=layerContainer-] [id|=slate-toolbar] [class*=buttons-] [class*=icon-] {
   color: #4c4f69;
 }
 
