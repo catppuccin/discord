@@ -45,7 +45,9 @@
   }
   // Super reactions and beta badge
   div[class*="isBurstReactionPicker-"] {
-    box-shadow: 0 0 0 2px $mauve, 0 0 16px $lavender;
+    box-shadow:
+      0 0 0 2px $mauve,
+      0 0 16px $lavender;
   }
   div[class|="navButtonSuperReactActive"],
   div[class|="navButtonSuperReactActive"]:hover {
@@ -66,7 +68,9 @@
   }
   div[class*="isBurstReactionPicker"] {
     border: none;
-    box-shadow: 0 0 0 2px $mauve, 0 0 16px $lavender;
+    box-shadow:
+      0 0 0 2px $mauve,
+      0 0 16px $lavender;
   }
   // Voice messages play button
   div[class*="playButtonContainer-"] {
@@ -547,6 +551,11 @@ div[class*="chat-"] {
 // typing indicator
 [class|="avatar"] [class|="dots"] {
   color: $base;
+}
+
+// members tab
+div[class|="chat"][class*="page-"] div[class|="content"][class*="container-"] {
+  height: 100%;
 }
 
 // Vencord's deleted message plugin
