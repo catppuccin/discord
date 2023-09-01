@@ -1663,6 +1663,10 @@ div[class*=chat-] div[class*=innerHeader]:after {
   color: #eff1f5;
 }
 
+div[class|=chat][class*=page-] div[class|=content][class*=container-] {
+  height: 100%;
+}
+
 .messagelogger-deleted div {
   color: #d20f39 !important;
 }
