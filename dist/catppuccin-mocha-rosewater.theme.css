@@ -1301,6 +1301,9 @@ div[class|=callContainer] div[class|=videoControls] button[class*=leftTrayIcon-]
   background-color: #313244;
   color: #cdd6f4;
 }
+div[class|=callContainer] div[class|=videoControls] div[class|=badge] {
+  color: #11111b;
+}
 div[class|=callContainer] div[class|=videoControls] [class*=colorable-][class*=red-] {
   background: #f38ba8;
 }
