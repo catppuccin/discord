@@ -45,9 +45,7 @@
   }
   // Super reactions and beta badge
   div[class*="isBurstReactionPicker-"] {
-    box-shadow:
-      0 0 0 2px $mauve,
-      0 0 16px $lavender;
+    box-shadow: 0 0 0 2px $mauve, 0 0 16px $lavender;
   }
   div[class|="navButtonSuperReactActive"],
   div[class|="navButtonSuperReactActive"]:hover {
@@ -68,9 +66,7 @@
   }
   div[class*="isBurstReactionPicker"] {
     border: none;
-    box-shadow:
-      0 0 0 2px $mauve,
-      0 0 16px $lavender;
+    box-shadow: 0 0 0 2px $mauve, 0 0 16px $lavender;
   }
   // Voice messages play button
   div[class*="playButtonContainer-"] {
@@ -385,6 +381,10 @@ div[class|="callContainer"] {
     button[class*="leftTrayIcon-"][class*="buttonColor-"] {
       background-color: $surface0;
       color: $text;
+    }
+
+    div[class|="badge"] {
+      color: $crust;
     }
 
     [class*="colorable-"] {
