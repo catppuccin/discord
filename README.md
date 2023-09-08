@@ -38,8 +38,10 @@
 
 1. Choose any flavor and accent color
 2. Copy this link:
-`https://riichimaru.me/flavor/color.json`
+>https://riichimaru.me/flavor/color.json
+
 where **flavor** - your chosen flavor (frappe, mocha, ...)
+
 **color** - accent color (red, maroon, ...)
 For example, Catppuccin Mocha theme with red accent color will be:
 https://riichimaru.me/mocha/red.json
