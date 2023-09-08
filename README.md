@@ -19,7 +19,7 @@
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/latte.webp"/>
+<img src="https://raw.githubusercontent.com/riichi67/vendetta/main/assets/latte.png"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
@@ -27,7 +27,7 @@
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/macchiato.webp"/>
+<img src="https://raw.githubusercontent.com/riichi67/vendetta/main/assets/macchiato.jpg"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
@@ -36,21 +36,26 @@
 
 ## Usage
 
-1. Choose any flavor and accent color
-2. Copy this link:
->https://riichimaru.me/flavor/color.json
+- Choose any flavor and accent color
+- Copy this link and change flavor with accent:
+>https://raw.githubusercontent.com/riichi67/vendetta/main/flavor/color.json
 
-where **flavor** - your chosen flavor (frappe, mocha, ...)
+where **flavor** - your chosen flavor (frappe, mocha, ...) and **color** - accent color (red, maroon, ...)
 
-**color** - accent color (red, maroon, ...)
 For example, Catppuccin Mocha theme with red accent color will be:
-https://riichimaru.me/mocha/red.json
-3. Go to You tab (aka Settings) - Vendetta - Themes, press on plus icon, paste your link and press *"Install"*.
-4. Select your theme and you're ready to go!
+>https://raw.githubusercontent.com/riichi67/vendetta/main/mocha/red.json
+
+The only exception here is Frappe - it's just:
+>https://raw.githubusercontent.com/riichi67/vendetta/main/frappe/frappe.json
+
+- Go to You tab (aka Settings) - Vendetta - Themes, press on plus icon, paste your link and press *"Install"*.
+- Select your theme and you're ready to go!
 
 ## 💝 Thanks to
 
-- [Human](https://github.com/catppuccin)
+- [riichi](https://github.com/riichi67)
+- [Luz](https://github.com/luzikii)
+- [Quinxxxx](https://github.com/Quinxxxx)
 
 &nbsp;
 
