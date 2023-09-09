@@ -37,10 +37,10 @@
 ## Usage
 
 - Choose any flavor and accent color
-- Copy this link and change flavor with accent:
->https://raw.githubusercontent.com/riichi67/vendetta/main/flavor/color.json
+- Copy this link and change `flavor` with `accent`:
+>https://raw.githubusercontent.com/riichi67/vendetta/main/flavor/accent.json
 
-where **flavor** - your chosen flavor (frappe, mocha, ...) and **color** - accent color (red, maroon, ...)
+where `flavor` - your chosen flavor (latte, frappe, macchiato, mocha) and `accent` - accent color (red, maroon, mauve, lavender ...)
 
 For example, Catppuccin Mocha theme with red accent color will be:
 >https://raw.githubusercontent.com/riichi67/vendetta/main/mocha/red.json
@@ -48,7 +48,11 @@ For example, Catppuccin Mocha theme with red accent color will be:
 The only exception here is Frappe - it's just:
 >https://raw.githubusercontent.com/riichi67/vendetta/main/frappe/frappe.json
 
-- Go to You tab (aka Settings) - Vendetta - Themes, press on plus icon, paste your link and press *"Install"*.
+- Go to You tab (aka Settings)
+- Vendetta
+- Themes
+- Press on `+` icon
+- Paste your link and press *"Install"*.
 - Select your theme and you're ready to go!
 
 ## 💝 Thanks to
