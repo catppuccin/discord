@@ -56,6 +56,7 @@ The only exception here is Frappe - it's just:
 - [riichi](https://github.com/riichi67)
 - [Luz](https://github.com/luzikii)
 - [Quinxxxx](https://github.com/Quinxxxx)
+- [Taki Shiwa](https://github.com/TakiShiwa)
 
 &nbsp;
 
