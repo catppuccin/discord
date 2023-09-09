@@ -19,7 +19,7 @@
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/riichi67/vendetta/main/assets/latte.png"/>
+<img src="https://raw.githubusercontent.com/riichi67/vendetta/main/assets/latte.webp"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
@@ -27,7 +27,7 @@
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/riichi67/vendetta/main/assets/macchiato.jpg"/>
+<img src="https://raw.githubusercontent.com/riichi67/vendetta/main/assets/macchiato.webp"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
