@@ -657,7 +657,10 @@ div[class|=contentRegion] #game-activity-tab div[class*=removeGame-] {
 div[class|=contentRegion] #emoji-tab div[class*=emojiRemove-] {
   background-color: #414559;
 }
-div[class|=contentRegion] section[class|=inputSensitivityToggle] div[class*=speaking-] {
+div[class|=contentRegion] section[class|=inputSensitivityToggle] div[class|=inputSensitivityBar] {
+  background: #51576d;
+}
+div[class|=contentRegion] section[class|=inputSensitivityToggle] div[class|=inputSensitivityBar][class*=speaking-] {
   background: #a6d189 !important;
 }
 div[class|=contentRegion] div[class*=reactionMe-] {
