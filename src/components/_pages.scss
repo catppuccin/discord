@@ -276,8 +276,12 @@ div[class|="contentRegion"] {
 
   // Voice & Audio checks
   section[class|="inputSensitivityToggle"] {
-    div[class*="speaking-"] {
-      background: $green !important;
+    div[class|="inputSensitivityBar"] {
+      background: $surface1;
+
+      &[class*="speaking-"] {
+        background: $green !important;
+      }
     }
   }
 
