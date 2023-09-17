@@ -1,6 +1,6 @@
 nav[class*="guilds-"] {
   // server icons
-  foreignObject > div[data-list-item-id|="guildsnav_"] {
+  foreignObject > div[data-list-item-id*="guildsnav_"] {
     background-color: lighten($base, 2%);
 
     &:hover,
@@ -26,10 +26,14 @@ nav[class*="guilds-"] {
   }
 
   // create server/discovery
-  div[data-list-item-id="guildsnav___create-join-button"] svg > path,
-  div[data-list-item-id="guildsnav___guild-discover-button"] svg > path,
-  div[data-list-item-id="guildsnav___app-download-button"] svg > path {
-    fill: $green;
+  div[data-list-item-id="guildsnav___create-join-button"],
+  div[data-list-item-id="guildsnav___guild-discover-button"],
+  div[data-list-item-id="guildsnav___app-download-button"] {
+    &:hover,
+    &[class*="selected"] {
+      color: $crust;
+      font-weight: 600;
+    }
   }
 }
 
