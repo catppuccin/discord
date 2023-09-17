@@ -1176,10 +1176,10 @@ div[class|=notice] button[class|=button]:hover {
   background: #b27117;
 }
 
-nav[class*=guilds-] foreignObject > div[data-list-item-id|=guildsnav_] {
+nav[class*=guilds-] foreignObject > div[data-list-item-id*=guildsnav_] {
   background-color: #f5f6f9;
 }
-nav[class*=guilds-] foreignObject > div[data-list-item-id|=guildsnav_]:hover > div[class|=childWrapper], nav[class*=guilds-] foreignObject > div[data-list-item-id|=guildsnav_][class*=selected] > div[class|=childWrapper] {
+nav[class*=guilds-] foreignObject > div[data-list-item-id*=guildsnav_]:hover > div[class|=childWrapper], nav[class*=guilds-] foreignObject > div[data-list-item-id*=guildsnav_][class*=selected] > div[class|=childWrapper] {
   color: #dce0e8;
   font-weight: 600;
 }
@@ -1192,10 +1192,13 @@ nav[class*=guilds-] span[class|=expandedFolderBackground] {
 nav[class*=guilds-] div[class|=folder][class*=hover-] {
   background-color: white;
 }
-nav[class*=guilds-] div[data-list-item-id=guildsnav___create-join-button] svg > path,
-nav[class*=guilds-] div[data-list-item-id=guildsnav___guild-discover-button] svg > path,
-nav[class*=guilds-] div[data-list-item-id=guildsnav___app-download-button] svg > path {
-  fill: #40a02b;
+nav[class*=guilds-] div[data-list-item-id=guildsnav___create-join-button]:hover, nav[class*=guilds-] div[data-list-item-id=guildsnav___create-join-button][class*=selected],
+nav[class*=guilds-] div[data-list-item-id=guildsnav___guild-discover-button]:hover,
+nav[class*=guilds-] div[data-list-item-id=guildsnav___guild-discover-button][class*=selected],
+nav[class*=guilds-] div[data-list-item-id=guildsnav___app-download-button]:hover,
+nav[class*=guilds-] div[data-list-item-id=guildsnav___app-download-button][class*=selected] {
+  color: #dce0e8;
+  font-weight: 600;
 }
 
 div[class|=upperBadge] > div[class|=iconBadge] path {
