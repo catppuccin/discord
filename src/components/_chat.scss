@@ -149,6 +149,20 @@ main[class|="chatContent"] div[id|="message-content"] svg[class|="icon"] {
     }
   }
 
+  span[class*=spoilerMarkdownContent] {
+    h1 > span {
+      background-color: $surface0;
+    }
+
+    &[class*="hidden"] h1 > span {
+      background-color: $surface2;
+
+      &:hover {
+        background-color: lighten($surface2, 5%);
+      }
+    }
+  }
+
   div[class|="spoilerContainer"] {
     div[class|="spoilerWarning"] {
       color: $text;
