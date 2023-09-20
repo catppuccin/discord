@@ -1,8 +1,6 @@
 nav[class*="guilds-"] {
   // server icons
   foreignObject > div[data-list-item-id*="guildsnav_"] {
-    background-color: lighten($base, 2%);
-
     &:hover,
     &[class*="selected"] {
       > div[class|="childWrapper"] {
