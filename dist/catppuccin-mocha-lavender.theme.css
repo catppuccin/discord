@@ -1142,6 +1142,18 @@ main[class|=chatContent] div[id|=message-content] svg[class|=icon] > path[d="M2 
 .theme-light div[class|=spoilerContent][class*=hidden]:hover {
   background-color: #63677e;
 }
+.theme-dark span[class*=spoilerMarkdownContent] h1 > span,
+.theme-light span[class*=spoilerMarkdownContent] h1 > span {
+  background-color: #313244;
+}
+.theme-dark span[class*=spoilerMarkdownContent][class*=hidden] h1 > span,
+.theme-light span[class*=spoilerMarkdownContent][class*=hidden] h1 > span {
+  background-color: #585b70;
+}
+.theme-dark span[class*=spoilerMarkdownContent][class*=hidden] h1 > span:hover,
+.theme-light span[class*=spoilerMarkdownContent][class*=hidden] h1 > span:hover {
+  background-color: #63677e;
+}
 .theme-dark div[class|=spoilerContainer] div[class|=spoilerWarning],
 .theme-light div[class|=spoilerContainer] div[class|=spoilerWarning] {
   color: #cdd6f4;
