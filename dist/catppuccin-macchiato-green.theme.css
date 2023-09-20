@@ -928,9 +928,6 @@ div[class|=notice] button[class|=button]:hover {
   background: #86cd6f;
 }
 
-nav[class*=guilds-] foreignObject > div[data-list-item-id*=guildsnav_] {
-  background-color: #282b40;
-}
 nav[class*=guilds-] foreignObject > div[data-list-item-id*=guildsnav_]:hover > div[class|=childWrapper], nav[class*=guilds-] foreignObject > div[data-list-item-id*=guildsnav_][class*=selected] > div[class|=childWrapper] {
   color: #181926;
   font-weight: 600;
