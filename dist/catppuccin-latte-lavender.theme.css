@@ -1100,6 +1100,9 @@ div[class|=pageWrapper] {
 div[class|=pageWrapper] div[class*=searchBox-] {
   background-color: #e6e9ef;
 }
+div[class|=pageWrapper] div[class*=searchBox-] input[class*=searchBoxInput-] {
+  color: var(--text-normal);
+}
 div[class|=pageWrapper] div[class*=searchBox-] svg[class*=clearIcon] path {
   fill: #9ca0b0;
 }
