@@ -636,8 +636,8 @@ div[class|=contentRegion] #game-activity-tab div[class*=overlayStatusText-] {
 div[class|=contentRegion] #game-activity-tab div[class*=activeGame-][class*=nowPlaying] * {
   color: #11111b;
 }
-div[class|=contentRegion] #game-activity-tab div[class*=activeGame-][class*=nowPlaying] * svg > g > path {
-  fill: #11111b;
+div[class|=contentRegion] #game-activity-tab div[class*=activeGame-][class*=nowPlaying] * svg > path {
+  fill: #11111b !important;
 }
 div[class|=contentRegion] #game-activity-tab input[class|=gameName] {
   color: #cdd6f4;
