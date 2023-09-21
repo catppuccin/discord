@@ -240,8 +240,8 @@ div[class|="contentRegion"] {
     div[class*="activeGame-"][class*="nowPlaying"] * {
       color: $crust;
 
-      svg > g > path {
-        fill: $crust;
+      svg > path {
+        fill: $crust !important;
       }
     }
 
