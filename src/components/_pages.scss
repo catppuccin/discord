@@ -563,6 +563,10 @@ div[class|="pageWrapper"] {
   div[class*="searchBox-"] {
     background-color: $mantle;
 
+    input[class*="searchBoxInput-"] {
+      color: var(--text-normal);
+    }
+
     svg[class*="clearIcon"] path {
       fill: $overlay0;
     }
