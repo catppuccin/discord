@@ -118,6 +118,8 @@ html {
   --status-yellow-500: #e5c890;
   --black-500: #232634;
   --green-360: #a6d189;
+  --yellow-360: #e5c890;
+  --red-400: #e78284;
   --primary-400: #b5bfe2;
   --primary-dark-700: #232634;
   --status-green-560: #a6d189;
@@ -2238,11 +2240,11 @@ span[class*=channelMention]:hover,
 .theme-dark code .hljs-template-variable {
   color: #eebebe;
 }
-.theme-dark code .hljs-diff-addition {
+.theme-dark code .hljs-addition {
   color: #a6d189;
-  background: rgba(var(--ctp-green), 15%);
+  background: rgba(166, 209, 137, 0.15);
 }
-.theme-dark code .hljs-diff-deletion {
+.theme-dark code .hljs-deletion {
   color: #e78284;
-  background: rgba(var(--ctp-red), 15%);
+  background: rgba(231, 130, 132, 0.15);
 }
