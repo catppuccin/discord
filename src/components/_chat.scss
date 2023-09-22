@@ -45,7 +45,9 @@
   }
   // Super reactions and beta badge
   div[class*="isBurstReactionPicker-"] {
-    box-shadow: 0 0 0 2px $mauve, 0 0 16px $lavender;
+    box-shadow:
+      0 0 0 2px $mauve,
+      0 0 16px $lavender;
   }
   div[class|="navButtonSuperReactActive"],
   div[class|="navButtonSuperReactActive"]:hover {
@@ -66,7 +68,9 @@
   }
   div[class*="isBurstReactionPicker"] {
     border: none;
-    box-shadow: 0 0 0 2px $mauve, 0 0 16px $lavender;
+    box-shadow:
+      0 0 0 2px $mauve,
+      0 0 16px $lavender;
   }
   // Voice messages play button
   div[class*="playButtonContainer-"] {
@@ -149,7 +153,7 @@ main[class|="chatContent"] div[id|="message-content"] svg[class|="icon"] {
     }
   }
 
-  span[class*=spoilerMarkdownContent] {
+  span[class*="spoilerMarkdownContent"] {
     h1 > span {
       background-color: $surface0;
     }
@@ -569,6 +573,11 @@ div[class*="chat-"] {
 
 // members tab
 div[class|="chat"][class*="page-"] div[class|="content"][class*="container-"] {
+  height: 100%;
+}
+
+// Server Guide
+div[class|="chat"] div[class|="homeContainer"] {
   height: 100%;
 }
 
