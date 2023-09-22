@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@catppuccin/highlightjs@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@catppuccin/highlightjs/-/highlightjs-0.1.1.tgz#4748e6958a781698aaf24fb67d8f96b603d52ca8"
-  integrity sha512-dcokSm8QYKv+EeZikY5CXuqEhUokLGrvCH0Jwt63pPfet2LOx7XDWq038gP1ME3G7+0cZoqcuLpgcNZGgRN/Lw==
+"@catppuccin/highlightjs@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@catppuccin/highlightjs/-/highlightjs-0.1.3.tgz#795dfec3e65260255e63269d49961e7a3339e9f1"
+  integrity sha512-NpC67ktdwR2nvGYb18uuMU8QDrwL+NUZJ3hMqhyRmVLAr9xJcuFOcDluJAKE3V13xD95aHTaIvyEW6PiWlaQwA==
 
 "@catppuccin/palette@^0.1.6":
   version "0.1.6"
