@@ -1442,6 +1442,10 @@ div[class|=chat][class*=page-] div[class|=content][class*=container-] {
   height: 100%;
 }
 
+div[class|=chat] div[class|=homeContainer] {
+  height: 100%;
+}
+
 .messagelogger-deleted div {
   color: #f38ba8 !important;
 }
