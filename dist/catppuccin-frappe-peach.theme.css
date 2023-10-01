@@ -1379,6 +1379,12 @@ div[class*=chat-] div[class*=content-][class*=container-] div[class*=search-] in
 div[class*=chat-] div[class*=content-][class*=container-] div[class*=browser] div[class*=content] div[class|=container] {
   background-color: #303446;
 }
+div[class*=chat-] div[class*=content-][class*=container-] div[class*=browser] div[class*=checkbox-] {
+  border-color: #232634 !important;
+}
+div[class*=chat-] div[class*=content-][class*=container-] div[class*=browser] div[class*=checkbox-] svg > path {
+  fill: #232634;
+}
 div[class*=chat-] div[class*=content-][class*=container-] div[class*=scrollerContainer-] {
   background-color: #292c3c;
 }

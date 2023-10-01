@@ -1627,6 +1627,12 @@ div[class*=chat-] div[class*=content-][class*=container-] div[class*=search-] in
 div[class*=chat-] div[class*=content-][class*=container-] div[class*=browser] div[class*=content] div[class|=container] {
   background-color: #eff1f5;
 }
+div[class*=chat-] div[class*=content-][class*=container-] div[class*=browser] div[class*=checkbox-] {
+  border-color: #dce0e8 !important;
+}
+div[class*=chat-] div[class*=content-][class*=container-] div[class*=browser] div[class*=checkbox-] svg > path {
+  fill: #dce0e8;
+}
 div[class*=chat-] div[class*=content-][class*=container-] div[class*=scrollerContainer-] {
   background-color: #e6e9ef;
 }
