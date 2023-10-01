@@ -29,6 +29,16 @@
   }
 }
 
+[class*="lookOutlined-"][class*="colorPrimary-"] {
+  border-color: $surface1;
+
+  &:hover {
+    background-color: $surface0;
+    color: $text;
+    border-color: $surface1;
+  }
+}
+
 // buttons in sidebar when in calls
 div[class|="actionButtons"] {
   [class|="button"][class*="buttonColor-"],
