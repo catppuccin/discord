@@ -403,6 +403,15 @@ html {
   color: #cad3f5;
 }
 
+[class*=lookOutlined-][class*=colorPrimary-] {
+  border-color: #494d64;
+}
+[class*=lookOutlined-][class*=colorPrimary-]:hover {
+  background-color: #363a4f;
+  color: #cad3f5;
+  border-color: #494d64;
+}
+
 div[class|=actionButtons] [class|=button][class*=buttonColor-],
 div[class|=actionButtons] [class|=button] [class*=buttonColor-] {
   background-color: #494d64;
