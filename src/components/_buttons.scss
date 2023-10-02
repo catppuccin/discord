@@ -29,6 +29,11 @@
   }
 }
 
+// For some reason, red buttons on click turn blue. Sure.
+button[class*="lookFilled-"][class*="colorRed-"]:active {
+  background-color: $red;
+}
+
 [class*="lookOutlined-"][class*="colorPrimary-"] {
   border-color: $surface1;
 
