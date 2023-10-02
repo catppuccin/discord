@@ -455,6 +455,14 @@ div[class|="callContainer"] {
   }
 }
 
+// Weird gradient thing on forums
+div[class|="chat"]
+  section[class*="forumOrHome-"]
+  div[class|="upperContainer"]
+  > div[class|="children"]:after {
+  background: none;
+}
+
 // gifts
 div[class*="giftCodeContainer"] [class*="tile"] {
   background-color: $mantle;
