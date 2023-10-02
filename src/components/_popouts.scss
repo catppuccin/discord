@@ -45,9 +45,31 @@ div[class|="layerContainer"] [role="menu"] {
     }
   }
 
-  // make the switch account username crust when focused
-  [class*="focused"] [class*="userMenuUsername"] * {
-    color: $crust;
+  // Account switcher submenu
+  div[id|="account-switch-account"] {
+    &[class*="focused"] {
+      div[class*="userMenuUsername"] div {
+        color: $crust;
+      }
+
+      svg[class|="activeIcon"] {
+        circle {
+          fill: $blue;
+        }
+        g path {
+          fill: $crust;
+        }
+      }
+    }
+
+    svg[class|="activeIcon"] {
+      circle {
+        fill: $crust;
+      }
+      g path {
+        fill: $blue;
+      }
+    }
   }
 
   [class*="colorDanger"][class*="focused"],
