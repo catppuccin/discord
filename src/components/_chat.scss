@@ -369,6 +369,13 @@ div[class|="callContainer"] {
       }
     }
 
+    div[class|="bottomControls"] {
+      button[class|="textButton"] {
+        color: $text;
+        background-color: $surface1;
+      }
+    }
+
     div[class|="toolbar"] {
       svg[class|="controlIcon"] {
         color: var(--interactive-normal);
@@ -417,6 +424,10 @@ div[class|="callContainer"] {
         [class*="centerIcon-"] {
           color: $text;
         }
+
+        svg[class|="raisedHandButtonIcon"] {
+          color: $text;
+        }
       }
 
       &[class*="green-"] {
@@ -442,6 +453,14 @@ div[class|="callContainer"] {
       }
     }
   }
+}
+
+// Weird gradient thing on forums
+div[class|="chat"]
+  section[class*="forumOrHome-"]
+  div[class|="upperContainer"]
+  > div[class|="children"]:after {
+  background: none;
 }
 
 // gifts
