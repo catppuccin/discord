@@ -369,6 +369,13 @@ div[class|="callContainer"] {
       }
     }
 
+    div[class|="bottomControls"] {
+      button[class|="textButton"] {
+        color: $text;
+        background-color: $surface1;
+      }
+    }
+
     div[class|="toolbar"] {
       svg[class|="controlIcon"] {
         color: var(--interactive-normal);
