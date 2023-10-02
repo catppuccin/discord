@@ -424,6 +424,10 @@ div[class|="callContainer"] {
         [class*="centerIcon-"] {
           color: $text;
         }
+
+        svg[class|="raisedHandButtonIcon"] {
+          color: $text;
+        }
       }
 
       &[class*="green-"] {
