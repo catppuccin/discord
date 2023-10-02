@@ -651,6 +651,10 @@ html {
   color: #4c4f69;
 }
 
+button[class*=lookFilled-][class*=colorRed-]:active {
+  background-color: #d20f39;
+}
+
 [class*=lookOutlined-][class*=colorPrimary-] {
   border-color: #bcc0cc;
 }
@@ -1558,6 +1562,10 @@ div[class|=callContainer] div[class|=indicators] div[class|=liveQualityIndicator
 div[class|=callContainer] div[class|=videoControls] div[class|=children] div[class*=playingText-] {
   color: #5c5f77;
 }
+div[class|=callContainer] div[class|=videoControls] div[class|=bottomControls] button[class|=textButton] {
+  color: #4c4f69;
+  background-color: #bcc0cc;
+}
 div[class|=callContainer] div[class|=videoControls] div[class|=toolbar] svg[class|=controlIcon] {
   color: var(--interactive-normal);
 }
@@ -1594,6 +1602,9 @@ div[class|=callContainer] div[class|=videoControls] [class*=colorable-][class*=p
 div[class|=callContainer] div[class|=videoControls] [class*=colorable-][class*=primaryDark-] [class*=centerIcon-] {
   color: #4c4f69;
 }
+div[class|=callContainer] div[class|=videoControls] [class*=colorable-][class*=primaryDark-] svg[class|=raisedHandButtonIcon] {
+  color: #4c4f69;
+}
 div[class|=callContainer] div[class|=videoControls] [class*=colorable-][class*=green-] {
   background: #40a02b;
 }
@@ -1609,6 +1620,10 @@ div[class|=callContainer] div[class|=videoControls] [class*=colorable-][class*=w
 }
 div[class|=callContainer] div[class|=videoControls] [class*=colorable-][class*=white-]:hover, div[class|=callContainer] div[class|=videoControls] [class*=colorable-][class*=white-][class*=active-] {
   background: #4c4f69;
+}
+
+div[class|=chat] section[class*=forumOrHome-] div[class|=upperContainer] > div[class|=children]:after {
+  background: none;
 }
 
 div[class*=giftCodeContainer] [class*=tile] {
@@ -1748,8 +1763,20 @@ div[class|=layerContainer] [role=menu] [class*=colorDefault]:active:not([class*=
 div[class|=layerContainer] [role=menu] [class*=colorDefault]:active:not([class*=hideInteraction-]) [class*=checkbox-] {
   color: var(--background-floating);
 }
-div[class|=layerContainer] [role=menu] [class*=focused] [class*=userMenuUsername] * {
+div[class|=layerContainer] [role=menu] div[id|=account-switch-account][class*=focused] div[class*=userMenuUsername] div {
   color: #dce0e8;
+}
+div[class|=layerContainer] [role=menu] div[id|=account-switch-account][class*=focused] svg[class|=activeIcon] circle {
+  fill: #1e66f5;
+}
+div[class|=layerContainer] [role=menu] div[id|=account-switch-account][class*=focused] svg[class|=activeIcon] g path {
+  fill: #dce0e8;
+}
+div[class|=layerContainer] [role=menu] div[id|=account-switch-account] svg[class|=activeIcon] circle {
+  fill: #dce0e8;
+}
+div[class|=layerContainer] [role=menu] div[id|=account-switch-account] svg[class|=activeIcon] g path {
+  fill: #1e66f5;
 }
 div[class|=layerContainer] [role=menu] [class*=colorDanger][class*=focused],
 div[class|=layerContainer] [role=menu] [class*=colorDefault] [class*=check-] {
