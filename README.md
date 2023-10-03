@@ -120,6 +120,20 @@ curl -L https://catppuccin.github.io/discord/dist/catppuccin-frappe-maroon.theme
 2. [Click here to install](https://github.com/catppuccin/discord/raw/main/discord.user.css)
 3. Choose your preferred flavour and accent color from the Stylus preference dropdown.
 
+### [Vencord](https://vencord.dev)
+
+1. Copy the URL of your preferred flavour:
+
+- 🌻 [Latte](./themes/latte.theme.css?raw=1)
+- 🪴 [Frappe](./themes/frappe.theme.css?raw=1)
+- 🌺 [Macchiato](./themes/macchiato.theme.css?raw=1)
+- 🌿 [Mocha](./themes/mocha.theme.css?raw=1)
+
+2. Click the settings button.
+3. Scroll to the Vencord section and select `Themes`.
+4. Press `Online Themes`.
+5. Paste in the URL of your preferred flavour.
+
 ## 🙋 FAQ
 
 - Q: **_"Can this get my account banned?"_**
