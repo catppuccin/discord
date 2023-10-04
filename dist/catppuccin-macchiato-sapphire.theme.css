@@ -1926,6 +1926,18 @@ div[class*=userProfileOuter-] div[class|=userPopoutOverlayBackground] > div[clas
   color: #181926;
 }
 
+div[class|=layerContainer] div[aria-label=clyde] div[class|=profileBadges] div[class|=textBadge] {
+  background-color: #7dc4e4 !important;
+  color: #181926;
+}
+div[class|=layerContainer] div[aria-label=clyde] button[class|=messageClydeButton] {
+  color: #cad3f5;
+  background-color: #494d64;
+}
+div[class|=layerContainer] div[aria-label=clyde] button[class|=messageClydeButton]:hover {
+  background-color: #5b6078;
+}
+
 rect[fill="#23a55a"],
 foreignObject[mask="url(#svg-mask-status-online)"] > div,
 div[class|=dotOnline],
