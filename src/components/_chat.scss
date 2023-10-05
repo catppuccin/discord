@@ -615,3 +615,8 @@ div[class|="chat"] div[class|="homeContainer"] {
 .messagelogger-deleted div a {
   color: #{darken($red, 5%)} !important;
 }
+
+// Members sidebar
+aside[class="membersWrap"] {
+  height: 100%;
+}
