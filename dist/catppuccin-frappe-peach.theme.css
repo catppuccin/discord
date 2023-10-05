@@ -767,6 +767,9 @@ div[class|=contentRegion] #roles-tab div[class*=previewContainer-] .theme-dark i
 div[class|=contentRegion] #family-center-tab div[class|=featureCards] svg[class|=icon] {
   color: #232634;
 }
+div[class|=contentRegion] #profile-customization-tab div[class*=premiumFeatureBannerBackground] button {
+  color: #232634;
+}
 
 .bd-settings-title {
   color: #c6d0f5;
