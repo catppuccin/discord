@@ -533,6 +533,16 @@ div[class*="keyboardShortcutsModal-"] {
   }
 }
 
+div[class|="planOptionClickableContainer"] {
+  div[class|="checkbox"] svg path {
+    fill: $crust !important;
+  }
+
+  div[class*="planOptionDiscount-"] {
+    color: $crust !important;
+  }
+}
+
 // Search bar calendar
 .react-datepicker,
 .react-datepicker__header {
