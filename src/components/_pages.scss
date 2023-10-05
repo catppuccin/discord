@@ -426,6 +426,12 @@ div[class|="contentRegion"] {
       }
     }
   }
+
+  #family-center-tab {
+    div[class|="featureCards"] svg[class|="icon"] {
+      color: $crust;
+    }
+  }
 }
 
 .bd-settings-title {
