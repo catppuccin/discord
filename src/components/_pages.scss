@@ -312,10 +312,6 @@ div[class|="contentRegion"] {
     > div[style*="background-color: hsl(218, calc(var(--saturation-factor, 1) * 4.6%), 46.9%)"] {
       background-color: $surface2 !important;
     }
-
-    svg[class|="slider"] > svg > path {
-      fill: darken($green, 40%) !important;
-    }
   }
 
   // server boost page
