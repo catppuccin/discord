@@ -1224,6 +1224,9 @@ div[class|=channelTextArea] button[class*=emojiButton-] {
 div[class|=chat] > div[class|=content] > div[class|=container] {
   background-color: #24273a;
 }
+div[class|=chat] > div[class|=content] > div[class|=container] div[class|=grid] {
+  background-color: #24273a;
+}
 div[class|=chat] > div[class|=content] > div[class|=container] div[class|=pinIcon] > svg > path,
 div[class|=chat] > div[class|=content] > div[class|=container] div[class|=stepStatus] > svg > path {
   fill: #a5adcb;
