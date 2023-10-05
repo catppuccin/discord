@@ -2105,6 +2105,13 @@ div[class*=keyboardShortcutsModal-] div[class|=keybindShortcut] span[class|=key]
   fill: #dce0e8 !important;
 }
 
+div[class|=planOptionClickableContainer] div[class|=checkbox] svg path {
+  fill: #dce0e8 !important;
+}
+div[class|=planOptionClickableContainer] span[class*=planOptionDiscount-] {
+  color: #dce0e8 !important;
+}
+
 .react-datepicker,
 .react-datepicker__header {
   background-color: #e6e9ef !important;
