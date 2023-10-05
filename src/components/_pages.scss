@@ -438,6 +438,12 @@ div[class|="contentRegion"] {
       color: $crust;
     }
   }
+
+  @at-root .theme-light div[class|="contentRegion"] #appearance-tab {
+    div[class|="themeSelection"][class*="lightIcon"] {
+      background: $surface0;
+    }
+  }
 }
 
 .bd-settings-title {
