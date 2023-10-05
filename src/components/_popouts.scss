@@ -267,9 +267,11 @@ section[class|="positionContainer"] {
   }
 
   > div[class|="focusLock"] > div[class|="root"] {
-    box-shadow: 0 0 0 1px $surface0,
+    box-shadow:
+      0 0 0 1px $surface0,
       0 2px 10px 0 hsla(0, calc(var(--saturation-factor, 1) * 0%), 0%, 0.1);
-    -webkit-box-shadow: 0 0 0 1px $surface0,
+    -webkit-box-shadow:
+      0 0 0 1px $surface0,
       0 2px 10px 0 hsla(0, calc(var(--saturation-factor, 1) * 0%), 0%, 0.1);
   }
 
@@ -538,7 +540,7 @@ div[class|="planOptionClickableContainer"] {
     fill: $crust !important;
   }
 
-  div[class*="planOptionDiscount-"] {
+  span[class*="planOptionDiscount-"] {
     color: $crust !important;
   }
 }
