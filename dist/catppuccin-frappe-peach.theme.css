@@ -1494,6 +1494,10 @@ div[class|=chat] div[class|=homeContainer] {
   color: #e36d6f !important;
 }
 
+aside[class=membersWrap] {
+  height: 100%;
+}
+
 div[class|=layerContainer] [role=menu] {
   --brand-experiment-560: var(--brand-experiment-25a);
   --brand-experiment-600: var(--brand-experiment);
