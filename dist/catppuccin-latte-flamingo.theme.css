@@ -1742,7 +1742,7 @@ div[class|=chat] div[class|=homeContainer] {
   color: #ba0d33 !important;
 }
 
-aside[class=membersWrap] {
+aside[class|=membersWrap] {
   height: 100%;
 }
 
