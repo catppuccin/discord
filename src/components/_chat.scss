@@ -233,7 +233,7 @@ div[class|="channelTextArea"] button[class*="emojiButton-"] {
 div[class|="chat"] > div[class|="content"] > div[class|="container"] {
   background-color: $base;
 
-  div[class|="grid"],
+  div[class|="grid"][class*="scrollerBase"],
   > div[class|="chatContainer"] > div[class|="container"] {
     background-color: $base;
   }
