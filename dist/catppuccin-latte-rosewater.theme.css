@@ -2200,6 +2200,13 @@ div[class|=layerContainer] div[class|=pencilContainer] svg[class|=editIcon] {
   color: #4c4f69;
 }
 
+div[class|=keyboardShortcutsModal] span[class|=key] {
+  color: #dce0e8 !important;
+}
+div[class|=keyboardShortcutsModal] span[class|=key] svg g {
+  fill: #dce0e8 !important;
+}
+
 rect[fill="#23a55a"],
 foreignObject[mask="url(#svg-mask-status-online)"] > div,
 div[class|=dotOnline],
