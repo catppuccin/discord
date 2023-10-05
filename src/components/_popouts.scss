@@ -649,3 +649,12 @@ div[class|="layerContainer"] div[class|="pencilContainer"] {
     color: $text;
   }
 }
+
+// Keybinds popout
+div[class|="keyboardShortcutsModal"] span[class|="key"] {
+  color: $crust !important;
+
+  svg g {
+    fill: $crust !important;
+  }
+}
