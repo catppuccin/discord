@@ -432,6 +432,12 @@ div[class|="contentRegion"] {
       color: $crust;
     }
   }
+
+  #profile-customization-tab {
+    div[class*="premiumFeatureBannerBackground"] button {
+      color: $crust;
+    }
+  }
 }
 
 .bd-settings-title {
