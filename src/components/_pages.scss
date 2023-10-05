@@ -43,11 +43,9 @@ div[class|="contentRegion"] {
     background-color: $crust !important;
   }
 
-  #my-account-tab {
-    div[class|="streamerModeEnabledBtn"] {
-      background-color: $mauve;
-      color: $crust;
-    }
+  div[class|="streamerModeEnabledBtn"] {
+    background-color: $mauve;
+    color: $crust;
   }
 
   // color bars with ticks
