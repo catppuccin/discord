@@ -233,6 +233,10 @@ div[class|="channelTextArea"] button[class*="emojiButton-"] {
 div[class|="chat"] > div[class|="content"] > div[class|="container"] {
   background-color: $base;
 
+  div[class|="grid"] {
+    background-color: $base;
+  }
+
   // forum icons
   div[class|="pinIcon"],
   div[class|="stepStatus"] {
