@@ -43,19 +43,10 @@ div[class|="contentRegion"] {
     background-color: $crust !important;
   }
 
-  // #my-account-tab {
-  //     div[class|="userSettingsSecurity"] {
-  //         h5::after {
-  //             content: " ";
-  //             z-index: 10;
-  //             margin-right: 4px;
-  //             width: 10px;
-  //             height: 14px;
-  //             top: 2px;
-  //             background-image: url("data:image/svg+xml,%3Csvg height='14' viewBox='0 0 10 14' width='10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m553 515h-6v-1c0-1.654 1.346-3 3-3s3 1.346 3 3zm-4 6h2v-4h-2zm1-12c-2.762 0-5 2.238-5 5v1 4 2c0 1.104.896 2 2 2h6c1.104 0 2-.896 2-2v-2-4-1c0-2.762-2.238-5-5-5z' fill='%23#{str-slice(inspect($green), 2)}' fill-rule='evenodd' transform='translate(-545 -509)'/%3E%3C/svg%3E");
-  //         }
-  //     }
-  // }
+  div[class|="streamerModeEnabledBtn"] {
+    background-color: $mauve;
+    color: $crust;
+  }
 
   // color bars with ticks
   [class|="bar"],
@@ -87,6 +78,12 @@ div[class|="contentRegion"] {
   #accessibility-tab {
     button[class*="colorBrandNew"] {
       background-color: $brand;
+    }
+
+    div[class*="reducedMotion-"] {
+      div[class|="checkbox"] svg path {
+        fill: $crust;
+      }
     }
   }
 
@@ -312,10 +309,6 @@ div[class|="contentRegion"] {
     > div[style*="background-color: hsl(218, calc(var(--saturation-factor, 1) * 4.6%), 46.9%)"] {
       background-color: $surface2 !important;
     }
-
-    svg[class|="slider"] > svg > path {
-      fill: darken($green, 40%) !important;
-    }
   }
 
   // server boost page
@@ -436,6 +429,12 @@ div[class|="contentRegion"] {
   #profile-customization-tab {
     div[class*="premiumFeatureBannerBackground"] button {
       color: $crust;
+    }
+  }
+
+  @at-root .theme-light div[class|="contentRegion"] #appearance-tab {
+    div[class|="themeSelection"][class*="lightIcon"] {
+      background: $surface0;
     }
   }
 }
@@ -678,6 +677,16 @@ div[class|="notice"] {
 
     &:hover {
       background: darken($brand, 10%);
+    }
+  }
+
+  &[class*="colorStreamerMode-"] {
+    background-color: $mauve;
+    color: $crust;
+
+    button[class|="button"]:hover {
+      background: darken($mauve, 10%);
+      color: $mantle;
     }
   }
 }
