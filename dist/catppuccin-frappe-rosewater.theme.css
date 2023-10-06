@@ -119,6 +119,7 @@ html {
   --black-500: #232634;
   --green-360: #a6d189;
   --yellow-360: #e5c890;
+  --yellow-300: #e5c890;
   --red-400: #e78284;
   --primary-400: #b5bfe2;
   --primary-dark-700: #232634;
@@ -526,6 +527,10 @@ div[class|=sidebarRegion] div[class*=tabBarItemContainer-] [class*=textBadge-][s
 div[class|=contentRegion] div[class*=noticeRegion-] div[style="background-color: rgb(24, 25, 28);"] {
   background-color: #232634 !important;
 }
+div[class|=contentRegion] div[class|=streamerModeEnabledBtn] {
+  background-color: #ca9ee6;
+  color: #232634;
+}
 div[class|=contentRegion] [class|=bar],
 div[class|=contentRegion] [class|=markDash] {
   background: #51576d;
@@ -545,6 +550,9 @@ div[class|=contentRegion] [id="privacy-&-safety-tab"] div[class*=betaTagIcon] {
 }
 div[class|=contentRegion] #accessibility-tab button[class*=colorBrandNew] {
   background-color: #f2d5cf;
+}
+div[class|=contentRegion] #accessibility-tab div[class*=reducedMotion-] div[class|=checkbox] svg path {
+  fill: #232634;
 }
 div[class|=contentRegion] #keybinds-tab span[class*=key] {
   color: #232634;
@@ -689,9 +697,6 @@ div[class|=contentRegion] div[style*="background-color: hsl(139, calc(var(--satu
 div[class|=contentRegion] div[class|=control] > div[style*="background-color: hsl(218, calc(var(--saturation-factor, 1) * 4.6%), 46.9%)"] {
   background-color: #626880 !important;
 }
-div[class|=contentRegion] div[class|=control] svg[class|=slider] > svg > path {
-  fill: #416628 !important;
-}
 div[class|=contentRegion] #guild_premium-tab [class*=tierAccomplished-],
 div[class|=contentRegion] #guild_premium-tab [class*=tierCurrent-],
 div[class|=contentRegion] #guild_premium-tab [class*=tierFirst-] {
@@ -769,6 +774,9 @@ div[class|=contentRegion] #family-center-tab div[class|=featureCards] svg[class|
 }
 div[class|=contentRegion] #profile-customization-tab div[class*=premiumFeatureBannerBackground] button {
   color: #232634;
+}
+.theme-light div[class|=contentRegion] #appearance-tab div[class|=themeSelection][class*=lightIcon] {
+  background: #414559;
 }
 
 .bd-settings-title {
@@ -950,6 +958,14 @@ div[class|=notice] button[class|=button] {
 }
 div[class|=notice] button[class|=button]:hover {
   background: #e7b2a7;
+}
+div[class|=notice][class*=colorStreamerMode-] {
+  background-color: #ca9ee6;
+  color: #232634;
+}
+div[class|=notice][class*=colorStreamerMode-] button[class|=button]:hover {
+  background: #b475dc;
+  color: #292c3c;
 }
 
 nav[class*=guilds-] foreignObject > div[data-list-item-id*=guildsnav_]:hover > div[class|=childWrapper], nav[class*=guilds-] foreignObject > div[data-list-item-id*=guildsnav_][class*=selected] > div[class|=childWrapper] {
