@@ -79,6 +79,12 @@ div[class|="contentRegion"] {
     button[class*="colorBrandNew"] {
       background-color: $brand;
     }
+
+    div[class*="reducedMotion-"] {
+      div[class|="checkbox"] svg path {
+        fill: $crust;
+      }
+    }
   }
 
   #keybinds-tab {
