@@ -306,7 +306,8 @@ div[class|="contentRegion"] {
 
   // unchecked
   div[class|="control"] {
-    > div[style*="background-color: hsl(218, calc(var(--saturation-factor, 1) * 4.6%), 46.9%)"] {
+    > div[style*="background-color: hsl(218, calc(var(--saturation-factor, 1) * 4.6%), 46.9%)"],
+    > div[style$="background-color: rgb(128, 132, 142);"] {
       background-color: $surface2 !important;
     }
   }
