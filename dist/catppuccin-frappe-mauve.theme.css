@@ -694,7 +694,8 @@ div[class|=contentRegion] div[class|=sensitivity] div[class*=checked-],
 div[class|=contentRegion] div[style*="background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%)"] {
   background-color: #a6d189 !important;
 }
-div[class|=contentRegion] div[class|=control] > div[style*="background-color: hsl(218, calc(var(--saturation-factor, 1) * 4.6%), 46.9%)"] {
+div[class|=contentRegion] div[class|=control] > div[style*="background-color: hsl(218, calc(var(--saturation-factor, 1) * 4.6%), 46.9%)"],
+div[class|=contentRegion] div[class|=control] > div[style$="background-color: rgb(128, 132, 142);"] {
   background-color: #626880 !important;
 }
 div[class|=contentRegion] #guild_premium-tab [class*=tierAccomplished-],
@@ -1807,6 +1808,12 @@ div[class|=layerContainer] > div[class*=layer] div[class|=focusLock][aria-label=
 }
 div[class|=layerContainer] > div[class*=layer] div[class|=focusLock][aria-label="Manage Accounts"] div[class*=navRow-] {
   background-color: #292c3c;
+}
+div[class|=layerContainer] > div[class*=layer] div[class|=checkbox][class*=checked-] {
+  border: none;
+}
+div[class|=layerContainer] > div[class*=layer] div[class|=checkbox][class*=checked-] svg path {
+  fill: #232634;
 }
 div[class|=layerContainer] div[class|=addGamePopout] {
   background-color: #292c3c;
