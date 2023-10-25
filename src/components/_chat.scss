@@ -328,9 +328,11 @@ div[class^="chat"]
 div[class^="messagesWrapper"]
   ol[class^="scrollerInner"]
   div[class^="container"]
-  div[class^="iconWrapper"]
+  div[class^="iconWrapper"] {
+  background-color: $brand;
   svg[class^="icon"] {
-  color: $crust;
+    color: $crust;
+  }
 }
 
 // Jump to Present bar text
