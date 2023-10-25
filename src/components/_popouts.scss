@@ -534,6 +534,11 @@ div[class*="cardWarning_"] div[class*="warning_"] {
   }
 }
 
+// Reaction button for forum channels
+button#reaction-picker-tab div[class^="contents"] {
+  color: $crust;
+}
+
 div[class*="keyboardShortcutsModal_"] {
   background-color: $mantle !important;
 
@@ -679,5 +684,27 @@ div[class^="keyboardShortcutsModal"] span[class^="key"] {
 
   svg g {
     fill: $crust !important;
+  }
+}
+
+// Server tooltips
+[class*="disabledPointerEvents"] {
+  --background-floating: #{$surface0};
+  --background-tertiary: #{lighten($base, 3%)};
+
+  svg[class^="activityIcon"] {
+    color: $subtext0;
+  }
+
+  [class*="tooltipBrand_"] {
+    [class*="tooltipText_"] {
+      color: $crust;
+    }
+  }
+
+  div[class^="flowerStarContainer"] {
+    div[class^="childContainer"] svg path {
+      fill: $crust !important;
+    }
   }
 }

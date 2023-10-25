@@ -137,6 +137,7 @@ html {
   // update discord icon
   --status-green-560: #{$green};
 
+  --white-400: #{$text};
   --white-500: #{$text};
 
   --guild-boosting-pink: #{$pink};
@@ -283,22 +284,6 @@ html {
   --interactive-muted: #{adjust-color($text, $alpha: -0.7)};
   --interactive-hover: #{$text};
   --interactive-active: #{$text};
-
-  // make tooltips that you can't hover surface0
-  [class*="disabledPointerEvents"] {
-    --background-floating: #{$surface0};
-    --background-tertiary: #{lighten($base, 3%)};
-
-    svg[class^="activityIcon"] {
-      color: $subtext0;
-    }
-
-    [class*="tooltipBrand_"] {
-      [class*="tooltipText_"] {
-        color: $crust;
-      }
-    }
-  }
 }
 
 ::selection {
