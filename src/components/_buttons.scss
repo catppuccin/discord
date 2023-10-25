@@ -9,7 +9,7 @@
     color: $crust;
 
     // darken the nitro button too
-    svg[class|="premiumIcon"] {
+    svg[class^="premiumIcon"] {
       color: darken($pink, 20%);
     }
 
@@ -30,11 +30,11 @@
 }
 
 // For some reason, red buttons on click turn blue. Sure.
-button[class*="lookFilled-"][class*="colorRed_"]:active {
+button[class*="lookFilled_"][class*="colorRed_"]:active {
   background-color: $red;
 }
 
-[class*="lookOutlined-"][class*="colorPrimary_"] {
+[class*="lookOutlined_"][class*="colorPrimary_"] {
   border-color: $surface1;
 
   &:hover {
@@ -45,9 +45,9 @@ button[class*="lookFilled-"][class*="colorRed_"]:active {
 }
 
 // buttons in sidebar when in calls
-div[class|="actionButtons"] {
-  [class|="button"][class*="buttonColor_"],
-  [class|="button"] [class*="buttonColor_"] {
+div[class^="actionButtons"] {
+  [class^="button"][class*="buttonColor_"],
+  [class^="button"] [class*="buttonColor_"] {
     background-color: $surface1;
 
     &[class*="buttonActive_"] {
@@ -66,11 +66,11 @@ div[class|="actionButtons"] {
 }
 
 // lookInverted buttons should have darker brand text
-[class*="lookInverted-"][class*="colorBrand_"] {
+[class*="lookInverted_"][class*="colorBrand_"] {
   color: var(--brand-experiment-600);
 
   // darken the nitro button too
-  svg[class|="premiumIcon"] {
+  svg[class^="premiumIcon"] {
     color: darken($pink, 15%);
   }
 }
@@ -78,17 +78,17 @@ div[class|="actionButtons"] {
 // lookLink + colorPrimary should be themed
 .theme-dark,
 .theme-light {
-  [class*="lookLink-"][class*="colorPrimary_"] {
+  [class*="lookLink_"][class*="colorPrimary_"] {
     color: $text;
   }
-  [class*="lookFilled-"][class*="colorTransparent_"] {
+  [class*="lookFilled_"][class*="colorTransparent_"] {
     color: $text;
     background-color: $surface0;
   }
 }
 
 // dangerous button when hovered is colored properly
-div[class*="button-"][class*="dangerous_"]:hover {
+div[class*="button_"][class*="dangerous_"]:hover {
   color: darken($red, 10%);
 }
 
@@ -102,12 +102,12 @@ div[role="radio"][class*="selected"] {
   }
 }
 //nonspecific radio buttons
-[class*="container-"][style*="background-color: var(--green_360)"] {
+[class*="container_"][style*="background_color: var(__green_360)"] {
   --green-360: #{$green}; //vencord plugin settings
   background-color: $green !important;
 }
-[class*="container-"][style*="background-color: var(--primary_400)"],
-[class*="container-"][style*="background_color: rgb(130, 133, 143)"] {
+[class*="container_"][style*="background_color: var(__primary_400)"],
+[class*="container_"][style*="background_color: rgb(130, 133, 143)"] {
   background-color: $crust !important; //used in a lot of places
 }
 // vencord spotify plugin button theming support (uses vencord-specific classes)

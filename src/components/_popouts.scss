@@ -1,4 +1,4 @@
-div[class|="layerContainer"] [role="menu"] {
+div[class^="layerContainer"] [role="menu"] {
   // make menu items readable when hovered
   --brand-experiment-560: var(--brand-experiment-25a);
   --brand-experiment-600: var(--brand-experiment);
@@ -46,13 +46,13 @@ div[class|="layerContainer"] [role="menu"] {
   }
 
   // Account switcher submenu
-  div[id|="account-switch-account"] {
+  div[id^="account-switch-account"] {
     &[class*="focused"] {
       div[class*="userMenuUsername"] div {
         color: $crust;
       }
 
-      svg[class|="activeIcon"] {
+      svg[class^="activeIcon"] {
         circle {
           fill: $blue;
         }
@@ -62,7 +62,7 @@ div[class|="layerContainer"] [role="menu"] {
       }
     }
 
-    svg[class|="activeIcon"] {
+    svg[class^="activeIcon"] {
       circle {
         fill: $crust;
       }
@@ -79,7 +79,7 @@ div[class|="layerContainer"] [role="menu"] {
   }
 
   #guild-header-popout-premium-subscribe {
-    div[class|="iconContainer"] > svg {
+    div[class^="iconContainer"] > svg {
       color: $pink;
     }
   }
@@ -94,8 +94,8 @@ div[class|="layerContainer"] [role="menu"] {
 
 .theme-dark,
 .theme-light {
-  div[class|="layerContainer"] div[id|="popout_"] > div[class*="didRender_"] {
-    &:not([class|="animatorBottom"]) > div {
+  div[class^="layerContainer"] div[id^="popout_"] > div[class*="didRender_"] {
+    &:not([class^="animatorBottom"]) > div {
       div[class*="flowerStarContainer_"] {
         svg[class*="flowerStar_"] * {
           fill: $brand;
@@ -134,21 +134,21 @@ div[class|="layerContainer"] [role="menu"] {
 }
 
 div[class*="recentMentionsPopout"] {
-  div[class|="header"] {
-    div[class|="tabBar"] {
-      div[class|="badge"],
-      div[class|="tab"][class*="active_"] {
+  div[class^="header"] {
+    div[class^="tabBar"] {
+      div[class^="badge"],
+      div[class^="tab"][class*="active_"] {
         color: $base;
       }
     }
 
-    div[class|="controls-"] {
+    div[class^="controls-"] {
       --background-secondary: #{$surface0};
       --background-primary: #{adjust-color($surface0, $alpha: -0.1)};
     }
   }
 
-  div[class|="scroller"] {
+  div[class^="scroller"] {
     [role="button"] {
       --background-tertiary: #{adjust-color($subtext0, $alpha: -0.85)};
       --background-floating: #{adjust-color($subtext0, $alpha: -0.88)};
@@ -162,13 +162,13 @@ div[class*="recentMentionsPopout"] {
 
 div[class*="rolesList"] {
   // make box lighter
-  div[class|="role"],
-  button[class|="addButton"] {
+  div[class^="role"],
+  button[class^="addButton"] {
     background-color: lighten($mantle, 4%);
   }
 
-  div[class|="role"] {
-    span[class|="roleCircle"] {
+  div[class^="role"] {
+    span[class^="roleCircle"] {
       // default roles
       &[style*="background-color: rgb(185, 187, 190)"] {
         background-color: $subtext0 !important;
@@ -186,12 +186,12 @@ div[class*="rolesList"] {
 div[class*="layerContainer"] {
   > div[class*="layer"] {
     // reaction popout
-    div[class|="reactors"] {
+    div[class^="reactors"] {
       background-color: var(--background-primary);
     }
 
     // the not selector should make it not style the user popouts
-    //div[class|="scroller"]:not(
+    //div[class^="scroller"]:not(
     //    [style*="padding-right: 4px;"],
     //    [style*="padding-right: 8px;"]
     //  ) {
@@ -224,14 +224,14 @@ section[class*="positionContainer_"] {
 }
 
 // Latte text color on gif categories
-.theme-light section[class|="positionContainer"] div[class|="categoryText"] {
+.theme-light section[class^="positionContainer"] div[class^="categoryText"] {
   color: $base;
 }
 
 #emoji-picker-tab-panel {
   // more transparent to make things more bearable
   [class*="stickerInspected_"] [class*="inspectedIndicator"],
-  [class|="emojiItem"][class*="emojiItemSelected_"] {
+  [class^="emojiItem"][class*="emojiItemSelected_"] {
     background-color: var(--brand-experiment-25a);
   }
 
@@ -247,16 +247,16 @@ section[class*="positionContainer_"] {
 }
 
 // same as transparent above, but for stickers
-[class*="stickerInspected_"] [class|="inspectedIndicator"] {
+[class*="stickerInspected_"] [class^="inspectedIndicator"] {
   background-color: var(--brand-experiment-25a);
 }
 
 .theme-light {
   //   color: $text;
 
-  > div[class|="focusLock"]
-    > div[class|="root"]
-    > div[class|="container"]
+  > div[class^="focusLock"]
+    > div[class^="root"]
+    > div[class^="container"]
     div[class*="footer"] {
     //     background-color: $mantle;
 
@@ -266,7 +266,7 @@ section[class*="positionContainer_"] {
     }
   }
 
-  > div[class|="focusLock"] > div[class|="root"] {
+  > div[class^="focusLock"] > div[class^="root"] {
     box-shadow:
       0 0 0 1px $surface0,
       0 2px 10px 0 hsla(0, calc(var(--saturation-factor, 1) * 0%), 0%, 0.1);
@@ -276,10 +276,10 @@ section[class*="positionContainer_"] {
   }
 
   // browser-only download client popout
-  div[class|="focusLock"] div[class|="downloadApps"] {
+  div[class^="focusLock"] div[class^="downloadApps"] {
     background-color: $base !important;
 
-    button[class|="modalCloseButton"],
+    button[class^="modalCloseButton"],
     h2,
     h3 {
       color: $text;
@@ -325,12 +325,12 @@ section[class*="positionContainer_"] {
   }
 }
 
-div[class|="layerContainer"] {
+div[class^="layerContainer"] {
   // right-click popups for guild, channels, and user
   #guild-header-popout,
   #guild-context,
-  div[id|="channel-context"],
-  div[id|="user-context"] {
+  div[id^="channel-context"],
+  div[id^="user-context"] {
     background: $crust;
   }
 
@@ -357,15 +357,15 @@ div[class|="layerContainer"] {
       }
     }
 
-    div[class|="focusLock"] {
+    div[class^="focusLock"] {
       // create channel (modal)
       // stream popout (modalSize)
       // edit attachment (uploadModal)
       // Join server from link (contentWrapper)
-      div[class|="modal"],
-      div[class|="modalSize"],
-      div[class|="uploadModal"],
-      div[class|="contentWrapper"] {
+      div[class^="modal"],
+      div[class^="modalSize"],
+      div[class^="uploadModal"],
+      div[class^="contentWrapper"] {
         background-color: $mantle;
         li,
         p,
@@ -394,7 +394,7 @@ div[class|="layerContainer"] {
       h4,
       h5,
       h6 {
-        &[class|="fixed"] {
+        &[class^="fixed"] {
           &:after {
             background-color: $red;
           }
@@ -427,7 +427,7 @@ div[class|="layerContainer"] {
     }
 
     // Checkbox toggles
-    div[class|="checkbox"] {
+    div[class^="checkbox"] {
       &[class*="checked_"] {
         border: none;
 
@@ -439,7 +439,7 @@ div[class|="layerContainer"] {
   }
 
   // add game
-  div[class|="addGamePopout"] {
+  div[class^="addGamePopout"] {
     background-color: $mantle;
   }
 
@@ -449,9 +449,9 @@ div[class|="layerContainer"] {
     display: none;
   }
 
-  div[class|="queryContainer"] {
+  div[class^="queryContainer"] {
     background-color: $crust !important;
-    span[class|="key"] {
+    span[class^="key"] {
       color: $text;
       background-color: $base;
     }
@@ -466,7 +466,7 @@ div[class|="layerContainer"] {
   }
 
   // when hovering active threads
-  div[class|="popout"] div[class|="row"][role="button"] {
+  div[class^="popout"] div[class^="row"][role="button"] {
     &:hover {
       color: $crust;
 
@@ -484,13 +484,13 @@ form[class*="card_"] {
 
 // user info
 div[class*="userInfoSection_"] {
-  div[class|="connectedAccountContainer"] {
+  div[class^="connectedAccountContainer"] {
     background-color: adjust-color($surface0, $alpha: -0.55) !important;
   }
 }
 
 // Warning card popouts ex. admin change username/account deletion
-div[class*="cardWarning-"] div[class*="warning_"] {
+div[class*="cardWarning_"] div[class*="warning_"] {
   color: $crust;
 }
 
@@ -499,13 +499,13 @@ div[class*="cardWarning-"] div[class*="warning_"] {
 #sticker-picker-tab-panel {
   /* --background-floating: #{$surface0};
 
-  + div[class|="slotsContainer"] {
+  + div[class^="slotsContainer"] {
     background-color: $surface0;
   }
 */
 
-  div[class|="tooltipContainer"] {
-    label[class|="label"] {
+  div[class^="tooltipContainer"] {
+    label[class^="label"] {
       &[class*="labelChecked_"] {
         background: -webkit-gradient(
           linear,
@@ -537,7 +537,7 @@ div[class*="cardWarning-"] div[class*="warning_"] {
 div[class*="keyboardShortcutsModal_"] {
   background-color: $mantle !important;
 
-  div[class|="keybindShortcut"] span[class|="key"] {
+  div[class^="keybindShortcut"] span[class^="key"] {
     color: $crust;
 
     svg g {
@@ -546,8 +546,8 @@ div[class*="keyboardShortcutsModal_"] {
   }
 }
 
-div[class|="planOptionClickableContainer"] {
-  div[class|="checkbox"] svg path {
+div[class^="planOptionClickableContainer"] {
+  div[class^="checkbox"][class*="checked"] svg path {
     fill: $crust !important;
   }
 
@@ -570,12 +570,12 @@ div[class|="planOptionClickableContainer"] {
 .react-datepicker__day--selected:after {
   background-color: $blue !important;
 }
-[class|="datePickerHint"] [class|="hintValue"] {
+[class^="datePickerHint"] [class^="hintValue"] {
   color: $crust !important;
 }
 
 div[class*="layerContainer_"] {
-  div[class|="control"] {
+  div[class^="control"] {
     div[class*="checked_"] {
       background-color: $green !important;
     }
@@ -622,41 +622,41 @@ div[class*="userProfileOuter_"] {
   div[aria-label="Early Verified Bot Developer"] {
     content: url("data:image/svg+xml,%3Csvg height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m21.58 11.4-4.28-7.39-.35-.6h-9.91l-.35.6-4.27 7.39-.35.6.35.6 4.27 7.39.35.6h9.92l.35-.6 4.28-7.39.35-.6zm-13.07-1.03-1.63 1.63 1.63 1.63v2.73l-4.36-4.36 4.37-4.37v2.74zm3.12 6.93-2.04-.63 3.1-9.98 2.04.64zm3.86-.93v-2.73l1.63-1.64-1.63-1.63v-2.74l4.36 4.37z' fill='%23#{str-slice(inspect($blue), 2)}'/%3E%3C/svg%3E");
   }
-  div[class|="userPopoutOverlayBackground"]
-    > div[class|="scroller"]
-    > div[class|="section"]:first-child
-    > div[class|="buttonsContainer"]
+  div[class^="userPopoutOverlayBackground"]
+    > div[class^="scroller"]
+    > div[class^="section"]:first-child
+    > div[class^="buttonsContainer"]
     > button:nth-child(2) {
     background: $brand;
   }
 }
 
-[class*="layerContainer-"] [id|="slate_toolbar"] {
+[class*="layerContainer_"] [id^="slate_toolbar"] {
   background-color: var(--background-floating);
 
-  [class*="buttons-"] [class*="icon_"] {
+  [class*="buttons_"] [class*="icon_"] {
     color: $text;
   }
 }
 
-[class*="layerContainer-"] div[id="sort-and_view"] {
+[class*="layerContainer_"] div[id="sort_and_view"] {
   div[id="sort-and-view-reset-all"] [style="color: var(--text-normal);"]:hover {
     color: $crust !important;
   }
 }
 
-[class|="layerContainer"] [class|="quickswitcher"] [class*="badge_"] {
+[class^="layerContainer"] [class^="quickswitcher"] [class*="badge_"] {
   color: $crust;
 }
 
 // Clyde user popout
-div[class|="layerContainer"] div[aria-label="clyde"] {
-  div[class|="profileBadges"] div[class|="textBadge"] {
+div[class^="layerContainer"] div[aria-label="clyde"] {
+  div[class^="profileBadges"] div[class^="textBadge"] {
     background-color: $brand !important;
     color: $crust;
   }
 
-  button[class|="messageClydeButton"] {
+  button[class^="messageClydeButton"] {
     color: $text;
     background-color: $surface1;
 
@@ -667,14 +667,14 @@ div[class|="layerContainer"] div[aria-label="clyde"] {
 }
 
 // User popout edit button
-div[class|="layerContainer"] div[class|="pencilContainer"] {
-  svg[class|="editIcon"] {
+div[class^="layerContainer"] div[class^="pencilContainer"] {
+  svg[class^="editIcon"] {
     color: $text;
   }
 }
 
 // Keybinds popout
-div[class|="keyboardShortcutsModal"] span[class|="key"] {
+div[class^="keyboardShortcutsModal"] span[class^="key"] {
   color: $crust !important;
 
   svg g {

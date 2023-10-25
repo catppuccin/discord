@@ -1,7 +1,7 @@
 // settings
-div[class|="sidebarRegion"] {
-  div[class|="serverBoostTabItem"] {
-    svg[class|="icon"] {
+div[class^="sidebarRegion"] {
+  div[class^="serverBoostTabItem"] {
+    svg[class^="icon"] {
       fill: $pink !important;
     }
 
@@ -9,13 +9,13 @@ div[class|="sidebarRegion"] {
       background-color: $brand !important;
       color: $crust !important;
 
-      svg[class|="icon"] {
+      svg[class^="icon"] {
         fill: $crust !important;
       }
     }
   }
 
-  div[class|="premiumTab"] {
+  div[class^="premiumTab"] {
     > div > svg > path {
       fill: $pink;
     }
@@ -29,7 +29,7 @@ div[class|="sidebarRegion"] {
     }
   }
 
-  div[class*="tabBarItemContainer-"] [class*="textBadge_"] {
+  div[class*="tabBarItemContainer_"] [class*="textBadge_"] {
     color: $crust;
 
     &[style*="background-color: var(--brand-500);"] {
@@ -38,24 +38,24 @@ div[class|="sidebarRegion"] {
   }
 }
 
-div[class|="contentRegion"] {
-  div[class*="noticeRegion-"] div[style="background_color: rgb(24, 25, 28);"] {
+div[class^="contentRegion"] {
+  div[class*="noticeRegion_"] div[style="background_color: rgb(24, 25, 28);"] {
     background-color: $crust !important;
   }
 
-  div[class|="streamerModeEnabledBtn"] {
+  div[class^="streamerModeEnabledBtn"] {
     background-color: $mauve;
     color: $crust;
   }
 
   // color bars with ticks
-  [class|="bar"],
-  [class|="markDash"] {
+  [class^="bar"],
+  [class^="markDash"] {
     background: $surface1;
   }
 
   [id="privacy-&-safety-tab"] {
-    div[class|="radioBar"] {
+    div[class^="radioBar"] {
       &[style*="hsl(139,"] {
         border-color: $green;
       }
@@ -79,12 +79,6 @@ div[class|="contentRegion"] {
     button[class*="colorBrandNew"] {
       background-color: $brand;
     }
-
-    div[class*="reducedMotion_"] {
-      div[class|="checkbox"] svg path {
-        fill: $crust;
-      }
-    }
   }
 
   #keybinds-tab {
@@ -97,14 +91,14 @@ div[class|="contentRegion"] {
   }
 
   #nitro-server-boost-tab {
-    circle[class|="circleProgress"] {
+    circle[class^="circleProgress"] {
       color: $pink;
     }
 
     div[class*="gemIndicatorContainer_"] {
       background-color: $base;
 
-      div[class|="tierLabel"] {
+      div[class^="tierLabel"] {
         color: $subtext1;
       }
     }
@@ -125,14 +119,14 @@ div[class|="contentRegion"] {
   }
 
   #subscriptions-tab {
-    [class|="sectionAccountCredit"],
-    [class|="subscriptionDetails"] {
+    [class^="sectionAccountCredit"],
+    [class^="subscriptionDetails"] {
       border-color: var(--background-modifier-accent);
     }
   }
 
   #library-inventory-tab {
-    div[class|="promotionIcon"] {
+    div[class^="promotionIcon"] {
       background-color: $base;
     }
   }
@@ -178,29 +172,29 @@ div[class|="contentRegion"] {
       border-color: var(--background-modifier-accent);
     }
 
-    div[class|="defaultIndicator"] {
+    div[class^="defaultIndicator"] {
       color: $text;
       background-color: $surface1;
     }
 
     div[class*="summaryInfo"],
-    [class|="paymentHeader"] {
+    [class^="paymentHeader"] {
       color: $text;
       border-color: var(--background-modifier-accent);
     }
 
-    div[class|="premiumIndicator"] {
+    div[class^="premiumIndicator"] {
       color: $crust;
     }
 
-    div[class|="paymentPane"],
+    div[class^="paymentPane"],
     div[class*="paginator_"],
     div[class*="payment_"] {
       background-color: $surface0;
       color: $text;
     }
 
-    div[class|="expandedInfo"] {
+    div[class^="expandedInfo"] {
       background-color: $surface1;
     }
 
@@ -208,7 +202,7 @@ div[class|="contentRegion"] {
       color: $subtext1;
     }
 
-    div[class|="codeRedemptionRedirect"] {
+    div[class^="codeRedemptionRedirect"] {
       background-color: $mantle;
       color: $text;
       border-color: $surface0;
@@ -216,7 +210,7 @@ div[class|="contentRegion"] {
   }
 
   [id="voice-&-video-tab"] {
-    div[class|="backgroundOptionRing"] {
+    div[class^="backgroundOptionRing"] {
       border-color: $brand;
     }
   }
@@ -242,7 +236,7 @@ div[class|="contentRegion"] {
       }
     }
 
-    input[class|="gameName"] {
+    input[class^="gameName"] {
       color: $text;
     }
 
@@ -272,8 +266,8 @@ div[class|="contentRegion"] {
   }
 
   // Voice & Audio checks
-  section[class|="inputSensitivityToggle"] {
-    div[class|="inputSensitivityBar"] {
+  section[class^="inputSensitivityToggle"] {
+    div[class^="inputSensitivityBar"] {
       background: $surface1;
 
       &[class*="speaking_"] {
@@ -288,24 +282,14 @@ div[class|="contentRegion"] {
 
   // toggles in preferencs
   // checked
-  div[class|="control"] > div[class*="checked_"],
-  div[class|="sensitivity"] div[class*="checked_"],
+  div[class^="control"] > div[class*="checked_"],
+  div[class^="sensitivity"] div[class*="checked_"],
   div[style*="background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%)"] {
     background-color: $green !important;
-
-    // svg[class|="slider"] {
-    //     > rect {
-    //         fill: $base;
-    //     }
-
-    //     > svg > path {
-    //         fill: $green;
-    //     }
-    // }
   }
 
   // unchecked
-  div[class|="control"] {
+  div[class^="control"] {
     > div[style*="background-color: hsl(218, calc(var(--saturation-factor, 1) * 4.6%), 46.9%)"],
     > div[style$="background-color: rgb(128, 132, 142);"] {
       background-color: $surface2 !important;
@@ -324,7 +308,7 @@ div[class|="contentRegion"] {
       background-color: $crust;
     }
 
-    div[class|="progressWithSubscriptions"] > svg > g > rect {
+    div[class^="progressWithSubscriptions"] > svg > g > rect {
       &:first-child {
         color: $crust;
       }
@@ -334,18 +318,18 @@ div[class|="contentRegion"] {
       }
     }
 
-    div[class|="tierHeaderUnlocked"],
-    div[class|="tierHeaderLocked"] {
+    div[class^="tierHeaderUnlocked"],
+    div[class^="tierHeaderLocked"] {
       background-color: $crust;
       color: $subtext0;
 
-      div[class|="tierUnlocked"] {
+      div[class^="tierUnlocked"] {
         background-image: linear-gradient(90deg, $blue, $mauve);
         color: $crust;
         font-weight: 600;
       }
 
-      svg[class|="tierIcon"] {
+      svg[class^="tierIcon"] {
         color: $pink;
       }
 
@@ -353,19 +337,19 @@ div[class|="contentRegion"] {
         color: $overlay1;
       }
 
-      svg[class|="tierLock"] {
+      svg[class^="tierLock"] {
         color: $surface2;
       }
     }
 
-    div[class|="tierBody"] {
+    div[class^="tierBody"] {
       color: $subtext1;
       background-color: $mantle;
     }
   }
 
   // active circles like the ones on server welcome screen settings
-  svg[class|="activeCircle"] {
+  svg[class^="activeCircle"] {
     color: $crust;
     background-color: $green;
   }
@@ -422,7 +406,7 @@ div[class|="contentRegion"] {
   }
 
   #family-center-tab {
-    div[class|="featureCards"] svg[class|="icon"] {
+    div[class^="featureCards"] svg[class^="icon"] {
       color: $crust;
     }
   }
@@ -433,8 +417,26 @@ div[class|="contentRegion"] {
     }
   }
 
-  @at-root .theme-light div[class|="contentRegion"] #appearance-tab {
-    div[class|="themeSelection"][class*="lightIcon"] {
+  #appearance-tab {
+    div[class^="selectionCircle"] {
+      box-shadow:
+        inset 0 0 0 2px $blue,
+        inset 0 0 0 4px var(--background-primary);
+
+      svg[class^="checkmarkCircle"] {
+        > circle {
+          fill: $crust !important;
+        }
+
+        > g > path {
+          fill: $blue !important;
+        }
+      }
+    }
+  }
+
+  @at-root .theme-light div[class^="contentRegion"] #appearance-tab {
+    div[class^="themeSelection"][class*="lightIcon"] {
       background: $surface0;
     }
   }
@@ -479,10 +481,10 @@ div[class|="contentRegion"] {
   }
 }
 
-div[class|="perksModal"] {
+div[class^="perksModal"] {
   background-color: $base;
 
-  li[class|="perk"] {
+  li[class^="perk"] {
     background-color: $mantle;
 
     svg {
@@ -490,45 +492,45 @@ div[class|="perksModal"] {
     }
   }
 
-  svg[class|="giftIcon"] {
+  svg[class^="giftIcon"] {
     color: $crust;
   }
 
-  div[class|="tierHeaderUnlocked"] {
+  div[class^="tierHeaderUnlocked"] {
     background-image: linear-gradient(90deg, $blue, $mauve);
     color: $base;
   }
 
-  div[class|="tierUnlocked"],
-  div[class|="tierMarkerBackground"] {
+  div[class^="tierUnlocked"],
+  div[class^="tierMarkerBackground"] {
     background-color: $base;
   }
 
-  div[class|="barBackground"],
-  div[class|="tierMarkerInProgress"],
-  div[class|="tierBody"] {
+  div[class^="barBackground"],
+  div[class^="tierMarkerInProgress"],
+  div[class^="tierBody"] {
     background-color: $crust !important;
   }
 
-  div[class|="tierMarkerAccomplished"] {
+  div[class^="tierMarkerAccomplished"] {
     background: $pink !important;
   }
 
-  div[class|="tierMarkerInProgress"] [class|="currentTierIcon"] {
+  div[class^="tierMarkerInProgress"] [class^="currentTierIcon"] {
     color: $pink;
   }
 
-  div[class|="barForeground"],
-  div[class|="tierMarkerAccomplished"] {
+  div[class^="barForeground"],
+  div[class^="tierMarkerAccomplished"] {
     background-color: $pink;
   }
 
-  svg[class|="currentTierIcon"] {
+  svg[class^="currentTierIcon"] {
     color: $base;
   }
 
   div[class*="tierMarkerLabelText"],
-  svg[class|="tierLock"] {
+  svg[class^="tierLock"] {
     color: var(--text-muted);
   }
 
@@ -536,7 +538,7 @@ div[class|="perksModal"] {
     color: var(--text-normal);
   }
 
-  div[class|="tierHeaderLocked"] {
+  div[class^="tierHeaderLocked"] {
     background-color: darken($crust, 5%);
     color: var(--text-muted);
   }
@@ -547,13 +549,13 @@ div[class|="perksModal"] {
 }
 
 // boost progress bar
-div[class|="sidebar"] div[class|="container"] {
-  div[class|="progressBar"] {
+div[class^="sidebar"] div[class^="container"] {
+  div[class^="progressBar"] {
     background: linear-gradient(90deg, $blue, $mauve);
   }
 
   &:hover {
-    div[class|="progressBar"] {
+    div[class^="progressBar"] {
       background: linear-gradient(
         90deg,
         hsl(221, 70%, 55.5%),
@@ -564,12 +566,12 @@ div[class|="sidebar"] div[class|="container"] {
     }
   }
 
-  div[class|="divider"] {
+  div[class^="divider"] {
     border-color: var(--background-modifier-accent);
   }
 }
 
-div[class|="pageWrapper"] {
+div[class^="pageWrapper"] {
   background: $base !important;
 
   div[class*="searchBox_"] {
@@ -584,33 +586,33 @@ div[class|="pageWrapper"] {
     }
   }
 
-  div[class*="categoryPill-"][class*="selected_"] div {
+  div[class*="categoryPill_"][class*="selected_"] div {
     color: $crust !important;
   }
 }
 
 // public server home
-div[class|="homeContainer"] {
+div[class^="homeContainer"] {
   background: $base !important;
 
-  > div[class|="homeContent"] div[class*="card_"] {
+  > div[class^="homeContent"] div[class*="card_"] {
     background: $surface0 !important;
   }
 }
 
 // the header for the public server home
-section[class|="title"] {
+section[class^="title"] {
   background: var(--background-primary) !important;
 }
 
-div[class|="categoryItem"][class*="selectedCategoryItem"],
+div[class^="categoryItem"][class*="selectedCategoryItem"],
 button[class*="lookFilled"] div[class*="addButton"] {
   // color when selected or if button
   color: $crust !important;
 }
 
 // new label
-div[class|="itemInner"] div[class|="new"] > div[class*="newText_"] {
+div[class^="itemInner"] div[class^="new"] > div[class*="newText_"] {
   color: $crust !important;
 }
 
@@ -632,12 +634,12 @@ div[class*="directoryModal_"] {
 }
 
 // student hubs
-section[class|="guildListSection"] {
-  div[class|="guildList"]:first-child {
-    div[class|="iconContainer"] {
+section[class^="guildListSection"] {
+  div[class^="guildList"]:first-child {
+    div[class^="iconContainer"] {
       background-color: $green;
 
-      > div[class|="icon"] {
+      > div[class^="icon"] {
         background-image: url("data:image/svg+xml,%3Csvg fill='none' height='24' viewBox='0 0 25 24' width='25' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23#{str-slice(inspect($crust), 2)}'%3E%3Cpath clip-rule='evenodd' d='m13.25 18v-12h-1.5v12z' fill-rule='evenodd'/%3E%3Cpath clip-rule='evenodd' d='m7 12.75c-.69036 0-1.25.5596-1.25 1.25v4h-1.5v-4c0-1.5188 1.23122-2.75 2.75-2.75h11c1.5188 0 2.75 1.2312 2.75 2.75v4h-1.5v-4c0-.6904-.5596-1.25-1.25-1.25z' fill-rule='evenodd'/%3E%3Cpath d='m12.5 7c-1.3807 0-2.5-1.11929-2.5-2.5s1.1193-2.5 2.5-2.5 2.5 1.11929 2.5 2.5-1.1193 2.5-2.5 2.5z'/%3E%3Cpath d='m20 22c-1.3807 0-2.5-1.1193-2.5-2.5s1.1193-2.5 2.5-2.5 2.5 1.1193 2.5 2.5-1.1193 2.5-2.5 2.5z'/%3E%3Cpath d='m12.5 22c-1.3807 0-2.5-1.1193-2.5-2.5s1.1193-2.5 2.5-2.5 2.5 1.1193 2.5 2.5-1.1193 2.5-2.5 2.5z'/%3E%3Cpath d='m5 22c-1.38071 0-2.5-1.1193-2.5-2.5s1.11929-2.5 2.5-2.5 2.5 1.1193 2.5 2.5-1.11929 2.5-2.5 2.5z'/%3E%3C/g%3E%3C/svg%3E");
       }
     }
@@ -653,13 +655,13 @@ path[d="M17.225 6.06504C17.3227 6.00866 17.4362 5.98608 17.548 6.00084C17.6598 6
   fill: $crust;
 }
 
-div[class|="tierPreviews"] {
-  button[class|="button"] {
+div[class^="tierPreviews"] {
+  button[class^="button"] {
     background: linear-gradient(90deg, $teal, $blue);
   }
 }
 
-div[class|="notice"] {
+div[class^="notice"] {
   div[class*="noticeText_"] {
     color: $crust;
   }
@@ -668,11 +670,11 @@ div[class|="notice"] {
     color: $crust;
   }
 
-  div[class|="closeButton"] > svg > path {
+  div[class^="closeButton"] > svg > path {
     fill: $crust;
   }
 
-  button[class|="button"] {
+  button[class^="button"] {
     border-color: $crust;
     color: $crust;
 
@@ -685,7 +687,7 @@ div[class|="notice"] {
     background-color: $mauve;
     color: $crust;
 
-    button[class|="button"]:hover {
+    button[class^="button"]:hover {
       background: darken($mauve, 10%);
       color: $mantle;
     }

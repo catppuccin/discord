@@ -16,10 +16,10 @@ nav[class*="guilds_"] {
   }
 
   // lightens folder wrapper bg
-  span[class|="expandedFolderBackground"] {
+  span[class^="expandedFolderBackground"] {
     background-color: lighten($base, 3%);
   }
-  div[class|="folder"][class*="hover_"] {
+  div[class^="folder"][class*="hover_"] {
     background-color: lighten($base, 8%);
   }
 
@@ -36,8 +36,8 @@ nav[class*="guilds_"] {
 }
 
 // server list icons
-div[class|="upperBadge"] {
-  > div[class|="iconBadge"] path {
+div[class^="upperBadge"] {
+  > div[class^="iconBadge"] path {
     color: $crust;
   }
 
@@ -46,6 +46,6 @@ div[class|="upperBadge"] {
   }
 }
 
-div[class|="lowerBadge"] div[class|="iconBadge"] path {
+div[class^="lowerBadge"] div[class^="iconBadge"] path {
   color: $crust;
 }

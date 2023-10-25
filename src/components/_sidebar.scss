@@ -1,9 +1,9 @@
 // "spine" svgs before threads
-svg[class|="spine"] {
+svg[class^="spine"] {
   color: $surface2;
 }
 
-div[class|="spineBorder"] {
+div[class^="spineBorder"] {
   background: $surface2;
 }
 
