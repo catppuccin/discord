@@ -1552,6 +1552,9 @@ div[class^=chat] > div[class^=content] main[class^=chatContent] + div[class^=con
   border: 1px solid #d20f39 !important;
 }
 
+div[class^=messagesWrapper] ol[class^=scrollerInner] div[class^=container] div[class^=iconWrapper] {
+  background-color: #40a02b;
+}
 div[class^=messagesWrapper] ol[class^=scrollerInner] div[class^=container] div[class^=iconWrapper] svg[class^=icon] {
   color: #dce0e8;
 }
