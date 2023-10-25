@@ -236,8 +236,8 @@ html {
   --background-floating: #414559;
   --background-tertiary: #363b4f;
 }
-.theme-dark [class*=disabledPointerEvents] svg[class|=activityIcon],
-.theme-light [class*=disabledPointerEvents] svg[class|=activityIcon] {
+.theme-dark [class*=disabledPointerEvents] svg[class^=activityIcon],
+.theme-light [class*=disabledPointerEvents] svg[class^=activityIcon] {
   color: #a5adce;
 }
 .theme-dark [class*=disabledPointerEvents] [class*=tooltipBrand_] [class*=tooltipText_],
@@ -386,7 +386,7 @@ html {
 [class*=lookFilled_][class*=colorBrand_], [class*=lookFilled_][class*=colorBrandNew_], [class*=lookFilled_][class*=colorLink_], [class*=lookFilled_][class*=colorYellow_], [class*=lookFilled_][class*=colorRed_], [class*=lookFilled_][class*=colorGreen_] {
   color: #232634;
 }
-[class*=lookFilled_][class*=colorBrand_] svg[class|=premiumIcon], [class*=lookFilled_][class*=colorBrandNew_] svg[class|=premiumIcon], [class*=lookFilled_][class*=colorLink_] svg[class|=premiumIcon], [class*=lookFilled_][class*=colorYellow_] svg[class|=premiumIcon], [class*=lookFilled_][class*=colorRed_] svg[class|=premiumIcon], [class*=lookFilled_][class*=colorGreen_] svg[class|=premiumIcon] {
+[class*=lookFilled_][class*=colorBrand_] svg[class^=premiumIcon], [class*=lookFilled_][class*=colorBrandNew_] svg[class^=premiumIcon], [class*=lookFilled_][class*=colorLink_] svg[class^=premiumIcon], [class*=lookFilled_][class*=colorYellow_] svg[class^=premiumIcon], [class*=lookFilled_][class*=colorRed_] svg[class^=premiumIcon], [class*=lookFilled_][class*=colorGreen_] svg[class^=premiumIcon] {
   color: #e660c2;
 }
 [class*=lookFilled_][class*=colorBrand_] [class*=spinnerItem_], [class*=lookFilled_][class*=colorBrandNew_] [class*=spinnerItem_], [class*=lookFilled_][class*=colorLink_] [class*=spinnerItem_], [class*=lookFilled_][class*=colorYellow_] [class*=spinnerItem_], [class*=lookFilled_][class*=colorRed_] [class*=spinnerItem_], [class*=lookFilled_][class*=colorGreen_] [class*=spinnerItem_] {
@@ -399,55 +399,55 @@ html {
   color: #c6d0f5;
 }
 
-button[class*=lookFilled-][class*=colorRed_]:active {
+button[class*=lookFilled_][class*=colorRed_]:active {
   background-color: #e78284;
 }
 
-[class*=lookOutlined-][class*=colorPrimary_] {
+[class*=lookOutlined_][class*=colorPrimary_] {
   border-color: #51576d;
 }
-[class*=lookOutlined-][class*=colorPrimary_]:hover {
+[class*=lookOutlined_][class*=colorPrimary_]:hover {
   background-color: #414559;
   color: #c6d0f5;
   border-color: #51576d;
 }
 
-div[class|=actionButtons] [class|=button][class*=buttonColor_],
-div[class|=actionButtons] [class|=button] [class*=buttonColor_] {
+div[class^=actionButtons] [class^=button][class*=buttonColor_],
+div[class^=actionButtons] [class^=button] [class*=buttonColor_] {
   background-color: #51576d;
 }
-div[class|=actionButtons] [class|=button][class*=buttonColor_][class*=buttonActive_],
-div[class|=actionButtons] [class|=button] [class*=buttonColor_][class*=buttonActive_] {
+div[class^=actionButtons] [class^=button][class*=buttonColor_][class*=buttonActive_],
+div[class^=actionButtons] [class^=button] [class*=buttonColor_][class*=buttonActive_] {
   background-color: #a6d189;
   color: #232634;
 }
-div[class|=actionButtons] [class|=button][class*=buttonColor_][class*=buttonActive_] [class*=buttonContents_],
-div[class|=actionButtons] [class|=button] [class*=buttonColor_][class*=buttonActive_] [class*=buttonContents_] {
+div[class^=actionButtons] [class^=button][class*=buttonColor_][class*=buttonActive_] [class*=buttonContents_],
+div[class^=actionButtons] [class^=button] [class*=buttonColor_][class*=buttonActive_] [class*=buttonContents_] {
   color: #232634;
 }
-div[class|=actionButtons] [class|=button][class*=buttonColor_][class*=buttonActive_] [class*=buttonContents_] svg,
-div[class|=actionButtons] [class|=button] [class*=buttonColor_][class*=buttonActive_] [class*=buttonContents_] svg {
+div[class^=actionButtons] [class^=button][class*=buttonColor_][class*=buttonActive_] [class*=buttonContents_] svg,
+div[class^=actionButtons] [class^=button] [class*=buttonColor_][class*=buttonActive_] [class*=buttonContents_] svg {
   color: #232634;
 }
 
-[class*=lookInverted-][class*=colorBrand_] {
+[class*=lookInverted_][class*=colorBrand_] {
   color: var(--brand-experiment-600);
 }
-[class*=lookInverted-][class*=colorBrand_] svg[class|=premiumIcon] {
+[class*=lookInverted_][class*=colorBrand_] svg[class^=premiumIcon] {
   color: #ea76cb;
 }
 
-.theme-dark [class*=lookLink-][class*=colorPrimary_],
-.theme-light [class*=lookLink-][class*=colorPrimary_] {
+.theme-dark [class*=lookLink_][class*=colorPrimary_],
+.theme-light [class*=lookLink_][class*=colorPrimary_] {
   color: #c6d0f5;
 }
-.theme-dark [class*=lookFilled-][class*=colorTransparent_],
-.theme-light [class*=lookFilled-][class*=colorTransparent_] {
+.theme-dark [class*=lookFilled_][class*=colorTransparent_],
+.theme-light [class*=lookFilled_][class*=colorTransparent_] {
   color: #c6d0f5;
   background-color: #414559;
 }
 
-div[class*=button-][class*=dangerous_]:hover {
+div[class*=button_][class*=dangerous_]:hover {
   color: #df575a;
 }
 
@@ -458,13 +458,13 @@ div[role=radio][class*=selected][class*=allow] {
   background-color: #a6d189;
 }
 
-[class*=container-][style*="background-color: var(--green_360)"] {
+[class*=container_][style*="background_color: var(__green_360)"] {
   --green-360: #a6d189;
   background-color: #a6d189 !important;
 }
 
-[class*=container-][style*="background-color: var(--primary_400)"],
-[class*=container-][style*="background_color: rgb(130, 133, 143)"] {
+[class*=container_][style*="background_color: var(__primary_400)"],
+[class*=container_][style*="background_color: rgb(130, 133, 143)"] {
   background-color: #232634 !important;
 }
 
@@ -493,285 +493,291 @@ div[role=radio][class*=selected][class*=allow] {
   color: #232634 !important;
 }
 
-div[class|=sidebarRegion] div[class|=serverBoostTabItem] svg[class|=icon] {
+div[class^=sidebarRegion] div[class^=serverBoostTabItem] svg[class^=icon] {
   fill: #f4b8e4 !important;
 }
-div[class|=sidebarRegion] div[class|=serverBoostTabItem][class*=selected_] {
+div[class^=sidebarRegion] div[class^=serverBoostTabItem][class*=selected_] {
   background-color: #ef9f76 !important;
   color: #232634 !important;
 }
-div[class|=sidebarRegion] div[class|=serverBoostTabItem][class*=selected_] svg[class|=icon] {
+div[class^=sidebarRegion] div[class^=serverBoostTabItem][class*=selected_] svg[class^=icon] {
   fill: #232634 !important;
 }
-div[class|=sidebarRegion] div[class|=premiumTab] > div > svg > path {
+div[class^=sidebarRegion] div[class^=premiumTab] > div > svg > path {
   fill: #f4b8e4;
 }
-div[class|=sidebarRegion] div[class|=premiumTab] > div[class*=selected] {
+div[class^=sidebarRegion] div[class^=premiumTab] > div[class*=selected] {
   color: #232634;
 }
-div[class|=sidebarRegion] div[class|=premiumTab] > div[class*=selected] svg > path {
+div[class^=sidebarRegion] div[class^=premiumTab] > div[class*=selected] svg > path {
   fill: #232634;
 }
-div[class|=sidebarRegion] div[class*=tabBarItemContainer-] [class*=textBadge_] {
+div[class^=sidebarRegion] div[class*=tabBarItemContainer_] [class*=textBadge_] {
   color: #232634;
 }
-div[class|=sidebarRegion] div[class*=tabBarItemContainer-] [class*=textBadge_][style*="background-color: var(--brand-500);"] {
+div[class^=sidebarRegion] div[class*=tabBarItemContainer_] [class*=textBadge_][style*="background-color: var(--brand-500);"] {
   background-color: #ef9f76 !important;
 }
 
-div[class|=contentRegion] div[class*=noticeRegion-] div[style="background_color: rgb(24, 25, 28);"] {
+div[class^=contentRegion] div[class*=noticeRegion_] div[style="background_color: rgb(24, 25, 28);"] {
   background-color: #232634 !important;
 }
-div[class|=contentRegion] div[class|=streamerModeEnabledBtn] {
+div[class^=contentRegion] div[class^=streamerModeEnabledBtn] {
   background-color: #ca9ee6;
   color: #232634;
 }
-div[class|=contentRegion] [class|=bar],
-div[class|=contentRegion] [class|=markDash] {
+div[class^=contentRegion] [class^=bar],
+div[class^=contentRegion] [class^=markDash] {
   background: #51576d;
 }
-div[class|=contentRegion] [id="privacy-&-safety-tab"] div[class|=radioBar][style*="hsl(139,"] {
+div[class^=contentRegion] [id="privacy-&-safety-tab"] div[class^=radioBar][style*="hsl(139,"] {
   border-color: #a6d189;
 }
-div[class|=contentRegion] [id="privacy-&-safety-tab"] div[class|=radioBar][style*="hsl(37,"] {
+div[class^=contentRegion] [id="privacy-&-safety-tab"] div[class^=radioBar][style*="hsl(37,"] {
   border-color: #e5c890;
 }
-div[class|=contentRegion] [id="privacy-&-safety-tab"] div[class|=radioBar][style*="hsl(359,"] {
+div[class^=contentRegion] [id="privacy-&-safety-tab"] div[class^=radioBar][style*="hsl(359,"] {
   border-color: #e78284;
 }
-div[class|=contentRegion] [id="privacy-&-safety-tab"] div[class*=betaTagIcon] {
+div[class^=contentRegion] [id="privacy-&-safety-tab"] div[class*=betaTagIcon] {
   background-color: #ef9f76 !important;
   color: #232634;
 }
-div[class|=contentRegion] #accessibility-tab button[class*=colorBrandNew] {
+div[class^=contentRegion] #accessibility-tab button[class*=colorBrandNew] {
   background-color: #ef9f76;
 }
-div[class|=contentRegion] #accessibility-tab div[class*=reducedMotion_] div[class|=checkbox] svg path {
-  fill: #232634;
-}
-div[class|=contentRegion] #keybinds-tab span[class*=key] {
+div[class^=contentRegion] #keybinds-tab span[class*=key] {
   color: #232634;
 }
-div[class|=contentRegion] #keybinds-tab span[class*=key] g {
+div[class^=contentRegion] #keybinds-tab span[class*=key] g {
   fill: #232634;
 }
-div[class|=contentRegion] #nitro-server-boost-tab circle[class|=circleProgress] {
+div[class^=contentRegion] #nitro-server-boost-tab circle[class^=circleProgress] {
   color: #f4b8e4;
 }
-div[class|=contentRegion] #nitro-server-boost-tab div[class*=gemIndicatorContainer_] {
+div[class^=contentRegion] #nitro-server-boost-tab div[class*=gemIndicatorContainer_] {
   background-color: #303446;
 }
-div[class|=contentRegion] #nitro-server-boost-tab div[class*=gemIndicatorContainer_] div[class|=tierLabel] {
+div[class^=contentRegion] #nitro-server-boost-tab div[class*=gemIndicatorContainer_] div[class^=tierLabel] {
   color: #b5bfe2;
 }
-div[class|=contentRegion] #nitro-server-boost-tab button[class*=lookInverted_] {
+div[class^=contentRegion] #nitro-server-boost-tab button[class*=lookInverted_] {
   color: #232634;
   background-color: #c6d0f5;
 }
-div[class|=contentRegion] #nitro-server-boost-tab button[class*=lookInverted_]:hover {
+div[class^=contentRegion] #nitro-server-boost-tab button[class*=lookInverted_]:hover {
   background-color: #c8d2f5;
 }
-div[class|=contentRegion] #nitro-server-boost-tab div[class*=card_],
-div[class|=contentRegion] #nitro-server-boost-tab h3[class*=price_] {
+div[class^=contentRegion] #nitro-server-boost-tab div[class*=card_],
+div[class^=contentRegion] #nitro-server-boost-tab h3[class*=price_] {
   color: #c6d0f5 !important;
 }
-div[class|=contentRegion] #subscriptions-tab [class|=sectionAccountCredit],
-div[class|=contentRegion] #subscriptions-tab [class|=subscriptionDetails] {
+div[class^=contentRegion] #subscriptions-tab [class^=sectionAccountCredit],
+div[class^=contentRegion] #subscriptions-tab [class^=subscriptionDetails] {
   border-color: var(--background-modifier-accent);
 }
-div[class|=contentRegion] #library-inventory-tab div[class|=promotionIcon] {
+div[class^=contentRegion] #library-inventory-tab div[class^=promotionIcon] {
   background-color: #303446;
 }
-div[class|=contentRegion] #discord-nitro-tab button[class*=buttonWhite] {
+div[class^=contentRegion] #discord-nitro-tab button[class*=buttonWhite] {
   color: #c6d0f5 !important;
   border-color: #c6d0f5 !important;
 }
-div[class|=contentRegion] #discord-nitro-tab h2 {
+div[class^=contentRegion] #discord-nitro-tab h2 {
   color: #c6d0f5 !important;
 }
-div[class|=contentRegion] #discord-nitro-tab svg[class*=sparkleStar_] {
+div[class^=contentRegion] #discord-nitro-tab svg[class*=sparkleStar_] {
   color: #c6d0f5;
 }
-div[class|=contentRegion] #discord-nitro-tab div[class*=description_] {
+div[class^=contentRegion] #discord-nitro-tab div[class*=description_] {
   color: #b5bfe2 !important;
 }
-div[class|=contentRegion] #discord-nitro-tab div[class*=card_] {
+div[class^=contentRegion] #discord-nitro-tab div[class*=card_] {
   color: #c6d0f5;
 }
-div[class|=contentRegion] #discord-nitro-tab button[class*=lookInverted_] {
+div[class^=contentRegion] #discord-nitro-tab button[class*=lookInverted_] {
   color: #232634;
   background-color: #c6d0f5;
 }
-div[class|=contentRegion] #discord-nitro-tab button[class*=lookInverted_]:hover {
+div[class^=contentRegion] #discord-nitro-tab button[class*=lookInverted_]:hover {
   background-color: #c8d2f5;
 }
-div[class|=contentRegion] #billing-tab div[class*=subtext] {
+div[class^=contentRegion] #billing-tab div[class*=subtext] {
   color: #b5bfe2;
 }
-div[class|=contentRegion] #billing-tab [class*=Divider] {
+div[class^=contentRegion] #billing-tab [class*=Divider] {
   border-color: var(--background-modifier-accent);
 }
-div[class|=contentRegion] #billing-tab div[class|=defaultIndicator] {
+div[class^=contentRegion] #billing-tab div[class^=defaultIndicator] {
   color: #c6d0f5;
   background-color: #51576d;
 }
-div[class|=contentRegion] #billing-tab div[class*=summaryInfo],
-div[class|=contentRegion] #billing-tab [class|=paymentHeader] {
+div[class^=contentRegion] #billing-tab div[class*=summaryInfo],
+div[class^=contentRegion] #billing-tab [class^=paymentHeader] {
   color: #c6d0f5;
   border-color: var(--background-modifier-accent);
 }
-div[class|=contentRegion] #billing-tab div[class|=premiumIndicator] {
+div[class^=contentRegion] #billing-tab div[class^=premiumIndicator] {
   color: #232634;
 }
-div[class|=contentRegion] #billing-tab div[class|=paymentPane],
-div[class|=contentRegion] #billing-tab div[class*=paginator_],
-div[class|=contentRegion] #billing-tab div[class*=payment_] {
+div[class^=contentRegion] #billing-tab div[class^=paymentPane],
+div[class^=contentRegion] #billing-tab div[class*=paginator_],
+div[class^=contentRegion] #billing-tab div[class*=payment_] {
   background-color: #414559;
   color: #c6d0f5;
 }
-div[class|=contentRegion] #billing-tab div[class|=expandedInfo] {
+div[class^=contentRegion] #billing-tab div[class^=expandedInfo] {
   background-color: #51576d;
 }
-div[class|=contentRegion] #billing-tab [class*=paymentText_] {
+div[class^=contentRegion] #billing-tab [class*=paymentText_] {
   color: #b5bfe2;
 }
-div[class|=contentRegion] #billing-tab div[class|=codeRedemptionRedirect] {
+div[class^=contentRegion] #billing-tab div[class^=codeRedemptionRedirect] {
   background-color: #292c3c;
   color: #c6d0f5;
   border-color: #414559;
 }
-div[class|=contentRegion] [id="voice-&-video-tab"] div[class|=backgroundOptionRing] {
+div[class^=contentRegion] [id="voice-&-video-tab"] div[class^=backgroundOptionRing] {
   border-color: #ef9f76;
 }
-div[class|=contentRegion] #notifications-tab button[class*=marketingUnsubscribeButton_] {
+div[class^=contentRegion] #notifications-tab button[class*=marketingUnsubscribeButton_] {
   color: #c6d0f5;
 }
-div[class|=contentRegion] #game-activity-tab div[class*=nowPlayingAdd_],
-div[class|=contentRegion] #game-activity-tab div[class*=lastPlayed_],
-div[class|=contentRegion] #game-activity-tab div[class*=overlayStatusText_] {
+div[class^=contentRegion] #game-activity-tab div[class*=nowPlayingAdd_],
+div[class^=contentRegion] #game-activity-tab div[class*=lastPlayed_],
+div[class^=contentRegion] #game-activity-tab div[class*=overlayStatusText_] {
   color: var(--text-muted);
 }
-div[class|=contentRegion] #game-activity-tab div[class*=activeGame_][class*=nowPlaying] * {
+div[class^=contentRegion] #game-activity-tab div[class*=activeGame_][class*=nowPlaying] * {
   color: #232634;
 }
-div[class|=contentRegion] #game-activity-tab div[class*=activeGame_][class*=nowPlaying] * svg > path {
+div[class^=contentRegion] #game-activity-tab div[class*=activeGame_][class*=nowPlaying] * svg > path {
   fill: #232634 !important;
 }
-div[class|=contentRegion] #game-activity-tab input[class|=gameName] {
+div[class^=contentRegion] #game-activity-tab input[class^=gameName] {
   color: #c6d0f5;
 }
-div[class|=contentRegion] #game-activity-tab input[class*=gameNameInput_]:hover, div[class|=contentRegion] #game-activity-tab input[class*=gameNameInput_]:focus {
+div[class^=contentRegion] #game-activity-tab input[class*=gameNameInput_]:hover, div[class^=contentRegion] #game-activity-tab input[class*=gameNameInput_]:focus {
   background-color: #292c3c;
   border-color: rgba(41, 44, 60, 0.3);
   color: #c6d0f5;
 }
-div[class|=contentRegion] #game-activity-tab div[class*=game_] {
+div[class^=contentRegion] #game-activity-tab div[class*=game_] {
   -webkit-box-shadow: 0 1px 0 0 var(--background-modifier-accent);
   box-shadow: 0 1px 0 0 var(--background-modifier-accent);
 }
-div[class|=contentRegion] #game-activity-tab div[class*=removeGame_] {
+div[class^=contentRegion] #game-activity-tab div[class*=removeGame_] {
   background-color: #414559;
 }
-div[class|=contentRegion] #emoji-tab div[class*=emojiRemove_] {
+div[class^=contentRegion] #emoji-tab div[class*=emojiRemove_] {
   background-color: #414559;
 }
-div[class|=contentRegion] section[class|=inputSensitivityToggle] div[class|=inputSensitivityBar] {
+div[class^=contentRegion] section[class^=inputSensitivityToggle] div[class^=inputSensitivityBar] {
   background: #51576d;
 }
-div[class|=contentRegion] section[class|=inputSensitivityToggle] div[class|=inputSensitivityBar][class*=speaking_] {
+div[class^=contentRegion] section[class^=inputSensitivityToggle] div[class^=inputSensitivityBar][class*=speaking_] {
   background: #a6d189 !important;
 }
-div[class|=contentRegion] div[class*=reactionMe_] {
+div[class^=contentRegion] div[class*=reactionMe_] {
   background-color: #414559 !important;
 }
-div[class|=contentRegion] div[class|=control] > div[class*=checked_],
-div[class|=contentRegion] div[class|=sensitivity] div[class*=checked_],
-div[class|=contentRegion] div[style*="background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%)"] {
+div[class^=contentRegion] div[class^=control] > div[class*=checked_],
+div[class^=contentRegion] div[class^=sensitivity] div[class*=checked_],
+div[class^=contentRegion] div[style*="background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%)"] {
   background-color: #a6d189 !important;
 }
-div[class|=contentRegion] div[class|=control] > div[style*="background-color: hsl(218, calc(var(--saturation-factor, 1) * 4.6%), 46.9%)"],
-div[class|=contentRegion] div[class|=control] > div[style$="background-color: rgb(128, 132, 142);"] {
+div[class^=contentRegion] div[class^=control] > div[style*="background-color: hsl(218, calc(var(--saturation-factor, 1) * 4.6%), 46.9%)"],
+div[class^=contentRegion] div[class^=control] > div[style$="background-color: rgb(128, 132, 142);"] {
   background-color: #626880 !important;
 }
-div[class|=contentRegion] #guild_premium-tab [class*=tierAccomplished_],
-div[class|=contentRegion] #guild_premium-tab [class*=tierCurrent_],
-div[class|=contentRegion] #guild_premium-tab [class*=tierFirst_] {
+div[class^=contentRegion] #guild_premium-tab [class*=tierAccomplished_],
+div[class^=contentRegion] #guild_premium-tab [class*=tierCurrent_],
+div[class^=contentRegion] #guild_premium-tab [class*=tierFirst_] {
   background: #f4b8e4;
 }
-div[class|=contentRegion] #guild_premium-tab [class*=tierInProgress_] {
+div[class^=contentRegion] #guild_premium-tab [class*=tierInProgress_] {
   background-color: #232634;
 }
-div[class|=contentRegion] #guild_premium-tab div[class|=progressWithSubscriptions] > svg > g > rect:first-child {
+div[class^=contentRegion] #guild_premium-tab div[class^=progressWithSubscriptions] > svg > g > rect:first-child {
   color: #232634;
 }
-div[class|=contentRegion] #guild_premium-tab div[class|=progressWithSubscriptions] > svg > g > rect:nth-child(2) {
+div[class^=contentRegion] #guild_premium-tab div[class^=progressWithSubscriptions] > svg > g > rect:nth-child(2) {
   color: #f4b8e4;
 }
-div[class|=contentRegion] #guild_premium-tab div[class|=tierHeaderUnlocked],
-div[class|=contentRegion] #guild_premium-tab div[class|=tierHeaderLocked] {
+div[class^=contentRegion] #guild_premium-tab div[class^=tierHeaderUnlocked],
+div[class^=contentRegion] #guild_premium-tab div[class^=tierHeaderLocked] {
   background-color: #232634;
   color: #a5adce;
 }
-div[class|=contentRegion] #guild_premium-tab div[class|=tierHeaderUnlocked] div[class|=tierUnlocked],
-div[class|=contentRegion] #guild_premium-tab div[class|=tierHeaderLocked] div[class|=tierUnlocked] {
+div[class^=contentRegion] #guild_premium-tab div[class^=tierHeaderUnlocked] div[class^=tierUnlocked],
+div[class^=contentRegion] #guild_premium-tab div[class^=tierHeaderLocked] div[class^=tierUnlocked] {
   background-image: linear-gradient(90deg, #8caaee, #ca9ee6);
   color: #232634;
   font-weight: 600;
 }
-div[class|=contentRegion] #guild_premium-tab div[class|=tierHeaderUnlocked] svg[class|=tierIcon],
-div[class|=contentRegion] #guild_premium-tab div[class|=tierHeaderLocked] svg[class|=tierIcon] {
+div[class^=contentRegion] #guild_premium-tab div[class^=tierHeaderUnlocked] svg[class^=tierIcon],
+div[class^=contentRegion] #guild_premium-tab div[class^=tierHeaderLocked] svg[class^=tierIcon] {
   color: #f4b8e4;
 }
-div[class|=contentRegion] #guild_premium-tab div[class|=tierHeaderUnlocked] svg[class*=tierIconLocked_],
-div[class|=contentRegion] #guild_premium-tab div[class|=tierHeaderLocked] svg[class*=tierIconLocked_] {
+div[class^=contentRegion] #guild_premium-tab div[class^=tierHeaderUnlocked] svg[class*=tierIconLocked_],
+div[class^=contentRegion] #guild_premium-tab div[class^=tierHeaderLocked] svg[class*=tierIconLocked_] {
   color: #838ba7;
 }
-div[class|=contentRegion] #guild_premium-tab div[class|=tierHeaderUnlocked] svg[class|=tierLock],
-div[class|=contentRegion] #guild_premium-tab div[class|=tierHeaderLocked] svg[class|=tierLock] {
+div[class^=contentRegion] #guild_premium-tab div[class^=tierHeaderUnlocked] svg[class^=tierLock],
+div[class^=contentRegion] #guild_premium-tab div[class^=tierHeaderLocked] svg[class^=tierLock] {
   color: #626880;
 }
-div[class|=contentRegion] #guild_premium-tab div[class|=tierBody] {
+div[class^=contentRegion] #guild_premium-tab div[class^=tierBody] {
   color: #b5bfe2;
   background-color: #292c3c;
 }
-div[class|=contentRegion] svg[class|=activeCircle] {
+div[class^=contentRegion] svg[class^=activeCircle] {
   color: #232634;
   background-color: #a6d189;
 }
-div[class|=contentRegion] #discovery-tab div[class*=checklistIcon] svg[viewBox="0 0 14 14"] path {
+div[class^=contentRegion] #discovery-tab div[class*=checklistIcon] svg[viewBox="0 0 14 14"] path {
   fill: #e78284;
 }
-div[class|=contentRegion] #discovery-tab div[class*=checklistIcon] svg[viewBox="0 0 20 20"] path {
+div[class^=contentRegion] #discovery-tab div[class*=checklistIcon] svg[viewBox="0 0 20 20"] path {
   fill: #e5c890;
 }
-div[class|=contentRegion] #guild_templates-tab svg[class*=descriptionIcon][viewBox="0 0 24 24"] path {
+div[class^=contentRegion] #guild_templates-tab svg[class*=descriptionIcon][viewBox="0 0 24 24"] path {
   fill: #a6d189;
 }
-div[class|=contentRegion] #guild_templates-tab svg[class*=descriptionIcon][viewBox="0 0 14 14"] path {
+div[class^=contentRegion] #guild_templates-tab svg[class*=descriptionIcon][viewBox="0 0 14 14"] path {
   fill: #e78284;
 }
-div[class|=contentRegion] #guild_templates-tab svg[class*=descriptionIcon] circle {
+div[class^=contentRegion] #guild_templates-tab svg[class*=descriptionIcon] circle {
   fill: #232634;
 }
-div[class|=contentRegion] #stickers-tab div[class*=tierHeaderContent] {
+div[class^=contentRegion] #stickers-tab div[class*=tierHeaderContent] {
   background-color: #232634;
 }
-div[class|=contentRegion] #stickers-tab div[class*=tierBody] {
+div[class^=contentRegion] #stickers-tab div[class*=tierBody] {
   background-color: #292c3c;
 }
-div[class|=contentRegion] #roles-tab div[class*=previewContainer_] .theme-light img[class*=roleIcon_] {
+div[class^=contentRegion] #roles-tab div[class*=previewContainer_] .theme-light img[class*=roleIcon_] {
   content: "data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.0749 1.66667H4.99996C3.15901 1.66667 1.66663 3.15906 1.66663 5.00001V15C1.66663 16.841 3.15901 18.3333 4.99996 18.3333H15C16.8409 18.3333 18.3333 16.841 18.3333 15V8.92511C17.8052 9.08227 17.2458 9.16667 16.6666 9.16667C13.445 9.16667 10.8333 6.555 10.8333 3.33334C10.8333 2.75419 10.9177 2.19476 11.0749 1.66667ZM6.66663 5.00001C7.58596 5.00001 8.33329 5.74601 8.33329 6.66667C8.33329 7.58801 7.58596 8.33334 6.66663 8.33334C5.74529 8.33334 4.99996 7.58801 4.99996 6.66667C4.99996 5.74601 5.74529 5.00001 6.66663 5.00001ZM4.99996 15L7.49996 11.6667L9.16663 13.3333L12.5 9.16667L15 15H4.99996Z' fill='%2351576d'/%3E%3Cpath d='M17.5 0V2.5H20V4.16667H17.5V6.66667H15.8334V4.16667H13.3334V2.5H15.8334V0H17.5Z' fill='%2351576d'/%3E%3C/svg%3E";
 }
-div[class|=contentRegion] #roles-tab div[class*=previewContainer_] .theme-dark img[class*=roleIcon_] {
+div[class^=contentRegion] #roles-tab div[class*=previewContainer_] .theme-dark img[class*=roleIcon_] {
   content: "data:image/svg+xml,%3Csvg fill='none' height='20' viewBox='0 0 20 20' width='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c6d0f5'%3E%3Cpath clip-rule='evenodd' d='m11.0749 1.66667h-6.07488c-1.84095 0-3.33333 1.49239-3.33333 3.33334v9.99999c0 1.841 1.49238 3.3333 3.33333 3.3333h9.99998c1.841 0 3.3334-1.4923 3.3334-3.3333v-6.07489c-.5281.15716-1.0876.24156-1.6667.24156-3.2217 0-5.8333-2.61167-5.8333-5.83333 0-.57915.0844-1.13858.2415-1.66667zm-4.40821 3.33334c.91933 0 1.66666.746 1.66666 1.66666 0 .92134-.74733 1.66667-1.66666 1.66667-.92134 0-1.66667-.74533-1.66667-1.66667 0-.92066.74533-1.66666 1.66667-1.66666zm-1.66667 9.99999 2.5-3.3333 1.66667 1.6666 3.33331-4.16663 2.5 5.83333z' fill-rule='evenodd'/%3E%3Cpath d='m17.5 0v2.5h2.5v1.66667h-2.5v2.5h-1.6667v-2.5h-2.5v-1.66667h2.5v-2.5z'/%3E%3C/g%3E%3C/svg%3E";
 }
-div[class|=contentRegion] #family-center-tab div[class|=featureCards] svg[class|=icon] {
+div[class^=contentRegion] #family-center-tab div[class^=featureCards] svg[class^=icon] {
   color: #232634;
 }
-div[class|=contentRegion] #profile-customization-tab div[class*=premiumFeatureBannerBackground] button {
+div[class^=contentRegion] #profile-customization-tab div[class*=premiumFeatureBannerBackground] button {
   color: #232634;
 }
-.theme-light div[class|=contentRegion] #appearance-tab div[class|=themeSelection][class*=lightIcon] {
+div[class^=contentRegion] #appearance-tab div[class^=selectionCircle] {
+  box-shadow: inset 0 0 0 2px #8caaee, inset 0 0 0 4px var(--background-primary);
+}
+div[class^=contentRegion] #appearance-tab div[class^=selectionCircle] svg[class^=checkmarkCircle] > circle {
+  fill: #232634 !important;
+}
+div[class^=contentRegion] #appearance-tab div[class^=selectionCircle] svg[class^=checkmarkCircle] > g > path {
+  fill: #8caaee !important;
+}
+.theme-light div[class^=contentRegion] #appearance-tab div[class^=themeSelection][class*=lightIcon] {
   background: #414559;
 }
 
@@ -808,102 +814,102 @@ div[class|=contentRegion] #profile-customization-tab div[class*=premiumFeatureBa
   fill: #232634;
 }
 
-div[class|=perksModal] {
+div[class^=perksModal] {
   background-color: #303446;
 }
-div[class|=perksModal] li[class|=perk] {
+div[class^=perksModal] li[class^=perk] {
   background-color: #292c3c;
 }
-div[class|=perksModal] li[class|=perk] svg {
+div[class^=perksModal] li[class^=perk] svg {
   color: #f4b8e4;
 }
-div[class|=perksModal] svg[class|=giftIcon] {
+div[class^=perksModal] svg[class^=giftIcon] {
   color: #232634;
 }
-div[class|=perksModal] div[class|=tierHeaderUnlocked] {
+div[class^=perksModal] div[class^=tierHeaderUnlocked] {
   background-image: linear-gradient(90deg, #8caaee, #ca9ee6);
   color: #303446;
 }
-div[class|=perksModal] div[class|=tierUnlocked],
-div[class|=perksModal] div[class|=tierMarkerBackground] {
+div[class^=perksModal] div[class^=tierUnlocked],
+div[class^=perksModal] div[class^=tierMarkerBackground] {
   background-color: #303446;
 }
-div[class|=perksModal] div[class|=barBackground],
-div[class|=perksModal] div[class|=tierMarkerInProgress],
-div[class|=perksModal] div[class|=tierBody] {
+div[class^=perksModal] div[class^=barBackground],
+div[class^=perksModal] div[class^=tierMarkerInProgress],
+div[class^=perksModal] div[class^=tierBody] {
   background-color: #232634 !important;
 }
-div[class|=perksModal] div[class|=tierMarkerAccomplished] {
+div[class^=perksModal] div[class^=tierMarkerAccomplished] {
   background: #f4b8e4 !important;
 }
-div[class|=perksModal] div[class|=tierMarkerInProgress] [class|=currentTierIcon] {
+div[class^=perksModal] div[class^=tierMarkerInProgress] [class^=currentTierIcon] {
   color: #f4b8e4;
 }
-div[class|=perksModal] div[class|=barForeground],
-div[class|=perksModal] div[class|=tierMarkerAccomplished] {
+div[class^=perksModal] div[class^=barForeground],
+div[class^=perksModal] div[class^=tierMarkerAccomplished] {
   background-color: #f4b8e4;
 }
-div[class|=perksModal] svg[class|=currentTierIcon] {
+div[class^=perksModal] svg[class^=currentTierIcon] {
   color: #303446;
 }
-div[class|=perksModal] div[class*=tierMarkerLabelText],
-div[class|=perksModal] svg[class|=tierLock] {
+div[class^=perksModal] div[class*=tierMarkerLabelText],
+div[class^=perksModal] svg[class^=tierLock] {
   color: var(--text-muted);
 }
-div[class|=perksModal] div[class*=selectedTier] div[class*=tierMarkerLabelText] {
+div[class^=perksModal] div[class*=selectedTier] div[class*=tierMarkerLabelText] {
   color: var(--text-normal);
 }
-div[class|=perksModal] div[class|=tierHeaderLocked] {
+div[class^=perksModal] div[class^=tierHeaderLocked] {
   background-color: #191b25;
   color: var(--text-muted);
 }
-div[class|=perksModal] svg[class*=unlocked] {
+div[class^=perksModal] svg[class*=unlocked] {
   color: #a6d189;
 }
 
-div[class|=sidebar] div[class|=container] div[class|=progressBar] {
+div[class^=sidebar] div[class^=container] div[class^=progressBar] {
   background: linear-gradient(90deg, #8caaee, #ca9ee6);
 }
-div[class|=sidebar] div[class|=container]:hover div[class|=progressBar] {
+div[class^=sidebar] div[class^=container]:hover div[class^=progressBar] {
   background: linear-gradient(90deg, hsl(221deg, 70%, 55.5%), #ca9ee6 34%, #8caaee 67%, #ca9ee6);
 }
-div[class|=sidebar] div[class|=container] div[class|=divider] {
+div[class^=sidebar] div[class^=container] div[class^=divider] {
   border-color: var(--background-modifier-accent);
 }
 
-div[class|=pageWrapper] {
+div[class^=pageWrapper] {
   background: #303446 !important;
 }
-div[class|=pageWrapper] div[class*=searchBox_] {
+div[class^=pageWrapper] div[class*=searchBox_] {
   background-color: #292c3c;
 }
-div[class|=pageWrapper] div[class*=searchBox_] input[class*=searchBoxInput_] {
+div[class^=pageWrapper] div[class*=searchBox_] input[class*=searchBoxInput_] {
   color: var(--text-normal);
 }
-div[class|=pageWrapper] div[class*=searchBox_] svg[class*=clearIcon] path {
+div[class^=pageWrapper] div[class*=searchBox_] svg[class*=clearIcon] path {
   fill: #737994;
 }
-div[class|=pageWrapper] div[class*=categoryPill-][class*=selected_] div {
+div[class^=pageWrapper] div[class*=categoryPill_][class*=selected_] div {
   color: #232634 !important;
 }
 
-div[class|=homeContainer] {
+div[class^=homeContainer] {
   background: #303446 !important;
 }
-div[class|=homeContainer] > div[class|=homeContent] div[class*=card_] {
+div[class^=homeContainer] > div[class^=homeContent] div[class*=card_] {
   background: #414559 !important;
 }
 
-section[class|=title] {
+section[class^=title] {
   background: var(--background-primary) !important;
 }
 
-div[class|=categoryItem][class*=selectedCategoryItem],
+div[class^=categoryItem][class*=selectedCategoryItem],
 button[class*=lookFilled] div[class*=addButton] {
   color: #232634 !important;
 }
 
-div[class|=itemInner] div[class|=new] > div[class*=newText_] {
+div[class^=itemInner] div[class^=new] > div[class*=newText_] {
   color: #232634 !important;
 }
 
@@ -920,10 +926,10 @@ div[class*=directoryModal_] [role=button][class*=activeButton] {
   color: #232634;
 }
 
-section[class|=guildListSection] div[class|=guildList]:first-child div[class|=iconContainer] {
+section[class^=guildListSection] div[class^=guildList]:first-child div[class^=iconContainer] {
   background-color: #a6d189;
 }
-section[class|=guildListSection] div[class|=guildList]:first-child div[class|=iconContainer] > div[class|=icon] {
+section[class^=guildListSection] div[class^=guildList]:first-child div[class^=iconContainer] > div[class^=icon] {
   background-image: url("data:image/svg+xml,%3Csvg fill='none' height='24' viewBox='0 0 25 24' width='25' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23232634'%3E%3Cpath clip-rule='evenodd' d='m13.25 18v-12h-1.5v12z' fill-rule='evenodd'/%3E%3Cpath clip-rule='evenodd' d='m7 12.75c-.69036 0-1.25.5596-1.25 1.25v4h-1.5v-4c0-1.5188 1.23122-2.75 2.75-2.75h11c1.5188 0 2.75 1.2312 2.75 2.75v4h-1.5v-4c0-.6904-.5596-1.25-1.25-1.25z' fill-rule='evenodd'/%3E%3Cpath d='m12.5 7c-1.3807 0-2.5-1.11929-2.5-2.5s1.1193-2.5 2.5-2.5 2.5 1.11929 2.5 2.5-1.1193 2.5-2.5 2.5z'/%3E%3Cpath d='m20 22c-1.3807 0-2.5-1.1193-2.5-2.5s1.1193-2.5 2.5-2.5 2.5 1.1193 2.5 2.5-1.1193 2.5-2.5 2.5z'/%3E%3Cpath d='m12.5 22c-1.3807 0-2.5-1.1193-2.5-2.5s1.1193-2.5 2.5-2.5 2.5 1.1193 2.5 2.5-1.1193 2.5-2.5 2.5z'/%3E%3Cpath d='m5 22c-1.38071 0-2.5-1.1193-2.5-2.5s1.11929-2.5 2.5-2.5 2.5 1.1193 2.5 2.5-1.11929 2.5-2.5 2.5z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
@@ -935,31 +941,31 @@ path[d="M17.225 6.06504C17.3227 6.00866 17.4362 5.98608 17.548 6.00084C17.6598 6
   fill: #232634;
 }
 
-div[class|=tierPreviews] button[class|=button] {
+div[class^=tierPreviews] button[class^=button] {
   background: linear-gradient(90deg, #81c8be, #8caaee);
 }
 
-div[class|=notice] div[class*=noticeText_] {
+div[class^=notice] div[class*=noticeText_] {
   color: #232634;
 }
-div[class|=notice] div[class*=header_] {
+div[class^=notice] div[class*=header_] {
   color: #232634;
 }
-div[class|=notice] div[class|=closeButton] > svg > path {
+div[class^=notice] div[class^=closeButton] > svg > path {
   fill: #232634;
 }
-div[class|=notice] button[class|=button] {
+div[class^=notice] button[class^=button] {
   border-color: #232634;
   color: #232634;
 }
-div[class|=notice] button[class|=button]:hover {
+div[class^=notice] button[class^=button]:hover {
   background: #ea7f48;
 }
-div[class|=notice][class*=colorStreamerMode_] {
+div[class^=notice][class*=colorStreamerMode_] {
   background-color: #ca9ee6;
   color: #232634;
 }
-div[class|=notice][class*=colorStreamerMode_] button[class|=button]:hover {
+div[class^=notice][class*=colorStreamerMode_] button[class^=button]:hover {
   background: #b475dc;
   color: #292c3c;
 }
@@ -971,10 +977,10 @@ nav[class*=guilds_] foreignObject > div[data-list-item-id*=guildsnav_]:hover > d
 nav[class*=guilds_] div[data-list-item-id=guildsnav___home] {
   --background-primary: #363b4f;
 }
-nav[class*=guilds_] span[class|=expandedFolderBackground] {
+nav[class*=guilds_] span[class^=expandedFolderBackground] {
   background-color: #363b4f;
 }
-nav[class*=guilds_] div[class|=folder][class*=hover_] {
+nav[class*=guilds_] div[class^=folder][class*=hover_] {
   background-color: #41465e;
 }
 nav[class*=guilds_] div[data-list-item-id=guildsnav___create-join-button]:hover, nav[class*=guilds_] div[data-list-item-id=guildsnav___create-join-button][class*=selected],
@@ -986,22 +992,22 @@ nav[class*=guilds_] div[data-list-item-id=guildsnav___app-download-button][class
   font-weight: 600;
 }
 
-div[class|=upperBadge] > div[class|=iconBadge] path {
+div[class^=upperBadge] > div[class^=iconBadge] path {
   color: #232634;
 }
-div[class|=upperBadge] div[class*=participating_] {
+div[class^=upperBadge] div[class*=participating_] {
   background: #a6d189;
 }
 
-div[class|=lowerBadge] div[class|=iconBadge] path {
+div[class^=lowerBadge] div[class^=iconBadge] path {
   color: #232634;
 }
 
-svg[class|=spine] {
+svg[class^=spine] {
   color: #626880;
 }
 
-div[class|=spineBorder] {
+div[class^=spineBorder] {
   background: #626880;
 }
 
@@ -1065,84 +1071,84 @@ div[class*=liveSmall_] {
   color: #232634;
 }
 
-[class|=chatContent] div[class*=wrapperAudio_] div[class*=audioControls],
-[class|=chatContent] div[class*=wrapperAudio_] div[class*=videoControls_],
-[class|=chatContent] div[class*=imageWrapper_] div[class*=audioControls],
-[class|=chatContent] div[class*=imageWrapper_] div[class*=videoControls_] {
+[class^=chatContent] div[class*=wrapperAudio_] div[class*=audioControls],
+[class^=chatContent] div[class*=wrapperAudio_] div[class*=videoControls_],
+[class^=chatContent] div[class*=imageWrapper_] div[class*=audioControls],
+[class^=chatContent] div[class*=imageWrapper_] div[class*=videoControls_] {
   background-color: rgba(41, 44, 60, 0.8);
 }
-[class|=chatContent] div[class*=wrapperAudio_] div[class*=audioControls] svg[class*=controlIcon_],
-[class|=chatContent] div[class*=wrapperAudio_] div[class*=videoControls_] svg[class*=controlIcon_],
-[class|=chatContent] div[class*=imageWrapper_] div[class*=audioControls] svg[class*=controlIcon_],
-[class|=chatContent] div[class*=imageWrapper_] div[class*=videoControls_] svg[class*=controlIcon_] {
+[class^=chatContent] div[class*=wrapperAudio_] div[class*=audioControls] svg[class*=controlIcon_],
+[class^=chatContent] div[class*=wrapperAudio_] div[class*=videoControls_] svg[class*=controlIcon_],
+[class^=chatContent] div[class*=imageWrapper_] div[class*=audioControls] svg[class*=controlIcon_],
+[class^=chatContent] div[class*=imageWrapper_] div[class*=videoControls_] svg[class*=controlIcon_] {
   opacity: 1;
   color: #b5bfe2;
 }
-[class|=chatContent] #---new-messages-bar span[class|=unreadPill] {
+[class^=chatContent] #---new-messages-bar span[class^=unreadPill] {
   color: #232634;
 }
-[class|=chatContent] div[class|=newMessagesBar] button {
+[class^=chatContent] div[class^=newMessagesBar] button {
   color: #232634;
 }
-[class|=chatContent] div[class|=channelTextArea] div[class|=buttons] * {
+[class^=chatContent] div[class^=channelTextArea] div[class^=buttons] * {
   color: var(--interactive-normal) !important;
 }
-[class|=chatContent] [id|=message-reactions] div[class|=reaction] {
+[class^=chatContent] [id^=message-reactions] div[class^=reaction] {
   background-color: #414559;
 }
-[class|=chatContent] [id|=message-reactions] div[class|=reaction]:hover {
+[class^=chatContent] [id^=message-reactions] div[class^=reaction]:hover {
   background-color: var(--brand-experiment-20a);
   border-color: var(--brand-experiment-30a);
 }
-[class|=chatContent] div[class*=isBurstReactionPicker_] {
+[class^=chatContent] div[class*=isBurstReactionPicker_] {
   box-shadow: 0 0 0 2px #ca9ee6, 0 0 16px #babbf1;
 }
-[class|=chatContent] div[class|=navButtonSuperReactActive],
-[class|=chatContent] div[class|=navButtonSuperReactActive]:hover {
+[class^=chatContent] div[class^=navButtonSuperReactActive],
+[class^=chatContent] div[class^=navButtonSuperReactActive]:hover {
   background: linear-gradient(270deg, #f4b8e4, #babbf1 33.63%, #ca9ee6);
   color: #232634;
 }
-[class|=chatContent] div[class*=betaTag_] {
+[class^=chatContent] div[class*=betaTag_] {
   background: var(--brand-experiment) !important;
   color: #232634;
 }
-[class|=chatContent] button[class*=navButtonActive_],
-[class|=chatContent] button[class*=navButtonActive_]:hover {
+[class^=chatContent] button[class*=navButtonActive_],
+[class^=chatContent] button[class*=navButtonActive_]:hover {
   color: #232634;
 }
-[class|=chatContent] div[class*=colorPremiumGradient-][class*=focused_] {
+[class^=chatContent] div[class*=colorPremiumGradient_][class*=focused_] {
   background: linear-gradient(270deg, #f4b8e4, #babbf1 33.63%, #ca9ee6);
   color: #232634 !important;
 }
-[class|=chatContent] div[class*=isBurstReactionPicker] {
+[class^=chatContent] div[class*=isBurstReactionPicker] {
   border: none;
   box-shadow: 0 0 0 2px #ca9ee6, 0 0 16px #babbf1;
 }
-[class|=chatContent] div[class*=playButtonContainer_] {
+[class^=chatContent] div[class*=playButtonContainer_] {
   background: var(--brand-experiment) !important;
 }
-[class|=chatContent] svg[class*=playIcon_] path {
+[class^=chatContent] svg[class*=playIcon_] path {
   fill: #232634;
 }
-[class|=chatContent] div[class|=container][class*=header_] div[class*=addReactButton_],
-[class|=chatContent] div[class|=container][class*=header_] div[class|=buttons]:not([class*=lookBlank_]) div[class|=contents] {
+[class^=chatContent] div[class^=container][class*=header_] div[class*=addReactButton_],
+[class^=chatContent] div[class^=container][class*=header_] div[class^=buttons]:not([class*=lookBlank_]) div[class^=contents] {
   background: #414559;
 }
-[class|=chatContent] div[class|=container][class*=header_] div[class*=addReactButton_]:hover,
-[class|=chatContent] div[class|=container][class*=header_] div[class|=buttons]:not([class*=lookBlank_]) div[class|=contents]:hover {
+[class^=chatContent] div[class^=container][class*=header_] div[class*=addReactButton_]:hover,
+[class^=chatContent] div[class^=container][class*=header_] div[class^=buttons]:not([class*=lookBlank_]) div[class^=contents]:hover {
   background-color: var(--brand-experiment-20a);
   border-color: var(--brand-experiment-30a);
 }
-[class|=chatContent] div[class|=messagesErrorBar] div[class*=barButtonBase_] {
+[class^=chatContent] div[class^=messagesErrorBar] div[class*=barButtonBase_] {
   color: #232634;
 }
-[class|=chatContent] [class*=inlineCode_] {
+[class^=chatContent] [class*=inlineCode_] {
   background: #414559;
 }
-[class|=chatContent] code.inline {
+[class^=chatContent] code.inline {
   background: #414559;
 }
-[class|=chatContent] div[class|=container] div[class|=cardWrapper] div[class*=completed_] svg[class|=checkmark] {
+[class^=chatContent] div[class^=container] div[class^=cardWrapper] div[class*=completed_] svg[class^=checkmark] {
   background-color: #a6d189;
   color: #232634;
 }
@@ -1152,27 +1158,27 @@ div[style*="d1382af8d9e755bc44811b1fd92990a8.svg"] {
   filter: none !important;
 }
 
-main[class|=chatContent] div[id|=message-content] svg[class|=icon] > path[d="M4 0L0 4V8L4 12L8 8V4L4 0ZM7 7.59L4 10.59L1 7.59V4.41L4 1.41L7 4.41V7.59Z"],
-main[class|=chatContent] div[id|=message-content] svg[class|=icon] > path[d="M2 4.83V7.17L4 9.17L6 7.17V4.83L4 2.83L2 4.83Z"] {
+main[class^=chatContent] div[id^=message-content] svg[class^=icon] > path[d="M4 0L0 4V8L4 12L8 8V4L4 0ZM7 7.59L4 10.59L1 7.59V4.41L4 1.41L7 4.41V7.59Z"],
+main[class^=chatContent] div[id^=message-content] svg[class^=icon] > path[d="M2 4.83V7.17L4 9.17L6 7.17V4.83L4 2.83L2 4.83Z"] {
   color: #f4b8e4;
 }
 
-.theme-dark span[class|=spoilerContent],
-.theme-dark div[class|=spoilerContent],
-.theme-light span[class|=spoilerContent],
-.theme-light div[class|=spoilerContent] {
+.theme-dark span[class^=spoilerContent],
+.theme-dark div[class^=spoilerContent],
+.theme-light span[class^=spoilerContent],
+.theme-light div[class^=spoilerContent] {
   background-color: #414559;
 }
-.theme-dark span[class|=spoilerContent][class*=hidden],
-.theme-dark div[class|=spoilerContent][class*=hidden],
-.theme-light span[class|=spoilerContent][class*=hidden],
-.theme-light div[class|=spoilerContent][class*=hidden] {
+.theme-dark span[class^=spoilerContent][class*=hidden],
+.theme-dark div[class^=spoilerContent][class*=hidden],
+.theme-light span[class^=spoilerContent][class*=hidden],
+.theme-light div[class^=spoilerContent][class*=hidden] {
   background-color: #626880;
 }
-.theme-dark span[class|=spoilerContent][class*=hidden]:hover,
-.theme-dark div[class|=spoilerContent][class*=hidden]:hover,
-.theme-light span[class|=spoilerContent][class*=hidden]:hover,
-.theme-light div[class|=spoilerContent][class*=hidden]:hover {
+.theme-dark span[class^=spoilerContent][class*=hidden]:hover,
+.theme-dark div[class^=spoilerContent][class*=hidden]:hover,
+.theme-light span[class^=spoilerContent][class*=hidden]:hover,
+.theme-light div[class^=spoilerContent][class*=hidden]:hover {
   background-color: #6d748e;
 }
 .theme-dark span[class*=spoilerMarkdownContent] h1 > span,
@@ -1187,22 +1193,22 @@ main[class|=chatContent] div[id|=message-content] svg[class|=icon] > path[d="M2 
 .theme-light span[class*=spoilerMarkdownContent][class*=hidden] h1 > span:hover {
   background-color: #6d748e;
 }
-.theme-dark div[class|=spoilerContainer] div[class|=spoilerWarning],
-.theme-light div[class|=spoilerContainer] div[class|=spoilerWarning] {
+.theme-dark div[class^=spoilerContainer] div[class^=spoilerWarning],
+.theme-light div[class^=spoilerContainer] div[class^=spoilerWarning] {
   color: #c6d0f5;
   background-color: rgba(35, 38, 52, 0.7);
 }
-.theme-dark div[class|=spoilerContainer]:hover div[class|=spoilerWarning],
-.theme-light div[class|=spoilerContainer]:hover div[class|=spoilerWarning] {
+.theme-dark div[class^=spoilerContainer]:hover div[class^=spoilerWarning],
+.theme-light div[class^=spoilerContainer]:hover div[class^=spoilerWarning] {
   color: #c6d0f5;
   background-color: #232634;
 }
-.theme-dark div[class|=spoilerContainer] article[class*=embedFull_],
-.theme-light div[class|=spoilerContainer] article[class*=embedFull_] {
+.theme-dark div[class^=spoilerContainer] article[class*=embedFull_],
+.theme-light div[class^=spoilerContainer] article[class*=embedFull_] {
   border-color: #626880;
 }
 
-div[class|=cooldownWrapper] {
+div[class^=cooldownWrapper] {
   color: var(--text-muted) !important;
 }
 
@@ -1218,50 +1224,50 @@ div[class*=autocomplete_] div[class*=autocompleteRowSubheading] {
 div[class*=autocomplete_] div[class*=autocompleteRowContentSecondary] {
   background-color: transparent;
 }
-div[class*=autocomplete_] div[class|=usageWrapper] > div[class*=title_] {
+div[class*=autocomplete_] div[class^=usageWrapper] > div[class*=title_] {
   color: #ef9f76 !important;
 }
 div[class*=autocomplete_] strong {
   color: #ef9f76 !important;
 }
 
-div[class|=channelTextArea] button[class*=emojiButton_] {
+div[class^=channelTextArea] button[class*=emojiButton_] {
   background: transparent !important;
 }
 
-[class|=uploadDropModal][class*=error] {
+[class^=uploadDropModal][class*=error] {
   background-color: #e78284;
 }
-[class|=uploadDropModal] div[class|=inner] {
+[class^=uploadDropModal] div[class^=inner] {
   border-color: #232634;
 }
-[class|=uploadDropModal] div[class|=inner] * {
+[class^=uploadDropModal] div[class^=inner] * {
   color: #232634 !important;
 }
 
 div[class^=chat] > div[class^=content] > div[class^=container] div[class^=chatContainer] > div[class^=container] {
   background-color: #303446;
 }
-div[class^=chat] > div[class^=content] > div[class^=container] div[class|=grid][class*=scrollerBase],
-div[class^=chat] > div[class^=content] > div[class^=container] > div[class|=chatContainer] > div[class|=container] {
+div[class^=chat] > div[class^=content] > div[class^=container] div[class^=grid][class*=scrollerBase],
+div[class^=chat] > div[class^=content] > div[class^=container] > div[class^=chatContainer] > div[class^=container] {
   background-color: #303446;
 }
-div[class^=chat] > div[class^=content] > div[class^=container] div[class|=pinIcon] > svg > path,
-div[class^=chat] > div[class^=content] > div[class^=container] div[class|=stepStatus] > svg > path {
+div[class^=chat] > div[class^=content] > div[class^=container] div[class^=pinIcon] > svg > path,
+div[class^=chat] > div[class^=content] > div[class^=container] div[class^=stepStatus] > svg > path {
   fill: #a5adce;
 }
-div[class^=chat] > div[class^=content] > div[class^=container] div[class|=pinIcon][style*="background-color: var(--status-positive-background);"] > svg > path,
-div[class^=chat] > div[class^=content] > div[class^=container] div[class|=stepStatus][style*="background-color: var(--status-positive-background);"] > svg > path {
+div[class^=chat] > div[class^=content] > div[class^=container] div[class^=pinIcon][style*="background-color: var(--status-positive-background);"] > svg > path,
+div[class^=chat] > div[class^=content] > div[class^=container] div[class^=stepStatus][style*="background-color: var(--status-positive-background);"] > svg > path {
   fill: #232634;
 }
 div[class^=chat] > div[class^=content] > div[class^=container] div[class*=countText] {
   color: #232634;
 }
-div[class^=chat] > div[class^=content] > div[class^=container] svg[class|=discordIcon] {
+div[class^=chat] > div[class^=content] > div[class^=container] svg[class^=discordIcon] {
   background-color: #ef9f76;
   color: #232634;
 }
-div[class^=chat] > div[class^=content] > div[class^=container] div[class|=newBadge] {
+div[class^=chat] > div[class^=content] > div[class^=container] div[class^=newBadge] {
   background-color: #babbf1 !important;
   color: #232634;
 }
@@ -1269,28 +1275,28 @@ div[class^=chat] > div[class^=content] > div[class^=container] div[class*=mainCa
   background-color: #414559;
 }
 
-div[class|=sidebar] > section[class|=panels] svg[class*=buttonIcon_],
-div[class|=sidebar] > section[class|=panels] div[class*=buttonContents] {
+div[class^=sidebar] > section[class^=panels] svg[class*=buttonIcon_],
+div[class^=sidebar] > section[class^=panels] div[class*=buttonContents] {
   fill: #c6d0f5;
   color: #c6d0f5;
 }
 
-[data-list-id|=forum-channel-list] div[class|=body] > div[class|=tags] div[class*=pill] {
+[data-list-id^=forum-channel-list] div[class^=body] > div[class^=tags] div[class*=pill] {
   background-color: #292c3c;
 }
-[data-list-id|=forum-channel-list] button[class|=submitButton][class*=colorBrand] {
+[data-list-id^=forum-channel-list] button[class^=submitButton][class*=colorBrand] {
   background-color: #ef9f76;
   color: #232634;
 }
 
-div[class|=applicationCommand] span[class*=selectedPill_] {
+div[class^=applicationCommand] span[class*=selectedPill_] {
   border-color: #ef9f76 !important;
 }
-div[class|=applicationCommand] span[class*=erroredPill_] {
+div[class^=applicationCommand] span[class*=erroredPill_] {
   border-color: #e78284 !important;
 }
 
-div[class|=chat] > div[class|=content] main[class|=chatContent] + div[class|=container] {
+div[class^=chat] > div[class^=content] main[class^=chatContent] + div[class^=container] {
   background-color: var(--background-secondary);
 }
 
@@ -1298,101 +1304,105 @@ div[class|=chat] > div[class|=content] main[class|=chatContent] + div[class|=con
   border: 1px solid #e78284 !important;
 }
 
+div[class^=messagesWrapper] ol[class^=scrollerInner] svg[class^=icon] {
+  color: #232634;
+}
+
 [class*=barButtonBase_] {
   color: #232634 !important;
 }
 
-div[class|=callContainer] [class*=controlIcon_] {
+div[class^=callContainer] [class*=controlIcon_] {
   color: #b5bfe2;
 }
-div[class|=callContainer] [class*=controlIcon_]:hover {
+div[class^=callContainer] [class*=controlIcon_]:hover {
   color: #c6d0f5;
 }
-div[class|=callContainer] div[class*=tile_],
-div[class|=callContainer] div[class*=background_] {
+div[class^=callContainer] div[class*=tile_],
+div[class^=callContainer] div[class*=background_] {
   background-color: #303446 !important;
 }
-div[class|=callContainer] div[class*=overlayTitle],
-div[class|=callContainer] svg[class*=status_] {
+div[class^=callContainer] div[class*=overlayTitle],
+div[class^=callContainer] svg[class*=status_] {
   background-color: #414559;
   color: #c6d0f5;
 }
-div[class|=callContainer] div[class*=header],
-div[class|=callContainer] svg[class*=selectedIcon_] {
+div[class^=callContainer] div[class*=header],
+div[class^=callContainer] svg[class*=selectedIcon_] {
   color: #c6d0f5;
 }
-div[class|=callContainer] div[class*=button-][class*=contents_],
-div[class|=callContainer] button[class*=cta_],
-div[class|=callContainer] button[class*=participantsButton_] {
+div[class^=callContainer] div[class*=button_][class*=contents_],
+div[class^=callContainer] button[class*=cta_],
+div[class^=callContainer] button[class*=participantsButton_] {
   background-color: #414559;
   color: #c6d0f5;
 }
-div[class|=callContainer] div[class|=indicators] div[class|=liveQualityIndicator] {
+div[class^=callContainer] div[class^=indicators] div[class^=liveQualityIndicator] {
   background-color: #e78284 !important;
 }
-div[class|=callContainer] div[class|=indicators] div[class|=liveQualityIndicator] svg[class|=premiumStreamIcon] {
+div[class^=callContainer] div[class^=indicators] div[class^=liveQualityIndicator] svg[class^=premiumStreamIcon] {
   color: #232634;
 }
-div[class|=callContainer] div[class|=videoControls] div[class|=children] div[class*=playingText_] {
+div[class^=callContainer] div[class^=videoControls] div[class^=children] div[class*=playingText_] {
   color: #b5bfe2;
 }
-div[class|=callContainer] div[class|=videoControls] div[class|=bottomControls] button[class|=textButton] {
+div[class^=callContainer] div[class^=videoControls] div[class^=bottomControls] button[class^=textButton] {
   color: #c6d0f5;
   background-color: #51576d;
 }
-div[class|=callContainer] div[class|=videoControls] div[class|=toolbar] svg[class|=controlIcon] {
+div[class^=callContainer] div[class^=videoControls] div[class^=toolbar] svg[class^=controlIcon] {
   color: var(--interactive-normal);
 }
-div[class|=callContainer] div[class|=videoControls] div[class|=toolbar] div[class|=streamQualityIndicator] div[class|=liveQualityIndicator] {
+div[class^=callContainer] div[class^=videoControls] div[class^=toolbar] div[class^=streamQualityIndicator] div[class^=liveQualityIndicator] {
   background-color: #51576d !important;
 }
-div[class|=callContainer] div[class|=videoControls] div[class|=toolbar] div[class|=streamQualityIndicator] div[class|=liveQualityIndicator] div[class|=qualityIndicator] {
+div[class^=callContainer] div[class^=videoControls] div[class^=toolbar] div[class^=streamQualityIndicator] div[class^=liveQualityIndicator] div[class^=qualityIndicator] {
   color: #c6d0f5;
 }
-div[class|=callContainer] div[class|=videoControls] div[class|=toolbar] div[class|=streamQualityIndicator] div[class|=liveQualityIndicator] svg[class|=premiumStreamIcon] {
+div[class^=callContainer] div[class^=videoControls] div[class^=toolbar] div[class^=streamQualityIndicator] div[class^=liveQualityIndicator] svg[class^=premiumStreamIcon] {
   color: #c6d0f5;
 }
-div[class|=callContainer] div[class|=videoControls] div[class|=toolbar] div[class|=liveIndicator] div[class|=live] {
+div[class^=callContainer] div[class^=videoControls] div[class^=toolbar] div[class^=liveIndicator] div[class^=live] {
   background-color: #e78284 !important;
   color: #232634 !important;
 }
-div[class|=callContainer] div[class|=videoControls] button[class*=leftTrayIcon-][class*=buttonColor_] {
+div[class^=callContainer] div[class^=videoControls] button[class*=leftTrayIcon_][class*=buttonColor_] {
   background-color: #414559;
   color: #c6d0f5;
 }
-div[class|=callContainer] div[class|=videoControls] div[class|=badge] {
+div[class^=callContainer] div[class^=videoControls] div[class^=badge] {
   color: #232634;
 }
-div[class|=callContainer] div[class|=videoControls] [class*=colorable_][class*=red_] {
+div[class^=callContainer] div[class^=videoControls] [class*=colorable_][class*=red_] {
   background: #e78284;
 }
-div[class|=callContainer] div[class|=videoControls] [class*=colorable_][class*=red_] [class*=centerIcon_] {
+div[class^=callContainer] div[class^=videoControls] [class*=colorable_][class*=red_] [class*=centerIcon_] {
   color: #232634;
 }
-div[class|=callContainer] div[class|=videoControls] [class*=colorable_][class*=primaryDark_] {
+div[class^=callContainer] div[class^=videoControls] [class*=colorable_][class*=primaryDark_] {
   background: #51576d;
   color: #c6d0f5;
 }
-div[class|=callContainer] div[class|=videoControls] [class*=colorable_][class*=primaryDark_] [class*=centerIcon_] {
+div[class^=callContainer] div[class^=videoControls] [class*=colorable_][class*=primaryDark_] [class*=centerIcon_] {
   color: #c6d0f5;
 }
-div[class|=callContainer] div[class|=videoControls] [class*=colorable_][class*=primaryDark_] svg[class|=raisedHandButtonIcon] {
+div[class^=callContainer] div[class^=videoControls] [class*=colorable_][class*=primaryDark_] svg[class^=raisedHandButtonIcon] {
   color: #c6d0f5;
 }
-div[class|=callContainer] div[class|=videoControls] [class*=colorable_][class*=green_] {
+div[class^=callContainer] div[class^=videoControls] [class*=colorable_][class*=green_] {
   background: #a6d189;
 }
-div[class|=callContainer] div[class|=videoControls] [class*=colorable_][class*=green_] [class*=centerIcon_] {
+div[class^=callContainer] div[class^=videoControls] [class*=colorable_][class*=green_] [class*=centerIcon_] {
   color: #232634;
 }
-div[class|=callContainer] div[class|=videoControls] [class*=colorable_][class*=white_] {
+div[class^=callContainer] div[class^=videoControls] [class*=colorable_][class*=white_] {
   color: #232634;
   background-color: #b5bfe2;
 }
-div[class|=callContainer] div[class|=videoControls] [class*=colorable_][class*=white_] [class*=centerIcon_] {
+div[class^=callContainer] div[class^=videoControls] [class*=colorable_][class*=white_] [class*=centerIcon_] {
   color: #232634;
 }
-div[class|=callContainer] div[class|=videoControls] [class*=colorable_][class*=white_]:hover, div[class|=callContainer] div[class|=videoControls] [class*=colorable_][class*=white_][class*=active_] {
+div[class^=callContainer] div[class^=videoControls] [class*=colorable_][class*=white_]:hover, div[class^=callContainer] div[class^=videoControls] [class*=colorable_][class*=white_][class*=active_] {
   background: #c6d0f5;
 }
 
@@ -1413,38 +1423,32 @@ div[class*=giftCodeContainer] [class*=tile] > [class*=description] {
 div[class*=chat_] section[class*=header_] {
   background-color: #292c3c;
 }
-div[class*=chat_] div[class*=content-][class*=container_] {
+div[class*=chat_] div[class*=content_][class*=container_] {
   background-color: #292c3c;
 }
-div[class*=chat_] div[class*=content-][class*=container_] div[class*=container] {
+div[class*=chat_] div[class*=content_][class*=container_] div[class*=container] {
   background-color: #292c3c;
 }
-div[class*=chat_] div[class*=content-][class*=container_] div[class*=search_] {
+div[class*=chat_] div[class*=content_][class*=container_] div[class*=search_] {
   background-color: #303446 !important;
 }
-div[class*=chat_] div[class*=content-][class*=container_] div[class*=search_] input::placeholder {
+div[class*=chat_] div[class*=content_][class*=container_] div[class*=search_] input::placeholder {
   color: #737994;
 }
-div[class*=chat_] div[class*=content-][class*=container_] div[class*=browser] div[class*=content] div[class|=container] {
+div[class*=chat_] div[class*=content_][class*=container_] div[class*=browser] div[class*=content] div[class^=container] {
   background-color: #303446;
 }
-div[class*=chat_] div[class*=content-][class*=container_] div[class*=browser] div[class*=checkbox_] {
-  border-color: #232634 !important;
-}
-div[class*=chat_] div[class*=content-][class*=container_] div[class*=browser] div[class*=checkbox_] svg > path {
-  fill: #232634;
-}
-div[class*=chat_] div[class*=content-][class*=container_] div[class*=scrollerContainer_] {
+div[class*=chat_] div[class*=content_][class*=container_] div[class*=scrollerContainer_] {
   background-color: #292c3c;
 }
-div[class*=chat_] div[class*=content-][class*=container_] div[class*=scrollerContainer_] div[class*=checkIcon_][style*="opacity: 1;"] > svg > path {
+div[class*=chat_] div[class*=content_][class*=container_] div[class*=scrollerContainer_] div[class*=checkIcon_][style*="opacity: 1;"] > svg > path {
   fill: #232634;
 }
-div[class*=chat_] div[class*=content-][class*=container_] div[role=tablist] {
+div[class*=chat_] div[class*=content_][class*=container_] div[role=tablist] {
   background-color: #292c3c;
   border-bottom: 2px solid #414559;
 }
-div[class*=chat_] div[class*=content-][class*=container_] div[role=tablist] [class*=textBadge_] {
+div[class*=chat_] div[class*=content_][class*=container_] div[role=tablist] [class*=textBadge_] {
   color: #232634;
 }
 
@@ -1482,7 +1486,7 @@ div[class*=chat_] div[class*=innerHeader]:after {
 [id*=message-accessories-] > [class*=invite_] {
   background-color: #303446;
 }
-[id*=message-accessories-] > [class*=invite_] [class*=inFront-][class*=header_] {
+[id*=message-accessories-] > [class*=invite_] [class*=inFront_][class*=header_] {
   color: #a5adce;
 }
 [id*=message-accessories-] > [class*=invite_] [class*=partyStatus_] {
@@ -1493,11 +1497,11 @@ div[class*=chat_] div[class*=innerHeader]:after {
   color: #303446;
 }
 
-div[class|=chat][class*=page-] div[class|=content][class*=container_] {
+div[class^=chat][class*=page_] div[class^=content][class*=container_] {
   height: 100%;
 }
 
-div[class|=chat] div[class|=homeContainer] {
+div[class^=chat] div[class^=homeContainer] {
   height: 100%;
 }
 
@@ -1509,128 +1513,128 @@ div[class|=chat] div[class|=homeContainer] {
   color: #e36d6f !important;
 }
 
-aside[class|=membersWrap] {
+aside[class^=membersWrap] {
   height: 100%;
 }
 
-div[class|=layerContainer] [role=menu] {
+div[class^=layerContainer] [role=menu] {
   --brand-experiment-560: var(--brand-experiment-25a);
   --brand-experiment-600: var(--brand-experiment);
 }
-div[class|=layerContainer] [role=menu] [class*=colorDefault][class*=colorBrand] {
+div[class^=layerContainer] [role=menu] [class*=colorDefault][class*=colorBrand] {
   color: #ef9f76;
 }
-div[class|=layerContainer] [role=menu] [class*=colorDefault][class*=focused]:not([class*=colorDanger]),
-div[class|=layerContainer] [role=menu] [class*=colorDefault][class*=focused] [class*=checkbox_] {
+div[class^=layerContainer] [role=menu] [class*=colorDefault][class*=focused]:not([class*=colorDanger]),
+div[class^=layerContainer] [role=menu] [class*=colorDefault][class*=focused] [class*=checkbox_] {
   color: var(--interactive-normal);
 }
-div[class|=layerContainer] [role=menu] [class*=colorDefault][role=menuitem]:not([class*=colorDanger]):not([id*=user-context-user-volume]):hover {
+div[class^=layerContainer] [role=menu] [class*=colorDefault][role=menuitem]:not([class*=colorDanger]):not([id*=user-context-user-volume]):hover {
   background: var(--background-accent);
   color: #232634;
 }
-div[class|=layerContainer] [role=menu] [class*=colorDefault][role=menuitem]:not([class*=colorDanger]):not([id*=user-context-user-volume]):hover [class*=subtext],
-div[class|=layerContainer] [role=menu] [class*=colorDefault][role=menuitem]:not([class*=colorDanger]):not([id*=user-context-user-volume]):hover [class*=caret_] {
+div[class^=layerContainer] [role=menu] [class*=colorDefault][role=menuitem]:not([class*=colorDanger]):not([id*=user-context-user-volume]):hover [class*=subtext],
+div[class^=layerContainer] [role=menu] [class*=colorDefault][role=menuitem]:not([class*=colorDanger]):not([id*=user-context-user-volume]):hover [class*=caret_] {
   color: #232634;
 }
-div[class|=layerContainer] [role=menu] [class*=colorDefault] [class*=caret] {
+div[class^=layerContainer] [role=menu] [class*=colorDefault] [class*=caret] {
   color: #c6d0f5;
 }
-div[class|=layerContainer] [role=menu] [class*=colorDefault]:active:not([class*=hideInteraction_]) {
+div[class^=layerContainer] [role=menu] [class*=colorDefault]:active:not([class*=hideInteraction_]) {
   color: var(--background-floating);
 }
-div[class|=layerContainer] [role=menu] [class*=colorDefault]:active:not([class*=hideInteraction_]) [class*=check_] {
+div[class^=layerContainer] [role=menu] [class*=colorDefault]:active:not([class*=hideInteraction_]) [class*=check_] {
   color: var(--interactive-normal);
 }
-div[class|=layerContainer] [role=menu] [class*=colorDefault]:active:not([class*=hideInteraction_]) [class*=checkbox_] {
+div[class^=layerContainer] [role=menu] [class*=colorDefault]:active:not([class*=hideInteraction_]) [class*=checkbox_] {
   color: var(--background-floating);
 }
-div[class|=layerContainer] [role=menu] div[id|=account-switch-account][class*=focused] div[class*=userMenuUsername] div {
+div[class^=layerContainer] [role=menu] div[id^=account-switch-account][class*=focused] div[class*=userMenuUsername] div {
   color: #232634;
 }
-div[class|=layerContainer] [role=menu] div[id|=account-switch-account][class*=focused] svg[class|=activeIcon] circle {
+div[class^=layerContainer] [role=menu] div[id^=account-switch-account][class*=focused] svg[class^=activeIcon] circle {
   fill: #8caaee;
 }
-div[class|=layerContainer] [role=menu] div[id|=account-switch-account][class*=focused] svg[class|=activeIcon] g path {
+div[class^=layerContainer] [role=menu] div[id^=account-switch-account][class*=focused] svg[class^=activeIcon] g path {
   fill: #232634;
 }
-div[class|=layerContainer] [role=menu] div[id|=account-switch-account] svg[class|=activeIcon] circle {
+div[class^=layerContainer] [role=menu] div[id^=account-switch-account] svg[class^=activeIcon] circle {
   fill: #232634;
 }
-div[class|=layerContainer] [role=menu] div[id|=account-switch-account] svg[class|=activeIcon] g path {
+div[class^=layerContainer] [role=menu] div[id^=account-switch-account] svg[class^=activeIcon] g path {
   fill: #8caaee;
 }
-div[class|=layerContainer] [role=menu] [class*=colorDanger][class*=focused],
-div[class|=layerContainer] [role=menu] [class*=colorDefault] [class*=check_] {
+div[class^=layerContainer] [role=menu] [class*=colorDanger][class*=focused],
+div[class^=layerContainer] [role=menu] [class*=colorDefault] [class*=check_] {
   color: var(--background-floating);
   background-color: #e78284;
 }
-div[class|=layerContainer] [role=menu] #guild-header-popout-premium-subscribe div[class|=iconContainer] > svg {
+div[class^=layerContainer] [role=menu] #guild-header-popout-premium-subscribe div[class^=iconContainer] > svg {
   color: #f4b8e4;
 }
-div[class|=layerContainer] [role=menu] #user-context-user-volume div[class*=slider_] div[class*=bar_] {
+div[class^=layerContainer] [role=menu] #user-context-user-volume div[class*=slider_] div[class*=bar_] {
   background-color: #414559;
 }
 
-.theme-dark div[class|=layerContainer] div[id|=popout_] > div[class*=didRender_]:not([class|=animatorBottom]) > div div[class*=flowerStarContainer_] svg[class*=flowerStar_] *,
-.theme-light div[class|=layerContainer] div[id|=popout_] > div[class*=didRender_]:not([class|=animatorBottom]) > div div[class*=flowerStarContainer_] svg[class*=flowerStar_] * {
+.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender_]:not([class^=animatorBottom]) > div div[class*=flowerStarContainer_] svg[class*=flowerStar_] *,
+.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender_]:not([class^=animatorBottom]) > div div[class*=flowerStarContainer_] svg[class*=flowerStar_] * {
   fill: #ef9f76;
 }
-.theme-dark div[class|=layerContainer] div[id|=popout_] > div[class*=didRender_] div[class*=countText],
-.theme-light div[class|=layerContainer] div[id|=popout_] > div[class*=didRender_] div[class*=countText] {
+.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender_] div[class*=countText],
+.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender_] div[class*=countText] {
   color: #232634;
 }
-.theme-dark div[class|=layerContainer] div[id|=popout_] > div[class*=didRender_] svg[class*=activeIcon] circle,
-.theme-light div[class|=layerContainer] div[id|=popout_] > div[class*=didRender_] svg[class*=activeIcon] circle {
+.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender_] svg[class*=activeIcon] circle,
+.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender_] svg[class*=activeIcon] circle {
   fill: #232634;
 }
-.theme-dark div[class|=layerContainer] div[id|=popout_] > div[class*=didRender_] svg[class*=activeIcon] g path,
-.theme-light div[class|=layerContainer] div[id|=popout_] > div[class*=didRender_] svg[class*=activeIcon] g path {
+.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender_] svg[class*=activeIcon] g path,
+.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender_] svg[class*=activeIcon] g path {
   fill: #ef9f76;
 }
-.theme-dark div[class|=layerContainer] div[id|=popout_] > div[class*=didRender_] div[class*=container] div[class*=autocompleteArrow_],
-.theme-dark div[class|=layerContainer] div[id|=popout_] > div[class*=didRender_] div[class*=container] header,
-.theme-light div[class|=layerContainer] div[id|=popout_] > div[class*=didRender_] div[class*=container] div[class*=autocompleteArrow_],
-.theme-light div[class|=layerContainer] div[id|=popout_] > div[class*=didRender_] div[class*=container] header {
+.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender_] div[class*=container] div[class*=autocompleteArrow_],
+.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender_] div[class*=container] header,
+.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender_] div[class*=container] div[class*=autocompleteArrow_],
+.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender_] div[class*=container] header {
   background-color: #292c3c;
 }
-.theme-dark div[class|=layerContainer] div[id|=popout_] > div[class*=didRender_] div[class*=container] header > input::placeholder,
-.theme-light div[class|=layerContainer] div[id|=popout_] > div[class*=didRender_] div[class*=container] header > input::placeholder {
+.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender_] div[class*=container] header > input::placeholder,
+.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender_] div[class*=container] header > input::placeholder {
   color: #838ba7;
 }
-.theme-dark div[class|=layerContainer] div[id|=popout_] > div[class*=didRender_] div[class*=container] section,
-.theme-light div[class|=layerContainer] div[id|=popout_] > div[class*=didRender_] div[class*=container] section {
+.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender_] div[class*=container] section,
+.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender_] div[class*=container] section {
   background-color: #303446;
   color: #c6d0f5;
 }
 
-div[class*=recentMentionsPopout] div[class|=header] div[class|=tabBar] div[class|=badge],
-div[class*=recentMentionsPopout] div[class|=header] div[class|=tabBar] div[class|=tab][class*=active_] {
+div[class*=recentMentionsPopout] div[class^=header] div[class^=tabBar] div[class^=badge],
+div[class*=recentMentionsPopout] div[class^=header] div[class^=tabBar] div[class^=tab][class*=active_] {
   color: #303446;
 }
-div[class*=recentMentionsPopout] div[class|=header] div[class|=controls-] {
+div[class*=recentMentionsPopout] div[class^=header] div[class^=controls-] {
   --background-secondary: #414559;
   --background-primary: rgba(65, 69, 89, 0.9);
 }
-div[class*=recentMentionsPopout] div[class|=scroller] [role=button] {
+div[class*=recentMentionsPopout] div[class^=scroller] [role=button] {
   --background-tertiary: rgba(165, 173, 206, 0.15);
   --background-floating: rgba(165, 173, 206, 0.12);
 }
-div[class*=recentMentionsPopout] div[class|=scroller] [role=button] div[class*=jumpButton_] {
+div[class*=recentMentionsPopout] div[class^=scroller] [role=button] div[class*=jumpButton_] {
   background-color: #414559;
 }
 
-div[class*=rolesList] div[class|=role],
-div[class*=rolesList] button[class|=addButton] {
+div[class*=rolesList] div[class^=role],
+div[class*=rolesList] button[class^=addButton] {
   background-color: #313548;
 }
-div[class*=rolesList] div[class|=role] span[class|=roleCircle][style*="background-color: rgb(185, 187, 190)"] {
+div[class*=rolesList] div[class^=role] span[class^=roleCircle][style*="background-color: rgb(185, 187, 190)"] {
   background-color: #a5adce !important;
 }
-div[class*=rolesList] div[class|=role] span[class|=roleCircle][style*="background-color: rgb(54, 57, 62)"], div[class*=rolesList] div[class|=role] span[class|=roleCircle][style*="background-color: rgb(53, 57, 64)"] {
+div[class*=rolesList] div[class^=role] span[class^=roleCircle][style*="background-color: rgb(54, 57, 62)"], div[class*=rolesList] div[class^=role] span[class^=roleCircle][style*="background-color: rgb(53, 57, 64)"] {
   background-color: #303446 !important;
 }
 
-div[class*=layerContainer] > div[class*=layer] div[class|=reactors] {
+div[class*=layerContainer] > div[class*=layer] div[class^=reactors] {
   background-color: var(--background-primary);
 }
 div[class*=layerContainer] > div[class*=layer] div[class*=reactorDefault] {
@@ -1649,12 +1653,12 @@ section[class*=positionContainer_] button[class*=navButtonActive] {
   color: #232634;
 }
 
-.theme-light section[class|=positionContainer] div[class|=categoryText] {
+.theme-light section[class^=positionContainer] div[class^=categoryText] {
   color: #303446;
 }
 
 #emoji-picker-tab-panel [class*=stickerInspected_] [class*=inspectedIndicator],
-#emoji-picker-tab-panel [class|=emojiItem][class*=emojiItemSelected_] {
+#emoji-picker-tab-panel [class^=emojiItem][class*=emojiItemSelected_] {
   background-color: var(--brand-experiment-25a);
 }
 #emoji-picker-tab-panel [class*=newlyAddedHighlight_] {
@@ -1665,34 +1669,34 @@ section[class*=positionContainer_] button[class*=navButtonActive] {
   color: #232634;
 }
 
-[class*=stickerInspected_] [class|=inspectedIndicator] {
+[class*=stickerInspected_] [class^=inspectedIndicator] {
   background-color: var(--brand-experiment-25a);
 }
 
-.theme-light > div[class|=focusLock] > div[class|=root] > div[class|=container] div[class*=footer][class*=footerSeparator_] {
+.theme-light > div[class^=focusLock] > div[class^=root] > div[class^=container] div[class*=footer][class*=footerSeparator_] {
   box-shadow: inset 0 1px 0 #414559;
   -webkit-box-shadow: inset 0 1px 0 #414559;
 }
-.theme-light > div[class|=focusLock] > div[class|=root] {
+.theme-light > div[class^=focusLock] > div[class^=root] {
   box-shadow: 0 0 0 1px #414559, 0 2px 10px 0 hsla(0, calc(var(--saturation-factor, 1) * 0%), 0%, 0.1);
   -webkit-box-shadow: 0 0 0 1px #414559, 0 2px 10px 0 hsla(0, calc(var(--saturation-factor, 1) * 0%), 0%, 0.1);
 }
-.theme-light div[class|=focusLock] div[class|=downloadApps] {
+.theme-light div[class^=focusLock] div[class^=downloadApps] {
   background-color: #303446 !important;
 }
-.theme-light div[class|=focusLock] div[class|=downloadApps] button[class|=modalCloseButton],
-.theme-light div[class|=focusLock] div[class|=downloadApps] h2,
-.theme-light div[class|=focusLock] div[class|=downloadApps] h3 {
+.theme-light div[class^=focusLock] div[class^=downloadApps] button[class^=modalCloseButton],
+.theme-light div[class^=focusLock] div[class^=downloadApps] h2,
+.theme-light div[class^=focusLock] div[class^=downloadApps] h3 {
   color: #c6d0f5;
 }
-.theme-light div[class|=focusLock] div[class|=downloadApps] div[class*=footer_] {
+.theme-light div[class^=focusLock] div[class^=downloadApps] div[class*=footer_] {
   color: #c6d0f5 !important;
   background-color: unset !important;
 }
-.theme-light div[class|=focusLock] div[class|=downloadApps] div[class*=footer_] a {
+.theme-light div[class^=focusLock] div[class^=downloadApps] div[class*=footer_] a {
   color: #8caaee;
 }
-.theme-light div[class|=focusLock] div[class|=downloadApps] li[class*=active_] a[class*=downloadButton_] {
+.theme-light div[class^=focusLock] div[class^=downloadApps] li[class*=active_] a[class*=downloadButton_] {
   transition: all 0.3s ease-in-out;
   color: #303446;
 }
@@ -1726,118 +1730,118 @@ section[class*=positionContainer_] button[class*=navButtonActive] {
   color: unset !important;
 }
 
-div[class|=layerContainer] #guild-header-popout,
-div[class|=layerContainer] #guild-context,
-div[class|=layerContainer] div[id|=channel-context],
-div[class|=layerContainer] div[id|=user-context] {
+div[class^=layerContainer] #guild-header-popout,
+div[class^=layerContainer] #guild-context,
+div[class^=layerContainer] div[id^=channel-context],
+div[class^=layerContainer] div[id^=user-context] {
   background: #232634;
 }
-div[class|=layerContainer] > div[class*=layer] div[role=listbox] {
+div[class^=layerContainer] > div[class*=layer] div[role=listbox] {
   background-color: #292c3c;
 }
-div[class|=layerContainer] > div[class*=layer] div[role=listbox] div[role=option][aria-selected=true] {
+div[class^=layerContainer] > div[class*=layer] div[role=listbox] div[role=option][aria-selected=true] {
   background: #414559;
 }
-div[class|=layerContainer] > div[class*=layer] div[role=listbox] div[role=option] svg[class*=selectedIcon] circle {
+div[class^=layerContainer] > div[class*=layer] div[role=listbox] div[role=option] svg[class*=selectedIcon] circle {
   fill: #232634;
 }
-div[class|=layerContainer] > div[class*=layer] div[role=listbox] div[class*=queryText_] {
+div[class^=layerContainer] > div[class*=layer] div[role=listbox] div[class*=queryText_] {
   color: #838ba7;
 }
-div[class|=layerContainer] > div[class*=layer] div[role=listbox] div[class*=queryText_] strong {
+div[class^=layerContainer] > div[class*=layer] div[role=listbox] div[class*=queryText_] strong {
   color: #c6d0f5;
 }
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] div[class|=modal],
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] div[class|=modalSize],
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] div[class|=uploadModal],
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] div[class|=contentWrapper] {
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modal],
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modalSize],
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=uploadModal],
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=contentWrapper] {
   background-color: #292c3c;
 }
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] div[class|=modal] li,
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] div[class|=modal] p,
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] div[class|=modal] span,
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] div[class|=modalSize] li,
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] div[class|=modalSize] p,
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] div[class|=modalSize] span,
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] div[class|=uploadModal] li,
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] div[class|=uploadModal] p,
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] div[class|=uploadModal] span,
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] div[class|=contentWrapper] li,
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] div[class|=contentWrapper] p,
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] div[class|=contentWrapper] span {
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modal] li,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modal] p,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modal] span,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modalSize] li,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modalSize] p,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=modalSize] span,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=uploadModal] li,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=uploadModal] p,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=uploadModal] span,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=contentWrapper] li,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=contentWrapper] p,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class^=contentWrapper] span {
   color: #c6d0f5;
 }
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] div[class*=footer] {
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class*=footer] {
   background-color: #232634;
 }
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] div[class*=footer] button[type=submit] span {
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class*=footer] button[type=submit] span {
   color: #232634;
 }
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] div[class*=footer] [class*=footerText_] {
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class*=footer] [class*=footerText_] {
   color: #b5bfe2;
 }
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] h1[class|=fixed],
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] h2[class|=fixed],
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] h3[class|=fixed],
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] h4[class|=fixed],
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] h5[class|=fixed],
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] h6[class|=fixed] {
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h1[class^=fixed],
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h2[class^=fixed],
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h3[class^=fixed],
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h4[class^=fixed],
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h5[class^=fixed],
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h6[class^=fixed] {
   color: #e78284;
 }
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] h1[class|=fixed]:after,
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] h2[class|=fixed]:after,
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] h3[class|=fixed]:after,
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] h4[class|=fixed]:after,
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] h5[class|=fixed]:after,
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] h6[class|=fixed]:after {
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h1[class^=fixed]:after,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h2[class^=fixed]:after,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h3[class^=fixed]:after,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h4[class^=fixed]:after,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h5[class^=fixed]:after,
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] h6[class^=fixed]:after {
   background-color: #e78284;
 }
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock] div[class*=message_] {
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock] div[class*=message_] {
   background-color: #414559;
 }
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock][aria-label=Activities] div[class*=activityItem_] {
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock][aria-label=Activities] div[class*=activityItem_] {
   background-color: #232634;
 }
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock][aria-label=Activities] div[class*=activityItem_] div[class*=previewBadge_] {
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock][aria-label=Activities] div[class*=activityItem_] div[class*=previewBadge_] {
   color: #232634;
 }
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock][aria-label=Activities] div[class*=activityTag_] {
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock][aria-label=Activities] div[class*=activityTag_] {
   background-color: #414559;
 }
-div[class|=layerContainer] > div[class*=layer] div[class|=focusLock][aria-label="Manage Accounts"] div[class*=navRow_] {
+div[class^=layerContainer] > div[class*=layer] div[class^=focusLock][aria-label="Manage Accounts"] div[class*=navRow_] {
   background-color: #292c3c;
 }
-div[class|=layerContainer] > div[class*=layer] div[class|=checkbox][class*=checked_] {
+div[class^=layerContainer] > div[class*=layer] div[class^=checkbox][class*=checked_] {
   border: none;
 }
-div[class|=layerContainer] > div[class*=layer] div[class|=checkbox][class*=checked_] svg path {
+div[class^=layerContainer] > div[class*=layer] div[class^=checkbox][class*=checked_] svg path {
   fill: #232634;
 }
-div[class|=layerContainer] div[class|=addGamePopout] {
+div[class^=layerContainer] div[class^=addGamePopout] {
   background-color: #292c3c;
 }
-div[class|=layerContainer] div[class*=searchOption_]::after,
-div[class|=layerContainer] div[class*=option_]::after,
-div[class|=layerContainer] li[class*=option_]::after {
+div[class^=layerContainer] div[class*=searchOption_]::after,
+div[class^=layerContainer] div[class*=option_]::after,
+div[class^=layerContainer] li[class*=option_]::after {
   display: none;
 }
-div[class|=layerContainer] div[class|=queryContainer] {
+div[class^=layerContainer] div[class^=queryContainer] {
   background-color: #232634 !important;
 }
-div[class|=layerContainer] div[class|=queryContainer] span[class|=key] {
+div[class^=layerContainer] div[class^=queryContainer] span[class^=key] {
   color: #c6d0f5;
   background-color: #303446;
 }
-div[class|=layerContainer] [class*=tooltipBrand_],
-div[class|=layerContainer] [class*=tooltipRed_],
-div[class|=layerContainer] [class*=tooltipGreen_],
-div[class|=layerContainer] [class*=tooltipYellow] {
+div[class^=layerContainer] [class*=tooltipBrand_],
+div[class^=layerContainer] [class*=tooltipRed_],
+div[class^=layerContainer] [class*=tooltipGreen_],
+div[class^=layerContainer] [class*=tooltipYellow] {
   color: #232634;
 }
-div[class|=layerContainer] div[class|=popout] div[class|=row][role=button]:hover {
+div[class^=layerContainer] div[class^=popout] div[class^=row][role=button]:hover {
   color: #232634;
 }
-div[class|=layerContainer] div[class|=popout] div[class|=row][role=button]:hover [class*=timestamp] {
+div[class^=layerContainer] div[class^=popout] div[class^=row][role=button]:hover [class*=timestamp] {
   color: #232634;
 }
 
@@ -1845,11 +1849,11 @@ form[class*=card_] {
   background-color: #303446;
 }
 
-div[class*=userInfoSection_] div[class|=connectedAccountContainer] {
+div[class*=userInfoSection_] div[class^=connectedAccountContainer] {
   background-color: rgba(65, 69, 89, 0.45) !important;
 }
 
-div[class*=cardWarning-] div[class*=warning_] {
+div[class*=cardWarning_] div[class*=warning_] {
   color: #232634;
 }
 
@@ -1857,13 +1861,13 @@ div[class*=cardWarning-] div[class*=warning_] {
 #sticker-picker-tab-panel {
   /* --background-floating: #414559;
 
-    + div[class|="slotsContainer"] {
+    + div[class^="slotsContainer"] {
       background-color: $surface0;
     }
   */
 }
-#emoji-picker-tab-panel div[class|=tooltipContainer] label[class|=label][class*=labelChecked_],
-#sticker-picker-tab-panel div[class|=tooltipContainer] label[class|=label][class*=labelChecked_] {
+#emoji-picker-tab-panel div[class^=tooltipContainer] label[class^=label][class*=labelChecked_],
+#sticker-picker-tab-panel div[class^=tooltipContainer] label[class^=label][class*=labelChecked_] {
   background: -webkit-gradient(linear, right top, left top, from(#f4b8e4), color-stop(33.33%, #ca9ee6), to(#8caaee));
   background: linear-gradient(270deg, #f4b8e4, #ca9ee6 33.33%, #8caaee);
 }
@@ -1871,17 +1875,17 @@ div[class*=cardWarning-] div[class*=warning_] {
 div[class*=keyboardShortcutsModal_] {
   background-color: #292c3c !important;
 }
-div[class*=keyboardShortcutsModal_] div[class|=keybindShortcut] span[class|=key] {
+div[class*=keyboardShortcutsModal_] div[class^=keybindShortcut] span[class^=key] {
   color: #232634;
 }
-div[class*=keyboardShortcutsModal_] div[class|=keybindShortcut] span[class|=key] svg g {
+div[class*=keyboardShortcutsModal_] div[class^=keybindShortcut] span[class^=key] svg g {
   fill: #232634 !important;
 }
 
-div[class|=planOptionClickableContainer] div[class|=checkbox] svg path {
+div[class^=planOptionClickableContainer] div[class^=checkbox][class*=checked] svg path {
   fill: #232634 !important;
 }
-div[class|=planOptionClickableContainer] span[class*=planOptionDiscount_] {
+div[class^=planOptionClickableContainer] span[class*=planOptionDiscount_] {
   color: #232634 !important;
 }
 
@@ -1902,14 +1906,14 @@ div[class|=planOptionClickableContainer] span[class*=planOptionDiscount_] {
   background-color: #8caaee !important;
 }
 
-[class|=datePickerHint] [class|=hintValue] {
+[class^=datePickerHint] [class^=hintValue] {
   color: #232634 !important;
 }
 
-div[class*=layerContainer_] div[class|=control] div[class*=checked_] {
+div[class*=layerContainer_] div[class^=control] div[class*=checked_] {
   background-color: #a6d189 !important;
 }
-div[class*=layerContainer_] div[class|=control] div[style*="background-color: rgb(114, 118, 125);"] {
+div[class*=layerContainer_] div[class^=control] div[style*="background-color: rgb(114, 118, 125);"] {
   background-color: #626880 !important;
 }
 
@@ -1948,53 +1952,53 @@ div[class*=userPopoutOuter_] div[aria-label="Early Verified Bot Developer"],
 div[class*=userProfileOuter_] div[aria-label="Early Verified Bot Developer"] {
   content: url("data:image/svg+xml,%3Csvg height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m21.58 11.4-4.28-7.39-.35-.6h-9.91l-.35.6-4.27 7.39-.35.6.35.6 4.27 7.39.35.6h9.92l.35-.6 4.28-7.39.35-.6zm-13.07-1.03-1.63 1.63 1.63 1.63v2.73l-4.36-4.36 4.37-4.37v2.74zm3.12 6.93-2.04-.63 3.1-9.98 2.04.64zm3.86-.93v-2.73l1.63-1.64-1.63-1.63v-2.74l4.36 4.37z' fill='%238caaee'/%3E%3C/svg%3E");
 }
-div[class*=userPopoutOuter_] div[class|=userPopoutOverlayBackground] > div[class|=scroller] > div[class|=section]:first-child > div[class|=buttonsContainer] > button:nth-child(2),
-div[class*=userProfileOuter_] div[class|=userPopoutOverlayBackground] > div[class|=scroller] > div[class|=section]:first-child > div[class|=buttonsContainer] > button:nth-child(2) {
+div[class*=userPopoutOuter_] div[class^=userPopoutOverlayBackground] > div[class^=scroller] > div[class^=section]:first-child > div[class^=buttonsContainer] > button:nth-child(2),
+div[class*=userProfileOuter_] div[class^=userPopoutOverlayBackground] > div[class^=scroller] > div[class^=section]:first-child > div[class^=buttonsContainer] > button:nth-child(2) {
   background: #ef9f76;
 }
 
-[class*=layerContainer-] [id|=slate_toolbar] {
+[class*=layerContainer_] [id^=slate_toolbar] {
   background-color: var(--background-floating);
 }
-[class*=layerContainer-] [id|=slate_toolbar] [class*=buttons-] [class*=icon_] {
+[class*=layerContainer_] [id^=slate_toolbar] [class*=buttons_] [class*=icon_] {
   color: #c6d0f5;
 }
 
-[class*=layerContainer-] div[id=sort-and_view] div[id=sort-and-view-reset-all] [style="color: var(--text-normal);"]:hover {
+[class*=layerContainer_] div[id=sort_and_view] div[id=sort-and-view-reset-all] [style="color: var(--text-normal);"]:hover {
   color: #232634 !important;
 }
 
-[class|=layerContainer] [class|=quickswitcher] [class*=badge_] {
+[class^=layerContainer] [class^=quickswitcher] [class*=badge_] {
   color: #232634;
 }
 
-div[class|=layerContainer] div[aria-label=clyde] div[class|=profileBadges] div[class|=textBadge] {
+div[class^=layerContainer] div[aria-label=clyde] div[class^=profileBadges] div[class^=textBadge] {
   background-color: #ef9f76 !important;
   color: #232634;
 }
-div[class|=layerContainer] div[aria-label=clyde] button[class|=messageClydeButton] {
+div[class^=layerContainer] div[aria-label=clyde] button[class^=messageClydeButton] {
   color: #c6d0f5;
   background-color: #51576d;
 }
-div[class|=layerContainer] div[aria-label=clyde] button[class|=messageClydeButton]:hover {
+div[class^=layerContainer] div[aria-label=clyde] button[class^=messageClydeButton]:hover {
   background-color: #626880;
 }
 
-div[class|=layerContainer] div[class|=pencilContainer] svg[class|=editIcon] {
+div[class^=layerContainer] div[class^=pencilContainer] svg[class^=editIcon] {
   color: #c6d0f5;
 }
 
-div[class|=keyboardShortcutsModal] span[class|=key] {
+div[class^=keyboardShortcutsModal] span[class^=key] {
   color: #232634 !important;
 }
-div[class|=keyboardShortcutsModal] span[class|=key] svg g {
+div[class^=keyboardShortcutsModal] span[class^=key] svg g {
   fill: #232634 !important;
 }
 
 rect[fill="#23a55a"],
 foreignObject[mask="url(#svg-mask-status-online)"] > div,
-div[class|=dotOnline],
-i[class|=statusOnline] {
+div[class^=dotOnline],
+i[class^=statusOnline] {
   fill: #a6d189 !important;
   background-color: #a6d189 !important;
 }
@@ -2026,8 +2030,8 @@ rect[fill="rgba(242, 63, 67, 1)"] {
 rect[fill="#82858f"],
 foreignObject[mask="url(#svg-mask-status-offline)"] > div,
 foreignObject[mask="url(#svg-mask-status-offline)"] > rect,
-div[class|=dotOffline],
-i[class|=statusOffline] {
+div[class^=dotOffline],
+i[class^=statusOffline] {
   fill: #a5adce !important;
   background-color: #a5adce !important;
 }
@@ -2087,39 +2091,39 @@ span[class*=username_][style*="color: rgb(53, 57, 64)"] {
 div[class*=flowerStarContainer_][class*=boostedGuildTierIconBackgroundWithVisibleBanner] svg[class*=flowerStar_] * {
   fill: #fff;
 }
-div[class*=flowerStarContainer_][class*=boostedGuildTierIconBackgroundWithVisibleBanner] div[class|=childContainer] svg * {
+div[class*=flowerStarContainer_][class*=boostedGuildTierIconBackgroundWithVisibleBanner] div[class^=childContainer] svg * {
   fill: #232634;
 }
 div[class*=flowerStarContainer_][class*=iconBackgroundTierOne_] svg[class*=flowerStar_] *, div[class*=flowerStarContainer_][class*=iconBackgroundTierTwo_]:not([class*=boostedGuildTierIconBackgroundWithVisibleBanner]) svg[class*=flowerStar_] * {
   fill: #626880;
 }
-div[class*=flowerStarContainer_][class*=iconBackgroundTierOne_] div[class|=childContainer] svg *, div[class*=flowerStarContainer_][class*=iconBackgroundTierTwo_]:not([class*=boostedGuildTierIconBackgroundWithVisibleBanner]) div[class|=childContainer] svg * {
+div[class*=flowerStarContainer_][class*=iconBackgroundTierOne_] div[class^=childContainer] svg *, div[class*=flowerStarContainer_][class*=iconBackgroundTierTwo_]:not([class*=boostedGuildTierIconBackgroundWithVisibleBanner]) div[class^=childContainer] svg * {
   fill: #c6d0f5;
 }
 div[class*=flowerStarContainer_][class*=iconBackgroundTierThree_] svg[class*=flowerStar_] * {
   fill: #f4b8e4;
 }
-div[class*=flowerStarContainer_][class*=iconBackgroundTierThree_] div[class|=childContainer] svg * {
+div[class*=flowerStarContainer_][class*=iconBackgroundTierThree_] div[class^=childContainer] svg * {
   fill: #232634;
 }
 div[class*=flowerStarContainer_][class*=verified_] svg[class*=flowerStar_] * {
   fill: #a6d189;
 }
-div[class*=flowerStarContainer_][class*=verified_] div[class|=childContainer] svg * {
+div[class*=flowerStarContainer_][class*=verified_] div[class^=childContainer] svg * {
   fill: #232634;
 }
 div[class*=flowerStarContainer_][class*=partnered_] svg[class*=flowerStar_] * {
   fill: #ef9f76;
 }
-div[class*=flowerStarContainer_][class*=partnered_] div[class|=childContainer] svg * {
+div[class*=flowerStarContainer_][class*=partnered_] div[class^=childContainer] svg * {
   fill: #232634;
 }
 
-div[class|=communityInfoPill] {
+div[class^=communityInfoPill] {
   --background-accent: rgba(48, 52, 70, 0.7);
   color: #c6d0f5;
 }
-div[class|=communityInfoPill] div[class|=text] {
+div[class^=communityInfoPill] div[class^=text] {
   font-weight: 500;
 }
 
@@ -2127,16 +2131,16 @@ a[class*=socialLink_][href*=discord] {
   color: #a5adce;
 }
 
-svg[class|=uploadIcon] {
+svg[class^=uploadIcon] {
   color: #232634;
 }
 
-.theme-dark h2[class|=emptyStateHeader],
-.theme-light h2[class|=emptyStateHeader] {
+.theme-dark h2[class^=emptyStateHeader],
+.theme-light h2[class^=emptyStateHeader] {
   color: #c6d0f5;
 }
-.theme-dark p[class|=emptyStateSubtext],
-.theme-light p[class|=emptyStateSubtext] {
+.theme-dark p[class^=emptyStateSubtext],
+.theme-light p[class^=emptyStateSubtext] {
   color: #a5adce;
 }
 
@@ -2150,25 +2154,25 @@ div[class^=numberBadge] {
   color: #232634 !important;
 }
 
-div[class|=newChannel] {
+div[class^=newChannel] {
   color: #232634;
   background-color: #ef9f76 !important;
 }
 
-div[class|=botTag] {
+div[class^=botTag] {
   background-color: #ef9f76;
 }
 
-div[class|=addFriendInputWrapper]:focus-within {
+div[class^=addFriendInputWrapper]:focus-within {
   border-color: #ef9f76;
 }
 
-button[class|=attachButton] svg path[class|=attachButtonPlay] {
+button[class^=attachButton] svg path[class^=attachButtonPlay] {
   color: #a6d189;
   fill: #a6d189;
 }
 
-div[class|=tags] div[class|=pinIcon] path {
+div[class^=tags] div[class^=pinIcon] path {
   fill: #303446 !important;
 }
 
@@ -2177,11 +2181,11 @@ div[class*=avatarSpeaking_] {
   box-shadow: inset 0 0 0 2px #a6d189, inset 0 0 0 3px var(--background-secondary);
 }
 
-div[class*=videoLayer_] > div[class|=tileChild] > div[class|=border][class*=speaking_] {
+div[class*=videoLayer_] > div[class^=tileChild] > div[class^=border][class*=speaking_] {
   -webkit-box-shadow: inset 0 0 0 2px #a6d189, inset 0 0 0 3px #a6d189;
   box-shadow: inset 0 0 0 2px #a6d189, inset 0 0 0 3px #a6d189;
 }
-div[class*=videoLayer_] > div[class|=tileChild] > div[class|=border][class*=voiceChannelEffect_] {
+div[class*=videoLayer_] > div[class^=tileChild] > div[class^=border][class*=voiceChannelEffect_] {
   -webkit-box-shadow: inset 0 0 0 2px #ef9f76, inset 0 0 0 3px #ef9f76;
   box-shadow: inset 0 0 0 2px #ef9f76, inset 0 0 0 3px #ef9f76;
 }
@@ -2211,6 +2215,13 @@ span[class*=channelMention]:hover,
 [class*=mention]:not([class*=mentionButton_],
 [class*=mentionIcon_]):hover {
   color: #232634;
+}
+
+div[class^=checkbox][class*=checked_] {
+  border-color: #232634 !important;
+}
+div[class^=checkbox][class*=checked_] svg path {
+  fill: #232634 !important;
 }
 
 .theme-dark code.hljs {
