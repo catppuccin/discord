@@ -124,6 +124,7 @@ html {
   --primary-400: #b5bfe2;
   --primary-dark-700: #232634;
   --status-green-560: #a6d189;
+  --white-400: #c6d0f5;
   --white-500: #c6d0f5;
   --guild-boosting-pink: #f4b8e4;
   --premium-perk-yellow: #e5c890;
@@ -230,19 +231,6 @@ html {
   --interactive-muted: rgba(198, 208, 245, 0.3);
   --interactive-hover: #c6d0f5;
   --interactive-active: #c6d0f5;
-}
-.theme-dark [class*=disabledPointerEvents],
-.theme-light [class*=disabledPointerEvents] {
-  --background-floating: #414559;
-  --background-tertiary: #363b4f;
-}
-.theme-dark [class*=disabledPointerEvents] svg[class^=activityIcon],
-.theme-light [class*=disabledPointerEvents] svg[class^=activityIcon] {
-  color: #a5adce;
-}
-.theme-dark [class*=disabledPointerEvents] [class*=tooltipBrand_] [class*=tooltipText_],
-.theme-light [class*=disabledPointerEvents] [class*=tooltipBrand_] [class*=tooltipText_] {
-  color: #232634;
 }
 
 ::selection {
@@ -1093,12 +1081,12 @@ div[class*=liveSmall_] {
 [class^=chatContent] div[class^=channelTextArea] div[class^=buttons] * {
   color: var(--interactive-normal) !important;
 }
-[class^=chatContent] [id^=message-reactions] div[class^=reaction] {
-  background-color: #414559;
-}
 [class^=chatContent] [id^=message-reactions] div[class^=reaction]:hover {
   background-color: var(--brand-experiment-20a);
   border-color: var(--brand-experiment-30a);
+}
+[class^=chatContent] [id^=message-reactions] div[class^=reaction] div[class^=reactionInner] {
+  border-radius: 0.4rem;
 }
 [class^=chatContent] div[class*=isBurstReactionPicker_] {
   box-shadow: 0 0 0 2px #ca9ee6, 0 0 16px #babbf1;
@@ -1252,6 +1240,9 @@ div[class^=chat] > div[class^=content] > div[class^=container] div[class^=grid][
 div[class^=chat] > div[class^=content] > div[class^=container] > div[class^=chatContainer] > div[class^=container] {
   background-color: #303446;
 }
+div[class^=chat] > div[class^=content] > div[class^=container] div[class^=matchingPostsRow] span[class^=key] {
+  color: #232634 !important;
+}
 div[class^=chat] > div[class^=content] > div[class^=container] div[class^=pinIcon] > svg > path,
 div[class^=chat] > div[class^=content] > div[class^=container] div[class^=stepStatus] > svg > path {
   fill: #a5adce;
@@ -1304,10 +1295,10 @@ div[class^=chat] > div[class^=content] main[class^=chatContent] + div[class^=con
   border: 1px solid #e78284 !important;
 }
 
-div[class^=messagesWrapper] ol[class^=scrollerInner] div[class^=container] div[class^=iconWrapper] {
+div[class^=messagesWrapper] ol[class^=scrollerInner] div[class^=container]:not([class*=cozy]) div[class^=iconWrapper] {
   background-color: #99d1db;
 }
-div[class^=messagesWrapper] ol[class^=scrollerInner] div[class^=container] div[class^=iconWrapper] svg[class^=icon] {
+div[class^=messagesWrapper] ol[class^=scrollerInner] div[class^=container]:not([class*=cozy]) div[class^=iconWrapper] svg[class^=icon] {
   color: #232634;
 }
 
@@ -1875,6 +1866,10 @@ div[class*=cardWarning_] div[class*=warning_] {
   background: linear-gradient(270deg, #f4b8e4, #ca9ee6 33.33%, #8caaee);
 }
 
+button#reaction-picker-tab div[class^=contents] {
+  color: #232634;
+}
+
 div[class*=keyboardShortcutsModal_] {
   background-color: #292c3c !important;
 }
@@ -1995,6 +1990,20 @@ div[class^=keyboardShortcutsModal] span[class^=key] {
   color: #232634 !important;
 }
 div[class^=keyboardShortcutsModal] span[class^=key] svg g {
+  fill: #232634 !important;
+}
+
+[class*=disabledPointerEvents] {
+  --background-floating: #414559;
+  --background-tertiary: #363b4f;
+}
+[class*=disabledPointerEvents] svg[class^=activityIcon] {
+  color: #a5adce;
+}
+[class*=disabledPointerEvents] [class*=tooltipBrand_] [class*=tooltipText_] {
+  color: #232634;
+}
+[class*=disabledPointerEvents] div[class^=flowerStarContainer] div[class^=childContainer] svg path {
   fill: #232634 !important;
 }
 
