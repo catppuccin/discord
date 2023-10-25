@@ -325,7 +325,11 @@ div[class^="chat"]
 }
 
 // Threads header icon
-div[class^="messagesWrapper"] ol[class^="scrollerInner"] svg[class^="icon"] {
+div[class^="messagesWrapper"]
+  ol[class^="scrollerInner"]
+  div[class^="container"]
+  div[class^="iconWrapper"]
+  svg[class^="icon"] {
   color: $crust;
 }
 
