@@ -1,9 +1,9 @@
-nav[class*="guilds-"] {
+nav[class*="guilds_"] {
   // server icons
   foreignObject > div[data-list-item-id*="guildsnav_"] {
     &:hover,
     &[class*="selected"] {
-      > div[class|="childWrapper"] {
+      > div[class^="childWrapper"] {
         color: $crust;
         font-weight: 600;
       }
@@ -19,7 +19,7 @@ nav[class*="guilds-"] {
   span[class|="expandedFolderBackground"] {
     background-color: lighten($base, 3%);
   }
-  div[class|="folder"][class*="hover-"] {
+  div[class|="folder"][class*="hover_"] {
     background-color: lighten($base, 8%);
   }
 
@@ -41,7 +41,7 @@ div[class|="upperBadge"] {
     color: $crust;
   }
 
-  div[class*="participating-"] {
+  div[class*="participating_"] {
     background: $green;
   }
 }

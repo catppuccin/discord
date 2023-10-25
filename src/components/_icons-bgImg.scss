@@ -22,7 +22,7 @@ $bgImg: (
 );
 
 @each $class, $icon in $bgImg {
-  [class*="#{$class}-"] {
+  [class*="#{$class}_"] {
     background-image: url("#{map-get($icon, icon)}") !important;
   }
 }

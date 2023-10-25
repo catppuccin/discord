@@ -1,11 +1,11 @@
 [class|="chatContent"] {
-  div[class*="wrapperAudio-"],
-  div[class*="imageWrapper-"] {
+  div[class*="wrapperAudio_"],
+  div[class*="imageWrapper_"] {
     div[class*="audioControls"],
-    div[class*="videoControls-"] {
+    div[class*="videoControls_"] {
       background-color: #{adjust-color($mantle, $alpha: -0.2)};
 
-      svg[class*="controlIcon-"] {
+      svg[class*="controlIcon_"] {
         opacity: 1;
         color: $subtext1;
       }
@@ -44,42 +44,46 @@
     }
   }
   // Super reactions and beta badge
-  div[class*="isBurstReactionPicker-"] {
-    box-shadow: 0 0 0 2px $mauve, 0 0 16px $lavender;
+  div[class*="isBurstReactionPicker_"] {
+    box-shadow:
+      0 0 0 2px $mauve,
+      0 0 16px $lavender;
   }
   div[class|="navButtonSuperReactActive"],
   div[class|="navButtonSuperReactActive"]:hover {
     background: linear-gradient(270deg, $pink, $lavender 33.63%, $mauve);
     color: $crust;
   }
-  div[class*="betaTag-"] {
+  div[class*="betaTag_"] {
     background: var(--brand-experiment) !important;
     color: $crust;
   }
-  button[class*="navButtonActive-"],
-  button[class*="navButtonActive-"]:hover {
+  button[class*="navButtonActive_"],
+  button[class*="navButtonActive_"]:hover {
     color: $crust;
   }
-  div[class*="colorPremiumGradient-"][class*="focused-"] {
+  div[class*="colorPremiumGradient-"][class*="focused_"] {
     background: linear-gradient(270deg, $pink, $lavender 33.63%, $mauve);
     color: $crust !important;
   }
   div[class*="isBurstReactionPicker"] {
     border: none;
-    box-shadow: 0 0 0 2px $mauve, 0 0 16px $lavender;
+    box-shadow:
+      0 0 0 2px $mauve,
+      0 0 16px $lavender;
   }
   // Voice messages play button
-  div[class*="playButtonContainer-"] {
+  div[class*="playButtonContainer_"] {
     background: var(--brand-experiment) !important;
   }
-  svg[class*="playIcon-"] path {
+  svg[class*="playIcon_"] path {
     fill: $crust;
   }
 
   // chat header
-  div[class|="container"][class*="header-"] {
-    div[class*="addReactButton-"],
-    div[class|="buttons"]:not([class*="lookBlank-"]) div[class|="contents"] {
+  div[class|="container"][class*="header_"] {
+    div[class*="addReactButton_"],
+    div[class|="buttons"]:not([class*="lookBlank_"]) div[class|="contents"] {
       background: $surface0;
       &:hover {
         background-color: var(--brand-experiment-20a);
@@ -89,19 +93,19 @@
   }
 
   // "Messages failed to load" bar
-  div[class|="messagesErrorBar"] div[class*="barButtonBase-"] {
+  div[class|="messagesErrorBar"] div[class*="barButtonBase_"] {
     color: $crust;
   }
 
   // code stuff
-  // [class*="after_inlineCode-"],
-  // [class*="before_inlineCode-"],
+  // [class*="after_inlineCode_"],
+  // [class*="before_inlineCode_"],
   // [class|="syntaxBefore"],
   // [class|="syntaxAfter"] {
   //   color: $overlay0;
   // }
 
-  [class*="inlineCode-"] {
+  [class*="inlineCode_"] {
     background: $surface0;
   }
 
@@ -110,7 +114,7 @@
   }
 
   div[class|="container"] div[class|="cardWrapper"] {
-    div[class*="completed-"] {
+    div[class*="completed_"] {
       svg[class|="checkmark"] {
         background-color: $green;
         color: $crust;
@@ -176,7 +180,7 @@ main[class|="chatContent"] div[id|="message-content"] svg[class|="icon"] {
       }
     }
 
-    article[class*="embedFull-"] {
+    article[class*="embedFull_"] {
       border-color: $surface2;
     }
   }
@@ -188,7 +192,7 @@ div[class|="cooldownWrapper"] {
 }
 
 // autocomplete chat textboxes
-div[class*="autocomplete-"] {
+div[class*="autocomplete_"] {
   background-color: $mantle !important;
 
   div[class*="categoryHeader"] {
@@ -200,7 +204,7 @@ div[class*="autocomplete-"] {
   div[class*="autocompleteRowContentSecondary"] {
     background-color: transparent;
   }
-  div[class|="usageWrapper"] > div[class*="title-"] {
+  div[class|="usageWrapper"] > div[class*="title_"] {
     color: $brand !important;
   }
 
@@ -210,7 +214,7 @@ div[class*="autocomplete-"] {
 }
 
 // emoji button
-div[class|="channelTextArea"] button[class*="emojiButton-"] {
+div[class|="channelTextArea"] button[class*="emojiButton_"] {
   background: transparent !important;
 }
 
@@ -230,8 +234,10 @@ div[class|="channelTextArea"] button[class*="emojiButton-"] {
 }
 
 // forums
-div[class|="chat"] > div[class|="content"] > div[class|="container"] {
-  background-color: $base;
+div[class^="chat"] > div[class^="content"] > div[class^="container"] {
+  div[class^="chatContainer"] > div[class^="container"] {
+    background-color: $base;
+  }
 
   div[class|="grid"][class*="scrollerBase"],
   > div[class|="chatContainer"] > div[class|="container"] {
@@ -269,13 +275,13 @@ div[class|="chat"] > div[class|="content"] > div[class|="container"] {
     color: $crust;
   }
 
-  div[class*="mainCard-"] {
+  div[class*="mainCard_"] {
     background-color: $surface0;
   }
 }
 
 div[class|="sidebar"] > section[class|="panels"] {
-  svg[class*="buttonIcon-"],
+  svg[class*="buttonIcon_"],
   div[class*="buttonContents"] {
     fill: $text;
     color: $text;
@@ -296,11 +302,11 @@ div[class|="sidebar"] > section[class|="panels"] {
 
 // Bot slash command field
 div[class|="applicationCommand"] {
-  span[class*="selectedPill-"] {
+  span[class*="selectedPill_"] {
     border-color: $brand !important;
   }
 
-  span[class*="erroredPill-"] {
+  span[class*="erroredPill_"] {
     border-color: $red !important;
   }
 }
@@ -314,18 +320,18 @@ div[class|="chat"]
 }
 
 // fix error border when attempting to start a thread with no message
-[class*="channelTextAreaInnerError-"] {
+[class*="channelTextAreaInnerError_"] {
   border: 1px solid $red !important;
 }
 
 // Jump to Present bar text
-[class*="barButtonBase-"] {
+[class*="barButtonBase_"] {
   color: $crust !important;
 }
 
 // calls
 div[class|="callContainer"] {
-  [class*="controlIcon-"] {
+  [class*="controlIcon_"] {
     color: $subtext1;
 
     &:hover {
@@ -333,25 +339,25 @@ div[class|="callContainer"] {
     }
   }
 
-  div[class*="tile-"],
-  div[class*="background-"] {
+  div[class*="tile_"],
+  div[class*="background_"] {
     background-color: $base !important;
   }
 
   div[class*="overlayTitle"],
-  svg[class*="status-"] {
+  svg[class*="status_"] {
     background-color: $surface0;
     color: $text;
   }
 
   div[class*="header"],
-  svg[class*="selectedIcon-"] {
+  svg[class*="selectedIcon_"] {
     color: $text;
   }
 
-  div[class*="button-"][class*="contents-"],
-  button[class*="cta-"],
-  button[class*="participantsButton-"] {
+  div[class*="button-"][class*="contents_"],
+  button[class*="cta_"],
+  button[class*="participantsButton_"] {
     background-color: $surface0;
     color: $text;
   }
@@ -369,7 +375,7 @@ div[class|="callContainer"] {
 
   div[class|="videoControls"] {
     div[class|="children"] {
-      div[class*="playingText-"] {
+      div[class*="playingText_"] {
         color: $subtext1;
       }
     }
@@ -404,7 +410,7 @@ div[class|="callContainer"] {
       }
     }
 
-    button[class*="leftTrayIcon-"][class*="buttonColor-"] {
+    button[class*="leftTrayIcon-"][class*="buttonColor_"] {
       background-color: $surface0;
       color: $text;
     }
@@ -413,20 +419,20 @@ div[class|="callContainer"] {
       color: $crust;
     }
 
-    [class*="colorable-"] {
-      &[class*="red-"] {
+    [class*="colorable_"] {
+      &[class*="red_"] {
         background: $red;
 
-        [class*="centerIcon-"] {
+        [class*="centerIcon_"] {
           color: $crust;
         }
       }
 
-      &[class*="primaryDark-"] {
+      &[class*="primaryDark_"] {
         background: $surface1;
         color: $text;
 
-        [class*="centerIcon-"] {
+        [class*="centerIcon_"] {
           color: $text;
         }
 
@@ -435,24 +441,24 @@ div[class|="callContainer"] {
         }
       }
 
-      &[class*="green-"] {
+      &[class*="green_"] {
         background: $green;
 
-        [class*="centerIcon-"] {
+        [class*="centerIcon_"] {
           color: $crust;
         }
       }
 
-      &[class*="white-"] {
+      &[class*="white_"] {
         color: $crust;
         background-color: $subtext1;
 
-        [class*="centerIcon-"] {
+        [class*="centerIcon_"] {
           color: $crust;
         }
 
         &:hover,
-        &[class*="active-"] {
+        &[class*="active_"] {
           background: $text;
         }
       }
@@ -461,11 +467,11 @@ div[class|="callContainer"] {
 }
 
 // Weird gradient thing on forums
-div[class|="chat"]
-  section[class*="forumOrHome-"]
-  div[class|="upperContainer"]
-  > div[class|="children"]:after {
-  background: none;
+div[class^="chat"] section[class*="forumOrHome_"] {
+  background-color: $base;
+  div[class^="upperContainer"] > div[class^="children"]:after {
+    background: none;
+  }
 }
 
 // gifts
@@ -478,20 +484,20 @@ div[class*="giftCodeContainer"] [class*="tile"] {
 }
 
 // channels & roles
-div[class*="chat-"] {
+div[class*="chat_"] {
   // header
-  section[class*="header-"] {
+  section[class*="header_"] {
     background-color: $mantle;
   }
 
-  div[class*="content-"][class*="container-"] {
+  div[class*="content-"][class*="container_"] {
     background-color: $mantle;
 
     div[class*="container"] {
       background-color: $mantle;
     }
 
-    div[class*="search-"] {
+    div[class*="search_"] {
       background-color: $base !important;
 
       input::placeholder {
@@ -504,7 +510,7 @@ div[class*="chat-"] {
         background-color: $base;
       }
 
-      div[class*="checkbox-"] {
+      div[class*="checkbox_"] {
         border-color: $crust !important;
         svg > path {
           fill: $crust;
@@ -512,10 +518,10 @@ div[class*="chat-"] {
       }
     }
 
-    div[class*="scrollerContainer-"] {
+    div[class*="scrollerContainer_"] {
       background-color: $mantle;
 
-      div[class*="checkIcon-"][style*="opacity: 1;"] > svg > path {
+      div[class*="checkIcon_"][style*="opacity: 1;"] > svg > path {
         fill: $crust;
       }
     }
@@ -524,14 +530,14 @@ div[class*="chat-"] {
       background-color: $mantle;
       border-bottom: 2px solid $surface0;
 
-      [class*="textBadge-"] {
+      [class*="textBadge_"] {
         color: $crust;
       }
     }
   }
 }
 
-div[class*="chat-"] {
+div[class*="chat_"] {
   // Search Box
   section[class*="title"] div[class*="searchBar"] span[class*="search"] {
     background-color: $surface0;
@@ -546,26 +552,26 @@ div[class*="chat-"] {
   }
 }
 
-div[class*="chat-"] {
+div[class*="chat_"] {
   // Forum Gallery View
-  li[class*="mainCard-"][class*="container"] {
+  li[class*="mainCard_"][class*="container"] {
     background-color: $surface0;
 
     &:hover {
       background-color: $surface1;
     }
 
-    div[class*="contentPreview-"] {
+    div[class*="contentPreview_"] {
       background-color: $base;
       border: none;
 
-      div[class*="textContentFooter-"] {
+      div[class*="textContentFooter_"] {
         background: none;
       }
     }
 
-    div[class*="tags-"] {
-      div[class*="tagPill-"] {
+    div[class*="tags_"] {
+      div[class*="tagPill_"] {
         background-color: #{adjust-color($surface1, $alpha: -0.2)};
       }
     }
@@ -583,23 +589,23 @@ div[class*="chat-"] {
 }
 
 // spotify listen along invite
-[id*="message-accessories-"] > [class*="invite-"] {
+[id*="message-accessories-"] > [class*="invite_"] {
   background-color: $base;
-  [class*="inFront-"][class*="header-"] {
+  [class*="inFront-"][class*="header_"] {
     color: $subtext0;
   }
-  [class*="partyStatus-"] {
+  [class*="partyStatus_"] {
     color: $text;
   }
 }
 
 // typing indicator
-[class|="avatar"] [class|="dots"] {
+[class^="avatar"] [class^="dots"] {
   color: $base;
 }
 
 // members tab
-div[class|="chat"][class*="page-"] div[class|="content"][class*="container-"] {
+div[class|="chat"][class*="page-"] div[class|="content"][class*="container_"] {
   height: 100%;
 }
 

@@ -1,11 +1,11 @@
 // filled buttons and badges should have crust text
-[class*="lookFilled-"] {
-  &[class*="colorBrand-"],
-  &[class*="colorBrandNew-"],
-  &[class*="colorLink-"],
-  &[class*="colorYellow-"],
-  &[class*="colorRed-"],
-  &[class*="colorGreen-"] {
+[class*="lookFilled_"] {
+  &[class*="colorBrand_"],
+  &[class*="colorBrandNew_"],
+  &[class*="colorLink_"],
+  &[class*="colorYellow_"],
+  &[class*="colorRed_"],
+  &[class*="colorGreen_"] {
     color: $crust;
 
     // darken the nitro button too
@@ -14,27 +14,27 @@
     }
 
     // spinner color
-    [class*="spinnerItem-"] {
+    [class*="spinnerItem_"] {
       background-color: $crust;
     }
 
-    [class*="defaultColor-"] {
+    [class*="defaultColor_"] {
       color: $crust;
     }
   }
 
   // ...unless it's primary
-  &[class*="colorPrimary-"] {
+  &[class*="colorPrimary_"] {
     color: $text;
   }
 }
 
 // For some reason, red buttons on click turn blue. Sure.
-button[class*="lookFilled-"][class*="colorRed-"]:active {
+button[class*="lookFilled-"][class*="colorRed_"]:active {
   background-color: $red;
 }
 
-[class*="lookOutlined-"][class*="colorPrimary-"] {
+[class*="lookOutlined-"][class*="colorPrimary_"] {
   border-color: $surface1;
 
   &:hover {
@@ -46,15 +46,15 @@ button[class*="lookFilled-"][class*="colorRed-"]:active {
 
 // buttons in sidebar when in calls
 div[class|="actionButtons"] {
-  [class|="button"][class*="buttonColor-"],
-  [class|="button"] [class*="buttonColor-"] {
+  [class|="button"][class*="buttonColor_"],
+  [class|="button"] [class*="buttonColor_"] {
     background-color: $surface1;
 
-    &[class*="buttonActive-"] {
+    &[class*="buttonActive_"] {
       background-color: $green;
       color: $crust;
 
-      [class*="buttonContents-"] {
+      [class*="buttonContents_"] {
         color: $crust;
 
         svg {
@@ -66,7 +66,7 @@ div[class|="actionButtons"] {
 }
 
 // lookInverted buttons should have darker brand text
-[class*="lookInverted-"][class*="colorBrand-"] {
+[class*="lookInverted-"][class*="colorBrand_"] {
   color: var(--brand-experiment-600);
 
   // darken the nitro button too
@@ -78,17 +78,17 @@ div[class|="actionButtons"] {
 // lookLink + colorPrimary should be themed
 .theme-dark,
 .theme-light {
-  [class*="lookLink-"][class*="colorPrimary-"] {
+  [class*="lookLink-"][class*="colorPrimary_"] {
     color: $text;
   }
-  [class*="lookFilled-"][class*="colorTransparent-"] {
+  [class*="lookFilled-"][class*="colorTransparent_"] {
     color: $text;
     background-color: $surface0;
   }
 }
 
 // dangerous button when hovered is colored properly
-div[class*="button-"][class*="dangerous-"]:hover {
+div[class*="button-"][class*="dangerous_"]:hover {
   color: darken($red, 10%);
 }
 
@@ -102,12 +102,12 @@ div[role="radio"][class*="selected"] {
   }
 }
 //nonspecific radio buttons
-[class*="container-"][style*="background-color: var(--green-360)"] {
+[class*="container-"][style*="background-color: var(--green_360)"] {
   --green-360: #{$green}; //vencord plugin settings
   background-color: $green !important;
 }
-[class*="container-"][style*="background-color: var(--primary-400)"],
-[class*="container-"][style*="background-color: rgb(130, 133, 143)"] {
+[class*="container-"][style*="background-color: var(--primary_400)"],
+[class*="container-"][style*="background_color: rgb(130, 133, 143)"] {
   background-color: $crust !important; //used in a lot of places
 }
 // vencord spotify plugin button theming support (uses vencord-specific classes)
@@ -124,7 +124,7 @@ div[role="radio"][class*="selected"] {
 }
 
 // these badges appear in the emoji/sticker picker
-[class*="topGuildEmojiBadge-"] {
+[class*="topGuildEmojiBadge_"] {
   background: linear-gradient(268.26deg, $peach, $red 102.45%);
 
   * {
@@ -132,7 +132,7 @@ div[role="radio"][class*="selected"] {
   }
 }
 
-[class*="newlyAddedBadge-"] {
+[class*="newlyAddedBadge_"] {
   background: linear-gradient(268.26deg, $teal, $green 102.45%);
 
   * {
@@ -141,8 +141,8 @@ div[role="radio"][class*="selected"] {
 }
 
 //revert nitro icon on nitro subscribe button on external emoji
-[class*="lookFilled-"]
-  [class*="premiumSubscribeButton-"]
-  > [class*="premiumIcon-"] {
+[class*="lookFilled_"]
+  [class*="premiumSubscribeButton_"]
+  > [class*="premiumIcon_"] {
   color: $crust !important;
 }

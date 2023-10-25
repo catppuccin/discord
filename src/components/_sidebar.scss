@@ -45,26 +45,26 @@ ul[aria-label$=" threads"] > li:nth-child(6n) {
 }
 
 // bot tag in sidebar
-[class|="botText"] {
+[class*="botText_"] {
   color: $crust;
   font-weight: 600;
 }
 
-svg[class|="botTagVerified"] {
+svg[class*="botTagVerified_"] {
   color: $crust;
 }
 
-div[class*="activePostCount-"] {
+div[class*="activePostCount_"] {
   background-color: $surface0;
   color: $text !important;
 }
 
-div[class*="newPostCount-"] {
+div[class*="newPostCount_"] {
   background-color: $text;
   color: $crust;
 }
 // Live icon
-div[class*="liveSmall-"] {
+div[class*="liveSmall_"] {
   background-color: $red !important;
   color: $crust;
 }
