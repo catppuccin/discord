@@ -36,10 +36,13 @@
   // reactions
   [id^="message-reactions"] {
     div[class^="reaction"] {
-      background-color: $surface0;
       &:hover {
         background-color: var(--brand-experiment-20a);
         border-color: var(--brand-experiment-30a);
+      }
+
+      div[class^="reactionInner"] {
+        border-radius: 0.4rem;
       }
     }
   }
@@ -244,6 +247,10 @@ div[class^="chat"] > div[class^="content"] > div[class^="container"] {
     background-color: $base;
   }
 
+  // Help keys
+  div[class^="matchingPostsRow"] span[class^="key"] {
+    color: $crust !important;
+  }
   // forum icons
   div[class^="pinIcon"],
   div[class^="stepStatus"] {
@@ -327,7 +334,7 @@ div[class^="chat"]
 // Threads header icon
 div[class^="messagesWrapper"]
   ol[class^="scrollerInner"]
-  div[class^="container"]
+  div[class^="container"]:not([class*="cozy"])
   div[class^="iconWrapper"] {
   background-color: $brand;
   svg[class^="icon"] {
