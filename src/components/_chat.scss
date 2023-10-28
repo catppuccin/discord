@@ -334,7 +334,7 @@ div[class^="chat"]
 // Threads header icon
 div[class^="messagesWrapper"]
   ol[class^="scrollerInner"]
-  div[class^="container"]:not([class*="cozy"])
+  > div[class^="container"]:not([class*="cozy"])
   div[class^="iconWrapper"] {
   background-color: $brand;
   svg[class^="icon"] {
