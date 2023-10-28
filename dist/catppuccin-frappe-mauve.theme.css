@@ -1297,10 +1297,10 @@ div[class^=chat] > div[class^=content] main[class^=chatContent] + div[class^=con
   border: 1px solid #e78284 !important;
 }
 
-div[class^=messagesWrapper] ol[class^=scrollerInner] div[class^=container]:not([class*=cozy]) div[class^=iconWrapper] {
+div[class^=messagesWrapper] ol[class^=scrollerInner] > div[class^=container]:not([class*=cozy]) div[class^=iconWrapper] {
   background-color: #ca9ee6;
 }
-div[class^=messagesWrapper] ol[class^=scrollerInner] div[class^=container]:not([class*=cozy]) div[class^=iconWrapper] svg[class^=icon] {
+div[class^=messagesWrapper] ol[class^=scrollerInner] > div[class^=container]:not([class*=cozy]) div[class^=iconWrapper] svg[class^=icon] {
   color: #232634;
 }
 

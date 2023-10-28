@@ -1545,10 +1545,10 @@ div[class^=chat] > div[class^=content] main[class^=chatContent] + div[class^=con
   border: 1px solid #d20f39 !important;
 }
 
-div[class^=messagesWrapper] ol[class^=scrollerInner] div[class^=container]:not([class*=cozy]) div[class^=iconWrapper] {
+div[class^=messagesWrapper] ol[class^=scrollerInner] > div[class^=container]:not([class*=cozy]) div[class^=iconWrapper] {
   background-color: #df8e1d;
 }
-div[class^=messagesWrapper] ol[class^=scrollerInner] div[class^=container]:not([class*=cozy]) div[class^=iconWrapper] svg[class^=icon] {
+div[class^=messagesWrapper] ol[class^=scrollerInner] > div[class^=container]:not([class*=cozy]) div[class^=iconWrapper] svg[class^=icon] {
   color: #dce0e8;
 }
 
