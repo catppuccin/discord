@@ -131,6 +131,8 @@ html {
   --yellow-300: #{$yellow};
   --red-400: #{$red};
 
+  --brand-500: #{$brand};
+
   --primary-400: #{$subtext1};
   --primary-dark-700: #{$crust};
 
@@ -284,6 +286,8 @@ html {
   --interactive-muted: #{adjust-color($text, $alpha: -0.7)};
   --interactive-hover: #{$text};
   --interactive-active: #{$text};
+
+  --search-popout-option-non-text-color: #{$subtext0};
 }
 
 ::selection {

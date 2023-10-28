@@ -708,3 +708,11 @@ div[class^="keyboardShortcutsModal"] span[class^="key"] {
     }
   }
 }
+
+// Start streaming settings switches
+div[class^="qualitySettingsContainer"] div[class^="settingsGroup"] {
+  div[class*="selectorTextSelected_"],
+  button[class*="selectorButton_"]:hover div[class*="selectorText_"] {
+    color: $crust !important;
+  }
+}
