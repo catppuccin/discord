@@ -121,6 +121,7 @@ html {
   --yellow-360: #e5c890;
   --yellow-300: #e5c890;
   --red-400: #e78284;
+  --brand-500: #eebebe;
   --primary-400: #b5bfe2;
   --primary-dark-700: #232634;
   --status-green-560: #a6d189;
@@ -231,6 +232,7 @@ html {
   --interactive-muted: rgba(198, 208, 245, 0.3);
   --interactive-hover: #c6d0f5;
   --interactive-active: #c6d0f5;
+  --search-popout-option-non-text-color: #a5adce;
 }
 
 ::selection {
@@ -2005,6 +2007,11 @@ div[class^=keyboardShortcutsModal] span[class^=key] svg g {
 }
 [class*=disabledPointerEvents] div[class^=flowerStarContainer] div[class^=childContainer] svg path {
   fill: #232634 !important;
+}
+
+div[class^=qualitySettingsContainer] div[class^=settingsGroup] div[class*=selectorTextSelected_],
+div[class^=qualitySettingsContainer] div[class^=settingsGroup] button[class*=selectorButton_]:hover div[class*=selectorText_] {
+  color: #232634 !important;
 }
 
 rect[fill="#23a55a"],
