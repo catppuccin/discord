@@ -440,6 +440,12 @@ div[class^="contentRegion"] {
       background: $surface0;
     }
   }
+
+  #overview-tab {
+    div[class^="addTags"] svg path {
+      fill: $crust !important;
+    }
+  }
 }
 
 .bd-settings-title {
