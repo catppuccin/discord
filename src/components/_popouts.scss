@@ -116,6 +116,13 @@ div[class^="layerContainer"] [role="menu"] {
     }
 
     div[class*="container"] {
+      div[class^="popoutBottom"] {
+        // Voice channel connection secured icon
+        span[class^="secured"]::before {
+          @include recolor($green);
+        }
+      }
+
       div[class*="autocompleteArrow_"],
       header {
         background-color: $mantle;
@@ -715,9 +722,4 @@ div[class^="qualitySettingsContainer"] div[class^="settingsGroup"] {
   button[class*="selectorButton_"]:hover div[class*="selectorText_"] {
     color: $crust !important;
   }
-}
-
-// Voice channel connection secured icon
-#popout_101814 span[class^="secured"]::before {
-  @include recolor($green);
 }
