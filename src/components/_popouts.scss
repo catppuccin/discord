@@ -716,3 +716,8 @@ div[class^="qualitySettingsContainer"] div[class^="settingsGroup"] {
     color: $crust !important;
   }
 }
+
+// Voice channel connection secured icon
+#popout_101814 span[class^="secured"]::before {
+  @include recolor($green);
+}
