@@ -122,6 +122,7 @@ html {
   --yellow-300: #f9e2af;
   --red-400: #f38ba8;
   --brand-500: #eba0ac;
+  --brand-560: #e27687;
   --primary-400: #bac2de;
   --primary-dark-700: #11111b;
   --status-green-560: #a6e3a1;
@@ -771,6 +772,10 @@ div[class^=contentRegion] #appearance-tab div[class^=selectionCircle] svg[class^
   background: #313244;
 }
 
+div[class^=contentRegion] #overview-tab div[class^=addTags] svg path {
+  fill: #11111b !important;
+}
+
 .bd-settings-title {
   color: #cdd6f4;
 }
@@ -1297,6 +1302,9 @@ div[class^=chat] > div[class^=content] main[class^=chatContent] + div[class^=con
   border: 1px solid #f38ba8 !important;
 }
 
+div[class^=messagesWrapper] ol[class^=scrollerInner] > div[class^=container]:not([class*=cozy]) div[class^=emptyChannelIcon] {
+  background-image: url("data:image/svg+xml,%3Csvg fill='rgb(17, 17, 27)' height='44' viewBox='0 0 44 44' width='44' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath clip-rule='evenodd' d='m10.295 38.5c-.31112 0-.54669-.2811-.49232-.5874l1.19742-6.7459h-6.73825c-.31061 0-.54605-.2803-.49251-.5862l.46666-2.6667c.04187-.2392.24963-.4138.49252-.4138h6.91328l1.9433-11h-6.73825c-.31061 0-.54605-.2802-.49251-.5862l.46666-2.6667c.04187-.2392.24963-.4138.49252-.4138h6.91328l1.2284-6.92068c.0424-.23871.2499-.41262.4923-.41262h2.651c.3111 0 .5467.28107.4923.58738l-1.1974 6.74592h11l1.2284-6.92068c.0424-.23871.2499-.41262.4924-.41262h2.651c.3111 0 .5467.28107.4923.58738l-1.1974 6.74592h6.7382c.3106 0 .5461.2803.4925.5862l-.4666 2.6667c-.0419.2392-.2497.4138-.4925.4138h-6.9133l-1.9433 11h6.7382c.3106 0 .5461.2802.4925.5862l-.4666 2.6667c-.0419.2392-.2497.4138-.4925.4138h-6.9133l-1.2284 6.9207c-.0424.2387-.2499.4126-.4923.4126h-2.651c-.3111 0-.5467-.2811-.4924-.5874l1.1975-6.7459h-11l-1.2285 6.9207c-.0423.2387-.2498.4126-.4923.4126zm6.9576-22-1.9434 11h11l1.9434-11z'/%3E%3C/svg%3E");
+}
 div[class^=messagesWrapper] ol[class^=scrollerInner] > div[class^=container]:not([class*=cozy]) div[class^=iconWrapper] {
   background-color: #eba0ac;
 }
@@ -2012,6 +2020,10 @@ div[class^=keyboardShortcutsModal] span[class^=key] svg g {
 div[class^=qualitySettingsContainer] div[class^=settingsGroup] div[class*=selectorTextSelected_],
 div[class^=qualitySettingsContainer] div[class^=settingsGroup] button[class*=selectorButton_]:hover div[class*=selectorText_] {
   color: #11111b !important;
+}
+
+#popout_101814 span[class^=secured]::before {
+  filter: url('data:image/svg+xml;utf8,    <svg xmlns="http://www.w3.org/2000/svg">      <filter id="ctp-recolor" color-interpolation-filters="sRGB">        <feColorMatrix type="matrix" values="          0 0 0 0 0.6509803922          0 0 0 0 0.8901960784          0 0 0 0 0.631372549          0 0 0 1 0        "/>      </filter>    </svg>    #ctp-recolor');
 }
 
 rect[fill="#23a55a"],
