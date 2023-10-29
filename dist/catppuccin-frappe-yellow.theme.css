@@ -1595,6 +1595,10 @@ div[class^=layerContainer] [role=menu] #user-context-user-volume div[class*=slid
 .theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender_] svg[class*=activeIcon] g path {
   fill: #e5c890;
 }
+.theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender_] div[class*=container] div[class^=popoutBottom] span[class^=secured]::before,
+.theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender_] div[class*=container] div[class^=popoutBottom] span[class^=secured]::before {
+  filter: url('data:image/svg+xml;utf8,    <svg xmlns="http://www.w3.org/2000/svg">      <filter id="ctp-recolor" color-interpolation-filters="sRGB">        <feColorMatrix type="matrix" values="          0 0 0 0 0.6509803922          0 0 0 0 0.8196078431          0 0 0 0 0.537254902          0 0 0 1 0        "/>      </filter>    </svg>    #ctp-recolor');
+}
 .theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender_] div[class*=container] div[class*=autocompleteArrow_],
 .theme-dark div[class^=layerContainer] div[id^=popout_] > div[class*=didRender_] div[class*=container] header,
 .theme-light div[class^=layerContainer] div[id^=popout_] > div[class*=didRender_] div[class*=container] div[class*=autocompleteArrow_],
@@ -2020,10 +2024,6 @@ div[class^=keyboardShortcutsModal] span[class^=key] svg g {
 div[class^=qualitySettingsContainer] div[class^=settingsGroup] div[class*=selectorTextSelected_],
 div[class^=qualitySettingsContainer] div[class^=settingsGroup] button[class*=selectorButton_]:hover div[class*=selectorText_] {
   color: #232634 !important;
-}
-
-#popout_101814 span[class^=secured]::before {
-  filter: url('data:image/svg+xml;utf8,    <svg xmlns="http://www.w3.org/2000/svg">      <filter id="ctp-recolor" color-interpolation-filters="sRGB">        <feColorMatrix type="matrix" values="          0 0 0 0 0.6509803922          0 0 0 0 0.8196078431          0 0 0 0 0.537254902          0 0 0 1 0        "/>      </filter>    </svg>    #ctp-recolor');
 }
 
 rect[fill="#23a55a"],
