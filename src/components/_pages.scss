@@ -562,13 +562,8 @@ div[class^="sidebar"] div[class^="container"] {
 
   &:hover {
     div[class^="progressBar"] {
-      background: linear-gradient(
-        90deg,
-        hsl(221, 70%, 55.5%),
-        $mauve 34%,
-        $blue 67%,
-        $mauve
-      );
+      background: linear-gradient(90deg, $blue, $mauve 34%, $blue 67%, $mauve);
+      background-size: 300% 100%;
     }
   }
 
