@@ -866,7 +866,8 @@ div[class^=sidebar] div[class^=container] div[class^=progressBar] {
   background: linear-gradient(90deg, #8caaee, #ca9ee6);
 }
 div[class^=sidebar] div[class^=container]:hover div[class^=progressBar] {
-  background: linear-gradient(90deg, hsl(221deg, 70%, 55.5%), #ca9ee6 34%, #8caaee 67%, #ca9ee6);
+  background: linear-gradient(90deg, #8caaee, #ca9ee6 34%, #8caaee 67%, #ca9ee6);
+  background-size: 300% 100%;
 }
 div[class^=sidebar] div[class^=container] div[class^=divider] {
   border-color: var(--background-modifier-accent);
