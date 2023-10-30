@@ -31,6 +31,10 @@ div[class^="layerContainer"] [role="menu"] {
       color: $text;
     }
 
+    &:hover [class*="caret"] {
+      color: $crust;
+    }
+
     // make active items have dark text
     &:active:not([class*="hideInteraction_"]) {
       color: var(--background-floating);

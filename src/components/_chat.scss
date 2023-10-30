@@ -642,3 +642,23 @@ div[class^="chat"] div[class^="homeContainer"] {
 aside[class^="membersWrap"] {
   height: 100%;
 }
+
+// system message icons
+div[class^="message"][class*="isSystemMessage"] div[class^="icon"] {
+  // User Joined icon
+  &[style*="/assets/7378a83d74ce97d83380.svg"],
+  // Answered call icon
+  &[style*="/assets/9f3b9c1b6e5f77294951.svg"] {
+    @include recolor($green);
+  }
+
+  // Missed call icon
+  &[style*="/assets/a1d461025204711133ec.svg"] {
+    @include recolor($subtext0);
+  }
+
+  // User left icon
+  &[style*="/assets/192510ade1abc3149b46.svg"] {
+    @include recolor($red);
+  }
+}
