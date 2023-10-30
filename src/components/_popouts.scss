@@ -727,3 +727,13 @@ div[class^="qualitySettingsContainer"] div[class^="settingsGroup"] {
     color: $crust !important;
   }
 }
+
+// Phone number popout
+div[class*="phoneFieldPopout"] {
+  background: $mantle !important;
+
+  div[class^="countryName"],
+  div[class^="countryCode"] {
+    color: $text !important;
+  }
+}
