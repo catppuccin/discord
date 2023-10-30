@@ -2287,6 +2287,14 @@ div[class^=qualitySettingsContainer] div[class^=settingsGroup] button[class*=sel
   color: #dce0e8 !important;
 }
 
+div[class*=phoneFieldPopout] {
+  background: #e6e9ef !important;
+}
+div[class*=phoneFieldPopout] div[class^=countryName],
+div[class*=phoneFieldPopout] div[class^=countryCode] {
+  color: #4c4f69 !important;
+}
+
 rect[fill="#23a55a"],
 foreignObject[mask="url(#svg-mask-status-online)"] > div,
 div[class^=dotOnline],
