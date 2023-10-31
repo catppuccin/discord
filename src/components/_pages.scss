@@ -281,19 +281,21 @@ div[class^="contentRegion"] {
   }
 
   // toggles in preferencs
+  // unchecked
+  div[class^="switch"],
+  div[class^="control"] {
+    > div[style*="background-color: hsl(218, calc(var(--saturation-factor, 1) * 4.6%), 46.9%)"],
+    > div[style*="background-color: "] {
+      background-color: $surface2 !important;
+    }
+  }
+
   // checked
+  div[class^="switch"] > div[class*="checked_"],
   div[class^="control"] > div[class*="checked_"],
   div[class^="sensitivity"] div[class*="checked_"],
   div[style*="background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%)"] {
     background-color: $green !important;
-  }
-
-  // unchecked
-  div[class^="control"] {
-    > div[style*="background-color: hsl(218, calc(var(--saturation-factor, 1) * 4.6%), 46.9%)"],
-    > div[style$="background-color: rgb(128, 132, 142);"] {
-      background-color: $surface2 !important;
-    }
   }
 
   // server boost page
@@ -444,6 +446,40 @@ div[class^="contentRegion"] {
   #overview-tab {
     div[class^="addTags"] svg path {
       fill: $crust !important;
+    }
+  }
+
+  #onboarding-tab {
+    div[class*="heroQuotes"] {
+      color: $text;
+    }
+
+    svg[class^="checkCircleCompleted"] circle {
+      fill: $crust !important;
+    }
+
+    svg[class^="checkbox"],
+    svg[class^="checkmark"] {
+      color: $crust;
+    }
+
+    div[class^="requiredItem"] svg circle {
+      fill: $crust;
+    }
+
+    div[class^="addPrompt"],
+    div[class^="addActionItem"] {
+      border: 2px dashed $surface1;
+    }
+
+    div[class^="badExample"] div[class^="example"] {
+      border: 2px solid $surface1;
+    }
+
+    div[class^="homeBannerExplainer"]
+      div[class*="upsellButtonInner"]
+      div[class^="text-sm-medium"] {
+      color: $crust !important;
     }
   }
 }
@@ -692,5 +728,24 @@ div[class^="notice"] {
       background: darken($mauve, 10%);
       color: $mantle;
     }
+  }
+}
+
+// Server onboarding buttons
+div[class^="standardSidebarView"]
+  div[class^="noticeRegion"]
+  div[class^="actions"]
+  button {
+  // sure why not sillycord
+  span[class^="button"] {
+    color: $crust !important;
+  }
+
+  background-color: $brand;
+  color: $crust;
+  border-color: $crust;
+
+  &:hover {
+    background-color: darken($brand, 10%);
   }
 }
