@@ -920,14 +920,17 @@ div[class^=contentRegion] section[class^=inputSensitivityToggle] div[class^=inpu
 div[class^=contentRegion] div[class*=reactionMe_] {
   background-color: #ccd0da !important;
 }
+div[class^=contentRegion] div[class^=switch] > div[style*="background-color: hsl(218, calc(var(--saturation-factor, 1) * 4.6%), 46.9%)"],
+div[class^=contentRegion] div[class^=switch] > div[style*="background-color: "],
+div[class^=contentRegion] div[class^=control] > div[style*="background-color: hsl(218, calc(var(--saturation-factor, 1) * 4.6%), 46.9%)"],
+div[class^=contentRegion] div[class^=control] > div[style*="background-color: "] {
+  background-color: #acb0be !important;
+}
+div[class^=contentRegion] div[class^=switch] > div[class*=checked_],
 div[class^=contentRegion] div[class^=control] > div[class*=checked_],
 div[class^=contentRegion] div[class^=sensitivity] div[class*=checked_],
 div[class^=contentRegion] div[style*="background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%)"] {
   background-color: #40a02b !important;
-}
-div[class^=contentRegion] div[class^=control] > div[style*="background-color: hsl(218, calc(var(--saturation-factor, 1) * 4.6%), 46.9%)"],
-div[class^=contentRegion] div[class^=control] > div[style$="background-color: rgb(128, 132, 142);"] {
-  background-color: #acb0be !important;
 }
 div[class^=contentRegion] #guild_premium-tab [class*=tierAccomplished_],
 div[class^=contentRegion] #guild_premium-tab [class*=tierCurrent_],
@@ -1022,6 +1025,29 @@ div[class^=contentRegion] #appearance-tab div[class^=selectionCircle] svg[class^
 
 div[class^=contentRegion] #overview-tab div[class^=addTags] svg path {
   fill: #dce0e8 !important;
+}
+div[class^=contentRegion] #onboarding-tab div[class*=heroQuotes] {
+  color: #4c4f69;
+}
+div[class^=contentRegion] #onboarding-tab svg[class^=checkCircleCompleted] circle {
+  fill: #dce0e8 !important;
+}
+div[class^=contentRegion] #onboarding-tab svg[class^=checkbox],
+div[class^=contentRegion] #onboarding-tab svg[class^=checkmark] {
+  color: #dce0e8;
+}
+div[class^=contentRegion] #onboarding-tab div[class^=requiredItem] svg circle {
+  fill: #dce0e8;
+}
+div[class^=contentRegion] #onboarding-tab div[class^=addPrompt],
+div[class^=contentRegion] #onboarding-tab div[class^=addActionItem] {
+  border: 2px dashed #bcc0cc;
+}
+div[class^=contentRegion] #onboarding-tab div[class^=badExample] div[class^=example] {
+  border: 2px solid #bcc0cc;
+}
+div[class^=contentRegion] #onboarding-tab div[class^=homeBannerExplainer] div[class*=upsellButtonInner] div[class^=text-sm-medium] {
+  color: #dce0e8 !important;
 }
 
 .bd-settings-title {
@@ -1212,6 +1238,18 @@ div[class^=notice][class*=colorStreamerMode_] {
 div[class^=notice][class*=colorStreamerMode_] button[class^=button]:hover {
   background: #6d12e3;
   color: #e6e9ef;
+}
+
+div[class^=standardSidebarView] div[class^=noticeRegion] div[class^=actions] button {
+  background-color: #8839ef;
+  color: #dce0e8;
+  border-color: #dce0e8;
+}
+div[class^=standardSidebarView] div[class^=noticeRegion] div[class^=actions] button span[class^=button] {
+  color: #dce0e8 !important;
+}
+div[class^=standardSidebarView] div[class^=noticeRegion] div[class^=actions] button:hover {
+  background-color: #6d12e3;
 }
 
 nav[class*=guilds_] foreignObject > div[data-list-item-id*=guildsnav_]:hover > div[class^=childWrapper], nav[class*=guilds_] foreignObject > div[data-list-item-id*=guildsnav_][class*=selected] > div[class^=childWrapper] {
