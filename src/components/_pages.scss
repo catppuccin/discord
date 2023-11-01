@@ -737,12 +737,17 @@ div[class^="standardSidebarView"]
   div[class^="actions"]
   button {
   // sure why not sillycord
-  span[class^="button"] {
-    color: $crust !important;
+  span[class^="button"],
+  div {
+    --button--underline-color: #{$crust} !important;
+
+    span {
+      color: $crust !important;
+    }
   }
 
   background-color: $brand;
-  color: $crust;
+  color: $crust !important;
   border-color: $crust;
 
   &:hover {
