@@ -1022,7 +1022,7 @@ nav[class*=guilds_] div[data-list-item-id=guildsnav___guild-discover-button]:hov
 nav[class*=guilds_] div[data-list-item-id=guildsnav___guild-discover-button][class*=selected],
 nav[class*=guilds_] div[data-list-item-id=guildsnav___app-download-button]:hover,
 nav[class*=guilds_] div[data-list-item-id=guildsnav___app-download-button][class*=selected] {
-  color: #181926;
+  color: #181926 !important;
   font-weight: 600;
 }
 
@@ -2084,6 +2084,10 @@ div[class*=phoneFieldPopout] {
 div[class*=phoneFieldPopout] div[class^=countryName],
 div[class*=phoneFieldPopout] div[class^=countryCode] {
   color: #cad3f5 !important;
+}
+
+div[class^=layerContainer] div[class*=modalContent] > div[class^=container] div[class^=iconContainer] div[class^=icon] {
+  filter: url('data:image/svg+xml;utf8,    <svg xmlns="http://www.w3.org/2000/svg">      <filter id="ctp-recolor" color-interpolation-filters="sRGB">        <feColorMatrix type="matrix" values="          0 0 0 0 0.0941176471          0 0 0 0 0.0980392157          0 0 0 0 0.1490196078          0 0 0 1 0        "/>      </filter>    </svg>    #ctp-recolor');
 }
 
 rect[fill="#23a55a"],
