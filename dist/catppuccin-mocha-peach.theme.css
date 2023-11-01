@@ -994,10 +994,15 @@ div[class^=notice][class*=colorStreamerMode_] button[class^=button]:hover {
 
 div[class^=standardSidebarView] div[class^=noticeRegion] div[class^=actions] button {
   background-color: #fab387;
-  color: #11111b;
+  color: #11111b !important;
   border-color: #11111b;
 }
-div[class^=standardSidebarView] div[class^=noticeRegion] div[class^=actions] button span[class^=button] {
+div[class^=standardSidebarView] div[class^=noticeRegion] div[class^=actions] button span[class^=button],
+div[class^=standardSidebarView] div[class^=noticeRegion] div[class^=actions] button div {
+  --button--underline-color: #11111b !important;
+}
+div[class^=standardSidebarView] div[class^=noticeRegion] div[class^=actions] button span[class^=button] span,
+div[class^=standardSidebarView] div[class^=noticeRegion] div[class^=actions] button div span {
   color: #11111b !important;
 }
 div[class^=standardSidebarView] div[class^=noticeRegion] div[class^=actions] button:hover {
