@@ -29,7 +29,7 @@ nav[class*="guilds_"] {
   div[data-list-item-id="guildsnav___app-download-button"] {
     &:hover,
     &[class*="selected"] {
-      color: $crust;
+      color: $crust !important;
       font-weight: 600;
     }
   }

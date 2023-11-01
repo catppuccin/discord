@@ -737,3 +737,12 @@ div[class*="phoneFieldPopout"] {
     color: $text !important;
   }
 }
+
+// Student hub icon
+div[class^="layerContainer"]
+  div[class*="modalContent"]
+  > div[class^="container"]
+  div[class^="iconContainer"]
+  div[class^="icon"] {
+  @include recolor($crust);
+}
