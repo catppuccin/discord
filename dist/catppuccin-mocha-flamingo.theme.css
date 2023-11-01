@@ -1127,7 +1127,7 @@ div[class*=liveSmall_] {
 [class^=chatContent] div[class^=channelTextArea] div[class^=buttons] * {
   color: var(--interactive-normal) !important;
 }
-[class^=chatContent] [id^=message-reactions] div[class^=reaction]:hover {
+[class^=chatContent] [id^=message-reactions] div[class^=reaction]:not(div[class^=reactionCount]):hover {
   background-color: var(--brand-experiment-20a);
   border-color: var(--brand-experiment-30a);
 }
