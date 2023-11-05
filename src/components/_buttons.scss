@@ -10,7 +10,7 @@
 
     // darken the nitro button too
     svg[class^="premiumIcon"] {
-      color: darken($pink, 20%);
+      color: darken($pink, 20%) !important;
     }
 
     // spinner color
@@ -71,7 +71,7 @@ div[class^="actionButtons"] {
 
   // darken the nitro button too
   svg[class^="premiumIcon"] {
-    color: darken($pink, 15%);
+    color: darken($pink, 15%) !important;
   }
 }
 

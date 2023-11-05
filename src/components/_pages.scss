@@ -84,6 +84,7 @@ div[class^="contentRegion"] {
   #keybinds-tab {
     span[class*="key"] {
       color: $crust;
+
       g {
         fill: $crust;
       }
@@ -151,6 +152,10 @@ div[class^="contentRegion"] {
 
     div[class*="card_"] {
       color: $text;
+
+      div[class^="item"] div {
+        color: $text !important;
+      }
     }
 
     button[class*="lookInverted_"] {
@@ -361,6 +366,7 @@ div[class^="contentRegion"] {
       &[viewBox="0 0 14 14"] path {
         fill: $red;
       }
+
       &[viewBox="0 0 20 20"] path {
         fill: $yellow;
       }
@@ -387,6 +393,7 @@ div[class^="contentRegion"] {
     div[class*="tierHeaderContent"] {
       background-color: $crust;
     }
+
     div[class*="tierBody"] {
       background-color: $mantle;
     }
@@ -399,6 +406,7 @@ div[class^="contentRegion"] {
           content: "data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.0749 1.66667H4.99996C3.15901 1.66667 1.66663 3.15906 1.66663 5.00001V15C1.66663 16.841 3.15901 18.3333 4.99996 18.3333H15C16.8409 18.3333 18.3333 16.841 18.3333 15V8.92511C17.8052 9.08227 17.2458 9.16667 16.6666 9.16667C13.445 9.16667 10.8333 6.555 10.8333 3.33334C10.8333 2.75419 10.9177 2.19476 11.0749 1.66667ZM6.66663 5.00001C7.58596 5.00001 8.33329 5.74601 8.33329 6.66667C8.33329 7.58801 7.58596 8.33334 6.66663 8.33334C5.74529 8.33334 4.99996 7.58801 4.99996 6.66667C4.99996 5.74601 5.74529 5.00001 6.66663 5.00001ZM4.99996 15L7.49996 11.6667L9.16663 13.3333L12.5 9.16667L15 15H4.99996Z' fill='%23#{str-slice(inspect($surface1), 2)}'/%3E%3Cpath d='M17.5 0V2.5H20V4.16667H17.5V6.66667H15.8334V4.16667H13.3334V2.5H15.8334V0H17.5Z' fill='%23#{str-slice(inspect($surface1), 2)}'/%3E%3C/svg%3E";
         }
       }
+
       .theme-dark {
         img[class*="roleIcon_"] {
           content: "data:image/svg+xml,%3Csvg fill='none' height='20' viewBox='0 0 20 20' width='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23#{str-slice(inspect($text), 2)}'%3E%3Cpath clip-rule='evenodd' d='m11.0749 1.66667h-6.07488c-1.84095 0-3.33333 1.49239-3.33333 3.33334v9.99999c0 1.841 1.49238 3.3333 3.33333 3.3333h9.99998c1.841 0 3.3334-1.4923 3.3334-3.3333v-6.07489c-.5281.15716-1.0876.24156-1.6667.24156-3.2217 0-5.8333-2.61167-5.8333-5.83333 0-.57915.0844-1.13858.2415-1.66667zm-4.40821 3.33334c.91933 0 1.66666.746 1.66666 1.66666 0 .92134-.74733 1.66667-1.66666 1.66667-.92134 0-1.66667-.74533-1.66667-1.66667 0-.92066.74533-1.66666 1.66667-1.66666zm-1.66667 9.99999 2.5-3.3333 1.66667 1.6666 3.33331-4.16663 2.5 5.83333z' fill-rule='evenodd'/%3E%3Cpath d='m17.5 0v2.5h2.5v1.66667h-2.5v2.5h-1.6667v-2.5h-2.5v-1.66667h2.5v-2.5z'/%3E%3C/g%3E%3C/svg%3E";
@@ -416,6 +424,10 @@ div[class^="contentRegion"] {
   #profile-customization-tab {
     div[class*="premiumFeatureBannerBackground"] button {
       color: $crust;
+    }
+
+    div[class^="imageUploaderIcon_"] {
+      background-color: $text;
     }
   }
 
@@ -752,5 +764,89 @@ div[class^="standardSidebarView"]
 
   &:hover {
     background-color: darken($brand, 10%);
+  }
+}
+
+@function tpn($color, $transparency) {
+  @return rgba($color, $transparency);
+}
+
+// nitro gradients
+div[class^="premiumFeatureBorder"] {
+  background:
+    linear-gradient($crust, $crust) padding-box,
+    linear-gradient(45deg, $mauve, $pink) border-box;
+
+  div[class^="premiumBackground"] {
+    // It's actually 5% in stock but you can barely see it this is cooler lol
+    background: linear-gradient(45deg, tpn($mauve, 10%), tpn($pink, 10%) 100%)
+      border-box;
+  }
+}
+
+// Nitro home page
+div[class*="applicationStore"] div[class*="premiumContainer"] {
+  div[class^="premiumCards"] {
+    svg g {
+      fill: $text;
+    }
+
+    div[class*="item"] div[class^="text"] {
+      color: $text !important;
+    }
+
+    h2 {
+      &,
+      & span {
+        color: $text !important;
+      }
+    }
+
+    span[class^="buttonText"] {
+      color: $crust;
+    }
+  }
+
+  div[class^="fullscreenTextContainer"],
+  div[class^="innerWrapper"] {
+    div[class*="premiumSubscribeButton"] span[class^="buttonText"] {
+      color: $crust;
+    }
+  }
+}
+
+// shop home page
+div[class^="shop"] {
+  div[class^="heroBanner"] div[class^="heroDescription"] {
+    h2[class*="bannerTitle"],
+    div[class^="text"] {
+      color: $text !important;
+    }
+
+    div[class*="premiumSubscribeButton"] span[class^="buttonText"] {
+      color: $crust;
+    }
+  }
+
+  div[class^="shopCard"] {
+    div[class^="innerHover"] button[class^="previewButton"] svg path {
+      fill: $crust;
+    }
+  }
+
+  div[class^="bannerCard"] div[class^="badge"] svg path {
+    fill: $crust;
+  }
+}
+
+div[class^="layerContainer"] div[class^="collectibleInfoContainer"] {
+  button[class^="shinyButton"] {
+    svg {
+      fill: $pink;
+    }
+
+    span {
+      color: $crust !important;
+    }
   }
 }

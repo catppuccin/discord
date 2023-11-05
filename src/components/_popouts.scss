@@ -15,10 +15,14 @@ div[class^="layerContainer"] [role="menu"] {
       }
     }
 
-    &[role="menuitem"]:not([class*="colorDanger"]):not(
+    &[role="menuitem"]:not(
+        [class*="colorDanger"],
         [id*="user-context-user-volume"]
       ):hover {
-      background: var(--background-accent);
+      &:not([class*="colorPremiumGradient"]) {
+        background: var(--background-accent);
+      }
+
       color: $crust;
 
       [class*="subtext"],
@@ -45,6 +49,15 @@ div[class^="layerContainer"] [role="menu"] {
 
       [class*="checkbox_"] {
         color: var(--background-floating);
+      }
+
+      [class*="colorPremiumGradient"] {
+        background: linear-gradient(
+          270deg,
+          var(--premium-tier-2-pink-for-gradients) 0%,
+          var(--premium-tier-2-pink-for-gradients-2) 33.63%,
+          var(--premium-tier-2-purple-for-gradients) 100%
+        );
       }
     }
   }
@@ -745,4 +758,36 @@ div[class^="layerContainer"]
   div[class^="iconContainer"]
   div[class^="icon"] {
   @include recolor($crust);
+}
+
+// Nitro boost page
+div[class^="layerContainer"] div[class*="enterDone"] {
+  div[class^="guildBoostCta"]
+    button[class^="shinyButton"]
+    div[class^="content"] {
+    color: $crust;
+  }
+
+  ul[class^="cards"] li[class^="card"] {
+    background-color: $base;
+  }
+
+  svg[class^="boostedTierIcon"] {
+    path,
+    g {
+      fill: $crust;
+    }
+  }
+}
+
+// stream preview popout
+div[class^="layerContainer"] div[class^="streamPreview"] div[class^="body"] {
+  background-color: $mantle !important;
+
+  div[class^="activityStreamPreview"] div[class*="content"] {
+    &,
+    & div {
+      color: $text !important;
+    }
+  }
 }
