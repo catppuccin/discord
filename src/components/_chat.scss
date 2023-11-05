@@ -348,8 +348,14 @@ div[class^="messagesWrapper"]
 }
 
 // Jump to Present bar text
-[class*="barButtonBase_"] {
-  color: $crust !important;
+div[class^="jumpToPresentBar"] {
+  button[class*="barButtonBase_"] {
+    color: $crust !important;
+  }
+
+  span[class^="item"] {
+    background-color: $crust;
+  }
 }
 
 // calls
@@ -545,12 +551,12 @@ div[class*="chat_"] {
     div[role="tablist"] {
       background-color: $mantle;
       border-bottom: 2px solid $surface0;
-
-      [class*="textBadge_"] {
-        color: $crust;
-      }
     }
   }
+}
+
+[class*="textBadge_"] {
+  color: $crust;
 }
 
 div[class*="chat_"] {
@@ -621,8 +627,11 @@ div[class*="chat_"] {
 }
 
 // members tab
-div[class^="chat"][class*="page_"] div[class^="content"][class*="container_"] {
-  height: 100%;
+div[class^="chat"][class*="page_"] {
+  &,
+  div[class*="content_"][class*="container_"] {
+    background-color: $crust;
+  }
 }
 
 // Server Guide
