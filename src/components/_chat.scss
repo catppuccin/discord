@@ -652,6 +652,12 @@ aside[class^="membersWrap"] {
   height: 100%;
 }
 
+// DMs AKA badge
+div[class^="upperContainer"] div[class^="akaBadge"] {
+  background-color: $brand;
+  color: $crust;
+}
+
 // system message icons
 div[class^="message"][class*="isSystemMessage"] div[class^="icon"] {
   // User Joined icon
