@@ -1869,6 +1869,11 @@ aside[class^=membersWrap] {
   height: 100%;
 }
 
+div[class^=upperContainer] div[class^=akaBadge] {
+  background-color: #209fb5;
+  color: #dce0e8;
+}
+
 div[class^=message][class*=isSystemMessage] div[class^=icon][style*="/assets/7378a83d74ce97d83380.svg"], div[class^=message][class*=isSystemMessage] div[class^=icon][style*="/assets/9f3b9c1b6e5f77294951.svg"] {
   filter: url('data:image/svg+xml;utf8,    <svg xmlns="http://www.w3.org/2000/svg">      <filter id="ctp-recolor" color-interpolation-filters="sRGB">        <feColorMatrix type="matrix" values="          0 0 0 0 0.2509803922          0 0 0 0 0.6274509804          0 0 0 0 0.168627451          0 0 0 1 0        "/>      </filter>    </svg>    #ctp-recolor');
 }
