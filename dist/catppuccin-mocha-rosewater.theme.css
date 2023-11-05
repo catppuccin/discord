@@ -378,7 +378,7 @@ html {
   color: #11111b;
 }
 [class*=lookFilled_][class*=colorBrand_] svg[class^=premiumIcon], [class*=lookFilled_][class*=colorBrandNew_] svg[class^=premiumIcon], [class*=lookFilled_][class*=colorLink_] svg[class^=premiumIcon], [class*=lookFilled_][class*=colorYellow_] svg[class^=premiumIcon], [class*=lookFilled_][class*=colorRed_] svg[class^=premiumIcon], [class*=lookFilled_][class*=colorGreen_] svg[class^=premiumIcon] {
-  color: #e76ac5;
+  color: #e76ac5 !important;
 }
 [class*=lookFilled_][class*=colorBrand_] [class*=spinnerItem_], [class*=lookFilled_][class*=colorBrandNew_] [class*=spinnerItem_], [class*=lookFilled_][class*=colorLink_] [class*=spinnerItem_], [class*=lookFilled_][class*=colorYellow_] [class*=spinnerItem_], [class*=lookFilled_][class*=colorRed_] [class*=spinnerItem_], [class*=lookFilled_][class*=colorGreen_] [class*=spinnerItem_] {
   background-color: #11111b;
@@ -425,7 +425,7 @@ div[class^=actionButtons] [class^=button] [class*=buttonColor_][class*=buttonAct
   color: var(--brand-experiment-600);
 }
 [class*=lookInverted_][class*=colorBrand_] svg[class^=premiumIcon] {
-  color: #ea80cd;
+  color: #ea80cd !important;
 }
 
 .theme-dark [class*=lookLink_][class*=colorPrimary_],
@@ -585,6 +585,9 @@ div[class^=contentRegion] #discord-nitro-tab div[class*=description_] {
 }
 div[class^=contentRegion] #discord-nitro-tab div[class*=card_] {
   color: #cdd6f4;
+}
+div[class^=contentRegion] #discord-nitro-tab div[class*=card_] div[class^=item] div {
+  color: #cdd6f4 !important;
 }
 div[class^=contentRegion] #discord-nitro-tab button[class*=lookInverted_] {
   color: #11111b;
@@ -761,6 +764,9 @@ div[class^=contentRegion] #family-center-tab div[class^=featureCards] svg[class^
 }
 div[class^=contentRegion] #profile-customization-tab div[class*=premiumFeatureBannerBackground] button {
   color: #11111b;
+}
+div[class^=contentRegion] #profile-customization-tab div[class^=imageUploaderIcon_] {
+  background-color: #cdd6f4;
 }
 div[class^=contentRegion] #appearance-tab div[class^=selectionCircle] {
   box-shadow: inset 0 0 0 2px #89b4fa, inset 0 0 0 4px var(--background-primary);
@@ -1007,6 +1013,51 @@ div[class^=standardSidebarView] div[class^=noticeRegion] div[class^=actions] but
 }
 div[class^=standardSidebarView] div[class^=noticeRegion] div[class^=actions] button:hover {
   background-color: #eabdb4;
+}
+
+div[class^=premiumFeatureBorder] {
+  background: linear-gradient(#11111b, #11111b) padding-box, linear-gradient(45deg, #cba6f7, #f5c2e7) border-box;
+}
+div[class^=premiumFeatureBorder] div[class^=premiumBackground] {
+  background: linear-gradient(45deg, rgba(203, 166, 247, 0.1), rgba(245, 194, 231, 0.1) 100%) border-box;
+}
+
+div[class*=applicationStore] div[class*=premiumContainer] div[class^=premiumCards] svg g {
+  fill: #cdd6f4;
+}
+div[class*=applicationStore] div[class*=premiumContainer] div[class^=premiumCards] div[class*=item] div[class^=text] {
+  color: #cdd6f4 !important;
+}
+div[class*=applicationStore] div[class*=premiumContainer] div[class^=premiumCards] h2, div[class*=applicationStore] div[class*=premiumContainer] div[class^=premiumCards] h2 span {
+  color: #cdd6f4 !important;
+}
+div[class*=applicationStore] div[class*=premiumContainer] div[class^=premiumCards] span[class^=buttonText] {
+  color: #11111b;
+}
+div[class*=applicationStore] div[class*=premiumContainer] div[class^=fullscreenTextContainer] div[class*=premiumSubscribeButton] span[class^=buttonText],
+div[class*=applicationStore] div[class*=premiumContainer] div[class^=innerWrapper] div[class*=premiumSubscribeButton] span[class^=buttonText] {
+  color: #11111b;
+}
+
+div[class^=shop] div[class^=heroBanner] div[class^=heroDescription] h2[class*=bannerTitle],
+div[class^=shop] div[class^=heroBanner] div[class^=heroDescription] div[class^=text] {
+  color: #cdd6f4 !important;
+}
+div[class^=shop] div[class^=heroBanner] div[class^=heroDescription] div[class*=premiumSubscribeButton] span[class^=buttonText] {
+  color: #11111b;
+}
+div[class^=shop] div[class^=shopCard] div[class^=innerHover] button[class^=previewButton] svg path {
+  fill: #11111b;
+}
+div[class^=shop] div[class^=bannerCard] div[class^=badge] svg path {
+  fill: #11111b;
+}
+
+div[class^=layerContainer] div[class^=collectibleInfoContainer] button[class^=shinyButton] svg {
+  fill: #f5c2e7;
+}
+div[class^=layerContainer] div[class^=collectibleInfoContainer] button[class^=shinyButton] span {
+  color: #11111b !important;
 }
 
 nav[class*=guilds_] foreignObject > div[data-list-item-id*=guildsnav_]:hover > div[class^=childWrapper], nav[class*=guilds_] foreignObject > div[data-list-item-id*=guildsnav_][class*=selected] > div[class^=childWrapper] {
@@ -1356,8 +1407,11 @@ div[class^=messagesWrapper] ol[class^=scrollerInner] > div[class^=container]:not
   color: #11111b;
 }
 
-[class*=barButtonBase_] {
+div[class^=jumpToPresentBar] button[class*=barButtonBase_] {
   color: #11111b !important;
+}
+div[class^=jumpToPresentBar] span[class^=item] {
+  background-color: #11111b;
 }
 
 div[class^=callContainer] [class*=controlIcon_] {
@@ -1496,7 +1550,8 @@ div[class*=chat_] div[class*=content_][class*=container_] div[role=tablist] {
   background-color: #181825;
   border-bottom: 2px solid #313244;
 }
-div[class*=chat_] div[class*=content_][class*=container_] div[role=tablist] [class*=textBadge_] {
+
+[class*=textBadge_] {
   color: #11111b;
 }
 
@@ -1545,8 +1600,9 @@ div[class*=chat_] div[class*=innerHeader]:after {
   color: #1e1e2e;
 }
 
-div[class^=chat][class*=page_] div[class^=content][class*=container_] {
-  height: 100%;
+div[class^=chat][class*=page_],
+div[class^=chat][class*=page_] div[class*=content_][class*=container_] {
+  background-color: #11111b;
 }
 
 div[class^=chat] div[class^=homeContainer] {
@@ -1586,12 +1642,18 @@ div[class^=layerContainer] [role=menu] [class*=colorDefault][class*=focused]:not
 div[class^=layerContainer] [role=menu] [class*=colorDefault][class*=focused] [class*=checkbox_] {
   color: var(--interactive-normal);
 }
-div[class^=layerContainer] [role=menu] [class*=colorDefault][role=menuitem]:not([class*=colorDanger]):not([id*=user-context-user-volume]):hover {
-  background: var(--background-accent);
+div[class^=layerContainer] [role=menu] [class*=colorDefault][role=menuitem]:not([class*=colorDanger],
+[id*=user-context-user-volume]):hover {
   color: #11111b;
 }
-div[class^=layerContainer] [role=menu] [class*=colorDefault][role=menuitem]:not([class*=colorDanger]):not([id*=user-context-user-volume]):hover [class*=subtext],
-div[class^=layerContainer] [role=menu] [class*=colorDefault][role=menuitem]:not([class*=colorDanger]):not([id*=user-context-user-volume]):hover [class*=caret_] {
+div[class^=layerContainer] [role=menu] [class*=colorDefault][role=menuitem]:not([class*=colorDanger],
+[id*=user-context-user-volume]):hover:not([class*=colorPremiumGradient]) {
+  background: var(--background-accent);
+}
+div[class^=layerContainer] [role=menu] [class*=colorDefault][role=menuitem]:not([class*=colorDanger],
+[id*=user-context-user-volume]):hover [class*=subtext],
+div[class^=layerContainer] [role=menu] [class*=colorDefault][role=menuitem]:not([class*=colorDanger],
+[id*=user-context-user-volume]):hover [class*=caret_] {
   color: #11111b;
 }
 div[class^=layerContainer] [role=menu] [class*=colorDefault] [class*=caret] {
@@ -1608,6 +1670,9 @@ div[class^=layerContainer] [role=menu] [class*=colorDefault]:active:not([class*=
 }
 div[class^=layerContainer] [role=menu] [class*=colorDefault]:active:not([class*=hideInteraction_]) [class*=checkbox_] {
   color: var(--background-floating);
+}
+div[class^=layerContainer] [role=menu] [class*=colorDefault]:active:not([class*=hideInteraction_]) [class*=colorPremiumGradient] {
+  background: linear-gradient(270deg, var(--premium-tier-2-pink-for-gradients) 0%, var(--premium-tier-2-pink-for-gradients-2) 33.63%, var(--premium-tier-2-purple-for-gradients) 100%);
 }
 div[class^=layerContainer] [role=menu] div[id^=account-switch-account][class*=focused] div[class*=userMenuUsername] div {
   color: #11111b;
@@ -2093,6 +2158,24 @@ div[class*=phoneFieldPopout] div[class^=countryCode] {
 
 div[class^=layerContainer] div[class*=modalContent] > div[class^=container] div[class^=iconContainer] div[class^=icon] {
   filter: url('data:image/svg+xml;utf8,    <svg xmlns="http://www.w3.org/2000/svg">      <filter id="ctp-recolor" color-interpolation-filters="sRGB">        <feColorMatrix type="matrix" values="          0 0 0 0 0.0666666667          0 0 0 0 0.0666666667          0 0 0 0 0.1058823529          0 0 0 1 0        "/>      </filter>    </svg>    #ctp-recolor');
+}
+
+div[class^=layerContainer] div[class*=enterDone] div[class^=guildBoostCta] button[class^=shinyButton] div[class^=content] {
+  color: #11111b;
+}
+div[class^=layerContainer] div[class*=enterDone] ul[class^=cards] li[class^=card] {
+  background-color: #1e1e2e;
+}
+div[class^=layerContainer] div[class*=enterDone] svg[class^=boostedTierIcon] path,
+div[class^=layerContainer] div[class*=enterDone] svg[class^=boostedTierIcon] g {
+  fill: #11111b;
+}
+
+div[class^=layerContainer] div[class^=streamPreview] div[class^=body] {
+  background-color: #181825 !important;
+}
+div[class^=layerContainer] div[class^=streamPreview] div[class^=body] div[class^=activityStreamPreview] div[class*=content], div[class^=layerContainer] div[class^=streamPreview] div[class^=body] div[class^=activityStreamPreview] div[class*=content] div {
+  color: #cdd6f4 !important;
 }
 
 rect[fill="#23a55a"],
