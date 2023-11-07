@@ -1468,6 +1468,10 @@ div[class^=callContainer] div[class^=videoControls] div[class^=toolbar] div[clas
   background-color: #ed8796 !important;
   color: #181926 !important;
 }
+div[class^=callContainer] div[class^=videoControls] div[class^=toolbar] div[class*=clipsEnabledIndicator] div[class^=clipBadge] {
+  background-color: #8bd5ca !important;
+  color: #181926;
+}
 div[class^=callContainer] div[class^=videoControls] button[class*=leftTrayIcon_][class*=buttonColor_] {
   background-color: #363a4f;
   color: #cad3f5;
@@ -1480,6 +1484,9 @@ div[class^=callContainer] div[class^=videoControls] [class*=colorable_][class*=r
 }
 div[class^=callContainer] div[class^=videoControls] [class*=colorable_][class*=red_] [class*=centerIcon_] {
   color: #181926;
+}
+div[class^=callContainer] div[class^=videoControls] [class*=colorable_][class*=red_] svg[class^=contextMenuCaret] path {
+  stroke: #181926 !important;
 }
 div[class^=callContainer] div[class^=videoControls] [class*=colorable_][class*=primaryDark_] {
   background: #494d64;
@@ -2159,6 +2166,10 @@ div[class*=phoneFieldPopout] {
 div[class*=phoneFieldPopout] div[class^=countryName],
 div[class*=phoneFieldPopout] div[class^=countryCode] {
   color: #cad3f5 !important;
+}
+
+div[class^=customColorPicker] {
+  background: #1e2030 !important;
 }
 
 div[class^=layerContainer] div[class*=modalContent] > div[class^=container] div[class^=iconContainer] div[class^=icon] {
