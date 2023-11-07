@@ -751,6 +751,11 @@ div[class*="phoneFieldPopout"] {
   }
 }
 
+// Color Picker Popout
+div[class^="customColorPicker"] {
+  background: $mantle !important;
+}
+
 // Student hub icon
 div[class^="layerContainer"]
   div[class*="modalContent"]
