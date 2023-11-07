@@ -437,6 +437,14 @@ div[class^="callContainer"] {
         background-color: $red !important;
         color: $crust !important;
       }
+
+      div[class*="clipsEnabledIndicator"] {
+        // This covers clipBadgeIcon and clipBadgeText
+        div[class^="clipBadge"] {
+          background-color: $brand !important;
+          color: $crust;
+        }
+      }
     }
 
     button[class*="leftTrayIcon_"][class*="buttonColor_"] {
@@ -454,6 +462,10 @@ div[class^="callContainer"] {
 
         [class*="centerIcon_"] {
           color: $crust;
+        }
+
+        svg[class^="contextMenuCaret"] path {
+          stroke: $crust !important;
         }
       }
 
