@@ -49,7 +49,7 @@ div[class^="contentRegion"] {
   }
 
   // color bars with ticks
-  [class^="bar"],
+  [class^="bar"] :not(div[class^="barFill"]),
   [class^="markDash"] {
     background: $surface1;
   }
@@ -217,6 +217,10 @@ div[class^="contentRegion"] {
   [id="voice-&-video-tab"] {
     div[class^="backgroundOptionRing"] {
       border-color: $brand;
+    }
+
+    div[class^="micTest"] svg[class^="notches"] {
+      color: $base;
     }
   }
 
