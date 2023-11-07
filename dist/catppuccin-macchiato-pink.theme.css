@@ -517,7 +517,7 @@ div[class^=contentRegion] div[class^=streamerModeEnabledBtn] {
   background-color: #c6a0f6;
   color: #181926;
 }
-div[class^=contentRegion] [class^=bar],
+div[class^=contentRegion] [class^=bar] :not(div[class^=barFill]),
 div[class^=contentRegion] [class^=markDash] {
   background: #494d64;
 }
@@ -633,6 +633,9 @@ div[class^=contentRegion] #billing-tab div[class^=codeRedemptionRedirect] {
 }
 div[class^=contentRegion] [id="voice-&-video-tab"] div[class^=backgroundOptionRing] {
   border-color: #f5bde6;
+}
+div[class^=contentRegion] [id="voice-&-video-tab"] div[class^=micTest] svg[class^=notches] {
+  color: #24273a;
 }
 div[class^=contentRegion] #notifications-tab button[class*=marketingUnsubscribeButton_] {
   color: #cad3f5;
