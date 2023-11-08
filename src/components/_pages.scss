@@ -860,3 +860,10 @@ div[class^="layerContainer"] div[class^="collectibleInfoContainer"] {
     }
   }
 }
+
+// Audit log
+div[class^="auditLog"] {
+  div[class^="headerClickable"] {
+    background-color: rgba($crust, 0.3) !important;
+  }
+}

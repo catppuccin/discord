@@ -134,6 +134,8 @@ html {
   --brand-500: #{$brand};
   --brand-560: #{darken($brand, math.div(20%, 2))};
 
+  --primary-100: #{$subtext1};
+  --primary-300: #{$subtext1};
   --primary-400: #{$subtext1};
   --primary-dark-700: #{$crust};
 
