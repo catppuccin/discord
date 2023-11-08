@@ -810,6 +810,9 @@ div[class^=contentRegion] #onboarding-tab div[class^=badExample] div[class^=exam
 div[class^=contentRegion] #onboarding-tab div[class^=homeBannerExplainer] div[class*=upsellButtonInner] div[class^=text-sm-medium] {
   color: #181926 !important;
 }
+div[class^=contentRegion] #developer-options-tab kbd {
+  color: #181926;
+}
 
 .bd-settings-title {
   color: #cad3f5;
@@ -2290,34 +2293,22 @@ span[class*=username_][style*="color: rgb(53, 57, 64)"] {
   color: var(--background-primary) !important;
 }
 
-div[class*=flowerStarContainer_][class*=boostedGuildTierIconBackgroundWithVisibleBanner] svg[class*=flowerStar_] * {
-  fill: #fff;
-}
-div[class*=flowerStarContainer_][class*=boostedGuildTierIconBackgroundWithVisibleBanner] div[class^=childContainer] svg * {
-  fill: #181926;
-}
-div[class*=flowerStarContainer_][class*=iconBackgroundTierOne_] svg[class*=flowerStar_] *, div[class*=flowerStarContainer_][class*=iconBackgroundTierTwo_]:not([class*=boostedGuildTierIconBackgroundWithVisibleBanner]) svg[class*=flowerStar_] * {
-  fill: #5b6078;
-}
-div[class*=flowerStarContainer_][class*=iconBackgroundTierOne_] div[class^=childContainer] svg *, div[class*=flowerStarContainer_][class*=iconBackgroundTierTwo_]:not([class*=boostedGuildTierIconBackgroundWithVisibleBanner]) div[class^=childContainer] svg * {
-  fill: #cad3f5;
-}
-div[class*=flowerStarContainer_][class*=iconBackgroundTierThree_] svg[class*=flowerStar_] * {
-  fill: #f5bde6;
-}
-div[class*=flowerStarContainer_][class*=iconBackgroundTierThree_] div[class^=childContainer] svg * {
-  fill: #181926;
-}
-div[class*=flowerStarContainer_][class*=verified_] svg[class*=flowerStar_] * {
+div[class^=flowerStarContainer][class*=verified_] svg[class^=flowerStar] path {
   fill: #a6da95;
 }
-div[class*=flowerStarContainer_][class*=verified_] div[class^=childContainer] svg * {
-  fill: #181926;
+div[class^=flowerStarContainer][class*=iconBackgroundTierOne_] svg[class*=flowerStar_] path, div[class^=flowerStarContainer][class*=iconBackgroundTierTwo_] svg[class*=flowerStar_] path {
+  fill: #5b6078;
 }
-div[class*=flowerStarContainer_][class*=partnered_] svg[class*=flowerStar_] * {
+div[class^=flowerStarContainer][class*=iconBackgroundTierOne_] div[class^=childContainer] svg path, div[class^=flowerStarContainer][class*=iconBackgroundTierTwo_] div[class^=childContainer] svg path {
+  fill: #cad3f5;
+}
+div[class^=flowerStarContainer][class*=iconBackgroundTierThree_] svg[class*=flowerStar_] path {
+  fill: #f5bde6;
+}
+div[class^=flowerStarContainer][class*=partnered_] svg[class^=flowerStar] path {
   fill: #91d7e3;
 }
-div[class*=flowerStarContainer_][class*=partnered_] div[class^=childContainer] svg * {
+div[class^=flowerStarContainer] div[class^=childContainer] svg path {
   fill: #181926;
 }
 
