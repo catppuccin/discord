@@ -123,6 +123,8 @@ html {
   --red-400: #ed8796;
   --brand-500: #f5a97f;
   --brand-560: #f18950;
+  --primary-100: #b8c0e0;
+  --primary-300: #b8c0e0;
   --primary-400: #b8c0e0;
   --primary-dark-700: #181926;
   --status-green-560: #a6da95;
@@ -1064,6 +1066,10 @@ div[class^=layerContainer] div[class^=collectibleInfoContainer] button[class^=sh
 }
 div[class^=layerContainer] div[class^=collectibleInfoContainer] button[class^=shinyButton] span {
   color: #181926 !important;
+}
+
+div[class^=auditLog] div[class^=headerClickable] {
+  background-color: rgba(24, 25, 38, 0.3) !important;
 }
 
 nav[class*=guilds_] foreignObject > div[data-list-item-id*=guildsnav_]:hover > div[class^=childWrapper], nav[class*=guilds_] foreignObject > div[data-list-item-id*=guildsnav_][class*=selected] > div[class^=childWrapper] {
