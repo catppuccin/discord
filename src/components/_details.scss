@@ -105,53 +105,37 @@ span[class*="username_"][style*="color: rgb(53, 57, 64)"] {
 }
 
 // server badges
-div[class*="flowerStarContainer_"] {
-  &[class*="boostedGuildTierIconBackgroundWithVisibleBanner"] {
-    svg[class*="flowerStar_"] * {
-      fill: #fff;
-    }
-    div[class^="childContainer"] svg * {
-      fill: $crust;
+div[class^="flowerStarContainer"] {
+  &[class*="verified_"] {
+    svg[class^="flowerStar"] path {
+      fill: $green;
     }
   }
 
   &[class*="iconBackgroundTierOne_"],
-  &[class*="iconBackgroundTierTwo_"]:not(
-      [class*="boostedGuildTierIconBackgroundWithVisibleBanner"]
-    ) {
-    svg[class*="flowerStar_"] * {
+  &[class*="iconBackgroundTierTwo_"] {
+    svg[class*="flowerStar_"] path {
       fill: $surface2;
     }
-    div[class^="childContainer"] svg * {
+    div[class^="childContainer"] svg path {
       fill: $text;
     }
   }
 
   &[class*="iconBackgroundTierThree_"] {
-    svg[class*="flowerStar_"] * {
+    svg[class*="flowerStar_"] path {
       fill: $pink;
-    }
-    div[class^="childContainer"] svg * {
-      fill: $crust;
-    }
-  }
-
-  &[class*="verified_"] {
-    svg[class*="flowerStar_"] * {
-      fill: $green;
-    }
-    div[class^="childContainer"] svg * {
-      fill: $crust;
     }
   }
 
   &[class*="partnered_"] {
-    svg[class*="flowerStar_"] * {
+    svg[class^="flowerStar"] path {
       fill: $brand;
     }
-    div[class^="childContainer"] svg * {
-      fill: $crust;
-    }
+  }
+
+  div[class^="childContainer"] svg path {
+    fill: $crust;
   }
 }
 

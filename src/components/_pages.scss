@@ -498,6 +498,12 @@ div[class^="contentRegion"] {
       color: $crust !important;
     }
   }
+
+  #developer-options-tab {
+    kbd {
+      color: $crust;
+    }
+  }
 }
 
 .bd-settings-title {
