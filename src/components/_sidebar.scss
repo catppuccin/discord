@@ -68,3 +68,9 @@ div[class*="liveSmall_"] {
   background-color: $red !important;
   color: $crust;
 }
+
+// # In Voice icon
+// "YOU. I FOUND YOU." ~ Aven
+div[class^="bar"] svg[class^="voiceChannelsIcon"] path {
+  fill: $green !important;
+}
