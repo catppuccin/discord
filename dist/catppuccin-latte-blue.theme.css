@@ -1421,6 +1421,10 @@ div[class*=liveSmall_] {
   color: #dce0e8;
 }
 
+div[class^=bar] svg[class^=voiceChannelsIcon] path {
+  fill: #40a02b !important;
+}
+
 [class^=chatContent] div[class*=wrapperAudio_] div[class*=audioControls],
 [class^=chatContent] div[class*=wrapperAudio_] div[class*=videoControls_],
 [class^=chatContent] div[class*=imageWrapper_] div[class*=audioControls],
