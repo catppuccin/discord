@@ -146,3 +146,8 @@ div[role="radio"][class*="selected"] {
   > [class*="premiumIcon_"] {
   color: $crust !important;
 }
+
+// Create a server back button
+div[class^="layerContainer"] button[class^="backButton"][class*="lookBlank"] {
+  color: $text;
+}
