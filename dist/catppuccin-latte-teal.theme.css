@@ -2690,6 +2690,10 @@ div[class^=checkbox][class*=checked_] svg path {
   fill: #dce0e8 !important;
 }
 
+path[class^=updateIconForeground] {
+  fill: #40a02b !important;
+}
+
 .theme-light code.hljs {
   color: #4c4f69;
   background: #eff1f5;

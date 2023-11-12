@@ -2442,6 +2442,10 @@ div[class^=checkbox][class*=checked_] svg path {
   fill: #232634 !important;
 }
 
+path[class^=updateIconForeground] {
+  fill: #a6d189 !important;
+}
+
 .theme-dark code.hljs {
   color: #c6d0f5;
   background: #303446;
