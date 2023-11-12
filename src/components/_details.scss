@@ -297,3 +297,8 @@ div[class^="checkbox"][class*="checked_"] {
     fill: $crust !important;
   }
 }
+
+// header update icon
+path[class^="updateIconForeground"] {
+  fill: $green !important;
+}
