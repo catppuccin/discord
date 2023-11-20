@@ -127,6 +127,7 @@ html {
   --primary-300: #b8c0e0;
   --primary-400: #b8c0e0;
   --primary-dark-700: #181926;
+  --primary-800: #181926;
   --status-green-560: #a6da95;
   --white-400: #cad3f5;
   --white-500: #cad3f5;
@@ -1294,15 +1295,51 @@ main[class^=chatContent] div[id^=message-content] svg[class^=icon] > path[d="M2 
   background-color: #666c87;
 }
 .theme-dark span[class*=spoilerMarkdownContent] h1 > span,
-.theme-light span[class*=spoilerMarkdownContent] h1 > span {
+.theme-dark span[class*=spoilerMarkdownContent] h2 > span,
+.theme-dark span[class*=spoilerMarkdownContent] h3 > span,
+.theme-dark span[class*=spoilerMarkdownContent] h4 > span,
+.theme-dark span[class*=spoilerMarkdownContent] h5 > span,
+.theme-dark span[class*=spoilerMarkdownContent] ul li > span,
+.theme-dark span[class*=spoilerMarkdownContent] ol li > span,
+.theme-light span[class*=spoilerMarkdownContent] h1 > span,
+.theme-light span[class*=spoilerMarkdownContent] h2 > span,
+.theme-light span[class*=spoilerMarkdownContent] h3 > span,
+.theme-light span[class*=spoilerMarkdownContent] h4 > span,
+.theme-light span[class*=spoilerMarkdownContent] h5 > span,
+.theme-light span[class*=spoilerMarkdownContent] ul li > span,
+.theme-light span[class*=spoilerMarkdownContent] ol li > span {
   background-color: #363a4f;
 }
 .theme-dark span[class*=spoilerMarkdownContent][class*=hidden] h1 > span,
-.theme-light span[class*=spoilerMarkdownContent][class*=hidden] h1 > span {
+.theme-dark span[class*=spoilerMarkdownContent][class*=hidden] h2 > span,
+.theme-dark span[class*=spoilerMarkdownContent][class*=hidden] h3 > span,
+.theme-dark span[class*=spoilerMarkdownContent][class*=hidden] h4 > span,
+.theme-dark span[class*=spoilerMarkdownContent][class*=hidden] h5 > span,
+.theme-dark span[class*=spoilerMarkdownContent][class*=hidden] ul li > span,
+.theme-dark span[class*=spoilerMarkdownContent][class*=hidden] ol li > span,
+.theme-light span[class*=spoilerMarkdownContent][class*=hidden] h1 > span,
+.theme-light span[class*=spoilerMarkdownContent][class*=hidden] h2 > span,
+.theme-light span[class*=spoilerMarkdownContent][class*=hidden] h3 > span,
+.theme-light span[class*=spoilerMarkdownContent][class*=hidden] h4 > span,
+.theme-light span[class*=spoilerMarkdownContent][class*=hidden] h5 > span,
+.theme-light span[class*=spoilerMarkdownContent][class*=hidden] ul li > span,
+.theme-light span[class*=spoilerMarkdownContent][class*=hidden] ol li > span {
   background-color: #5b6078;
 }
-.theme-dark span[class*=spoilerMarkdownContent][class*=hidden] h1 > span:hover,
-.theme-light span[class*=spoilerMarkdownContent][class*=hidden] h1 > span:hover {
+.theme-dark span[class*=spoilerMarkdownContent][class*=hidden]:hover h1 > span,
+.theme-dark span[class*=spoilerMarkdownContent][class*=hidden]:hover h2 > span,
+.theme-dark span[class*=spoilerMarkdownContent][class*=hidden]:hover h3 > span,
+.theme-dark span[class*=spoilerMarkdownContent][class*=hidden]:hover h4 > span,
+.theme-dark span[class*=spoilerMarkdownContent][class*=hidden]:hover h5 > span,
+.theme-dark span[class*=spoilerMarkdownContent][class*=hidden]:hover ul li > span,
+.theme-dark span[class*=spoilerMarkdownContent][class*=hidden]:hover ol li > span,
+.theme-light span[class*=spoilerMarkdownContent][class*=hidden]:hover h1 > span,
+.theme-light span[class*=spoilerMarkdownContent][class*=hidden]:hover h2 > span,
+.theme-light span[class*=spoilerMarkdownContent][class*=hidden]:hover h3 > span,
+.theme-light span[class*=spoilerMarkdownContent][class*=hidden]:hover h4 > span,
+.theme-light span[class*=spoilerMarkdownContent][class*=hidden]:hover h5 > span,
+.theme-light span[class*=spoilerMarkdownContent][class*=hidden]:hover ul li > span,
+.theme-light span[class*=spoilerMarkdownContent][class*=hidden]:hover ol li > span {
   background-color: #666c87;
 }
 .theme-dark div[class^=spoilerContainer] div[class^=spoilerWarning],
@@ -1817,7 +1854,10 @@ section[class*=positionContainer_] button[class*=navButtonActive] {
   color: #181926;
 }
 
-.theme-light section[class^=positionContainer] div[class^=categoryText] {
+.theme-light #gif-picker-tab-panel {
+  background-color: unset;
+}
+.theme-light #gif-picker-tab-panel div[class^=categoryText] {
   color: #24273a;
 }
 
@@ -2216,6 +2256,13 @@ div[class^=layerContainer] div[class^=streamPreview] div[class^=body] div[class^
   color: #cad3f5 !important;
 }
 
+div[class^=layerContainer] div[class^=eventStatusContainer] div[class^=newBadge] {
+  background-color: #b7bdf8 !important;
+}
+div[class^=layerContainer] div[class^=eventStatusContainer] div[class^=newBadge] div[class*=newBadgeText_] {
+  color: #181926;
+}
+
 rect[fill="#23a55a"],
 foreignObject[mask="url(#svg-mask-status-online)"] > div,
 div[class^=dotOnline],
@@ -2249,6 +2296,7 @@ rect[fill="rgba(242, 63, 67, 1)"] {
 }
 
 rect[fill="#82858f"],
+rect[fill="#80848e"],
 foreignObject[mask="url(#svg-mask-status-offline)"] > div,
 foreignObject[mask="url(#svg-mask-status-offline)"] > rect,
 div[class^=dotOffline],
