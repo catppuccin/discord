@@ -35,6 +35,7 @@ rect[fill="rgba(242, 63, 67, 1)"] {
 
 // offline
 rect[fill="#82858f"],
+rect[fill="#80848e"],
 foreignObject[mask="url(#svg-mask-status-offline)"] > div,
 foreignObject[mask="url(#svg-mask-status-offline)"] > rect,
 div[class^="dotOffline"],

@@ -247,9 +247,12 @@ section[class*="positionContainer_"] {
   }
 }
 
-// Latte text color on gif categories
-.theme-light section[class^="positionContainer"] div[class^="categoryText"] {
-  color: $base;
+// Latte gif picker
+.theme-light #gif-picker-tab-panel {
+  background-color: unset;
+  div[class^="categoryText"] {
+    color: $base;
+  }
 }
 
 #emoji-picker-tab-panel {
