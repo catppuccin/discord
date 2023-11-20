@@ -140,6 +140,20 @@ main[class^="chatContent"] div[id^="message-content"] svg[class^="icon"] {
   }
 }
 
+@mixin header-list($bgc) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  ul li,
+  ol li {
+    & > span {
+      background-color: $bgc;
+    }
+  }
+}
+
 // spoiler messages
 .theme-dark,
 .theme-light {
@@ -157,15 +171,16 @@ main[class^="chatContent"] div[id^="message-content"] svg[class^="icon"] {
   }
 
   span[class*="spoilerMarkdownContent"] {
-    h1 > span {
-      background-color: $surface0;
-    }
+    @include header-list($surface0);
+    //background-color: $surface0;
 
-    &[class*="hidden"] h1 > span {
-      background-color: $surface2;
+    &[class*="hidden"] {
+      //background-color: $surface2;
+      @include header-list($surface2);
 
       &:hover {
-        background-color: lighten($surface2, 5%);
+        //background-color: lighten($surface2, 5%);
+        @include header-list(lighten($surface2, 5%));
       }
     }
   }

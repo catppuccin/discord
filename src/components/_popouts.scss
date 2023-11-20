@@ -796,3 +796,14 @@ div[class^="layerContainer"] div[class^="streamPreview"] div[class^="body"] {
     }
   }
 }
+
+// Event popout
+div[class^="layerContainer"] div[class^="eventStatusContainer"] {
+  div[class^="newBadge"] {
+    background-color: $brand !important;
+
+    div[class*="newBadgeText_"] {
+      color: $crust;
+    }
+  }
+}
