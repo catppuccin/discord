@@ -247,9 +247,12 @@ section[class*="positionContainer_"] {
   }
 }
 
-// Latte text color on gif categories
-.theme-light section[class^="positionContainer"] div[class^="categoryText"] {
-  color: $base;
+// Latte gif picker
+.theme-light #gif-picker-tab-panel {
+  background-color: unset;
+  div[class^="categoryText"] {
+    color: $base;
+  }
 }
 
 #emoji-picker-tab-panel {
@@ -793,6 +796,17 @@ div[class^="layerContainer"] div[class^="streamPreview"] div[class^="body"] {
     &,
     & div {
       color: $text !important;
+    }
+  }
+}
+
+// Event popout
+div[class^="layerContainer"] div[class^="eventStatusContainer"] {
+  div[class^="newBadge"] {
+    background-color: $brand !important;
+
+    div[class*="newBadgeText_"] {
+      color: $crust;
     }
   }
 }
