@@ -303,3 +303,17 @@ div[class^="checkbox"][class*="checked_"] {
 path[class^="updateIconForeground"] {
   fill: $green !important;
 }
+
+// revoke invite button
+div[class^="button"][class*="revokeInvite_"] {
+  background-color: $crust;
+  background-image: url("data:image/svg+xml,%3Csvg height='18' viewBox='0 0 18 18' width='18' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='m14.25 4.808-1.057-1.058-4.193 4.192-4.192-4.192-1.058 1.058 4.192 4.192-4.192 4.193 1.058 1.057 4.192-4.193 4.193 4.193 1.057-1.057-4.193-4.193z' fill='rgb(#{red($red), green($red), blue($red)})' fill-rule='nonzero'/%3E%3Cpath d='m0 0h18v18h-18z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+// Loading tip keys
+div[class*="fixClipping"]
+  div[class^="tip"]
+  div[class*="keybind"]
+  span[class^="key"] {
+  color: $crust;
+}

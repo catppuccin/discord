@@ -810,3 +810,10 @@ div[class^="layerContainer"] div[class^="eventStatusContainer"] {
     }
   }
 }
+
+// Toasts
+div[class^="containerTop"] div[class^="toast"] {
+  svg path[fill="#3BA55C"] {
+    fill: $green !important;
+  }
+}

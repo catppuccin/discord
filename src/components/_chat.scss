@@ -594,10 +594,12 @@ div[class*="chat_"] {
   }
 
   // Search Results Active Button
-  nav[class*="pageControl"]
-    div[class*="roundButton"][class*="activeButton"]
+  @at-root nav[class*="pageControl"]
+      div[class*="roundButton"][class*="activeButton"] {
+    &,
     span {
-    color: $crust;
+      color: $crust;
+    }
   }
 }
 
