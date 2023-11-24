@@ -1873,7 +1873,8 @@ div[class*=chat_] section[class*=title] div[class*=searchBar] span[class*=search
   background-color: #ccd0da;
   color: #4c4f69;
 }
-div[class*=chat_] nav[class*=pageControl] div[class*=roundButton][class*=activeButton] span {
+nav[class*=pageControl] div[class*=roundButton][class*=activeButton],
+nav[class*=pageControl] div[class*=roundButton][class*=activeButton] span {
   color: #dce0e8;
 }
 
@@ -2511,6 +2512,10 @@ div[class^=layerContainer] div[class^=eventStatusContainer] div[class^=newBadge]
   color: #dce0e8;
 }
 
+div[class^=containerTop] div[class^=toast] svg path[fill="#3BA55C"] {
+  fill: #40a02b !important;
+}
+
 rect[fill="#23a55a"],
 foreignObject[mask="url(#svg-mask-status-online)"] > div,
 div[class^=dotOnline],
@@ -2740,6 +2745,15 @@ div[class^=checkbox][class*=checked_] svg path {
 
 path[class^=updateIconForeground] {
   fill: #40a02b !important;
+}
+
+div[class^=button][class*=revokeInvite_] {
+  background-color: #dce0e8;
+  background-image: url("data:image/svg+xml,%3Csvg height='18' viewBox='0 0 18 18' width='18' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='m14.25 4.808-1.057-1.058-4.193 4.192-4.192-4.192-1.058 1.058 4.192 4.192-4.192 4.193 1.058 1.057 4.192-4.193 4.193 4.193 1.057-1.057-4.193-4.193z' fill='rgb(210, 15, 57)' fill-rule='nonzero'/%3E%3Cpath d='m0 0h18v18h-18z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+div[class*=fixClipping] div[class^=tip] div[class*=keybind] span[class^=key] {
+  color: #dce0e8;
 }
 
 .theme-light code.hljs {
