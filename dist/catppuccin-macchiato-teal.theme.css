@@ -2508,6 +2508,16 @@ div[class*=fixClipping] div[class^=tip] div[class*=keybind] span[class^=key] {
   color: #181926;
 }
 
+div[class*=actions_] button[class*=green_] {
+  background: #a6da95;
+}
+div[class*=actions_] button[class*=red_] {
+  background: #ed8796;
+}
+div[class*=actions_] button svg > path {
+  fill: #181926 !important;
+}
+
 .theme-dark code.hljs {
   color: #cad3f5;
   background: #24273a;
