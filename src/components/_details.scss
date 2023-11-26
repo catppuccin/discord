@@ -317,3 +317,18 @@ div[class*="fixClipping"]
   span[class^="key"] {
   color: $crust;
 }
+
+// Call buttons
+div[class*="actions_"] {
+  button[class*="green_"] {
+    background: $green;
+  }
+
+  button[class*="red_"] {
+    background: $red;
+  }
+
+  button svg > path {
+    fill: $crust !important;
+  }
+}
