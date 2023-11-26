@@ -2265,6 +2265,7 @@ div[class^=layerContainer] > div[class*=layer] div[class^=focusLock][aria-label=
   background-color: #e6e9ef;
 }
 div[class^=layerContainer] > div[class*=layer] div[class^=checkbox][class*=checked_] {
+  background-color: #40a02b;
   border: none;
 }
 div[class^=layerContainer] > div[class*=layer] div[class^=checkbox][class*=checked_] svg path {
