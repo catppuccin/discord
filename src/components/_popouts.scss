@@ -456,6 +456,7 @@ div[class^="layerContainer"] {
     // Checkbox toggles
     div[class^="checkbox"] {
       &[class*="checked_"] {
+        background-color: $brand;
         border: none;
 
         svg path {
