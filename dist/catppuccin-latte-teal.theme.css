@@ -485,6 +485,8 @@ html {
   --interactive-hover: #4c4f69;
   --interactive-active: #4c4f69;
   --search-popout-option-non-text-color: #6c6f85;
+  --__spoiler-background-color--hidden: #acb0be;
+  --__spoiler-warning-background-color: #babec9;
 }
 
 ::selection {
@@ -1589,6 +1591,11 @@ main[class^=chatContent] div[id^=message-content] svg[class^=icon] > path[d="M2 
 .theme-light span[class*=spoilerMarkdownContent][class*=hidden]:hover ul li > span,
 .theme-light span[class*=spoilerMarkdownContent][class*=hidden]:hover ol li > span {
   background-color: #babec9;
+}
+.theme-dark span[class*=spoilerMarkdownContent] pre div[class^=codeContainer]:hover,
+.theme-light span[class*=spoilerMarkdownContent] pre div[class^=codeContainer]:hover {
+  background-color: #babec9;
+  border-radius: 4px;
 }
 .theme-dark div[class^=spoilerContainer] div[class^=spoilerWarning],
 .theme-light div[class^=spoilerContainer] div[class^=spoilerWarning] {
