@@ -292,6 +292,9 @@ html {
   --interactive-active: #{$text};
 
   --search-popout-option-non-text-color: #{$subtext0};
+
+  --__spoiler-background-color--hidden: #{$surface2};
+  --__spoiler-warning-background-color: #{lighten($surface2, 5%)};
 }
 
 ::selection {
