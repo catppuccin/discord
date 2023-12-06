@@ -36,17 +36,12 @@
 
 ## Usage
 
-- Choose any flavor and accent color
-- Copy this link and change `flavor` with `accent`:
->https://raw.githubusercontent.com/riivx/vendetta/main/flavor/accent.json
+- Choose any flavor
+- Copy this link and change `flavor` to Latte, Frappe, Macchiato or Mocha:
+>https://raw.githubusercontent.com/riivx/vendetta/main/flavor.json
 
-where `flavor` - your chosen flavor (latte, frappe, macchiato, mocha) and `accent` - accent color (red, maroon, mauve, lavender ...)
-
-For example, Catppuccin Mocha theme with red accent color will be:
->https://raw.githubusercontent.com/riivx/vendetta/main/mocha/red.json
-
-The only exception here is Frappe (but we also have the same things for Mocha and Macchiato) - it's just:
->https://raw.githubusercontent.com/riivx/vendetta/main/frappe/frappe.json
+For example, Catppuccin Mocha theme link will look like this:
+>https://raw.githubusercontent.com/riivx/vendetta/main/mocha.json
 
 - Go to You tab (aka Settings)
 - Vendetta
