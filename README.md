@@ -6,32 +6,32 @@
 </h3>
 
 <p align="center">
-	<a href="https://github.com/riichi67/vendetta/stargazers"><img src="https://img.shields.io/github/stars/riichi67/vendetta?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-	<a href="https://github.com/riichi/vendetta/issues"><img src="https://img.shields.io/github/issues/riichi67/vendetta?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-	<a href="https://github.com/riichi67/vendetta/contributors"><img src="https://img.shields.io/github/contributors/riichi67/vendetta?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+	<a href="https://github.com/riivx/vendetta/stargazers"><img src="https://img.shields.io/github/stars/riivx/vendetta?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+	<a href="https://github.com/riivx/vendetta/issues"><img src="https://img.shields.io/github/issues/riivx/vendetta?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+	<a href="https://github.com/riivx/vendetta/contributors"><img src="https://img.shields.io/github/contributors/riivx/vendetta?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
 <p align="center">
-	<img src="https://raw.githubusercontent.com/riichi67/vendetta/main/assets/preview.webp"/>
+	<img src="https://raw.githubusercontent.com/riivx/vendetta/main/assets/preview.webp"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/riichi67/vendetta/main/assets/latte.webp"/>
+<img src="https://raw.githubusercontent.com/riivx/vendetta/main/assets/latte.webp"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="https://raw.githubusercontent.com/riichi67/vendetta/main/assets/frappe.webp"/>
+<img src="https://raw.githubusercontent.com/riivx/vendetta/main/assets/frappe.webp"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/riichi67/vendetta/main/assets/macchiato.webp"/>
+<img src="https://raw.githubusercontent.com/riivx/vendetta/main/assets/macchiato.webp"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="https://raw.githubusercontent.com/riichi67/vendetta//main/assets/mocha.webp"/>
+<img src="https://raw.githubusercontent.com/riivx/vendetta//main/assets/mocha.webp"/>
 </details>
 
 ## Usage
@@ -43,7 +43,7 @@
 where `flavor` - your chosen flavor (latte, frappe, macchiato, mocha) and `accent` - accent color (red, maroon, mauve, lavender ...)
 
 For example, Catppuccin Mocha theme with red accent color will be:
->https://raw.githubusercontent.com/riichi67/vendetta/main/mocha/red.json
+>https://raw.githubusercontent.com/riivx/vendetta/main/mocha/red.json
 
 The only exception here is Frappe (but we also have the same things for Mocha and Macchiato) - it's just:
 >https://raw.githubusercontent.com/riivx/vendetta/main/frappe/frappe.json
