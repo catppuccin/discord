@@ -51,7 +51,19 @@ For example, Catppuccin Mocha theme link will look like this:
 - Select your theme and you're ready to go!
 >*Remember that using light mode with themes is **not supported**.*
 
-- (Extra) If you want iconpacks support, go to You tab - Vendetta - Plugins - Press `+` icon - https://vendetta.nexpid.xyz/themes-plus - Install. Restart your app after that!
+### Icon packs
+If you want iconpack support:
+- Go to You tab (aka settings)
+- Vendetta
+- Plugins
+- Press `+` icon
+- paste this link and click install
+```
+https://vendetta.nexpid.xyz/themes-plus
+```
+- Restart discord
+>If the icon pack doesn't apply after discord loads, then switch to a different server and back.
+
 ## 💝 Thanks to
 
 - [riichi](https://github.com/riivx)
