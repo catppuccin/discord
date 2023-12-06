@@ -169,5 +169,18 @@
       "WHITE_500": "#585b70",
       "YELLOW_300": "#f9e2af"
     },
+    "plus":{
+       "version":"0",
+       "iconpack":"rosiecord-plumpy",
+       "icons":{
+          "ic_new_pins":"#ed8796",
+          "StatusStreaming": "#c6a0f6",
+          "StatusMobileOnline": "#a6da95",
+          "StatusIdle": "#f5a97f",
+          "StatusDND": "#ed8796",
+          "StatusOffline": "#363a4f",
+          "StatusOnline": "#a6da95"
+ }
+},
     "spec": 2
 }
