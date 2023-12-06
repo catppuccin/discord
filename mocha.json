@@ -1,0 +1,156 @@
+{
+    "name": "Catppuccin Mocha Remake",
+    "description": "Soothing pastel theme for the high-spirited!",
+    "authors": [
+      {
+        "name": "riichi, Abby",
+        "id": "920329543187832912"
+      }
+    ],
+    "semanticColors": {
+      "BACKGROUND_ACCENT": [
+      "#f38ba8"
+      ],
+      "BACKGROUND_FLOATING": [
+      "#181825"
+      ],
+      "BACKGROUND_MENTIONED": [
+      "#313244"
+      ],   
+      "BACKGROUND_MENTIONED_HOVER": [   
+      "#6c7086"
+      ],
+      "BACKGROUND_MESSAGE_AUTOMOD": [    
+      "#f23f430d"
+      ],
+      "BACKGROUND_MESSAGE_AUTOMOD_HOVER": [     
+      "#f23f431a"
+      ],
+      "BACKGROUND_MESSAGE_HIGHLIGHT": [     
+      "#f7949414"
+      ],
+      "BACKGROUND_MESSAGE_HIGHLIGHT_HOVER": [
+      "#9399b2"
+      ],
+      "BACKGROUND_MESSAGE_HOVER": [
+      "#9399b2"
+      ],
+      "BACKGROUND_MOBILE_PRIMARY": [
+      "#1e1e2e"
+      ],
+      "BACKGROUND_MOBILE_SECONDARY": [
+      "#181825"
+      ],
+      "BACKGROUND_MODIFIER_ACCENT": [
+      "#313244"
+      ],
+      "BACKGROUND_MODIFIER_ACTIVE": [
+      "#181825"
+      ],
+      "BACKGROUND_MODIFIER_HOVER": [
+      "#11111b"
+      ],
+      "BACKGROUND_MODIFIER_SELECTED": [
+      "#313244"
+      ],
+      "BACKGROUND_PRIMARY": [
+      "#1e1e2e"
+      ],
+      "BACKGROUND_SECONDARY": [
+      "#181825"
+      ],
+      "BACKGROUND_SECONDARY_ALT": [
+      "#181825"
+      ],
+      "BACKGROUND_TERTIARY": [
+      "#11111b"
+      ],
+      "CHANNEL_ICON": [
+      "#cba6f7"
+      ],
+      "CHANNELS_DEFAULT": [
+      "#9399b2"
+      ],
+      "CHAT_BACKGROUND": [
+      "#1e1e2e"
+      ],
+      "HEADER_PRIMARY": [
+      "#cdd6f4"
+      ],
+      "HEADER_SECONDARY": [
+      "#bac2de"
+      ],
+      "HOME_BACKGROUND": [
+      "#2e2828"
+      ],
+      "INTERACTIVE_ACTIVE": [
+      "#eba0ac"
+      ],
+      "INTERACTIVE_HOVER": [
+      "#f38ba8"
+      ],
+      "INTERACTIVE_MUTED": [
+      "#585b70"
+      ],
+      "INTERACTIVE_NORMAL": [
+      "#9399b2"
+      ],
+      "MENTION_BACKGROUND": [
+      "#f2cdcd"
+      ],
+      "MENTION_FOREGROUND": [
+      "#eba0ac"
+      ],
+      "REDESIGN_ACTIVITY_CARD_BACKGROUND": [
+      "#11111b"
+      ],
+      "SCROLLBAR_AUTO_THUMB": [
+      "#f38ba8"
+      ],
+      "SCROLLBAR_AUTO_TRACK": [
+      "#f38ba8"
+      ],
+      "SCROLLBAR_THIN_THUMB": [
+      "#f38ba8"
+      ],
+      "SCROLLBAR_THIN_TRACK": [
+      "#f38ba8"
+      ],
+      "SPOILER_HIDDEN_BACKGROUND": [
+      "#9399b2"
+      ],
+      "TEXT_DANGER": [
+      "#f38ba8"
+      ],
+      "TEXT_LINK": [
+      "#a6e3a1"
+      ],
+      "TEXT_MUTED": [
+      "#a6adc8"
+      ],
+      "TEXT_NORMAL": [
+      "#cdd6f4"
+      ]
+  },
+    "rawColors": {
+      "BRAND_260": "#f38ba8",
+      "BRAND_360": "#a6e3a1",
+      "BRAND_500": "#cba6f7",
+      "GREEN_360": "#a6e3a1",
+      "PRIMARY_100": "#cdd6f4",
+      "PRIMARY_300": "#1e1e2e",
+      "PRIMARY_360": "#f2cdcd",
+      "PRIMARY_400": "#b4befe",
+      "PRIMARY_460": "#181825",
+      "PRIMARY_500": "#cdd6f4",
+      "PRIMARY_600": "#1e1e2e",
+      "PRIMARY_630": "#1e1e2e",
+      "PRIMARY_660": "#11111b",
+      "PRIMARY_700": "#11111b",
+      "PRIMARY_800": "#181825",
+      "RED_400": "#fab387",
+      "WHITE_500": "#585b70",
+      "YELLOW_300": "#f9e2af"
+    },
+    "spec": 2
+}
