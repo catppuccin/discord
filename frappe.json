@@ -1,0 +1,159 @@
+{
+    "name": "Catppuccin Frappe",
+    "description": "Meow meow meow pastel theme meow :3",
+    "authors": [
+      {
+        "name": "modeus",
+        "id": "499287211381096458"
+      }
+    ],
+    "semanticColors": {
+      "BACKGROUND_ACCENT": [
+      "#8caaee"
+      ],
+      "BACKGROUND_FLOATING": [
+      "#1f222e"
+      ],
+      "BACKGROUND_MENTIONED": [
+      "rgba(229, 200, 144, 0.1)"
+      ],   
+      "BACKGROUND_MENTIONED_HOVER": [   
+      "rgba(229, 200, 144, 0.08)"
+      ],
+      "BACKGROUND_MESSAGE_AUTOMOD": [    
+      "#rgba(242, 213, 207, 0.05)"
+      ],
+      "BACKGROUND_MESSAGE_AUTOMOD_HOVER": [     
+      "rgba(242, 213, 207, 0.1)"
+      ],
+      "BACKGROUND_MESSAGE_HIGHLIGHT": [     
+      "rgba(140, 170, 238, 0.1)"
+      ],
+      "BACKGROUND_MESSAGE_HIGHLIGHT_HOVER": [
+      "rgba(140, 170, 238, 0.08)"
+      ],
+      "BACKGROUND_MESSAGE_HOVER": [
+      "#939ab7"
+      ],
+      "BACKGROUND_MOBILE_PRIMARY": [
+      "#303446"
+      ],
+      "BACKGROUND_MOBILE_SECONDARY": [
+      "#292c3c"
+      ],
+      "BACKGROUND_MODIFIER_ACCENT": [
+      "rgba(198, 208, 245, 0.26)"
+      ],
+      "BACKGROUND_MODIFIER_ACTIVE": [
+      "rgba(198, 208, 245, 0.17)"
+      ],
+      "BACKGROUND_MODIFIER_HOVER": [
+      "#181926"
+      ],
+      "BACKGROUND_MODIFIER_SELECTED": [
+      "rgba(198, 208, 245, 0.2)"
+      ],
+      "BACKGROUND_PRIMARY": [
+      "#303446"
+      ],
+      "BACKGROUND_SECONDARY": [
+      "#292c3c"
+      ],
+      "BACKGROUND_SECONDARY_ALT": [
+      "#252836"
+      ],
+      "BACKGROUND_TERTIARY": [
+      "#232634"
+      ],
+      "CHANNEL_ICON": [
+      "#949ec5"
+      ],
+      "CHANNELS_DEFAULT": [
+      "#949ec5"
+      ],
+      "CHANNEL_TEXT_AREA_PLACEHOLDER" : [
+      "rgba(198, 208, 245, 0.5)"
+      ],
+      "CHAT_BACKGROUND": [
+      "#303446"
+      ],
+      "HEADER_PRIMARY": [
+      "#c6d0f5"
+      ],
+      "HEADER_SECONDARY": [
+      "#a5adce"
+      ],
+      "HOME_BACKGROUND": [
+      "#2e2828"
+      ],
+      "INTERACTIVE_ACTIVE": [
+      "#c6d0f5"
+      ],
+      "INTERACTIVE_HOVER": [
+      "#c6d0f5"
+      ],
+      "INTERACTIVE_MUTED": [
+      "rgba(198, 208, 245, 0.3)"
+      ],
+      "INTERACTIVE_NORMAL": [
+      "#c6d0f5"
+      ],
+      "MENTION_BACKGROUND": [
+      "#f258584d"
+      ],
+      "MENTION_FOREGROUND": [
+      "#fbc9c9"
+      ],
+      "REDESIGN_ACTIVITY_CARD_BACKGROUND": [
+       "#232634"
+      ],
+      "SCROLLBAR_AUTO_THUMB": [
+      "#f5a97f"
+      ],
+      "SCROLLBAR_AUTO_TRACK": [
+      "#f5a97f"
+      ],
+      "SCROLLBAR_THIN_THUMB": [
+      "#f5a97f"
+      ],
+      "SCROLLBAR_THIN_TRACK": [
+      "#f5a97f"
+      ],
+      "SPOILER_HIDDEN_BACKGROUND": [
+      "#626880"
+      ],
+      "TEXT_DANGER": [
+      "#e78284"
+      ],
+      "TEXT_LINK": [
+      "#8caaee"
+      ],
+      "TEXT_MUTED": [
+      "#a5adce"
+      ],
+      "TEXT_NORMAL": [
+      "#c6d0f5"
+      ]
+  },
+    "rawColors": {
+      "BRAND_260": "#eed49f",
+      "BRAND_360": "#c6a0f6",
+      "BRAND_500": "#c6a0f6",
+      "GREEN_360": "#a6d189",
+      "PRIMARY_100": "#cad3f5",
+      "PRIMARY_300": "#24273a",
+      "PRIMARY_360": "#c6a0f6",
+      "PRIMARY_400": "#303446",
+      "PRIMARY_460": "#1e2030",
+      "PRIMARY_500": "#cad3f5",
+      "PRIMARY_600": "#303446",
+      "PRIMARY_630": "#24273a",
+      "PRIMARY_660": "#181926",
+      "PRIMARY_700": "#303446",
+      "PRIMARY_800": "#1e2030",
+      "RED_400": "#e78284",
+      "WHITE_500": "#c6d0f5",
+      "YELLOW_300": "#e5c890"
+    },
+    "spec": 2
+}
