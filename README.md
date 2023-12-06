@@ -49,7 +49,7 @@ For example, Catppuccin Mocha theme link will look like this:
 - Press on `+` icon
 - Paste your link and press *"Install"*.
 - Select your theme and you're ready to go!
-
+- (Extra) If you want iconpacks support, go to You tab - Vendetta - Plugins - Press `+` icon - https://vendetta.nexpid.xyz/themes-plus - Install. Restart your app after that!
 ## 💝 Thanks to
 
 - [riichi](https://github.com/riivx)
