@@ -81,16 +81,6 @@ div[class^="contentRegion"] {
     }
   }
 
-  #keybinds-tab {
-    span[class*="key"] {
-      color: $crust;
-
-      g {
-        fill: $crust;
-      }
-    }
-  }
-
   #nitro-server-boost-tab {
     circle[class^="circleProgress"] {
       color: $pink;
@@ -438,8 +428,7 @@ div[class^="contentRegion"] {
 
   #appearance-tab {
     div[class^="selectionCircle"] {
-      box-shadow:
-        inset 0 0 0 2px $blue,
+      box-shadow: inset 0 0 0 2px $blue,
         inset 0 0 0 4px var(--background-primary);
 
       svg[class^="checkmarkCircle"] {
@@ -784,8 +773,7 @@ div[class^="standardSidebarView"]
 
 // nitro gradients
 div[class^="premiumFeatureBorder"] {
-  background:
-    linear-gradient($crust, $crust) padding-box,
+  background: linear-gradient($crust, $crust) padding-box,
     linear-gradient(45deg, $mauve, $pink) border-box;
 
   div[class^="premiumBackground"] {

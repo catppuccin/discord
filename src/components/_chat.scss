@@ -48,9 +48,7 @@
   }
   // Super reactions and beta badge
   div[class*="isBurstReactionPicker_"] {
-    box-shadow:
-      0 0 0 2px $mauve,
-      0 0 16px $lavender;
+    box-shadow: 0 0 0 2px $mauve, 0 0 16px $lavender;
   }
   div[class^="navButtonSuperReactActive"],
   div[class^="navButtonSuperReactActive"]:hover {
@@ -71,9 +69,7 @@
   }
   div[class*="isBurstReactionPicker"] {
     border: none;
-    box-shadow:
-      0 0 0 2px $mauve,
-      0 0 16px $lavender;
+    box-shadow: 0 0 0 2px $mauve, 0 0 16px $lavender;
   }
   // Voice messages play button
   div[class*="playButtonContainer_"] {
@@ -267,10 +263,6 @@ div[class^="chat"] > div[class^="content"] > div[class^="container"] {
     background-color: $base;
   }
 
-  // Help keys
-  div[class^="matchingPostsRow"] span[class^="key"] {
-    color: $crust !important;
-  }
   // forum icons
   div[class^="pinIcon"],
   div[class^="stepStatus"] {
