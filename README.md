@@ -36,33 +36,27 @@
 
 ## Usage
 
-- Choose any flavor
-- Copy this link and change `flavor` to Latte, Frappe, Macchiato or Mocha:
->https://raw.githubusercontent.com/riivx/vendetta/main/flavor.json
+1. Choose a flavor, and copy its link below:
+	- **Latte**: https://raw.githubusercontent.com/catppuccin/vendetta/main/latte.json
+	- **Frappe**: https://raw.githubusercontent.com/catppuccin/vendetta/main/frappe.json
+	- **Macchiato**: https://raw.githubusercontent.com/catppuccin/vendetta/main/macchiato.json
+	- **Mocha**:  https://raw.githubusercontent.com/catppuccin/vendetta/main/mocha.json
+2. Head to `You Tab (aka Settings)` > `Vendetta` > `Themes`
+3. Paste the copied link and press `Install`
+4. Select your theme and you're ready to go!
 
-For example, Catppuccin Mocha theme link will look like this:
->https://raw.githubusercontent.com/riivx/vendetta/main/mocha.json
+> [!IMPORTANT]
+> Light mode with themes is **not supported**.
 
-- Go to You tab (aka Settings)
-- Vendetta
-- Themes
-- Press on `+` icon
-- Paste your link and press *"Install"*.
-- Select your theme and you're ready to go!
->*Remember that using light mode with themes is **not supported**.*
+## Icon packs
 
-### Icon packs
-If you want iconpack support:
-- Go to You tab (aka settings)
-- Vendetta
-- Plugins
-- Press `+` icon
-- paste this link and click install
-```
-https://vendetta.nexpid.xyz/themes-plus
-```
-- Restart discord
->If the icon pack doesn't apply after discord loads, then switch to a different server and back.
+1. Copy `https://vendetta.nexpid.xyz/themes-plus`
+2. Head to `You Tab (aka Settings)` > `Vendetta` > `Plugins`
+3. Paste the copied link and press `Install`
+4. Restart discord
+
+> [!NOTE]
+> If the icon pack doesn't apply after discord loads, then switch to a different server and back.
 
 ## 💝 Thanks to
 
