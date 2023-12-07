@@ -794,12 +794,6 @@ div[class^=contentRegion] [id="privacy-&-safety-tab"] div[class*=betaTagIcon] {
 div[class^=contentRegion] #accessibility-tab button[class*=colorBrandNew] {
   background-color: #fe640b;
 }
-div[class^=contentRegion] #keybinds-tab span[class*=key] {
-  color: #dce0e8;
-}
-div[class^=contentRegion] #keybinds-tab span[class*=key] g {
-  fill: #dce0e8;
-}
 div[class^=contentRegion] #nitro-server-boost-tab circle[class^=circleProgress] {
   color: #ea76cb;
 }
@@ -1655,9 +1649,6 @@ div[class^=chat] > div[class^=content] > div[class^=container] div[class^=chatCo
 div[class^=chat] > div[class^=content] > div[class^=container] div[class^=grid][class*=scrollerBase],
 div[class^=chat] > div[class^=content] > div[class^=container] > div[class^=chatContainer] > div[class^=container] {
   background-color: #eff1f5;
-}
-div[class^=chat] > div[class^=content] > div[class^=container] div[class^=matchingPostsRow] span[class^=key] {
-  color: #dce0e8 !important;
 }
 div[class^=chat] > div[class^=content] > div[class^=container] div[class^=pinIcon] > svg > path,
 div[class^=chat] > div[class^=content] > div[class^=container] div[class^=stepStatus] > svg > path {
@@ -2760,10 +2751,6 @@ div[class^=button][class*=revokeInvite_] {
   background-image: url("data:image/svg+xml,%3Csvg height='18' viewBox='0 0 18 18' width='18' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='m14.25 4.808-1.057-1.058-4.193 4.192-4.192-4.192-1.058 1.058 4.192 4.192-4.192 4.193 1.058 1.057 4.192-4.193 4.193 4.193 1.057-1.057-4.193-4.193z' fill='rgb(210, 15, 57)' fill-rule='nonzero'/%3E%3Cpath d='m0 0h18v18h-18z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-div[class*=fixClipping] div[class^=tip] div[class*=keybind] span[class^=key] {
-  color: #dce0e8;
-}
-
 div[class*=actions_] button[class*=green_] {
   background: #40a02b;
 }
@@ -2771,6 +2758,13 @@ div[class*=actions_] button[class*=red_] {
   background: #d20f39;
 }
 div[class*=actions_] button svg > path {
+  fill: #dce0e8 !important;
+}
+
+span[class*=key] {
+  color: #dce0e8 !important;
+}
+span[class*=key] g {
   fill: #dce0e8 !important;
 }
 
