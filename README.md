@@ -53,7 +53,9 @@
 1. Copy `https://vendetta.nexpid.xyz/themes-plus`
 2. Head to `You Tab (aka Settings)` > `Vendetta` > `Plugins`
 3. Paste the copied link and press `Install`
-4. Restart discord
+4. Go back to `Vendetta` > `plugins` > `themes+ settings`
+5. Double tap `THEMES+ IS ACTIVE` > Choose icon pack
+6. Hit reload
 
 > [!NOTE]
 > If the icon pack doesn't apply after discord loads, then switch to a different server and back.

@@ -220,7 +220,6 @@
     },
     "plus":{
        "version":"0",
-       "iconpack":"rosiecord-plumpy",
        "icons":{
           "ic_new_pins":"#ed8796",
           "StatusStreaming": "#c6a0f6",
