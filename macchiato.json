@@ -10,9 +10,6 @@
       "BACKGROUND_ACCENT": [
       "#8aadf4"
       ],
-      "BACKGROUND_FLOATING": [
-      "#1e2030bf"
-      ],
       "BACKGROUND_MENTIONED": [
       "#363a4f"
       ],
@@ -120,12 +117,19 @@
       ],
       "TEXT_NORMAL": [
       "#cad3f5"
-      ]
+      ],
+                "TEXT_PRIMARY": [
+            "#cad3f5"
+        ],
+        "TEXT_SECONDARY": [
+        "#a5adcb"
+        ]
   },
     "rawColors": {
-      "BRAND_260": "#8aadf4",
+      "BRAND_260": "#f4dbd6",
       "BRAND_360": "#7dc4e4",
       "BRAND_500": "#8aadf4",
+        "BRAND_560": "#6c7086",
       "PRIMARY_100": "#cad3f5",
       "PRIMARY_300": "#24273a",
       "PRIMARY_360": "#c6a0f6",
@@ -141,16 +145,16 @@
       "PLUM_10": "#b8c0e0",
       "PLUM_11": "#3C3949",
       "PLUM_13": "#b8c0e0",
-      "PLUM_15": "#8aadf4",
+      "PLUM_15": "#494d64",
       "PLUM_16": "#181926",
       "PLUM_17": "#181926",
       "PLUM_18": "#363a4f",
       "PLUM_19": "#363a4f",
-      "PLUM_20": "#c6a0f6",
+      "PLUM_20": "#24273a",
       "PLUM_21": "#8aadf450",
       "PLUM_22": "#363a4f",
       "PLUM_24": "#181926",
-      "PLUM_25": "#a6da95",
+      "PLUM_25": "#1e2030",
       "PLUM_3": "#cad3f5",
       "PLUM_4": "#8aadf450",
       "PLUM_6": "#c6a0f6",
@@ -213,7 +217,7 @@
       "YELLOW_400": "#eed49f",
       "YELLOW_430": "#eed49f",
       "YELLOW_460": "#eed49f",
-      "YELLOW_500": "#eed49f",
+      "YELLOW_500": "#181926",
       "YELLOW_530": "#eed49f",
       "YELLOW_560": "#eed49f",
       "YELLOW_600": "#eed49f",
