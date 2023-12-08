@@ -54,7 +54,7 @@
 2. Head to `You Tab (aka Settings)` > `Vendetta` > `Plugins`
 3. Paste the copied link and press `Install`
 4. Go back to `Vendetta` > `plugins` > `themes+ settings`
-5. Double tap `**Themes+ is active**` > Choose icon pack
+5. Double tap `THEMES+ IS ACTIVE` > Choose icon pack
 6. Hit reload
 
 > [!NOTE]
