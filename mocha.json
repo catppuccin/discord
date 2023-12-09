@@ -16,12 +16,6 @@
       "BACKGROUND_MENTIONED_HOVER": [   
       "#6c7086"
       ],
-      "BACKGROUND_MESSAGE_AUTOMOD": [    
-      "#f23f430d"
-      ],
-      "BACKGROUND_MESSAGE_AUTOMOD_HOVER": [     
-      "#f23f431a"
-      ],
       "BACKGROUND_MESSAGE_HIGHLIGHT": [     
       "#f7949414"
       ],
@@ -76,9 +70,6 @@
       "HEADER_SECONDARY": [
       "#bac2de"
       ],
-      "HOME_BACKGROUND": [
-      "#2e2828"
-      ],
       "INTERACTIVE_ACTIVE": [
       "#eba0ac"
       ],
@@ -98,6 +89,12 @@
       "#181825"
       ],
       "REDESIGN_ACTIVITY_CARD_BACKGROUND": [
+      "#11111b"
+      ],
+      "REDESIGN_BUTTON_SECONDARY_ALT_BACKGROUND": [
+      "#11111b"
+      ],
+ "REDESIGN_CHAT_INPUT_BACKGROUND": [
       "#11111b"
       ],
       "CARD_PRIMARY_BG": [
@@ -130,12 +127,12 @@
       "TEXT_NORMAL": [
       "#cdd6f4"
       ],
-        "TEXT_PRIMARY": [
-            "#cdd6f4"
-        ],
-        "TEXT_SECONDARY": [
-        "#a6adc8"
-        ]
+      "TEXT_PRIMARY": [
+      "#cdd6f4"
+      ],
+      "TEXT_SECONDARY": [
+      "#a6adc8"
+      ]
   },
     "rawColors": {
       "BRAND_260": "#f5e0dc",
