@@ -315,10 +315,10 @@ div[class*="actions_"] {
   }
 }
 
-span[class*="key"] {
-  color: $crust !important;
-
-  g {
-    fill: $crust !important;
-  }
+// Loading tip keys
+div[class*="fixClipping"]
+  div[class^="tip"]
+  div[class*="keybind"]
+  span[class^="key"] {
+  color: $crust;
 }
