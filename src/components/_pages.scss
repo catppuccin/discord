@@ -109,6 +109,16 @@ div[class^="contentRegion"] {
     }
   }
 
+  #keybinds-tab {
+    span[class*="key"] {
+      color: $crust;
+
+      g {
+        fill: $crust;
+      }
+    }
+  }
+
   #subscriptions-tab {
     [class^="sectionAccountCredit"],
     [class^="subscriptionDetails"] {
