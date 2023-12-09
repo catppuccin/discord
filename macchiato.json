@@ -91,6 +91,14 @@
       "REDESIGN_ACTIVITY_CARD_BACKGROUND": [
        "#2B2E41"
       ],
+
+ "REDESIGN_BUTTON_SECONDARY_ALT_BACKGROUND": [
+      "#181926"
+      ],
+
+ "REDESIGN_CHAT_INPUT_BACKGROUND": [
+      "#181926"
+      ],
       "SCROLLBAR_AUTO_THUMB": [
       "#f5a97f"
       ],
