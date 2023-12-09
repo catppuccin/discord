@@ -167,7 +167,7 @@
       "PLUM_20": "#1e1e2e",
       "PLUM_21": "#89b4fa50",
       "PLUM_22": "#313244",
-      "PLUM_24": "#363a4f",
+      "PLUM_24": "#313244",
       "PLUM_25": "#181825",
       "PLUM_3": "#cdd6f4",
       "PLUM_4": "#89b4fa50",
@@ -180,13 +180,13 @@
     "plus":{
        "version":"0",
        "icons":{
-          "ic_new_pins":"#ed8796",
-          "StatusStreaming": "#c6a0f6",
-          "StatusMobileOnline": "#a6da95",
-          "StatusIdle": "#f5a97f",
-          "StatusDND": "#ed8796",
-          "StatusOffline": "#363a4f",
-          "StatusOnline": "#a6da95"
+          "ic_new_pins":"#f38ba8",
+          "StatusStreaming": "#cba6f7",
+          "StatusMobileOnline": "#a6e3a1",
+          "StatusIdle": "#f9e2af",
+          "StatusDND": "#f38ba8",
+          "StatusOffline": "#9399b2",
+          "StatusOnline": "#a6e3a1"
  }
 },
     "spec": 2
