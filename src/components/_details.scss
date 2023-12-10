@@ -1,5 +1,6 @@
 // online
 rect[fill="#23a55a"],
+#account-status-picker--online foreignObject > div[class^="status__"],
 foreignObject[mask="url(#svg-mask-status-online)"] > div,
 div[class^="dotOnline"],
 i[class^="statusOnline"] {
@@ -13,6 +14,7 @@ rect[fill="rgba(35, 165, 90, 1)"] {
 
 // idle
 rect[fill="#f0b232"],
+#account-status-picker--idle foreignObject > div[class^="status__"],
 foreignObject[mask="url(#svg-mask-status-idle)"] > div {
   fill: $yellow !important;
   background-color: $yellow !important;
@@ -24,6 +26,7 @@ rect[fill="rgba(240, 178, 50, 1)"] {
 
 // dnd
 rect[fill="#f23f43"],
+#account-status-picker--dnd foreignObject > div[class^="status__"],
 foreignObject[mask="url(#svg-mask-status-dnd)"] > div {
   fill: $red !important;
   background-color: $red !important;
@@ -36,6 +39,7 @@ rect[fill="rgba(242, 63, 67, 1)"] {
 // offline
 rect[fill="#82858f"],
 rect[fill="#80848e"],
+#account-status-picker--invisible foreignObject > div[class^="status__"],
 foreignObject[mask="url(#svg-mask-status-offline)"] > div,
 foreignObject[mask="url(#svg-mask-status-offline)"] > rect,
 div[class^="dotOffline"],
