@@ -46,7 +46,7 @@
 4. Select your theme and you're ready to go!
 
 > [!IMPORTANT]
-> Light mode with themes is **not supported**.
+> Light mode can be used **only with Latte theme**.
 
 ## Icon packs
 
