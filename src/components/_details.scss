@@ -1,38 +1,46 @@
 // online
 rect[fill="#23a55a"],
 #account-status-picker--online foreignObject > div[class^="status__"],
+rect[fill="#299f5b"],
 foreignObject[mask="url(#svg-mask-status-online)"] > div,
 div[class^="dotOnline"],
 i[class^="statusOnline"] {
   fill: $green !important;
   background-color: $green !important;
 }
-
-rect[fill="rgba(35, 165, 90, 1)"] {
+svg[fill="#23a55a"],
+rect[fill="rgba(35, 165, 90, 1)"],
+rect[fill="rgba(41, 159, 91, 1)"] {
   fill: $green !important;
 }
 
 // idle
 rect[fill="#f0b232"],
 #account-status-picker--idle foreignObject > div[class^="status__"],
+rect[fill="#e6ae3c"],
 foreignObject[mask="url(#svg-mask-status-idle)"] > div {
   fill: $yellow !important;
   background-color: $yellow !important;
 }
 
-rect[fill="rgba(240, 178, 50, 1)"] {
+svg[fill="#f0b232"],
+rect[fill="rgba(240, 178, 50, 1)"],
+rect[fill="rgba(230, 174, 60, 1)"] {
   fill: $yellow !important;
 }
 
 // dnd
 rect[fill="#f23f43"],
 #account-status-picker--dnd foreignObject > div[class^="status__"],
+rect[fill="#ea474b"],
 foreignObject[mask="url(#svg-mask-status-dnd)"] > div {
   fill: $red !important;
   background-color: $red !important;
 }
 
-rect[fill="rgba(242, 63, 67, 1)"] {
+svg[fill="#f23f43"],
+rect[fill="rgba(242, 63, 67, 1)"],
+rect[fill="rgba(230, 174, 60, 1)"] {
   fill: $red !important;
 }
 
@@ -48,32 +56,18 @@ i[class^="statusOffline"] {
   background-color: $subtext0 !important;
 }
 
-rect[fill="rgba(130, 133, 143, 1)"] {
+svg[fill="#82858f"],
+svg[fill="#80848e"],
+rect[fill="rgba(130, 133, 143, 1)"],
+rect[fill="rgba(128, 132, 142, 1)"] {
   fill: $subtext0 !important;
 }
 
 // streaming
-rect[fill="#593695"] {
+svg[fill="#593695"],
+rect[fill="#593695"],
+rect[fill="#5b3a91"] {
   fill: $mauve !important;
-}
-
-// vencord platform indicators
-// -- online
-.vc-platform-indicator svg[fill*="--green-"] {
-  fill: $green;
-}
-
-// -- idle
-.vc-platform-indicator svg[fill*="--yellow-"] {
-  fill: $yellow;
-}
-// -- dnd
-.vc-platform-indicator svg[fill*="--red-"] {
-  fill: $red;
-}
-// -- offline
-.vc-platform-indicator svg[fill*="--primary-400"] {
-  fill: $subtext0;
 }
 
 //recolor spotify platform indicator
