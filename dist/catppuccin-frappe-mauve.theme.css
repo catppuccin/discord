@@ -7,10 +7,6 @@
  * @website https://github.com/catppuccin/discord
  * @invite r6Mdz5dpFc
 **/
-button[class*=emojiButtonNormal] > div > div {
-  filter: grayscale(0.77) hue-rotate(185deg) brightness(1.015) opacity(100%) !important;
-}
-
 [data-popout-root],
 html {
   --brand-experiment: #ca9ee6;
@@ -2522,6 +2518,9 @@ div[class*=actions_] button[class*=red_] {
 }
 div[class*=actions_] button svg > path {
   fill: #232634 !important;
+}
+div[class*=actions_] div[class^=panelButtonContainer] button svg > path {
+  fill: #c6d0f5 !important;
 }
 
 div[class*=fixClipping] div[class^=tip] div[class*=keybind] span[class^=key] {
