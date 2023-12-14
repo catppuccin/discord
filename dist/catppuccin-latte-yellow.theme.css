@@ -2525,6 +2525,7 @@ div[class^=containerTop] div[class^=toast] svg path[fill="#3BA55C"] {
 }
 
 rect[fill="#23a55a"],
+#account-status-picker--online foreignObject > div[class^=status__],
 rect[fill="#299f5b"],
 foreignObject[mask="url(#svg-mask-status-online)"] > div,
 div[class^=dotOnline],
@@ -2540,6 +2541,7 @@ rect[fill="rgba(41, 159, 91, 1)"] {
 }
 
 rect[fill="#f0b232"],
+#account-status-picker--idle foreignObject > div[class^=status__],
 rect[fill="#e6ae3c"],
 foreignObject[mask="url(#svg-mask-status-idle)"] > div {
   fill: #df8e1d !important;
@@ -2553,6 +2555,7 @@ rect[fill="rgba(230, 174, 60, 1)"] {
 }
 
 rect[fill="#f23f43"],
+#account-status-picker--dnd foreignObject > div[class^=status__],
 rect[fill="#ea474b"],
 foreignObject[mask="url(#svg-mask-status-dnd)"] > div {
   fill: #d20f39 !important;
@@ -2567,6 +2570,7 @@ rect[fill="rgba(230, 174, 60, 1)"] {
 
 rect[fill="#82858f"],
 rect[fill="#80848e"],
+#account-status-picker--invisible foreignObject > div[class^=status__],
 foreignObject[mask="url(#svg-mask-status-offline)"] > div,
 foreignObject[mask="url(#svg-mask-status-offline)"] > rect,
 div[class^=dotOffline],
