@@ -13,11 +13,6 @@
 
 $brand: $blue;
 
-button[class*="emojiButtonNormal"] > div > div {
-  filter: grayscale(0.77) hue-rotate(185deg) brightness(0.7) opacity(100%)
-    contrast(2) !important;
-}
-
 // for dark sidebars :clueless:
 :root .theme-dark {
   @import "@catppuccin/palette/scss/mocha";

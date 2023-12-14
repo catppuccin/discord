@@ -311,6 +311,11 @@ div[class*="actions_"] {
   button svg > path {
     fill: $crust !important;
   }
+
+  // bodge for streaming "close stream" button
+  div[class^="panelButtonContainer"] button svg > path {
+    fill: $text !important;
+  }
 }
 
 // Loading tip keys
