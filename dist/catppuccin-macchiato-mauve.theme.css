@@ -2285,6 +2285,7 @@ i[class^=statusOnline] {
   background-color: #a6da95 !important;
 }
 
+svg[fill="#23a55a"],
 rect[fill="rgba(35, 165, 90, 1)"],
 rect[fill="rgba(41, 159, 91, 1)"] {
   fill: #a6da95 !important;
@@ -2297,6 +2298,7 @@ foreignObject[mask="url(#svg-mask-status-idle)"] > div {
   background-color: #eed49f !important;
 }
 
+svg[fill="#f0b232"],
 rect[fill="rgba(240, 178, 50, 1)"],
 rect[fill="rgba(230, 174, 60, 1)"] {
   fill: #eed49f !important;
@@ -2309,6 +2311,7 @@ foreignObject[mask="url(#svg-mask-status-dnd)"] > div {
   background-color: #ed8796 !important;
 }
 
+svg[fill="#f23f43"],
 rect[fill="rgba(242, 63, 67, 1)"],
 rect[fill="rgba(230, 174, 60, 1)"] {
   fill: #ed8796 !important;
@@ -2324,30 +2327,17 @@ i[class^=statusOffline] {
   background-color: #a5adcb !important;
 }
 
+svg[fill="#82858f"],
+svg[fill="#80848e"],
 rect[fill="rgba(130, 133, 143, 1)"],
 rect[fill="rgba(128, 132, 142, 1)"] {
   fill: #a5adcb !important;
 }
 
+svg[fill="#593695"],
 rect[fill="#593695"],
 rect[fill="#5b3a91"] {
   fill: #c6a0f6 !important;
-}
-
-.vc-platform-indicator svg[fill*="--green-"] {
-  fill: #a6da95;
-}
-
-.vc-platform-indicator svg[fill*="--yellow-"] {
-  fill: #eed49f;
-}
-
-.vc-platform-indicator svg[fill*="--red-"] {
-  fill: #ed8796;
-}
-
-.vc-platform-indicator svg[fill*="--primary-400"] {
-  fill: #a5adcb;
 }
 
 [src="/assets/eaeac24163b35f7526704a3d9b3c7722.svg"] {
