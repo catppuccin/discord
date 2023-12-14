@@ -2277,6 +2277,7 @@ div[class^=containerTop] div[class^=toast] svg path[fill="#3BA55C"] {
 }
 
 rect[fill="#23a55a"],
+rect[fill="#299f5b"],
 foreignObject[mask="url(#svg-mask-status-online)"] > div,
 div[class^=dotOnline],
 i[class^=statusOnline] {
@@ -2284,27 +2285,32 @@ i[class^=statusOnline] {
   background-color: #a6e3a1 !important;
 }
 
-rect[fill="rgba(35, 165, 90, 1)"] {
+rect[fill="rgba(35, 165, 90, 1)"],
+rect[fill="rgba(41, 159, 91, 1)"] {
   fill: #a6e3a1 !important;
 }
 
 rect[fill="#f0b232"],
+rect[fill="#e6ae3c"],
 foreignObject[mask="url(#svg-mask-status-idle)"] > div {
   fill: #f9e2af !important;
   background-color: #f9e2af !important;
 }
 
-rect[fill="rgba(240, 178, 50, 1)"] {
+rect[fill="rgba(240, 178, 50, 1)"],
+rect[fill="rgba(230, 174, 60, 1)"] {
   fill: #f9e2af !important;
 }
 
 rect[fill="#f23f43"],
+rect[fill="#ea474b"],
 foreignObject[mask="url(#svg-mask-status-dnd)"] > div {
   fill: #f38ba8 !important;
   background-color: #f38ba8 !important;
 }
 
-rect[fill="rgba(242, 63, 67, 1)"] {
+rect[fill="rgba(242, 63, 67, 1)"],
+rect[fill="rgba(230, 174, 60, 1)"] {
   fill: #f38ba8 !important;
 }
 
@@ -2318,11 +2324,13 @@ i[class^=statusOffline] {
   background-color: #a6adc8 !important;
 }
 
-rect[fill="rgba(130, 133, 143, 1)"] {
+rect[fill="rgba(130, 133, 143, 1)"],
+rect[fill="rgba(128, 132, 142, 1)"] {
   fill: #a6adc8 !important;
 }
 
-rect[fill="#593695"] {
+rect[fill="#593695"],
+rect[fill="#5b3a91"] {
   fill: #cba6f7 !important;
 }
 
