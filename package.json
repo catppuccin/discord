@@ -17,7 +17,7 @@
   "private": true,
   "scripts": {
     "build": "mkdir -p dist/dist && sass -I node_modules --no-charset --no-source-map src:dist/dist",
-    "release": "node build.js && mkdir -p dist/dist && sass -I node_modules --no-charset --no-source-map src:dist/dist && rm src/catppuccin-*-*.theme.scss",
+    "release": "node build.js && mkdir -p dist/dist && sass -I node_modules --style=compressed --no-charset --no-source-map src:dist/dist && rm src/catppuccin-*-*.theme.scss",
     "watch": "mkdir -p dist/dist && sass -I node_modules --no-charset --no-source-map src:dist/dist -w",
     "prepare": "husky install"
   },
