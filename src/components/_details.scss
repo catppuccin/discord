@@ -279,6 +279,14 @@ span[class*="channelMention"]:hover,
   color: $crust;
 }
 
+span[class^="attachmentLink"]:hover {
+  color: $crust;
+
+  svg path {
+    fill: $crust !important;
+  }
+}
+
 div[class^="checkbox"][class*="checked_"] {
   border-color: $crust !important;
 
