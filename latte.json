@@ -11,7 +11,7 @@
       "#9ca0b0", "#9ca0b0"
       ],
       "BACKGROUND_ACCENT": [
-      "#1e66f5", "#1e66f5"
+      "#7c7f93", "#7c7f93"
       ],
       "BACKGROUND_MESSAGE_HOVER": [
       "#9ca0b0", "#9ca0b0"
@@ -49,8 +49,32 @@
       "BACKGROUND_TERTIARY": [
       "#e6e9ef", "#e6e9ef"
       ],
+      "BG_BASE_PRIMARY": [
+      "#eff1f5", "#eff1f5"
+      ],
+      "BG_BASE_SECONDARY": [
+      "#e6e9ef", "#e6e9ef"
+      ],
+      "BG_BASE_TERTIARY": [
+      "#e6e9ef", "#e6e9ef"
+      ],
+      "BORDER_FAINT": [
+      "#acb0be", "#acb0be"
+      ],
+      "BORDER_STRONG": [
+      "#acb0be", "#acb0be"
+      ],      
+      "BORDER_SUBTLE": [
+      "#acb0be", "#acb0be"
+      ],
+      "CARD_SECONDARY_BG": [
+      "#ccd0da", "#ccd0da"
+      ],
+      "CARD_PRIMARY_BG": [
+      "#eff1f5", "#eff1f5"
+      ],
       "CHANNEL_ICON": [
-      "#8839ef", "#8839ef"
+      "#6c6f85", "#6c6f85"
       ],
       "CHANNELS_DEFAULT": [
       "#7c7f93", "#7c7f93"
@@ -66,6 +90,15 @@
       ],
       "HEADER_SECONDARY": [
       "#5c5f77", "#5c5f77"
+      ],
+      "ICON_PRIMARY": [
+      "#5c5f77", "#5c5f77"
+      ],
+      "ICON_SECONDARY": [
+      "#5c5f77", "#5c5f77"
+      ],
+      "ICON_MUTED": [
+      "#7c7f93", "#7c7f93"
       ],
       "INTERACTIVE_ACTIVE": [
       "#4c4f69", "#4c4f69"
@@ -95,7 +128,7 @@
       "#dce0e8", "#dce0e8"
       ],
       "REDESIGN_BUTTON_SECONDARY_BORDER": [
-      "#df8e1d", "#df8e1d"
+      "#acb0be", "#acb0be"
       ],
       "REDESIGN_CHANNEL_CATEGORY_NAME_TEXT": [
       "#5c5f77", "#5c5f77"
@@ -111,6 +144,15 @@
       ],
       "SPOILER_HIDDEN_BACKGROUND": [
       "#9ca0b0", "#9ca0b0"
+      ],
+      "STATUS_DANGER": [
+      "#d20f39", "#d20f39"
+      ],
+      "STATUS_DANGER_BACKGROUND": [
+      "#d20f39", "#d20f39"
+      ],
+      "STATUS_DANGER_TEXT": [
+      "#eff1f5", "#eff1f5"
       ],
       "MENTION_FOREGROUND": [
       "#d20f39", "#d20f39"
@@ -129,41 +171,11 @@
       ],
       "TEXT_SECONDARY": [
       "#6c6f85", "#6c6f85"
-      ],
-      "BG_BASE_PRIMARY": [
-      "#eff1f5", "#eff1f5"
-      ],
-      "BG_BASE_SECONDARY": [
-      "#e6e9ef", "#e6e9ef"
-      ],
-      "BG_BASE_TERTIARY": [
-      "#e6e9ef", "#e6e9ef"
-      ],
-      "BORDER_FAINT": [
-      "#df8e1d", "#df8e1d"
-      ],
-      "BORDER_STRONG": [
-      "#df8e1d", "#df8e1d"
-      ],      
-      "BORDER_SUBTLE": [
-      "#df8e1d", "#df8e1d"
-      ],
-      "ICON_PRIMARY": [
-      "#8839ef", "#8839ef"
-      ],
-      "ICON_SECONDARY": [
-      "#8839ef", "#8839ef"
-      ],
-      "ICON_MUTED": [
-      "#8839ef", "#8839ef"
-      ],
-      "MODAL_FOOTER_BACKGROUND": [
-      "#e6e9ef", "#e6e9ef"
       ]
-    },
+    }, 
     "rawColors": {
       "BRAND_230": "#acb0be",
-      "BRAND_500": "#8839ef",
+      "BRAND_500": "#1e66f5",
       "PRIMARY_100": "#ccd0da",
       "PRIMARY_130": "#e6e9ef",
       "PRIMARY_160": "#9ca0b0",
@@ -189,7 +201,7 @@
       "GREEN_430": "#40a02b",
       "GREEN_460": "#40a02b",
       "GREEN_500": "#40a02b",
-      "GREEN_530": "#40a02b",
+      "GREEN_530": "#d20f39",
       "GREEN_560": "#40a02b",
       "GREEN_600": "#40a02b",
       "GREEN_630": "#40a02b",
@@ -259,6 +271,26 @@
       "YELLOW_900": "#df8e1d",
       "WHITE_500": "#eff1f5",
       "RC_WHITE_500": "#df8e1d"
+ },
+ "fonts":{
+  "ABCGintoNord-ExtraBold": "https://github.com/hprobotic/Google-Sans-Font/raw/master/GoogleSans-Regular.ttf",
+  "ggsans-Bold": "https://github.com/hprobotic/Google-Sans-Font/raw/master/GoogleSans-Bold.ttf",
+  "ggsans-BoldItalic": "https://github.com/hprobotic/Google-Sans-Font/raw/master/GoogleSans-BoldItalic.ttf",
+  "ggsans-ExtraBold": "https://github.com/hprobotic/Google-Sans-Font/raw/master/GoogleSans-Bold.ttf",
+  "ggsans-ExtraBoldItalic": "https://github.com/hprobotic/Google-Sans-Font/raw/master/GoogleSans-BoldItalic.ttf",
+  "ggsans-Medium": "https://github.com/hprobotic/Google-Sans-Font/raw/master/GoogleSans-Regular.ttf",
+  "ggsans-MediumItalic": "https://github.com/hprobotic/Google-Sans-Font/raw/master/GoogleSans-Italic.ttf",
+  "ggsans-Normal": "https://github.com/hprobotic/Google-Sans-Font/raw/master/GoogleSans-Regular.ttf",
+  "ggsans-NormalItalic": "https://github.com/hprobotic/Google-Sans-Font/raw/master/GoogleSans-Italic.ttf",
+  "ggsans-Semibold": "https://github.com/hprobotic/Google-Sans-Font/raw/master/GoogleSans-Medium.ttf",
+  "ggsans-SemiboldItalic": "https://github.com/hprobotic/Google-Sans-Font/raw/master/GoogleSans-MediumItalic.ttf",
+  "NotoSans-Bold": "https://github.com/hprobotic/Google-Sans-Font/raw/master/GoogleSans-Bold.ttf",
+  "NotoSans-ExtraBold": "https://github.com/hprobotic/Google-Sans-Font/raw/master/GoogleSans-Bold.ttf",
+  "NotoSans-Medium": "https://github.com/hprobotic/Google-Sans-Font/raw/master/GoogleSans-Regular.ttf",
+  "NotoSans-Normal": "https://github.com/hprobotic/Google-Sans-Font/raw/master/GoogleSans-Regular.ttf",
+  "NotoSans-NormalItalic": "https://github.com/hprobotic/Google-Sans-Font/raw/master/GoogleSans-Italic.ttf",
+  "NotoSans-Semibold": "https://github.com/hprobotic/Google-Sans-Font/raw/master/GoogleSans-Medium.ttf",
+  "SourceCodePro-Semibold": "https://github.com/hprobotic/Google-Sans-Font/raw/master/GoogleSans-Medium.ttf"
    },
    "plus":{
        "version":"0",
