@@ -47,6 +47,7 @@
 
 > [!IMPORTANT]
 > Light mode can be used **only with Latte theme**.
+> These themes will work on other Vendetta forks such as [Bunny](https://github.com/pyoncord) and [Revenge](https://github.com/revenge-mod)
 
 ## Icon packs
 
