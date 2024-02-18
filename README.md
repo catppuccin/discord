@@ -36,6 +36,9 @@
 
 ## Usage
 
+>[!WARNING]
+>Vendetta was **discontinued** on February 7. 2024. Use [Revenge](https://github.com/revenge-mod) or [Bunny](https://github.com/pyoncord/Bunny) instead. They both support Vendetta's themes!
+
 1. Choose a flavor, and copy its link below:
 	- **Latte**: https://raw.githubusercontent.com/catppuccin/vendetta/main/latte.json
 	- **Frappe**: https://raw.githubusercontent.com/catppuccin/vendetta/main/frappe.json
@@ -47,7 +50,7 @@
 
 > [!IMPORTANT]
 > Light mode can be used **only with Latte theme**.
-> These themes will work on other Vendetta forks such as [Bunny](https://github.com/pyoncord) and [Revenge](https://github.com/revenge-mod)
+
 
 ## Icon packs
 
