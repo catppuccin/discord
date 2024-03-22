@@ -1,11 +1,10 @@
 {
-    "name": "voidpuccin",
-    "description": "OLED Catppuccin! Welcome to the dark side :kekw:",
+    "name": "Catppuccin Mocha",
+    "description": "Soothing pastel theme for the high-spirited!",
     "version": "3",
     "authors": [
       {
-        "name": "Moodl",
-        "id": "716941151386599464"
+        "name": "Catppuccin"
       }
     ],
     "semanticColors": {
