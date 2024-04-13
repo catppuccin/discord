@@ -207,7 +207,7 @@ div[class^="pollBadgeDefault"] {
 div[class*="pollContainer"] {
   background-color: $mantle !important;
 
-  div[class^="answer"] {
+  div[class^="answerInner"] {
     background-color: $surface0;
   }
 }
