@@ -143,3 +143,7 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Nix build output
+
+result
