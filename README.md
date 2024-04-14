@@ -68,7 +68,7 @@
 
 - [riichi](https://github.com/riivx)
 - [Luz](https://github.com/luzikii)
-- [Quinxxxx](https://github.com/Quinxxxx)
+- [Moodzz](https://github.com/Moodzz1)
 - [Taki Shiwa](https://github.com/TakiShiwa)
 - [1MMM10](https://github.com/1MMM10)
 
