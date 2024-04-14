@@ -15,19 +15,22 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup Node
-        uses: actions/setup-node@v3
+      - uses: cachix/install-nix-action@v26
         with:
-          node-version: "16"
-          cache: "yarn"
+          extra_nix_config: experimental-features = nix-command flakes
 
-      - run: yarn install
-      - run: yarn release
+      - uses: DeterminateSystems/magic-nix-cache-action@v4
+        with:
+          use-flakehub: false
+
+      - name: Build
+        run: nix build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/
+          publish_dir: ./result/share/catppuccin-discord/
+          destination_dir: dist
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
