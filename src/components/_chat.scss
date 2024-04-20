@@ -646,6 +646,11 @@ div[class*="chat_"] {
   div[class*="innerHeader"]:after {
     background: none;
   }
+
+  // Forum List view background
+  div[class^="content"] > div[class^="container"] {
+    background-color: $base !important;
+  }
 }
 
 // spotify listen along invite
@@ -713,5 +718,25 @@ div[class^="message"][class*="isSystemMessage"] div[class^="icon"] {
   // User left icon
   &[style*="/assets/192510ade1abc3149b46.svg"] {
     @include recolor($red);
+  }
+}
+
+// polls
+// poll badge
+div[class^="pollBadgeDefault"] svg path {
+  fill: $crust !important;
+}
+div[class^="pollBadgeDefault"] div[class^="text"] {
+  color: $crust !important;
+}
+div[class*="pollContainer"] {
+  background-color: var(--background-secondary) !important;
+  // vote button
+  & button[class^="buttonPresentation"] div {
+    color: $text !important;
+  }
+  // checkbox
+  & div[class^="checkbox"] svg path {
+    fill: $crust !important;
   }
 }
