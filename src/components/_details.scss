@@ -193,6 +193,25 @@ div[class^="botTag"] {
   background-color: $brand;
 }
 
+//poll badge
+div[class^="pollBadgeDefault"] {
+  div[class^="text-xs-semibold"] {
+    color: $crust !important;
+  }
+  svg path {
+    fill: $crust !important;
+  }
+}
+
+//poll itself
+div[class*="pollContainer"] {
+  background-color: $mantle !important;
+
+  div[class^="answerInner"] {
+    background-color: $surface0;
+  }
+}
+
 // Add Friend text box border on selection should use accent
 div[class^="addFriendInputWrapper"]:focus-within {
   border-color: $brand;
