@@ -254,12 +254,12 @@ div[class^="channelTextArea"] button[class*="emojiButton_"] {
 
 // forums
 div[class^="chat"] > div[class^="content"] > div[class^="container"] {
-  div[class^="chatContainer"] > div[class^="container"] {
+  div[data-list-id^="forum-channel"] {
     background-color: $base;
   }
 
   div[class^="grid"][class*="scrollerBase"],
-  > div[class^="chatContainer"] > div[class^="container"] {
+  > div[class^="chatContainer"] {
     background-color: $base;
   }
 
