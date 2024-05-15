@@ -699,19 +699,19 @@ div[class^="upperContainer"] div[class^="akaBadge"] {
 // system message icons
 div[class^="message"][class*="isSystemMessage"] div[class^="icon"] {
   // User Joined icon
-  &[style*="/assets/7378a83d74ce97d83380.svg"],
+  &[style*="/assets/b754caa743f8c49fbbf0.svg"],
   // Answered call icon
-  &[style*="/assets/9f3b9c1b6e5f77294951.svg"] {
+  &[style*="/assets/d750b80048af0194841b.svg"] {
     @include recolor($green);
   }
 
   // Missed call icon
-  &[style*="/assets/a1d461025204711133ec.svg"] {
+  &[style*="/assets/27552340cbc7f06073e6.svg"] {
     @include recolor($subtext0);
   }
 
   // User left icon
-  &[style*="/assets/192510ade1abc3149b46.svg"] {
+  &[style*="/assets/27552340cbc7f06073e6.svg"] {
     @include recolor($red);
   }
 }
