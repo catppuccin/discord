@@ -668,7 +668,7 @@ div[class*="chat_"] {
 div[class^="chat"][class*="page_"] {
   &,
   div[class*="content_"][class*="container_"] {
-    background-color: $crust;
+    background-color: $crust !important;
   }
 }
 
