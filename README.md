@@ -37,7 +37,7 @@
 ## Usage
 
 >[!WARNING]
->Vendetta was **discontinued** on February 7. 2024. Use [Revenge](https://github.com/revenge-mod)(which has support for custom fonts) or [Bunny](https://github.com/pyoncord/Bunny) instead. They both support Vendetta's themes!
+>Vendetta was **discontinued** on February 7. 2024. Use [Bunny](https://github.com/pyoncord/Bunny) instead. It supports Vendetta themes
 
 1. Choose a flavor, and copy its link below:
 	- **Latte**: https://raw.githubusercontent.com/catppuccin/vendetta/main/latte.json
