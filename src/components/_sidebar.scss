@@ -50,8 +50,8 @@ ul[aria-label$=" threads"] > li:nth-child(6n) {
   font-weight: 600;
 }
 
-svg[class*="botTagVerified_"] {
-  color: $crust;
+svg[class*="botTagVerified_"] > path {
+  fill: $crust !important;
 }
 
 div[class*="activePostCount_"] {
