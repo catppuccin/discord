@@ -10,10 +10,11 @@
 
 @use "sass:math";
 @use "@catppuccin/palette/scss/frappe" as *;
+@use "@catppuccin/highlightjs/sass/theme";
 
 $brand: $blue;
 
 @import "theme";
 .theme-dark {
-  @import "@catppuccin/highlightjs/sass/catppuccin-frappe";
+  @include theme.highlights("frappe", "hex");
 }

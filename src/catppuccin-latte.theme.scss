@@ -10,6 +10,7 @@
 
 @use "sass:math";
 @use "@catppuccin/palette/scss/latte" as *;
+@use "@catppuccin/highlightjs/sass/theme";
 
 $brand: $blue;
 
@@ -349,6 +350,6 @@ nav[class*="guilds-"].theme-dark {
 }
 
 @import "theme";
-.theme-light {
-  @import "@catppuccin/highlightjs/sass/catppuccin-latte";
+.theme-dark {
+  @include theme.highlights("latte", "hex");
 }
