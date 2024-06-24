@@ -269,6 +269,8 @@ html {
   --deprecated-card-bg: #{adjust-color($crust, $alpha: -0.4)};
   --deprecated-card-editable-bg: #{adjust-color($crust, $alpha: -0.7)};
 
+  --bg-mod-faint: #{$mantle};
+
   --deprecated-store-bg: #{$base};
   --deprecated-quickswitcher-input-background: #{darken(
       $surface2,

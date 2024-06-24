@@ -662,6 +662,15 @@ div[class*="userProfileOuter_"] {
   }
 }
 
+// Thought bubble
+div[class^="userPopoutInner"] div[class^="statusBubbleOuter"] {
+  &:before,
+  &:after,
+  div[class^="statusBubble"] {
+    background-color: $mantle;
+  }
+}
+
 [class*="layerContainer_"] [id^="slate_toolbar"] {
   background-color: var(--background-floating);
 

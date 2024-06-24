@@ -105,7 +105,8 @@ span[class*="username_"][style*="color: rgb(53, 57, 64)"] {
 
 // server badges
 div[class^="flowerStarContainer"] {
-  &[class*="verified_"] {
+  &[class*="verified_"],
+  &[class*="connectedAccountVerifiedIcon_"] {
     svg[class^="flowerStar"] path {
       fill: $green;
     }
