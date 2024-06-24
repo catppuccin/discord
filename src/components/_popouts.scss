@@ -666,7 +666,7 @@ div[class*="userProfileOuter_"] {
 div[class^="userPopoutInner"] div[class^="statusBubbleOuter"] {
   &:before,
   &:after,
-  div[class^="statusBubble"] {
+  span[class^="statusBubble"] {
     background-color: $mantle;
   }
 }
