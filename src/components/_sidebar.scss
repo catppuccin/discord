@@ -9,37 +9,37 @@ div[class^="spineBorder"] {
 
 // rainbow threads
 ul[aria-label$=" threads"] > li:nth-child(1n) {
-  --channels-default: #{mix($red, $text, 30%)};
+  --channels-default: #{fade-out($red, 0.3)};
   --interactive-hover: #{$red};
   --interactive-active: #{$red};
 }
 
 ul[aria-label$=" threads"] > li:nth-child(2n) {
-  --channels-default: #{mix($peach, $text, 30%)};
+  --channels-default: #{fade-out($peach, 0.3)};
   --interactive-hover: #{$peach};
   --interactive-active: #{$peach};
 }
 
 ul[aria-label$=" threads"] > li:nth-child(3n) {
-  --channels-default: #{mix($yellow, $text, 30%)};
+  --channels-default: #{fade-out($yellow, 0.3)};
   --interactive-hover: #{$yellow};
   --interactive-active: #{$yellow};
 }
 
 ul[aria-label$=" threads"] > li:nth-child(4n) {
-  --channels-default: #{mix($green, $text, 30%)};
+  --channels-default: #{fade-out($green, 0.3)};
   --interactive-hover: #{$green};
   --interactive-active: #{$green};
 }
 
 ul[aria-label$=" threads"] > li:nth-child(5n) {
-  --channels-default: #{mix($blue, $text, 30%)};
+  --channels-default: #{fade-out($blue, 0.3)};
   --interactive-hover: #{$sapphire};
   --interactive-active: #{$sapphire};
 }
 
 ul[aria-label$=" threads"] > li:nth-child(6n) {
-  --channels-default: #{mix($mauve, $text, 30%)};
+  --channels-default: #{fade-out($mauve, 0.3)};
   --interactive-hover: #{$mauve};
   --interactive-active: #{$mauve};
 }
