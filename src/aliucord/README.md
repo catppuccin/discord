@@ -6,38 +6,40 @@
 </h3>
 
 <p align="center">
-    <a href="https://github.com/catppuccin/aliucord/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/aliucord?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-    <a href="https://github.com/catppuccin/aliucord/issues"><img src="https://img.shields.io/github/issues/catppuccin/aliucord?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-    <a href="https://github.com/catppuccin/aliucord/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/aliucord?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+    <a href="https://github.com/catppuccin/discord/issues?q=is%3Aissue+is%3Aopen+label%3AAliucord"><img src="https://img.shields.io/github/issues/catppuccin/aliucord?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
 </p>
 
 <p align="center">
-  <img src="assets/preview.webp"/>
+  <img src="assets/aliu/preview.webp"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="assets/latte.webp"/>
+<img src="assets/aliu/latte.webp"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="assets/frappe.webp"/>
+<img src="assets/aliu/frappe.webp"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="assets/macchiato.webp"/>
+<img src="assets/aliu/macchiato.webp"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="assets/mocha.webp"/>
+<img src="assets/aliu/mocha.webp"/>
 </details>
 
 ## Usage
 
 ### Method 1 (Downloading the File Directly)
-1. Download the desired flavour of choice!
+1. Download the desired flavour of choice:
+	- **Latte**: https://raw.githubusercontent.com/catppuccin/discord/main/src/aliu/latte.json
+	- **Frappe**: https://raw.githubusercontent.com/catppuccin/discord/main/src/aliu/frappe.json
+	- **Macchiato**: https://raw.githubusercontent.com/catppuccin/discord/main/src/aliu/macchiato.json
+	- **Mocha**:  https://raw.githubusercontent.com/catppuccin/discord/main/src/aliu/mocha.json
 2. Move the theme to Aliucord's themes directory: `sdcard/Aliucord/themes`
 3. Open Themer plugin settings.
 4. Enable the theme!
@@ -53,9 +55,6 @@
 6. Enable the theme!
 
 ## 🙋 FAQ 
-
-> [!CAUTION]
-> **Using third party clients is against the ToS. We are not responsible for anything that might happen to your account by using third party clients. Use at your own discretion.**
 
 - Q: **_Which plugins are used in the screenshots?_**
 
