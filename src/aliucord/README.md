@@ -10,36 +10,36 @@
 </p>
 
 <p align="center">
-  <img src="assets/aliu/preview.webp"/>
+  <img src="assets/aliucord/preview.webp"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="assets/aliu/latte.webp"/>
+<img src="assets/aliucord/latte.webp"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="assets/aliu/frappe.webp"/>
+<img src="assets/aliucord/frappe.webp"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="assets/aliu/macchiato.webp"/>
+<img src="assets/aliucord/macchiato.webp"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="assets/aliu/mocha.webp"/>
+<img src="assets/aliucord/mocha.webp"/>
 </details>
 
 ## Usage
 
 ### Method 1 (Downloading the File Directly)
 1. Download the desired flavour of choice:
-	- **Latte**: https://raw.githubusercontent.com/catppuccin/discord/main/src/aliu/latte.json
-	- **Frappe**: https://raw.githubusercontent.com/catppuccin/discord/main/src/aliu/frappe.json
-	- **Macchiato**: https://raw.githubusercontent.com/catppuccin/discord/main/src/aliu/macchiato.json
-	- **Mocha**:  https://raw.githubusercontent.com/catppuccin/discord/main/src/aliu/mocha.json
+	- **Latte**: https://raw.githubusercontent.com/catppuccin/discord/main/src/aliucord/latte.json
+	- **Frappe**: https://raw.githubusercontent.com/catppuccin/discord/main/src/aliucord/frappe.json
+	- **Macchiato**: https://raw.githubusercontent.com/catppuccin/discord/main/src/aliucord/macchiato.json
+	- **Mocha**:  https://raw.githubusercontent.com/catppuccin/discord/main/src/aliucord/mocha.json
 2. Move the theme to Aliucord's themes directory: `sdcard/Aliucord/themes`
 3. Open Themer plugin settings.
 4. Enable the theme!

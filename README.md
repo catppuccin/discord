@@ -11,7 +11,7 @@
 	<a href="https://github.com/catppuccin/discord/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/template?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
-| ![web](assets/web/preview.webp) | ![react-native](assets/rn/preview.webp) | ![aliucord](assets/aliu/preview.webp) |
+| ![web](assets/web/preview.webp) | ![react-native](assets/react-native/preview.webp) | ![aliucord](assets/aliucord/preview.webp) |
 | :-----------------------------: | :-------------------------------------: | :-----------------------------------: |
 |           Desktop/Web           |               Enmity/Bunny              |               Aliucord                |
 
@@ -37,8 +37,8 @@
 ## Usage
 
 - [Desktop or Web](https://github.com/catppuccin/discord/main/src/web)
-- [Bunny or Enmity](https://github.com/catppuccin/discord/main/src/rc)
-- [Aliucord](https://github.com/catppuccin/discord/main/src/aliu)
+- [Bunny or Enmity](https://github.com/catppuccin/discord/main/src/react-native)
+- [Aliucord](https://github.com/catppuccin/discord/main/src/aliucord)
 
 ## 🙋 FAQ
 
