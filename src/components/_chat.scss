@@ -552,14 +552,14 @@ div[class*="giftCodeContainer"] [class*="tile"] {
 div[class*="chat_"] {
   // header
   section[class*="header_"] {
-    background-color: $mantle;
+    background-color: $mantle !important;
   }
 
   div[class*="content_"][class*="container_"] {
-    background-color: $mantle;
+    background-color: $mantle !important;
 
     div[class*="container"] {
-      background-color: $mantle;
+      background-color: $base;
     }
 
     div[class*="search_"] {
@@ -587,6 +587,11 @@ div[class*="chat_"] {
     div[role="tablist"] {
       background-color: $mantle;
       border-bottom: 2px solid $surface0;
+    }
+    
+    // channels tab
+    div[class*="pageBody_"] {
+      background-color: $mantle;
     }
   }
 }
