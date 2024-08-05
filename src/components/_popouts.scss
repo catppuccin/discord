@@ -663,7 +663,7 @@ div[class*="userProfileOuter_"] {
 }
 
 // Thought bubble
-div[class^="userPopoutInner"] div[class^="statusBubbleOuter"] {
+div[class^="statusBubbleOuter"] {
   &:before,
   &:after,
   span[class^="statusBubble"] {
