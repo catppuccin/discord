@@ -656,11 +656,12 @@ div[class^="homeContainer"] {
 
   > div[class^="homeContent"] {
     div[class*="row_"] {
-        background: $surface0;
+      background: $surface0;
     }
     div[class*="sidebarCardWrapper_"] {
-        background: $surface0;
+      background: $surface0;
     }
+  }
 }
 
 // the header for the public server home
