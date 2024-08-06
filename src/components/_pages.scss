@@ -654,9 +654,13 @@ div[class^="pageWrapper"] {
 div[class^="homeContainer"] {
   background: $base !important;
 
-  > div[class^="homeContent"] div[class*="card_"] {
-    background: $surface0 !important;
-  }
+  > div[class^="homeContent"] {
+    div[class*="row_"] {
+        background: $surface0;
+    }
+    div[class*="sidebarCardWrapper_"] {
+        background: $surface0;
+    }
 }
 
 // the header for the public server home
