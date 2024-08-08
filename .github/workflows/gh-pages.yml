@@ -22,8 +22,8 @@ jobs:
           node-version: "20"
           cache: "yarn"
 
-      - run: yarn install
-      - run: yarn release
+      - run: yarn web:install
+      - run: yarn web:release
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4

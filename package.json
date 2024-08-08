@@ -16,10 +16,19 @@
   ],
   "private": true,
   "scripts": {
-    "build": "mkdir -p dist/dist && sass -I node_modules --no-charset --no-source-map src:dist/dist",
-    "release": "node build.js && mkdir -p dist/dist && sass -I node_modules --style=compressed --no-charset --no-source-map src:dist/dist && rm src/web/catppuccin-*-*.theme.scss",
-    "watch": "mkdir -p dist/dist && sass -I node_modules --no-charset --no-source-map src:dist/dist -w",
-    "prepare": "husky install"
+    "web:build": "mkdir -p dist/dist && sass -I node_modules --no-charset --no-source-map src:dist/dist",
+    "web:release": "node build.js && yarn build && rm src/web/catppuccin-*-*.theme.scss",
+    "web:watch": "yarn web:build -w",
+    "web:dev": "yarn web:watch & mkdir -p dist/dist && cd dist && http-server -p 3120",
+    "prepare": "husky install",
+
+    "rn:build": "echo \"Make sure you have Whiskers installed. https://github.com/catppuccin/whiskers\" && cd src/react-native && whiskers react_native.tera",
+    "rn:watch": "npm-watch rn:build",
+    "rn:host": "echo \"make sure to allow your phone through your firewall.\" && cd src/react-native && http-server -p 3120",
+    "rn:dev": "yarn rn:watch & yarn rn:host"
+  },
+  "watch": {
+    "rn:build": "src/react-native/react_native.tera"
   },
   "devDependencies": {
     "@catppuccin/highlightjs": "^0.1.3",
@@ -27,7 +36,9 @@
     "husky": ">=6",
     "lint-staged": ">=10",
     "prettier": "^2.7.1",
-    "sass": "^1.55.0"
+    "sass": "^1.55.0",
+    "npm-watch": "^0.13.0",
+    "http-server": "^14.1.1"
   },
   "lint-staged": {
     "*.{js,sass,scss}": "prettier --write"
