@@ -180,21 +180,20 @@ whiskers:
     "customOverlays": true,
     "mentionLineColor": "#{{ palette.yellow.hex }}",
     "icons":{
-      "icons":{
-          "ic_radio_circle_checked": "#{{ palette.blue.hex }}",
-          "ic_radio_circle_checked__overlay": "#{{ palette.text.hex }}",
-          "ic_radio_square_24px": "#{{ palette.blue.hex }}",
-          "ic_radio_square_checked_24px": "#{{ palette.blue.hex }}",
-          "ic_radio_square_checked_24px__overlay": "#{{ palette.text.hex }}",
-          "ic_selection_checked_24px": "#{{ palette.blue.hex }}",
-          "ic_selection_checked_24px__overlay": "#{{ palette.text.hex }}",
-          "img_guild_folder": "#{{ palette.blue.hex }}",
-          "StatusMobileOnline": "#{{ palette.green.hex }}",
-          "StatusIdle": "#{{ palette.yellow.hex }}",
-          "StatusDND": "#{{ palette.red.hex }}",
-          "StatusOffline": "#{{ palette.surface0.hex }}",
-          "StatusOnline": "#{{ palette.green.hex }}",
-          "StatusStreaming": "#{{ palette.mauve.hex }}"
+      "ic_radio_circle_checked": "#{{ palette.blue.hex }}",
+      "ic_radio_circle_checked__overlay": "#{{ palette.text.hex }}",
+      "ic_radio_square_24px": "#{{ palette.blue.hex }}",
+      "ic_radio_square_checked_24px": "#{{ palette.blue.hex }}",
+      "ic_radio_square_checked_24px__overlay": "#{{ palette.text.hex }}",
+      "ic_selection_checked_24px": "#{{ palette.blue.hex }}",
+      "ic_selection_checked_24px__overlay": "#{{ palette.text.hex }}",
+      "img_guild_folder": "#{{ palette.blue.hex }}",
+      "StatusMobileOnline": "#{{ palette.green.hex }}",
+      "StatusIdle": "#{{ palette.yellow.hex }}",
+      "StatusDND": "#{{ palette.red.hex }}",
+      "StatusOffline": "#{{ palette.surface0.hex }}",
+      "StatusOnline": "#{{ palette.green.hex }}",
+      "StatusStreaming": "#{{ palette.mauve.hex }}"
     }
   }
 }
