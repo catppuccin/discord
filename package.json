@@ -17,9 +17,9 @@
   "private": true,
   "scripts": {
     "web:build": "mkdir -p dist/dist && sass -I node_modules --no-charset --no-source-map src:dist/dist",
-    "web:release": "node build.js && yarn build && rm src/web/catppuccin-*-*.theme.scss",
-    "web:watch": "yarn web:build -w",
-    "web:dev": "yarn web:watch & mkdir -p dist/dist && cd dist && http-server -p 3120",
+    "web:release": "node build.js && yarn web:build --style=compressed && rm src/web/catppuccin-*-*.theme.scss",
+    "web:watch": "npm-watch web:release",
+    "web:dev": "yarn web:watch & cd dist && http-server -p 3120 --cors",
     "prepare": "husky install",
 
     "rn:build": "echo \"Make sure you have Whiskers installed. https://github.com/catppuccin/whiskers\" && cd src/react-native && whiskers react_native.tera",
@@ -28,7 +28,11 @@
     "rn:dev": "yarn rn:watch & yarn rn:host"
   },
   "watch": {
-    "rn:build": "src/react-native/react_native.tera"
+    "rn:build": "src/react-native/react_native.tera",
+    "web:release": {
+      "patterns": ["src/web/components/*"],
+      "extensions": "scss"
+    }
   },
   "devDependencies": {
     "@catppuccin/highlightjs": "^0.1.3",

@@ -66,7 +66,7 @@ whiskers:
     "BRAND_260": "#{{ palette.rosewater.hex }}",
     "BRAND_360": "#{{ palette.blue.hex }}",
     "BRAND_500": "#{{ palette.blue.hex }}",
-    "BRAND_560": "#{{ palette.overlay0.hex }}",
+    "BRAND_560": "#{{ palette.blue.hex }}", {# reaction outline #}
     "BLUE_260": "#{{ palette.blue.hex }}",
     "BLUE_300": "#{{ palette.blue.hex }}",
     "BLUE_330": "#{{ palette.blue.hex }}",
@@ -97,7 +97,7 @@ whiskers:
     "PLUM_15": "#{{ palette.surface1.hex }}",
     "PLUM_16": "#{{ palette.surface0.hex }}",
     "PLUM_17": "#{{ palette.crust.hex }}",
-    "PLUM_18": "#{{ palette.base.hex }}",
+    "PLUM_18": "#{{ palette.surface0.hex }}",
     "PLUM_20": "#{{ palette.mantle.hex }}",
     "PLUM_3": "#{{ palette.text.hex }}",
     "PLUM_4": "#{{ palette.blue.hex }}",
