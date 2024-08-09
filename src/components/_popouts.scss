@@ -569,10 +569,10 @@ div[class*="keyboardShortcutsModal_"] {
   background-color: $mantle !important;
 
   div[class^="keybindShortcut"] span[class^="key"] {
-    color: $crust;
+    color: $text;
 
     svg g {
-      fill: $crust !important;
+      fill: $text !important;
     }
   }
 }
@@ -715,10 +715,10 @@ div[class^="layerContainer"] div[class^="pencilContainer"] {
 
 // Keybinds popout
 div[class^="keyboardShortcutsModal"] span[class^="key"] {
-  color: $crust !important;
+  color: $text !important;
 
   svg g {
-    fill: $crust !important;
+    fill: $text !important;
   }
 }
 
