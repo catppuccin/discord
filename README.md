@@ -78,6 +78,16 @@
 - Q: **_"Can this get my account banned?"_**
 - A: Using third party clients and injecting custom css is against the ToS. While nobody has ever been banned for simply using discord client mods, We are not responsible for anything that might happen to your account by using third party clients. Use at your own discretion!
 
+- Q: **_"Can I automatically switch flavors between light and dark mode?"_**
+- A: The following snippet showcases a configuration that switches between latte in light mode and mocha in dark mode by adding an inline [`prefers-color-scheme` media feature](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme), `(prefers-color-scheme: <light-or-dark>)`, after each `@import` statement (see ["Importing CSS rules conditional on media queries" - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@import#importing_css_rules_conditional_on_media_queries)).
+
+  ```css
+  @import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css")
+  (prefers-color-scheme: dark);
+  @import url("https://catppuccin.github.io/discord/dist/catppuccin-latte.theme.css")
+  (prefers-color-scheme: light);
+  ```
+
 ## 💝 Thanks to
 
 - [GlowingUmbreon](https://github.com/glowingumbreon)
