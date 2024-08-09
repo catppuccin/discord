@@ -18,7 +18,7 @@ whiskers:
       "name": "Catppuccin"
     }
   ],
-"semanticColors": {
+  "semanticColors": {
     "ANDROID_RIPPLE": [ "#{{ palette.overlay0.hex }}", "#{{ palette.overlay0.hex }}" ],
     "BACKGROUND_ACCENT": [ "#{{ palette.blue.hex }}", "#{{ palette.blue.hex }} }}" ],
     "BACKGROUND_MENTIONED": [ "#{{ palette.yellow.hex }}17", "#{{ palette.yellow.hex }}17" ],
