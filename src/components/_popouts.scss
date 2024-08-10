@@ -565,15 +565,12 @@ button#reaction-picker-tab div[class^="contents"] {
   color: $crust;
 }
 
+// Keybinds popout
 div[class*="keyboardShortcutsModal_"] {
   background-color: $mantle !important;
 
-  div[class^="keybindShortcut"] span[class^="key"] {
-    color: $text;
-
-    svg g {
-      fill: $text !important;
-    }
+  span[class^="key"] svg g {
+    fill: $text !important;
   }
 }
 
@@ -710,15 +707,6 @@ div[class^="layerContainer"] div[aria-label="clyde"] {
 div[class^="layerContainer"] div[class^="pencilContainer"] {
   svg[class^="editIcon"] {
     color: $text;
-  }
-}
-
-// Keybinds popout
-div[class^="keyboardShortcutsModal"] span[class^="key"] {
-  color: $text !important;
-
-  svg g {
-    fill: $text !important;
   }
 }
 
