@@ -263,11 +263,6 @@ div[class^="chat"] > div[class^="content"] > div[class^="container"] {
     background-color: $base;
   }
 
-  // Help keys
-  div[class^="matchingPostsRow"] span[class^="key"] {
-    color: $crust !important;
-  }
-
   // forum icons
   div[class^="pinIcon"],
   div[class^="stepStatus"] {
