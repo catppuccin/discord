@@ -42,7 +42,7 @@ whiskers:
     "CARD_SECONDARY_BG": [ "#{{ palette.base.hex }}" ],
     "CHANNEL_ICON": [ "#{{ palette.overlay2.hex }}", "#{{ palette.overlay2.hex }}" ],
     "CHANNELS_DEFAULT": [ "#{{ palette.subtext0.hex }}", "#{{ palette.subtext0.hex }}" ],
-    "CHAT_BACKGROUND": [ "#{{ palette.base.hex }}, "#{{ palette.base.hex }}"" ],
+    "CHAT_BACKGROUND": [ "#{{ palette.base.hex }}, "#{{ palette.surface0.hex }}" ],
     "HEADER_PRIMARY": [ "#{{ palette.text.hex }}", "#{{ palette.text.hex }}" ],
     "HEADER_SECONDARY": [ "#{{ palette.subtext1.hex }}", "#{{ palette.subtext1.hex }}" ],
     "INPUT_BACKGROUND": [ "#{{ palette.crust.hex }}", "#{{ palette.crust.hex }}" ],
