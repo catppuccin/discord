@@ -3,11 +3,15 @@
   div[class*="imageWrapper_"] {
     div[class*="audioControls"],
     div[class*="videoControls_"] {
-      background-color: #{adjust-color($mantle, $alpha: -0.2)};
+      background-color: #{adjust-color($crust, $alpha: -0.2)};
 
       svg[class*="controlIcon_"] {
         opacity: 1;
         color: $subtext1;
+      }
+
+      div[class*="mediaBarInteractionVolume"] {
+        background-color: #{adjust-color($crust, $alpha: -0.2)};
       }
     }
   }
