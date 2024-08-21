@@ -1,21 +1,4 @@
 [class^="chatContent"] {
-  div[class*="wrapperAudio_"],
-  div[class*="imageWrapper_"] {
-    div[class*="audioControls"],
-    div[class*="videoControls_"] {
-      background-color: #{adjust-color($crust, $alpha: -0.2)};
-
-      svg[class*="controlIcon_"] {
-        opacity: 1;
-        color: $subtext1;
-      }
-
-      div[class*="mediaBarInteractionVolume"] {
-        background-color: #{adjust-color($crust, $alpha: -0.2)};
-      }
-    }
-  }
-
   // new message ruler
   #---new-messages-bar {
     span[class^="unreadPill"] {
@@ -122,6 +105,23 @@
         background-color: $green;
         color: $crust;
       }
+    }
+  }
+}
+
+div[class*="wrapperAudio_"],
+div[class*="imageWrapper_"] {
+  div[class*="audioControls"],
+  div[class*="videoControls_"] {
+    background-color: #{adjust-color($crust, $alpha: -0.2)};
+
+    svg[class*="controlIcon_"] {
+      opacity: 1;
+      color: $subtext1;
+    }
+
+    div[class*="mediaBarInteractionVolume"] {
+      background-color: #{adjust-color($crust, $alpha: -0.2)};
     }
   }
 }
