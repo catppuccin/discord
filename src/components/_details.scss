@@ -345,11 +345,3 @@ div[class*="actions_"] {
     fill: $text !important;
   }
 }
-
-// Loading tip keys
-div[class*="fixClipping"]
-  div[class^="tip"]
-  div[class*="keybind"]
-  span[class^="key"] {
-  color: $crust;
-}
