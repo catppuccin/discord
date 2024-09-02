@@ -13,6 +13,15 @@
     }
   }
 
+  // reply bar
+  [class^="attachedBars_"] {
+    background: $crust;
+
+    [class^="replyBar_"] {
+        background: $crust;
+    }
+  }
+
   // text input area
   div[class^="channelTextArea"] {
     div[class^="buttons"] * {
@@ -389,11 +398,6 @@ div[class^="callContainer"] {
     &:hover {
       color: $text;
     }
-  }
-
-  div[class*="tile_"],
-  div[class*="background_"] {
-    background-color: $base !important;
   }
 
   div[class*="overlayTitle"],

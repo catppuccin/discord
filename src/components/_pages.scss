@@ -614,12 +614,12 @@ div[class^="perksModal"] {
 
 // boost progress bar
 div[class^="sidebar"] div[class^="container"] {
-  div[class^="progressBar"] {
+  div[class^="progressBar_"] {
     background: linear-gradient(90deg, $blue, $mauve);
   }
 
   &:hover {
-    div[class^="progressBar"] {
+    div[class^="progressBar_"] {
       background: linear-gradient(90deg, $blue, $mauve 34%, $blue 67%, $mauve);
       background-size: 300% 100%;
     }
