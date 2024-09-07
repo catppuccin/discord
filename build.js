@@ -7,7 +7,7 @@ import { flavorEntries } from "@catppuccin/palette";
 const DEFAULT_ACCENT = "blue";
 
 fs.rmSync("dist/", { recursive: true, force: true });
-fs.mkdirSync("dist/");
+fs.mkdirSync("dist/dist/", { recursive: true });
 
 for (const [flavor, { colorEntries }] of flavorEntries) {
   const src = `src/catppuccin-${flavor}.theme.scss`;
@@ -21,9 +21,9 @@ for (const [flavor, { colorEntries }] of flavorEntries) {
       loadPaths: ["node_modules/", "src/"],
     });
 
-    fs.writeFileSync(`dist/catppuccin-${flavor}-${accent}.theme.css`, css);
+    fs.writeFileSync(`dist/dist/catppuccin-${flavor}-${accent}.theme.css`, css);
     if (accent === DEFAULT_ACCENT) {
-      fs.writeFileSync(`dist/catppuccin-${flavor}.theme.css`, css);
+      fs.writeFileSync(`dist/dist/catppuccin-${flavor}.theme.css`, css);
     }
   }
 }
