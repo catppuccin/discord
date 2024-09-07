@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@catppuccin/highlightjs/-/highlightjs-0.1.3.tgz#795dfec3e65260255e63269d49961e7a3339e9f1"
   integrity sha512-NpC67ktdwR2nvGYb18uuMU8QDrwL+NUZJ3hMqhyRmVLAr9xJcuFOcDluJAKE3V13xD95aHTaIvyEW6PiWlaQwA==
 
-"@catppuccin/palette@^0.1.6":
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/@catppuccin/palette/-/palette-0.1.6.tgz#50f10b0cdfad604a07224841f3b1b88287ea212e"
-  integrity sha512-Jf4UD510Q0n1CadMY0OoSJU0wBpphWDGAvToGrb/1mub9v2/ZSGUBMfvAKyOdKB4yyfkN8Ym1n8+1bNAW18doA==
+"@catppuccin/palette@^.1.20":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@catppuccin/palette/-/palette-1.2.0.tgz#0220cab23632ef86af1dc9f37995a882740fa77a"
+  integrity sha512-R5fxLcU47mRcsdQkXZBNfxt7SdEqLGWb1qhEKBrnYfEB4ZWOQRBEow4e78PKxaFUECBNOs6uEkwvwxFL9FmQqQ==
 
 aggregate-error@^3.0.0:
   version "3.1.0"
