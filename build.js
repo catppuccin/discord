@@ -1,4 +1,4 @@
-import fs from "fs/promises";
+import fs from "fs";
 import path from "path";
 import sass from "sass";
 
@@ -6,12 +6,12 @@ import { flavorEntries } from "@catppuccin/palette";
 
 const DEFAULT_ACCENT = "blue";
 
-await fs.rm("dist/", { recursive: true, force: true });
-await fs.mkdir("dist/");
+fs.rmSync("dist/", { recursive: true, force: true });
+fs.mkdirSync("dist/");
 
 for (const [flavor, { colorEntries }] of flavorEntries) {
   const src = `src/catppuccin-${flavor}.theme.scss`;
-  const contents = await fs.readFile(src, "utf-8");
+  const contents = fs.readFileSync(src, "utf-8");
 
   for (const [accent, { hex }] of colorEntries.filter(
     ([_, { accent }]) => accent
@@ -21,9 +21,9 @@ for (const [flavor, { colorEntries }] of flavorEntries) {
       loadPaths: ["node_modules/", "src/"],
     });
 
-    await fs.writeFile(`dist/catppuccin-${flavor}-${accent}.theme.css`, css);
+    fs.writeFileSync(`dist/catppuccin-${flavor}-${accent}.theme.css`, css);
     if (accent === DEFAULT_ACCENT) {
-      await fs.writeFile(`dist/catppuccin-${flavor}.theme.css`, css);
+      fs.writeFileSync(`dist/catppuccin-${flavor}.theme.css`, css);
     }
   }
 }
