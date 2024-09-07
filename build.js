@@ -21,9 +21,9 @@ for (const [flavor, { colorEntries }] of flavorEntries) {
       loadPaths: ["node_modules/", "src/"],
     });
 
-    await fs.writeFile(`dist/catppuccin-${flavor}-${accent}.theme.scss`, css);
+    await fs.writeFile(`dist/catppuccin-${flavor}-${accent}.theme.css`, css);
     if (accent === DEFAULT_ACCENT) {
-      await fs.writeFile(`dist/catppuccin-${flavor}.theme.scss`, css);
+      await fs.writeFile(`dist/catppuccin-${flavor}.theme.css`, css);
     }
   }
 }
