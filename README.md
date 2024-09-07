@@ -11,7 +11,9 @@
     <a href="https://github.com/catppuccin/discord/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/discord?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
-![Discord Theme Preview](assets/preview.webp)
+<p align="center">
+<img src="assets/preview.webp"/>
+</p>
 
 ## Previews
 
@@ -34,59 +36,42 @@
 
 ## Usage
 
-### [BetterDiscord](https://betterdiscord.app)
+### Custom CSS ([Vencord](https://vencord.dev/), [BetterDiscord](https://betterdiscord.app/))
 
-1. Download your preferred flavour:
-
-- 🌻 [Latte](./themes/latte.theme.css?raw=1)
-- 🪴 [Frappe](./themes/frappe.theme.css?raw=1)
-- 🌺 [Macchiato](./themes/macchiato.theme.css?raw=1)
-- 🌿 [Mocha](./themes/mocha.theme.css?raw=1)
-
-2. Copy the downloaded file to your BetterDiscord themes folder.
-3. Enable the theme in BetterDiscord settings.
-
-### Clients/Mods with custom CSS support
-
-1. Simply add your preferred flavour into your discord clients CustomCSS file/editor.
+Add `@import url("https://catppuccin.github.io/discord/dist/catppuccin-<flavor>-<accent>.theme.css");` to your Discord client's custom CSS file/editor, where `<flavor` and `<accent>` are your preferred flavor and accent, respectively. To simply go with the default accent color, omit the `-<accent>` part. For example:
 
 ```css
-/* latte */
-@import url("https://catppuccin.github.io/discord/dist/catppuccin-latte.theme.css");
-/* frappe */
-@import url("https://catppuccin.github.io/discord/dist/catppuccin-frappe.theme.css");
-/* macchiato */
-@import url("https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css");
-/* mocha */
+/* Mocha, with the default accent: */
 @import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css");
 
-/* You can also append Catppuccin colors to customize the accent, e.g. */
-/* mocha (pink accent)*/
+/* Mocha, with a custom pink accent: */
 @import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha-pink.theme.css");
-/* frappe (maroon accent) */
-@import url("https://catppuccin.github.io/discord/dist/catppuccin-frappe-maroon.theme.css");
+
+/* Of course, you can do the same with any flavor and any accent - not just mocha or pink: */
+@import url("https://catppuccin.github.io/discord/dist/catppuccin-latte.theme.css");
+@import url("https://catppuccin.github.io/discord/dist/catppuccin-latte-blue.theme.css");
 ```
 
-### [Stylus](https://github.com/openstyles/stylus)
+> [!TIP]
+> You can also have Discord automatically switch themes depending on your system theme preference. The following snippet showcases a configuration that switches between latte in light mode and mocha in dark mode by adding an inline [`prefers-color-scheme` media feature](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme), `(prefers-color-scheme: <light-or-dark>)`, after each `@import` statement (see ["Importing CSS rules conditional on media queries" - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@import#importing_css_rules_conditional_on_media_queries)).
+>
+>  ```css
+>  @import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css")
+>  (prefers-color-scheme: dark);
+>  @import url("https://catppuccin.github.io/discord/dist/catppuccin-latte.theme.css")
+>  (prefers-color-scheme: light);
+>  ```
+
+### [Stylus](https://github.com/openstyles/stylus) (Web)
 
 1. Enable CSP Patching from Stylus Settings > Advanced.
-2. [Click here to install](https://github.com/catppuccin/discord/raw/main/discord.user.css).
-3. Choose your preferred flavour and accent color from the Stylus preference dropdown.
+2. Visit the following URL to bring up the Stylus install page for the Discord userstyle: https://github.com/catppuccin/discord/raw/main/discord.user.css.
+3. Choose your preferred flavor and accent color from the Stylus preference dropdown.
 
 ## 🙋 FAQ
 
 - Q: **_"Can this get my account banned?"_**
 - A: Using third party clients and injecting custom css is against the ToS. While nobody has ever been banned for simply using discord client mods, We are not responsible for anything that might happen to your account by using third party clients. Use at your own discretion!
-
-- Q: **_"Can I automatically switch flavors between light and dark mode?"_**
-- A: The following snippet showcases a configuration that switches between latte in light mode and mocha in dark mode by adding an inline [`prefers-color-scheme` media feature](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme), `(prefers-color-scheme: <light-or-dark>)`, after each `@import` statement (see ["Importing CSS rules conditional on media queries" - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@import#importing_css_rules_conditional_on_media_queries)).
-
-  ```css
-  @import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css")
-  (prefers-color-scheme: dark);
-  @import url("https://catppuccin.github.io/discord/dist/catppuccin-latte.theme.css")
-  (prefers-color-scheme: light);
-  ```
 
 ## 💝 Thanks to
 
