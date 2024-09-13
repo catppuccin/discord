@@ -550,48 +550,45 @@ div[class*="giftCodeContainer"] [class*="tile"] {
 
 // channels & roles
 div[class*="chat_"] {
-  // header
-  section[class*="header_"] {
-    background-color: $mantle !important;
-  }
-
   div[class*="content_"][class*="container_"] {
-    background-color: $mantle !important;
-
-    div[class*="container"] {
-      background-color: $base;
-    }
-
-    div[class*="search_"] {
-      background-color: $base !important;
-
-      input::placeholder {
-        color: $overlay0;
+    // customise
+    div[class^="profileCard_"] {
+      background-color: $surface0;
+      div[class^="role_"] {
+        background-color: $mantle;
       }
     }
 
-    div[class*="browser"] {
-      div[class*="content"] div[class^="container"] {
-        background-color: $base;
+    div[class^="prompt_"] {
+      background-color: $surface0;
+      div[class^="optionButtonWrapper_"][class*="selected_"] {
+        background-color: $mantle;
+        border-color: $mantle;
       }
-    }
-
-    div[class*="scrollerContainer_"] {
-      background-color: $mantle;
-
-      div[class*="checkIcon_"][style*="opacity: 1;"] > svg > path {
-        fill: $crust;
+      div[class^="select_"] {
+        div[class$="control"] {
+          background-color: $mantle;
+          border-color: $mantle;
+          div[class^="selectValuePill_"] {
+            background-color: $surface0;
+          }
+        }
+        div[class$="menu"] {
+          background-color: $base;
+          border-color: $mantle;
+        }
       }
-    }
-
-    div[role="tablist"] {
-      background-color: $mantle;
-      border-bottom: 2px solid $surface0;
     }
     
-    // channels tab
-    div[class*="pageBody_"] {
-      background-color: $mantle;
+    // channels
+    div[class*="search_"] input::placeholder {
+      color: $overlay1;
+    }
+    div[class^="channelRow_"] {
+      background-color: $surface0;
+      &:hover:not([class*="disabled_"]) {
+          background-color: $base;
+      }
     }
   }
 }
