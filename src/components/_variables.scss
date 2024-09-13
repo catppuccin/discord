@@ -73,8 +73,7 @@ html {
   --background-mobile-primary: #{$base};
   --background-mobile-secondary: #{$mantle};
 
-  --home-background: #{base}
-
+  --home-background: #{$base};
   --chat-background: #{$base};
   --chat-border: #{$crust};
   --chat-input-container-background: #{$base};
