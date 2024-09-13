@@ -273,6 +273,7 @@ html {
   --deprecated-card-editable-bg: #{adjust-color($crust, $alpha: -0.7)};
 
   --bg-mod-faint: #{$mantle};
+  --bg-mod-subtle: #{surface1};
 
   --deprecated-store-bg: #{$base};
   --deprecated-quickswitcher-input-background: #{darken(

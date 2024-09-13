@@ -664,11 +664,6 @@ div[class^="homeContainer"] {
   }
 }
 
-// the header for the public server home
-section[class^="title"] {
-  background: var(--background-primary) !important;
-}
-
 div[class^="categoryItem"][class*="selectedCategoryItem"],
 button[class*="lookFilled"] div[class*="addButton"] {
   // color when selected or if button

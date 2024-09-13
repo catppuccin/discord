@@ -566,12 +566,8 @@ button#reaction-picker-tab div[class^="contents"] {
 }
 
 // Keybinds popout
-div[class*="keyboardShortcutsModal_"] {
-  background-color: $mantle !important;
-
-  span[class^="key"] svg g {
-    fill: $text !important;
-  }
+div[class^="combo_"] span[class^="key"] svg g {
+  fill: $text !important;
 }
 
 div[class^="planOptionClickableContainer"] {
