@@ -5,7 +5,7 @@ rect[fill="#299f5b"],
 foreignObject[mask="url(#svg-mask-status-online)"] > div,
 div[class^="dotOnline"],
 i[class^="statusOnline"],
-div[style*="background-color: rgb(35, 165, 90)"], {
+div[style*="background-color: rgb(35, 165, 90)"] {
   fill: $green !important;
   background-color: $green !important;
 }
