@@ -15,11 +15,7 @@
 
   // reply bar
   [class^="attachedBars_"] {
-    background: $crust;
-
-    [class^="replyBar_"] {
-        background: $crust;
-    }
+    --background-secondary: $crust;
   }
 
   // text input area
@@ -555,32 +551,14 @@ div[class*="giftCodeContainer"] [class*="tile"] {
 div[class*="chat_"] {
   div[class*="content_"][class*="container_"] {
     // customise
-    div[class^="profileCard_"] {
-      background-color: $surface0;
-      div[class^="role_"] {
-        background-color: $mantle;
-      }
-    }
+    --background-primary: $surface0;
+    --background-secondary-alt: $mantle;  // roles
+    --background-tertiary: $mantle;
+    --input-background: $mantle;
+    --white-500: $crust;  // check icon
 
-    div[class^="prompt_"] {
-      background-color: $surface0;
-      div[class^="optionButtonWrapper_"][class*="selected_"] {
-        background-color: $mantle;
-        border-color: $mantle;
-      }
-      div[class^="select_"] {
-        div[class$="control"] {
-          background-color: $mantle;
-          border-color: $mantle;
-          div[class^="selectValuePill_"] {
-            background-color: $surface0;
-          }
-        }
-        div[class$="menu"] {
-          background-color: $base;
-          border-color: $mantle;
-        }
-      }
+    div[class^="select_"] div[class$="-menu"] {
+      background-color: $base;
     }
     
     // channels
@@ -588,9 +566,14 @@ div[class*="chat_"] {
       color: $overlay1;
     }
     div[class^="channelRow_"] {
-      background-color: $surface0;
       &:hover:not([class*="disabled_"]) {
-          background-color: $base;
+        background-color: $surface1;
+      }
+      button {
+        border-color: $overlay0;
+        &:hover {
+          background-color: $overlay0;
+        }
       }
     }
   }
