@@ -552,14 +552,11 @@ div[class*="chat_"] {
   div[class*="content_"][class*="container_"] {
     // customise
     --background-primary: $surface0;
+    --background-secondary: $base;  // dropdown menu
     --background-secondary-alt: $mantle;  // roles
     --background-tertiary: $mantle;
     --input-background: $mantle;
     --white-500: $crust;  // check icon
-
-    div[class^="select_"] div[class$="-menu"] {
-      background-color: $base;
-    }
     
     // channels
     div[class*="search_"] input::placeholder {
