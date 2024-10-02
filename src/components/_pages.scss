@@ -377,6 +377,10 @@ div[class^="contentRegion"] {
     }
   }
 
+  .gradient_b97772 {
+      background: linear-gradient(268.26deg, $blue, $base 102.45%);
+  }
+
   #guild_templates-tab {
     svg[class*="descriptionIcon"] {
       &[viewBox="0 0 24 24"] path {
