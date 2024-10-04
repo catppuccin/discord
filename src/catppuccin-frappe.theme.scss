@@ -12,8 +12,6 @@
 @use "@catppuccin/palette/scss/frappe" as *;
 @use "@catppuccin/highlightjs/sass/theme";
 
-$brand: $blue;
-
 @import "theme";
 .theme-dark {
   @include theme.highlights("frappe", "hex");
