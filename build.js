@@ -1,4 +1,4 @@
-import fs from "fs";
+import fs from "fs/promises";
 import path from "path";
 import sass from "sass";
 
@@ -6,28 +6,31 @@ import { flavorEntries } from "@catppuccin/palette";
 
 const DEFAULT_ACCENT = "blue";
 
-fs.rmSync("dist/", { recursive: true, force: true });
-fs.mkdirSync("dist/dist/", { recursive: true });
+await fs.rm("dist/", { recursive: true, force: true });
+await fs.mkdir("dist/dist/", { recursive: true });
 await Promise.all(
-  flavorEntries.map(([flavor, { colorEntries }]) => {
+  flavorEntries.map(async ([flavor, { colorEntries }]) => {
     const src = `src/catppuccin-${flavor}.theme.scss`;
-    const contents = fs.readFileSync(src, "utf-8");
+    const contents = await fs.readFile(src, "utf-8");
 
-    for (const [accent, { hex }] of colorEntries.filter(
-      ([_, { accent }]) => accent
-    )) {
-      const { css } = sass.compileString(`$brand: ${hex};\n` + contents, {
-        style: "compressed",
-        loadPaths: ["node_modules/", "src/"],
-      });
+    await Promise.all(
+      colorEntries.map(async ([accent, { hex, accent: isAccent }]) => {
+        if (isAccent) {
+          return;
+        }
+        const { css } = sass.compileString(`$brand: ${hex};\n` + contents, {
+          style: "compressed",
+          loadPaths: ["node_modules/", "src/"],
+        });
 
-      fs.writeFileSync(
-        `dist/dist/catppuccin-${flavor}-${accent}.theme.css`,
-        css
-      );
-      if (accent === DEFAULT_ACCENT) {
-        fs.writeFileSync(`dist/dist/catppuccin-${flavor}.theme.css`, css);
-      }
-    }
+        await fs.writeFile(
+          `dist/dist/catppuccin-${flavor}-${accent}.theme.css`,
+          css
+        );
+        if (accent === DEFAULT_ACCENT) {
+          await fs.writeFile(`dist/dist/catppuccin-${flavor}.theme.css`, css);
+        }
+      })
+    );
   })
 );
