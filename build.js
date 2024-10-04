@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import sass from "sass";
+import { initAsyncCompiler } from "sass-embedded";
 
 import { flavorEntries } from "@catppuccin/palette";
 
@@ -8,6 +8,9 @@ const DEFAULT_ACCENT = "blue";
 
 await fs.rm("dist/", { recursive: true, force: true });
 await fs.mkdir("dist/dist/", { recursive: true });
+
+const compiler = await initAsyncCompiler();
+
 await Promise.all(
   flavorEntries.map(async ([flavor, { colorEntries }]) => {
     const src = `src/catppuccin-${flavor}.theme.scss`;
@@ -15,13 +18,15 @@ await Promise.all(
 
     await Promise.all(
       colorEntries.map(async ([accent, { hex, accent: isAccent }]) => {
-        if (isAccent) {
-          return;
-        }
-        const { css } = sass.compileString(`$brand: ${hex};\n` + contents, {
-          style: "compressed",
-          loadPaths: ["node_modules/", "src/"],
-        });
+        if (!isAccent) return;
+        const { css } = await compiler.compileStringAsync(
+          `$brand: ${hex};\n` + contents,
+          {
+            style: "compressed",
+            loadPaths: ["node_modules/", "src/"],
+            silenceDeprecations: ["color-functions"],
+          }
+        );
 
         await fs.writeFile(
           `dist/dist/catppuccin-${flavor}-${accent}.theme.css`,
@@ -34,3 +39,5 @@ await Promise.all(
     );
   })
 );
+
+await compiler.dispose();

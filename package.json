@@ -27,7 +27,7 @@
     "husky": ">=6",
     "lint-staged": ">=10",
     "prettier": "^2.7.1",
-    "sass": "^1.55.0"
+    "sass-embedded": "^1.79.4"
   },
   "lint-staged": {
     "*.{js,sass,scss}": "prettier --write"
