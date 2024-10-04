@@ -47,6 +47,25 @@ html {
   --brand-experiment-85a: #{adjust-color($brand, $alpha: -0.15)};
   --brand-experiment-90a: #{adjust-color($brand, $alpha: -0.1)};
   --brand-experiment-95a: #{adjust-color($brand, $alpha: -0.05)};
+  --brand-05a: #{adjust-color($brand, $alpha: -0.95)};
+  --brand-10a: #{adjust-color($brand, $alpha: -0.9)};
+  --brand-15a: #{adjust-color($brand, $alpha: -0.85)};
+  --brand-20a: #{adjust-color($brand, $alpha: -0.8)};
+  --brand-25a: #{adjust-color($brand, $alpha: -0.75)};
+  --brand-30a: #{adjust-color($brand, $alpha: -0.7)};
+  --brand-35a: #{adjust-color($brand, $alpha: -0.65)};
+  --brand-40a: #{adjust-color($brand, $alpha: -0.6)};
+  --brand-45a: #{adjust-color($brand, $alpha: -0.55)};
+  --brand-50a: #{adjust-color($brand, $alpha: -0.5)};
+  --brand-55a: #{adjust-color($brand, $alpha: -0.45)};
+  --brand-60a: #{adjust-color($brand, $alpha: -0.4)};
+  --brand-65a: #{adjust-color($brand, $alpha: -0.35)};
+  --brand-70a: #{adjust-color($brand, $alpha: -0.3)};
+  --brand-75a: #{adjust-color($brand, $alpha: -0.25)};
+  --brand-80a: #{adjust-color($brand, $alpha: -0.2)};
+  --brand-85a: #{adjust-color($brand, $alpha: -0.15)};
+  --brand-90a: #{adjust-color($brand, $alpha: -0.1)};
+  --brand-95a: #{adjust-color($brand, $alpha: -0.05)};
 }
 
 .theme-dark,
@@ -251,8 +270,8 @@ html {
   --background-message-hover: #{adjust-color($crust, $alpha: -0.75)};
   --background-message-automod: #{adjust-color($rosewater, $alpha: -0.95)};
   --background-message-automod-hover: #{adjust-color($rosewater, $alpha: -0.9)};
-  --background-message-highlight: #{adjust-color($brand, $alpha: -0.9)};
-  --background-message-highlight-hover: #{adjust-color($brand, $alpha: -0.92)};
+  --background-message-highlight: #{adjust-color($brand, $alpha: -0.92)};
+  --background-message-highlight-hover: #{adjust-color($brand, $alpha: -0.94)};
 
   --channels-default: #{darken($subtext0, 5%)};
   --channel-icon: #{darken($subtext0, 5%)};
