@@ -22,7 +22,7 @@
     "web:dev": "yarn web:watch & cd dist && http-server -p 3120 --cors",
     "prepare": "husky install",
 
-    "rn:build": "echo \"Make sure you have Whiskers installed. https://github.com/catppuccin/whiskers\" && cd src/react-native && whiskers react_native.tera",
+    "rn:build": "command -v whiskers >/dev/null 2>&1 || { echo >&2 \"Whiskers is not installed. Please install it from https://github.com/catppuccin/whiskers or your package manager of choice\"; exit 1; } && cd src/react-native && whiskers react_native.tera",
     "rn:watch": "npm-watch rn:build",
     "rn:host": "echo \"make sure to allow your phone through your firewall.\" && cd src/react-native && http-server -p 3120",
     "rn:dev": "yarn rn:watch & yarn rn:host"
