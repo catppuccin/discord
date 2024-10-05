@@ -1,0 +1,285 @@
+{
+    "name": "Catppuccin Frappe",
+    "description": "Soothing pastel theme for the high-spirited!",
+    "authors": [
+      {
+        "name": "Catppuccin"
+      }
+    ],
+    "semanticColors": {
+      "BACKGROUND_ACCENT": [
+      "#8caaee"
+      ],
+      "BACKGROUND_MENTIONED": [
+      "rgba(229, 200, 144, 0.1)"
+      ],   
+      "BACKGROUND_MENTIONED_HOVER": [   
+      "rgba(229, 200, 144, 0.08)"
+      ],
+      "BACKGROUND_MESSAGE_AUTOMOD": [    
+      "#rgba(242, 213, 207, 0.05)"
+      ],
+      "BACKGROUND_MESSAGE_AUTOMOD_HOVER": [     
+      "rgba(242, 213, 207, 0.1)"
+      ],
+      "BACKGROUND_MESSAGE_HIGHLIGHT": [     
+      "rgba(140, 170, 238, 0.1)"
+      ],
+      "BACKGROUND_MESSAGE_HIGHLIGHT_HOVER": [
+      "rgba(140, 170, 238, 0.08)"
+      ],
+      "BACKGROUND_MESSAGE_HOVER": [
+      "#939ab7"
+      ],
+      "BACKGROUND_MOBILE_PRIMARY": [
+      "#303446"
+      ],
+      "BACKGROUND_MOBILE_SECONDARY": [
+      "#292c3c"
+      ],
+      "BACKGROUND_MODIFIER_ACCENT": [
+      "rgba(198, 208, 245, 0.26)"
+      ],
+      "BACKGROUND_MODIFIER_ACTIVE": [
+      "rgba(198, 208, 245, 0.17)"
+      ],
+      "BACKGROUND_MODIFIER_HOVER": [
+      "#232634"
+      ],
+      "BACKGROUND_MODIFIER_SELECTED": [
+      "rgba(198, 208, 245, 0.2)"
+      ],
+      "BACKGROUND_PRIMARY": [
+      "#303446"
+      ],
+      "BACKGROUND_SECONDARY": [
+      "#292c3c"
+      ],
+      "BACKGROUND_SECONDARY_ALT": [
+      "#252836"
+      ],
+      "BACKGROUND_TERTIARY": [
+      "#232634"
+      ],
+      "CHANNEL_ICON": [
+      "#949ec5"
+      ],
+      "CHANNELS_DEFAULT": [
+      "#949ec5"
+      ],
+      "CHANNEL_TEXT_AREA_PLACEHOLDER" : [
+      "rgba(198, 208, 245, 0.5)"
+      ],
+      "CHAT_BACKGROUND": [
+      "#303446"
+      ],
+      "HEADER_PRIMARY": [
+      "#c6d0f5"
+      ],
+      "HEADER_SECONDARY": [
+      "#a5adce"
+      ],
+      "HOME_BACKGROUND": [
+      "#2e2828"
+      ],
+      "INTERACTIVE_ACTIVE": [
+      "#c6d0f5"
+      ],
+      "INTERACTIVE_HOVER": [
+      "#c6d0f5"
+      ],
+      "INTERACTIVE_MUTED": [
+      "rgba(198, 208, 245, 0.3)"
+      ],
+      "INTERACTIVE_NORMAL": [
+      "#c6d0f5"
+      ],
+      "MENTION_BACKGROUND": [
+      "#f258584d"
+      ],
+      "MENTION_FOREGROUND": [
+      "#fbc9c9"
+      ],
+      "REDESIGN_ACTIVITY_CARD_BACKGROUND": [
+       "#232634"
+      ],
+     "REDESIGN_BUTTON_SECONDARY_ALT_BACKGROUND": [
+      "#232634"
+      ],
+     "REDESIGN_CHAT_INPUT_BACKGROUND": [
+      "#232634"
+      ],
+      "SCROLLBAR_AUTO_THUMB": [
+      "#8caaee"
+      ],
+      "SCROLLBAR_AUTO_TRACK": [
+      "#8caaee"
+      ],
+      "SCROLLBAR_THIN_THUMB": [
+      "#8caaee"
+      ],
+      "SCROLLBAR_THIN_TRACK": [
+      "#8caaee"
+      ],
+      "SPOILER_HIDDEN_BACKGROUND": [
+      "#626880"
+      ],
+      "TEXT_DANGER": [
+      "#e78284"
+      ],
+      "TEXT_LINK": [
+      "#8caaee"
+      ],
+      "TEXT_MUTED": [
+      "#a5adce"
+      ],
+      "TEXT_NORMAL": [
+      "#c6d0f5"
+      ],
+      "TEXT_PRIMARY": [
+      "#c6d0f5"
+      ],
+      "TEXT_SECONDARY": [
+      "#b5bfe2"
+      ]
+  },
+   "rawColors": {
+      "BRAND_260": "#f2d5cf",
+      "BRAND_360": "#85c1dc",
+      "BRAND_500": "#ef9f76",
+      "BRAND_560": "#6c7086",
+      "PRIMARY_100": "#c6d0f5",
+      "PRIMARY_300": "#303446",
+      "PRIMARY_360": "#c6d0f5",
+      "PRIMARY_400": "#c6d0f5",
+      "PRIMARY_460": "#292c3c",
+      "PRIMARY_500": "#c6d0f5",
+      "PRIMARY_600": "#303446",
+      "PRIMARY_630": "#303446",
+      "PRIMARY_660": "#232634",
+      "PRIMARY_700": "#232634",
+      "PRIMARY_800": "#292c3c",
+      "PLUM_1": "#c6d0f5",
+      "PLUM_10": "#b5bfe2",
+      "PLUM_11": "#303446",
+      "PLUM_13": "#b5bfe2",
+      "PLUM_15": "#51576d",
+      "PLUM_16": "#232634",
+      "PLUM_17": "#232634",
+      "PLUM_18": "#414559",
+      "PLUM_19": "#414559",
+      "PLUM_20": "#303446",
+      "PLUM_21": "#8caaee50",
+      "PLUM_22": "#414559",
+      "PLUM_24": "#232634",
+      "PLUM_25": "#292c3c",
+      "PLUM_3": "#c6d0f5",
+      "PLUM_4": "#8caaee50",
+      "PLUM_6": "#c6d0f5",
+      "PLUM_9": "#c6d0f5",
+      "GREEN_100": "#a6d189",
+      "GREEN_130": "#a6d189",
+      "GREEN_160": "#a6d189",
+      "GREEN_200": "#a6d189",
+      "GREEN_230": "#a6d189",
+      "GREEN_260": "#a6d189",
+      "GREEN_300": "#a6d189",
+      "GREEN_330": "#a6d189",
+      "GREEN_345": "#a6d189",
+      "GREEN_360": "#a6d189",
+      "GREEN_400": "#a6d189",
+      "GREEN_430": "#a6d189",
+      "GREEN_460": "#a6d189",
+      "GREEN_500": "#a6d189",
+      "GREEN_530": "#a6d189",
+      "GREEN_560": "#a6d189",
+      "GREEN_600": "#a6d189",
+      "GREEN_630": "#a6d189",
+      "GREEN_660": "#a6d189",
+      "GREEN_700": "#a6d189",
+      "GREEN_730": "#a6d189",
+      "GREEN_760": "#a6d189",
+      "GREEN_800": "#a6d189",
+      "GREEN_830": "#a6d189",
+      "GREEN_860": "#a6d189",
+      "GREEN_900": "#a6d189",
+      "GUILD_BOOSTING_PINK": "#f4b8e4",   
+      "GUILD_BOOSTING_PURPLE": "#ca9ee6",
+      "GUILD_BOOSTING_PURPLE_FOR_GRADIENTS": "#ca9ee6",
+      "RED_260": "#e78284",
+      "RED_300": "#e78284",
+      "RED_330": "#e78284",
+      "RED_345": "#e78284",
+      "RED_360": "#e78284",
+      "RED_400": "#e78284",
+      "RED_430": "#e78284",
+      "RED_460": "#e78284",
+      "RED_500": "#e78284",
+      "RED_530": "#e78284",
+      "RED_560": "#e78284",
+      "RED_600": "#e78284",
+      "RED_630": "#e78284",
+      "RED_660": "#e78284",
+      "RED_700": "#e78284",
+      "WHITE_500": "#626880",
+      "YELLOW_100": "#e5c890",
+      "YELLOW_130": "#e5c890",
+      "YELLOW_160": "#e5c890",
+      "YELLOW_200": "#e5c890",
+      "YELLOW_230": "#e5c890",
+      "YELLOW_260": "#e5c890",
+      "YELLOW_300": "#e5c890",
+      "YELLOW_330": "#e5c890",
+      "YELLOW_345": "#e5c890",
+      "YELLOW_360": "#e5c890",
+      "YELLOW_400": "#e5c890",
+      "YELLOW_430": "#e5c890",
+      "YELLOW_460": "#e5c890",
+      "YELLOW_500": "#232634",
+      "YELLOW_530": "#e5c890",
+      "YELLOW_560": "#e5c890",
+      "YELLOW_600": "#e5c890",
+      "YELLOW_630": "#e5c890",
+      "YELLOW_660": "#e5c890",
+      "YELLOW_700": "#e5c890",
+      "YELLOW_730": "#e5c890",
+      "YELLOW_760": "#e5c890",
+      "YELLOW_800": "#e5c890",
+      "YELLOW_830": "#e5c890",
+      "YELLOW_860": "#e5c890",
+      "YELLOW_900": "#e5c890"
+   },
+    "fonts":{
+      "ABCGintoNord-ExtraBold": "https://github.com/Moodzz1/Meloso/blob/main/Meloso-Bold.ttf?raw=1",
+      "ggsans-Bold": "https://github.com/Moodzz1/Meloso/blob/main/Meloso-Bold.ttf?raw=1",
+      "ggsans-BoldItalic": "https://github.com/Moodzz1/Meloso/blob/main/Meloso-BoldItalic.ttf?raw=1",
+      "ggsans-ExtraBold": "https://github.com/Moodzz1/Meloso/blob/main/Meloso-Bold.ttf?raw=1",
+      "ggsans-ExtraBoldItalic": "https://github.com/Moodzz1/Meloso/blob/main/Meloso-BoldItalic.ttf?raw=1",
+      "ggsans-Medium": "https://github.com/Moodzz1/Meloso/blob/main/Meloso-Medium.ttf?raw=1",
+      "ggsans-MediumItalic": "https://github.com/Moodzz1/Meloso/blob/main/Meloso-MediumItalic.ttf?raw=1",
+      "ggsans-Normal": "https://github.com/Moodzz1/Meloso/blob/main/Meloso-Regular.ttf?raw=1",
+      "ggsans-NormalItalic": "https://github.com/Moodzz1/Meloso/blob/main/Meloso-Italic.ttf?raw=1",
+      "ggsans-Semibold": "https://github.com/Moodzz1/Meloso/blob/main/Meloso-Medium.ttf?raw=1",
+      "ggsans-SemiboldItalic": "https://github.com/Moodzz1/Meloso/blob/main/Meloso-MediumItalic.ttf?raw=1",
+      "NotoSans-Bold": "https://github.com/Moodzz1/blob/main/Meloso-Bold.ttf?raw=1",
+      "NotoSans-ExtraBold": "https://github.com/Moodzz1/Meloso/blob/main/Meloso-Bold.ttf?raw=1",
+      "NotoSans-Medium": "https://github.com/Moodzz1/Meloso/blob/main/Meloso-Medium.ttf?raw=1",
+      "NotoSans-Normal": "https://github.com/Moodzz1/Meloso/blob/main/Meloso-Regular.ttf?raw=1",
+      "NotoSans-NormalItalic": "https://github.com/Moodzz1/Meloso/blob/main/Meloso-Italic.ttf?raw=1",
+      "NotoSans-Semibold": "https://github.com/Moodzz1/Meloso/blob/main/Meloso-Medium.ttf?raw=1",
+      "SourceCodePro-Semibold": "https://github.com/Moodzz1/Meloso/blob/main/Meloso-Medium.ttf?raw=1"
+        },
+    "plus":{
+       "version":"0",
+       "icons":{
+          "ic_new_pins":"#e78284",
+          "StatusStreaming": "#ca9ee6",
+          "StatusMobileOnline": "#a6d189",
+          "StatusIdle": "#e5c890",
+          "StatusDND": "#e78284",
+          "StatusOffline": "#626880",
+          "StatusOnline": "#a6d189"
+ }
+},
+    "spec": 2
+}
