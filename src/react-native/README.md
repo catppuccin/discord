@@ -39,7 +39,7 @@
 	- **Frappe**: https://raw.githubusercontent.com/catppuccin/discord/main/src/react-native/frappe.json
 	- **Macchiato**: https://raw.githubusercontent.com/catppuccin/discord/main/src/react-native/macchiato.json
 	- **Mocha**:  https://raw.githubusercontent.com/catppuccin/discord/main/src/react-native/mocha.json
-2. Head to `You Tab (aka Settings)` > `Bunny` or `Enmity` > `Themes`
+2. Head to `Settings` > `Bunny` or `Enmity` > `Themes`
 3. Paste the copied link and press `Install`
 4. Select your theme and you're ready to go!
 
@@ -47,17 +47,23 @@
 > Light mode can be used **only with Latte theme**.
 
 
-## Fonts & Icon packs
-### Bunny
-- #### Icons
+## Themes+
+Themes+ is required to theme some hardcoded elements (applied when themes+ is loaded) as well as iconpacks.
+- #### Iconpacks
 1. Copy `https://bunny.nexpid.xyz/themes-plus`
-2. Head to `You Tab (aka Settings)` > `Bunny` > `Plugins`
+2. Head to `Settings` > `Bunny` > `Plugins`
 3. Paste the copied link and press `Install`
 4. Go back to `Bunny` > `Plugins` > `themes+ settings`
 5. Click `Configuration` > `Mode` > `Manual` > Choose icon pack
 6. Hit reload
-- #### Fonts
-1. Head to `You Tab (aka Settings)` > `Bunny` > `Fonts` > `add button` > Extract font from theme
+> [!IMPORTANT]
+> If the icon pack doesn't apply after discord loads, then switch to a different server and back.
+>
+> If you are using Enmity, install [VendettaCommpat](https://discord.com/channels/950850315601711176/1019645460589318165/1211473409154744350) plugin first. After doing so, follow this [guide](https://discord.com/channels/950850315601711176/1239393517151846412) as it loads Vendetta by default which is broken past Discord version 223
+
+## Fonts
+### Bunny
+1. Head to `Settings` > `Bunny` > `Fonts` > `add button` > Extract font from theme
 2. Click `Extract` > `Import` Then select `Meloso`
 
 ### Enmity
@@ -65,16 +71,11 @@
 
 
 
-> [!NOTE]
-> If the icon pack doesn't apply after discord loads, then switch to a different server and back.
-
 ## 💝 Thanks to
 
 - [riichi](https://github.com/riivx)
-- [Luz](https://github.com/luzikii)
+- [Cookie](https://github.com/Covkie)
 - [Moodzz](https://github.com/Moodzz1)
-- [Taki Shiwa](https://github.com/TakiShiwa)
-- [1MMM10](https://github.com/1MMM10)
 
 &nbsp;
 
