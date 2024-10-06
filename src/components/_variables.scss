@@ -27,6 +27,31 @@ html {
   --brand-experiment-830: #{darken($brand, math.div(80%, 2))};
   --brand-experiment-860: #{darken($brand, math.div(85%, 2))};
   --brand-experiment-900: #{darken($brand, math.div(90%, 2))};
+  --brand-100: #{lighten($brand, math.div(90%, 2))};
+  --brand-130: #{lighten($brand, math.div(85%, 2))};
+  --brand-160: #{lighten($brand, math.div(80%, 2))};
+  --brand-200: #{lighten($brand, math.div(75%, 2))};
+  --brand-230: #{lighten($brand, math.div(70%, 2))};
+  --brand-260: #{lighten($brand, math.div(65%, 2))};
+  --brand-300: #{lighten($brand, math.div(60%, 2))};
+  --brand-330: #{lighten($brand, math.div(50%, 2))};
+  --brand-360: #{lighten($brand, math.div(40%, 2))};
+  --brand-400: #{lighten($brand, math.div(30%, 2))};
+  --brand-430: #{lighten($brand, math.div(20%, 2))};
+  --brand-460: #{lighten($brand, math.div(10%, 2))};
+  --brand-500: #{$brand};
+  --brand-530: #{darken($brand, math.div(10%, 2))};
+  --brand-560: #{darken($brand, math.div(20%, 2))};
+  --brand-600: #{darken($brand, math.div(30%, 2))};
+  --brand-630: #{darken($brand, math.div(40%, 2))};
+  --brand-660: #{darken($brand, math.div(50%, 2))};
+  --brand-700: #{darken($brand, math.div(60%, 2))};
+  --brand-730: #{darken($brand, math.div(65%, 2))};
+  --brand-760: #{darken($brand, math.div(70%, 2))};
+  --brand-800: #{darken($brand, math.div(75%, 2))};
+  --brand-830: #{darken($brand, math.div(80%, 2))};
+  --brand-860: #{darken($brand, math.div(85%, 2))};
+  --brand-900: #{darken($brand, math.div(90%, 2))};
   // similar to other brand colors, except alpha only
   --brand-experiment-05a: #{adjust-color($brand, $alpha: -0.95)};
   --brand-experiment-10a: #{adjust-color($brand, $alpha: -0.9)};
@@ -47,6 +72,25 @@ html {
   --brand-experiment-85a: #{adjust-color($brand, $alpha: -0.15)};
   --brand-experiment-90a: #{adjust-color($brand, $alpha: -0.1)};
   --brand-experiment-95a: #{adjust-color($brand, $alpha: -0.05)};
+  --brand-05a: #{adjust-color($brand, $alpha: -0.95)};
+  --brand-10a: #{adjust-color($brand, $alpha: -0.9)};
+  --brand-15a: #{adjust-color($brand, $alpha: -0.85)};
+  --brand-20a: #{adjust-color($brand, $alpha: -0.8)};
+  --brand-25a: #{adjust-color($brand, $alpha: -0.75)};
+  --brand-30a: #{adjust-color($brand, $alpha: -0.7)};
+  --brand-35a: #{adjust-color($brand, $alpha: -0.65)};
+  --brand-40a: #{adjust-color($brand, $alpha: -0.6)};
+  --brand-45a: #{adjust-color($brand, $alpha: -0.55)};
+  --brand-50a: #{adjust-color($brand, $alpha: -0.5)};
+  --brand-55a: #{adjust-color($brand, $alpha: -0.45)};
+  --brand-60a: #{adjust-color($brand, $alpha: -0.4)};
+  --brand-65a: #{adjust-color($brand, $alpha: -0.35)};
+  --brand-70a: #{adjust-color($brand, $alpha: -0.3)};
+  --brand-75a: #{adjust-color($brand, $alpha: -0.25)};
+  --brand-80a: #{adjust-color($brand, $alpha: -0.2)};
+  --brand-85a: #{adjust-color($brand, $alpha: -0.15)};
+  --brand-90a: #{adjust-color($brand, $alpha: -0.1)};
+  --brand-95a: #{adjust-color($brand, $alpha: -0.05)};
 }
 
 .theme-dark,
@@ -133,9 +177,6 @@ html {
   --yellow-360: #{$yellow};
   --yellow-300: #{$yellow};
   --red-400: #{$red};
-
-  --brand-500: #{$brand};
-  --brand-560: #{darken($brand, math.div(20%, 2))};
 
   --primary-100: #{$subtext1};
   --primary-300: #{$subtext1};
@@ -251,8 +292,8 @@ html {
   --background-message-hover: #{adjust-color($crust, $alpha: -0.75)};
   --background-message-automod: #{adjust-color($rosewater, $alpha: -0.95)};
   --background-message-automod-hover: #{adjust-color($rosewater, $alpha: -0.9)};
-  --background-message-highlight: #{adjust-color($brand, $alpha: -0.9)};
-  --background-message-highlight-hover: #{adjust-color($brand, $alpha: -0.92)};
+  --background-message-highlight: #{adjust-color($brand, $alpha: -0.92)};
+  --background-message-highlight-hover: #{adjust-color($brand, $alpha: -0.94)};
 
   --channels-default: #{darken($subtext0, 5%)};
   --channel-icon: #{darken($subtext0, 5%)};
