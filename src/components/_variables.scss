@@ -27,6 +27,31 @@ html {
   --brand-experiment-830: #{darken($brand, math.div(80%, 2))};
   --brand-experiment-860: #{darken($brand, math.div(85%, 2))};
   --brand-experiment-900: #{darken($brand, math.div(90%, 2))};
+  --brand-100: #{lighten($brand, math.div(90%, 2))};
+  --brand-130: #{lighten($brand, math.div(85%, 2))};
+  --brand-160: #{lighten($brand, math.div(80%, 2))};
+  --brand-200: #{lighten($brand, math.div(75%, 2))};
+  --brand-230: #{lighten($brand, math.div(70%, 2))};
+  --brand-260: #{lighten($brand, math.div(65%, 2))};
+  --brand-300: #{lighten($brand, math.div(60%, 2))};
+  --brand-330: #{lighten($brand, math.div(50%, 2))};
+  --brand-360: #{lighten($brand, math.div(40%, 2))};
+  --brand-400: #{lighten($brand, math.div(30%, 2))};
+  --brand-430: #{lighten($brand, math.div(20%, 2))};
+  --brand-460: #{lighten($brand, math.div(10%, 2))};
+  --brand-500: #{$brand};
+  --brand-530: #{darken($brand, math.div(10%, 2))};
+  --brand-560: #{darken($brand, math.div(20%, 2))};
+  --brand-600: #{darken($brand, math.div(30%, 2))};
+  --brand-630: #{darken($brand, math.div(40%, 2))};
+  --brand-660: #{darken($brand, math.div(50%, 2))};
+  --brand-700: #{darken($brand, math.div(60%, 2))};
+  --brand-730: #{darken($brand, math.div(65%, 2))};
+  --brand-760: #{darken($brand, math.div(70%, 2))};
+  --brand-800: #{darken($brand, math.div(75%, 2))};
+  --brand-830: #{darken($brand, math.div(80%, 2))};
+  --brand-860: #{darken($brand, math.div(85%, 2))};
+  --brand-900: #{darken($brand, math.div(90%, 2))};
   // similar to other brand colors, except alpha only
   --brand-experiment-05a: #{adjust-color($brand, $alpha: -0.95)};
   --brand-experiment-10a: #{adjust-color($brand, $alpha: -0.9)};
@@ -152,9 +177,6 @@ html {
   --yellow-360: #{$yellow};
   --yellow-300: #{$yellow};
   --red-400: #{$red};
-
-  --brand-500: #{$brand};
-  --brand-560: #{darken($brand, math.div(20%, 2))};
 
   --primary-100: #{$subtext1};
   --primary-300: #{$subtext1};
