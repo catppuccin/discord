@@ -85,7 +85,7 @@ whiskers:
     "PRIMARY_100": "#{{ palette.text.hex }}",
     "PRIMARY_300": "#{{ palette.base.hex }}",
     "PRIMARY_360": "#{{ palette.mauve.hex }}",
-    "PRIMARY_400": "#{{ palette.mauve.hex }}",
+    "PRIMARY_400": "#{{ palette.surface2.hex }}",
     "PRIMARY_460": "#{{ palette.overlay2.hex }}",
     "PRIMARY_500": "#{{ palette.text.hex }}",
     "PRIMARY_600": "#{{ palette.overlay2.hex }}",
@@ -174,7 +174,7 @@ whiskers:
     "YELLOW_830": "#{{ palette.yellow.hex }}",
     "YELLOW_860": "#{{ palette.yellow.hex }}",
     "YELLOW_900": "#{{ palette.yellow.hex }}",
-    "WHITE": "#{{ palette.base.hex }}",
+    "WHITE": "#{{ palette.text.hex }}",
     "WHITE_500": "#{{ palette.text.hex }}"
   },
   "plus":{
@@ -193,7 +193,7 @@ whiskers:
       "StatusMobileOnline": "#{{ palette.green.hex }}",
       "StatusIdle": "#{{ palette.yellow.hex }}",
       "StatusDND": "#{{ palette.red.hex }}",
-      "StatusOffline": "#{{ palette.surface0.hex }}",
+      "StatusOffline": "#{{ palette.surface2.hex }}",
       "StatusOnline": "#{{ palette.green.hex }}",
       "StatusStreaming": "#{{ palette.mauve.hex }}"
     }

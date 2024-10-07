@@ -74,7 +74,7 @@
     "PRIMARY_100": "#cad3f5",
     "PRIMARY_300": "#24273a",
     "PRIMARY_360": "#c6a0f6",
-    "PRIMARY_400": "#c6a0f6",
+    "PRIMARY_400": "#5b6078",
     "PRIMARY_460": "#939ab7",
     "PRIMARY_500": "#cad3f5",
     "PRIMARY_600": "#939ab7",
@@ -163,7 +163,7 @@
     "YELLOW_830": "#eed49f",
     "YELLOW_860": "#eed49f",
     "YELLOW_900": "#eed49f",
-    "WHITE": "#24273a",
+    "WHITE": "#cad3f5",
     "WHITE_500": "#cad3f5"
   },
   "plus":{
@@ -182,7 +182,7 @@
       "StatusMobileOnline": "#a6da95",
       "StatusIdle": "#eed49f",
       "StatusDND": "#ed8796",
-      "StatusOffline": "#363a4f",
+      "StatusOffline": "#5b6078",
       "StatusOnline": "#a6da95",
       "StatusStreaming": "#c6a0f6"
     }
