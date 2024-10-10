@@ -65,10 +65,8 @@
 - [Aven](https://github.com/ToxicAven)
 
 - [riichi](https://github.com/riivx)
-- [Luz](https://github.com/luzikii)
+- [Cookie](https://github.com/Covkie)
 - [Moodzz](https://github.com/Moodzz1)
-- [Taki Shiwa](https://github.com/TakiShiwa)
-- [1MMM10](https://github.com/1MMM10)
 
 - [Skinatro](https://github.com/skinatro)
 - [lemon](https://github.com/andreasgrafen)
