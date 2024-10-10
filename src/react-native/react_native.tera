@@ -56,6 +56,7 @@ whiskers:
     "REDESIGN_CHANNEL_CATEGORY_NAME_TEXT": [ "#{{ palette.text.hex }}", "#{{ palette.text.hex }}" ],
     "REDESIGN_CHANNEL_NAME_TEXT": [ "#{{ palette.text.hex }}", "#{{ palette.text.hex }}" ],
     "REDESIGN_CHAT_INPUT_BACKGROUND": [ "#{{ palette.mantle.hex }}", "#{{ palette.mantle.hex }}" ],
+    "REDESIGN_BUTTON_PRIMARY_PRESSED_BACKGROUND": [ "#{{ palette.blue.hex }}", "#{{ palette.blue.hex }}" ],
     "TEXT_LINK": [ "#{{ palette.blue.hex }}", "#{{ palette.blue.hex }}" ],
     "TEXT_MUTED": [ "#{{ palette.subtext0.hex }}", "#{{ palette.subtext0.hex }}" ],
     "TEXT_NORMAL": [ "#{{ palette.text.hex }}", "#{{ palette.text.hex }}" ],
@@ -63,7 +64,7 @@ whiskers:
     "THREAD_CHANNEL_SPINE": [ "#{{ palette.surface2.hex }}", "#{{ palette.surface2.hex }}" ]
   },
   "rawColors": {
-    "BRAND_260": "#{{ palette.rosewater.hex }}",
+    "BRAND_260": "#{{ palette.crust.hex }}",
     "BRAND_360": "#{{ palette.blue.hex }}",
     "BRAND_500": "#{{ palette.blue.hex }}",
     "BRAND_560": "#{{ palette.blue.hex }}", {# reaction outline #}
@@ -174,14 +175,15 @@ whiskers:
     "YELLOW_830": "#{{ palette.yellow.hex }}",
     "YELLOW_860": "#{{ palette.yellow.hex }}",
     "YELLOW_900": "#{{ palette.yellow.hex }}",
-    "WHITE": "#{{ palette.text.hex }}",
-    "WHITE_500": "#{{ palette.text.hex }}"
+    "WHITE": "#{{ palette.base.hex }}",
+    "WHITE_500": "#{{ palette.base.hex }}"
   },
   "plus":{
     "version":"0",
     "customOverlays": true,
     "mentionLineColor": "#{{ palette.yellow.hex }}",
     "icons":{
+      "ic_close_24px": "#{{ palette.text.hex }}",
       "ic_radio_circle_checked": "#{{ palette.blue.hex }}",
       "ic_radio_circle_checked__overlay": "#{{ palette.text.hex }}",
       "ic_radio_square_24px": "#{{ palette.blue.hex }}",
@@ -190,12 +192,18 @@ whiskers:
       "ic_selection_checked_24px": "#{{ palette.blue.hex }}",
       "ic_selection_checked_24px__overlay": "#{{ palette.text.hex }}",
       "img_guild_folder": "#{{ palette.blue.hex }}",
+      "img_nitro_remixing": "#{{ palette.text.hex }}",
       "StatusMobileOnline": "#{{ palette.green.hex }}",
       "StatusIdle": "#{{ palette.yellow.hex }}",
       "StatusDND": "#{{ palette.red.hex }}",
       "StatusOffline": "#{{ palette.surface2.hex }}",
       "StatusOnline": "#{{ palette.green.hex }}",
-      "StatusStreaming": "#{{ palette.mauve.hex }}"
+      "StatusStreaming": "#{{ palette.mauve.hex }}",
+      "ShopIcon": "#{{ palette.text.hex }}",
+      "SettingsIcon": "#{{ palette.text.hex }}",
+      "StarOutlineIcon": "#{{ palette.overlay2.hex }}",
+      "StarIcon": "#{{ palette.yellow.hex }}",
+      "ReactionIcon": "#{{ palette.text.hex }}"
     }
   }
 }
