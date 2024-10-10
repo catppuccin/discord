@@ -45,6 +45,7 @@
     "REDESIGN_CHANNEL_CATEGORY_NAME_TEXT": [ "#cdd6f4", "#cdd6f4" ],
     "REDESIGN_CHANNEL_NAME_TEXT": [ "#cdd6f4", "#cdd6f4" ],
     "REDESIGN_CHAT_INPUT_BACKGROUND": [ "#181825", "#181825" ],
+    "REDESIGN_BUTTON_PRIMARY_PRESSED_BACKGROUND": [ "#89b4fa", "#89b4fa" ],
     "TEXT_LINK": [ "#89b4fa", "#89b4fa" ],
     "TEXT_MUTED": [ "#a6adc8", "#a6adc8" ],
     "TEXT_NORMAL": [ "#cdd6f4", "#cdd6f4" ],
@@ -52,7 +53,7 @@
     "THREAD_CHANNEL_SPINE": [ "#585b70", "#585b70" ]
   },
   "rawColors": {
-    "BRAND_260": "#f5e0dc",
+    "BRAND_260": "#11111b",
     "BRAND_360": "#89b4fa",
     "BRAND_500": "#89b4fa",
     "BRAND_560": "#89b4fa", 
@@ -163,14 +164,15 @@
     "YELLOW_830": "#f9e2af",
     "YELLOW_860": "#f9e2af",
     "YELLOW_900": "#f9e2af",
-    "WHITE": "#cdd6f4",
-    "WHITE_500": "#cdd6f4"
+    "WHITE": "#1e1e2e",
+    "WHITE_500": "#1e1e2e"
   },
   "plus":{
     "version":"0",
     "customOverlays": true,
     "mentionLineColor": "#f9e2af",
     "icons":{
+      "ic_close_24px": "#cdd6f4",
       "ic_radio_circle_checked": "#89b4fa",
       "ic_radio_circle_checked__overlay": "#cdd6f4",
       "ic_radio_square_24px": "#89b4fa",
@@ -179,12 +181,18 @@
       "ic_selection_checked_24px": "#89b4fa",
       "ic_selection_checked_24px__overlay": "#cdd6f4",
       "img_guild_folder": "#89b4fa",
+      "img_nitro_remixing": "#cdd6f4",
       "StatusMobileOnline": "#a6e3a1",
       "StatusIdle": "#f9e2af",
       "StatusDND": "#f38ba8",
       "StatusOffline": "#585b70",
       "StatusOnline": "#a6e3a1",
-      "StatusStreaming": "#cba6f7"
+      "StatusStreaming": "#cba6f7",
+      "ShopIcon": "#cdd6f4",
+      "SettingsIcon": "#cdd6f4",
+      "StarOutlineIcon": "#9399b2",
+      "StarIcon": "#f9e2af",
+      "ReactionIcon": "#cdd6f4"
     }
   }
 }

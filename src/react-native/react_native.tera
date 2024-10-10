@@ -56,7 +56,7 @@ whiskers:
     "REDESIGN_CHANNEL_CATEGORY_NAME_TEXT": [ "#{{ palette.text.hex }}", "#{{ palette.text.hex }}" ],
     "REDESIGN_CHANNEL_NAME_TEXT": [ "#{{ palette.text.hex }}", "#{{ palette.text.hex }}" ],
     "REDESIGN_CHAT_INPUT_BACKGROUND": [ "#{{ palette.mantle.hex }}", "#{{ palette.mantle.hex }}" ],
-    "REDESIGN_BUTTON_PRIMARY_PRESSED_BACKGROUND": [ "#{{ palette.blue.hex }}", "#{{ palette.blue.hex }}" ],    
+    "REDESIGN_BUTTON_PRIMARY_PRESSED_BACKGROUND": [ "#{{ palette.blue.hex }}", "#{{ palette.blue.hex }}" ],
     "TEXT_LINK": [ "#{{ palette.blue.hex }}", "#{{ palette.blue.hex }}" ],
     "TEXT_MUTED": [ "#{{ palette.subtext0.hex }}", "#{{ palette.subtext0.hex }}" ],
     "TEXT_NORMAL": [ "#{{ palette.text.hex }}", "#{{ palette.text.hex }}" ],
@@ -192,7 +192,7 @@ whiskers:
       "ic_selection_checked_24px": "#{{ palette.blue.hex }}",
       "ic_selection_checked_24px__overlay": "#{{ palette.text.hex }}",
       "img_guild_folder": "#{{ palette.blue.hex }}",
-      "img_nitro_remixing": "#{{ palette.text.hex }}",  
+      "img_nitro_remixing": "#{{ palette.text.hex }}",
       "StatusMobileOnline": "#{{ palette.green.hex }}",
       "StatusIdle": "#{{ palette.yellow.hex }}",
       "StatusDND": "#{{ palette.red.hex }}",
@@ -203,7 +203,7 @@ whiskers:
       "SettingsIcon": "#{{ palette.text.hex }}",
       "StarOutlineIcon": "#{{ palette.overlay2.hex }}",
       "StarIcon": "#{{ palette.yellow.hex }}",
-      "ReactionIcon": "#{{ palette.text.hex }}",
+      "ReactionIcon": "#{{ palette.text.hex }}"
     }
   }
 }
