@@ -14,7 +14,7 @@
   }
 
   // reply bar
-  [class^="attachedBars_"] {
+  [class^="attachedBars_"], [class^="stackedBars_"] {
     --background-secondary: $crust;
   }
 
