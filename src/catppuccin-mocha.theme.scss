@@ -14,6 +14,11 @@
 
 $brand: $blue;
 
+:root .theme-light {
+  @import "@catppuccin/palette/scss/latte";
+  @import "components/lightfix";
+}
+
 @import "theme";
 .theme-dark {
   @include theme.highlights("mocha", "hex");
