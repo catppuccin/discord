@@ -2,90 +2,28 @@ div[class^="layerContainer"] [role="menu"] {
   // make menu items readable when hovered
   --brand-experiment-560: var(--brand-experiment-25a);
   --brand-experiment-600: var(--brand-experiment);
+  --white: $crust;
+  --white-500: $crust;
 
-  [class*="colorDefault"] {
-    &[class*="colorBrand"] {
-      color: $brand;
+  // make active items have dark text
+  [class*="colorDefault"]:active:not([class*="hideInteraction_"]) {
+    color: var(--background-floating);
+
+    [class*="check_"] {
+      color: var(--interactive-normal);
     }
 
-    &[class*="focused"] {
-      &:not([class*="colorDanger"]),
-      [class*="checkbox_"] {
-        color: var(--interactive-normal);
-      }
-    }
-
-    &[role="menuitem"]:not(
-        [class*="colorDanger"],
-        [id*="user-context-user-volume"]
-      ):hover {
-      &:not([class*="colorPremiumGradient"]) {
-        background: var(--background-accent);
-      }
-
-      color: $crust;
-
-      [class*="subtext"],
-      [class*="caret_"] {
-        color: $crust;
-      }
-    }
-
-    [class*="caret"] {
-      color: $text;
-    }
-
-    &:hover [class*="caret"] {
-      color: $crust;
-    }
-
-    // make active items have dark text
-    &:active:not([class*="hideInteraction_"]) {
+    [class*="checkbox_"] {
       color: var(--background-floating);
-
-      [class*="check_"] {
-        color: var(--interactive-normal);
-      }
-
-      [class*="checkbox_"] {
-        color: var(--background-floating);
-      }
-
-      [class*="colorPremiumGradient"] {
-        background: linear-gradient(
-          270deg,
-          var(--premium-tier-2-pink-for-gradients) 0%,
-          var(--premium-tier-2-pink-for-gradients-2) 33.63%,
-          var(--premium-tier-2-purple-for-gradients) 100%
-        );
-      }
-    }
-  }
-
-  // Account switcher submenu
-  div[id^="account-switch-account"] {
-    &[class*="focused"] {
-      div[class*="userMenuUsername"] div {
-        color: $crust;
-      }
-
-      svg[class^="activeIcon"] {
-        circle {
-          fill: $blue;
-        }
-        g path {
-          fill: $crust;
-        }
-      }
     }
 
-    svg[class^="activeIcon"] {
-      circle {
-        fill: $crust;
-      }
-      g path {
-        fill: $blue;
-      }
+    [class*="colorPremiumGradient"] {
+      background: linear-gradient(
+        270deg,
+        var(--premium-tier-2-pink-for-gradients) 0%,
+        var(--premium-tier-2-pink-for-gradients-2) 33.63%,
+        var(--premium-tier-2-purple-for-gradients) 100%
+      );
     }
   }
 
@@ -351,14 +289,6 @@ section[class*="positionContainer_"] {
 }
 
 div[class^="layerContainer"] {
-  // right-click popups for guild, channels, and user
-  #guild-header-popout,
-  #guild-context,
-  div[id^="channel-context"],
-  div[id^="user-context"] {
-    background: $crust;
-  }
-
   > div[class*="layer"] {
     // search popout
     div[role="listbox"] {
@@ -653,14 +583,8 @@ div[class*="userProfileOuter_"] {
     > button:nth-child(2) {
     background: $brand;
   }
-}
-
-// Thought bubble
-div[class^="statusBubbleOuter"] {
-  &:before,
-  &:after,
-  span[class^="statusBubble"] {
-    background-color: $mantle;
+  div[class^="inner_"] {
+    --input-background: $mantle;
   }
 }
 
