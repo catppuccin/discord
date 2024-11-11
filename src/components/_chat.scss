@@ -2,20 +2,21 @@
   // new message ruler
   #---new-messages-bar {
     span[class^="unreadPill"] {
-      color: $crust;
+      color: #{$crust};
     }
   }
 
   // new message bar
   div[class^="newMessagesBar"] {
     button {
-      color: $crust;
+      color: #{$crust};
     }
   }
 
   // reply bar
-  [class^="attachedBars_"], [class^="stackedBars_"] {
-    --background-secondary: $crust;
+  [class^="attachedBars_"],
+  [class^="stackedBars_"] {
+    --background-secondary: #{$crust};
   }
 
   // text input area
@@ -40,7 +41,9 @@
   }
   // Super reactions and beta badge
   div[class*="isBurstReactionPicker_"] {
-    box-shadow: 0 0 0 2px $mauve, 0 0 16px $lavender;
+    box-shadow:
+      0 0 0 2px $mauve,
+      0 0 16px $lavender;
   }
   div[class^="navButtonSuperReactActive"],
   div[class^="navButtonSuperReactActive"]:hover {
@@ -61,7 +64,9 @@
   }
   div[class*="isBurstReactionPicker"] {
     border: none;
-    box-shadow: 0 0 0 2px $mauve, 0 0 16px $lavender;
+    box-shadow:
+      0 0 0 2px $mauve,
+      0 0 16px $lavender;
   }
   // Voice messages play button
   div[class*="playButtonContainer_"] {
@@ -551,13 +556,13 @@ div[class*="giftCodeContainer"] [class*="tile"] {
 div[class*="chat_"] {
   div[class*="content_"][class*="container_"] {
     // customise
-    --background-primary: $surface0;
-    --background-secondary: $base;  // dropdown menu
-    --background-secondary-alt: $mantle;  // roles
-    --background-tertiary: $mantle;
-    --input-background: $mantle;
-    --white-500: $crust;  // check icon
-    
+    --background-primary: #{$surface0};
+    --background-secondary: #{$base}; // dropdown menu
+    --background-secondary-alt: #{$mantle}; // roles
+    --background-tertiary: #{$mantle};
+    --input-background: #{$mantle};
+    --white-500: #{$crust}; // check icon
+
     // channels
     div[class*="search_"] input::placeholder {
       color: $overlay1;
