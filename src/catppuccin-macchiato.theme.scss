@@ -19,5 +19,5 @@
 
 @import "theme";
 .theme-dark {
-  @include theme.highlights("macchiato", "hex");
+  @include theme.highlights("macchiato");
 }

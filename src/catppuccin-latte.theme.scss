@@ -68,5 +68,5 @@
 
 @import "theme";
 .theme-dark {
-  @include theme.highlights("latte", "hex");
+  @include theme.highlights("latte");
 }
