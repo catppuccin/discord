@@ -26,7 +26,7 @@
     "@catppuccin/palette": "^0.1.6",
     "husky": ">=6",
     "lint-staged": ">=10",
-    "prettier": "^2.7.1",
+    "prettier": "^3.0.0",
     "sass": "^1.55.0"
   },
   "lint-staged": {
