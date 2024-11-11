@@ -21,5 +21,5 @@ $brand: $blue;
 
 @import "theme";
 .theme-dark {
-  @include theme.highlights("frappe", "hex");
+  @include theme.highlights("frappe");
 }
