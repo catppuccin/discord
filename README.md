@@ -53,7 +53,7 @@ Add `@import url("https://catppuccin.github.io/discord/dist/catppuccin-<flavor>-
 ```
 
 > [!TIP]
-> You can also have Discord automatically switch themes depending on your system theme preference. The following snippet showcases a configuration that switches between latte in light mode and mocha in dark mode by adding an inline [`prefers-color-scheme` media feature](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme), `(prefers-color-scheme: <light-or-dark>)`, after each `@import` statement (see ["Importing CSS rules conditional on media queries" - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@import#importing_css_rules_conditional_on_media_queries)).
+> You can also have Discord automatically switch themes depending on your system theme preference. The following snippet showcases a configuration that switches between latte in light mode and mocha in dark mode.
 >
 >  ```css
 >  @import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css")
