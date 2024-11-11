@@ -133,6 +133,9 @@ html {
   --info-positive-foreground: #{$green};
   --info-positive-text: #{$text};
 
+  --brand-500: #{$brand};
+  --brand-560: #{darken($brand, math.div(20%, 2))};
+
   --info-warning-background: #{adjust-color($yellow, $alpha: -0.85)};
   --info-warning-foreground: #{$yellow};
   --info-warning-text: #{$text};
