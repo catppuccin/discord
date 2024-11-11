@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@catppuccin/highlightjs": "^0.1.3",
-    "@catppuccin/palette": "^0.1.6",
+    "@catppuccin/palette": "^0.2.0",
     "husky": ">=6",
     "lint-staged": ">=10",
     "prettier": "^2.7.1",
