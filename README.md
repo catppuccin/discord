@@ -38,10 +38,10 @@
 
 ### Custom CSS ([Vencord](https://vencord.dev/), [BetterDiscord](https://betterdiscord.app/))
 
-Add `@import url("https://catppuccin.github.io/discord/dist/catppuccin-<flavor>-<accent>.theme.css");` to your Discord client's custom CSS file/editor, where `<flavor` and `<accent>` are your preferred flavor and accent, respectively. To simply go with the default accent color, omit the `-<accent>` part. For example:
+Add `@import url("https://catppuccin.github.io/discord/dist/catppuccin-<flavor>-<accent>.theme.css");` to your Discord client's custom CSS file/editor, where `<flavor` and `<accent>` are your preferred flavor and accent. Omit `-<accent>` to default to the blue accent color. For example:
 
 ```css
-/* Mocha, with the default accent: */
+/* Mocha, with the default (blue) accent: */
 @import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css");
 
 /* Mocha, with a custom pink accent: */
