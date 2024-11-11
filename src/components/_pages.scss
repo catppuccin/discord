@@ -38,6 +38,11 @@ div[class^="sidebarRegion"] {
   }
 }
 
+// gradient on discover page
+[class^="gradientBackground_"] > [class^="gradient_"] {
+  background: linear-gradient(270deg, $blue, $base 102.45%);
+}
+
 div[class^="contentRegion"] {
   div[class*="noticeRegion_"] div[style="background_color: rgb(24, 25, 28);"] {
     background-color: $crust !important;
@@ -106,16 +111,6 @@ div[class^="contentRegion"] {
     div[class*="card_"],
     h3[class*="price_"] {
       color: $text !important;
-    }
-  }
-
-  #keybinds-tab {
-    span[class*="key"] {
-      color: $crust;
-
-      g {
-        fill: $crust;
-      }
     }
   }
 
@@ -614,12 +609,12 @@ div[class^="perksModal"] {
 
 // boost progress bar
 div[class^="sidebar"] div[class^="container"] {
-  div[class^="progressBar"] {
+  div[class^="progressBar_"] {
     background: linear-gradient(90deg, $blue, $mauve);
   }
 
   &:hover {
-    div[class^="progressBar"] {
+    div[class^="progressBar_"] {
       background: linear-gradient(90deg, $blue, $mauve 34%, $blue 67%, $mauve);
       background-size: 300% 100%;
     }
@@ -662,11 +657,6 @@ div[class^="homeContainer"] {
       background: $surface0;
     }
   }
-}
-
-// the header for the public server home
-section[class^="title"] {
-  background: var(--background-primary) !important;
 }
 
 div[class^="categoryItem"][class*="selectedCategoryItem"],

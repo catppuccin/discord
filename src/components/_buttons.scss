@@ -2,6 +2,7 @@
 [class*="lookFilled_"] {
   &[class*="colorBrand_"],
   &[class*="colorBrandNew_"],
+  &[class*="colorBrandInverted_"],
   &[class*="colorLink_"],
   &[class*="colorYellow_"],
   &[class*="colorRed_"],
@@ -150,4 +151,9 @@ div[role="radio"][class*="selected"] {
 // Create a server back button
 div[class^="layerContainer"] button[class^="backButton"][class*="lookBlank"] {
   color: $text;
+}
+
+// Make stream settings selected buttons text legible
+.vcd-screen-picker-radio[data-checked=true] > [class^="defaultColor_"] {
+  color: $crust;
 }

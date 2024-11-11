@@ -22,11 +22,11 @@
     "format": "prettier --write ."
   },
   "devDependencies": {
-    "@catppuccin/highlightjs": "^0.1.3",
+    "@catppuccin/highlightjs": "^1.0.0",
     "@catppuccin/palette": "^1.2.0",
     "husky": ">=6",
     "lint-staged": ">=10",
-    "prettier": "^2.7.1",
+    "prettier": "^3.0.0",
     "sass-embedded": "^1.79.4"
   },
   "lint-staged": {

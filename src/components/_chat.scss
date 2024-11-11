@@ -13,6 +13,11 @@
     }
   }
 
+  // reply bar
+  [class^="attachedBars_"], [class^="stackedBars_"] {
+    --background-secondary: $crust;
+  }
+
   // text input area
   div[class^="channelTextArea"] {
     div[class^="buttons"] * {
@@ -391,11 +396,6 @@ div[class^="callContainer"] {
     }
   }
 
-  div[class*="tile_"],
-  div[class*="background_"] {
-    background-color: $base !important;
-  }
-
   div[class*="overlayTitle"],
   svg[class*="status_"] {
     background-color: $surface0;
@@ -549,43 +549,29 @@ div[class*="giftCodeContainer"] [class*="tile"] {
 
 // channels & roles
 div[class*="chat_"] {
-  // header
-  section[class*="header_"] {
-    background-color: $mantle;
-  }
-
   div[class*="content_"][class*="container_"] {
-    background-color: $mantle;
-
-    div[class*="container"] {
-      background-color: $mantle;
+    // customise
+    --background-primary: $surface0;
+    --background-secondary: $base;  // dropdown menu
+    --background-secondary-alt: $mantle;  // roles
+    --background-tertiary: $mantle;
+    --input-background: $mantle;
+    --white-500: $crust;  // check icon
+    
+    // channels
+    div[class*="search_"] input::placeholder {
+      color: $overlay1;
     }
-
-    div[class*="search_"] {
-      background-color: $base !important;
-
-      input::placeholder {
-        color: $overlay0;
+    div[class^="channelRow_"] {
+      &:hover:not([class*="disabled_"]) {
+        background-color: $surface1;
       }
-    }
-
-    div[class*="browser"] {
-      div[class*="content"] div[class^="container"] {
-        background-color: $base;
+      button {
+        border-color: $overlay0;
+        &:hover {
+          background-color: $overlay0;
+        }
       }
-    }
-
-    div[class*="scrollerContainer_"] {
-      background-color: $mantle;
-
-      div[class*="checkIcon_"][style*="opacity: 1;"] > svg > path {
-        fill: $crust;
-      }
-    }
-
-    div[role="tablist"] {
-      background-color: $mantle;
-      border-bottom: 2px solid $surface0;
     }
   }
 }

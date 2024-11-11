@@ -12,6 +12,11 @@
 @use "@catppuccin/palette/scss/frappe" as *;
 @use "@catppuccin/highlightjs/sass/theme";
 
+:root .theme-light {
+  @import "@catppuccin/palette/scss/latte";
+  @import "components/lightfix";
+}
+
 @import "theme";
 .theme-dark {
   @include theme.highlights("frappe", "hex");
