@@ -23,7 +23,7 @@ jobs:
           cache: "yarn"
 
       - run: yarn install
-      - run: yarn release
+      - run: yarn build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
