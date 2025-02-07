@@ -1,12 +1,13 @@
 nav[class*="guilds_"] {
+  ul {
+    background-color: #{$crust};
+  }
   // server icons
   foreignObject > div[data-list-item-id*="guildsnav_"] {
     &:hover,
     &[class*="selected"] {
-      > div[class^="childWrapper"] {
-        color: $crust;
-        font-weight: 600;
-      }
+      color: $crust;
+      font-weight: 600;
     }
   }
 

@@ -97,6 +97,7 @@ html {
 .theme-light {
   --header-primary: #{$text};
   --header-secondary: #{$subtext0};
+  --__header-bar-background: #{$mantle} !important;
 
   --text-normal: #{$text};
   --text-muted: #{$subtext0};
@@ -107,31 +108,41 @@ html {
   --text-danger: #{$red};
   --text-brand: #{$brand};
 
-  --background-primary: #{$base};
-  --background-secondary: #{$mantle};
-  --background-secondary-alt: #{darken($mantle, 2%)};
-  --background-tertiary: #{$crust};
-  --background-accent: #{$brand};
-  --background-floating: #{darken($crust, 2%)};
+  --background-primary: #{$base} !important;
+  --background-secondary: #{$mantle} !important;
+  --background-secondary-alt: #{darken($mantle, 2%)} !important;
+  --background-tertiary: #{$crust} !important;
+  --background-accent: #{$brand} !important;
+  --background-floating: #{darken($crust, 2%)} !important;
+  --background-surface-highest: #{$crust} !important;
+  --background-surface-higher: #{$mantle} !important;
+  --background-surface-high: #{$base} !important;
+
+  --background-base-lowest: #{$mantle} !important;
+  --background-base-lower: #{$mantle} !important;
+  --background-base-low: #{lighten($mantle, 1%)} !important;
   --background-nested-floating: #{$mantle};
   --background-mobile-primary: #{$base};
   --background-mobile-secondary: #{$mantle};
   --bg-base-secondary: #{$mantle};
+  --bg-base-tertiary: #{$crust} !important;
   --bg-surface-raised: #{$mantle};
 
   --home-background: #{$base};
   --chat-background: #{$base};
   --chat-border: #{$crust};
   --chat-input-container-background: #{$base};
-
+  --border-normal: #{$crust};
+  --border-subtle: #{$base} !important;
   --background-modifier-hover: #{adjust-color($text, $alpha: -0.85)};
   --background-modifier-selected: #{adjust-color($text, $alpha: -0.8)};
   --background-modifier-accent: #{adjust-color($text, $alpha: -0.74)};
   --background-modifier-active: #{adjust-color($text, $alpha: -0.83)};
-
+  --custom-channel-members-bg: #{$mantle};
   --info-positive-background: #{adjust-color($green, $alpha: -0.85)};
   --info-positive-foreground: #{$green};
   --info-positive-text: #{$text};
+  --card-primary-bg: #{$surface0} !important;
 
   --brand-500: #{$brand};
   --brand-560: #{darken($brand, math.div(20%, 2))};

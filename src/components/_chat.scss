@@ -1,119 +1,141 @@
-[class^="chatContent"] {
-  // new message ruler
-  #---new-messages-bar {
-    span[class^="unreadPill"] {
-      color: #{$crust};
-    }
-  }
-
-  // new message bar
-  div[class^="newMessagesBar"] {
-    button {
-      color: #{$crust};
-    }
-  }
-
-  // reply bar
-  [class^="attachedBars_"],
-  [class^="stackedBars_"] {
-    --background-secondary: #{$crust};
-  }
-
-  // text input area
-  div[class^="channelTextArea"] {
-    div[class^="buttons"] * {
-      color: var(--interactive-normal) !important;
-    }
-  }
-
-  // reactions
-  [id^="message-reactions"] {
-    div[class^="reaction"] {
-      &:not(div[class^="reactionCount"]):hover {
-        background-color: var(--brand-experiment-20a);
-        border-color: var(--brand-experiment-30a);
+main[class^="chatContent"] {
+  background-color: #{$base};
+  div[class^="messagesWrapper"] {
+    [data-list-id="chat-messages"] {
+      div[class^="divider"] span {
+        background-color: #{$surface0};
       }
 
-      div[class^="reactionInner"] {
-        border-radius: 0.4rem;
+      background-color: #{$base};
+
+      div[class^="buttons"] * {
+        background-color: #{$base};
+        color: var(--interactive-normal) !important;
+        border-color: #{$crust};
       }
-    }
-  }
-  // Super reactions and beta badge
-  div[class*="isBurstReactionPicker_"] {
-    box-shadow:
-      0 0 0 2px $mauve,
-      0 0 16px $lavender;
-  }
-  div[class^="navButtonSuperReactActive"],
-  div[class^="navButtonSuperReactActive"]:hover {
-    background: linear-gradient(270deg, $pink, $lavender 33.63%, $mauve);
-    color: $crust;
-  }
-  div[class*="betaTag_"] {
-    background: var(--brand-experiment) !important;
-    color: $crust;
-  }
-  button[class*="navButtonActive_"],
-  button[class*="navButtonActive_"]:hover {
-    color: $crust;
-  }
-  div[class*="colorPremiumGradient_"][class*="focused_"] {
-    background: linear-gradient(270deg, $pink, $lavender 33.63%, $mauve);
-    color: $crust !important;
-  }
-  div[class*="isBurstReactionPicker"] {
-    border: none;
-    box-shadow:
-      0 0 0 2px $mauve,
-      0 0 16px $lavender;
-  }
-  // Voice messages play button
-  div[class*="playButtonContainer_"] {
-    background: var(--brand-experiment) !important;
-  }
-  svg[class*="playIcon_"] path {
-    fill: $crust;
-  }
 
-  // chat header
-  div[class^="container"][class*="header_"] {
-    div[class*="addReactButton_"],
-    div[class^="buttons"]:not([class*="lookBlank_"]) div[class^="contents"] {
-      background: $surface0;
-      &:hover {
-        background-color: var(--brand-experiment-20a);
-        border-color: var(--brand-experiment-30a);
+      // new message ruler
+      #---new-messages-bar {
+        span[class^="unreadPill"] {
+          color: #{$crust};
+          background-color: var(--divider-color);
+        }
       }
-    }
-  }
 
-  // "Messages failed to load" bar
-  div[class^="messagesErrorBar"] div[class*="barButtonBase_"] {
-    color: $crust;
-  }
+      // new message bar
+      div[class^="newMessagesBar"] {
+        button {
+          color: #{$crust};
+        }
+      }
 
-  // code stuff
-  // [class*="after_inlineCode_"],
-  // [class*="before_inlineCode_"],
-  // [class^="syntaxBefore"],
-  // [class^="syntaxAfter"] {
-  //   color: $overlay0;
-  // }
+      // reactions
+      [id^="message-reactions"] {
+        div[class^="reaction"] {
+          &:not(div[class^="reactionCount"]):hover {
+            background-color: var(--brand-experiment-20a);
+            border-color: var(--brand-experiment-30a);
+          }
 
-  [class*="inlineCode_"] {
-    background: $surface0;
-  }
-
-  code.inline {
-    background: $surface0;
-  }
-
-  div[class^="container"] div[class^="cardWrapper"] {
-    div[class*="completed_"] {
-      svg[class^="checkmark"] {
-        background-color: $green;
+          div[class^="reactionInner"] {
+            border-radius: 0.4rem;
+          }
+        }
+      }
+      // Super reactions and beta badge
+      div[class*="isBurstReactionPicker_"] {
+        box-shadow:
+          0 0 0 2px $mauve,
+          0 0 16px $lavender;
+      }
+      div[class^="navButtonSuperReactActive"],
+      div[class^="navButtonSuperReactActive"]:hover {
+        background: linear-gradient(270deg, $pink, $lavender 33.63%, $mauve);
         color: $crust;
+      }
+      div[class*="betaTag_"] {
+        background: var(--brand-experiment) !important;
+        color: $crust;
+      }
+      button[class*="navButtonActive_"],
+      button[class*="navButtonActive_"]:hover {
+        color: $crust;
+      }
+      div[class*="colorPremiumGradient_"][class*="focused_"] {
+        background: linear-gradient(270deg, $pink, $lavender 33.63%, $mauve);
+        color: $crust !important;
+      }
+      div[class*="isBurstReactionPicker"] {
+        border: none;
+        box-shadow:
+          0 0 0 2px $mauve,
+          0 0 16px $lavender;
+      }
+      // Voice messages play button
+      div[class*="playButtonContainer_"] {
+        background: var(--brand-experiment) !important;
+      }
+      svg[class*="playIcon_"] path {
+        fill: $crust;
+      }
+
+      // chat header
+      div[class^="container"][class*="header_"] {
+        div[class*="addReactButton_"],
+        div[class^="buttons"]:not([class*="lookBlank_"])
+          div[class^="contents"] {
+          background: $surface0;
+          &:hover {
+            background-color: var(--brand-experiment-20a);
+            border-color: var(--brand-experiment-30a);
+          }
+        }
+      }
+
+      // "Messages failed to load" bar
+      div[class^="messagesErrorBar"] div[class*="barButtonBase_"] {
+        color: $crust;
+      }
+
+      // code stuff
+      // [class*="after_inlineCode_"],
+      // [class*="before_inlineCode_"],
+      // [class^="syntaxBefore"],
+      // [class^="syntaxAfter"] {
+      //   color: $overlay0;
+      // }
+
+      [class*="inlineCode_"] {
+        background: $surface0;
+      }
+
+      code.inline {
+        background: $surface0;
+      }
+
+      div[class^="container"] div[class^="cardWrapper"] {
+        div[class*="completed_"] {
+          svg[class^="checkmark"] {
+            background-color: $green;
+            color: $crust;
+          }
+        }
+      }
+    }
+  }
+  form {
+    background-color: #{$base};
+    div[class^="channelBottomBarArea"] {
+      // text input area
+      div[class^="channelTextArea"] {
+        background-color: #{$crust};
+        div[class^="floatingBars"] {
+          background-color: #{$crust};
+        }
+        // reply bar
+        div[class^="stackedBars"] {
+          background-color: #{$crust};
+        }
       }
     }
   }
