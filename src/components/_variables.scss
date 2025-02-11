@@ -95,19 +95,19 @@ html {
 
 .theme-dark,
 .theme-light {
-  --header-primary: #{$text};
-  --header-secondary: #{$subtext0};
+  --header-primary: #{$text} !important;
+  --header-secondary: #{$subtext0} !important;
   --__header-bar-background: #{$mantle} !important;
 
-  --text-normal: #{$text};
-  --text-muted: #{$subtext0};
-  --text-link: #{$blue};
+  --text-normal: #{$text} !important;
+  --text-muted: #{$subtext0} !important;
+  --text-link: #{$blue} !important;
   --text-link-low-saturation: #{$sapphire};
   --text-positive: #{$green};
   --text-warning: #{$yellow};
   --text-danger: #{$red};
   --text-brand: #{$brand};
-
+  --text-tertiary: #{$subtext0} !important;
   --background-primary: #{$base} !important;
   --background-secondary: #{$mantle} !important;
   --background-secondary-alt: #{darken($mantle, 2%)} !important;
@@ -280,7 +280,7 @@ html {
   --button-outline-primary-text-active: #{$base};
   --button-outline-primary-border-active: #{darken($surface2, math.div(5%, 2))};
 
-  --modal-background: #{$base};
+  --modal-background: #{$base} !important;
   --modal-footer-background: #{$crust};
 
   --scrollbar-thin-thumb: #{$brand};
@@ -309,8 +309,9 @@ html {
   --background-message-highlight: #{adjust-color($brand, $alpha: -0.92)};
   --background-message-highlight-hover: #{adjust-color($brand, $alpha: -0.94)};
 
-  --channels-default: #{darken($subtext0, 5%)};
-  --channel-icon: #{darken($subtext0, 5%)};
+  --channels-default: #{darken($subtext0, 5%)} !important;
+  --channel-icon: #{darken($subtext0, 5%)} !important;
+  --icon-tertiary: #{darken($subtext0, 5%)} !important;
   --channel-text-area-placeholder: #{adjust-color($text, $alpha: -0.5)};
   --channeltextarea-background: #{$mantle};
 
