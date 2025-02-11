@@ -1,25 +1,12 @@
 main[class^="chatContent"] {
-  background-color: #{$base};
+  .expression-picker-chat-input-button button {
+    background-color: transparent !important;
+  }
   div[class^="messagesWrapper"] {
     [data-list-id="chat-messages"] {
-      div[class^="divider"] span {
-        background-color: #{$surface0};
-      }
-
-      background-color: #{$base};
-
       div[class^="buttons"] * {
-        background-color: #{$base};
         color: var(--interactive-normal) !important;
         border-color: #{$crust};
-      }
-
-      // new message ruler
-      #---new-messages-bar {
-        span[class^="unreadPill"] {
-          color: #{$crust};
-          background-color: var(--divider-color);
-        }
       }
 
       // new message bar
