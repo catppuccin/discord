@@ -10,6 +10,7 @@ div[style*="background-color: rgb(35, 165, 90)"] {
   background-color: $green !important;
 }
 svg[fill="#23a55a"],
+svg[class^="icon_"] path[fill="#23a55a"],
 rect[fill="rgba(35, 165, 90, 1)"],
 rect[fill="rgba(41, 159, 91, 1)"] {
   fill: $green !important;
