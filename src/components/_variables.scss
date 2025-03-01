@@ -95,43 +95,55 @@ html {
 
 .theme-dark,
 .theme-light {
-  --header-primary: #{$text};
-  --header-secondary: #{$subtext0};
+  --header-primary: #{$text} !important;
+  --header-secondary: #{$subtext0} !important;
+  --__header-bar-background: #{$mantle} !important;
 
-  --text-normal: #{$text};
-  --text-muted: #{$subtext0};
-  --text-link: #{$blue};
+  --text-normal: #{$text} !important;
+  --text-muted: #{$subtext0} !important;
+  --text-link: #{$blue} !important;
   --text-link-low-saturation: #{$sapphire};
   --text-positive: #{$green};
   --text-warning: #{$yellow};
   --text-danger: #{$red};
   --text-brand: #{$brand};
+  --text-tertiary: #{$subtext0} !important;
+  --background-primary: #{$base} !important;
+  --background-secondary: #{$mantle} !important;
+  --background-secondary-alt: #{darken($base, 1%)} !important;
+  --background-tertiary: #{$crust} !important;
+  --background-accent: #{$brand} !important;
+  --background-floating: #{darken($crust, 2%)} !important;
+  --background-surface-highest: #{$surface1} !important;
+  --background-surface-higher: #{darken($surface0, 3%)} !important;
+  --background-surface-high: #{$base} !important;
 
-  --background-primary: #{$base};
-  --background-secondary: #{$mantle};
-  --background-secondary-alt: #{darken($mantle, 2%)};
-  --background-tertiary: #{$crust};
-  --background-accent: #{$brand};
-  --background-floating: #{darken($crust, 2%)};
+  --background-base-lowest: #{$crust} !important;
+  --background-base-lower: #{$mantle} !important;
+  --background-base-low: #{darken($base, 1%)} !important;
   --background-nested-floating: #{$mantle};
   --background-mobile-primary: #{$base};
   --background-mobile-secondary: #{$mantle};
   --bg-base-secondary: #{$mantle};
+  --bg-base-tertiary: #{$crust} !important;
   --bg-surface-raised: #{$mantle};
-
+  --bg-overlay-floating: #{darken($base, 1%)};
   --home-background: #{$base};
   --chat-background: #{$base};
   --chat-border: #{$crust};
   --chat-input-container-background: #{$base};
-
+  --border-normal: #{$crust};
+  --border-subtle: #{$base} !important;
   --background-modifier-hover: #{adjust-color($text, $alpha: -0.85)};
   --background-modifier-selected: #{adjust-color($text, $alpha: -0.8)};
   --background-modifier-accent: #{adjust-color($text, $alpha: -0.74)};
   --background-modifier-active: #{adjust-color($text, $alpha: -0.83)};
-
+  --background-mod-subtle: #{$surface0} !important;
+  --custom-channel-members-bg: #{$mantle};
   --info-positive-background: #{adjust-color($green, $alpha: -0.85)};
   --info-positive-foreground: #{$green};
   --info-positive-text: #{$text};
+  --card-primary-bg: #{$surface0} !important;
 
   --brand-500: #{$brand};
   --brand-560: #{darken($brand, math.div(20%, 2))};
@@ -269,7 +281,7 @@ html {
   --button-outline-primary-text-active: #{$base};
   --button-outline-primary-border-active: #{darken($surface2, math.div(5%, 2))};
 
-  --modal-background: #{$base};
+  --modal-background: #{$base} !important;
   --modal-footer-background: #{$crust};
 
   --scrollbar-thin-thumb: #{$brand};
@@ -298,8 +310,9 @@ html {
   --background-message-highlight: #{adjust-color($brand, $alpha: -0.92)};
   --background-message-highlight-hover: #{adjust-color($brand, $alpha: -0.94)};
 
-  --channels-default: #{darken($subtext0, 5%)};
-  --channel-icon: #{darken($subtext0, 5%)};
+  --channels-default: #{darken($subtext0, 5%)} !important;
+  --channel-icon: #{darken($subtext0, 5%)} !important;
+  --icon-tertiary: #{darken($subtext0, 5%)} !important;
   --channel-text-area-placeholder: #{adjust-color($text, $alpha: -0.5)};
   --channeltextarea-background: #{$mantle};
 
@@ -317,7 +330,7 @@ html {
   --deprecated-card-editable-bg: #{adjust-color($crust, $alpha: -0.7)};
 
   --bg-mod-faint: #{$mantle};
-  --bg-mod-subtle: #{$surface1};
+  --bg-mod-subtle: #{$surface0};
 
   --deprecated-store-bg: #{$base};
   --deprecated-quickswitcher-input-background: #{darken(
@@ -336,7 +349,7 @@ html {
 
   --focus-primary: #{$brand};
 
-  --interactive-normal: #{$text};
+  --interactive-normal: #{$text} !important;
   --interactive-muted: #{adjust-color($text, $alpha: -0.7)};
   --interactive-hover: #{$text};
   --interactive-active: #{$text};

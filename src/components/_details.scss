@@ -358,3 +358,8 @@ div[class*="actions_"] {
 [class^="hoverButton"]:not([class^="anchor"]):hover > svg {
   color: $base;
 }
+
+// properly apply link colors
+.link__972a0 {
+  color: var(--header-secondary);
+}
