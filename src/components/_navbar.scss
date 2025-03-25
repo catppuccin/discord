@@ -6,8 +6,10 @@ nav[class*="guilds_"] {
   foreignObject > div[data-list-item-id*="guildsnav_"] {
     &:hover,
     &[class*="selected"] {
-      color: $crust;
-      font-weight: 600;
+      div[class^="childWrapper"] {
+        color: $crust;
+        font-weight: 600;
+      }
     }
   }
 
