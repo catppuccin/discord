@@ -113,7 +113,7 @@ main[class^="chatContent"] {
   form {
     background-color: #{$base};
     .visual-refresh & {
-      background-color: #($mantle);
+      background-color: #{$mantle};
     }
     div[class^="channelBottomBarArea"] {
       // text input area
