@@ -3,9 +3,9 @@
 
 
 "@catppuccin/highlightjs@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@catppuccin/highlightjs/-/highlightjs-1.0.0.tgz#1eb521c46e206da459ca03d114444842217f8417"
-  integrity sha512-Cq0b5pNkzAxTf7QwXkGcMnfEawOdaJP9wQJNsLO1PCqml+NgMe7mOknH3l/j/0Q3bgjijm+N26B8BAYiv18oQg==
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@catppuccin/highlightjs/-/highlightjs-1.0.1.tgz#2f97c8b4e808e9ce2b11d523290190478eba3172"
+  integrity sha512-wnagsNQbJroHQMalkprwRoapfGV1hHRx46d7GXp4kf6rlShImBlgpqPCt9OD471Gq4qpHdfFH/GJFIvY1CLqHA==
 
 "@catppuccin/palette@^1.0.0":
   version "1.7.1"
