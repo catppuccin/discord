@@ -1,12 +1,7 @@
 const fs = require("fs").promises;
 const path = require("path");
 
-const sourceFiles = [
-  "src/catppuccin-frappe.theme.scss",
-  "src/catppuccin-latte.theme.scss",
-  "src/catppuccin-macchiato.theme.scss",
-  "src/catppuccin-mocha.theme.scss",
-];
+const sourceFiles = ["src/catppuccin.theme.scss"];
 
 const accents = [
   "rosewater",

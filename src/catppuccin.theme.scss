@@ -1,0 +1,104 @@
+/**
+ * @name Catppuccin
+ * @author winston#0001
+ * @authorId 505490445468696576
+ * @version 0.2.0
+ * @description 🎮 Soothing pastel theme for Discord
+ * @website https://github.com/catppuccin/discord
+ * @invite r6Mdz5dpFc
+**/
+
+@use "sass:math";
+@use "@catppuccin/highlightjs/sass/theme";
+
+@use "@catppuccin/palette/scss/latte" as latte;
+@use "@catppuccin/palette/scss/frappe" as frappe;
+@use "@catppuccin/palette/scss/macchiato" as macchiato;
+@use "@catppuccin/palette/scss/mocha" as mocha;
+
+//frappe - Ash
+.visual-refresh.theme-dark,
+.visual-refresh .theme-dark,
+.theme-dark {
+  @import "@catppuccin/palette/scss/frappe";
+  $brand: $blue;
+
+  @import "components/contrast-dark";
+  @import "theme";
+
+  @include theme.highlights("frappe");
+}
+
+//macchiato - Dark
+.visual-refresh.theme-darker,
+.visual-refresh .theme-darker,
+.theme-darker {
+  @import "@catppuccin/palette/scss/macchiato";
+  $brand: $blue;
+
+  @import "components/contrast-dark";
+  @import "theme";
+
+  @include theme.highlights("macchiato");
+}
+
+//mocha - Onyx
+.visual-refresh.theme-midnight,
+.visual-refresh .theme-midnight,
+.theme-midnight {
+  @import "@catppuccin/palette/scss/mocha";
+  $brand: $blue;
+
+  @import "components/contrast-dark";
+  @import "theme";
+
+  @include theme.highlights("mocha");
+}
+
+//latte - Light
+.visual-refresh.theme-light,
+.visual-refresh .theme-light,
+.theme-light {
+  @import "@catppuccin/palette/scss/latte";
+  $brand: $blue;
+
+  @import "components/tweak-light";
+  @import "theme";
+
+  @include theme.highlights("latte");
+}
+
+@mixin appearance-tooltip($tooltip-class, $tooltip-text, $bg) {
+  div[class*="#{$tooltip-class}"] {
+    background: $bg;
+
+    &:hover::before {
+      position: absolute;
+      bottom: 169%;
+      left: 50%;
+      transform: translateX(-50%);
+      content: "#{$tooltip-text}";
+      overflow: hidden;
+      word-wrap: break-word;
+      font-weight: 500;
+      font-style: inherit;
+      font-family: inherit;
+      font-size: 15px;
+      line-height: 16px;
+      vertical-align: baseline;
+      background-color: var(--background-floating);
+      color: var(--text-default);
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-high);
+      z-index: 10001;
+      pointer-events: none;
+    }
+  }
+}
+
+@include appearance-tooltip("midnightIcon_", "Mocha", mocha.$base);
+@include appearance-tooltip("darkerIcon_", "Macchiato", macchiato.$base);
+@include appearance-tooltip("darkIcon_", "Frappé", frappe.$base);
+@include appearance-tooltip("lightIcon_", "Latte", latte.$base);
