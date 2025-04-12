@@ -1,7 +1,8 @@
 {
-  "name": "catppuccin-discord",
+  "private": true,
+  "name": "@catppuccin/discord",
   "version": "0.2.0",
-  "description": "Catppuccin theme for Discord",
+  "description": "Soothing pastel theme for Discord",
   "repository": "https://github.com/catppuccin/discord",
   "license": "MIT",
   "author": {
@@ -14,20 +15,19 @@
       "email": "hey@winston.sh"
     }
   ],
-  "private": true,
+  "type": "module",
   "scripts": {
-    "build": "mkdir -p dist/dist && sass -I node_modules --no-charset --no-source-map src:dist/dist",
-    "release": "node build.js && mkdir -p dist/dist && sass -I node_modules --style=compressed --no-charset --no-source-map src:dist/dist && rm src/catppuccin-*-*.theme.scss",
-    "watch": "mkdir -p dist/dist && sass -I node_modules --no-charset --no-source-map src:dist/dist -w",
-    "prepare": "husky"
+    "build": "node build.js",
+    "prepare": "husky",
+    "format": "prettier --write ."
   },
   "devDependencies": {
     "@catppuccin/highlightjs": "^1.0.0",
-    "@catppuccin/palette": "^1.0.0",
+    "@catppuccin/palette": "^1.2.0",
     "husky": ">=6",
     "lint-staged": ">=10",
     "prettier": "^3.0.0",
-    "sass": "^1.55.0"
+    "sass-embedded": "^1.79.4"
   },
   "lint-staged": {
     "*.{js,sass,scss}": "prettier --write"

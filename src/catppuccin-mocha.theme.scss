@@ -12,8 +12,6 @@
 @use "@catppuccin/palette/scss/mocha" as *;
 @use "@catppuccin/highlightjs/sass/theme";
 
-$brand: $blue;
-
 :root .theme-light {
   @import "@catppuccin/palette/scss/latte";
   @import "components/lightfix";
