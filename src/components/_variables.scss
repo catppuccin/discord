@@ -20,7 +20,7 @@
   --brand-400: #{lighten($brand, math.div(30%, 2))};
   --brand-430: #{lighten($brand, math.div(20%, 2))};
   --brand-460: #{lighten($brand, math.div(10%, 2))};
-  --brand-500: #{$brand};
+  --brand-500: #{$brand} !important;
   --brand-530: #{darken($brand, math.div(10%, 2))};
   --brand-560: #{darken($brand, math.div(20%, 2))};
   --brand-600: #{darken($brand, math.div(30%, 2))};
@@ -95,13 +95,16 @@
 
   --autocomplete-bg: #{$crust};
 
+  --message-reacted-background: #{adjust-color($brand, $alpha: -0.7)} !important;
+  --blurple-50: #{$brand};
+
   --background-primary: #{$base} !important;
   --background-secondary: #{$mantle} !important;
   --background-secondary-alt: #{darken($base, 1%)} !important;
   --background-tertiary: #{$crust} !important;
   --background-accent: #{$brand} !important;
   --background-floating: #{darken($crust, 2%)} !important;
-  --background-surface-highest: #{$surface1} !important;
+  --background-surface-highest: #{$surface0} !important;
   --background-surface-higher: #{darken($surface0, 3%)} !important;
   --background-surface-high: #{$base} !important;
 
@@ -125,11 +128,13 @@
   --background-modifier-selected: #{adjust-color($overlay0, $alpha: -0.8)};
   --background-modifier-accent: #{adjust-color($text, $alpha: -0.74)};
   --background-modifier-active: #{adjust-color($text, $alpha: -0.83)};
-  --background-mod-faint: #{$surface1};
-  --background-mod-normal: #{$surface0};
+  --background-mod-faint: #{$surface2};
+  --background-mod-normal: #{$surface1};
   --background-mod-strong: #{$base};
-  --background-mod-subtle: #{$surface2};
+  --background-mod-subtle: #{$surface0};
   --custom-channel-members-bg: #{$mantle};
+  --custom-status-bubble-background: #{$crust} !important;
+  --custom-status-bubble-background-color: #{$mantle} !important;
   --card-primary-bg: #{$surface0} !important;
 
   // --brand-500: #{$brand};
@@ -179,7 +184,7 @@
 
   --white: #{$text};
   --white-400: #{$text};
-  --white-500: #{$text};
+  --white-500: #{$crust};
 
   --guild-boosting-pink: #{$pink};
   --guild-boosting-blue: #{$blue};
@@ -207,11 +212,11 @@
   --button-positive-background-active: #{darken($green, math.div(15%, 2))};
   --button-positive-background-disabled: #{$green};
 
-  --button-secondary-background: #{$surface1};
+  --button-secondary-background: #{$surface1} !important;
   --button-secondary-background-hover: #{darken($surface1, math.div(10%, 2))};
   --button-secondary-background-active: #{darken($surface1, math.div(10%, 2))};
   --button-secondary-background-disabled: #{$surface1};
-  --button-secondary-text: #{$text};
+  --button-secondary-text: #{$text} !important;
 
   --button-outline-danger-text: #{$text};
   --button-outline-danger-border: #{$red};
@@ -278,6 +283,9 @@
 
   --logo-primary: #{$text};
 
+  // Background of chatbox autocomplete (emoji, pings)
+  --autocomplete-bg: #{$crust} !important;
+
   --control-brand-foreground: #{$brand};
   --control-brand-foreground-new: #{$brand};
   --mention-foreground: #{$brand};
@@ -285,7 +293,7 @@
 
   --background-mentioned: #{adjust-color($yellow, $alpha: -0.9)};
   --background-mentioned-hover: #{adjust-color($yellow, $alpha: -0.92)};
-  --background-message-hover: #{adjust-color($crust, $alpha: -0.75)};
+  --background-message-hover: #{adjust-color($crust, $alpha: -0.75)} !important;
   --background-message-automod: #{adjust-color($rosewater, $alpha: -0.95)};
   --background-message-automod-hover: #{adjust-color($rosewater, $alpha: -0.9)};
   --background-message-highlight: #{adjust-color($brand, $alpha: -0.92)};
@@ -315,8 +323,12 @@
   --deprecated-card-bg: #{adjust-color($crust, $alpha: -0.4)};
   --deprecated-card-editable-bg: #{adjust-color($crust, $alpha: -0.7)};
 
+  // Fixes bot tags
+  --bg-brand: #{$brand} !important;
+
   --bg-mod-faint: #{$mantle};
-  --bg-mod-subtle: #{$surface0};
+  --bg-mod-subtle: #{$surface0} !important;
+  --bg-mod-strong: #{$surface1} !important;
 
   --deprecated-text-input-bg: #{$crust};
   --deprecated-text-input-border: #{adjust-color($crust, $alpha: -0.7)};
@@ -334,6 +346,8 @@
 
   --__spoiler-background-color--hidden: #{$surface2};
   --__spoiler-warning-background-color: #{lighten($surface2, 5%)};
+
+  --user-profile-overlay-background: #{$mantle} !important;
 }
 
 ::selection {
