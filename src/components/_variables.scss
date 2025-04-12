@@ -93,6 +93,7 @@
 
   --text-feedback-positive: #{$green};
 
+  // Background of chatbox autocomplete (emoji, pings)
   --autocomplete-bg: #{$crust};
 
   --message-reacted-background: #{adjust-color($brand, $alpha: -0.7)} !important;
@@ -184,7 +185,7 @@
 
   --white: #{$text};
   --white-400: #{$text};
-  --white-500: #{$crust};
+  --white-500: #{$text};
 
   --guild-boosting-pink: #{$pink};
   --guild-boosting-blue: #{$blue};
@@ -283,9 +284,6 @@
 
   --logo-primary: #{$text};
 
-  // Background of chatbox autocomplete (emoji, pings)
-  --autocomplete-bg: #{$crust} !important;
-
   --control-brand-foreground: #{$brand};
   --control-brand-foreground-new: #{$brand};
   --mention-foreground: #{$brand};
@@ -322,9 +320,6 @@
 
   --deprecated-card-bg: #{adjust-color($crust, $alpha: -0.4)};
   --deprecated-card-editable-bg: #{adjust-color($crust, $alpha: -0.7)};
-
-  // Fixes bot tags
-  --bg-brand: #{$brand} !important;
 
   --bg-mod-faint: #{$mantle};
   --bg-mod-subtle: #{$surface0} !important;
