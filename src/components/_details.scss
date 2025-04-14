@@ -6,17 +6,30 @@
 // }
 // I can't seem to get the indicator to appear?
 
-$platform-colors: (
+$svg-platform-colors: (
   //online indicators (not var based)
   $yellow: #cc954c,
   $red: #d83a41,
   $green: #40a258,
   $overlay1: #82838b
 );
-@each $var, $color in $platform-colors {
+@each $var, $color in $svg-platform-colors {
   svg [fill="#{$color}"],
   svg[fill="#{$color}"] {
     fill: #{$var};
+  }
+}
+
+$div-platform-colors: (
+  //online indicators (not var based)
+  $yellow: "rgb(204, 149, 76)",
+  $red: "rgb(216, 58, 65)",
+  $green: "rgb(64, 162, 88)",
+  $overlay1: "rgb(130, 131, 139)"
+);
+@each $var, $color in $div-platform-colors {
+  div[style="background-color: #{$color};"] {
+    background-color: #{$var} !important;
   }
 }
 
@@ -31,6 +44,8 @@ div[class^="expandedFolderBackground_"] {
 }
 
 // Switches
+// Literally a single switch doesnt have the parent control_ class... so annoying
+// div[class^="container_"][style*="opacity: 1; background-color:"]
 div[class^="control_"] > div[class^="container_"] {
   background-color: #{$surface2} !important;
 
@@ -79,6 +94,29 @@ div[class^="message"][class*="isSystemMessage"] div[class^="icon"] {
   // Missed call icon
   &[style*="/assets/6f076a64de25de4b.svg"] {
     @include recolor($subtext0);
+  }
+}
+
+// Quests page gradient
+div[class^="overlay_"][class*="darkThemeGradient_"] {
+  background: linear-gradient(
+    0deg,
+    #{$base} 0,
+    rgba($surface0, 0.5) 50%,
+    rgba($surface1, 0)
+  );
+}
+
+// Forum tags and gallery gradient
+div[class^="textContentFooter_"] {
+  background: linear-gradient(
+    0deg,
+    $base,
+    rgba($surface0, 0.97) 36px,
+    rgba($surface1, 0.4)
+  ) !important;
+  [class*="tagPill_"] {
+    background-color: #{rgba($surface1, 0.9)};
   }
 }
 

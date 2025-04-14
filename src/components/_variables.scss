@@ -208,6 +208,12 @@
   --premium-perk-pink: #{$pink};
   --premium-perk-orange: #{$peach};
 
+  --premium-tier-0-blue: #{$blue};
+  --premium-tier-0-purple: #{$mauve};
+
+  --premium-tier-1-blue-for-gradients: #{$sapphire};
+  --premium-tier-1-dark-blue-for-gradients: #{$blue};
+
   --premium-tier-2-purple-for-gradients: #{darken($mauve, math.div(20%, 2))};
   --premium-tier-2-purple-for-gradients-2: #{$mauve};
   --premium-tier-2-pink-for-gradients: #{$pink};
@@ -355,9 +361,25 @@
   --__spoiler-background-color--hidden: #{$surface2};
   --__spoiler-warning-background-color: #{lighten($surface2, 5%)};
 
-  --user-profile-overlay-background: #{$mantle} !important;
+  --user-profile-overlay-background: #{$mantle};
+  --user-profile-overlay-background-hover: #{$surface0};
 
   --plum-23: #{$base};
+
+  --badge-brand-bg: #{$brand};
+  --badge-brand-text: #{$crust};
+
+  --twitch: #{darken($mauve, 10%)};
+  --playstation: #{darken($blue, 10%)};
+
+  --notice-background-critical: #{$red};
+  --notice-background-info: #{$blue};
+  --notice-background-positive: #{$green};
+  --notice-background-warning: #{$yellow};
+  --notice-text-critical: #{$crust};
+  --notice-text-info: #{$crust};
+  --notice-text-positive: #{$crust};
+  --notice-text-warning: #{$crust};
 }
 
 ::selection {

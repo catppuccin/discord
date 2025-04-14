@@ -22,7 +22,11 @@ svg[class^="dots_"], // typing indicator
 div[class*="textBadge_"][class*="base_"],
 svg[class^="descriptionIcon_"],
 div[class*="winButtonClose_"]:hover,
-div[class^="uploadArea_"] {
+div[class^="uploadArea_"],
+svg[class^="stepIcon_"],
+svg[class^="activeIcon_"], // Account switcher
+div[class*="tooltipBrand_"],
+[class*="colorBrand_"], [class*="colorStreamerMode_"], [class*="colorSpotify_"], [class*="colorPremium_"], [class*="colorPlayStation_"] {
   --white: #{$crust};
   --white-500: #{$crust};
 }
@@ -32,4 +36,16 @@ svg[class^="radioIndicator_"] [class*="refreshIcon_"] {
 }
 div[class^="automodText_"] {
   color: #{$crust};
+}
+
+// Forum pin icon
+div[class^="pinIcon_"] > svg > path {
+  fill: #{$crust};
+}
+
+// Server settings Members banner
+div[class^="bannerContainer_"] {
+  [style*="color: white"] {
+    color: #{$crust} !important;
+  }
 }
