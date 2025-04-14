@@ -12,20 +12,23 @@
 @use "@catppuccin/palette/scss/frappe" as *;
 @use "@catppuccin/highlightjs/sass/theme";
 
+.theme-dark,
+.visual-refresh.theme-dark,
+.visual-refresh .theme-dark {
+  $brand: $blue;
+
+  @import "components/contrast-dark";
+  @import "theme";
+
+  @include theme.highlights("frappe");
+}
+
 .theme-light,
 .visual-refresh.theme-light,
 .visual-refresh .theme-light {
   @import "@catppuccin/palette/scss/latte";
   $brand: $blue;
-  @import "components/lightfix";
-}
 
-.theme-dark,
-.visual-refresh.theme-dark,
-.visual-refresh .theme-dark {
-  $brand: $blue;
-  @import "components/contrast-dark";
+  @import "components/tweak-light";
   @import "theme";
-
-  @include theme.highlights("frappe");
 }

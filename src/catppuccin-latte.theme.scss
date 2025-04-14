@@ -17,7 +17,9 @@
 .visual-refresh .theme-dark {
   @import "@catppuccin/palette/scss/mocha";
   $brand: $blue;
-  @import "components/lightfix";
+
+  @import "components/contrast-dark";
+  @import "theme";
 }
 
 .theme-light,
@@ -25,10 +27,7 @@
 .visual-refresh .theme-light {
   $brand: $blue;
 
-  // Globally flip to white (Discord light mode uses in places where contrast is good)
-  --white: #{$crust} !important;
-  --white-500: #{$crust} !important;
-
+  @import "components/tweak-light";
   @import "theme";
 
   @include theme.highlights("latte");
