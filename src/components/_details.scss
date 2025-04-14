@@ -57,6 +57,19 @@ div[class^="control_"] > div[class^="container_"] {
   }
 }
 
+// system message icons
+div[class^="message"][class*="isSystemMessage"] div[class^="icon"] {
+  // User Joined icon
+  &[style*="/assets/61ccab047dad737a.svg"] {
+    @include recolor($green);
+  }
+
+  // Missed call icon
+  &[style*="/assets/6f076a64de25de4b.svg"] {
+    @include recolor($subtext0);
+  }
+}
+
 // //recolor spotify platform indicator
 // [src="/assets/eaeac24163b35f7526704a3d9b3c7722.svg"] {
 //   width: 0 !important;

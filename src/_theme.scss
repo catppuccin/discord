@@ -1,10 +1,26 @@
-// @import "components/icons-bgImg";
-// @import "components/icons-imgContent";
-// @import "components/icons-svgBg";
-// @import "components/icons-svgColor";
+// modified from https://stackoverflow.com/a/62880368
+@mixin recolor($color: #000) {
+  filter: url('data:image/svg+xml;utf8,\
+    <svg xmlns="http://www.w3.org/2000/svg">\
+      <filter id="ctp-recolor" color-interpolation-filters="sRGB">\
+        <feColorMatrix type="matrix" values="\
+          0 0 0 0 #{math.div(red($color), 255)}\
+          0 0 0 0 #{math.div(green($color), 255)}\
+          0 0 0 0 #{math.div(blue($color), 255)}\
+          0 0 0 1 0\
+        "/>\
+      </filter>\
+    </svg>\
+    #ctp-recolor');
+}
 
 & {
   @import "components/variables";
+
+  @import "components/icons-bgImg";
+  @import "components/icons-imgContent";
+  @import "components/icons-svgBg";
+  @import "components/icons-svgColor";
 }
 
 // @import "components/buttons";
