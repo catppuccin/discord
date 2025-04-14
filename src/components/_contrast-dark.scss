@@ -21,7 +21,8 @@ svg[class^="status_"], // Vc status (mute/deafen)
 svg[class^="dots_"], // typing indicator
 div[class*="textBadge_"][class*="base_"],
 svg[class^="descriptionIcon_"],
-div[class*="winButtonClose_"]:hover {
+div[class*="winButtonClose_"]:hover,
+div[class^="uploadArea_"] {
   --white: #{$crust};
   --white-500: #{$crust};
 }
