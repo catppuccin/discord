@@ -11,7 +11,7 @@ div[class^="listItem_"] div[class^="wrapper_"] [class*="selected_"], // Server l
 button[class^="container_"]>div[class^="icon_"]>svg, // Add Friend Page Discoverable Servers svg
 div[class^="newBadge_"],
 div[class^="premiumTab_"][class*="selected_"], // Nitro tab selected in settings
-label[class^="checkboxWrapper_"], label[class^="checkboxWrapperDisabled_"], div[class^="checkbox_"][class*="box_"]
+label[class^="checkboxWrapper_"], label[class^="checkboxWrapperDisabled_"], div[class^="checkbox_"][class*="box_"],
 svg[class^="checkmarkCircle"],
 button[class*="button_"][class*="lookFilled_"][class*="colorRed_"],
 button[class*="button_"][class*="lookFilled_"][class*="colorGreen_"],

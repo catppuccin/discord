@@ -87,6 +87,14 @@
   --text-tertiary: #{$subtext0} !important;
 
   --text-feedback-positive: #{$green};
+  --text-feedback-critical: #{$red};
+  --text-feedback-warning: #{$yellow};
+  --text-feedback-info: #{$blue};
+
+  --background-feedback-positive: #{adjust-color($green, $alpha: -0.9)};
+  --background-feedback-critical: #{adjust-color($red, $alpha: -0.9)};
+  --background-feedback-warning: #{adjust-color($yellow, $alpha: -0.9)};
+  --background-feedback-info: #{adjust-color($blue, $alpha: -0.9)};
 
   // Background of chatbox autocomplete (emoji, pings)
   --autocomplete-bg: #{$crust};
@@ -176,6 +184,7 @@
   --yellow-360: #{$yellow};
   --yellow-300: #{$yellow};
   --red-400: #{$red};
+  --red-500: #{darken($red, 15%)};
 
   --primary-100: #{$subtext1};
   --primary-300: #{$subtext1};
@@ -296,6 +305,10 @@
   --background-message-automod-hover: #{adjust-color($rosewater, $alpha: -0.9)};
   --background-message-highlight: #{adjust-color($brand, $alpha: -0.92)};
   --background-message-highlight-hover: #{adjust-color($brand, $alpha: -0.94)};
+
+  --background-code: #{$base};
+  // --background-code-addition: #{adjust-color($green, $alpha: -0.85)};; hljs compiles in selectors for these.
+  // --background-code-deletion: #{adjust-color($red, $alpha: -0.85)};;
 
   --channels-default: #{darken($subtext0, 5%)} !important;
   --channel-icon: #{darken($subtext0, 5%)} !important;
