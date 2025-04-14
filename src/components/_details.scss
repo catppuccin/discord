@@ -20,17 +20,6 @@ $platform-colors: (
   }
 }
 
-div[class^="item_"][class*="addFriend_"],
-div[class^="wrapper_"][class*="selected_"][data-list-item-id*="guildsnav___home"]
-  > div[class^="childWrapper_"],
-div[class*="numberBadge_"],
-div[class^="bar_"][class*="unreadMentionsBar_"],
-span[class*="botTag_"],
-div[class^="iconBadge_"] {
-  --white: #{$crust};
-  --white-500: #{$crust};
-}
-
 div[class^="newMessagesBar_"] {
   --white: #{$crust};
   --button-secondary-background: var(--brand);
@@ -39,6 +28,33 @@ div[class^="newMessagesBar_"] {
 
 div[class^="expandedFolderBackground_"] {
   --background-mod-subtle: #{$mantle} !important;
+}
+
+div[class^="control_"] > div[class^="container_"] {
+  // Switches
+  background-color: #{$surface2} !important;
+
+  > svg {
+    > rect {
+      fill: var(--white);
+    }
+    > svg > path {
+      fill: #{$surface2};
+    }
+  }
+
+  &[class*="checked_"] {
+    background-color: var(--brand-500) !important;
+
+    > svg {
+      > rect {
+        fill: #{$crust};
+      }
+      > svg > path {
+        fill: var(--brand-500);
+      }
+    }
+  }
 }
 
 // //recolor spotify platform indicator

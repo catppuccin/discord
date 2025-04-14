@@ -12,14 +12,20 @@
 @use "@catppuccin/palette/scss/macchiato" as *;
 @use "@catppuccin/highlightjs/sass/theme";
 
-$brand: $blue;
-
-:root .theme-light {
+theme-light,
+.visual-refresh.theme-light,
+.visual-refresh .theme-light {
   @import "@catppuccin/palette/scss/latte";
+  $brand: $blue;
   @import "components/lightfix";
 }
 
-@import "theme";
-.theme-dark {
+.theme-dark,
+.visual-refresh.theme-dark,
+.visual-refresh .theme-dark {
+  $brand: $blue;
+  @import "components/contrast-dark";
+  @import "theme";
+
   @include theme.highlights("macchiato");
 }

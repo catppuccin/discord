@@ -1,9 +1,4 @@
-.theme-dark,
-.visual-refresh.theme-dark,
-.visual-refresh .theme-dark,
-.theme-light,
-.visual-refresh.theme-light,
-.visual-refresh .theme-light {
+& {
   // weighted brand colors
   --brand-experiment: #{$brand};
   --bg-brand: #{$brand};
@@ -103,7 +98,7 @@
   --background-secondary: #{$mantle} !important;
   --background-secondary-alt: #{darken($base, 1%)} !important;
   --background-tertiary: #{$crust} !important;
-  --background-accent: #{$brand} !important;
+  --background-accent: #{$surface1} !important;
   --background-floating: #{darken($crust, 2%)} !important;
   --background-surface-highest: #{$surface0} !important;
   --background-surface-higher: #{darken($surface0, 3%)} !important;
@@ -117,12 +112,16 @@
   --background-mobile-secondary: #{$mantle};
   --bg-base-secondary: #{$mantle};
   --bg-base-tertiary: #{$crust} !important;
+  --bg-surface-overlay: #{lighten($base, 2%)};
   --bg-surface-raised: #{$mantle};
   --bg-overlay-floating: #{darken($base, 1%)};
   --home-background: #{$base};
+
   --chat-background: #{$base};
   --chat-border: #{$crust};
   --chat-input-container-background: #{$base};
+  --chat-text-muted: #{$subtext0};
+
   --border-normal: #{$crust};
   --border-subtle: #{$base} !important;
   --background-modifier-hover: #{adjust-color($overlay2, $alpha: -0.85)};
@@ -181,6 +180,7 @@
   --primary-100: #{$subtext1};
   --primary-300: #{$subtext1};
   --primary-400: #{$subtext1};
+  --primary-700: #{$surface1};
   --primary-800: #{$crust};
 
   --white: #{$text};
@@ -343,6 +343,8 @@
   --__spoiler-warning-background-color: #{lighten($surface2, 5%)};
 
   --user-profile-overlay-background: #{$mantle} !important;
+
+  --plum-23: #{$base};
 }
 
 ::selection {

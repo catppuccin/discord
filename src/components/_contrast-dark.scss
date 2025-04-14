@@ -1,0 +1,34 @@
+// Catppuccin's dark flavour's accents have bad contrast with $text so swap to $crust
+// Light accents contrast is ok! (rare latte win)
+
+div[class^="item_"][class*="addFriend_"],
+div[class*="numberBadge_"],
+div[class^="bar_"][class*="unreadMentionsBar_"],
+span[class*="botTag_"],
+div[class^="iconBadge_"],
+span[class^="unreadPill_"],
+div[class^="listItem_"] div[class^="wrapper_"] [class*="selected_"], // Server list entries with no icons (Home/Add server/Discover etc)
+button[class^="container_"]>div[class^="icon_"]>svg, // Add Friend Page Discoverable Servers svg
+div[class^="newBadge_"],
+div[class^="premiumTab_"][class*="selected_"], // Nitro tab selected in settings
+label[class^="checkboxWrapper_"], label[class^="checkboxWrapperDisabled_"], div[class^="checkbox_"][class*="box_"]
+svg[class^="checkmarkCircle"],
+button[class*="button_"][class*="lookFilled_"][class*="colorRed_"],
+button[class*="button_"][class*="lookFilled_"][class*="colorGreen_"],
+button[class*="button_"][class*="lookFilled_"][class*="colorLink_"],
+button[class*="colorable_"][class*="join_"], // Vc join buttons
+svg[class^="status_"], // Vc status (mute/deafen)
+svg[class^="dots_"], // typing indicator
+div[class*="textBadge_"][class*="base_"],
+svg[class^="descriptionIcon_"],
+div[class*="winButtonClose_"]:hover {
+  --white: #{$crust};
+  --white-500: #{$crust};
+}
+
+svg[class^="radioIndicator_"] [class*="refreshIcon_"] {
+  fill: #{$crust};
+}
+div[class^="automodText_"] {
+  color: #{$crust};
+}
