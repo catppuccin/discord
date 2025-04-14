@@ -30,8 +30,8 @@ div[class^="expandedFolderBackground_"] {
   --background-mod-subtle: #{$mantle} !important;
 }
 
+// Switches
 div[class^="control_"] > div[class^="container_"] {
-  // Switches
   background-color: #{$surface2} !important;
 
   > svg {
@@ -54,6 +54,18 @@ div[class^="control_"] > div[class^="container_"] {
         fill: var(--brand-500);
       }
     }
+  }
+}
+
+// Vencord custom switches
+div[class^="vc-addon-card"] > div div[class^="container_"] {
+  --primary-400: #{$surface2};
+  > svg > rect {
+    fill: var(--white);
+  }
+
+  &[class*="checked_"] > svg > rect {
+    fill: #{$crust};
   }
 }
 
