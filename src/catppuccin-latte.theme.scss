@@ -24,11 +24,12 @@
 .visual-refresh.theme-light,
 .visual-refresh .theme-light {
   $brand: $blue;
-  @import "theme";
 
   // Globally flip to white (Discord light mode uses in places where contrast is good)
   --white: #{$crust} !important;
   --white-500: #{$crust} !important;
+
+  @import "theme";
 
   @include theme.highlights("latte");
 }
