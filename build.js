@@ -38,8 +38,8 @@ async function generateAccents(sourceFilePath) {
   });
   return Promise.all(
     accents.map((accent) =>
-      generateAccent(sourceFileData, sourceFilePath, accent)
-    )
+      generateAccent(sourceFileData, sourceFilePath, accent),
+    ),
   );
 }
 
@@ -47,7 +47,7 @@ async function generateAccents(sourceFilePath) {
 async function generateAccent(sourceFileData, sourceFilePath, accent) {
   const modifiedFileContent = sourceFileData.replace(
     /\$brand: .*;/gm,
-    `$brand: \$${accent};`
+    `$brand: \$${accent};`,
   );
   const outputFileName = sourceFilePath
     .split(".")

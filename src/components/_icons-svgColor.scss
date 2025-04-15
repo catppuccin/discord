@@ -14,41 +14,14 @@ $svgColor: (
   "tier1StreamPerk": (
     color: $green,
   ),
-  "guildBoostingIcon": (
-    color: $pink,
-  ),
-  "guildSubscriptionSlotIcon": (
-    color: $pink,
-  ),
-  "guildSubscriberCountIcon": (
-    color: $pink,
-  ),
-  "gemWithLabel": (
-    color: $pink,
-  ),
-  "gemWithoutLabel": (
-    color: $overlay1,
-  ),
-  "memberBadgeIcon": (
-    color: $pink,
-  ),
-  "audioQualityIcon": (
-    color: $sapphire,
-  ),
-  "uploadSizeIcon": (
-    color: $pink,
-  ),
   "threadIcon": (
-    color: $teal,
+    color: $text,
   ),
   "premiumIcon": (
     color: $pink,
   ),
   "gameIcon": (
     color: $text,
-  ),
-  "tierMarkerLabelPlusIcon": (
-    color: $pink,
   ),
   "currentTierIcon": (
     color: $pink,
@@ -65,8 +38,7 @@ $svgColor: (
 );
 
 @each $class, $color in $svgColor {
-  .theme-dark,
-  .theme-light {
+  & {
     svg[class*="#{$class}_"] {
       color: #{map-get($color, color)} !important;
     }

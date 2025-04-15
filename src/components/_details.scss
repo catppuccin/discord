@@ -1,365 +1,398 @@
-// online
-rect[fill="#23a55a"],
-#account-status-picker--online foreignObject > div[class^="status__"],
-rect[fill="#299f5b"],
-foreignObject[mask="url(#svg-mask-status-online)"] > div,
-div[class^="dotOnline"],
-i[class^="statusOnline"],
-div[style*="background-color: rgb(35, 165, 90)"] {
-  fill: $green !important;
-  background-color: $green !important;
-}
-svg[fill="#23a55a"],
-svg[class^="icon_"] path[fill="#23a55a"],
-rect[fill="rgba(35, 165, 90, 1)"],
-rect[fill="rgba(41, 159, 91, 1)"] {
-  fill: $green !important;
+// // streaming
+// svg[fill="#593695"],
+// rect[fill="#593695"],
+// rect[fill="#5b3a91"] {
+//   fill: $mauve !important;
+// }
+// I can't seem to get the indicator to appear?
+
+$svg-platform-colors: (
+  //online indicators (not var based)
+  $yellow: #cc954c,
+  $red: #d83a41,
+  $green: #40a258,
+  $overlay1: #82838b
+);
+@each $var, $color in $svg-platform-colors {
+  svg [fill="#{$color}"],
+  svg[fill="#{$color}"] {
+    fill: #{$var};
+  }
 }
 
-// idle
-rect[fill="#f0b232"],
-#account-status-picker--idle foreignObject > div[class^="status__"],
-rect[fill="#e6ae3c"],
-foreignObject[mask="url(#svg-mask-status-idle)"] > div {
-  fill: $yellow !important;
-  background-color: $yellow !important;
+$div-platform-colors: (
+  //online indicators (not var based)
+  $yellow: "rgb(204, 149, 76)",
+  $red: "rgb(216, 58, 65)",
+  $green: "rgb(64, 162, 88)",
+  $overlay1: "rgb(130, 131, 139)"
+);
+@each $var, $color in $div-platform-colors {
+  div[style="background-color: #{$color};"] {
+    background-color: #{$var} !important;
+  }
 }
 
-svg[fill="#f0b232"],
-rect[fill="rgba(240, 178, 50, 1)"],
-rect[fill="rgba(230, 174, 60, 1)"] {
-  fill: $yellow !important;
+div[class^="newMessagesBar_"] {
+  --white: #{$crust};
+  --button-secondary-background: var(--brand);
+  --button-secondary-background-hover: var(--brand-530);
 }
 
-// dnd
-rect[fill="#f23f43"],
-#account-status-picker--dnd foreignObject > div[class^="status__"],
-rect[fill="#ea474b"],
-foreignObject[mask="url(#svg-mask-status-dnd)"] > div {
-  fill: $red !important;
-  background-color: $red !important;
+div[class^="expandedFolderBackground_"] {
+  --background-mod-subtle: #{$mantle} !important;
 }
 
-svg[fill="#f23f43"],
-rect[fill="rgba(242, 63, 67, 1)"],
-rect[fill="rgba(230, 174, 60, 1)"] {
-  fill: $red !important;
-}
+// Switches
+// Literally a single switch doesnt have the parent control_ class... so annoying
+// div[class^="container_"][style*="opacity: 1; background-color:"]
+div[class^="control_"] > div[class^="container_"] {
+  background-color: #{$surface2} !important;
 
-// offline
-rect[fill="#82858f"],
-rect[fill="#80848e"],
-#account-status-picker--invisible foreignObject > div[class^="status__"],
-foreignObject[mask="url(#svg-mask-status-offline)"] > div,
-foreignObject[mask="url(#svg-mask-status-offline)"] > rect,
-div[class^="dotOffline"],
-i[class^="statusOffline"] {
-  fill: $subtext0 !important;
-  background-color: $subtext0 !important;
-}
-
-svg[fill="#82858f"],
-svg[fill="#80848e"],
-rect[fill="rgba(130, 133, 143, 1)"],
-rect[fill="rgba(128, 132, 142, 1)"] {
-  fill: $subtext0 !important;
-}
-
-// streaming
-svg[fill="#593695"],
-rect[fill="#593695"],
-rect[fill="#5b3a91"] {
-  fill: $mauve !important;
-}
-
-//recolor spotify platform indicator
-[src="/assets/eaeac24163b35f7526704a3d9b3c7722.svg"] {
-  width: 0 !important;
-  padding: 12px;
-  height: 0 !important;
-  -webkit-mask-image: url("https://discord.com/assets/eaeac24163b35f7526704a3d9b3c7722.svg");
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
-  background: $green;
-}
-
-//vencord showuserconnections dirty fix
-.vc-user-connection [src="/assets/eaeac24163b35f7526704a3d9b3c7722.svg"] {
-  padding: 16px;
-}
-
-// Vencord theme input border should use accent
-#vencordthemes-tab [class*="input_"]:focus {
-  border-color: $brand !important;
-}
-
-// inline brand color styles...
-[style*="background-color: hsl(235, calc(var(--saturation-factor, 1) * 85.6%), 64.7%)"] {
-  background-color: $brand !important;
-  color: $crust;
-}
-
-// for those roles that blend in the background
-span[class*="username_"][style*="color: rgb(54, 57, 62)"],
-span[class*="username_"][style*="color: rgb(53, 57, 64)"] {
-  color: var(--background-primary) !important;
-}
-
-// server badges
-div[class^="flowerStarContainer"] {
-  &[class*="verified_"],
-  &[class*="connectedAccountVerifiedIcon_"] {
-    svg[class^="flowerStar"] path {
-      fill: $green;
+  > svg {
+    > rect {
+      fill: var(--white);
+    }
+    > svg > path {
+      fill: #{$surface2};
     }
   }
 
-  &[class*="iconBackgroundTierOne_"],
-  &[class*="iconBackgroundTierTwo_"] {
-    svg[class*="flowerStar_"] path {
-      fill: $surface2;
-    }
-    div[class^="childContainer"] svg path {
-      fill: $text;
-    }
-  }
+  &[class*="checked_"] {
+    background-color: var(--brand-500) !important;
 
-  &[class*="iconBackgroundTierThree_"] {
-    svg[class*="flowerStar_"] path {
-      fill: $pink;
+    > svg {
+      > rect {
+        fill: #{$crust};
+      }
+      > svg > path {
+        fill: var(--brand-500);
+      }
     }
   }
-
-  &[class*="partnered_"] {
-    svg[class^="flowerStar"] path {
-      fill: $brand;
-    }
-  }
-
-  div[class^="childContainer"] svg path {
-    fill: $crust;
-  }
 }
 
-// public / verified server info pill
-div[class^="communityInfoPill"] {
-  --background-accent: #{adjust-color($base, $alpha: -0.3)};
-  color: $text;
+// Vencord custom switches
+div[class^="vc-addon-card"] > div div[class^="container_"] {
+  --primary-400: #{$surface2};
+  > svg > rect {
+    fill: var(--white);
+  }
 
-  div[class^="text"] {
-    font-weight: 500;
+  &[class*="checked_"] > svg > rect {
+    fill: #{$crust};
   }
 }
 
-// social links on "what's new"
-a[class*="socialLink_"][href*="discord"] {
-  color: $subtext0;
-}
-
-// upload icon
-svg[class^="uploadIcon"] {
-  color: $crust;
-}
-
-// empty states. why is it colored like this
-.theme-dark,
-.theme-light {
-  h2[class^="emptyStateHeader"] {
-    color: $text;
+// system message icons
+div[class^="message"][class*="isSystemMessage"] div[class^="icon"] {
+  // User Joined icon
+  &[style*="/assets/61ccab047dad737a.svg"] {
+    @include recolor($green);
   }
 
-  p[class^="emptyStateSubtext"] {
-    color: $subtext0;
+  // Missed call icon
+  &[style*="/assets/6f076a64de25de4b.svg"] {
+    @include recolor($subtext0);
   }
 }
 
-// anything that uses a color background should have crust text
-div[class*="unreadMentionsBar_"],
-div[class*="unreadBar_"] {
-  color: $crust;
+// Quests page gradient
+div[class^="overlay_"][class*="darkThemeGradient_"] {
+  background: linear-gradient(
+    0deg,
+    #{$base} 0,
+    rgba($surface0, 0.5) 50%,
+    rgba($surface1, 0)
+  );
 }
 
-// make number badges have crust text and bolder
-div[class^="numberBadge"] {
-  font-weight: 700;
-  color: $crust !important;
-}
-
-// Channel and role badge
-div[class^="newChannel"] {
-  color: $crust;
-  background-color: $brand !important;
-}
-
-// Clyde AI Bot tag
-div[class^="botTag"] {
-  background-color: $brand;
-}
-
-//poll badge
-div[class^="pollBadgeDefault"] {
-  div[class^="text-xs-semibold"] {
-    color: $crust !important;
-  }
-  svg path {
-    fill: $crust !important;
+// Forum tags and gallery gradient
+div[class^="textContentFooter_"] {
+  background: linear-gradient(
+    0deg,
+    $base,
+    rgba($surface0, 0.97) 36px,
+    rgba($surface1, 0.4)
+  ) !important;
+  [class*="tagPill_"] {
+    background-color: #{rgba($surface1, 0.9)};
   }
 }
 
-//poll itself
-div[class*="pollContainer"] {
-  background-color: $mantle !important;
+// //recolor spotify platform indicator
+// [src="/assets/eaeac24163b35f7526704a3d9b3c7722.svg"] {
+//   width: 0 !important;
+//   padding: 12px;
+//   height: 0 !important;
+//   -webkit-mask-image: url("https://discord.com/assets/eaeac24163b35f7526704a3d9b3c7722.svg");
+//   -webkit-mask-repeat: no-repeat;
+//   -webkit-mask-size: contain;
+//   background: $green;
+// }
 
-  div[class^="answerInner"] {
-    background-color: $surface0;
-  }
-}
+// //vencord showuserconnections dirty fix
+// .vc-user-connection [src="/assets/eaeac24163b35f7526704a3d9b3c7722.svg"] {
+//   padding: 16px;
+// }
 
-// Add Friend text box border on selection should use accent
-div[class^="addFriendInputWrapper"]:focus-within {
-  border-color: $brand;
-}
+// // Vencord theme input border should use accent
+// #vencordthemes-tab [class*="input_"]:focus {
+//   border-color: $brand !important;
+// }
 
-// "Explore Discoverable Servers" button in the Add Friends tab.
-// This is the worst thing i've ever seen discord do, and that is high praise.
-// They used an <img> tag for an svg with fixed colors.
-#add_friend-tab div[class^="grid"] button {
-  img {
-    display: none;
-  }
+// // inline brand color styles...
+// [style*="background-color: hsl(235, calc(var(--saturation-factor, 1) * 85.6%), 64.7%)"] {
+//   background-color: $brand !important;
+//   color: $crust;
+// }
 
-  &::before {
-    height: 40px;
-    margin: 8px;
-    content: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.95431 0 0 8.9543 0 20C0 31.0457 8.95431 40 20 40Z' fill='rgb(#{red($green), green($green), blue($green)})'/%3E%3Cpath d='M20 18.9C19.39 18.9 18.9 19.39 18.9 20C18.9 20.61 19.39 21.1 20 21.1C20.61 21.1 21.1 20.61 21.1 20C21.1 19.39 20.61 18.9 20 18.9ZM20 10C14.48 10 10 14.48 10 20C10 25.52 14.48 30 20 30C25.52 30 30 25.52 30 20C30 14.48 25.52 10 20 10ZM22.19 22.19L14 26L17.81 17.81L26 14L22.19 22.19Z' fill='rgb(#{red($crust), green($crust), blue($crust)})'/%3E%3C/svg%3E");
-  }
-}
+// // for those roles that blend in the background
+// span[class*="username_"][style*="color: rgb(54, 57, 62)"],
+// span[class*="username_"][style*="color: rgb(53, 57, 64)"] {
+//   color: var(--background-primary) !important;
+// }
 
-// spotify button on text area
-button[class^="attachButton"] {
-  svg path[class^="attachButtonPlay"] {
-    color: $green;
-    fill: $green;
-  }
-}
+// // server badges
+// div[class^="flowerStarContainer"] {
+//   &[class*="verified_"],
+//   &[class*="connectedAccountVerifiedIcon_"] {
+//     svg[class^="flowerStar"] path {
+//       fill: $green;
+//     }
+//   }
 
-// Forum channel pins
-div[class^="tags"] div[class^="pinIcon"] path {
-  fill: $base !important;
-}
+//   &[class*="iconBackgroundTierOne_"],
+//   &[class*="iconBackgroundTierTwo_"] {
+//     svg[class*="flowerStar_"] path {
+//       fill: $surface2;
+//     }
+//     div[class^="childContainer"] svg path {
+//       fill: $text;
+//     }
+//   }
 
-// speaking indicator
-div[class*="avatarSpeaking_"] {
-  -webkit-box-shadow:
-    inset 0 0 0 2px $green,
-    inset 0 0 0 3px var(--background-secondary);
-  box-shadow:
-    inset 0 0 0 2px $green,
-    inset 0 0 0 3px var(--background-secondary);
-}
+//   &[class*="iconBackgroundTierThree_"] {
+//     svg[class*="flowerStar_"] path {
+//       fill: $pink;
+//     }
+//   }
 
-div[class*="videoLayer_"] > div[class^="tileChild"] > div[class^="border"] {
-  &[class*="speaking_"] {
-    -webkit-box-shadow:
-      inset 0 0 0 2px $green,
-      inset 0 0 0 3px $green;
-    box-shadow:
-      inset 0 0 0 2px $green,
-      inset 0 0 0 3px $green;
-  }
+//   &[class*="partnered_"] {
+//     svg[class^="flowerStar"] path {
+//       fill: $brand;
+//     }
+//   }
 
-  // this is when emojis fly across the tile
-  &[class*="voiceChannelEffect_"] {
-    -webkit-box-shadow:
-      inset 0 0 0 2px $brand,
-      inset 0 0 0 3px $brand;
-    box-shadow:
-      inset 0 0 0 2px $brand,
-      inset 0 0 0 3px $brand;
-  }
-}
+//   div[class^="childContainer"] svg path {
+//     fill: $crust;
+//   }
+// }
 
-div[class*="featureIcon_"] path {
-  fill: $brand;
-}
+// // public / verified server info pill
+// div[class^="communityInfoPill"] {
+//   --background-accent: #{adjust-color($base, $alpha: -0.3)};
+//   color: $text;
 
-div[class*="backgroundAccent_"] {
-  color: $crust;
-}
+//   div[class^="text"] {
+//     font-weight: 500;
+//   }
+// }
 
-div[class*="profileBadges_"] {
-  div[aria-label="Supports Commands"] img {
-    content: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23#{str-slice(inspect($green), 2)}'%3E%3Cpath d='m8.1176653 16.0847263 4.8330812-8.1694527h2.9315882l-4.8330812 8.1694527z'/%3E%3Cpath d='m20.4189453 9.4038086v-2.4311524c0-1.9775391-1.0825195-3.1118164-2.9697266-3.1118164h-1.5581055v1.7802734l.9594727-.0014648c.8540039 0 1.34375.5683594 1.34375 1.5585938v2.3969727c0 .8300781.1806641 1.8422852 1.5893555 2.3100586l.2856445.0947265-.2856445.0947266c-1.4086914.4677734-1.5893555 1.4799804-1.5893555 2.3100586v2.3964844c0 .9907227-.4897461 1.559082-1.34375 1.559082l-.9594727-.0014648v1.7802734h1.5581055c1.887207 0 2.9697266-1.1342773 2.9697266-3.1118164v-2.4316406c0-1.2583008.3432617-1.6264648 1.5810547-1.6445312v-1.9023438c-1.237793-.0180665-1.5810547-.3862305-1.5810547-1.6450196z'/%3E%3Cpath d='m5.8061523 7.1982422c0-.9760742.5024414-1.5585938 1.3432617-1.5585938l.9594727.0014648v-1.7802734h-1.5576172c-1.887207 0-2.9697266 1.1342773-2.9697266 3.1118164v2.4311523c0 1.2587891-.3432617 1.6269531-1.581543 1.6450195v1.9023438c1.2382812.0180664 1.581543.3862305 1.581543 1.6445312v2.4316406c0 1.9775391 1.0825195 3.1118164 2.9697266 3.1118164h1.5576172v-1.7802734l-.9594727.0014648c-.8408203 0-1.3432617-.5830078-1.3432617-1.559082v-2.3964844c0-.8300781-.1806641-1.8422852-1.5898438-2.3100586l-.2856444-.0947264.2856445-.0947266c1.4091797-.4677734 1.5898437-1.4799804 1.5898437-2.3100586z'/%3E%3C/g%3E%3C/svg%3E");
-  }
-}
+// // social links on "what's new"
+// a[class*="socialLink_"][href*="discord"] {
+//   color: $subtext0;
+// }
 
-div[class*="newBadge_"],
-div[class*="tryItOutBadge_"] {
-  color: $crust;
-}
+// // upload icon
+// svg[class^="uploadIcon"] {
+//   color: $crust;
+// }
 
-// Pending Friend Request alert badge
-[class^="tabBar"] [class^="badge"] {
-  color: $crust;
-}
+// // empty states. why is it colored like this
+// .theme-dark,
+// .theme-light {
+//   h2[class^="emptyStateHeader"] {
+//     color: $text;
+//   }
 
-span[class*="channelMention"]:hover,
-[class*="mention"]:not(
-    [class*="mentionButton_"],
-    [class*="mentionIcon_"]
-  ):hover {
-  color: $crust;
-}
+//   p[class^="emptyStateSubtext"] {
+//     color: $subtext0;
+//   }
+// }
 
-span[class^="attachmentLink"]:hover {
-  color: $crust;
+// // anything that uses a color background should have crust text
+// div[class*="unreadMentionsBar_"],
+// div[class*="unreadBar_"] {
+//   color: $crust;
+// }
 
-  svg path {
-    fill: $crust !important;
-  }
-}
+// // make number badges have crust text and bolder
+// div[class^="numberBadge"] {
+//   font-weight: 700;
+//   color: $crust !important;
+// }
 
-div[class^="checkbox"][class*="checked_"] {
-  border-color: $crust !important;
+// // Channel and role badge
+// div[class^="newChannel"] {
+//   color: $crust;
+//   background-color: $brand !important;
+// }
 
-  svg path {
-    fill: $crust !important;
-  }
-}
+// // Clyde AI Bot tag
+// div[class^="botTag"] {
+//   background-color: $brand;
+// }
 
-// header update icon
-path[class^="updateIconForeground"] {
-  fill: $green !important;
-}
+// //poll badge
+// div[class^="pollBadgeDefault"] {
+//   div[class^="text-xs-semibold"] {
+//     color: $crust !important;
+//   }
+//   svg path {
+//     fill: $crust !important;
+//   }
+// }
 
-// revoke invite button
-div[class^="button"][class*="revokeInvite_"] {
-  background-color: $crust;
-  background-image: url("data:image/svg+xml,%3Csvg height='18' viewBox='0 0 18 18' width='18' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='m14.25 4.808-1.057-1.058-4.193 4.192-4.192-4.192-1.058 1.058 4.192 4.192-4.192 4.193 1.058 1.057 4.192-4.193 4.193 4.193 1.057-1.057-4.193-4.193z' fill='rgb(#{red($red), green($red), blue($red)})' fill-rule='nonzero'/%3E%3Cpath d='m0 0h18v18h-18z'/%3E%3C/g%3E%3C/svg%3E");
-}
+// //poll itself
+// div[class*="pollContainer"] {
+//   background-color: $mantle !important;
 
-// Call buttons
-div[class*="actions_"] {
-  button[class*="green_"] {
-    background: $green;
-  }
+//   div[class^="answerInner"] {
+//     background-color: $surface0;
+//   }
+// }
 
-  button[class*="red_"] {
-    background: $red;
-  }
-}
+// // Add Friend text box border on selection should use accent
+// div[class^="addFriendInputWrapper"]:focus-within {
+//   border-color: $brand;
+// }
 
-// "G" in Go Live icon
-[class^="gameWrapper_"] [class^="icon_"] {
-  color: $crust;
-}
+// // spotify button on text area
+// button[class^="attachButton"] {
+//   svg path[class^="attachButtonPlay"] {
+//     color: $green;
+//     fill: $green;
+//   }
+// }
 
-// Darken delete icon on hover
-[class^="hoverButton"]:not([class^="anchor"]):hover > svg {
-  color: $base;
-}
+// // Forum channel pins
+// div[class^="tags"] div[class^="pinIcon"] path {
+//   fill: $base !important;
+// }
 
-// properly apply link colors
-.link__972a0 {
-  color: var(--header-secondary);
-}
+// // speaking indicator
+// div[class*="avatarSpeaking_"] {
+//   -webkit-box-shadow:
+//     inset 0 0 0 2px $green,
+//     inset 0 0 0 3px var(--background-secondary);
+//   box-shadow:
+//     inset 0 0 0 2px $green,
+//     inset 0 0 0 3px var(--background-secondary);
+// }
+
+// div[class*="videoLayer_"] > div[class^="tileChild"] > div[class^="border"] {
+//   &[class*="speaking_"] {
+//     -webkit-box-shadow:
+//       inset 0 0 0 2px $green,
+//       inset 0 0 0 3px $green;
+//     box-shadow:
+//       inset 0 0 0 2px $green,
+//       inset 0 0 0 3px $green;
+//   }
+
+//   // this is when emojis fly across the tile
+//   &[class*="voiceChannelEffect_"] {
+//     -webkit-box-shadow:
+//       inset 0 0 0 2px $brand,
+//       inset 0 0 0 3px $brand;
+//     box-shadow:
+//       inset 0 0 0 2px $brand,
+//       inset 0 0 0 3px $brand;
+//   }
+// }
+
+// div[class*="featureIcon_"] path {
+//   fill: $brand;
+// }
+
+// div[class*="backgroundAccent_"] {
+//   color: $crust;
+// }
+
+// div[class*="profileBadges_"] {
+//   div[aria-label="Supports Commands"] img {
+//     content: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23#{str-slice(inspect($green), 2)}'%3E%3Cpath d='m8.1176653 16.0847263 4.8330812-8.1694527h2.9315882l-4.8330812 8.1694527z'/%3E%3Cpath d='m20.4189453 9.4038086v-2.4311524c0-1.9775391-1.0825195-3.1118164-2.9697266-3.1118164h-1.5581055v1.7802734l.9594727-.0014648c.8540039 0 1.34375.5683594 1.34375 1.5585938v2.3969727c0 .8300781.1806641 1.8422852 1.5893555 2.3100586l.2856445.0947265-.2856445.0947266c-1.4086914.4677734-1.5893555 1.4799804-1.5893555 2.3100586v2.3964844c0 .9907227-.4897461 1.559082-1.34375 1.559082l-.9594727-.0014648v1.7802734h1.5581055c1.887207 0 2.9697266-1.1342773 2.9697266-3.1118164v-2.4316406c0-1.2583008.3432617-1.6264648 1.5810547-1.6445312v-1.9023438c-1.237793-.0180665-1.5810547-.3862305-1.5810547-1.6450196z'/%3E%3Cpath d='m5.8061523 7.1982422c0-.9760742.5024414-1.5585938 1.3432617-1.5585938l.9594727.0014648v-1.7802734h-1.5576172c-1.887207 0-2.9697266 1.1342773-2.9697266 3.1118164v2.4311523c0 1.2587891-.3432617 1.6269531-1.581543 1.6450195v1.9023438c1.2382812.0180664 1.581543.3862305 1.581543 1.6445312v2.4316406c0 1.9775391 1.0825195 3.1118164 2.9697266 3.1118164h1.5576172v-1.7802734l-.9594727.0014648c-.8408203 0-1.3432617-.5830078-1.3432617-1.559082v-2.3964844c0-.8300781-.1806641-1.8422852-1.5898438-2.3100586l-.2856444-.0947264.2856445-.0947266c1.4091797-.4677734 1.5898437-1.4799804 1.5898437-2.3100586z'/%3E%3C/g%3E%3C/svg%3E");
+//   }
+// }
+
+// div[class*="newBadge_"],
+// div[class*="tryItOutBadge_"] {
+//   color: $crust;
+// }
+
+// // Pending Friend Request alert badge
+// [class^="tabBar"] [class^="badge"] {
+//   color: $crust;
+// }
+
+// span[class*="channelMention"]:hover,
+// [class*="mention"]:not(
+//     [class*="mentionButton_"],
+//     [class*="mentionIcon_"]
+//   ):hover {
+//   color: $crust;
+// }
+
+// span[class^="attachmentLink"]:hover {
+//   color: $crust;
+
+//   svg path {
+//     fill: $crust !important;
+//   }
+// }
+
+// div[class^="checkbox"][class*="checked_"] {
+//   border-color: $crust !important;
+
+//   svg path {
+//     fill: $crust !important;
+//   }
+// }
+
+// // header update icon
+// path[class^="updateIconForeground"] {
+//   fill: $green !important;
+// }
+
+// // revoke invite button
+// div[class^="button"][class*="revokeInvite_"] {
+//   background-color: $crust;
+//   background-image: url("data:image/svg+xml,%3Csvg height='18' viewBox='0 0 18 18' width='18' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='m14.25 4.808-1.057-1.058-4.193 4.192-4.192-4.192-1.058 1.058 4.192 4.192-4.192 4.193 1.058 1.057 4.192-4.193 4.193 4.193 1.057-1.057-4.193-4.193z' fill='rgb(#{red($red), green($red), blue($red)})' fill-rule='nonzero'/%3E%3Cpath d='m0 0h18v18h-18z'/%3E%3C/g%3E%3C/svg%3E");
+// }
+
+// // Call buttons
+// div[class*="actions_"] {
+//   button[class*="green_"] {
+//     background: $green;
+//   }
+
+//   button[class*="red_"] {
+//     background: $red;
+//   }
+// }
+
+// // "G" in Go Live icon
+// [class^="gameWrapper_"] [class^="icon_"] {
+//   color: $crust;
+// }
+
+// // Darken delete icon on hover
+// [class^="hoverButton"]:not([class^="anchor"]):hover > svg {
+//   color: $base;
+// }
+
+// // properly apply link colors
+// .link__972a0 {
+//   color: var(--header-secondary);
+// }
