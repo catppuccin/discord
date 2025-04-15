@@ -97,6 +97,10 @@ div[class^="message"][class*="isSystemMessage"] div[class^="icon"] {
   }
 }
 
+img[class*="maskIcon"][src*="/assets/c8ae30e56eb87fdf.svg"] {
+  @include recolor($crust);
+}
+
 // Quests page gradient
 div[class^="overlay_"][class*="darkThemeGradient_"] {
   background: linear-gradient(
@@ -118,6 +122,11 @@ div[class^="textContentFooter_"] {
   [class*="tagPill_"] {
     background-color: #{rgba($surface1, 0.9)};
   }
+}
+
+// Universally style inline styles
+[style*="color: white"] {
+  color: var(--white) !important;
 }
 
 // //recolor spotify platform indicator

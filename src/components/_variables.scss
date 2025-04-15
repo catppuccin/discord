@@ -100,6 +100,9 @@
   --autocomplete-bg: #{$crust};
 
   --message-reacted-background: #{adjust-color($brand, $alpha: -0.7)} !important;
+  --message-reacted-text: #{$brand};
+
+  --opacity-blurple-16: #{adjust-color($brand, $alpha: -0.84)};
   --blurple-50: #{$brand};
 
   --background-primary: #{$base} !important;
@@ -306,7 +309,7 @@
 
   --background-mentioned: #{adjust-color($yellow, $alpha: -0.9)};
   --background-mentioned-hover: #{adjust-color($yellow, $alpha: -0.92)};
-  --background-message-hover: #{adjust-color($crust, $alpha: -0.75)} !important;
+  --background-message-hover: #{adjust-color($crust, $alpha: -0.7)} !important;
   --background-message-automod: #{adjust-color($rosewater, $alpha: -0.95)};
   --background-message-automod-hover: #{adjust-color($rosewater, $alpha: -0.9)};
   --background-message-highlight: #{adjust-color($brand, $alpha: -0.92)};
@@ -340,9 +343,9 @@
   --deprecated-card-bg: #{adjust-color($crust, $alpha: -0.4)};
   --deprecated-card-editable-bg: #{adjust-color($crust, $alpha: -0.7)};
 
-  --bg-mod-faint: #{$mantle};
-  --bg-mod-subtle: #{$surface0} !important;
-  --bg-mod-strong: #{$surface1} !important;
+  --bg-mod-faint: #{adjust-color($base, $alpha: -0.9)};
+  --bg-mod-subtle: #{adjust-color($base, $alpha: -0.75)} !important;
+  --bg-mod-strong: #{adjust-color($base, $alpha: -0.55)} !important;
 
   --deprecated-text-input-bg: #{$crust};
   --deprecated-text-input-border: #{adjust-color($crust, $alpha: -0.7)};
