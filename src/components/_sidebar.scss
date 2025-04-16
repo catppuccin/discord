@@ -1,8 +1,3 @@
-// // "spine" svgs before threads
-// svg[class^="spine"] {
-//   color: $surface2;
-// }
-
 // rainbow threads
 @mixin raindbow-thread($n, $color, $secondary: $color) {
   & > li:nth-of-type(6n + #{$n}) {
@@ -50,34 +45,3 @@ ul[class^="content_"] > li[class^="container_"] > ul[role="group"] {
   @include raindbow-thread(5, $sapphire, $blue);
   @include raindbow-thread(6, $mauve);
 }
-
-// // bot tag in sidebar
-// [class*="botText_"] {
-//   color: $crust;
-//   font-weight: 600;
-// }
-
-// svg[class*="botTagVerified_"] > path {
-//   fill: $crust !important;
-// }
-
-// div[class*="activePostCount_"] {
-//   background-color: $surface0;
-//   color: $text !important;
-// }
-
-// div[class*="newPostCount_"] {
-//   background-color: $text;
-//   color: $crust;
-// }
-// // Live icon
-// div[class*="liveSmall_"] {
-//   background-color: $red !important;
-//   color: $crust;
-// }
-
-// // # In Voice icon
-// // "YOU. I FOUND YOU." ~ Aven
-// div[class^="bar"] svg[class^="voiceChannelsIcon"] path {
-//   fill: $green !important;
-// }
