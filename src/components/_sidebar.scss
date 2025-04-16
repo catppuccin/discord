@@ -1,76 +1,83 @@
-// "spine" svgs before threads
-svg[class^="spine"] {
-  color: $surface2;
-}
-
-div[class^="spineBorder"] {
-  background: $surface2;
-}
+// // "spine" svgs before threads
+// svg[class^="spine"] {
+//   color: $surface2;
+// }
 
 // rainbow threads
-ul[aria-label$=" threads"] > li:nth-child(1n) {
-  --channels-default: #{fade-out($red, 0.3)};
-  --interactive-hover: #{$red};
-  --interactive-active: #{$red};
+@mixin raindbow-thread($n, $color, $secondary: $color) {
+  & > li:nth-of-type(6n + #{$n}) {
+    --channels-default: #{fade-out($secondary, 0.3)};
+    --text-primary: #{$color};
+    --interactive-hover: #{$color};
+    --interactive-active: #{$color};
+    --interactive-muted: #{mix($secondary, $crust, 50%)};
+  }
 }
 
-ul[aria-label$=" threads"] > li:nth-child(2n) {
-  --channels-default: #{fade-out($peach, 0.3)};
-  --interactive-hover: #{$peach};
-  --interactive-active: #{$peach};
+@function rainbow-gradient($colours) {
+  $output: ();
+
+  @for $i from 0 to length($colours) {
+    $mixed: mix(nth($colours, $i + 1), $crust, 50%);
+    $start: calc(var(--step) * #{$i});
+    $end: calc(var(--step) * #{$i + 1});
+
+    $output: append($output, "#{$mixed} #{$start}, #{$mixed} #{$end}", comma);
+  }
+
+  @return $output;
 }
 
-ul[aria-label$=" threads"] > li:nth-child(3n) {
-  --channels-default: #{fade-out($yellow, 0.3)};
-  --interactive-hover: #{$yellow};
-  --interactive-active: #{$yellow};
+ul[class^="content_"] > li[class^="container_"] > ul[role="group"] {
+  & > div[class^="spineBorder"] {
+    // Account for UI Density setting
+    // 30px is the size of each spline section
+    // density padding is either 20px, 24px or 28px. get the padding px count
+    // --step: calc(var(--channels-name-line-height) - 20px + 30px);
+    --step: calc(var(--channels-name-line-height) + 10px);
+
+    // Repeating gradient on core spine element to not have unsightly gaps between the splines of mixin(rainbow-thread)
+    // `to bottom` default
+    background: repeating-linear-gradient(
+      #{rainbow-gradient(($red, $peach, $yellow, $green, $sapphire, $mauve))}
+    );
+  }
+
+  @include raindbow-thread(1, $red);
+  @include raindbow-thread(2, $peach);
+  @include raindbow-thread(3, $yellow);
+  @include raindbow-thread(4, $green);
+  @include raindbow-thread(5, $sapphire, $blue);
+  @include raindbow-thread(6, $mauve);
 }
 
-ul[aria-label$=" threads"] > li:nth-child(4n) {
-  --channels-default: #{fade-out($green, 0.3)};
-  --interactive-hover: #{$green};
-  --interactive-active: #{$green};
-}
+// // bot tag in sidebar
+// [class*="botText_"] {
+//   color: $crust;
+//   font-weight: 600;
+// }
 
-ul[aria-label$=" threads"] > li:nth-child(5n) {
-  --channels-default: #{fade-out($blue, 0.3)};
-  --interactive-hover: #{$sapphire};
-  --interactive-active: #{$sapphire};
-}
+// svg[class*="botTagVerified_"] > path {
+//   fill: $crust !important;
+// }
 
-ul[aria-label$=" threads"] > li:nth-child(6n) {
-  --channels-default: #{fade-out($mauve, 0.3)};
-  --interactive-hover: #{$mauve};
-  --interactive-active: #{$mauve};
-}
+// div[class*="activePostCount_"] {
+//   background-color: $surface0;
+//   color: $text !important;
+// }
 
-// bot tag in sidebar
-[class*="botText_"] {
-  color: $crust;
-  font-weight: 600;
-}
+// div[class*="newPostCount_"] {
+//   background-color: $text;
+//   color: $crust;
+// }
+// // Live icon
+// div[class*="liveSmall_"] {
+//   background-color: $red !important;
+//   color: $crust;
+// }
 
-svg[class*="botTagVerified_"] > path {
-  fill: $crust !important;
-}
-
-div[class*="activePostCount_"] {
-  background-color: $surface0;
-  color: $text !important;
-}
-
-div[class*="newPostCount_"] {
-  background-color: $text;
-  color: $crust;
-}
-// Live icon
-div[class*="liveSmall_"] {
-  background-color: $red !important;
-  color: $crust;
-}
-
-// # In Voice icon
-// "YOU. I FOUND YOU." ~ Aven
-div[class^="bar"] svg[class^="voiceChannelsIcon"] path {
-  fill: $green !important;
-}
+// // # In Voice icon
+// // "YOU. I FOUND YOU." ~ Aven
+// div[class^="bar"] svg[class^="voiceChannelsIcon"] path {
+//   fill: $green !important;
+// }
