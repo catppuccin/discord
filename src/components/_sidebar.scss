@@ -1,16 +1,16 @@
 // rainbow threads
 
-@mixin rainbow-vars($colour, $secondary: $colour) {
-  --channels-default: #{fade-out($secondary, 0.3)};
+@mixin rainbow-vars($colour) {
+  --channels-default: #{fade-out($colour, 0.3)};
   --text-primary: #{$colour};
   --interactive-hover: #{$colour};
   --interactive-active: #{$colour};
-  --interactive-muted: #{mix($secondary, $crust, 50%)};
+  --interactive-muted: #{mix($colour, $crust, 50%)};
 }
 
-@mixin raindbow-thread($n, $colour, $secondary: $colour) {
+@mixin raindbow-thread($n, $colour) {
   & > li:nth-of-type(6n + #{$n}) {
-    @include rainbow-vars($colour, $secondary);
+    @include rainbow-vars($colour);
   }
 }
 
@@ -39,7 +39,7 @@ ul[class^="content_"] > li[class^="container_"] > ul[role="group"] {
     // Repeating gradient on core spine element to not have unsightly gaps between the splines of mixin(rainbow-thread)
     // `to bottom` default
     background: repeating-linear-gradient(
-      #{rainbow-gradient(($red, $peach, $yellow, $green, $sapphire, $mauve))}
+      #{rainbow-gradient(($red, $peach, $yellow, $green, $blue, $mauve))}
     );
   }
 
@@ -47,7 +47,7 @@ ul[class^="content_"] > li[class^="container_"] > ul[role="group"] {
   @include raindbow-thread(2, $peach);
   @include raindbow-thread(3, $yellow);
   @include raindbow-thread(4, $green);
-  @include raindbow-thread(5, $sapphire, $blue);
+  @include raindbow-thread(5, $blue);
   @include raindbow-thread(6, $mauve);
 
   // A singular thread is brand coloured
