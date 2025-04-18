@@ -355,7 +355,7 @@
   --focus-primary: #{$brand};
 
   --interactive-normal: #{$text} !important;
-  --interactive-muted: #{adjust-color($text, $alpha: -0.7)};
+  --interactive-muted: #{$overlay0};
   --interactive-hover: #{$text};
   --interactive-active: #{$text};
 

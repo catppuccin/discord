@@ -1,11 +1,21 @@
 // rainbow threads
 
+// User can place this in their QuickCSS/Custom CSS to disable rainbow threads (willow is soooo boring)
+// :root {
+//   --ctp-rainbow-thread-disabled: ;
+// }
+& {
+  --thread-default: var(--ctp-rainbow-thread-disabled) var(--channels-default);
+  --thread-core: var(--ctp-rainbow-thread-disabled) var(--text-primary);
+  --thread-muted: var(--ctp-rainbow-thread-disabled) var(--interactive-muted);
+}
+
 @mixin rainbow-vars($colour) {
-  --channels-default: #{fade-out($colour, 0.3)};
-  --text-primary: #{$colour};
-  --interactive-hover: #{$colour};
-  --interactive-active: #{$colour};
-  --interactive-muted: #{mix($colour, $crust, 50%)};
+  --channels-default: var(--thread-default, #{fade-out($colour, 0.3)});
+  --text-primary: var(--thread-core, #{$colour});
+  --interactive-hover: var(--thread-core, #{$colour});
+  --interactive-active: var(--thread-core, #{$colour});
+  --interactive-muted: var(--thread-muted, #{mix($colour, $crust, 50%)});
 }
 
 @mixin raindbow-thread($n, $colour) {
@@ -38,8 +48,11 @@ ul[class^="content_"] > li[class^="container_"] > ul[role="group"] {
 
     // Repeating gradient on core spine element to not have unsightly gaps between the splines of mixin(rainbow-thread)
     // `to bottom` default
-    background: repeating-linear-gradient(
-      #{rainbow-gradient(($red, $peach, $yellow, $green, $blue, $mauve))}
+    background: var(
+      --thread-muted,
+      repeating-linear-gradient(
+        #{rainbow-gradient(($red, $peach, $yellow, $green, $blue, $mauve))}
+      )
     );
   }
 
