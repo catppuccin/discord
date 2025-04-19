@@ -17,7 +17,7 @@
 .visual-refresh .theme-dark {
   $brand: $blue;
 
-  @import "components/contrast-dark";
+  @import "components/tweaks/dark";
   @import "theme";
 
   @include theme.highlights("mocha");
@@ -29,6 +29,6 @@
   @import "@catppuccin/palette/scss/latte";
   $brand: $blue;
 
-  @import "components/tweak-light";
+  @import "components/tweaks/light";
   @import "theme";
 }

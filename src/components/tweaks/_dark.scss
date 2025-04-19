@@ -2,10 +2,10 @@
 // Light accents contrast is ok! (rare latte win)
 
 div[class^="item_"][class*="addFriend_"],
-div[class*="numberBadge_"],
+div[class*="numberBadge_"][style*="background-color: var(--status-danger);"],
+div[class*="iconBadge_"][class*="isCurrentUserConnected_"],
 div[class^="bar_"][class*="unreadMentionsBar_"],
 span[class*="botTag_"],
-div[class^="iconBadge_"],
 span[class^="unreadPill_"],
 div[class^="listItem_"] div[class^="wrapper_"] [class*="selected_"], // Server list entries with no icons (Home/Add server/Discover etc)
 button[class^="container_"]>div[class^="icon_"]>svg, // Add Friend Page Discoverable Servers svg
@@ -26,7 +26,7 @@ div[class^="uploadArea_"],
 svg[class^="stepIcon_"],
 svg[class^="activeIcon_"], // Account switcher
 div[class*="tooltipBrand_"],
-[class*="colorBrand_"], [class*="colorStreamerMode_"], [class*="colorSpotify_"], [class*="colorPremium_"], [class*="colorPlayStation_"],
+[class*="notice_"][class*="colorBrand_"], [class*="colorStreamerMode_"], [class*="colorSpotify_"], [class*="colorPremium_"], [class*="colorPlayStation_"],
 .interactive:hover {
   --white: #{$crust};
   --white-500: #{$crust};
@@ -45,7 +45,8 @@ div[class^="pinIcon_"] > svg > path {
 }
 
 // Server settings Members banner
-div[class^="bannerContainer_"] {
+div[class^="bannerContainer_"],
+div[class^="friendRequestContainer_"] > button[class*="colorGreen_"] {
   [style*="color: white"] {
     color: #{$crust} !important;
   }
