@@ -15,19 +15,39 @@
 .theme-dark,
 .visual-refresh.theme-dark,
 .visual-refresh .theme-dark {
+  $brand-tint5: $blue-tint5;
+  $brand-tint4: $blue-tint4;
+  $brand-tint3: $blue-tint3;
+  $brand-tint2: $blue-tint2;
+  $brand-tint1: $blue-tint1;
   $brand: $blue;
+  $brand-shade1: $blue-shade1;
+  $brand-shade2: $blue-shade2;
+  $brand-shade3: $blue-shade3;
+  $brand-shade4: $blue-shade4;
+  $brand-shade5: $blue-shade5;
 
   @import "components/tweaks/dark";
   @import "theme";
 
-  @include theme.highlights("frappe");
+  // @include theme.highlights("frappe");
 }
 
 .theme-light,
 .visual-refresh.theme-light,
 .visual-refresh .theme-light {
   @import "@catppuccin/palette/scss/latte";
+  $brand-tint5: $blue-tint5;
+  $brand-tint4: $blue-tint4;
+  $brand-tint3: $blue-tint3;
+  $brand-tint2: $blue-tint2;
+  $brand-tint1: $blue-tint1;
   $brand: $blue;
+  $brand-shade1: $blue-shade1;
+  $brand-shade2: $blue-shade2;
+  $brand-shade3: $blue-shade3;
+  $brand-shade4: $blue-shade4;
+  $brand-shade5: $blue-shade5;
 
   @import "components/tweaks/light";
   @import "theme";

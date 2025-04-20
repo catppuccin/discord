@@ -10,12 +10,24 @@
   --thread-muted: var(--ctp-rainbow-thread-disabled) var(--interactive-muted);
 }
 
+$rainbow-map: (
+  $red: $red-shade5,
+  $peach: $peach-shade5,
+  $yellow: $yellow-shade5,
+  $green: $green-shade5,
+  $blue: $blue-shade5,
+  $mauve: $mauve-shade5,
+);
+
 @mixin rainbow-vars($colour) {
-  --channels-default: var(--thread-default, #{fade-out($colour, 0.3)});
+  --channels-default: var(
+    --thread-default,
+    #{adjust-color($colour, $alpha: -0.3)}
+  );
   --text-primary: var(--thread-core, #{$colour});
   --interactive-hover: var(--thread-core, #{$colour});
   --interactive-active: var(--thread-core, #{$colour});
-  --interactive-muted: var(--thread-muted, #{mix($colour, $crust, 50%)});
+  --interactive-muted: var(--thread-muted, #{map-get($rainbow-map, $colour)});
 }
 
 @mixin raindbow-thread($n, $colour) {
@@ -28,11 +40,11 @@
   $output: ();
 
   @for $i from 0 to length($colours) {
-    $mixed: mix(nth($colours, $i + 1), $crust, 50%);
+    $colour: map-get($rainbow-map, nth($colours, $i + 1));
     $start: calc(var(--step) * #{$i});
     $end: calc(var(--step) * #{$i + 1});
 
-    $output: append($output, "#{$mixed} #{$start}, #{$mixed} #{$end}", comma);
+    $output: append($output, "#{$colour} #{$start}, #{$colour} #{$end}", comma);
   }
 
   @return $output;
