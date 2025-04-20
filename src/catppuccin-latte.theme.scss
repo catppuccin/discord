@@ -15,10 +15,10 @@
 .theme-dark,
 .visual-refresh.theme-dark,
 .visual-refresh .theme-dark {
-  @import "@catppuccin/palette/scss/mocha";
+  @import "@catppuccin/palette/scss/frappe";
   $brand: $blue;
 
-  @import "components/contrast-dark";
+  @import "components/tweaks/dark";
   @import "theme";
 }
 
@@ -27,7 +27,7 @@
 .visual-refresh .theme-light {
   $brand: $blue;
 
-  @import "components/tweak-light";
+  @import "components/tweaks/light";
   @import "theme";
 
   @include theme.highlights("latte");
