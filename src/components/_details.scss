@@ -123,6 +123,11 @@ div[class^="textContentFooter_"] {
     background-color: #{rgba($surface1, 0.9)};
   }
 }
+// Forum new badge / OP tag
+div[class^="newBadge_"][class*="textBadge_"][style="background-color: var(--brand-260);"],
+span[class*="botTagOP_"] {
+  color: var(--badge-brand-text);
+}
 
 // Universally style inline styles
 [style*="color: white"] {
