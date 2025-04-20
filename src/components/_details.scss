@@ -106,8 +106,8 @@ div[class^="overlay_"][class*="darkThemeGradient_"] {
   background: linear-gradient(
     0deg,
     #{$base} 0,
-    rgba($surface0, 0.5) 50%,
-    rgba($surface1, 0)
+    adjust-color($surface0, $alpha: -0.5) 50%,
+    adjust-color($surface1, $alpha: -1)
   );
 }
 
@@ -116,11 +116,11 @@ div[class^="textContentFooter_"] {
   background: linear-gradient(
     0deg,
     $base,
-    rgba($surface0, 0.97) 36px,
-    rgba($surface1, 0.4)
+    adjust-color($surface0, $alpha: -0.03) 36px,
+    adjust-color($surface1, $alpha: -0.6)
   ) !important;
   [class*="tagPill_"] {
-    background-color: #{rgba($surface1, 0.9)};
+    background-color: #{adjust-color($surface1, $alpha: -0.1)};
   }
 }
 

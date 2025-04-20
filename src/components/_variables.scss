@@ -3,31 +3,31 @@
   --brand-experiment: #{$brand};
   --bg-brand: #{$brand};
 
-  --brand-100: #{lighten($brand, math.div(90%, 2))};
-  --brand-130: #{lighten($brand, math.div(85%, 2))};
-  --brand-160: #{lighten($brand, math.div(80%, 2))};
-  --brand-200: #{lighten($brand, math.div(75%, 2))};
-  --brand-230: #{lighten($brand, math.div(70%, 2))};
-  --brand-260: #{lighten($brand, math.div(65%, 2))};
-  --brand-300: #{lighten($brand, math.div(60%, 2))};
-  --brand-330: #{lighten($brand, math.div(50%, 2))};
-  --brand-360: #{lighten($brand, math.div(40%, 2))};
-  --brand-400: #{lighten($brand, math.div(30%, 2))};
-  --brand-430: #{lighten($brand, math.div(20%, 2))};
-  --brand-460: #{lighten($brand, math.div(10%, 2))};
+  --brand-100: #{$brand-tint5};
+  --brand-130: #{mix($brand-tint4, $brand-tint5, 30%)};
+  --brand-160: #{mix($brand-tint4, $brand-tint5, 70%)};
+  --brand-200: #{$brand-tint4};
+  --brand-230: #{mix($brand-tint3, $brand-tint4, 30%)};
+  --brand-260: #{mix($brand-tint3, $brand-tint4, 70%)};
+  --brand-300: #{$brand-tint3};
+  --brand-330: #{mix($brand-tint2, $brand-tint3)};
+  --brand-360: #{$brand-tint2};
+  --brand-400: #{mix($brand-tint1, $brand-tint2)};
+  --brand-430: #{$brand-tint1};
+  --brand-460: #{mix($brand, $brand-tint1)};
   --brand-500: #{$brand} !important;
-  --brand-530: #{darken($brand, math.div(10%, 2))};
-  --brand-560: #{darken($brand, math.div(20%, 2))};
-  --brand-600: #{darken($brand, math.div(30%, 2))};
-  --brand-630: #{darken($brand, math.div(40%, 2))};
-  --brand-660: #{darken($brand, math.div(50%, 2))};
-  --brand-700: #{darken($brand, math.div(60%, 2))};
-  --brand-730: #{darken($brand, math.div(65%, 2))};
-  --brand-760: #{darken($brand, math.div(70%, 2))};
-  --brand-800: #{darken($brand, math.div(75%, 2))};
-  --brand-830: #{darken($brand, math.div(80%, 2))};
-  --brand-860: #{darken($brand, math.div(85%, 2))};
-  --brand-900: #{darken($brand, math.div(90%, 2))};
+  --brand-530: #{mix($brand, $brand-shade1)};
+  --brand-560: #{$brand-shade1};
+  --brand-600: #{mix($brand-shade1, $brand-shade2)};
+  --brand-630: #{$brand-shade2};
+  --brand-660: #{mix($brand-shade2, $brand-shade3)};
+  --brand-700: #{$brand-shade3};
+  --brand-730: #{mix($brand-shade3, $brand-shade4, 70%)};
+  --brand-760: #{mix($brand-shade3, $brand-shade4, 30%)};
+  --brand-800: #{$brand-shade4};
+  --brand-830: #{mix($brand-shade4, $brand-shade5, 70%)};
+  --brand-860: #{mix($brand-shade4, $brand-shade5, 30%)};
+  --brand-900: #{$brand-shade5};
   // similar to other brand colors, except alpha only
   --brand-05a: #{adjust-color($brand, $alpha: -0.95)};
   --brand-10a: #{adjust-color($brand, $alpha: -0.9)};
@@ -48,26 +48,6 @@
   --brand-85a: #{adjust-color($brand, $alpha: -0.15)};
   --brand-90a: #{adjust-color($brand, $alpha: -0.1)};
   --brand-95a: #{adjust-color($brand, $alpha: -0.05)};
-
-  --spotify: #{$green};
-
-  // Accent coloured buttons
-  --button-filled-brand-border: #{darken($brand, math.div(5%, 2))};
-  --button-filled-brand-text: #{$crust};
-  --button-filled-brand-background: #{$brand};
-  --button-filled-brand-background-hover: #{darken($brand, math.div(15%, 2))}; // TODO: Upcoming palette tints/shades
-  --button-filled-brand-background-active: #{darken($brand, math.div(25%, 2))};
-
-  --button-filled-brand-inverted-text: #{$crust};
-  --button-filled-brand-inverted-background: #{$text};
-  --button-filled-brand-inverted-background-hover: #{darken(
-      $text,
-      math.div(15%, 2)
-    )};
-  --button-filled-brand-inverted-background-active: #{darken(
-      $text,
-      math.div(25%, 2)
-    )};
 
   --header-primary: #{$text} !important;
   --header-secondary: #{$subtext0} !important;
@@ -204,8 +184,8 @@
   --guild-boosting-purple: #{$mauve};
   --premium-perk-yellow: #{$yellow};
   --premium-perk-purple: #{$mauve};
-  --premium-perk-dark-blue: #{darken($blue, math.div(20%, 2))};
-  --premium-perk-light-blue: #{lighten($blue, math.div(10%, 2))};
+  --premium-perk-dark-blue: #{$blue-shade3};
+  --premium-perk-light-blue: #{$blue-tint2};
   --premium-perk-blue: #{$blue};
   --premium-perk-green: #{$green};
   --premium-perk-pink: #{$pink};
@@ -217,58 +197,74 @@
   --premium-tier-1-blue-for-gradients: #{$sapphire};
   --premium-tier-1-dark-blue-for-gradients: #{$blue};
 
-  --premium-tier-2-purple-for-gradients: #{darken($mauve, math.div(20%, 2))};
+  --premium-tier-2-purple-for-gradients: #{$mauve-shade3};
   --premium-tier-2-purple-for-gradients-2: #{$mauve};
   --premium-tier-2-pink-for-gradients: #{$pink};
 
+  // Accent coloured buttons
+  --button-filled-brand-border: #{$brand-shade1};
+  --button-filled-brand-text: #{$crust};
+  --button-filled-brand-background: #{$brand};
+  --button-filled-brand-background-hover: #{$brand-shade2};
+  --button-filled-brand-background-active: #{$brand-shade3};
+
+  --button-filled-brand-inverted-text: #{$crust};
+  --button-filled-brand-inverted-background: #{$text};
+  --button-filled-brand-inverted-background-hover: #{$subtext1};
+  --button-filled-brand-inverted-background-active: #{$subtext0};
+
+  --button-filled-white-text: #{$crust};
+  --button-filled-white-background: #{$text};
+  --button-filled-white-background-hover: #{$subtext1};
+  --button-filled-white-background-active: #{$subtext0};
+
+  --button-danger-border: #{$red-shade1};
   --button-danger-background: #{$red};
-  --button-danger-background-hover: #{darken($red, math.div(10%, 2))};
-  --button-danger-background-active: #{darken($red, math.div(20%, 2))};
+  --button-danger-background-hover: #{$red-shade2};
+  --button-danger-background-active: #{$red-shade3};
   --button-danger-background-disabled: #{$red};
 
+  --button-positive-border: #{$green-shade1};
   --button-positive-background: #{$green};
-  --button-positive-background-hover: #{darken($green, math.div(10%, 2))};
-  --button-positive-background-active: #{darken($green, math.div(15%, 2))};
+  --button-positive-background-hover: #{$green-shade2};
+  --button-positive-background-active: #{$green-shade3};
   --button-positive-background-disabled: #{$green};
 
   --button-secondary-background: #{$surface1} !important;
   --button-secondary-background-hover: #{darken($surface1, math.div(10%, 2))};
-  --button-secondary-background-active: #{darken($surface1, math.div(10%, 2))};
+  --button-secondary-background-active: #{darken($surface1, math.div(15%, 2))};
   --button-secondary-background-disabled: #{$surface1};
   --button-secondary-text: #{$text} !important;
 
   --button-outline-danger-text: #{$text};
   --button-outline-danger-border: #{$red};
   --button-outline-danger-background: transparent;
-  --button-outline-danger-background-hover: #{darken($red, math.div(5%, 2))};
+  --button-outline-danger-background-hover: #{$red-shade1};
   --button-outline-danger-text-hover: #{$base};
-  --button-outline-danger-border-hover: #{darken($red, math.div(5%, 2))};
-  --button-outline-danger-background-active: #{darken($red, math.div(10%, 2))};
+  --button-outline-danger-border-hover: #{$red-shade1};
+  --button-outline-danger-background-active: #{$red-shade2};
   --button-outline-danger-text-active: #{$base};
-  --button-outline-danger-border-active: #{darken($red, math.div(5%, 2))};
+  --button-outline-danger-border-active: #{$red-shade1};
 
   --button-outline-positive-text: #{$text};
   --button-outline-positive-border: #{$green};
   --button-outline-positive-background: transparent;
-  --button-outline-positive-background-hover: #{darken($green, math.div(5%, 2))};
+  --button-outline-positive-background-hover: #{$green-shade1};
   --button-outline-positive-text-hover: #{$base};
-  --button-outline-positive-border-hover: #{darken($green, math.div(5%, 2))};
-  --button-outline-positive-background-active: #{darken(
-      $green,
-      math.div(10%, 2)
-    )};
+  --button-outline-positive-border-hover: #{$green-shade1};
+  --button-outline-positive-background-active: #{$green-shade2};
   --button-outline-positive-text-active: #{$base};
-  --button-outline-positive-border-active: #{darken($green, math.div(5%, 2))};
+  --button-outline-positive-border-active: #{$green-shade1};
 
   --button-outline-brand-text: #{$text};
   --button-outline-brand-border: #{$brand};
   --button-outline-brand-background: transparent;
-  --button-outline-brand-background-hover: #{darken($brand, math.div(5%, 2))};
+  --button-outline-brand-background-hover: #{$brand-shade1};
   --button-outline-brand-text-hover: #{$base};
-  --button-outline-brand-border-hover: #{darken($brand, math.div(5%, 2))};
-  --button-outline-brand-background-active: #{darken($brand, math.div(10%, 2))};
+  --button-outline-brand-border-hover: #{$brand-shade1};
+  --button-outline-brand-background-active: #{$brand-shade2};
   --button-outline-brand-text-active: #{$base};
-  --button-outline-brand-border-active: #{darken($brand, math.div(5%, 2))};
+  --button-outline-brand-border-active: #{$brand-shade1};
 
   --button-outline-primary-text: #{$text};
   --button-outline-primary-border: #{$surface2};
@@ -277,13 +273,13 @@
       $surface2,
       math.div(5%, 2)
     )};
-  --button-outline-primary-text-hover: #{$base};
+  --button-outline-primary-text-hover: #{$text};
   --button-outline-primary-border-hover: #{darken($surface2, math.div(5%, 2))};
   --button-outline-primary-background-active: #{darken(
       $surface2,
       math.div(10%, 2)
     )};
-  --button-outline-primary-text-active: #{$base};
+  --button-outline-primary-text-active: #{$text};
   --button-outline-primary-border-active: #{darken($surface2, math.div(5%, 2))};
 
   --modal-background: #{$base} !important;
@@ -372,8 +368,9 @@
   --badge-brand-bg: #{$brand};
   --badge-brand-text: #{$crust};
 
-  --twitch: #{darken($mauve, 10%)};
-  --playstation: #{darken($blue, 10%)};
+  --spotify: #{$green-shade2};
+  --twitch: #{$mauve-shade2};
+  --playstation: #{$blue-shade3};
 
   --notice-background-critical: #{$red};
   --notice-background-info: #{$blue};
@@ -386,5 +383,5 @@
 }
 
 ::selection {
-  background-color: #{rgba($brand, 0.6)};
+  background-color: #{adjust-color($brand, $alpha: -0.4)};
 }

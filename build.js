@@ -46,8 +46,8 @@ async function generateAccents(sourceFilePath) {
 // replace brand and write to separate file
 async function generateAccent(sourceFileData, sourceFilePath, accent) {
   const modifiedFileContent = sourceFileData.replace(
-    /\$brand: .*;/gm,
-    `$brand: \$${accent};`,
+    /\$brand(-tint[1-5]|-shade[1-5])?: .*;/gm,
+    (_, suffix = "") => `$brand${suffix}: \$${accent}${suffix};`,
   );
   const outputFileName = sourceFilePath
     .split(".")

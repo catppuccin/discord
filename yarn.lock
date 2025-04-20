@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@catppuccin/highlightjs/-/highlightjs-1.0.1.tgz#2f97c8b4e808e9ce2b11d523290190478eba3172"
   integrity sha512-wnagsNQbJroHQMalkprwRoapfGV1hHRx46d7GXp4kf6rlShImBlgpqPCt9OD471Gq4qpHdfFH/GJFIvY1CLqHA==
 
-"@catppuccin/palette@^1.0.0":
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/@catppuccin/palette/-/palette-1.7.1.tgz#c7cd165dcc1fc025a05ac138a4749b2279cf115e"
-  integrity sha512-aRc1tbzrevOTV7nFTT9SRdF26w/MIwT4Jwt4fDMc9itRZUDXCuEDBLyz4TQMlqO9ZP8mf5Hu4Jr6D03NLFc6Gw==
+"@catppuccin/palette@^2.0.0":
+  version "2.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@catppuccin/palette/-/palette-2.0.0-beta.1.tgz#2a4fa241b38b9d72966a751c7db931dd48d18203"
+  integrity sha512-FhTfw1xtM/rOW+COq20J66Ik+YHiRg240A38e2bYOwh8MDh2yZ/8I3S0+dU1brvytEN4tWtZwe340WrsJb9I8g==
 
 ansi-escapes@^7.0.0:
   version "7.0.0"
