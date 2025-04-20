@@ -3,3 +3,9 @@
   --white: #{$crust} !important;
   --white-500: #{$crust} !important;
 }
+
+// Exception
+div[class*="tooltipGrey_"] {
+  --white-500: #{$text};
+  --white: #{$text};
+}
