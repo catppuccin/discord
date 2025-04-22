@@ -51,3 +51,7 @@ div[class^="friendRequestContainer_"] > button[class*="colorGreen_"] {
     color: #{$crust} !important;
   }
 }
+
+.vcd-screen-picker-option-radio[data-checked="true"] {
+  --text-normal: #{$crust};
+}
