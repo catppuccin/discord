@@ -104,6 +104,15 @@ div[class^="message"][class*="isSystemMessage"] div[class^="icon"] {
   &[style*="/assets/6f076a64de25de4b.svg"] {
     @include recolor($subtext0);
   }
+
+  // Left server/group icon
+  &[style*="/assets/53e42368b1409f1a.svg"] {
+    @include recolor($red);
+  }
+  // Joined server/group icon
+  &[style*="/assets/8b9de960da063cb9.svg"] {
+    @include recolor($green);
+  }
 }
 
 img[class*="maskIcon"][src*="/assets/c8ae30e56eb87fdf.svg"] {
