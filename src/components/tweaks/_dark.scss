@@ -12,7 +12,7 @@ button[class^="container_"]>div[class^="icon_"]>svg, // Add Friend Page Discover
 div[class^="newBadge_"],
 div[class^="premiumTab_"][class*="selected_"], // Nitro tab selected in settings
 label[class^="checkboxWrapper_"], label[class^="checkboxWrapperDisabled_"], div[class^="checkbox_"][class*="box_"],
-svg[class^="checkmarkCircle"],
+svg[class^="checkmarkCircle"], div[class*="checkIcon_"],
 button[class*="button_"][class*="lookFilled_"][class*="colorRed_"],
 button[class*="button_"][class*="lookFilled_"][class*="colorGreen_"],
 button[class*="button_"][class*="lookFilled_"][class*="colorLink_"],
@@ -54,4 +54,9 @@ div[class^="friendRequestContainer_"] > button[class*="colorGreen_"] {
 
 .vcd-screen-picker-option-radio[data-checked="true"] {
   --text-normal: #{$crust};
+}
+
+// Channels & Roles Browse channels count
+div[class*="textBadge_"][class*="base_"][style*="background-color: var(--background-accent)"] {
+  --white: #{$text};
 }

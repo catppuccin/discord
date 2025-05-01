@@ -103,8 +103,11 @@
   --message-reacted-background: #{adjust-color($brand, $alpha: -0.7)} !important;
   --message-reacted-text: #{$brand};
 
+  --opacity-blurple-8: #{adjust-color($brand, $alpha: -0.92)};
   --opacity-blurple-16: #{adjust-color($brand, $alpha: -0.84)};
   --opacity-blurple-24: #{adjust-color($brand, $alpha: -0.76)};
+  --opacity-blurple-32: #{adjust-color($brand, $alpha: -0.68)};
+  --opacity-blurple-60: #{adjust-color($brand, $alpha: -0.4)};
   --blurple-50: #{$brand};
 
   --background-primary: #{$base} !important;
