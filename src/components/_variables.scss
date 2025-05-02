@@ -349,9 +349,9 @@
   --deprecated-card-bg: #{adjust-color($crust, $alpha: -0.4)};
   --deprecated-card-editable-bg: #{adjust-color($crust, $alpha: -0.7)};
 
-  --bg-mod-faint: #{adjust-color($base, $alpha: -0.9)};
-  --bg-mod-subtle: #{adjust-color($base, $alpha: -0.75)} !important;
-  --bg-mod-strong: #{adjust-color($base, $alpha: -0.55)} !important;
+  --bg-mod-faint: #{adjust-color($surface2, $alpha: -0.9)};
+  --bg-mod-subtle: #{adjust-color($surface2, $alpha: -0.75)} !important;
+  --bg-mod-strong: #{adjust-color($surface2, $alpha: -0.55)} !important;
 
   --deprecated-text-input-bg: #{$crust};
   --deprecated-text-input-border: #{adjust-color($crust, $alpha: -0.7)};
