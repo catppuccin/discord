@@ -32,15 +32,16 @@ div[class^="expandedFolderBackground_"] {
 // div[class^="container_"][style*="opacity: 1; background-color:"]
 div[class^="control_"] > div[class^="container_"] {
   background-color: #{$surface2} !important;
+  transition: background-color 0.2s;
 
   > svg {
     > rect {
       fill: var(--white);
-      transition: fill 0.3s ease;
+      transition: fill 0.2s;
     }
     > svg > path {
       fill: #{$surface2};
-      transition: fill 0.3s ease;
+      transition: fill 0.2s;
     }
   }
 
@@ -50,11 +51,9 @@ div[class^="control_"] > div[class^="container_"] {
     > svg {
       > rect {
         fill: #{$crust};
-        transition: fill 0.3s ease;
       }
       > svg > path {
         fill: var(--brand-500);
-        transition: fill 0.3s ease;
       }
     }
   }
@@ -63,17 +62,14 @@ div[class^="control_"] > div[class^="container_"] {
 // Vencord custom switches
 div[class^="vc-addon-card"] > div div[class^="container_"] {
   --primary-400: #{$surface2};
-  transition: background-color 0.3s ease;
+  transition: background-color 0.2s;
   > svg > rect {
     fill: var(--white);
-    transition: fill 0.3s ease;
+    transition: fill 0.2s;
   }
 
   &[class*="checked_"] > svg > rect {
     fill: #{$crust};
-    transition:
-      fill 0.3s ease,
-      background-color 0.3s ease;
   }
 }
 
