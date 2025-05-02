@@ -192,6 +192,7 @@
   --yellow-360: #{$yellow};
   --yellow-300: #{$yellow};
   --red-400: #{$red};
+  --red-430: #{darken($red, 10%)};
   --red-500: #{darken($red, 15%)};
 
   --primary-100: #{$subtext1};
