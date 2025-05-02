@@ -1,34 +1,18 @@
-// // streaming
-// svg[fill="#593695"],
-// rect[fill="#593695"],
-// rect[fill="#5b3a91"] {
-//   fill: $mauve !important;
-// }
-// I can't seem to get the indicator to appear?
-
 $svg-platform-colors: (
   //online indicators (not var based)
-  $yellow: #cc954c,
-  $red: #d83a41,
-  $green: #40a258,
-  $overlay1: #82838b
+  $yellow: #ca9654,
+  $red: #d83a42,
+  $green: #43a25a,
+  $overlay1: #82838b,
+  "var(--twitch)": #9147ff
 );
 @each $var, $color in $svg-platform-colors {
   svg [fill="#{$color}"],
   svg[fill="#{$color}"] {
     fill: #{$var};
   }
-}
 
-$div-platform-colors: (
-  //online indicators (not var based)
-  $yellow: "rgb(204, 149, 76)",
-  $red: "rgb(216, 58, 65)",
-  $green: "rgb(64, 162, 88)",
-  $overlay1: "rgb(130, 131, 139)"
-);
-@each $var, $color in $div-platform-colors {
-  div[style="background-color: #{$color};"] {
+  div[style="background-color: rgb(#{red($color)}, #{green($color)}, #{blue($color)});"] {
     background-color: #{$var} !important;
   }
 }
