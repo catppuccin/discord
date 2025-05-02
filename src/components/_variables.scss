@@ -49,26 +49,6 @@
   --brand-90a: #{adjust-color($brand, $alpha: -0.1)};
   --brand-95a: #{adjust-color($brand, $alpha: -0.05)};
 
-  --spotify: #{$green};
-
-  // Accent coloured buttons
-  --button-filled-brand-border: #{darken($brand, math.div(5%, 2))};
-  --button-filled-brand-text: #{$crust};
-  --button-filled-brand-background: #{$brand};
-  --button-filled-brand-background-hover: #{darken($brand, math.div(15%, 2))}; // TODO: Upcoming palette tints/shades
-  --button-filled-brand-background-active: #{darken($brand, math.div(25%, 2))};
-
-  --button-filled-brand-inverted-text: #{$crust};
-  --button-filled-brand-inverted-background: #{$text};
-  --button-filled-brand-inverted-background-hover: #{darken(
-      $text,
-      math.div(15%, 2)
-    )};
-  --button-filled-brand-inverted-background-active: #{darken(
-      $text,
-      math.div(25%, 2)
-    )};
-
   --header-primary: #{$text} !important;
   --header-secondary: #{$subtext0} !important;
   --__header-bar-background: #{$mantle} !important;
@@ -292,6 +272,23 @@
   --button-outline-primary-text-active: #{$base};
   --button-outline-primary-border-active: #{darken($surface2, math.div(5%, 2))};
 
+  // Accent coloured buttons
+  --button-filled-brand-text: #{$crust};
+  --button-filled-brand-background: #{$brand};
+  --button-filled-brand-background-hover: #{darken($brand, math.div(15%, 2))}; // TODO: Upcoming palette tints/shades
+  --button-filled-brand-background-active: #{darken($brand, math.div(25%, 2))};
+
+  --button-filled-brand-inverted-text: #{$crust};
+  --button-filled-brand-inverted-background: #{$text};
+  --button-filled-brand-inverted-background-hover: #{darken(
+      $text,
+      math.div(15%, 2)
+    )};
+  --button-filled-brand-inverted-background-active: #{darken(
+      $text,
+      math.div(25%, 2)
+    )};
+
   --modal-background: #{$base} !important;
   --modal-footer-background: #{$crust};
 
@@ -380,6 +377,7 @@
 
   --twitch: #{darken($mauve, 10%)};
   --playstation: #{darken($blue, 10%)};
+  --spotify: #{$green};
 
   --notice-background-critical: #{$red};
   --notice-background-info: #{$blue};
