@@ -1,34 +1,18 @@
-// // streaming
-// svg[fill="#593695"],
-// rect[fill="#593695"],
-// rect[fill="#5b3a91"] {
-//   fill: $mauve !important;
-// }
-// I can't seem to get the indicator to appear?
-
 $svg-platform-colors: (
   //online indicators (not var based)
-  $yellow: #cc954c,
-  $red: #d83a41,
-  $green: #40a258,
-  $overlay1: #82838b
+  $yellow: #ca9654,
+  $red: #d83a42,
+  $green: #43a25a,
+  $overlay1: #82838b,
+  "var(--twitch)": #9147ff
 );
 @each $var, $color in $svg-platform-colors {
   svg [fill="#{$color}"],
   svg[fill="#{$color}"] {
     fill: #{$var};
   }
-}
 
-$div-platform-colors: (
-  //online indicators (not var based)
-  $yellow: "rgb(204, 149, 76)",
-  $red: "rgb(216, 58, 65)",
-  $green: "rgb(64, 162, 88)",
-  $overlay1: "rgb(130, 131, 139)"
-);
-@each $var, $color in $div-platform-colors {
-  div[style="background-color: #{$color};"] {
+  div[style="background-color: rgb(#{red($color)}, #{green($color)}, #{blue($color)});"] {
     background-color: #{$var} !important;
   }
 }
@@ -48,13 +32,16 @@ div[class^="expandedFolderBackground_"] {
 // div[class^="container_"][style*="opacity: 1; background-color:"]
 div[class^="control_"] > div[class^="container_"] {
   background-color: #{$surface2} !important;
+  transition: background-color 0.2s;
 
   > svg {
     > rect {
       fill: var(--white);
+      transition: fill 0.2s;
     }
     > svg > path {
       fill: #{$surface2};
+      transition: fill 0.2s;
     }
   }
 
@@ -75,8 +62,10 @@ div[class^="control_"] > div[class^="container_"] {
 // Vencord custom switches
 div[class^="vc-addon-card"] > div div[class^="container_"] {
   --primary-400: #{$surface2};
+  transition: background-color 0.2s;
   > svg > rect {
     fill: var(--white);
+    transition: fill 0.2s;
   }
 
   &[class*="checked_"] > svg > rect {
@@ -94,6 +83,15 @@ div[class^="message"][class*="isSystemMessage"] div[class^="icon"] {
   // Missed call icon
   &[style*="/assets/6f076a64de25de4b.svg"] {
     @include recolor($subtext0);
+  }
+
+  // Left server/group icon
+  &[style*="/assets/53e42368b1409f1a.svg"] {
+    @include recolor($red);
+  }
+  // Joined server/group icon
+  &[style*="/assets/8b9de960da063cb9.svg"] {
+    @include recolor($green);
   }
 }
 
@@ -122,6 +120,11 @@ div[class^="textContentFooter_"] {
   [class*="tagPill_"] {
     background-color: #{rgba($surface1, 0.9)};
   }
+}
+// Forum new badge / OP tag
+div[class^="newBadge_"][class*="textBadge_"][style="background-color: var(--brand-260);"],
+span[class*="botTagOP_"] {
+  color: var(--badge-brand-text);
 }
 
 // Universally style inline styles
