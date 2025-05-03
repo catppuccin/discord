@@ -118,6 +118,10 @@
   --chat-input-container-background: #{$base};
   --chat-text-muted: #{$subtext0};
 
+  --checkbox-border-default: #{$overlay0};
+
+  --border-faint: #{$surface0};
+  --border-strong: #{$mantle};
   --border-normal: #{$crust};
   --border-subtle: #{$base} !important;
   --background-modifier-hover: #{adjust-color($overlay2, $alpha: -0.85)};
@@ -178,6 +182,7 @@
   --primary-100: #{$subtext1};
   --primary-300: #{$subtext1};
   --primary-400: #{$subtext1};
+  --primary-630: #{$surface0};
   --primary-700: #{$surface1};
   --primary-800: #{$crust};
 
@@ -301,6 +306,7 @@
   --scrollbar-auto-scrollbar-color-track: #{$crust};
 
   --input-background: #{$crust};
+  --input-border: #{$overlay0};
   --input-placeholder-text: #{$subtext1};
 
   --logo-primary: #{$text};

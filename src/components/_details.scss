@@ -99,6 +99,10 @@ img[class*="maskIcon"][src*="/assets/c8ae30e56eb87fdf.svg"] {
   @include recolor($crust);
 }
 
+i[class^="check_"] {
+  @include recolor($brand);
+}
+
 // Quests page gradient
 div[class^="overlay_"][class*="darkThemeGradient_"] {
   background: linear-gradient(
@@ -125,6 +129,10 @@ div[class^="textContentFooter_"] {
 div[class^="newBadge_"][class*="textBadge_"][style="background-color: var(--brand-260);"],
 span[class*="botTagOP_"] {
   color: var(--badge-brand-text);
+}
+
+div[class^="quickSelectPopoutOption_"]:hover[role="option"] {
+  background-color: var(--background-modifier-hover);
 }
 
 // Universally style inline styles
