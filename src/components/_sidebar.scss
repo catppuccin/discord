@@ -18,7 +18,7 @@
   --interactive-muted: var(--thread-muted, #{mix($colour, $crust, 50%)});
 }
 
-@mixin raindbow-thread($n, $colour) {
+@mixin rainbow-thread($n, $colour) {
   & > li:nth-of-type(6n + #{$n}) {
     @include rainbow-vars($colour);
   }
@@ -56,12 +56,12 @@ ul[class^="content_"] > li[class^="container_"] > ul[role="group"] {
     );
   }
 
-  @include raindbow-thread(1, $red);
-  @include raindbow-thread(2, $peach);
-  @include raindbow-thread(3, $yellow);
-  @include raindbow-thread(4, $green);
-  @include raindbow-thread(5, $blue);
-  @include raindbow-thread(6, $mauve);
+  @include rainbow-thread(1, $red);
+  @include rainbow-thread(2, $peach);
+  @include rainbow-thread(3, $yellow);
+  @include rainbow-thread(4, $green);
+  @include rainbow-thread(5, $blue);
+  @include rainbow-thread(6, $mauve);
 
   // A singular thread is brand coloured
   & li:only-of-type {
