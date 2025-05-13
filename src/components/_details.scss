@@ -135,6 +135,27 @@ div[class^="quickSelectPopoutOption_"]:hover[role="option"] {
   background-color: var(--background-modifier-hover);
 }
 
+// VC controls
+[class*="greenGlow_"] {
+  background: #{adjust-color($green, $alpha: -0.9)};
+  &:hover {
+    background: #{adjust-color($green, $alpha: -0.8)};
+  }
+}
+[class*="redGlow_"] {
+  background: #{adjust-color($red, $alpha: -0.9)};
+  &:hover {
+    background: #{adjust-color($red, $alpha: -0.8)} !important;
+  }
+}
+button[class^="experimentButton_"][class*="buttonColor_"][class*="buttonActive_"] {
+  background-color: #{adjust-color($green, $alpha: -0.9)};
+  border: 1px solid #{adjust-color($green, $alpha: -0.9)};
+  &:hover {
+    background-color: #{adjust-color($green, $alpha: -0.8)};
+  }
+}
+
 // Universally style inline styles
 [style*="color: white"] {
   color: var(--white) !important;
