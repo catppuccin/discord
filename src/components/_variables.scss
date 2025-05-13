@@ -118,6 +118,10 @@
   --chat-input-container-background: #{$base};
   --chat-text-muted: #{$subtext0};
 
+  --checkbox-border-default: #{$overlay0};
+
+  --border-faint: #{$surface0};
+  --border-strong: #{$mantle};
   --border-normal: #{$crust};
   --border-subtle: #{$base} !important;
   --background-modifier-hover: #{adjust-color($overlay2, $alpha: -0.85)};
@@ -169,21 +173,28 @@
   --black-500: #{$crust};
 
   --green-360: #{$green};
+  --green-300: #{$green};
   --yellow-360: #{$yellow};
   --yellow-300: #{$yellow};
   --red-400: #{$red};
   --red-430: #{darken($red, 10%)};
   --red-500: #{darken($red, 15%)};
+  --blue-500: #{darken($blue, 10%)};
+  --blue-530: #{darken($blue, 15%)};
 
   --primary-100: #{$subtext1};
+  --primary-200: #{$subtext0};
   --primary-300: #{$subtext1};
   --primary-400: #{$subtext1};
+  --primary-630: #{$surface0};
   --primary-700: #{$surface1};
   --primary-800: #{$crust};
 
   --white: #{$text};
   --white-400: #{$text};
   --white-500: #{$text};
+  --white-600: #{$subtext1};
+  --white-700: #{$subtext0};
 
   --guild-boosting-pink: #{$pink};
   --guild-boosting-blue: #{$blue};
@@ -219,7 +230,7 @@
 
   --button-secondary-background: #{$surface1} !important;
   --button-secondary-background-hover: #{darken($surface1, math.div(10%, 2))};
-  --button-secondary-background-active: #{darken($surface1, math.div(10%, 2))};
+  --button-secondary-background-active: #{darken($surface1, math.div(15%, 2))};
   --button-secondary-background-disabled: #{$surface1};
   --button-secondary-text: #{$text} !important;
 
@@ -263,13 +274,13 @@
       $surface2,
       math.div(5%, 2)
     )};
-  --button-outline-primary-text-hover: #{$base};
+  --button-outline-primary-text-hover: #{$text};
   --button-outline-primary-border-hover: #{darken($surface2, math.div(5%, 2))};
   --button-outline-primary-background-active: #{darken(
       $surface2,
       math.div(10%, 2)
     )};
-  --button-outline-primary-text-active: #{$base};
+  --button-outline-primary-text-active: #{$text};
   --button-outline-primary-border-active: #{darken($surface2, math.div(5%, 2))};
 
   // Accent coloured buttons
@@ -289,6 +300,22 @@
       math.div(25%, 2)
     )};
 
+  // --button-filled-white-background is already --white-500
+  --button-filled-white-text: var(--black-500);
+  --button-filled-white-background-hover: var(--white-600);
+  --button-filled-white-background-active: var(--white-700);
+
+  --button-transparent-text: #{$text};
+  --button-transparent-background: #{adjust-color($surface2, $alpha: -0.88)};
+  --button-transparent-background-hover: #{adjust-color(
+      $surface2,
+      $alpha: -0.8
+    )};
+  --button-transparent-background-active: #{adjust-color(
+      $surface2,
+      $alpha: -0.7
+    )};
+
   --modal-background: #{$base} !important;
   --modal-footer-background: #{$crust};
 
@@ -301,6 +328,7 @@
   --scrollbar-auto-scrollbar-color-track: #{$crust};
 
   --input-background: #{$crust};
+  --input-border: #{$overlay0};
   --input-placeholder-text: #{$subtext1};
 
   --logo-primary: #{$text};

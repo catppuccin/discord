@@ -12,7 +12,6 @@
 @use "@catppuccin/palette/scss/mocha" as *;
 @use "@catppuccin/highlightjs/sass/theme";
 
-.theme-dark,
 .visual-refresh.theme-dark,
 .visual-refresh .theme-dark {
   $brand: $blue;
@@ -23,7 +22,6 @@
   @include theme.highlights("mocha");
 }
 
-.theme-light,
 .visual-refresh.theme-light,
 .visual-refresh .theme-light {
   @import "@catppuccin/palette/scss/latte";
