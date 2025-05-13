@@ -1,7 +1,11 @@
 & {
-  // Globally flip to white (Discord light mode uses in places where contrast is good)
+  // flip (Discord light mode uses in places where contrast is good)
   --white: #{$crust} !important;
   --white-500: #{$crust} !important;
+  --white-600: #{$surface1} !important;
+  --white-700: #{$surface2} !important;
+
+  --black-500: #{$text} !important;
 }
 
 // Exception
