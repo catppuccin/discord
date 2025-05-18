@@ -162,7 +162,7 @@ button[class^="experimentButton_"][class*="buttonColor_"][class*="buttonActive_"
 }
 
 // Search bar and text input borders follow accent
-div[class*="container_"]:focus-within,
+div[class*="container_"]:focus-within:has(> div[class^="inner_"] > input),
 [class*="input_"][type="text"]:not([readOnly]):focus,
 [class*="input_"][type="text"]:not([readOnly]):focus:hover {
   --text-link: var(--brand-500);
