@@ -12,7 +12,6 @@
 @use "@catppuccin/palette/scss/latte" as *;
 @use "@catppuccin/highlightjs/sass/theme";
 
-.theme-dark,
 .visual-refresh.theme-dark,
 .visual-refresh .theme-dark {
   @import "@catppuccin/palette/scss/frappe";
@@ -22,7 +21,6 @@
   @import "theme";
 }
 
-.theme-light,
 .visual-refresh.theme-light,
 .visual-refresh .theme-light {
   $brand: $blue;

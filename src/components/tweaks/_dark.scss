@@ -25,7 +25,7 @@ div[class*="winButtonClose_"]:hover,
 div[class^="uploadArea_"],
 svg[class^="stepIcon_"],
 svg[class^="activeIcon_"], // Account switcher
-div[class*="tooltipBrand_"],
+div[class*="tooltipBrand_"], div[class*="tooltipGreen_"],
 [class*="notice_"][class*="colorBrand_"], [class*="colorStreamerMode_"], [class*="colorSpotify_"], [class*="colorPremium_"], [class*="colorPlayStation_"],
 .interactive:hover {
   --white: #{$crust};
