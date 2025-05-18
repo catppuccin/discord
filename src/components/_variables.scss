@@ -90,6 +90,9 @@
   --opacity-blurple-60: #{adjust-color($brand, $alpha: -0.4)};
   --blurple-50: #{$brand};
 
+  //TODO: `2025_04_desktop_refresh_fast_follows` "Darker Guild List Background"
+  --app-background-frame: #{darken($crust, 2%)};
+
   --background-primary: #{$base} !important;
   --background-secondary: #{$mantle} !important;
   --background-secondary-alt: #{darken($base, 1%)} !important;
