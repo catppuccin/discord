@@ -53,7 +53,7 @@
   --header-secondary: #{$subtext0} !important;
   --__header-bar-background: #{$mantle} !important;
 
-  --text-normal: #{$text} !important;
+  --text-normal: #{$text} !important; // TODO: LEGACY
   --text-default: #{$text};
   --text-muted: #{$subtext0} !important;
   --text-link: #{$blue} !important;
@@ -131,10 +131,10 @@
   --background-modifier-selected: #{adjust-color($overlay0, $alpha: -0.8)};
   --background-modifier-accent: #{adjust-color($text, $alpha: -0.74)};
   --background-modifier-active: #{adjust-color($text, $alpha: -0.83)};
-  --background-mod-faint: #{$surface2};
-  --background-mod-normal: #{$surface1};
-  --background-mod-strong: #{$base};
-  --background-mod-subtle: #{$surface0};
+  --background-mod-faint: #{adjust-color($surface2, $alpha: -0.95)};
+  --background-mod-normal: #{adjust-color($surface2, $alpha: -0.85)};
+  --background-mod-subtle: #{adjust-color($surface2, $alpha: -0.75)} !important;
+  --background-mod-strong: #{adjust-color($surface2, $alpha: -0.55)} !important;
   --custom-channel-members-bg: #{$mantle};
   --custom-status-bubble-background: #{$crust} !important;
   --custom-status-bubble-background-color: #{$mantle} !important;
@@ -377,6 +377,7 @@
   --deprecated-card-bg: #{adjust-color($crust, $alpha: -0.4)};
   --deprecated-card-editable-bg: #{adjust-color($crust, $alpha: -0.7)};
 
+  // TODO: LEGACY
   --bg-mod-faint: #{adjust-color($surface2, $alpha: -0.9)};
   --bg-mod-subtle: #{adjust-color($surface2, $alpha: -0.75)} !important;
   --bg-mod-strong: #{adjust-color($surface2, $alpha: -0.55)} !important;
