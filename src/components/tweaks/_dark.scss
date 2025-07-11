@@ -53,7 +53,19 @@ div[class^="friendRequestContainer_"] > button[class*="colorGreen_"] {
 }
 
 .vcd-screen-picker-option-radio[data-checked="true"] {
-  --text-normal: #{$crust};
+  --text-default: #{$crust};
+}
+button {
+  &[class*="selectorButtonSelected_"],
+  &:hover {
+    div[class*="selectorText_"] {
+      color: #{$crust};
+    }
+  }
+}
+
+svg[class^="selectedIcon_"] > circle[fill="white"] {
+  fill: #{$crust};
 }
 
 // Channels & Roles Browse channels count
