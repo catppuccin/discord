@@ -67,27 +67,30 @@
 @import url("https://catppuccin.github.io/discord/dist/catppuccin-frappe-maroon.theme.css");
 ```
 
-### [Legcord](https://github.com/Legcord/Legcord)
+#### [Legcord](https://github.com/Legcord/Legcord)
+<details>
+  <summary>Instructions</summary>
 
-1. Navigate to Settings (Legcord app) > Legcord > Themes
-2. Paste the link to the theme's CSS file
+  1. Navigate to Settings (Legcord app) > Legcord > Themes
+  2. Paste the link to the theme's CSS file
 
-```css
-/* latte */
-https://catppuccin.github.io/discord/dist/catppuccin-latte.theme.css
-/* frappe */
-https://catppuccin.github.io/discord/dist/catppuccin-frappe.theme.css
-/* macchiato */
-https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css
-/* mocha */
-https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css
+  ```
+  /* latte */
+  https://catppuccin.github.io/discord/dist/catppuccin-latte.theme.css
+  /* frappe */
+  https://catppuccin.github.io/discord/dist/catppuccin-frappe.theme.css
+  /* macchiato */
+  https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css
+  /* mocha */
+  https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css
 
-/* You can also append Catppuccin colors to customize the accent, e.g. */
-/* mocha (pink accent)*/
-https://catppuccin.github.io/discord/dist/catppuccin-mocha-pink.theme.css
-/* frappe (maroon accent) */
-https://catppuccin.github.io/discord/dist/catppuccin-frappe-maroon.theme.css
-```
+  /* You can also append Catppuccin colors to customize the accent, e.g. */
+  /* mocha (pink accent)*/
+  https://catppuccin.github.io/discord/dist/catppuccin-mocha-pink.theme.css
+  /* frappe (maroon accent) */
+  https://catppuccin.github.io/discord/dist/catppuccin-frappe-maroon.theme.css
+  ```
+</details>
 
 ### [Stylus](https://github.com/openstyles/stylus)
 
