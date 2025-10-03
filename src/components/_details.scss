@@ -30,7 +30,7 @@ div[class^="expandedFolderBackground_"] {
 // Switches
 // Literally a single switch doesnt have the parent control_ class... so annoying
 // div[class^="container_"][style*="opacity: 1; background-color:"]
-div[class^="control_"] > div[class^="container_"] {
+div[class^="control_"] > div[class^="container_"] > div > div[data-toggleable-component="switch"] {
   background-color: #{$surface2} !important;
   transition: background-color 0.2s;
 
