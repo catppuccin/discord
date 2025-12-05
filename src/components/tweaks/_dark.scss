@@ -16,6 +16,7 @@ svg[class^="checkmarkCircle"], div[class*="checkIcon_"],
 button[class*="button_"][class*="lookFilled_"][class*="colorRed_"],
 button[class*="button_"][class*="lookFilled_"][class*="colorGreen_"],
 button[class*="button_"][class*="lookFilled_"][class*="colorLink_"],
+button[class*="button_"][class*="lookFilled_"][class*="colorBrand_"],
 button[class*="colorable_"][class*="join_"], // Vc join buttons
 svg[class^="status_"], // Vc status (mute/deafen)
 svg[class^="dots_"], // typing indicator
@@ -30,6 +31,40 @@ div[class*="tooltipBrand_"], div[class*="tooltipGreen_"],
 .interactive:hover {
   --white: #{$crust};
   --white-500: #{$crust};
+}
+
+// Force button text color for brand buttons
+button[class*="button_"][class*="lookFilled_"][class*="colorBrand_"] {
+  color: #{$crust} !important;
+}
+
+// Vencord buttons
+button[class*="vc-btn-primary"],
+button[class*="vc-btn-"][class*="vc-btn-primary"] {
+  color: #{$crust} !important;
+  background-color: #{$brand} !important;
+
+  &:hover {
+    background-color: #{darken($brand, math.div(15%, 2))} !important;
+  }
+
+  &:active {
+    background-color: #{darken($brand, math.div(25%, 2))} !important;
+  }
+}
+
+// Discord's standard primary buttons (with hashed class names)
+button[class*="button_"][class*="primary_"] {
+  color: #{$crust} !important;
+  background-color: #{$brand} !important;
+
+  &:hover {
+    background-color: #{darken($brand, math.div(15%, 2))} !important;
+  }
+
+  &:active {
+    background-color: #{darken($brand, math.div(25%, 2))} !important;
+  }
 }
 
 svg[class^="radioIndicator_"] [class*="refreshIcon_"] {

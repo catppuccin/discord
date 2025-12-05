@@ -290,7 +290,9 @@
   // Accent coloured buttons
   --button-filled-brand-text: #{$crust};
   --button-filled-brand-background: #{$brand};
+  --button-filled-brand-text-hover: #{$crust};
   --button-filled-brand-background-hover: #{darken($brand, math.div(15%, 2))}; // TODO: Upcoming palette tints/shades
+  --button-filled-brand-text-active: #{$crust};
   --button-filled-brand-background-active: #{darken($brand, math.div(25%, 2))};
 
   --button-filled-brand-inverted-text: #{$crust};
