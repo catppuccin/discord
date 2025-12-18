@@ -167,3 +167,11 @@ div[class*="container"]:focus-within:has(> div[class*="inner"] > input),
 [class*="input"][type="text"]:not([readOnly]):focus:hover {
   --text-link: var(--brand-500);
 }
+
+// Toast icons
+div[class$="toast"][data-type="success"] {
+  --status-positive: #{$base};
+}
+div[class$="toast"][data-type="failure"] {
+  --status-danger: #{$base};
+}
