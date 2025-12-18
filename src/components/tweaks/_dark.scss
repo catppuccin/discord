@@ -57,14 +57,17 @@ button[class*="vc-btn-"][class*="vc-btn-primary"] {
 // Discord's standard primary buttons (with hashed class names)
 button[class*="button"][class*="primary"] {
   color: #{$crust} !important;
-  background-color: #{$brand} !important;
 
-  &:hover {
-    background-color: #{darken($brand, math.div(15%, 2))} !important;
-  }
+  &:not([class*="critical"]) {
+    background-color: #{$brand} !important;
 
-  &:active {
-    background-color: #{darken($brand, math.div(25%, 2))} !important;
+    &:hover {
+      background-color: #{darken($brand, math.div(15%, 2))} !important;
+    }
+
+    &:active {
+      background-color: #{darken($brand, math.div(25%, 2))} !important;
+    }
   }
 }
 
