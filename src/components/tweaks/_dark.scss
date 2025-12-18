@@ -16,7 +16,7 @@ svg[class^="checkmarkCircle"], div[class*="checkIcon"],
 button[class*="button"][class*="lookFilled"][class*="colorRed"],
 button[class*="button"][class*="lookFilled"][class*="colorGreen"],
 button[class*="button"][class*="lookFilled"][class*="colorLink"],
-// button[class*="button"][class*="lookFilled"][class*="colorBrand"], // TODO: breaks vc action buttons (#425)
+button[class*="button"][class*="lookFilled"][class*="colorBrand"], // TODO: breaks vc action buttons (#425)
 button[class*="colorable"][class*="join"], // Vc join buttons
 svg[class*="status"], // Vc status (mute/deafen)
 svg[class*="dots"], // typing indicator
@@ -35,9 +35,9 @@ div[class*="tooltipBrand"], div[class*="tooltipGreen"],
 
 // TODO: breaks vc action buttons (#425)
 // Force button text color for brand buttons
-// button[class*="button"][class*="lookFilled"][class*="colorBrand"] {
-//   color: #{$crust} !important;
-// }
+button[class*="button"][class*="lookFilled"][class*="colorBrand"] {
+  color: #{$crust} !important;
+}
 
 // Vencord buttons
 button[class*="vc-btn-primary"],

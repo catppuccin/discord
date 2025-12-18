@@ -191,6 +191,10 @@
   --premium-tier-2-purple-for-gradients-2: #{$mauve};
   --premium-tier-2-pink-for-gradients: #{$pink};
 
+  --control-primary-background-default: #{$brand};
+  --control-primary-background-hover: #{darken($brand, math.div(15%, 2))};
+  --control-primary-background-active: #{darken($brand, math.div(25%, 2))};
+
   --control-critical-primary-background-default: #{$red};
   --control-critical-primary-background-hover: #{darken($red, math.div(10%, 2))};
   --control-critical-primary-background-active: #{darken(
@@ -225,12 +229,6 @@
     )};
   --control-critical-secondary-text-active: #{$base};
   --control-critical-secondary-border-active: #{darken($red, math.div(5%, 2))};
-
-  --control-primary-text-default: #{$text};
-  --control-primary-background-hover: #{darken($green, math.div(5%, 2))};
-  --control-primary-text-hover: #{$base};
-  --control-primary-background-active: #{darken($green, math.div(10%, 2))};
-  --control-primary-text-active: #{$base};
 
   // TODO: fix
   --button-outline-brand-text: #{$text};
