@@ -38,7 +38,7 @@
   @return $output;
 }
 
-ul[class^="content_"] > li[class^="container_"] > ul[role="group"] {
+ul[class*="content"] > li[class*="container"] > ul[role="group"] {
   & > div[class^="spineBorder"] {
     // Account for UI Density setting
     // 30px is the size of each spline section
