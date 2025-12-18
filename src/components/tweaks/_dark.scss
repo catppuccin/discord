@@ -16,7 +16,7 @@ svg[class^="checkmarkCircle"], div[class*="checkIcon"],
 button[class*="button"][class*="lookFilled"][class*="colorRed"],
 button[class*="button"][class*="lookFilled"][class*="colorGreen"],
 button[class*="button"][class*="lookFilled"][class*="colorLink"],
-button[class*="button"][class*="lookFilled"][class*="colorBrand"], // TODO: breaks vc action buttons (#425)
+button[class*="button"][class*="lookFilled"][class*="colorBrand"],
 button[class*="colorable"][class*="join"], // Vc join buttons
 svg[class*="status"], // Vc status (mute/deafen)
 svg[class*="dots"], // typing indicator
@@ -33,9 +33,10 @@ div[class*="tooltipBrand"], div[class*="tooltipGreen"],
   --white-500: #{$crust};
 }
 
-// TODO: breaks vc action buttons (#425)
 // Force button text color for brand buttons
-button[class*="button"][class*="lookFilled"][class*="colorBrand"] {
+button[class*="button"][class*="lookFilled"][class*="colorBrand"]:not(
+    :has(> div > div[class$="buttonIcon"])
+  ) {
   color: #{$crust} !important;
 }
 
