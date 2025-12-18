@@ -72,6 +72,11 @@ button[class*="button"][class*="primary"] {
   }
 }
 
+// Connect button text
+button[class*="button"][class*="active"] {
+  color: #{$crust} !important;
+}
+
 svg[class*="radioIndicator"] [class*="refreshIcon"] {
   fill: #{$crust};
 }
