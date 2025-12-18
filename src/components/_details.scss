@@ -19,8 +19,8 @@ $svg-platform-colors: (
 
 div[class*="newMessagesBar"] {
   --white: #{$crust};
-  --button-secondary-background: var(--brand);
-  --button-secondary-background-hover: var(--brand-530);
+  --control-secondary-background-default: var(--brand-500);
+  --control-secondary-background-hover: var(--brand-530);
 }
 
 div[class*="expandedFolderBackground"] {
