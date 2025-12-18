@@ -338,6 +338,9 @@
   --interactive-icon-default: #{$text} !important;
   --interactive-icon-hover: #{$text};
   --interactive-icon-active: #{$text};
+  --interactive-text-default: #{$text} !important;
+  --interactive-text-hover: #{$text};
+  --interactive-text-active: #{$text};
   --interactive-muted: #{$overlay0};
 
   --search-popout-option-non-text-color: #{$subtext0};
