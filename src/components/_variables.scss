@@ -326,6 +326,7 @@
 
   --icon-muted: #{darken($subtext0, 5%)} !important;
   --icon-default: #{$text};
+  --icon-strong: #{$text};
   --icon-subtle: #{$subtext1};
 
   --textbox-markdown-syntax: #{$overlay0};
@@ -342,6 +343,10 @@
   --interactive-text-hover: #{$text};
   --interactive-text-active: #{$text};
   --interactive-muted: #{$overlay0};
+
+  --interactive-background-hover: #{adjust-color($overlay2, $alpha: -0.85)};
+  --interactive-background-selected: #{adjust-color($overlay0, $alpha: -0.8)};
+  --interactive-background-active: #{adjust-color($text, $alpha: -0.83)};
 
   --search-popout-option-non-text-color: #{$subtext0};
 
