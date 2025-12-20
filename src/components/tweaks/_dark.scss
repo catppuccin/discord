@@ -31,6 +31,11 @@ div[class*="tooltipBrand"], div[class*="tooltipGreen"],
   --white-500: #{$crust};
 }
 
+svg[class$="flowerStar"] + div[class*="childContainer"] {
+  --white-500: #{$crust};
+  --white-400: #{$crust};
+}
+
 // Force button text color for brand buttons
 button[class*="button"][class*="lookFilled"][class*="colorBrand"]:not(
     :has(> div > div[class$="buttonIcon"])
