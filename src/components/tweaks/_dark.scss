@@ -76,7 +76,7 @@ button[class*="button"][class*="active"] {
   color: #{$crust} !important;
 }
 
-svg[class*="radioIndicator"] [class*="refreshIcon"] {
+svg[class*="radioIndicator"] [class$="refreshIcon"] {
   fill: #{$crust};
 }
 div[class*="automodText"] {
