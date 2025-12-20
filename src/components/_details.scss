@@ -23,13 +23,12 @@ div[class*="newMessagesBar"] {
   --control-secondary-background-hover: var(--brand-530);
 }
 
-div[class*="expandedFolderBackground"] {
+span[class$="folderGroupBackground"] {
   --background-mod-subtle: #{$mantle} !important;
 }
 
 // Switches
-// Literally a single switch doesnt have the parent control_ class... so annoying
-// div[class^="container_"][style*="opacity: 1; background-color:"]
+// Literally a single switch doesnt have the parent -control class... so annoying
 div[class$="control"] > div[data-toggleable-component="switch"] {
   background-color: #{$surface2} !important;
   transition: background-color 0.2s;
@@ -60,7 +59,7 @@ div[class$="control"] > div[data-toggleable-component="switch"] {
 }
 
 // Vencord custom switches
-div[class^="vc-addon-card"] > div div[class*="container"] {
+div.vc-addon-card > div div[class*="container"] {
   --primary-400: #{$surface2};
   transition: background-color 0.2s;
   > svg > rect {
@@ -74,7 +73,7 @@ div[class^="vc-addon-card"] > div div[class*="container"] {
 }
 
 // system message icons
-div[class^="message"][class*="isSystemMessage"] div[class^="icon"] {
+div[class*="message"][class$="isSystemMessage"] div[class*="icon"] {
   // User Joined icon
   &[style*="/assets/61ccab047dad737a.svg"] {
     @include recolor($green);
@@ -114,21 +113,22 @@ div[class*="overlay"][class*="darkThemeGradient"] {
 }
 
 // Forum tags and gallery gradient
-div[class*="textContentFooter"] {
+div[class$="textContentFooter"] {
   background: linear-gradient(
     0deg,
     $base,
     rgba($surface0, 0.97) 36px,
     rgba($surface1, 0.4)
   ) !important;
-  [class*="tagPill"] {
+  [class$="tagPill"] {
     background-color: #{rgba($surface1, 0.9)};
   }
 }
 // Forum new badge / OP tag
 div[class*="newBadge"][class*="textBadge"][style="background-color: var(--brand-260);"],
 span[class*="botTagOP"] {
-  color: var(--badge-brand-text);
+  background-color: var(--brand-500) !important;
+  color: var(--white);
 }
 
 div[class*="quickSelectPopoutOption"]:hover[role="option"] {

@@ -7,23 +7,21 @@ div[class*="iconBadge"][class*="isCurrentUserConnected"],
 div[class*="bar"][class*="unreadMentionsBar"],
 span[class*="botTag"],
 span[class*="unreadPill"],
-div[class*="listItem"] div[class*="wrapper"] [class*="selected"], // Server list entries with no icons (Home/Add server/Discover etc)
+div[class$="listItem"] div[class$="wrapper"] [class$="selected"], // Server list entries with no icons (Home/Add server/Discover etc)
 button[class*="container"]>div[class*="icon"]>svg, // Add Friend Page Discoverable Servers svg
 div[class*="newBadge"],
-div[class*="premiumTab"][class*="selected"], // Nitro tab selected in settings
 label[class*="checkboxWrapper"], label[class*="checkboxWrapperDisabled"], div[class*="checkbox"][class*="box"],
-svg[class^="checkmarkCircle"], div[class*="checkIcon"],
+svg[class*="checkmarkCircle"], div[class*="checkIcon"],
 button[class*="button"][class*="lookFilled"][class*="colorRed"],
 button[class*="button"][class*="lookFilled"][class*="colorGreen"],
 button[class*="button"][class*="lookFilled"][class*="colorLink"],
 button[class*="button"][class*="lookFilled"][class*="colorBrand"],
 button[class*="colorable"][class*="join"], // Vc join buttons
-svg[class*="status"], // Vc status (mute/deafen)
-svg[class*="dots"], // typing indicator
+svg[class$="status"], // Vc status (mute/deafen)
 div[class*="textBadge"][class*="base"],
 svg[class*="descriptionIcon"],
 div[class*="winButtonClose"]:hover,
-div[class*="uploadArea"],
+div[class$="uploadArea"],
 svg[class*="stepIcon"],
 svg[class*="activeIcon"], // Account switcher
 div[class*="tooltipBrand"], div[class*="tooltipGreen"],
