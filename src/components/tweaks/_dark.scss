@@ -57,7 +57,8 @@ button[class*="vc-btn-"][class*="vc-btn-primary"] {
 button[class*="button"][class*="primary"] {
   color: #{$crust} !important;
 
-  &:not([class*="critical"]) {
+  // Non-primary buttons also use the primary class...
+  &:not([class*="primaryDark"], [class*="critical"]) {
     background-color: #{$brand} !important;
 
     &:hover {

@@ -201,6 +201,7 @@
       $red,
       math.div(20%, 2)
     )};
+  --control-critical-primary-text-default: #{$base};
 
   --control-connect-background-default: #{$green};
   --control-connect-background-hover: #{darken($green, math.div(10%, 2))};
