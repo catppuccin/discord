@@ -195,6 +195,7 @@
       math.div(20%, 2)
     )};
   --control-critical-primary-text-default: #{$base};
+  --control-critical-primary-text-hover: #{$base};
 
   --control-connect-background-default: #{$green};
   --control-connect-background-hover: #{darken($green, math.div(10%, 2))};
@@ -233,6 +234,19 @@
   --button-outline-brand-text: #{$text};
   --button-outline-brand-background-hover: #{darken($brand, math.div(5%, 2))};
   --button-outline-brand-border-active: #{darken($brand, math.div(5%, 2))};
+
+  // used by vencord
+  --redesign-button-positive-background: #{$green} !important;
+  --redesign-button-positive-pressed-background: #{darken(
+      $green,
+      math.div(10%, 2)
+    )};
+
+  --redesign-button-secondary-background: #{$surface1} !important;
+  --redesign-button-secondary-pressed-background: #{darken(
+      $surface1,
+      math.div(10%, 2)
+    )};
 
   --modal-background: #{$base} !important;
   --modal-footer-background: #{$crust};
