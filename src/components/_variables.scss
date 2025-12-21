@@ -45,20 +45,12 @@
   --brand-90a: #{adjust-color($brand, $alpha: -0.1)};
   --brand-95a: #{adjust-color($brand, $alpha: -0.05)};
 
-  --header-secondary: #{$subtext0} !important; // TODO: removed
   --__header-bar-background: #{$mantle} !important;
 
   --text-default: #{$text};
   --text-muted: #{$subtext0} !important;
   --text-link: #{$blue} !important;
-  --text-link-low-saturation: #{$sapphire}; // TODO: removed
-  --text-low-contrast: #{$overlay1}; // TODO: removed
-  --text-positive: #{$green}; // TODO: removed
-  --text-warning: #{$yellow}; // TODO: removed
-  --text-danger: #{$red}; // TODO: removed
   --text-brand: #{$brand};
-  --text-secondary: #{$subtext1}; // TODO: removed
-  --text-tertiary: #{$subtext0} !important; // TODO: removed
   --text-strong: #{$text} !important;
 
   --text-feedback-positive: #{$green};
@@ -231,57 +223,15 @@
   --control-critical-secondary-text-active: #{$base};
   --control-critical-secondary-border-active: #{darken($red, math.div(5%, 2))};
 
-  // TODO: fix
-  --button-outline-brand-text: #{$text};
-  // --control-secondary-border-default: #{$brand};
   --control-secondary-border-default: #{$surface0};
-  --button-outline-brand-background-hover: #{darken($brand, math.div(5%, 2))};
-  // --control-secondary-text-hover: #{$base};
   --control-secondary-text-hover: #{$text};
-  // --control-secondary-border-hover: #{darken($brand, math.div(5%, 2))};
-  // --control-secondary-background-active: #{darken($brand, math.div(10%, 2))};
-  // --control-secondary-text-active: #{$base};
-  --button-outline-brand-border-active: #{darken($brand, math.div(5%, 2))};
 
+  // discord still uses the button-outline naming for some variables for some reason?
   --button-outline-primary-text: #{$text};
 
-  // Accent coloured buttons
-  --button-filled-brand-background: #{$brand}; // TODO: removed
-  --button-filled-brand-text-hover: #{$crust}; // TODO: removed
-  --button-filled-brand-background-hover: #{darken($brand, math.div(15%, 2))}; // TODO: Upcoming palette tints/shades // TODO: removed
-  --button-filled-brand-text-active: #{$crust}; // TODO: removed
-  --button-filled-brand-background-active: #{darken($brand, math.div(25%, 2))}; // TODO: removed
-
-  --button-filled-brand-inverted-text: #{$crust}; // TODO: removed
-  --button-filled-brand-inverted-background: #{$text}; // TODO: removed
-  --button-filled-brand-inverted-background-hover: #{darken(
-      // TODO: removed
-      $text,
-      math.div(15%, 2)
-    )};
-  --button-filled-brand-inverted-background-active: #{darken(
-      // TODO: removed
-      $text,
-      math.div(25%, 2)
-    )};
-
-  // --button-filled-white-background is already --white-500
-  --button-filled-white-text: var(--black-500); // TODO: removed
-  --button-filled-white-background-hover: var(--white-600); // TODO: removed
-  --button-filled-white-background-active: var(--white-700); // TODO: removed
-
-  --button-transparent-text: #{$text}; // TODO: removed
-  --button-transparent-background: #{adjust-color($surface2, $alpha: -0.88)}; // TODO: removed
-  --button-transparent-background-hover: #{adjust-color(
-      // TODO: removed
-      $surface2,
-      $alpha: -0.8
-    )};
-  --button-transparent-background-active: #{adjust-color(
-      // TODO: removed
-      $surface2,
-      $alpha: -0.7
-    )};
+  --button-outline-brand-text: #{$text};
+  --button-outline-brand-background-hover: #{darken($brand, math.div(5%, 2))};
+  --button-outline-brand-border-active: #{darken($brand, math.div(5%, 2))};
 
   --modal-background: #{$base} !important;
   --modal-footer-background: #{$crust};
@@ -358,6 +308,8 @@
   --user-profile-overlay-background-hover: #{$surface0};
 
   --plum-23: #{$base};
+
+  --badge-background-default: #{$sapphire};
 
   --twitch: #{darken($mauve, 10%)};
   --playstation: #{darken($blue, 10%)};
