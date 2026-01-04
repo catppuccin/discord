@@ -18,6 +18,7 @@ button[class*="button"][class*="lookFilled"][class*="colorLink"],
 button[class*="button"][class*="lookFilled"][class*="colorBrand"],
 button[class*="colorable"][class*="join"], // Vc join buttons
 svg[class$="status"], // Vc status (mute/deafen)
+svg[class$="dots"], // Status typing indicator
 div[class*="textBadge"][class*="base"],
 svg[class*="descriptionIcon"],
 div[class*="winButtonClose"]:hover,
@@ -25,6 +26,8 @@ div[class$="uploadArea"],
 svg[class*="stepIcon"],
 svg[class*="activeIcon"], // Account switcher
 div[class*="tooltipBrand"], div[class*="tooltipGreen"],
+span[class$="planOptionDiscount"], // Nitro plan discount badge
+div[class$="memberCount"], // Onboarding option member count
 [class*="notice"][class*="colorBrand"], [class*="colorStreamerMode"], [class*="colorSpotify"], [class*="colorPremium"], [class*="colorPlayStation"],
 .interactive:hover {
   --white: #{$crust};

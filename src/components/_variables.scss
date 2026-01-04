@@ -260,8 +260,9 @@
   --scrollbar-auto-scrollbar-color-track: #{$crust};
 
   --input-background-default: #{$crust};
-  --input-border-default: #{$overlay0};
+  --input-text-default: #{$text};
   --input-placeholder-text-default: #{$subtext1};
+  --input-border-default: #{$overlay0};
 
   --logo-primary: #{$text};
 
