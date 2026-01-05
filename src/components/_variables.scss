@@ -249,7 +249,7 @@
     )};
 
   --modal-background: #{$base} !important;
-  --modal-footer-background: #{$crust};
+  --modal-footer-background: #{$base};
 
   --scrollbar-thin-thumb: #{$brand};
   --scrollbar-thin-track: transparent;
