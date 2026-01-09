@@ -35,11 +35,11 @@ $platforms: (
 );
 
 $colors: (
-  #43a25a: $green,
-  #ca9654: $yellow,
-  #d83a42: $red,
-  #82838b: $overlay1,
-  #9147ff: "var(--twitch)",
+  #45a366: $green,
+  #ffc04e: $yellow,
+  #da3e44: $red,
+  #84858d: $overlay1,
+  #9147ff: var(--twitch),
 );
 
 @each $label, $map in $platforms {

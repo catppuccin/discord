@@ -1,14 +1,13 @@
-$svg-platform-colors: (
-  // online indicators (not var based)
-  $yellow: #ca9654,
-  $red: #d83a42,
-  $green: #43a25a,
-  $overlay1: #82838b,
-  "var(--twitch)": #9147ff
+// online indicators (not var based)
+$online-indicators: (
+  #45a366: $green,
+  #ffc04e: $yellow,
+  #da3e44: $red,
+  #84858d: $overlay1,
+  #9147ff: var(--twitch),
 );
-@each $var, $color in $svg-platform-colors {
-  svg [fill="#{$color}"],
-  svg[fill="#{$color}"] {
+@each $color, $var in $online-indicators {
+  svg [fill="#{$color}"] {
     fill: #{$var};
   }
 
@@ -28,7 +27,6 @@ span[class$="folderGroupBackground"] {
 }
 
 // Switches
-// Literally a single switch doesnt have the parent -control class... so annoying
 div[class$="control"] > div[data-toggleable-component="switch"] {
   background-color: #{$surface2} !important;
   transition: background-color 0.2s;
