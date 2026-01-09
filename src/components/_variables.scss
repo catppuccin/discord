@@ -327,6 +327,7 @@
 
   --badge-background-default: #{$brand};
   --badge-text-default: #{$crust};
+  --badge-text-brand: #{$base};
 
   --twitch: #{darken($mauve, 10%)};
   --playstation: #{darken($blue, 10%)};
