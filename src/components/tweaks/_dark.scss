@@ -1,54 +1,50 @@
 // Catppuccin's dark flavour's accents have bad contrast with $text so swap to $crust
 // Light accents contrast is ok! (rare latte win)
 
-div[class*="item"][class*="addFriend"],
-div[class*="numberBadge"][style*="background-color: var(--status-danger);"],
-div[class*="iconBadge"][class*="isCurrentUserConnected"],
-div[class*="bar"][class*="unreadMentionsBar"],
-span[class*="botTag"],
-span[class*="unreadPill"],
-div[class$="listItem"] div[class$="wrapper"] [class$="selected"], // Server list entries with no icons (Home/Add server/Discover etc)
-button[class*="container"]>div[class*="icon"]>svg, // Add Friend Page Discoverable Servers svg
-div[class*="newBadge"],
-label[class*="checkboxWrapper"], label[class*="checkboxWrapperDisabled"], div[class*="checkbox"][class*="box"],
-svg[class*="checkmarkCircle"], div[class*="checkIcon"],
-button[class*="button"][class*="lookFilled"][class*="colorRed"],
-button[class*="button"][class*="lookFilled"][class*="colorGreen"],
-button[class*="button"][class*="lookFilled"][class*="colorLink"],
-button[class*="button"][class*="lookFilled"][class*="colorBrand"],
-button[class*="colorable"][class*="join"], // Vc join buttons
-svg[class$="status"], // Vc status (mute/deafen)
-svg[class$="dots"], // Status typing indicator
-div[class*="textBadge"][class*="base"],
-svg[class*="descriptionIcon"],
-div[class*="winButtonClose"]:hover,
-div[class$="uploadDropModal"],
-svg[class*="stepIcon"],
-svg[class*="activeIcon"], // Account switcher
-div[class*="tooltipBrand"], div[class*="tooltipGreen"],
-span[class$="planOptionDiscount"], // Nitro plan discount badge
-div[class$="memberCount"], // Onboarding option member count
-[class*="notice"][class*="colorBrand"], [class*="colorStreamerMode"], [class*="colorSpotify"], [class*="colorPremium"], [class*="colorPlayStation"],
+div[class*="-item"][class*="-addFriend"],
+div[class*="-numberBadge"][style*="background-color: var(--status-danger);"],
+div[class*="-iconBadge"][class*="-isCurrentUserConnected"],
+div[class*="-bar"][class*="-unreadMentionsBar"],
+span[class*="-botTag"],
+span[class*="-unreadPill"],
+div[class$="-listItem"] div[class$="-wrapper"] [class$="-selected"], // Server list entries with no icons (Home/Add server/Discover etc)
+button[class*="-container"]>div[class*="-icon"]>svg, // Add Friend Page Discoverable Servers svg
+div[class*="-newBadge"],
+label[class*="-checkboxWrapper"], label[class*="-checkboxWrapperDisabled"], div[class*="-checkbox"][class*="-box"],
+svg[class*="-checkmarkCircle"], div[class*="-checkIcon"],
+button[class*="-button"][class*="-lookFilled"][class*="-colorRed"],
+button[class*="-button"][class*="-lookFilled"][class*="-colorGreen"],
+button[class*="-button"][class*="-lookFilled"][class*="-colorLink"],
+button[class*="-button"][class*="-lookFilled"][class*="-colorBrand"],
+button[class*="-colorable"][class*="-join"], // Vc join buttons
+svg[class$="-status"], // Vc status (mute/deafen)
+svg[class$="-dots"], // Status typing indicator
+div[class*="-textBadge"][class*="-base"],
+svg[class*="-descriptionIcon"],
+div[class*="-winButtonClose"]:hover,
+div[class$="-uploadDropModal"],
+svg[class*="-stepIcon"],
+svg[class*="-activeIcon"], // Account switcher
+div[class*="-tooltipBrand"], div[class*="-tooltipGreen"],
+span[class$="-planOptionDiscount"], // Nitro plan discount badge
+div[class$="-memberCount"], // Onboarding option member count
+svg[class$="-flowerStar"] + div[class*="-childContainer"],
+div[class$="-streamerModeEnabledBtn"],
+[class*="-notice"][class*="-colorBrand"], [class*="-colorStreamerMode"], [class*="-colorSpotify"], [class*="-colorPremium"], [class*="-colorPlayStation"],
 .interactive:hover {
   --white: #{$crust};
   --white-500: #{$crust};
 }
 
-svg[class$="flowerStar"] + div[class*="childContainer"] {
-  --white-500: #{$crust};
-  --white-400: #{$crust};
-}
-
 // Force button text color for brand buttons
-button[class*="button"][class*="lookFilled"][class*="colorBrand"]:not(
-    :has(> div > div[class$="buttonIcon"])
+button[class*="-button"][class*="-lookFilled"][class*="-colorBrand"]:not(
+    :has(> div > div[class$="-buttonIcon"])
   ) {
   color: #{$crust} !important;
 }
 
 // Vencord buttons
-button[class*="vc-btn-primary"],
-button[class*="vc-btn-"][class*="vc-btn-primary"] {
+button.vc-btn-primary {
   color: #{$crust} !important;
   background-color: #{$brand} !important;
 
@@ -62,11 +58,11 @@ button[class*="vc-btn-"][class*="vc-btn-primary"] {
 }
 
 // Discord's standard primary buttons (with hashed class names)
-button[class*="button"][class*="primary"] {
+button[class*="-button"][class*="-primary"] {
   color: #{$crust} !important;
 
   // Non-primary buttons also use the primary class...
-  &:not([class*="primaryDark"], [class*="critical"]) {
+  &:not([class*="-primaryDark"], [class*="-critical"]) {
     background-color: #{$brand} !important;
 
     &:hover {
@@ -80,26 +76,26 @@ button[class*="button"][class*="primary"] {
 }
 
 // Connect (positive) button text
-button[class*="button"][class*="active"],
+button[class*="-button"][class*="-active"],
 button.vc-btn-positive {
   color: #{$crust} !important;
 }
 
-svg[class*="radioIndicator"] [class$="refreshIcon"] {
+svg[class*="-radioIndicator"] [class$="-refreshIcon"] {
   fill: #{$crust};
 }
-div[class*="automodText"] {
+div[class*="-automodText"] {
   color: #{$crust};
 }
 
 // Forum pin icon
-div[class*="pinIcon"] > svg > path {
+div[class*="-pinIcon"] > svg > path {
   fill: #{$crust};
 }
 
 // Server settings Members banner
-div[class*="bannerContainer"],
-div[class*="friendRequestContainer"] > button[class*="colorGreen"] {
+div[class*="-bannerContainer"],
+div[class*="-friendRequestContainer"] > button[class*="-colorGreen"] {
   [style*="color: white"] {
     color: #{$crust} !important;
   }
@@ -109,19 +105,19 @@ div[class*="friendRequestContainer"] > button[class*="colorGreen"] {
   --text-default: #{$crust};
 }
 button {
-  &[class*="selectorButtonSelected"],
+  &[class*="-selectorButtonSelected"],
   &:hover {
-    div[class*="selectorText"] {
+    div[class*="-selectorText"] {
       color: #{$crust};
     }
   }
 }
 
-svg[class*="selectedIcon"] > circle[fill="white"] {
+svg[class*="-selectedIcon"] > circle[fill="white"] {
   fill: #{$crust};
 }
 
 // Channels & Roles Browse channels count
-div[class*="textBadge"][class*="base"][style*="background-color: var(--background-accent)"] {
+div[class*="-textBadge"][class*="-base"][style*="background-color: var(--background-accent)"] {
   --white: #{$text};
 }
