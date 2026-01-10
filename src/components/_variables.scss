@@ -197,12 +197,12 @@
   --control-critical-primary-text-default: #{$base};
   --control-critical-primary-text-hover: #{$base};
 
-  --control-connect-background-default: #{$green};
-  --control-connect-background-hover: #{darken($green, math.div(10%, 2))};
-  --control-connect-background-active: #{darken($green, math.div(15%, 2))};
-  --control-connect-border-default: #{$green};
-  --control-connect-border-hover: #{darken($green, math.div(5%, 2))};
-  --control-connect-border-active: #{darken($green, math.div(5%, 2))};
+  --control-connected-background-default: #{$green};
+  --control-connected-background-hover: #{darken($green, math.div(10%, 2))};
+  --control-connected-background-active: #{darken($green, math.div(15%, 2))};
+  --control-connected-border-default: #{$green};
+  --control-connected-border-hover: #{darken($green, math.div(5%, 2))};
+  --control-connected-border-active: #{darken($green, math.div(5%, 2))};
 
   --control-secondary-background-default: #{$surface1} !important;
   --control-secondary-background-hover: #{darken($surface1, math.div(10%, 2))};
