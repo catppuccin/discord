@@ -6,15 +6,15 @@
 // }
 & {
   --thread-default: var(--ctp-rainbow-thread-disabled) var(--channels-default);
-  --thread-core: var(--ctp-rainbow-thread-disabled) var(--text-primary);
+  --thread-core: var(--ctp-rainbow-thread-disabled) var(--text-default);
   --thread-muted: var(--ctp-rainbow-thread-disabled) var(--interactive-muted);
 }
 
 @mixin rainbow-vars($colour) {
   --channels-default: var(--thread-default, #{fade-out($colour, 0.3)});
-  --text-primary: var(--thread-core, #{$colour});
-  --interactive-hover: var(--thread-core, #{$colour});
-  --interactive-active: var(--thread-core, #{$colour});
+  --text-default: var(--thread-core, #{$colour});
+  --interactive-text-hover: var(--thread-core, #{$colour});
+  --interactive-text-active: var(--thread-core, #{$colour});
   --interactive-muted: var(--thread-muted, #{mix($colour, $crust, 50%)});
 }
 
