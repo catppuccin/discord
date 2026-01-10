@@ -7,7 +7,8 @@ $online-indicators: (
   #9147ff: var(--twitch),
 );
 @each $color, $var in $online-indicators {
-  svg [fill="#{$color}"] {
+  svg [fill="#{$color}"],
+  svg[fill="#{$color}"] {
     fill: #{$var};
   }
 
