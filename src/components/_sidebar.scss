@@ -12,9 +12,10 @@
 
 @mixin rainbow-vars($colour) {
   --channels-default: var(--thread-default, #{fade-out($colour, 0.3)});
+  --interactive-text-hover: var(--thread-default, #{$colour});
+  --interactive-text-active: var(--thread-default, #{$colour});
+  --text-strong: var(--thread-default, #{$colour});
   --text-default: var(--thread-core, #{$colour});
-  --interactive-text-hover: var(--thread-core, #{$colour});
-  --interactive-text-active: var(--thread-core, #{$colour});
   --interactive-muted: var(--thread-muted, #{mix($colour, $crust, 50%)});
 }
 
