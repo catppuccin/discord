@@ -10,8 +10,7 @@ span[class*="-unreadPill"],
 div[class$="-listItem"] div[class$="-wrapper"] [class$="-selected"], // Server list entries with no icons (Home/Add server/Discover etc)
 button[class*="-container"]>div[class*="-icon"]>svg, // Add Friend Page Discoverable Servers svg
 div[class*="-newBadge"],
-label[class*="-checkboxWrapper"], label[class*="-checkboxWrapperDisabled"], div[class*="-checkbox"][class*="-box"],
-svg[class*="-checkmarkCircle"], div[class*="-checkIcon"],
+div[class*="-checkbox"],
 button[class*="-button"][class*="-lookFilled"][class*="-colorRed"],
 button[class*="-button"][class*="-lookFilled"][class*="-colorGreen"],
 button[class*="-button"][class*="-lookFilled"][class*="-colorLink"],
