@@ -57,20 +57,17 @@ button.vc-btn-primary {
 }
 
 // Discord's standard primary buttons (with hashed class names)
-button[class*="button_"][class*="primary_"] {
+// Space to prevent matching other primary classes like "critical-primary_"
+button[class^="button_"][class*=" primary_"] {
   color: #{$crust} !important;
+  background-color: #{$brand} !important;
 
-  // Non-primary buttons also use the primary class...
-  &:not([class*="primaryDark_"], [class*="critical_"]) {
-    background-color: #{$brand} !important;
+  &:hover {
+    background-color: #{darken($brand, math.div(15%, 2))} !important;
+  }
 
-    &:hover {
-      background-color: #{darken($brand, math.div(15%, 2))} !important;
-    }
-
-    &:active {
-      background-color: #{darken($brand, math.div(25%, 2))} !important;
-    }
+  &:active {
+    background-color: #{darken($brand, math.div(25%, 2))} !important;
   }
 }
 
