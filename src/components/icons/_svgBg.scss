@@ -6,7 +6,7 @@ $svgBg: (
 
 @each $class, $color in $svgBg {
   & {
-    svg[class*="-#{$class}"] {
+    svg[class*="#{$class}_"] {
       background-color: #{map-get($color, color)};
     }
   }

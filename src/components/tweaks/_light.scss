@@ -10,7 +10,7 @@
 }
 
 // Exception
-div[class*="-tooltipGrey"] {
+div[class*="tooltipGrey_"] {
   --white-500: #{$text};
   --white: #{$text};
 }

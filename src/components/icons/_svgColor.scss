@@ -39,7 +39,7 @@ $svgColor: (
 
 @each $class, $color in $svgColor {
   & {
-    svg[class*="-#{$class}"] {
+    svg[class*="#{$class}_"] {
       color: #{map-get($color, color)} !important;
     }
   }

@@ -25,7 +25,7 @@ $bgImg: (
 );
 
 @each $class, $icon in $bgImg {
-  [class*="-#{$class}"] {
+  [class*="#{$class}_"] {
     background-image: url("#{map-get($icon, icon)}") !important;
   }
 }
@@ -64,11 +64,11 @@ $fileTypes: (
 );
 
 @each $type, $icon in $fileTypes {
-  div[class*="-icon"][class$="-#{$type}"] {
+  div[class^="icon_"][class*="#{$type}_"] {
     background-image: url("#{$icon}");
   }
 
-  img[class$="-icon"][title="#{$type}"] {
+  img[class^="icon_"][title="#{$type}"] {
     content: url("#{$icon}");
   }
 }

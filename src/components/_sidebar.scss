@@ -39,8 +39,8 @@
   @return $output;
 }
 
-ul[class*="-content"] > li[class*="-container"] > ul[role="group"] {
-  & > div[class$="-spineBorder"] {
+ul[class^="content_"] > li[class^="container_"] > ul[role="group"] {
+  & > div[class^="spineBorder_"] {
     // Account for UI Density setting
     // 30px is the size of each spline section
     // density padding is either 20px, 24px or 28px. get the padding px count
