@@ -7,7 +7,8 @@
 & {
   --thread-default: var(--ctp-rainbow-thread-disabled) var(--channels-default);
   --thread-core: var(--ctp-rainbow-thread-disabled) var(--text-default);
-  --thread-muted: var(--ctp-rainbow-thread-disabled) var(--interactive-muted);
+  --thread-spine: var(--ctp-rainbow-thread-disabled) var(--spine-default);
+  --thread-muted: var(--ctp-rainbow-thread-disabled) var(--text-muted);
 }
 
 @mixin rainbow-vars($colour) {
@@ -16,7 +17,8 @@
   --interactive-text-active: var(--thread-default, #{$colour});
   --text-strong: var(--thread-default, #{$colour});
   --text-default: var(--thread-core, #{$colour});
-  --interactive-muted: var(--thread-muted, #{mix($colour, $crust, 50%)});
+  --text-muted: var(--thread-muted, #{mix($colour, $crust, 50%)});
+  --spine-default: var(--thread-spine, #{mix($colour, $crust, 50%)});
 }
 
 @mixin rainbow-thread($n, $colour) {
@@ -50,7 +52,7 @@ ul[class^="content_"] > li[class^="container_"] > ul[role="group"] {
     // Repeating gradient on core spine element to not have unsightly gaps between the splines of mixin(rainbow-thread)
     // `to bottom` default
     background: var(
-      --thread-muted,
+      --thread-spine,
       repeating-linear-gradient(
         #{rainbow-gradient(($red, $peach, $yellow, $green, $blue, $mauve))}
       )
