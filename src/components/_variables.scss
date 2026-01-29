@@ -59,11 +59,6 @@
   --text-feedback-warning: #{$yellow};
   --text-feedback-info: #{$blue};
 
-  --background-feedback-positive: #{adjust-color($green, $alpha: -0.9)};
-  --background-feedback-critical: #{adjust-color($red, $alpha: -0.9)};
-  --background-feedback-warning: #{adjust-color($yellow, $alpha: -0.9)};
-  --background-feedback-info: #{adjust-color($blue, $alpha: -0.9)};
-
   --message-reacted-background-default: #{adjust-color($brand, $alpha: -0.7)} !important;
   --message-reacted-text-default: #{$brand};
 
@@ -113,6 +108,8 @@
   // --brand-500: #{$brand};
   // --brand-560: #{darken($brand, math.div(20%, 2))};
 
+  --background-feedback-notification: #{$red};
+
   --background-feedback-positive: #{adjust-color($green, $alpha: -0.85)};
   --icon-feedback-positive: #{$green};
 
@@ -125,15 +122,15 @@
   --background-feedback-info: #{adjust-color($sky, $alpha: -0.85)};
   --icon-feedback-info: #{$sky};
 
+  --status-positive: #{$green};
   --status-positive-background: #{$green};
   --status-positive-text: #{$base};
 
+  --status-warning: #{$yellow};
   --status-warning-background: #{$yellow};
   --status-warning-text: #{$base};
 
   --status-danger: #{$red};
-  --status-positive: #{$green};
-  --status-warning: #{$yellow};
 
   // colorWarning
   --black-500: #{$crust};
@@ -157,10 +154,7 @@
   --primary-800: #{$crust};
 
   --white: #{$text};
-  --white-400: #{$text};
   --white-500: #{$text};
-  --white-600: #{$subtext1};
-  --white-700: #{$subtext0};
 
   --guild-boosting-pink: #{$pink};
   --guild-boosting-blue: #{$blue};
@@ -235,19 +229,6 @@
   --button-outline-brand-background-hover: #{darken($brand, math.div(5%, 2))};
   --button-outline-brand-border-active: #{darken($brand, math.div(5%, 2))};
 
-  // used by vencord
-  --redesign-button-positive-background: #{$green} !important;
-  --redesign-button-positive-pressed-background: #{darken(
-      $green,
-      math.div(10%, 2)
-    )};
-
-  --redesign-button-secondary-background: #{$surface1} !important;
-  --redesign-button-secondary-pressed-background: #{darken(
-      $surface1,
-      math.div(10%, 2)
-    )};
-
   --modal-background: #{$base} !important;
   --modal-footer-background: #{$base};
 
@@ -292,6 +273,7 @@
   --channeltextarea-background: #{$mantle};
 
   --icon-muted: #{darken($subtext0, 5%)} !important;
+  --icon-voice-muted: #{$red};
   --icon-default: #{$text};
   --icon-strong: #{$text};
   --icon-subtle: #{$subtext1};
@@ -315,8 +297,6 @@
   --interactive-background-selected: #{adjust-color($overlay0, $alpha: -0.8)};
   --interactive-background-active: #{adjust-color($text, $alpha: -0.83)};
 
-  --search-popout-option-non-text-color: #{$subtext0};
-
   --__spoiler-background-color--hidden: #{$surface2};
   --__spoiler-warning-background-color: #{lighten($surface2, 5%)};
 
@@ -325,8 +305,6 @@
 
   --plum-23: #{$base};
 
-  --badge-background-default: #{$brand};
-  --badge-text-default: #{$crust};
   --badge-text-brand: #{$base};
 
   --twitch: #{darken($mauve, 10%)};
