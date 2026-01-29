@@ -186,6 +186,13 @@
   --control-primary-background-hover: #{darken($brand, math.div(15%, 2))};
   --control-primary-background-active: #{darken($brand, math.div(25%, 2))};
 
+  --control-secondary-background-default: #{$surface1} !important;
+  --control-secondary-background-hover: #{darken($surface1, math.div(10%, 2))};
+  --control-secondary-background-active: #{darken($surface1, math.div(15%, 2))};
+  --control-secondary-border-default: #{$surface0};
+  --control-secondary-text-default: #{$text} !important;
+  --control-secondary-text-hover: #{$text};
+
   --control-critical-primary-background-default: #{$red};
   --control-critical-primary-background-hover: #{darken($red, math.div(10%, 2))};
   --control-critical-primary-background-active: #{darken(
@@ -195,36 +202,28 @@
   --control-critical-primary-text-default: #{$base};
   --control-critical-primary-text-hover: #{$base};
 
+  --control-critical-secondary-background-default: transparent;
+  --control-critical-secondary-background-hover: #{darken(
+      $red,
+      math.div(5%, 2)
+    )};
+  --control-critical-secondary-background-active: #{darken(
+      $red,
+      math.div(10%, 2)
+    )};
+  --control-critical-secondary-border-default: #{$red};
+  --control-critical-secondary-border-hover: #{darken($red, math.div(5%, 2))};
+  --control-critical-secondary-border-active: #{darken($red, math.div(5%, 2))};
+  --control-critical-secondary-text-default: #{$text};
+  --control-critical-secondary-text-hover: #{$base};
+  --control-critical-secondary-text-active: #{$base};
+
   --control-connected-background-default: #{$green};
   --control-connected-background-hover: #{darken($green, math.div(10%, 2))};
   --control-connected-background-active: #{darken($green, math.div(15%, 2))};
   --control-connected-border-default: #{$green};
   --control-connected-border-hover: #{darken($green, math.div(5%, 2))};
   --control-connected-border-active: #{darken($green, math.div(5%, 2))};
-
-  --control-secondary-background-default: #{$surface1} !important;
-  --control-secondary-background-hover: #{darken($surface1, math.div(10%, 2))};
-  --control-secondary-background-active: #{darken($surface1, math.div(15%, 2))};
-  --control-secondary-text-default: #{$text} !important;
-
-  --control-critical-secondary-text-default: #{$text};
-  --control-critical-secondary-border-default: #{$red};
-  --control-critical-secondary-background-default: transparent;
-  --control-critical-secondary-background-hover: #{darken(
-      $red,
-      math.div(5%, 2)
-    )};
-  --control-critical-secondary-text-hover: #{$base};
-  --control-critical-secondary-border-hover: #{darken($red, math.div(5%, 2))};
-  --control-critical-secondary-background-active: #{darken(
-      $red,
-      math.div(10%, 2)
-    )};
-  --control-critical-secondary-text-active: #{$base};
-  --control-critical-secondary-border-active: #{darken($red, math.div(5%, 2))};
-
-  --control-secondary-border-default: #{$surface0};
-  --control-secondary-text-hover: #{$text};
 
   // discord still uses the button-outline naming for some variables for some reason?
   --button-outline-primary-text: #{$text};

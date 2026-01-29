@@ -172,3 +172,8 @@ div[class^="toast_"][data-type="success"] {
 div[class^="toast_"][data-type="failure"] {
   --icon-feedback-critical: #{$base};
 }
+
+// Delete button icon color
+div[class*="button_"][class*="dangerous_"] {
+  color: #{$red};
+}
