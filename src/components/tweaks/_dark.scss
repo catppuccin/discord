@@ -11,7 +11,6 @@ div[class^="listItem_"] div[class^="wrapper_"] [class*="selected_"], // Server l
 div[class^="icon_"][class*="noIcon_"], // Mutual servers with no icon
 button[class^="container_"]>div[class^="icon_"]>svg, // Add Friend Page Discoverable Servers svg
 div[class^="newBadge_"],
-div[class^="checkbox_"],
 button[class*="button_"][class*="lookFilled_"][class*="colorRed_"],
 button[class*="button_"][class*="lookFilled_"][class*="colorGreen_"],
 button[class*="button_"][class*="lookFilled_"][class*="colorLink_"],
@@ -31,6 +30,7 @@ div[class*="memberCount_"], // Onboarding option member count
 svg[class*="flowerStar_"] + div[class*="childContainer_"],
 div[class*="streamerModeEnabledBtn_"],
 div[class*="nowPlaying_"], // Registered games now playing
+div[class^="pageControlContainer_"], // Selected page control
 [class*="notice_"][class*="colorBrand_"], [class*="colorStreamerMode_"], [class*="colorSpotify_"], [class*="colorPremium_"], [class*="colorPlayStation_"],
 .interactive:hover {
   --white: #{$crust};
@@ -79,9 +79,6 @@ button.vc-btn-positive {
   color: #{$crust} !important;
 }
 
-svg[class^="radioIndicator_"] [class*="refreshIcon_"] {
-  fill: #{$crust};
-}
 div[class^="automodText_"] {
   color: #{$crust};
 }

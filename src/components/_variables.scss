@@ -68,6 +68,7 @@
   --opacity-blurple-32: #{adjust-color($brand, $alpha: -0.68)};
   --opacity-blurple-60: #{adjust-color($brand, $alpha: -0.4)};
   --blurple-50: #{$brand};
+  --blurple-60: #{darken($brand, math.div(20%, 2))};
 
   // TODO: `2025_04_desktop_refresh_fast_follows` "Darker Guild List Background"
   --app-frame-background: #{darken($crust, 2%)};
@@ -90,7 +91,10 @@
   --chat-border: #{$crust};
   --chat-text-muted: #{$subtext0};
 
+  --checkbox-icon-active: #{$crust};
   --checkbox-border-default: #{$overlay0};
+
+  --radio-thumb-background-active: #{$crust};
 
   --border-muted: #{$surface0};
   --border-strong: #{$mantle};

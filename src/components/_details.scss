@@ -28,31 +28,29 @@ span[class^="folderGroupBackground_"] {
 }
 
 // Switches
-div[class^="control_"] > div[data-toggleable-component="switch"] {
+label[class^="container_"] > div[data-mana-component="switch"] {
   background-color: #{$surface2} !important;
+  border: unset !important;
   transition: background-color 0.2s;
 
-  > svg {
-    > rect {
-      fill: var(--white);
-      transition: fill 0.2s;
-    }
-    > svg > path {
-      fill: #{$surface2};
-      transition: fill 0.2s;
-    }
+  &:hover {
+    background-color: #{$surface1} !important;
   }
 
-  &[class*="checked_"] {
+  > svg > rect {
+    fill: var(--white);
+    transition: fill 0.2s;
+  }
+
+  &:has(+ span > input:checked) {
     background-color: var(--brand-500) !important;
 
-    > svg {
-      > rect {
-        fill: #{$crust};
-      }
-      > svg > path {
-        fill: var(--brand-500);
-      }
+    &:hover {
+      background-color: var(--brand-560) !important;
+    }
+
+    > svg > rect {
+      fill: #{$crust};
     }
   }
 }
