@@ -112,8 +112,6 @@
   // --brand-500: #{$brand};
   // --brand-560: #{darken($brand, math.div(20%, 2))};
 
-  --background-feedback-notification: #{$red};
-
   --background-feedback-positive: #{adjust-color($green, $alpha: -0.85)};
   --icon-feedback-positive: #{$green};
 
@@ -125,6 +123,9 @@
 
   --background-feedback-info: #{adjust-color($sky, $alpha: -0.85)};
   --icon-feedback-info: #{$sky};
+
+  --background-feedback-notification: #{$red};
+  --badge-notification-background: #{$red};
 
   --status-positive: #{$green};
   --status-positive-background: #{$green};
