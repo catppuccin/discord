@@ -311,6 +311,16 @@
 
   --badge-text-brand: #{$base};
 
+  --text-status-online: #{$green};
+  --text-status-idle: #{$yellow};
+  --text-status-dnd: #{$red};
+  --text-status-offline: #{$subtext1};
+
+  --icon-status-online: #{$green};
+  --icon-status-idle: #{$yellow};
+  --icon-status-dnd: #{$red};
+  --icon-status-offline: #{$subtext1};
+
   --twitch: #{darken($mauve, 10%)};
   --playstation: #{darken($blue, 10%)};
   --spotify: #{$green};
