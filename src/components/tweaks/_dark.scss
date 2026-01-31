@@ -20,7 +20,6 @@ svg[class^="status_"], // Vc status (mute/deafen)
 svg[class^="dots_"], // Status typing indicator
 div[class*="textBadge_"][class*="base_"],
 svg[class^="descriptionIcon_"],
-div[class*="winButtonClose_"]:hover,
 div[class^="uploadDropModal_"],
 svg[class^="stepIcon_"],
 svg[class^="activeIcon_"], // Account switcher
@@ -115,4 +114,8 @@ svg[class^="selectedIcon_"] > circle[fill="white"] {
 // Channels & Roles Browse channels count
 div[class*="textBadge_"][class*="base_"][style*="background-color: var(--background-accent)"] {
   --white: #{$text};
+}
+
+div[class*="winButtonClose_"]:hover {
+  color: #{$crust} !important;
 }
