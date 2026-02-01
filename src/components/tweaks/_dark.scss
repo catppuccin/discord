@@ -4,7 +4,6 @@
 div[class^="item_"][class*="addFriend_"],
 div[class^="numberBadge_"][style*="background-color: var(--background-feedback-notification);"],
 div[class*="iconBadge_"][class*="isCurrentUserConnected_"],
-div[class^="bar_"][class*="unreadMentionsBar_"],
 span[class*="botTag_"],
 span[class^="unreadPill_"],
 div[class^="listItem_"] div[class^="wrapper_"] [class*="selected_"], // Server list entries with no icons (Home/Add server/Discover etc)
@@ -117,5 +116,9 @@ div[class*="textBadge_"][class*="base_"][style*="background-color: var(--backgro
 }
 
 div[class*="winButtonClose_"]:hover {
-  color: #{$crust} !important;
+  color: #{$crust};
+}
+
+div[class^="bar_"][class*="unreadMentionsBar_"] {
+  color: #{$crust};
 }
