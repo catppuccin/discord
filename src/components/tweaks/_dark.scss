@@ -3,6 +3,7 @@
 
 div[class^="item_"][class*="addFriend_"],
 div[class^="numberBadge_"][style*="background-color: var(--background-feedback-notification);"],
+div[class^="numberBadge_"][style*="background-color: var(--badge-notification-background);"],
 div[class*="iconBadge_"][class*="isCurrentUserConnected_"],
 span[class*="botTag_"],
 span[class^="unreadPill_"],
