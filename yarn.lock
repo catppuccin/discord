@@ -8,9 +8,9 @@
   integrity sha512-wnagsNQbJroHQMalkprwRoapfGV1hHRx46d7GXp4kf6rlShImBlgpqPCt9OD471Gq4qpHdfFH/GJFIvY1CLqHA==
 
 "@catppuccin/palette@^1.0.0":
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/@catppuccin/palette/-/palette-1.7.1.tgz#c7cd165dcc1fc025a05ac138a4749b2279cf115e"
-  integrity sha512-aRc1tbzrevOTV7nFTT9SRdF26w/MIwT4Jwt4fDMc9itRZUDXCuEDBLyz4TQMlqO9ZP8mf5Hu4Jr6D03NLFc6Gw==
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@catppuccin/palette/-/palette-1.8.0.tgz#9308bb94afd485ccd1f4342d2cfe1abe496534f2"
+  integrity sha512-qXhwKiLzQomUygUJYB36YAFgs+dET5bIocfkiaFIatQF5Pwc7L112TlF9P8J5Oqs3x3XTjYSucG0ncHXSCuk7Q==
 
 ansi-escapes@^7.0.0:
   version "7.0.0"
