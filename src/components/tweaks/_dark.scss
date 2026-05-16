@@ -1,5 +1,4 @@
-// Catppuccin's dark flavour's accents have bad contrast with $text so swap to $crust
-// Light accents contrast is ok! (rare latte win)
+// Dark accents have better contrast with $crust than $text in filled controls.
 
 div[class^="item_"][class*="addFriend_"],
 div[class^="numberBadge_"][style*="background-color: var(--background-feedback-notification);"],

@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Discord Catppuccin
-@namespace      github.com/catppuccin/discord
+@name           Discord Kanagawa
+@namespace      github.com/vokinn/kanagawa-discord
 @version        0.2.1
-@description    Soothing pastel theme for Discord
-@author         Catppuccin
+@description    Kanagawa theme for Discord
+@author         Kanagawa Discord
 @preprocessor   stylus
-@var select theme "Theme" ["latte:Latte", "frappe:Frappe", "macchiato:Macchiato", "mocha:Mocha*"]
-@var select accent "Accent" {"Rosewater": "'rosewater'", "Flamingo": "'flamingo'", "Pink": "'pink'", "Mauve": "'mauve'", "Red": "'red'", "Maroon": "'maroon'", "Peach": "'peach'", "Yellow": "'yellow'", "Green": "'green'", "Teal": "'teal'", "Blue*": "'blue'", "Sapphire": "'sapphire'", "Sky": "'sky'", "Lavender": "'lavender'"}
+@var select theme "Theme" ["wave:Wave*", "dragon:Dragon"]
 ==/UserStyle== */
 
-@-moz-document regexp("https?://(canary\\.|ptb\\.|)discord.com/.*") {
-    @import url("https://catppuccin.github.io/discord/dist/catppuccin-" + theme + "-" + accent + ".theme.css")
+@-moz-document regexp("https?://(canary\\.|ptb\\.|)discord.com/.*")
+{
+  @import url("https://vokinn.github.io/kanagawa-discord/dist/kanagawa-" + theme + ".theme.css");
 }

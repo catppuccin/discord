@@ -1,0 +1,21 @@
+/**
+ * @name Kanagawa Dragon
+ * @author vokinn
+ * @version 0.2.0
+ * @description Kanagawa Dragon theme for Discord
+ * @website https://github.com/vokinn/kanagawa-discord
+**/
+
+@use "sass:math";
+@use "palettes/dragon" as *;
+
+.visual-refresh.theme-dark,
+.visual-refresh .theme-dark,
+.visual-refresh.theme-light,
+.visual-refresh .theme-light {
+  $brand: $blue;
+
+  @import "components/tweaks/dark";
+  @import "theme";
+  @import "components/highlightjs";
+}

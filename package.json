@@ -1,13 +1,10 @@
 {
-  "name": "catppuccin-discord",
+  "name": "kanagawa-discord",
   "version": "0.2.0",
-  "description": "Catppuccin theme for Discord",
-  "repository": "https://github.com/catppuccin/discord",
+  "description": "Kanagawa theme for Discord",
+  "repository": "https://github.com/vokinn/kanagawa-discord",
   "license": "MIT",
-  "author": {
-    "name": "Catppuccin Org",
-    "email": "core@catppuccin.com"
-  },
+  "author": "vokinn",
   "contributors": [
     {
       "name": "winston",
@@ -17,13 +14,11 @@
   "private": true,
   "scripts": {
     "build": "mkdir -p dist/dist && sass -I node_modules --no-charset --no-source-map src:dist/dist",
-    "release": "node build.js && mkdir -p dist/dist && sass -I node_modules --style=compressed --no-charset --no-source-map src:dist/dist && rm src/catppuccin-*-*.theme.scss",
+    "release": "mkdir -p dist/dist && sass -I node_modules --style=compressed --no-charset --no-source-map src:dist/dist",
     "watch": "mkdir -p dist/dist && sass -I node_modules --no-charset --no-source-map src:dist/dist -w",
     "prepare": "husky"
   },
   "devDependencies": {
-    "@catppuccin/highlightjs": "^1.0.0",
-    "@catppuccin/palette": "^1.0.0",
     "husky": ">=6",
     "lint-staged": ">=10",
     "prettier": "^3.0.0",

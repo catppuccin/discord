@@ -1,14 +1,15 @@
 // rainbow threads
 
-// User can place this in their QuickCSS/Custom CSS to disable rainbow threads (willow is soooo boring)
+// User can place this in their QuickCSS/Custom CSS to disable rainbow threads.
 // :root {
-//   --ctp-rainbow-thread-disabled: ;
+//   --kanagawa-rainbow-thread-disabled: ;
 // }
 & {
-  --thread-default: var(--ctp-rainbow-thread-disabled) var(--channels-default);
-  --thread-core: var(--ctp-rainbow-thread-disabled) var(--text-default);
-  --thread-spine: var(--ctp-rainbow-thread-disabled) var(--spine-default);
-  --thread-muted: var(--ctp-rainbow-thread-disabled) var(--text-muted);
+  --thread-default: var(--kanagawa-rainbow-thread-disabled)
+    var(--channels-default);
+  --thread-core: var(--kanagawa-rainbow-thread-disabled) var(--text-default);
+  --thread-spine: var(--kanagawa-rainbow-thread-disabled) var(--spine-default);
+  --thread-muted: var(--kanagawa-rainbow-thread-disabled) var(--text-muted);
 }
 
 @mixin rainbow-vars($colour) {

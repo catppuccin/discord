@@ -1,0 +1,56 @@
+// Palette aliases follow Kanagawa's Dragon colors while keeping the shared
+// component variable names.
+$dragonBlack0: #0d0c0c;
+$dragonBlack1: #12120f;
+$dragonBlack2: #1d1c19;
+$dragonBlack3: #181616;
+$dragonBlack4: #282727;
+$dragonBlack5: #393836;
+$dragonBlack6: #625e5a;
+
+$dragonWhite: #c5c9c5;
+$dragonGreen: #87a987;
+$dragonGreen2: #8a9a7b;
+$dragonPink: #a292a3;
+$dragonOrange: #b6927b;
+$dragonOrange2: #b98d7b;
+$dragonGray: #a6a69c;
+$dragonGray2: #9e9b93;
+$dragonGray3: #7a8382;
+$dragonBlue2: #8ba4b0;
+$dragonViolet: #8992a7;
+$dragonRed: #c4746e;
+$dragonAqua: #8ea4a2;
+$dragonAsh: #737c73;
+$dragonTeal: #949fb5;
+$dragonYellow: #c4b28a;
+$dragonBlue: #658594;
+$dragonBlack7: #45443c;
+
+$rosewater: $dragonOrange2;
+$flamingo: $dragonOrange;
+$pink: $dragonPink;
+$mauve: $dragonViolet;
+$red: $dragonRed;
+$maroon: $dragonRed;
+$peach: $dragonOrange;
+$yellow: $dragonYellow;
+$green: $dragonGreen;
+$teal: $dragonAqua;
+$sky: $dragonTeal;
+$sapphire: $dragonBlue;
+$blue: $dragonBlue2;
+$lavender: $dragonViolet;
+
+$text: $dragonWhite;
+$subtext1: $dragonGray;
+$subtext0: $dragonAsh;
+$overlay2: $dragonGray2;
+$overlay1: $dragonGray3;
+$overlay0: $dragonAsh;
+$surface2: $dragonBlack6;
+$surface1: $dragonBlack5;
+$surface0: $dragonBlack4;
+$base: $dragonBlack3;
+$mantle: $dragonBlack2;
+$crust: $dragonBlack0;

@@ -2,16 +2,6 @@
 # yarn lockfile v1
 
 
-"@catppuccin/highlightjs@^1.0.0":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@catppuccin/highlightjs/-/highlightjs-1.0.1.tgz#2f97c8b4e808e9ce2b11d523290190478eba3172"
-  integrity sha512-wnagsNQbJroHQMalkprwRoapfGV1hHRx46d7GXp4kf6rlShImBlgpqPCt9OD471Gq4qpHdfFH/GJFIvY1CLqHA==
-
-"@catppuccin/palette@^1.0.0":
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/@catppuccin/palette/-/palette-1.7.1.tgz#c7cd165dcc1fc025a05ac138a4749b2279cf115e"
-  integrity sha512-aRc1tbzrevOTV7nFTT9SRdF26w/MIwT4Jwt4fDMc9itRZUDXCuEDBLyz4TQMlqO9ZP8mf5Hu4Jr6D03NLFc6Gw==
-
 ansi-escapes@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-7.0.0.tgz#00fc19f491bbb18e1d481b97868204f92109bfe7"

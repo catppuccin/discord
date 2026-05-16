@@ -2,7 +2,7 @@
 @mixin recolor($color: #000) {
   filter: url('data:image/svg+xml;utf8,\
     <svg xmlns="http://www.w3.org/2000/svg">\
-      <filter id="ctp-recolor" color-interpolation-filters="sRGB">\
+      <filter id="kanagawa-recolor" color-interpolation-filters="sRGB">\
         <feColorMatrix type="matrix" values="\
           0 0 0 0 #{math.div(red($color), 255)}\
           0 0 0 0 #{math.div(green($color), 255)}\
@@ -11,7 +11,7 @@
         "/>\
       </filter>\
     </svg>\
-    #ctp-recolor');
+    #kanagawa-recolor');
 }
 
 @import "components/variables";
