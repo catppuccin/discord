@@ -57,5 +57,5 @@ Add your preferred variant into your Discord client's Custom CSS file/editor.
 
 ## Credits
 
-- Palette colors are based on [rebelot/kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim)
-- Theme structure is derived from [catppuccin/discord](https://github.com/catppuccin/discord)
+- Palette colors are based on [rebelot/kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim).
+- Theme structure is derived from [catppuccin/discord](https://github.com/catppuccin/discord).

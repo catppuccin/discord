@@ -259,7 +259,7 @@
 
   --message-mentioned-background-default: #{adjust-color($yellow, $alpha: -0.9)};
   --message-mentioned-background-hover: #{adjust-color($yellow, $alpha: -0.92)};
-  --message-background-hover: #{adjust-color($crust, $alpha: -0.7)} !important;
+  --message-background-hover: #{adjust-color($crust, $alpha: -0.4)} !important;
   --message-automod-background-default: #{adjust-color(
       $rosewater,
       $alpha: -0.95
