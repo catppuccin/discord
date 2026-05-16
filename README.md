@@ -35,6 +35,13 @@ Add your preferred variant into your Discord client's Custom CSS file/editor.
 @import url("https://vokinn.github.io/kanagawa-discord/dist/kanagawa-dragon.theme.css");
 ```
 
+### [Vencord](https://vencord.dev)
+
+Open Settings > Vencord > Themes, then add one of these URLs to Online Themes:
+
+- Wave: `https://vokinn.github.io/kanagawa-discord/dist/kanagawa-wave.theme.css`
+- Dragon: `https://vokinn.github.io/kanagawa-discord/dist/kanagawa-dragon.theme.css`
+
 ### [Stylus](https://github.com/openstyles/stylus)
 
 1. Enable CSP Patching from Stylus Settings > Advanced.
