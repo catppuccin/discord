@@ -41,7 +41,7 @@
 - 🌻 [Latte](../../raw/main/themes/latte.theme.css)
 - 🪴 [Frappe](../../raw/main/themes/frappe.theme.css)
 - 🌺 [Macchiato](../../raw/main/themes/macchiato.theme.css)
-- 🌿 [Mocha](../../raw/main/themes/mocha.theme.css)
+- 🌿 [Mocha](/../raw/main/themes/mocha.theme.css)
 
 2. Copy the downloaded file to your BetterDiscord themes folder.
 3. Enable the theme in BetterDiscord settings.
