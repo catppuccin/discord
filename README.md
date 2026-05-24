@@ -38,7 +38,7 @@
 
 1. Download your preferred flavour:
 
-- 🌻 [Latte](./themes/latte.theme.css?raw=1)
+- 🌻 [Latte](./themes/latte.theme.css?raw=true)
 - 🪴 [Frappe](./themes/frappe.theme.css?raw=1)
 - 🌺 [Macchiato](./themes/macchiato.theme.css?raw=1)
 - 🌿 [Mocha](./themes/mocha.theme.css?raw=1)
