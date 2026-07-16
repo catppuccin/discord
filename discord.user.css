@@ -5,7 +5,7 @@
 @description    Kanagawa theme for Discord
 @author         Kanagawa Discord
 @preprocessor   stylus
-@var select theme "Theme" ["wave:Wave*", "dragon:Dragon"]
+@var select theme "Theme" ["wave:Wave*", "dragon:Dragon", "rose-pine:Rosé Pine"]
 ==/UserStyle== */
 
 @-moz-document regexp("https?://(canary\\.|ptb\\.|)discord.com/.*")

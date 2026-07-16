@@ -1,0 +1,44 @@
+// Rosé Pine (main) palette mapped to the shared theme variable names.
+$rpBase: #191724;
+$rpSurface: #1f1d2e;
+$rpOverlay: #26233a;
+$rpMuted: #6e6a86;
+$rpSubtle: #908caa;
+$rpText: #e0def4;
+$rpLove: #eb6f92;
+$rpGold: #f6c177;
+$rpRose: #ebbcba;
+$rpPine: #31748f;
+$rpFoam: #9ccfd8;
+$rpIris: #c4a7e7;
+$rpHighlightLow: #21202e;
+$rpHighlightMed: #403d52;
+$rpHighlightHigh: #524f67;
+
+$rosewater: $rpRose;
+$flamingo: $rpRose;
+$pink: $rpLove;
+$mauve: $rpIris;
+$red: $rpLove;
+$maroon: $rpLove;
+$peach: $rpGold;
+$yellow: $rpGold;
+$green: $rpPine;
+$teal: $rpFoam;
+$sky: $rpFoam;
+$sapphire: $rpPine;
+$blue: $rpIris;
+$lavender: $rpIris;
+
+$text: $rpText;
+$subtext1: $rpSubtle;
+$subtext0: $rpMuted;
+$overlay2: $rpSubtle;
+$overlay1: $rpMuted;
+$overlay0: $rpOverlay;
+$surface2: $rpHighlightHigh;
+$surface1: $rpHighlightMed;
+$surface0: $rpSurface;
+$base: $rpBase;
+$mantle: $rpHighlightLow;
+$crust: $rpBase;

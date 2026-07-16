@@ -3,13 +3,14 @@
 </h3>
 
 Kanagawa Discord is a Discord theme based on the shared CSS structure from
-Catppuccin Discord, with the palette layer replaced by two Kanagawa variants:
-Wave and Dragon.
+Catppuccin Discord, with palette variants for Kanagawa Wave, Kanagawa Dragon,
+and Rosé Pine.
 
 ## Variants
 
 - [Wave](./themes/wave.theme.css?raw=1)
 - [Dragon](./themes/dragon.theme.css?raw=1)
+- [Rosé Pine](./themes/rose-pine.theme.css?raw=1)
 
 ## Usage
 
@@ -19,6 +20,7 @@ Wave and Dragon.
 
 - [Wave](./themes/wave.theme.css?raw=1)
 - [Dragon](./themes/dragon.theme.css?raw=1)
+- [Rosé Pine](./themes/rose-pine.theme.css?raw=1)
 
 2. Copy the downloaded file to your BetterDiscord themes folder.
 3. Enable the theme in BetterDiscord settings.
@@ -33,6 +35,9 @@ Add your preferred variant into your Discord client's Custom CSS file/editor.
 
 /* Dragon */
 @import url("https://vokinn.github.io/kanagawa-discord/dist/kanagawa-dragon.theme.css");
+
+/* Rosé Pine */
+@import url("https://vokinn.github.io/kanagawa-discord/dist/rose-pine.theme.css");
 ```
 
 ### [Vencord](https://vencord.dev)
@@ -41,6 +46,7 @@ Open Settings > Vencord > Themes, then add one of these URLs to Online Themes:
 
 - Wave: `https://vokinn.github.io/kanagawa-discord/dist/kanagawa-wave.theme.css`
 - Dragon: `https://vokinn.github.io/kanagawa-discord/dist/kanagawa-dragon.theme.css`
+- Rosé Pine: `https://vokinn.github.io/kanagawa-discord/dist/rose-pine.theme.css`
 
 ### [Stylus](https://github.com/openstyles/stylus)
 

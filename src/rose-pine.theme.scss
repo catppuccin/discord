@@ -1,0 +1,21 @@
+/**
+ * @name Rosé Pine
+ * @author vokinn
+ * @version 0.3.0
+ * @description Rosé Pine theme for Discord
+ * @website https://github.com/vokinn/kanagawa-discord
+**/
+
+@use "sass:math";
+@use "palettes/rose-pine" as *;
+
+.visual-refresh.theme-dark,
+.visual-refresh .theme-dark,
+.visual-refresh.theme-light,
+.visual-refresh .theme-light {
+  $brand: $blue;
+
+  @import "components/tweaks/dark";
+  @import "theme";
+  @import "components/highlightjs";
+}
