@@ -4,7 +4,7 @@ $online-indicators: (
   #ffc04e: $yellow,
   #da3e44: $red,
   #84858d: $overlay1,
-  #9147ff: var(--twitch),
+  #9147ff: var(--platform-twitch),
 );
 @each $color, $var in $online-indicators {
   svg [fill="#{$color}"],
@@ -29,28 +29,49 @@ span[class^="folderGroupBackground_"] {
 
 // Switches
 label[class^="container_"] > div[data-mana-component="switch"] {
-  background-color: #{$surface2} !important;
   border: unset !important;
+
+  background-color: #{$surface2} !important; // track background
   transition: background-color 0.2s;
 
-  &:hover {
-    background-color: #{$surface1} !important;
+  > svg {
+    > rect {
+      fill: var(--white); // thumb background
+      transition: fill 0.2s;
+    }
+
+    > svg > g > path {
+      fill: #{$surface2} !important; // indicator icon
+    }
   }
 
-  > svg > rect {
-    fill: var(--white);
-    transition: fill 0.2s;
+  &:hover {
+    background-color: #{$surface1} !important; // track hover
+
+    > svg > svg > g > path {
+      fill: #{$surface1} !important; // indicator icon hover
+    }
   }
 
   &:has(+ span > input:checked) {
-    background-color: var(--brand-500) !important;
+    background-color: var(--brand-500) !important; // track checked
 
-    &:hover {
-      background-color: var(--brand-560) !important;
+    > svg {
+      > rect {
+        fill: #{$crust}; // thumb checked
+      }
+
+      > svg > g > path {
+        fill: var(--brand-500) !important; // indicator icon checked
+      }
     }
 
-    > svg > rect {
-      fill: #{$crust};
+    &:hover {
+      background-color: var(--brand-560) !important; // track checked hover
+
+      > svg > svg > g > path {
+        fill: var(--brand-560) !important; // indicator icon checked hover
+      }
     }
   }
 }
