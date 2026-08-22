@@ -322,9 +322,9 @@
   --icon-status-dnd: #{$red};
   --icon-status-offline: #{$subtext1};
 
-  --twitch: #{darken($mauve, 10%)};
-  --playstation: #{darken($blue, 10%)};
-  --spotify: #{$green};
+  --platform-twitch: #{darken($mauve, 10%)};
+  --platform-playstation: #{darken($blue, 10%)};
+  --platform-spotify: #{$green};
 
   --notice-background-critical: #{$red};
   --notice-background-info: #{$blue};

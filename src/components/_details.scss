@@ -4,7 +4,7 @@ $online-indicators: (
   #ffc04e: $yellow,
   #da3e44: $red,
   #84858d: $overlay1,
-  #9147ff: var(--twitch),
+  #9147ff: var(--platform-twitch),
 );
 @each $color, $var in $online-indicators {
   svg [fill="#{$color}"],
