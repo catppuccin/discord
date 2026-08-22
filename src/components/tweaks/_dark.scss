@@ -30,6 +30,7 @@ svg[class*="flowerStar_"] + div[class*="childContainer_"],
 div[class*="streamerModeEnabledBtn_"],
 div[class*="nowPlaying_"], // Registered games now playing
 div[class^="pageControlContainer_"], // Selected page control
+svg[class^="checkmarkCircle_"],
 [class*="notice_"][class*="colorBrand_"], [class*="colorStreamerMode_"], [class*="colorSpotify_"], [class*="colorPremium_"], [class*="colorPlayStation_"],
 .interactive:hover {
   --white: #{$crust};
